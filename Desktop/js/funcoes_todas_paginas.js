@@ -143,4 +143,4 @@ const scriptRODAPE = function(){
         </a></div>`).prependTo('.mais-inf-rdp+div>.conteiner');
 
      
-}();
+};
