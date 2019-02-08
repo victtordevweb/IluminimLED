@@ -1,4 +1,4 @@
-const scriptRODAPE = function(){
+const Script_Rodape_Desktop_TODAS = function(){
    
         $('#barraNewsletter .componente .texto-newsletter').html(`
             <div class="newtxt">Cadastre seu e-mail
