@@ -1,5 +1,5 @@
 const scriptRODAPE = function(){
-    if( screen.width > 767){
+   
         $('#barraNewsletter .componente .texto-newsletter').html(`
             <div class="newtxt">Cadastre seu e-mail
         <span>e receba descontos e novidades</span></div>
@@ -142,5 +142,5 @@ const scriptRODAPE = function(){
             <span class="txt_apps">App Store</span>
         </a></div>`).prependTo('.mais-inf-rdp+div>.conteiner');
 
-    }      
-}
+     
+}();
