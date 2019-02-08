@@ -114,9 +114,8 @@ const scriptRODAPE = function(){
                 $(this).html('Mais informações');
     
             }
-    
     });
-    
+
     if ( localStorage.getItem('rdpilm') == 'ativado') {
         
         $('.mais-inf-rdp span').addClass('active');
