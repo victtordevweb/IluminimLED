@@ -95,8 +95,6 @@ const scriptRODAPE = function(){
         
         $('<div class="boleto_ilm"><i class="boleto-icon"></i></div>').insertAfter('#rodape .pagamento-selos .pagamento .bandeiras-pagamento');  
         
-        
-        
         $('<div class="mais-inf-rdp"><span>Mais informações</span></div>').insertAfter('#rodape .pagamento-selos');
         $('#rodape .institucional, #rodape .pagamento-selos').wrapAll('<div class="iluminim-inf-rdp"></div>');
         $('.mais-inf-rdp span').click(function(){
