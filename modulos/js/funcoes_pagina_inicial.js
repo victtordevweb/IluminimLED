@@ -467,7 +467,7 @@ $(`<div class="iluminim-colecoes hidden-phone">
       </span>
     </div>
   </div>
-</div>`).insertBefore('#rodape');
+</div>`).insertBefore(`${colecoes_iluminim}`);
 
     $(".iluminim-colecoes ul.elementos-colecoes > li:nth-child(1)").addClass("active");
 
@@ -484,6 +484,7 @@ $(`<div class="iluminim-colecoes hidden-phone">
         var e = $(this).children("span").text();
         $(".iluminim-colecoes").removeClass("dropdown-ativo"), $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
     });
+
     $(".list-colecoes-ilm").owlCarousel({
         loop: !0,
         margin: 0,
@@ -559,8 +560,6 @@ $(`
     
 $('.texto-seo').prependTo('#bloco_html_google');
 $('.seo-text').appendTo('#bloco_html_google');
+
 };
 
-Script_Desktop_INICIAL({
-    tarja_informacoes_before: '#barraNewsletter.posicao-rodape'
-});
