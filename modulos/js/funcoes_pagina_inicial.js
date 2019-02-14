@@ -1,7 +1,33 @@
 
 const Script_Desktop_INICIAL = function(obj){
+
+/* ESCOPOS DE VARIAVEIS */
+
+/* funcão tarja informacoes */
 const tarja_informacoes = obj.tarja_informacoes_before;
+/* ~~end~~ funcão tarja informacoes */
+
+/* funcão colecoes iluminim */
 const colecoes_iluminim = obj.colecoes_iluminim_before;
+/* ~~end~~ funcão colecoes iluminim */
+
+/* funcão banner empresarial */
+const banner_empresarial_CSS_inline      = obj.banner_empresarial.style_html;
+const banner_empresarial_link_imagem     = obj.banner_empresarial.link_href_imagem;
+const banner_empresarial_src_imagem      = obj.banner_empresarial.link_src_imagem;
+const banner_empresarial_posicaoFuncao   = obj.banner_empresarial.posicao.funcao;
+const banner_empresarial_posicaoSeletor  = obj.banner_empresarial.posicao.seletor;
+/* ~~end~~ funcão banner empresarial */
+
+/* ~~end~~ ESCOPOS DE VARIAVEIS */
+
+if(banner_empresarial_posicaoSeletor){
+$(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
+    <a href="${banner_empresarial_link_imagem}">
+      <img src="${banner_empresarial_src_imagem}"/>
+    </a>
+  </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
+}
 
 if(colecoes_iluminim){
 $(`<div class="iluminim-colecoes hidden-phone">
