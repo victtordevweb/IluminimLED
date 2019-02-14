@@ -21,13 +21,6 @@ const banner_empresarial_posicaoSeletor  = obj.banner_empresarial.posicao.seleto
 
 /* ~~end~~ ESCOPOS DE VARIAVEIS */
 
-if(banner_empresarial_posicaoSeletor){
-$(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
-    <a href="${banner_empresarial_link_imagem}">
-      <img src="${banner_empresarial_src_imagem}"/>
-    </a>
-  </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
-}
 
 if(colecoes_iluminim){
 $(`<div class="iluminim-colecoes hidden-phone">
@@ -494,6 +487,16 @@ $(`<div class="iluminim-colecoes hidden-phone">
     </div>
   </div>
 </div>`).insertBefore(`${colecoes_iluminim}`);
+
+
+if(banner_empresarial_posicaoSeletor){
+  $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
+      <a href="${banner_empresarial_link_imagem}">
+        <img src="${banner_empresarial_src_imagem}"/>
+      </a>
+    </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
+  }
+  
 
     $(".iluminim-colecoes ul.elementos-colecoes > li:nth-child(1)").addClass("active");
 
