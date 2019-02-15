@@ -1,29 +1,39 @@
 
-const Script_Desktop_INICIAL = function(obj){
 
-/* ESCOPOS DE VARIAVEIS */
 
-/* funcão tarja informacoes */
-const tarja_informacoes = obj.tarja_informacoes_before;
-/* ~~end~~ funcão tarja informacoes */
 
-/* funcão colecoes iluminim */
-const colecoes_iluminim = obj.colecoes_iluminim_before;
-/* ~~end~~ funcão colecoes iluminim */
+
+
+
+
 
 /* funcão banner empresarial */
-const banner_empresarial_CSS_inline      = obj.banner_empresarial.style_html;
-const banner_empresarial_link_imagem     = obj.banner_empresarial.link_href_imagem;
-const banner_empresarial_src_imagem      = obj.banner_empresarial.link_src_imagem;
-const banner_empresarial_posicaoFuncao   = obj.banner_empresarial.posicao.funcao;
-const banner_empresarial_posicaoSeletor  = obj.banner_empresarial.posicao.seletor;
+const banner_empresarial = function(obj){
+    const banner_empresarial_CSS_inline      = obj.style_html;
+    const banner_empresarial_link_imagem     = obj.link_href_imagem;
+    const banner_empresarial_src_imagem      = obj.link_src_imagem;
+    const banner_empresarial_posicaoFuncao   = obj.posicao.funcao;
+    const banner_empresarial_posicaoSeletor  = obj.posicao.seletor;
+
+if(banner_empresarial_posicaoSeletor){
+  $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
+    <a href="${banner_empresarial_link_imagem}">
+      <img src="${banner_empresarial_src_imagem}"/>
+    </a>
+  </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
+}
+
+}
 /* ~~end~~ funcão banner empresarial */
 
-/* ~~end~~ ESCOPOS DE VARIAVEIS */
+/* funcão colecoes iluminim */
+const colecoes_iluminim = function(obj){
+    const colecoes_iluminim_CSS_inline     = obj.style_html;
+    const colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
+    const colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
 
-
-if(colecoes_iluminim){
-$(`<div class="iluminim-colecoes hidden-phone">
+if(colecoes_iluminim_posicaoSeletor){
+$(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_inline}">
   <div class="bread-iluminim-colecoes">
     <div class="content-breads">
       <span class="text-principal">Coleções Iluminim: 
@@ -486,17 +496,8 @@ $(`<div class="iluminim-colecoes hidden-phone">
       </span>
     </div>
   </div>
-</div>`).insertBefore(`${colecoes_iluminim}`);
+</div>`)[colecoes_iluminim_posicaoFuncao](`${colecoes_iluminim_posicaoSeletor}`);
 
-
-if(banner_empresarial_posicaoSeletor){
-  $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
-      <a href="${banner_empresarial_link_imagem}">
-        <img src="${banner_empresarial_src_imagem}"/>
-      </a>
-    </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
-  }
-  
 
     $(".iluminim-colecoes ul.elementos-colecoes > li:nth-child(1)").addClass("active");
 
@@ -534,61 +535,73 @@ if(banner_empresarial_posicaoSeletor){
         }
     });
 
-} /* ~~end colecoes_iluminim ~~ */
-
-if(tarja_informacoes){
-$(`
-<div class="conteiner" id="bloco_html_google"></div>
-<div class="hidden-phone" id="tarja-informacoes" style="display:none;">
-    <div class="conteiner">
-        <div class="bloco-tarja span3">
-            <div class="parte-superior">
-                <div class="imagem-tarja melhor-preco" style="height:49px;"></div>
-                <span class="titul-tarja">BUSCAMOS<br>O MELHOR PREÇO</span>
-            </div> 
-            <div class="parte-inferior">
-                <span class="conteudo-tarja">Encontrou um preço menor? <br>Nós faremos o possível <br>para cobri-lo.</span>
-                <a class="link-tarja" href="/pagina/menor-preco-led.html">Saiba mais</a>
-            </div> 
-        </div> 
-        <div class="bloco-tarja span3">
-            <div class="parte-superior">
-                <div class="imagem-tarja centro-tecnico" style="height:49px;"></div>
-                <span class="titul-tarja">CENTRO<br>TÉCNICO</span>
-            </div> 
-            <div class="parte-inferior">
-                <span class="conteudo-tarja">Equipe especializada pronta<br>para prestar informações<br>precisas.</span>
-                <a class="link-tarja" href="/pagina/centro-tecnico.html">Saiba mais</a>
-            </div> 
-        </div> 
-        <div class="bloco-tarja span3">
-            <div class="parte-superior">
-                <div class="imagem-tarja vendas-atacado" style="height:49px;"></div>
-                <span class="titul-tarja">VENDA<br>POR ATACADO</span>
-            </div> 
-            <div class="parte-inferior">
-                <span class="conteudo-tarja">Conheça as principais vantagens<br>em ser nosso revendedor<br>exclusivo.</span>
-                <a class="link-tarja" href="https://www.iluminim.com.br/pagina/seja-nosso-revendedor-led.html">Saiba mais</a>
-            </div> 
-        </div> 
-        <div class="bloco-tarja span3">
-            <div class="parte-superior">
-                <div class="imagem-tarja blog-ilm" style="height:49px;"></div>
-                <span class="titul-tarja">ACOMPANHE<br>O NOSSO BLOG</span>
-            </div> 
-            <div class="parte-inferior">
-                <span class="conteudo-tarja">Confira em nosso blog dicas incríveis<br>sobre iluminação LED<br>e muito mais.</span>
-                <a class="link-tarja" target="_blank" href="https://blog.iluminim.com.br/">Saiba mais</a>
-            </div> 
-        </div> 
-    </div> 
-</div>`).insertBefore(`${tarja_informacoes}`);
-
-} /* ~~end tarja_informacoes ~~ */
-
-    
-$('.texto-seo').prependTo('#bloco_html_google');
-$('.seo-text').appendTo('#bloco_html_google');
-
+} 
 };
+/* ~~end~~ funcão colecoes iluminim */
+
+
+/* funcão tarja informacoes */
+
+
+const tarja_informacoes = function(obj){
+  const tarja_informacoes_CSS_inline     = obj.style_html;
+  const tarja_informacoes_posicaoFuncao  = obj.posicao.funcao;
+  const tarja_informacoes_posicaoSeletor = obj.posicao.seletor;
+
+  if(tarja_informacoes_posicaoSeletor){
+    $(`
+    <div class="hidden-phone" id="tarja-informacoes" style="${tarja_informacoes_CSS_inline}">
+        <div class="conteiner">
+            <div class="bloco-tarja span3">
+                <div class="parte-superior">
+                    <div class="imagem-tarja melhor-preco" style="height:49px;"></div>
+                    <span class="titul-tarja">BUSCAMOS<br>O MELHOR PREÇO</span>
+                </div> 
+                <div class="parte-inferior">
+                    <span class="conteudo-tarja">Encontrou um preço menor? <br>Nós faremos o possível <br>para cobri-lo.</span>
+                    <a class="link-tarja" href="/pagina/menor-preco-led.html">Saiba mais</a>
+                </div> 
+            </div> 
+            <div class="bloco-tarja span3">
+                <div class="parte-superior">
+                    <div class="imagem-tarja centro-tecnico" style="height:49px;"></div>
+                    <span class="titul-tarja">CENTRO<br>TÉCNICO</span>
+                </div> 
+                <div class="parte-inferior">
+                    <span class="conteudo-tarja">Equipe especializada pronta<br>para prestar informações<br>precisas.</span>
+                    <a class="link-tarja" href="/pagina/centro-tecnico.html">Saiba mais</a>
+                </div> 
+            </div> 
+            <div class="bloco-tarja span3">
+                <div class="parte-superior">
+                    <div class="imagem-tarja vendas-atacado" style="height:49px;"></div>
+                    <span class="titul-tarja">VENDA<br>POR ATACADO</span>
+                </div> 
+                <div class="parte-inferior">
+                    <span class="conteudo-tarja">Conheça as principais vantagens<br>em ser nosso revendedor<br>exclusivo.</span>
+                    <a class="link-tarja" href="https://www.iluminim.com.br/pagina/seja-nosso-revendedor-led.html">Saiba mais</a>
+                </div> 
+            </div> 
+            <div class="bloco-tarja span3">
+                <div class="parte-superior">
+                    <div class="imagem-tarja blog-ilm" style="height:49px;"></div>
+                    <span class="titul-tarja">ACOMPANHE<br>O NOSSO BLOG</span>
+                </div> 
+                <div class="parte-inferior">
+                    <span class="conteudo-tarja">Confira em nosso blog dicas incríveis<br>sobre iluminação LED<br>e muito mais.</span>
+                    <a class="link-tarja" target="_blank" href="https://blog.iluminim.com.br/">Saiba mais</a>
+                </div> 
+            </div> 
+        </div> 
+    </div>`)[tarja_informacoes_posicaoFuncao](`${tarja_informacoes_posicaoSeletor}`);
+    
+    } 
+}
+/* ~~end tarja_informacoes ~~ */
+
+const bloco_html_merchant = function(){   
+  $('<div class="conteiner" id="bloco_html_google"></div>').insertBefore('#tarja-informacoes');
+  $('.texto-seo').prependTo('#bloco_html_google');
+  $('.seo-text').appendTo('#bloco_html_google');
+}();
 
