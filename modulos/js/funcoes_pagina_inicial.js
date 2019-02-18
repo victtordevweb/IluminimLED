@@ -1,36 +1,39 @@
+class HomeIluminim {
 
-
-
-
-
-
-
-
+    constructor(){
+      this.blocoHTMLMerchant();
+      this.banner_empresarial();
+      this.colecoes_iluminim();
+      this.tarja_informacoes();
+    }
 
 /* funcão banner empresarial */
-const banner_empresarial = function(obj){
-    const banner_empresarial_CSS_inline      = obj.style_html;
-    const banner_empresarial_link_imagem     = obj.link_href_imagem;
-    const banner_empresarial_src_imagem      = obj.link_src_imagem;
-    const banner_empresarial_posicaoFuncao   = obj.posicao.funcao;
-    const banner_empresarial_posicaoSeletor  = obj.posicao.seletor;
-
-if(banner_empresarial_posicaoSeletor){
-  $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
-    <a href="${banner_empresarial_link_imagem}">
-      <img src="${banner_empresarial_src_imagem}"/>
-    </a>
-  </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
-}
-
-}
+  banner_empresarial(obj){
+      let banner_empresarial_CSS_inline      = obj.style_html;
+      let banner_empresarial_link_imagem     = obj.link_href_imagem;
+      let banner_empresarial_src_imagem      = obj.link_src_imagem;
+      let banner_empresarial_posicaoFuncao   = obj.posicao.funcao;
+      let banner_empresarial_posicaoSeletor  = obj.posicao.seletor;
+  
+    if(banner_empresarial_posicaoSeletor){
+      $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
+        <a href="${banner_empresarial_link_imagem}">
+          <img src="${banner_empresarial_src_imagem}"/>
+        </a>
+      </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
+    }
+  
+  }
 /* ~~end~~ funcão banner empresarial */
 
+
+
+
 /* funcão colecoes iluminim */
-const colecoes_iluminim = function(obj){
-    const colecoes_iluminim_CSS_inline     = obj.style_html;
-    const colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
-    const colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
+colecoes_iluminim(obj){
+    let colecoes_iluminim_CSS_inline     = obj.style_html;
+    let colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
+    let colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
 
 if(colecoes_iluminim_posicaoSeletor){
 $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_inline}">
@@ -541,12 +544,10 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
 
 
 /* funcão tarja informacoes */
-
-
-const tarja_informacoes = function(obj){
-  const tarja_informacoes_CSS_inline     = obj.style_html;
-  const tarja_informacoes_posicaoFuncao  = obj.posicao.funcao;
-  const tarja_informacoes_posicaoSeletor = obj.posicao.seletor;
+tarja_informacoes(obj){
+  let tarja_informacoes_CSS_inline     = obj.style_html;
+  let tarja_informacoes_posicaoFuncao  = obj.posicao.funcao;
+  let tarja_informacoes_posicaoSeletor = obj.posicao.seletor;
 
   if(tarja_informacoes_posicaoSeletor){
     $(`
@@ -599,9 +600,11 @@ const tarja_informacoes = function(obj){
 }
 /* ~~end tarja_informacoes ~~ */
 
-const bloco_html_merchant = function(){   
+bloco_html_merchant(){   
   $('<div class="conteiner" id="bloco_html_google"></div>').insertBefore('#tarja-informacoes');
   $('.texto-seo').prependTo('#bloco_html_google');
   $('.seo-text').appendTo('#bloco_html_google');
-}();
+}
 
+
+}
