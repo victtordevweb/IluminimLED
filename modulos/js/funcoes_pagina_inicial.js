@@ -1,7 +1,7 @@
 class HomeIluminim {
 
     constructor(){
-      this.blocoHTMLMerchant();
+      this.blocoHTMLAvaliacoesSEO();
     }
 
 /* funcão banner empresarial */
@@ -597,8 +597,8 @@ tarjaInformacoes(obj){
 }
 /* ~~end tarja_informacoes ~~ */
 
-blocoHTMLMerchant(position){   
-  $('<div class="conteiner" id="bloco_html_google"></div>').insertBefore(`${position}`);
+blocoHTMLAvaliacoesSEO(element,position){   
+  $('<div class="conteiner" id="bloco_html_google"></div>')[position](`${element}`);
   $('.texto-seo').prependTo('#bloco_html_google');
   $('.seo-text').appendTo('#bloco_html_google');
 }
