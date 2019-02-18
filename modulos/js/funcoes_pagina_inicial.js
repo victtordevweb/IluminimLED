@@ -597,8 +597,8 @@ tarjaInformacoes(obj){
 }
 /* ~~end tarja_informacoes ~~ */
 
-blocoHTMLMerchant(){   
-  $('<div class="conteiner" id="bloco_html_google"></div>').insertBefore('#tarja-informacoes');
+blocoHTMLMerchant(position){   
+  $('<div class="conteiner" id="bloco_html_google"></div>').insertBefore(`${position}`);
   $('.texto-seo').prependTo('#bloco_html_google');
   $('.seo-text').appendTo('#bloco_html_google');
 }
