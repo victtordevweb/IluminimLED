@@ -1,7 +1,6 @@
 class HomeIluminim {
 
     constructor(){
-      this.blocoHTMLAvaliacoesSEO();
     }
 
 /* funcão banner empresarial */
