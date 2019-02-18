@@ -2,9 +2,6 @@ class HomeIluminim {
 
     constructor(){
       this.blocoHTMLMerchant();
-      this.bannerEmpresarial();
-      this.colecoesIluminim();
-      this.tarjaInformacoes();
     }
 
 /* funcão banner empresarial */
