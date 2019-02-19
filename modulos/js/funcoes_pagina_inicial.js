@@ -4,7 +4,7 @@ class HomeIluminim {
 
     }
 
-/*carrouselElements(obj, response){
+carrouselElements(obj, response){
     let targetElement  = obj.targetElement;
     let lopCarrousel   = obj.loopCarrousel || true;
     let navCarrousel   = obj.navCarrousel || true;
@@ -18,44 +18,20 @@ class HomeIluminim {
         autoplayTimeout: autoPlayCarrouselTime,
         responsive: response
     });
-
-
-}*/
-
-/*
-this.carrouselElements({
-  targetElement: 'meuAlvo',
-  navCarrousel: false,
-},{
-
-  0:{
-    items:1,
-    nav:true
-  },
-  600:{
-      items:2,
-      nav:false
-  },
-  1024:{
-      items:4,
-      nav:true,
-      loop:false
-  }
-
-});*/
-
+}
 
 
 
 /* funcão banner empresarial */
- bannerEmpresarial(obj){
+bannerEmpresarial(obj){
+
       let banner_empresarial_CSS_inline      = obj.style_html;
       let banner_empresarial_link_imagem     = obj.link_href_imagem;
       let banner_empresarial_src_imagem      = obj.link_src_imagem;
       let banner_empresarial_posicaoFuncao   = obj.posicao.funcao;
       let banner_empresarial_posicaoSeletor  = obj.posicao.seletor;
   
-    if(banner_empresarial_posicaoSeletor){
+  if(banner_empresarial_posicaoSeletor){
       $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
         <a href="${banner_empresarial_link_imagem}">
           <img src="${banner_empresarial_src_imagem}"/>
@@ -63,7 +39,7 @@ this.carrouselElements({
       </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
     }
 
-  }
+}
 /* ~~end~~ funcão banner empresarial */
 
 
@@ -555,10 +531,22 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
     $(".iluminim-colecoes .elementos-colecoes").find("li").click(function() {
         $(".iluminim-colecoes .elementos-colecoes li").removeClass("active"), $(this).addClass("active");
         var e = $(this).children("span").text();
-        $(".iluminim-colecoes").removeClass("dropdown-ativo"), $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
+        $(".iluminim-colecoes").removeClass("dropdown-ativo");
+        $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
     });
 
-    $(".list-colecoes-ilm").owlCarousel({
+    this.carrouselElements({
+      targetElement: '.list-colecoes-ilm',
+      navCarrousel: false
+    },{
+      1024:{
+          items:4,
+          nav:true,
+          loop:false
+      }
+    });
+
+    /*$(".list-colecoes-ilm").owlCarousel({
         loop: !0,
         margin: 0,
         nav: !0,
@@ -576,7 +564,7 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
                 items: 4
             }
         }
-    });
+    });*/
 
 } 
 };
@@ -636,7 +624,7 @@ tarjaInformacoes(obj){
         </div> 
     </div>`)[tarja_informacoes_posicaoFuncao](`${tarja_informacoes_posicaoSeletor}`);
     
-    } 
+  } 
 }
 /* ~~end tarja_informacoes ~~ */
 
