@@ -1,7 +1,51 @@
 class HomeIluminim {
 
     constructor(){
+
     }
+
+/*carrouselElements(obj, response){
+    let targetElement  = obj.targetElement;
+    let lopCarrousel   = obj.loopCarrousel || true;
+    let navCarrousel   = obj.navCarrousel || true;
+    let autoPlayCarrousel = obj.autoPlayCarrousel || true;
+    let autoPlayCarrouselTime = obj.autoPlayCarrouselTime || 0;
+
+    $(`${targetElement}`).owlCarousel({
+        loop: lopCarrousel,
+        nav: navCarrousel,
+        autoplay: autoPlayCarrousel,
+        autoplayTimeout: autoPlayCarrouselTime,
+        responsive: response
+    });
+
+
+}*/
+
+/*
+this.carrouselElements({
+  targetElement: 'meuAlvo',
+  navCarrousel: false,
+},{
+
+  0:{
+    items:1,
+    nav:true
+  },
+  600:{
+      items:2,
+      nav:false
+  },
+  1024:{
+      items:4,
+      nav:true,
+      loop:false
+  }
+
+});*/
+
+
+
 
 /* funcão banner empresarial */
  bannerEmpresarial(obj){
@@ -18,7 +62,7 @@ class HomeIluminim {
         </a>
       </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
     }
-  
+
   }
 /* ~~end~~ funcão banner empresarial */
 
