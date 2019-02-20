@@ -29,7 +29,7 @@ bannerEmpresarial(obj){
 
 
 /* funcão colecoes iluminim */
-colecoesIluminim(obj,response){
+colecoesIluminim(obj,carrousel){
     let colecoes_iluminim_CSS_inline     = obj.style_html;
     let colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
     let colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
@@ -518,25 +518,38 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
     });
 
-      this.carrouselElements(obj,response);
+      if(carrousel){
+        this.carrouselElements({
+          targetElement: carrousel,
+          loop: true,
+          responsive: {
+              0: {
+                  items: 4
+              },
+              500: {
+                  items: 4
+              }
+          }
+        });
+      }
 
 } 
 };
 /* ~~end~~ funcão colecoes iluminim */
 
-carrouselElements(obj, response){
-  let targetElement  = obj.targetElement;
+carrouselElements(obj){
+ /* let targetElement  = obj.targetElement;
   let lopCarrousel   = obj.loopCarrousel || true;
   let navCarrousel   = obj.navCarrousel || true;
   let autoPlayCarrousel = obj.autoPlayCarrousel || true;
-  let autoPlayCarrouselTime = obj.autoPlayCarrouselTime || 0;
+  let autoPlayCarrouselTime = obj.autoPlayCarrouselTime || 0;*/
 
-  $(`${targetElement}`).owlCarousel({
-      loop: lopCarrousel,
-      nav: navCarrousel,
-      autoplay: autoPlayCarrousel,
-      autoplayTimeout: autoPlayCarrouselTime,
-      responsive: response
+  $(`${obj.targetElement}`).owlCarousel({
+      loop: obj.loopCarrousel || true,
+      nav: obj.navCarrousel || true,
+      autoplay: obj.autoPlayCarrousel || true,
+      autoplayTimeout: obj.autoPlayCarrouselTime || 0,
+      responsive: obj.responsive
   });
 }
 
