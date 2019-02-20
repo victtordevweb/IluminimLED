@@ -535,16 +535,17 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
     });
 
-    this.carrouselElements({
-      targetElement: '.list-colecoes-ilm',
-      navCarrousel: false
-    },{
-      1024:{
-          items:4,
-          nav:true,
-          loop:false
-      }
-    });
+      this.carrouselElements({
+        targetElement: '.list-colecoes-ilm',
+        navCarrousel: false
+      },{
+        0: {
+          items: 4
+        },
+        500: {
+            items: 4
+        }
+      });
 
     /*$(".list-colecoes-ilm").owlCarousel({
         loop: !0,
