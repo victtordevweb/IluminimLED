@@ -4,23 +4,6 @@ class HomeIluminim {
 
     }
 
-carrouselElements(obj, response){
-    let targetElement  = obj.targetElement;
-    let lopCarrousel   = obj.loopCarrousel || true;
-    let navCarrousel   = obj.navCarrousel || true;
-    let autoPlayCarrousel = obj.autoPlayCarrousel || true;
-    let autoPlayCarrouselTime = obj.autoPlayCarrouselTime || 0;
-
-    $(`${targetElement}`).owlCarousel({
-        loop: lopCarrousel,
-        nav: navCarrousel,
-        autoplay: autoPlayCarrousel,
-        autoplayTimeout: autoPlayCarrouselTime,
-        responsive: response
-    });
-}
-
-
 
 /* funcão banner empresarial */
 bannerEmpresarial(obj){
@@ -535,41 +518,28 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
     });
 
-      this.carrouselElements({
-        targetElement: '.list-colecoes-ilm',
-        navCarrousel: false
-      },{
-        0: {
-          items: 4
-        },
-        500: {
-            items: 4
-        }
-      });
-
-    /*$(".list-colecoes-ilm").owlCarousel({
-        loop: !0,
-        margin: 0,
-        nav: !0,
-        animateOut: !1,
-        smartSpeed: 200,
-        autoplay: !1,
-        autoplayTimeout: 5e3,
-        autoplayHoverPause: !0,
-        responsiveClass: !0,
-        responsive: {
-            0: {
-                items: 4
-            },
-            500: {
-                items: 4
-            }
-        }
-    });*/
+      this.carrouselElements(obj,response);
 
 } 
 };
 /* ~~end~~ funcão colecoes iluminim */
+
+carrouselElements(obj, response){
+  let targetElement  = obj.targetElement;
+  let lopCarrousel   = obj.loopCarrousel || true;
+  let navCarrousel   = obj.navCarrousel || true;
+  let autoPlayCarrousel = obj.autoPlayCarrousel || true;
+  let autoPlayCarrouselTime = obj.autoPlayCarrouselTime || 0;
+
+  $(`${targetElement}`).owlCarousel({
+      loop: lopCarrousel,
+      nav: navCarrousel,
+      autoplay: autoPlayCarrousel,
+      autoplayTimeout: autoPlayCarrouselTime,
+      responsive: response
+  });
+}
+
 
 
 /* funcão tarja informacoes */
