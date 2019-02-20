@@ -29,7 +29,7 @@ bannerEmpresarial(obj){
 
 
 /* funcão colecoes iluminim */
-colecoesIluminim(obj,callback){
+colecoesIluminim(obj,carrousel){
     let colecoes_iluminim_CSS_inline     = obj.style_html;
     let colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
     let colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
@@ -518,7 +518,7 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
     });
 
-    callback();
+    carrousel();
 
 } 
 };
