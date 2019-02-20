@@ -29,7 +29,7 @@ bannerEmpresarial(obj){
 
 
 /* funcão colecoes iluminim */
-colecoesIluminim(obj){
+colecoesIluminim(obj,response){
     let colecoes_iluminim_CSS_inline     = obj.style_html;
     let colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
     let colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
