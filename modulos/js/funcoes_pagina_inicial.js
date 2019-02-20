@@ -524,7 +524,7 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
 };
 /* ~~end~~ funcão colecoes iluminim */
 
-carrouselElements(obj,responsive){
+carrouselElements(obj){
   let targetElement  = obj.targetElement;
   let lopCarrousel   = obj.loopCarrousel || true;
   let navCarrousel   = obj.navCarrousel || true;
@@ -536,7 +536,7 @@ carrouselElements(obj,responsive){
       nav: navCarrousel || true,
       autoplay: autoPlayCarrousel || true,
       autoplayTimeout: autoPlayCarrouselTime || 0,
-      responsive: responsive
+      responsive: obj.responsive
   });
 }
 
