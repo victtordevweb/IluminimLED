@@ -569,7 +569,7 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
     });
 
     /*acoes modal*/
-    $('.saiba-mais-colecoes.jantar').click(function(){
+    $('.iluminim-colecoes .saiba-mais-colecoes').click(function(){
       $(this).parents('.wrapper-box-colecoes').find('.mask-fundo-duvidas').addClass('fade_in');
     });
     $('.mask-fundo-duvidas.colecao .fechar-modal').click(function(){
