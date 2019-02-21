@@ -44,9 +44,19 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         <li>
           <span>LED para Jardim</span>
           <div class="wrapper-box-colecoes">
+
+          <div class="mask-fundo-duvidas colecao" data-id="LED-para-Jardim">
+              <div class="conteudo-ilm">
+
+                  <div class="titulo-duvidas">LED para Jardim<div class="fechar-modal">X</div></div>
+                  <div class="textos-duvidas">Para valorizar o seu projeto paisagístico é muito importante escolher o modelo ideal de LED para jardim. Pensando nisso, separamos ao lado algumas dicas de produtos que são muito utilizados nessa área. Aproveite e <a href="https://blog.iluminim.com.br/entenda-quais-sao-os-melhores-modelos-de-led-para-o-seu-jardim/">entenda</a> quais são as melhores opções de LED para jardim! </div>
+
+              </div>
+          </div>
+
             <div class="ilm-colecoes">
               <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes jardim" style="display:none;">Saiba mais</div>
+                <div class="saiba-mais-colecoes jardim">Saiba mais</div>
                 <a href="/led-para-jardim">
                   <div>
                     <img src="https://cdn.awsli.com.br/257/257163/arquivos/jardimluz03-09.jpg">
@@ -137,9 +147,19 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         <li>
           <span>LED para Quarto</span>
           <div class="wrapper-box-colecoes">
+
+        <div class="mask-fundo-duvidas colecao" data-id="LED-para-Quarto">
+            <div class="conteudo-ilm">
+
+                <div class="titulo-duvidas">LED para Quarto<div class="fechar-modal">X</div></div>
+                <div class="textos-duvidas">A iluminação para quarto de casal pode mudar completamente a sensação de conforto e bem-estar no ambiente. Pensando nisso, selecionamos algumas sugestões de produtos LED para esse espaço. Aproveite e <a href="https://blog.iluminim.com.br/iluminacao-para-quarto-de-casal-confira-4-dicas-e-deixe-o-ambiente-mais-intimo/">confira</a> 4 dicas de iluminação para quarto de casal.</div>
+
+            </div>
+        </div>
+
             <div class="ilm-colecoes">
               <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes quarto" style="display:none;">Saiba mais</div>
+                <div class="saiba-mais-colecoes quarto">Saiba mais</div>
                 <a href="/led-para-dormitorios">
                   <div>
                     <img src="https://cdn.awsli.com.br/257/257163/arquivos/fita_led_bq_quarto-03-09.jpg">
@@ -230,9 +250,19 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         <li>
           <span>LED para Cozinha</span>
           <div class="wrapper-box-colecoes">
+
+          <div class="mask-fundo-duvidas colecao" data-id="LED-para-Cozinha">
+              <div class="conteudo-ilm">
+
+                  <div class="titulo-duvidas">LED para Cozinha<div class="fechar-modal">X</div></div>
+                  <div class="textos-duvidas">A iluminação adequada na cozinha favorece a preparação dos pratos de forma segura e precisa aos olhos. As refeições podem ser ainda mais prazerosas sob a iluminação aconchegante de uma cozinha. Encontre ao lado algumas dicas de produtos LED para aplicação nesse espaço. <a href="https://blog.iluminim.com.br/confira-5-dicas-de-iluminacao-para-cozinha/">Confira</a> 5 dicas de iluminação para cozinha!</div>
+
+              </div>
+          </div>
+
             <div class="ilm-colecoes">
               <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes cozinha" style="display:none;">Saiba mais</div>
+                <div class="saiba-mais-colecoes cozinha">Saiba mais</div>
                 <a href="/led-para-cozinha">
                   <div>
                     <img src="https://cdn.awsli.com.br/257/257163/arquivos/cozinha_branco_frio-03-09.jpg">
@@ -311,9 +341,19 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         <li>
           <span>LED para Sala de Estar</span>
           <div class="wrapper-box-colecoes">
+
+            <div class="mask-fundo-duvidas colecao" data-id="LED-para-Sala-de-Estar">
+              <div class="conteudo-ilm">
+
+                <div class="titulo-duvidas">LED para Sala de Estar<div class="fechar-modal">X</div></div>
+                <div class="textos-duvidas">Uma iluminação bem-feita na sala de estar pode gerar conforto, por meio de um clima agradável e convidativo. Para ajudá-lo no seu projeto separamos ao lado os itens mais vendidos para esse ambiente. Aproveite e <a href="https://blog.iluminim.com.br/7-dicas-para-deixar-a-iluminacao-da-sua-sala-de-estar-incrivel/">confira</a> 7 sugestões para deixar a iluminação da sua sala de estar incrível!</div>
+
+              </div>
+            </div>
+
             <div class="ilm-colecoes">
               <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes estar" style="display:none;">Saiba mais</div>
+                <div class="saiba-mais-colecoes estar">Saiba mais</div>
                 <a href="/led-para-sala-de-estar">
                   <div>
                     <img src="https://cdn.awsli.com.br/257/257163/arquivos/salaaa03-09.jpg">
@@ -404,17 +444,18 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
         <li>
           <span>LED para Sala de Jantar</span>
           <div class="wrapper-box-colecoes">
+
           <div class="mask-fundo-duvidas colecao" data-id="LED-para-Sala-de-Jantar">
           <div class="conteudo-ilm">
-
               <div class="titulo-duvidas">LED para Sala de jantar<div class="fechar-modal">X</div></div>
               <div class="textos-duvidas">Quer iluminar corretamente a sua sala de jantar? Separamos ao lado alguns produtos LED que são muito usados nesse tipo de ambiente para ter uma iluminação eficiente, moderna e decorativa.</div>
 
               </div>
           </div>
+
             <div class="ilm-colecoes">
               <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes jantar" style="display:none;">Saiba mais</div>
+                <div class="saiba-mais-colecoes jantar">Saiba mais</div>
                 <a href="https://www.iluminim.com.br/led-para-sala-de-jantar">
                   <div>
                     <img src="https://cdn.awsli.com.br/257/257163/arquivos/fita_espelho03-09.jpg">
@@ -520,11 +561,23 @@ $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_in
     });
 
     $(".iluminim-colecoes .elementos-colecoes").find("li").click(function() {
-        $(".iluminim-colecoes .elementos-colecoes li").removeClass("active"), $(this).addClass("active");
+        $(".iluminim-colecoes .elementos-colecoes li").removeClass("active");
+        $(this).addClass("active");
         var e = $(this).children("span").text();
         $(".iluminim-colecoes").removeClass("dropdown-ativo");
         $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
     });
+
+    /*acoes modal*/
+    $('.saiba-mais-colecoes.jantar').click(function(){
+      $(this).parents('.wrapper-box-colecoes').find('.mask-fundo-duvidas').addClass('fade_in');
+    });
+    $('.mask-fundo-duvidas.colecao .fechar-modal').click(function(){
+      $(this).parents('.colecao').removeClass('fade_in');
+    });
+
+
+
 
     carrousel();
 
