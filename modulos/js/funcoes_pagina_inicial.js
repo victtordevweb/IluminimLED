@@ -179,7 +179,7 @@ comprePorDepartamentos(obj, carrousel){
                 </div>
         </div>
 </div> 
-</div> `)[comprePorDepartamentos_posicaoFuncao](comprePorDepartamentos_posicaoSeletor);
+</div> `)[comprePorDepartamentos_posicaoFuncao](`${comprePorDepartamentos_posicaoSeletor}`);
   
   if(carrousel){
     carrousel();
