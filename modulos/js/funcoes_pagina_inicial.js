@@ -25,7 +25,168 @@ bannerEmpresarial(obj){
 }
 /* ~~end~~ funcão banner empresarial */
 
+comprePorDepartamentos(obj, carrousel){
+  let comprePorDepartamentos_CSS_inline      = obj.style_html;
+  let comprePorDepartamentos_posicaoFuncao   = obj.posicao.funcao;
+  let comprePorDepartamentos_posicaoSeletor  = obj.posicao.seletor;
 
+  if(comprePorDepartamentos_posicaoSeletor){
+    $(`<div class="compreDepartamentos slider hidden-phone" style="${comprePorDepartamentos_CSS_inline}">
+    <div id="slider-um">
+        <div class="coluna-01">
+            <div class="grandchild">
+                <a href="/refletor-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Super-Led-dpt.png" alt="Refletores Super LED"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/refletor-led-rgb?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Super-Led-RGB-dpt.png" alt="Refletores Super LED RGB"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/refletor-led-verde?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Super-Led-Verde-dpt.png" alt="Refletores Super LED Verde"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/refletor-led-sensor?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Super-Led-Sensor-dpt.png" alt="Refletores Super LED Sensor"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/refletor-microled?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Micro-Led-dpt.png" alt="Refletores MicroLED"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Ultra-Led-Thin-dpt.png" alt="Refletores LED Ultra Thin"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/refletor-micro-led-multifocal?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Micro-Led-Multifocal-dpt.png" alt="Refletores MicroLED Multifocal"></a>
+            </div>
+        </div>
+        <br class="clearboth">
+        <div class="coluna-02">
+                <div class="grandchild">
+                    <a href="/refletor-led-alta-performance?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Performance-Led-dpt.png" alt="Refletores Performance LED"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/refletor-led-recarregavel?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Super-Led-Recarregavel-dpt-25-07-18.png" alt="Refletores Super LED Recarregável"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/refletor-led-solar?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Refletores-Led-Solar-dpt-25-07-18.png" alt="Refletores LED Solar"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/espeto-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Espetos-Led-dpt.png" alt="Espetos LED"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/balizador-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Balizadores-Led-dpt.png" alt="Balizadores LED"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/plafon-led-embutir?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Plafons-Led-Embutir-dpt.png" alt="Plafons LED Embutir"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/plafon-led-sobrepor?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Plafons-Led-Sobrepor-dpt-25-07-18.png" alt="Plafons LED Sobrepor"></a>
+                </div>
+        </div>
+    </div>
+    <div id="slider-dois">
+            <div class="coluna-01">
+                <div class="grandchild">
+                    <a href="/pendente-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Pendentes-Led-dpt.png" alt="Pendentes LED"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/spot-led-quadrado?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Spots-Led-Quadrado-dpt.png" alt="Spots LED Quadrado"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/spot-led-redondo?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Spots-Led-Redondo-dpt.png" alt="Spots LED Redondo"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/spot-led-trilho-eletrificado?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Spots-Led-Trilho-Eletrificado-dpt-25-07-18.png" alt="Spots LED Trilho Eletrificado"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/fita-led-rgb?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Fitas-Led-RGB-dpt.png" alt="Fitas LED RGB"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/fita-led-branca?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Fitas-Led-Branca-dpt.png" alt="Fitas LED Branca"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/fita-led-12v?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Fitas-Led-12W-dpt.png" alt="Fitas LED 12W"></a>
+                </div>
+            </div>
+            <br class="clearboth">
+            <div class="coluna-02">
+                    <div class="grandchild">
+                        <a href="/mangueiras-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Mangueiras-Led-dpt.png" alt="Mangueiras LED"></a>
+                    </div>
+                    <div class="grandchild">
+                        <a href="/fonte-chaveada?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Fontes-Led-dpt.png" alt="Fontes LED"></a>
+                    </div>
+                    <div class="grandchild">
+                        <a href="/acessorios-para-leds?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Acessorios-Led-dpt.png" alt="Acessórios LED"></a>
+                    </div>
+                    <div class="grandchild">
+                        <a href="/arandela-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Arandelas-Led-dpt.png" alt="Arandelas LED"></a>
+                    </div>
+                    <div class="grandchild">
+                        <a href="/lampada-led-bulbo?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Bulbo-dpt.png" alt="Lâmpadas LED Bulbo"></a>
+                    </div>
+                    <div class="grandchild">
+                        <a href="/lampada-led-tubular?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Tubular-dpt.png" alt="Lâmpadas LED Tubular"></a>
+                    </div>
+                    <div class="grandchild">
+                        <a href="/lampada-led-alta-potencia?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Alta-Potencia-dpt-25-07-18.png" alt="Lâmpadas LED Alta Potência"></a>
+                    </div>
+            </div>
+    </div> 
+<div id="slider-dois">
+        <div class="coluna-01">
+            <div class="grandchild">
+                <a href="/lampada-led-milho?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Milho-dpt.png" alt="Lâmpadas LED Milho"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/lampada-led-espiral?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Espiral-dpt.png" alt="Lâmpadas LED Espiral"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/par-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Par-dpt.png" alt="Lâmpadas LED PAR"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/lampada-led-globo-balloon?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Globo-dpt.png" alt="Lâmpadas LED Globo"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/dicroica-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Dicroica-dpt.png" alt="Lâmpadas LED Dicróica"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/halopin-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Halopin-dpt-25-07-18.png" alt="Lâmpadas LED Halopin"></a>
+            </div>
+            <div class="grandchild">
+                <a href="/led-retro?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Vintage-dpt-25-07-18-new.png" alt="Lâmpadas LED Vintage"></a>
+            </div>
+        </div>
+        <br class="clearboth">
+        <div class="coluna-02">
+                <div class="grandchild">
+                    <a href="/vela-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Vela-dpt-25-07-18.png" alt="Lâmpadas LED Vela"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/lampada-led-rgb?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-RGB-dpt.png" alt="Lâmpadas LED RGB"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/luminaria-emergencia-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Lampadas-Led-Emergencia-dpt.png" alt="Lâmpadas LED Emergência"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/luminarias-publicas-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Luminarias-Publica-Led-dpt.png" alt="Luminárias Pública LED"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/luminarias-posto-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Luminarias-Posto-Led-dpt.png" alt="Luminárias Posto LED"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="/camera-seguranca-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Cameras-Seguranca-Led-dpt.png" alt="Câmeras Segurança LED"></a>
+                </div>
+                <div class="grandchild">
+                    <a href="#"><img src="https://cdn.awsli.com.br/257/257163/arquivos/Todos-os-Departamentos-dpt.png" alt="Todos os Departamentos"></a>
+                </div>
+        </div>
+</div> 
+</div> `)[comprePorDepartamentos_posicaoFuncao](comprePorDepartamentos_posicaoSeletor);
+  
+  if(carrousel){
+    carrousel();
+  }
+
+}
+}
 
 
 /* funcão colecoes iluminim */
@@ -34,554 +195,555 @@ colecoesIluminim(obj,carrousel){
     let colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
     let colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
 
-if(colecoes_iluminim_posicaoSeletor){
-$(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_inline}">
-<div class="bread-iluminim-colecoes">
-  <div class="content-breads">
-    <span class="text-principal">Coleções Iluminim: 
-      <span class="acao-elemento-colecoes"></span>
-      <ul class="elementos-colecoes">
-        <li>
-          <span>LED para Jardim</span>
-          <div class="wrapper-box-colecoes">
+  if(colecoes_iluminim_posicaoSeletor){
+  $(`<div class="iluminim-colecoes hidden-phone" style="${colecoes_iluminim_CSS_inline}">
+  <div class="bread-iluminim-colecoes">
+    <div class="content-breads">
+      <span class="text-principal">Coleções Iluminim: 
+        <span class="acao-elemento-colecoes"></span>
+        <ul class="elementos-colecoes">
+          <li>
+            <span>LED para Jardim</span>
+            <div class="wrapper-box-colecoes">
 
-          <div class="mask-fundo-duvidas colecao" data-id="LED-para-Jardim">
-              <div class="conteudo-ilm">
+            <div class="mask-fundo-duvidas colecao" data-id="LED-para-Jardim">
+                <div class="conteudo-ilm">
 
-                  <div class="titulo-duvidas">LED para Jardim<div class="fechar-modal">X</div></div>
-                  <div class="textos-duvidas">Para valorizar o seu projeto paisagístico é muito importante escolher o modelo ideal de LED para jardim. Pensando nisso, separamos ao lado algumas dicas de produtos que são muito utilizados nessa área. Aproveite e <a href="https://blog.iluminim.com.br/entenda-quais-sao-os-melhores-modelos-de-led-para-o-seu-jardim/">entenda</a> quais são as melhores opções de LED para jardim! </div>
+                    <div class="titulo-duvidas">LED para Jardim<div class="fechar-modal">X</div></div>
+                    <div class="textos-duvidas">Para valorizar o seu projeto paisagístico é muito importante escolher o modelo ideal de LED para jardim. Pensando nisso, separamos ao lado algumas dicas de produtos que são muito utilizados nessa área. Aproveite e <a href="https://blog.iluminim.com.br/entenda-quais-sao-os-melhores-modelos-de-led-para-o-seu-jardim/">entenda</a> quais são as melhores opções de LED para jardim! </div>
 
-              </div>
-          </div>
+                </div>
+            </div>
 
-            <div class="ilm-colecoes">
-              <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes jardim">Saiba mais</div>
-                <a href="/led-para-jardim">
-                  <div>
-                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/jardimluz03-09.jpg">
-                  </div>
-                  <div class="textoscolecao">
-                    <span>Descubra</span>
-                    <span>LED para Jardim</span>
-                  </div>
-                </a>
-              </div>
-              <div class="list-colecoes-ilm">
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/refletor-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/refletor-microled?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-micro-led.png">
-                    </a>
-                  </div>
+              <div class="ilm-colecoes">
+                <div class="box-principal-colecoes">
+                  <div class="saiba-mais-colecoes jardim">Saiba mais</div>
+                  <a href="/led-para-jardim">
+                    <div>
+                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/jardimluz03-09.jpg">
+                    </div>
+                    <div class="textoscolecao">
+                      <span>Descubra</span>
+                      <span>LED para Jardim</span>
+                    </div>
+                  </a>
                 </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/refletor-led-rgb?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-item-refletor-super-led-rgb.png">
-                    </a>
+                <div class="list-colecoes-ilm">
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/refletor-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/refletor-microled?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-micro-led.png">
+                      </a>
+                    </div>
                   </div>
-                  <div class="elm-colecao">
-                    <a href="/refletor-led-verde?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-verde.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/refletor-led-rgb?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-item-refletor-super-led-rgb.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/refletor-led-verde?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-verde.png">
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra-thin.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra-thin.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/refletor-led-solar?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-solar.png">
+                      </a>
+                    </div>
                   </div>
-                  <div class="elm-colecao">
-                    <a href="/refletor-led-solar?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-solar.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/refletor-micro-led-slim?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-led-slim-dpt.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/refletor-micro-led-rgb?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-dpt-ok.png">
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/refletor-micro-led-slim?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-led-slim-dpt.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/refletor-led-sensor?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-sensor.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/espeto-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-espeto-led.png">
+                      </a>
+                    </div>
                   </div>
-                  <div class="elm-colecao">
-                    <a href="/refletor-micro-led-rgb?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-dpt-ok.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/refletor-led-sensor?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-sensor.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/espeto-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-espeto-led.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/balizador-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/spot-balizador-led-03-08.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/arandela-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-arandela-led.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/balizador-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/spot-balizador-led-03-08.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/arandela-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-arandela-led.png">
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <span>LED para Quarto</span>
-          <div class="wrapper-box-colecoes">
+          </li>
+          <li>
+            <span>LED para Quarto</span>
+            <div class="wrapper-box-colecoes">
 
-        <div class="mask-fundo-duvidas colecao" data-id="LED-para-Quarto">
+          <div class="mask-fundo-duvidas colecao" data-id="LED-para-Quarto">
+              <div class="conteudo-ilm">
+
+                  <div class="titulo-duvidas">LED para Quarto<div class="fechar-modal">X</div></div>
+                  <div class="textos-duvidas">A iluminação para quarto de casal pode mudar completamente a sensação de conforto e bem-estar no ambiente. Pensando nisso, selecionamos algumas sugestões de produtos LED para esse espaço. Aproveite e <a href="https://blog.iluminim.com.br/iluminacao-para-quarto-de-casal-confira-4-dicas-e-deixe-o-ambiente-mais-intimo/">confira</a> 4 dicas de iluminação para quarto de casal.</div>
+
+              </div>
+          </div>
+
+              <div class="ilm-colecoes">
+                <div class="box-principal-colecoes">
+                  <div class="saiba-mais-colecoes quarto">Saiba mais</div>
+                  <a href="/led-para-dormitorios">
+                    <div>
+                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/fita_led_bq_quarto-03-09.jpg">
+                    </div>
+                    <div class="textoscolecao">
+                      <span>Descubra</span>
+                      <span>LED para Quarto</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="list-colecoes-ilm">
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-sobrepor?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-embutir?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/spot-led-redondo?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/spot-led-quadrado?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/mini-spot-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/mini-spot-led-principal-05-09.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/lampada-led-bulbo?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-buldo-carrousel-16-07.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branco-morno?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-morno.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branco-quente?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-quente.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branca?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/fita-led-rgb?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/corrigfita-led-rgb-colorida-sub-25-07-18.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/pendente-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/lustre-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-lustre-led.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>LED para Cozinha</span>
+            <div class="wrapper-box-colecoes">
+
+            <div class="mask-fundo-duvidas colecao" data-id="LED-para-Cozinha">
+                <div class="conteudo-ilm">
+
+                    <div class="titulo-duvidas">LED para Cozinha<div class="fechar-modal">X</div></div>
+                    <div class="textos-duvidas">A iluminação adequada na cozinha favorece a preparação dos pratos de forma segura e precisa aos olhos. As refeições podem ser ainda mais prazerosas sob a iluminação aconchegante de uma cozinha. Encontre ao lado algumas dicas de produtos LED para aplicação nesse espaço. <a href="https://blog.iluminim.com.br/confira-5-dicas-de-iluminacao-para-cozinha/">Confira</a> 5 dicas de iluminação para cozinha!</div>
+
+                </div>
+            </div>
+
+              <div class="ilm-colecoes">
+                <div class="box-principal-colecoes">
+                  <div class="saiba-mais-colecoes cozinha">Saiba mais</div>
+                  <a href="/led-para-cozinha">
+                    <div>
+                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/cozinha_branco_frio-03-09.jpg">
+                    </div>
+                    <div class="textoscolecao">
+                      <span>Descubra</span>
+                      <span>LED para Cozinha</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="list-colecoes-ilm">
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-sobrepor?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-embutir?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/spot-led-redondo?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/spot-led-quadrado?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/mini-spot-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/mini-spot-led-principal-05-09.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branca?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/lampada-led-tubular?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-tubular-carrousel-16-07.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/lampada-led-bulbo?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-buldo-carrousel-16-07.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/lampada-led-milho?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-milho-carrousel-16-07.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/pendente-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>LED para Sala de Estar</span>
+            <div class="wrapper-box-colecoes">
+
+              <div class="mask-fundo-duvidas colecao" data-id="LED-para-Sala-de-Estar">
+                <div class="conteudo-ilm">
+
+                  <div class="titulo-duvidas">LED para Sala de Estar<div class="fechar-modal">X</div></div>
+                  <div class="textos-duvidas">Uma iluminação bem-feita na sala de estar pode gerar conforto, por meio de um clima agradável e convidativo. Para ajudá-lo no seu projeto separamos ao lado os itens mais vendidos para esse ambiente. Aproveite e <a href="https://blog.iluminim.com.br/7-dicas-para-deixar-a-iluminacao-da-sua-sala-de-estar-incrivel/">confira</a> 7 sugestões para deixar a iluminação da sua sala de estar incrível!</div>
+
+                </div>
+              </div>
+
+              <div class="ilm-colecoes">
+                <div class="box-principal-colecoes">
+                  <div class="saiba-mais-colecoes estar">Saiba mais</div>
+                  <a href="/led-para-sala-de-estar">
+                    <div>
+                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/salaaa03-09.jpg">
+                    </div>
+                    <div class="textoscolecao">
+                      <span>Descubra</span>
+                      <span>LED para Sala de Estar</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="list-colecoes-ilm">
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-sobrepor?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-embutir?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/spot-led-redondo?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/spot-led-quadrado?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/spot-led-trilho-eletrificado?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/spot-led-trilho03-08.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/led-retro?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-vintage-carrousel-16-02.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branco-morno?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-morno.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branco-quente?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-quente.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branca?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/fita-led-rgb?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/corrigfita-led-rgb-colorida-sub-25-07-18.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/pendente-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/lustre-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-lustre-led.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>LED para Sala de Jantar</span>
+            <div class="wrapper-box-colecoes">
+
+            <div class="mask-fundo-duvidas colecao" data-id="LED-para-Sala-de-Jantar">
             <div class="conteudo-ilm">
+                <div class="titulo-duvidas">LED para Sala de jantar<div class="fechar-modal">X</div></div>
+                <div class="textos-duvidas">Quer iluminar corretamente a sua sala de jantar? Separamos ao lado alguns produtos LED que são muito usados nesse tipo de ambiente para ter uma iluminação eficiente, moderna e decorativa.</div>
 
-                <div class="titulo-duvidas">LED para Quarto<div class="fechar-modal">X</div></div>
-                <div class="textos-duvidas">A iluminação para quarto de casal pode mudar completamente a sensação de conforto e bem-estar no ambiente. Pensando nisso, selecionamos algumas sugestões de produtos LED para esse espaço. Aproveite e <a href="https://blog.iluminim.com.br/iluminacao-para-quarto-de-casal-confira-4-dicas-e-deixe-o-ambiente-mais-intimo/">confira</a> 4 dicas de iluminação para quarto de casal.</div>
-
+                </div>
             </div>
-        </div>
 
-            <div class="ilm-colecoes">
-              <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes quarto">Saiba mais</div>
-                <a href="/led-para-dormitorios">
-                  <div>
-                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/fita_led_bq_quarto-03-09.jpg">
-                  </div>
-                  <div class="textoscolecao">
-                    <span>Descubra</span>
-                    <span>LED para Quarto</span>
-                  </div>
-                </a>
-              </div>
-              <div class="list-colecoes-ilm">
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-sobrepor?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-embutir?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
-                    </a>
-                  </div>
+              <div class="ilm-colecoes">
+                <div class="box-principal-colecoes">
+                  <div class="saiba-mais-colecoes jantar">Saiba mais</div>
+                  <a href="https://www.iluminim.com.br/led-para-sala-de-jantar">
+                    <div>
+                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/fita_espelho03-09.jpg">
+                    </div>
+                    <div class="textoscolecao">
+                      <span>Descubra</span>
+                      <span>LED para Sala de Jantar</span>
+                    </div>
+                  </a>
                 </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/spot-led-redondo?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
-                    </a>
+                <div class="list-colecoes-ilm">
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-sobrepor?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/plafon-led-embutir?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
+                      </a>
+                    </div>
                   </div>
-                  <div class="elm-colecao">
-                    <a href="/spot-led-quadrado?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/spot-led-redondo?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/spot-led-quadrado?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/mini-spot-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/mini-spot-led-principal-05-09.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/spot-led-cristal?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-spot-led-cristal-new.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/vela-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-vela-carrousel-16-07.png">
+                      </a>
+                    </div>
                   </div>
-                  <div class="elm-colecao">
-                    <a href="/lampada-led-bulbo?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-buldo-carrousel-16-07.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branco-morno?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-morno.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branco-quente?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-quente.png">
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branco-morno?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-morno.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/fita-led-branca?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/fita-led-rgb?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/corrigfita-led-rgb-colorida-sub-25-07-18.png">
+                      </a>
+                    </div>
                   </div>
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branco-quente?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-quente.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branca?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/fita-led-rgb?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/corrigfita-led-rgb-colorida-sub-25-07-18.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/pendente-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/lustre-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-lustre-led.png">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <span>LED para Cozinha</span>
-          <div class="wrapper-box-colecoes">
-
-          <div class="mask-fundo-duvidas colecao" data-id="LED-para-Cozinha">
-              <div class="conteudo-ilm">
-
-                  <div class="titulo-duvidas">LED para Cozinha<div class="fechar-modal">X</div></div>
-                  <div class="textos-duvidas">A iluminação adequada na cozinha favorece a preparação dos pratos de forma segura e precisa aos olhos. As refeições podem ser ainda mais prazerosas sob a iluminação aconchegante de uma cozinha. Encontre ao lado algumas dicas de produtos LED para aplicação nesse espaço. <a href="https://blog.iluminim.com.br/confira-5-dicas-de-iluminacao-para-cozinha/">Confira</a> 5 dicas de iluminação para cozinha!</div>
-
-              </div>
-          </div>
-
-            <div class="ilm-colecoes">
-              <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes cozinha">Saiba mais</div>
-                <a href="/led-para-cozinha">
-                  <div>
-                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/cozinha_branco_frio-03-09.jpg">
-                  </div>
-                  <div class="textoscolecao">
-                    <span>Descubra</span>
-                    <span>LED para Cozinha</span>
-                  </div>
-                </a>
-              </div>
-              <div class="list-colecoes-ilm">
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-sobrepor?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-embutir?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/spot-led-redondo?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/spot-led-quadrado?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/mini-spot-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/mini-spot-led-principal-05-09.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branca?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/lampada-led-tubular?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-tubular-carrousel-16-07.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/lampada-led-bulbo?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-buldo-carrousel-16-07.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/lampada-led-milho?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-milho-carrousel-16-07.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/pendente-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
-                    </a>
+                  <div class="item-ilm">
+                    <div class="elm-colecao">
+                      <a href="/pendente-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
+                      </a>
+                    </div>
+                    <div class="elm-colecao">
+                      <a href="/lustre-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-lustre-led.png">
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <span>LED para Sala de Estar</span>
-          <div class="wrapper-box-colecoes">
-
-            <div class="mask-fundo-duvidas colecao" data-id="LED-para-Sala-de-Estar">
-              <div class="conteudo-ilm">
-
-                <div class="titulo-duvidas">LED para Sala de Estar<div class="fechar-modal">X</div></div>
-                <div class="textos-duvidas">Uma iluminação bem-feita na sala de estar pode gerar conforto, por meio de um clima agradável e convidativo. Para ajudá-lo no seu projeto separamos ao lado os itens mais vendidos para esse ambiente. Aproveite e <a href="https://blog.iluminim.com.br/7-dicas-para-deixar-a-iluminacao-da-sua-sala-de-estar-incrivel/">confira</a> 7 sugestões para deixar a iluminação da sua sala de estar incrível!</div>
-
-              </div>
-            </div>
-
-            <div class="ilm-colecoes">
-              <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes estar">Saiba mais</div>
-                <a href="/led-para-sala-de-estar">
-                  <div>
-                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/salaaa03-09.jpg">
-                  </div>
-                  <div class="textoscolecao">
-                    <span>Descubra</span>
-                    <span>LED para Sala de Estar</span>
-                  </div>
-                </a>
-              </div>
-              <div class="list-colecoes-ilm">
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-sobrepor?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-embutir?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/spot-led-redondo?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/spot-led-quadrado?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/spot-led-trilho-eletrificado?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/spot-led-trilho03-08.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/led-retro?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-vintage-carrousel-16-02.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branco-morno?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-morno.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branco-quente?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-quente.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branca?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/fita-led-rgb?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/corrigfita-led-rgb-colorida-sub-25-07-18.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/pendente-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/lustre-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-lustre-led.png">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <span>LED para Sala de Jantar</span>
-          <div class="wrapper-box-colecoes">
-
-          <div class="mask-fundo-duvidas colecao" data-id="LED-para-Sala-de-Jantar">
-          <div class="conteudo-ilm">
-              <div class="titulo-duvidas">LED para Sala de jantar<div class="fechar-modal">X</div></div>
-              <div class="textos-duvidas">Quer iluminar corretamente a sua sala de jantar? Separamos ao lado alguns produtos LED que são muito usados nesse tipo de ambiente para ter uma iluminação eficiente, moderna e decorativa.</div>
-
-              </div>
-          </div>
-
-            <div class="ilm-colecoes">
-              <div class="box-principal-colecoes">
-                <div class="saiba-mais-colecoes jantar">Saiba mais</div>
-                <a href="https://www.iluminim.com.br/led-para-sala-de-jantar">
-                  <div>
-                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/fita_espelho03-09.jpg">
-                  </div>
-                  <div class="textoscolecao">
-                    <span>Descubra</span>
-                    <span>LED para Sala de Jantar</span>
-                  </div>
-                </a>
-              </div>
-              <div class="list-colecoes-ilm">
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-sobrepor?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/plafon-led-embutir?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/spot-led-redondo?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/spot-led-quadrado?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/spot-led-cristal?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-spot-led-cristal-new.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/vela-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-lampada-led-vela-carrousel-16-07.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branco-morno?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-morno.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branco-quente?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-quente.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/fita-led-branca?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/fita-led-rgb?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/corrigfita-led-rgb-colorida-sub-25-07-18.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="item-ilm">
-                  <div class="elm-colecao">
-                    <a href="/pendente-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png">
-                    </a>
-                  </div>
-                  <div class="elm-colecao">
-                    <a href="/lustre-led?sort=mais_vendidos">
-                      <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-lustre-led.png">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </span>
+          </li>
+        </ul>
+      </span>
+    </div>
   </div>
-</div>
-</div>`)[colecoes_iluminim_posicaoFuncao](`${colecoes_iluminim_posicaoSeletor}`);
+  </div>`)[colecoes_iluminim_posicaoFuncao](`${colecoes_iluminim_posicaoSeletor}`);
 
 
-    $(".iluminim-colecoes ul.elementos-colecoes > li:nth-child(1)").addClass("active");
+      $(".iluminim-colecoes ul.elementos-colecoes > li:nth-child(1)").addClass("active");
 
-    var armzTexto = $(".iluminim-colecoes .elementos-colecoes > li.active > span").text();
+      var armzTexto = $(".iluminim-colecoes .elementos-colecoes > li.active > span").text();
 
-    $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + armzTexto + " ");
+      $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + armzTexto + " ");
 
-    $(".iluminim-colecoes .content-breads .acao-elemento-colecoes").click(function() {
-        $(this).parents(".iluminim-colecoes").toggleClass("dropdown-ativo")
-    });
+      $(".iluminim-colecoes .content-breads .acao-elemento-colecoes").click(function() {
+          $(this).parents(".iluminim-colecoes").toggleClass("dropdown-ativo")
+      });
 
-    $(".iluminim-colecoes .elementos-colecoes").find("li").click(function() {
-        $(".iluminim-colecoes .elementos-colecoes li").removeClass("active");
-        $(this).addClass("active");
-        var e = $(this).children("span").text();
-        $(".iluminim-colecoes").removeClass("dropdown-ativo");
-        $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
-    });
+      $(".iluminim-colecoes .elementos-colecoes").find("li").click(function() {
+          $(".iluminim-colecoes .elementos-colecoes li").removeClass("active");
+          $(this).addClass("active");
+          var e = $(this).children("span").text();
+          $(".iluminim-colecoes").removeClass("dropdown-ativo");
+          $(".iluminim-colecoes span.acao-elemento-colecoes").text(" " + e + " ");
+      });
 
-    /*acoes modal*/
-    $('.iluminim-colecoes .saiba-mais-colecoes').click(function(){
-      $(this).parents('.wrapper-box-colecoes').find('.mask-fundo-duvidas').addClass('fade_in');
-    });
-    $('.mask-fundo-duvidas.colecao .fechar-modal').click(function(){
-      $(this).parents('.colecao').removeClass('fade_in');
-    });
-
+      /*acoes modal*/
+      $('.iluminim-colecoes .saiba-mais-colecoes').click(function(){
+        $(this).parents('.wrapper-box-colecoes').find('.mask-fundo-duvidas').addClass('fade_in');
+      });
+      $('.mask-fundo-duvidas.colecao .fechar-modal').click(function(){
+        $(this).parents('.colecao').removeClass('fade_in');
+      });
 
 
 
-    carrousel();
+    if(carrousel){
+      carrousel();
+    }
 
-} 
+  } 
 };
 /* ~~end~~ funcão colecoes iluminim */
 
