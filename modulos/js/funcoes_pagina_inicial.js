@@ -806,21 +806,21 @@ static wireFrame(obj, carrousel){
   let wireFrame_CSS_inline     = obj.style_html;
   let wireFrame_posicaoSeletor = obj.posicao.seletor;
 
-  let elementosPrimeiroBloco = obj.primeiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; });
-  let elementosTerceiroBloco = obj.terceiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; });
+  let elementosPrimeiroBloco = obj.primeiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; }).join('');
+  let elementosTerceiroBloco = obj.terceiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; }).join('');
   let bannerGrande = obj.bannerGrande;
 
   let miniBanners = obj.miniBanners.map(item=>{ 
     return `<div class="modulo span4 segunda-fileira-spot">
         <a href="${item.link}"><img src="${item.img}"/></a>
     </div>`;
-  });
+  }).join('');
 
   $(`${wireFrame_posicaoSeletor}`).html(`
   <div class="wire_frame_iluminim" style="${wireFrame_CSS_inline}">
   
   <div class="modulo span4 novos-ilm-lancamentos primeira-fileira">
-     ${elementosPrimeiroBloco.replace(/\,/g, '')}
+     ${elementosPrimeiroBloco}
   </div>
   <div class="modulo span4 oferta-do-dia">
      <div class="carrousel-prods-ledfriday">
@@ -891,14 +891,14 @@ static wireFrame(obj, carrousel){
      </div>
   </div>
   <div class="modulo span4 novos-ilm-lancamentos seg-fileira">
-    ${elementosTerceiroBloco.replace(/\,/g, '')}
+    ${elementosTerceiroBloco}
   </div>
   <div class="modulo span12">
      <a href="${bannerGrande.link}"><img src="${bannerGrande.img}"/></a>
   </div>
     
    <div class="minis-banners-ilm">
-      ${miniBanners.replace(/\,/g, '')}
+      ${miniBanners}
   </div>
   
   </div>
