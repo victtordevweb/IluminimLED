@@ -800,11 +800,137 @@ static tarjaInformacoes(obj){
 }
 /* ~~end tarja_informacoes ~~ */
 
+
+static wireFrame(obj, carrousel){
+  
+  let wireFrame_CSS_inline     = obj.style_html;
+  let wireFrame_posicaoSeletor = obj.posicao.seletor;
+
+  let elementosPrimeiroBloco = obj.primeiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; });
+  let elementosTerceiroBloco = obj.primeiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; });
+  let bannerGrande = obj.bannerGrande;
+
+  let miniBanners = obj.miniBanners.map(item=>{ 
+    return `<div class="modulo span4 segunda-fileira-spot">
+        <a href="${item.link}"><img src="${item.img}"/></a>
+    </div>`;
+  });
+
+  $(`${wireFrame_posicaoSeletor}`).html(`
+  <div class="wire_frame_iluminim" style="${wireFrame_CSS_inline}">
+  
+  <div class="modulo span4 novos-ilm-lancamentos primeira-fileira">
+     ${elementosPrimeiroBloco}
+  </div>
+  <div class="modulo span4 oferta-do-dia">
+     <div class="carrousel-prods-ledfriday">
+        <div class="box-cronometro-lf">
+           <span class="titulo-oferta">Oferta do dia</span>
+           <div class="plg-cronometro">
+              <span></span>
+           </div>
+        </div>
+        <div class="carrousel-prods">
+           <div class="produto_iluminim">
+              <a class="link_prod" href="/luminaria-plafon-18w-led-sobrepor-branco-frio-quadrado">
+                 <div class="desconto_prod">-61%</div>
+                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/PG-Q18WBF-15-01.png"/></div>
+                 <div class="info_prod_iluminim">
+                    <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Luminária Plafon 18w LED Sobrepor Branco Frio</div>
+                    <div class="stars-iluminim-bf"></div>
+                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 75,90</span> <span class="preco_prod">R$ 29,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>2x</b> de <b>R$ 14,94</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 26,91</b> <span class="no_boleto">no boleto</span></span></div>
+                 </div>
+              </a>
+           </div>
+           <div class="produto_iluminim">
+              <a class="link_prod" href="/luminaria-plafon-18w-led-embutir-branco-frio-quadrado">
+                 <div class="desconto_prod">-65%</div>
+                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/PS-Q18WBF-embutir-17-01.jpg"/></div>
+                 <div class="info_prod_iluminim">
+                    <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Luminária Plafon 18w LED Embutir Branco Frio</div>
+                    <div class="stars-iluminim-bf"></div>
+                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 68,64</span><span class="preco_prod">R$ 23,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>2x</b> de <b>R$ 11,94</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 21,51</b> <span class="no_boleto">no boleto</span></span></div>
+                 </div>
+              </a>
+           </div>
+           <div class="produto_iluminim">
+              <a class="link_prod" href="/spot-led-cob-5w-quadrado-embutir-direcionavel-branco-quente">
+                 <div class="desconto_prod">-79%</div>
+                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/COB-Q5WBF_15-01newsps-edit.png"/></div>
+                 <div class="info_prod_iluminim">
+                    <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Spot LED COB 5W Quadrado Embutir Direcionável Branco Quente</div>
+                    <div class="stars-iluminim-bf"></div>
+                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 69,90</span> <span class="preco_prod">R$ 14,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>1x</b> de <b>R$ 14,90</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 13,41</b> <span class="no_boleto">no boleto</span></span></div>
+                 </div>
+              </a>
+           </div>
+           <div class="produto_iluminim">
+              <a class="link_prod" href="/spot-7w-dicroica-led-base-branca">
+                 <div class="desconto_prod">-77%</div>
+                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/D-QAB7WB_15-01news.jpg"/></div>
+                 <div class="info_prod_iluminim">
+                    <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Spot 7W Dicróica LED Direcionavel Base Branca</div>
+                    <div class="stars-iluminim-bf"></div>
+                    <div class="preco_promocional"><span class="preco_apartir">A partir de</span> <span class="preco_prod">R$ 17,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>1x</b> de <b>R$ 17,90</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 16,11</b> <span class="no_boleto">no boleto</span></span></div>
+                 </div>
+              </a>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="modulo span4 novos-ilm-lancamentos seg-fileira">
+    ${elementosTerceiroBloco}
+  </div>
+  <div class="modulo span12">
+     <a href="${bannerGrande.link}"><img src="${bannerGrande.img}"/></a>
+  </div>
+    
+   <div class="minis-banners-ilm">
+      ${miniBanners}
+  </div>
+  
+  </div>
+  `);
+     
+  $('.modulo.span4.novos-ilm-lancamentos.seg-fileira,.modulo.span4.novos-ilm-lancamentos.primeira-fileira,.carrousel-prods-ledfriday .carrousel-prods').slick({
+        lazyLoad: 'ondemand',
+        dots: true,
+        infinite: true,
+        speed: 300,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 5000
+    });
+
+    $('.plg-cronometro > span').yuukCountDown({
+        starttime: '2016/11/12 00:00:00',
+        endtime: '2019/12/30 00:00:00'
+    });
+
+}
+
+
+
+/* move html bloco seo */
 static blocoHTMLAvaliacoesSEO(element,position){   
   $('<div class="conteiner" id="bloco_html_google"></div>')[position](`${element}`);
   $('.texto-seo').prependTo('#bloco_html_google');
   $('.seo-text').appendTo('#bloco_html_google');
 }
-
+/* ~~end move html bloco seo*/
 
 }
