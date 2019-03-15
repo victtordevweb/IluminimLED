@@ -1,12 +1,7 @@
 class HomeIluminim {
 
-    constructor(){
-
-    }
-
-
 /* funcão banner empresarial */
-bannerEmpresarial(obj){
+static bannerEmpresarial(obj){
 
       let banner_empresarial_CSS_inline      = obj.style_html;
       let banner_empresarial_link_imagem     = obj.link_href_imagem;
@@ -25,7 +20,7 @@ bannerEmpresarial(obj){
 }
 /* ~~end~~ funcão banner empresarial */
 
-comprePorDepartamentos(obj, carrousel){
+static comprePorDepartamentos(obj, carrousel){
   let comprePorDepartamentos_CSS_inline      = obj.style_html;
   let comprePorDepartamentos_posicaoFuncao   = obj.posicao.funcao;
   let comprePorDepartamentos_posicaoSeletor  = obj.posicao.seletor;
@@ -185,12 +180,12 @@ comprePorDepartamentos(obj, carrousel){
     carrousel();
   }
 
-}
+  }
 }
 
 
 /* funcão colecoes iluminim */
-colecoesIluminim(obj,carrousel){
+static colecoesIluminim(obj,carrousel){
     let colecoes_iluminim_CSS_inline     = obj.style_html;
     let colecoes_iluminim_posicaoFuncao  = obj.posicao.funcao;
     let colecoes_iluminim_posicaoSeletor = obj.posicao.seletor;
@@ -749,7 +744,7 @@ colecoesIluminim(obj,carrousel){
 
 
 /* funcão tarja informacoes */
-tarjaInformacoes(obj){
+static tarjaInformacoes(obj){
   let tarja_informacoes_CSS_inline     = obj.style_html;
   let tarja_informacoes_posicaoFuncao  = obj.posicao.funcao;
   let tarja_informacoes_posicaoSeletor = obj.posicao.seletor;
@@ -805,7 +800,7 @@ tarjaInformacoes(obj){
 }
 /* ~~end tarja_informacoes ~~ */
 
-blocoHTMLAvaliacoesSEO(element,position){   
+static blocoHTMLAvaliacoesSEO(element,position){   
   $('<div class="conteiner" id="bloco_html_google"></div>')[position](`${element}`);
   $('.texto-seo').prependTo('#bloco_html_google');
   $('.seo-text').appendTo('#bloco_html_google');
