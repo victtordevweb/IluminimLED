@@ -807,7 +807,7 @@ static wireFrame(obj, carrousel){
   let wireFrame_posicaoSeletor = obj.posicao.seletor;
 
   let elementosPrimeiroBloco = obj.primeiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; });
-  let elementosTerceiroBloco = obj.primeiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; });
+  let elementosTerceiroBloco = obj.terceiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; });
   let bannerGrande = obj.bannerGrande;
 
   let miniBanners = obj.miniBanners.map(item=>{ 
@@ -820,7 +820,7 @@ static wireFrame(obj, carrousel){
   <div class="wire_frame_iluminim" style="${wireFrame_CSS_inline}">
   
   <div class="modulo span4 novos-ilm-lancamentos primeira-fileira">
-     ${elementosPrimeiroBloco}
+     ${elementosPrimeiroBloco.replace(/\,/g, '')}
   </div>
   <div class="modulo span4 oferta-do-dia">
      <div class="carrousel-prods-ledfriday">
@@ -891,30 +891,22 @@ static wireFrame(obj, carrousel){
      </div>
   </div>
   <div class="modulo span4 novos-ilm-lancamentos seg-fileira">
-    ${elementosTerceiroBloco}
+    ${elementosTerceiroBloco.replace(/\,/g, '')}
   </div>
   <div class="modulo span12">
      <a href="${bannerGrande.link}"><img src="${bannerGrande.img}"/></a>
   </div>
     
    <div class="minis-banners-ilm">
-      ${miniBanners}
+      ${miniBanners.replace(/\,/g, '')}
   </div>
   
   </div>
   `);
      
-  $('.modulo.span4.novos-ilm-lancamentos.seg-fileira,.modulo.span4.novos-ilm-lancamentos.primeira-fileira,.carrousel-prods-ledfriday .carrousel-prods').slick({
-        lazyLoad: 'ondemand',
-        dots: true,
-        infinite: true,
-        speed: 300,
-        cssEase: 'linear',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 5000
-    });
+  if(carrousel){
+    carrousel();
+    }
 
     $('.plg-cronometro > span').yuukCountDown({
         starttime: '2016/11/12 00:00:00',
