@@ -236,7 +236,175 @@ class TodasAsPaginas{
 
         }();
 
+        const categoria_SpotsLED = function(){
+            let objCat = obj.SpotsLED;
+            $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
+            <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
+            <ul class="wrapper-itens">
+
+                <li><a href="/spot-led-redondo?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDRedondo-03-08.png" alt="categoria spot dicroica led redondo"/></a></li>
+
+                <li><a href="/spot-led-quadrado?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/SpotDicroicaLEDQuadrado-03-08-corrig.png" alt="categoria Sport dicroica led quadrado"/></a></li>
+            
+                <li><a href="/kits-spots-led-dicroica?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/kits-led-spots-03-08.png" alt="categoria kits led spots"/></a></li>
+            
+                <li><a href="/mini-spot-led-redondo?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/mini-spot-led-redondo-03-08.png" alt="categoria mini spot led redondo"/></a></li>
+            
+                <li><a href="/mini-spot-led-quadrado?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/mini-spot-led-quadrado-03-08.png" alt="categoria mini spot led quadrado"/></a></li>
+            
+                <li><a href="/spot-led-trilho-eletrificado?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/spot-led-trilho-categoria-26-11-18.png" alt="categoria spot led trilho"/></a></li>
+            
+                <li><a href="/spot-led-cristal?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-spot-led-cristal-new.png" alt="categoria sport led cristal"/></a></li>
+            
+                <li><a href="/balizador-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/spot-balizador-led-sub-categoria-menu-superior-23-10-001.png" alt="categoria spot balizador led"/></a></li>
+                        
+            </ul>
+            
+            <div class="banner_menu">
+                <a href="${objCat.bannerMenu.link}"><img src="${objCat.bannerMenu.img}">
+            </a>
+            </div>
+        </div>`).insertBefore(objCat.seletor);
+
+        }();
+
+        const categoria_LampadasLED = function(){
+            let objCat = obj.LampadasLED;
+            $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
+            <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
+
+            <ul class="wrapper-itens">
+
+                <li><a href="/lampada-led-bulbo?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-bulbo-ms.png" alt="categoria lampada led bulbo"/></a></li>
+
+                <li><a href="/lampada-led-tubular?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-tubular-ms-01.png" alt="categoria lampada led tubular"/></a></li>
+            
+                <li><a href="/led-retro?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-vintage-ms.png" alt="categoria lampada led vintage"/></a></li>
+            
+                <li><a href="/lampada-led-milho?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-milho-ms.png" alt="categoria lampada led milho"/></a></li>
+            
+                <li><a href="/lampada-led-espiral?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-espiral-ms.png" alt="categoria lampada led espiral"/></a></li>
+            
+                <li><a href="/lampada-led-alta-potencia?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-alta-potencia-ms.png" alt="categoria lampada led alta potencia"/></a></li>
+            
+                <li><a href="/halopin-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-halopin-ms.png" alt="categoria lampada led halopin"/></a></li>
+            
+                <li><a href="/vela-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-vela-ms.png" alt="categoria lampada led vela"/></a></li>
+            
+                <li><a href="/lampada-led-t40?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-T40-ms.png" alt="categoria  lampada led T40"/></a></li>
+            
+                <li><a href="/lampada-led-rgb?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-rgb-ms.png" alt="categoria lampada led rgb"/></a></li>
+            
+                <li><a href="/par-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-par-ms.png" alt="categoria lampada led par"/></a></li>
+            
+                <li><a href="/lampada-led-ar?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-ar-ms.png" alt="categoria lampada led ar"/></a></li>
+            
+                <li><a href="/dicroica-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-dicroica-ms.png" alt="categoria lampada led dicroica"/></a></li>
+            
+                <li><a href="/lampada-led-globo-balloon?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-globo-ms.png" alt="categoria lampada led globo"/></a></li>
+            
+                <li><a href="/lampada-led-bolinha?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-bolinha-ms.png" alt="categoria lampada led bolinha"/></a></li>
+            
+                <li><a href="/lampada-led-wi-fi?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-wifi-ms.png" alt="categoria lampada led wifi"/></a></li>
+            
+                <li><a href="/lampada-led-prato?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-lampada-led-prato-ms.png" alt="categoria lampada led prato"/></a></li>
+            
+                <li><a href="/led-automotivo?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/lampada-led-automotiva-sub-menu-superior.png" alt="categoria lampada led automotiva"/></a></li>
+            
+                <li><a href="/kit-lampadas-de-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/4-12-sub-carrossel-kits-lampadas-led.png" alt="categoria kits lampadas led"/></a></li>
+            
+            </ul>
+            
+            <div class="banner_menu">
+                <a href="${objCat.bannerMenu.link}"><img src="${objCat.bannerMenu.img}">
+            </a>
+            </div>
+        </div>`).insertBefore(objCat.seletor);
+
+        }();
+
+        const categoria_FitasLED = function(){
+            let objCat = obj.FitasLED;
+            $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
+            <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
+
+            <ul class="wrapper-itens">
+                <li><a href="/fita-led-branca?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-frio.png" alt="categoria fita led branco frio"/></a></li>
+
+                <li><a href="/fita-led-branco-morno?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-morno.png" alt="categoria fita led branco morno"/></a></li>
+            
+                <li><a href="/fita-led-branco-quente?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-branco-quente.png" alt="categoria fita led branco quente"/></a></li>
+            
+                <li><a href="/fita-led-rgb?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/corrigfita-led-rgb-colorida-sub-25-07-18.png" alt="categoria fita led rgb colorida sub" /></a></li>
+            
+                <li><a href="/kit-fita-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-kits.png" alt="categoria fita led kits"/></a></li>
+            
+                <li><a href="/fita-led-verde?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-verde.png" alt="categoria fita led verde"/></a></li>
+            
+                <li><a href="/fita-led-vermelha?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-vermelha.png" alt="categoria fita led vermelha" /></a></li>
+            
+                <li><a href="/fita-led-azul?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-azul.png" alt="categoria fita led azul"/></a></li>
+            
+                <li><a href="/fita-led-rosa?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-fita-led-rosa-29-08.png" alt="categoria fita led rosa"/></a></li>
+            
+                <li><a href="/fita-led-ultravioleta?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-menu-fita-led-ultra-violeta-29-08.png" alt="categoria fita led ulta violeta"/></a></li>
+            
+                <li><a href="/fita-led-12v?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-fita-led-25-07-12v.png" alt="categoria fita led 12v"/></a></li>
+            
+                <li><a href="/mangueiras-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/carrousel-led-25-07-mangueira.png" alt="categoria led mangueira"/></a></li>
+            
+            </ul>
+            
+            <div class="banner_menu">
+                <a href="${objCat.bannerMenu.link}"><img src="${objCat.bannerMenu.img}">
+            </a>
+            </div>
+        </div>`).insertBefore(objCat.seletor);
+
+        }();
+
+
+        const categoria_AcessoriosLED = function(){
+            let objCat = obj.AcessoriosLED;
+            $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
+            <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
+
+            <ul class="wrapper-itens">
+
+                <li><a href="/fonte-chaveada-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/fonte-chaveada-led-carr-sub-menu-1-min-two.png" alt="categoria fonte chaveada led"/></a></li>
+                
+                <li><a href="/fonte-convencional?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/fonte-convencional-led-carr-sub-menu-2-min-two.png" alt="categoria fonte convencional led"/></a></li>
+                
+                <li><a href="/chip-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/chip-led-carr-sub-menu-3-min-two.png" alt="categoria chip led"/></a></li>
+                
+                <li><a href="/controles?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/controle-led-carr-sub-menu-4-min-two.png" alt="categoria controle led"/></a></li>
+                
+                <li><a href="/drivers?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/driver-led-carr-sub-menu-5-min-two.png" alt="categoria driver led"/></a></li>
+                
+                <li><a href="/emenda-para-fita-de-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/emenda-led-carr-sub-menu-6-min-two.png" alt="categoria emenda led"/></a></li>	
+                
+                <li><a href="/soquete-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/soquete-led-carr-sub-menu-7-min-two.png" alt="categoria soquete led"/></a></li>
+                
+                <li><a href="/conectores-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/conector-led-carr-sub-menu-8-min-two.png" alt="categoria conector led"/></a></li>
+                
+                <li><a href="/amplificadores-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/amplificador-led-carr-sub-menu-9-min-two.png" alt="categoria amplificador led"/></a></li>
+                
+                <li><a href="/interruptores-tomadas-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/interruptor-tomada-led-carr-sub-menu-10-min-two.png" alt="categoria interruptor tomada led"/></a></li>
+                
+                <li><a href="/dimmer-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/dimmer-led-carr-sub-menu-min-two.png" alt="categoria dimmer led"/></a></li>
+                
+                <li><a href="/cabo-de-energia?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/frios-e-cabos-sub-categoria-menu-superior-min-two.png" alt="categoria frios e cabos"/></a></li>
+                
+            </ul>
+            
+            <div class="banner_menu">
+                <a href="${objCat.bannerMenu.link}"><img src="${objCat.bannerMenu.img}">
+            </a>
+            </div>
+        </div>`).insertBefore(objCat.seletor);
+
+        }();
 
         carrousel();
 
