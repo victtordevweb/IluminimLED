@@ -151,7 +151,7 @@ class TodasAsPaginas{
         const categoria_RefletoresLED = function(){
           
                 $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
-                        <div class="ver-tudo-categoria"><a href="#" class="pull-left link-cat-menu">Ver tudo em <b></b></a></div>
+                        <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
                         <ul class="wrapper-itens">
                     
@@ -264,7 +264,7 @@ class TodasAsPaginas{
 
         carrousel();
 
-        
+
         const ajustMenu = function(){
             function quebraTexto(_this, first, last){
                 $(_this).html(`<span class="__first">${first}</span><span class="__last">${last}</span>`);
