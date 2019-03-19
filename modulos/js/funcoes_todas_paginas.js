@@ -155,102 +155,38 @@ class TodasAsPaginas{
 
                         <ul class="wrapper-itens">
                     
-                        <li>
-                        <a href="/refletor-microled?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-micro-led-new.png" alt="categoria refletor micro led"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-microled?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-micro-led-new.png" alt="categoria refletor micro led"/></a></li>
                     
-                        <li>
-                        <a href="/refletor-micro-led-slim?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-led-slim-03-10.png" alt="categoria refletor micro led slim"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-micro-led-slim?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-led-slim-03-10.png" alt="categoria refletor micro led slim"/></a></li>
                     
-                        <li>
-                        <a href="/refletor-micro-led-rgb?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-rgb-26-10.png" alt="categoria refletor micro slim rgb"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-micro-led-rgb?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-rgb-26-10.png" alt="categoria refletor micro slim rgb"/></a></li>
                     
-                        <li>
-                        <a href="/refletor-micro-led-slim-verde?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-rgb-verde-26-10.png" alt="categoria refletor micro slim rgb verde"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-micro-led-slim-verde?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-rgb-verde-26-10.png" alt="categoria refletor micro slim rgb verde"/></a></li>
                         
-                        <li>
-                        <a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra-thin.png" alt="categoria refletor micro led ultra thin"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra-thin.png" alt="categoria refletor micro led ultra thin"/></a></li>
                         
                         
-                        <li>
-                        <a href="/refletor-microled-ultra?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra.png" alt="categoria refletor micro led ultra"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-microled-ultra?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra.png" alt="categoria refletor micro led ultra"/></a></li>
                         
-                        <li>
-                        <a href="/refletor-micro-led-multifocal?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-multifocal.png" alt="categoria refletor led multifocal"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-micro-led-multifocal?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-multifocal.png" alt="categoria refletor led multifocal"/></a></li>
                         
-                        <li>
-                        <a href="/refletor-led-solar?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-solar.png" alt="categoria refletor micro led solar"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-solar?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-solar.png" alt="categoria refletor micro led solar"/></a></li>
                         
-                        <li>
-                        <a href="/refletor-led-alta-performance?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletor-micro-led-performance-29-10-18.png" alt="categoria refletor micro led performance"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-alta-performance?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletor-micro-led-performance-29-10-18.png" alt="categoria refletor micro led performance"/></a></li>
                         
-                        <li>
-                        <a href="/refletor-led-prismatico-pro?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletor-micro-led-prismatico-29-10-18.png" alt="categoria refletor micro led prismatico"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-prismatico-pro?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletor-micro-led-prismatico-29-10-18.png" alt="categoria refletor micro led prismatico"/></a></li>
                     
-                        <li>
-                        <a href="/refletor-led?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led.png" alt="categoria refletor super led"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led.png" alt="categoria refletor super led"/></a></li>
                             
-                        <li>
-                        <a href="/refletor-led-rgb?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-item-refletor-super-led-rgb.png" alt="categoria refletor super led rgb"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-rgb?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-item-refletor-super-led-rgb.png" alt="categoria refletor super led rgb"/></a></li>
                             
-                        <li>
-                        <a href="/refletor-led-verde?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-verde.png" alt="categoria refletor super led verde"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-verde?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-verde.png" alt="categoria refletor super led verde"/></a></li>
                         
-                        <li>
-                        <a href="/refletor-led-sensor?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-sensor.png" alt="categoria refletor super led sensor"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-sensor?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-sensor.png" alt="categoria refletor super led sensor"/></a></li>
                         
-                        <li>
-                        <a href="/refletor-led-recarregavel?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-led-recarregavel.png" alt="categoria refletor led recarregavel"/>
-                        </a>
-                        </li>
+                        <li><a href="/refletor-led-recarregavel?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-led-recarregavel.png" alt="categoria refletor led recarregavel"/></a></li>
                         
-                        <li>
-                        <a href="/espeto-led?sort=mais_vendidos">
-                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-espeto-led.png" alt="categoria espeto led"/>
-                        </a>
-                        </li>
+                        <li><a href="/espeto-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-espeto-led.png" alt="categoria espeto led"/></a></li>
                         
                         </ul>
                         
@@ -262,8 +198,48 @@ class TodasAsPaginas{
         
         }();
 
-        carrousel();
+        const categoria_LuminariasLED = function(){
+            
+            $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
+            <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
+            <ul class="wrapper-itens">
+        
+            <li><a href="/plafon-led-embutir?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-embutir.png" alt="categoria plafon led embutir"/></a></li>
+
+            <li><a href="/plafon-led-sobrepor?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-plafon-led-sobrepor.png" alt="categoria plafon led sobrepor"/></a></li>
+
+            <li><a href="/arandela-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-arandela-led.png" alt="categoria arandela led"/></a></li>
+
+            <li><a href="/luminaria-emergencia-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07luminariaemergia-led.png" alt="categoria luminária emergência led"/></a></li>
+
+            <li><a href="/luminarias-posto-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-lumi-posto-led.png" alt="categoria luminária posto led"/></a></li>
+
+            <li><a href="/luminarias-publicas-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-lumi-publica-led.png" alt="categoria luminária pública led"/></a></li>
+
+            <li><a href="/luminaria-led-industrial-highbay?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-lumi-hightbay.png" alt="categoria luminária hightbay"/></a></li>
+
+            <li><a href="/luminaria-tartargura-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/menu-superior-sub-carrossel-luminaria-tartaruga-led.png" alt="categoria tartaruga led"/></a></li>
+
+            <li><a href="/luminaria-solar-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/30-07-lumi-solar-led.png" alt="categoria luminária solar led"/></a></li>
+
+            <li><a href="/pendente-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-pendente-led.png" alt="categoria pendente led"/></a></li>
+
+            <li><a href="/lustre-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-carrousel-lustre-led.png" alt="categoria lustre led"/></a></li>
+            
+            </ul>
+            
+            <div class="banner_menu">
+                <a href="${obj.LuminariasLED.bannerMenu.link}"><img src="${obj.LuminariasLED.bannerMenu.img}">
+            </a>
+            </div>
+        </div>`).insertBefore(obj.LuminariasLED.seletor);
+
+        }();
+
+
+
+        carrousel();
 
         const ajustMenu = function(){
             function quebraTexto(_this, first, last){
