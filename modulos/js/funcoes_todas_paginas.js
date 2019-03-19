@@ -1,21 +1,6 @@
 class TodasAsPaginas{
 
     static menuSuperior(obj, carrousel){
-        const ajustMenu = function(){
-            function quebraTexto(_this, first, last){
-                $(_this).html(`<span class="__first">${first}</span><span class="__last">${last}</span>`);
-            }
-            $('.menu.superior .nivel-um > li > a >.titulo').each(function(){
-                let txt = $(this).text()
-                if ( txt.split(' ').length > 2 ) {
-                    quebraTexto(this, txt.split(' ',2).join(' '), txt.split(' ',3)[2]);
-                }else {
-                    quebraTexto(this, txt.split(' ')[0], txt.split(' ')[1]);
-                }
-            });
-        }();
-
-
          const categoria_TodosOsDepartamentos = function(){
             $(`
                 <div class="todos_departamentos __personalizado">
@@ -166,6 +151,8 @@ class TodasAsPaginas{
         const categoria_RefletoresLED = function(){
           
                 $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
+                        <div class="ver-tudo-categoria"><a href="#" class="pull-left link-cat-menu">Ver tudo em <b></b></a></div>
+
                         <ul class="wrapper-itens">
                     
                         <li>
@@ -276,6 +263,29 @@ class TodasAsPaginas{
         }();
 
         carrousel();
+
+        
+        const ajustMenu = function(){
+            function quebraTexto(_this, first, last){
+                $(_this).html(`<span class="__first">${first}</span><span class="__last">${last}</span>`);
+            }
+            $('.menu.superior .nivel-um > li > a >.titulo').each(function(){
+                let txt = $(this).text()
+                if ( txt.split(' ').length > 2 ) {
+                    quebraTexto(this, txt.split(' ',2).join(' '), txt.split(' ',3)[2]);
+                }else {
+                    quebraTexto(this, txt.split(' ')[0], txt.split(' ')[1]);
+                }
+            });
+
+            $('.ver-tudo-categoria').each(function(){
+                let a = $(this).parents('.__personalizado.__carrousel').siblings('a');
+                let aHref = a.attr('href')
+                let aTitle = a.attr('title');
+                $(this).children('a').attr('href',aHref).children('b').text(aTitle);
+            });
+        }();
+
     }
 
     static reorganizacaoDoRdp(){
