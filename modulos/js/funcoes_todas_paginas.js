@@ -253,7 +253,7 @@ class TodasAsPaginas{
                 }
             });
 
-            $('.ver-tudo-categoria').each(function(){
+            $('.menu.superior .ver-tudo-categoria').each(function(){
                 let a = $(this).parents('.__personalizado.__carrousel').siblings('a');
                 let aHref = a.attr('href')
                 let aTitle = a.attr('title');
