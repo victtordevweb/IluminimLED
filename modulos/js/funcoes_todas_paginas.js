@@ -1,7 +1,21 @@
 class TodasAsPaginas{
 
     static menuSuperior(obj, carrousel){
+        const ajustMenu = function(){
+            function quebraTexto(_this, first, last){
+                $(_this).html(`<span class="__first">${first}</span><span class="__last">${last}</span>`);
+            }
+            $('.menu.superior .nivel-um > li > a >.titulo').each(function(){
+                let txt = $(this).text()
+                if ( txt.split(' ').length > 2 ) {
+                    quebraTexto(this, txt.split(' ',2).join(' '), txt.split(' ',3)[2]);
+                }else {
+                    quebraTexto(this, txt.split(' ')[0], txt.split(' ')[1]);
+                }
+            });
+        }();
 
+        
          const categoria_TodosOsDepartamentos = function(){
             $(`
                 <div class="todos_departamentos __personalizado">
@@ -262,7 +276,6 @@ class TodasAsPaginas{
         }();
 
         carrousel();
-        console.log('executado atualizado');
     }
 
     static reorganizacaoDoRdp(){
