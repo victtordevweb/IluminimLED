@@ -146,7 +146,7 @@ class TodasAsPaginas{
                 </div>
                 
                 </div>
-                `).appendTo('.menu.superior li.categoria-id-3048870.borda-principal');
+                `).appendTo(obj.TodosOsDepartamentos.seletor);
         }();
 
         const categoria_RefletoresLED = function(){
@@ -254,10 +254,10 @@ class TodasAsPaginas{
                         </ul>
                         
                         <div class="banner_menu">
-                            <a href="/refletor-micro-led-slim-200w-branco-frio"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletores-RSPM-200WBF-sub.png">
+                            <a href="${obj.RefletoresLED.bannerMenu.link}"><img src="${obj.RefletoresLED.bannerMenu.img}">
                         </a>
                         </div>
-                    </div>`).insertBefore('.menu.superior li.categoria-id-3048873.com-filho.borda-principal > .nivel-dois');
+                    </div>`).insertBefore(obj.RefletoresLED.seletor);
         
         }();
 
