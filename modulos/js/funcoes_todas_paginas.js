@@ -149,7 +149,7 @@ class TodasAsPaginas{
         }();
 
         const categoria_RefletoresLED = function(){
-          
+                let obj = obj.RefletoresLED;
                 $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
                         <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
@@ -164,7 +164,6 @@ class TodasAsPaginas{
                         <li><a href="/refletor-micro-led-slim-verde?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-rgb-verde-26-10.png" alt="categoria refletor micro slim rgb verde"/></a></li>
                         
                         <li><a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra-thin.png" alt="categoria refletor micro led ultra thin"/></a></li>
-                        
                         
                         <li><a href="/refletor-microled-ultra?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra.png" alt="categoria refletor micro led ultra"/></a></li>
                         
@@ -191,15 +190,15 @@ class TodasAsPaginas{
                         </ul>
                         
                         <div class="banner_menu">
-                            <a href="${obj.RefletoresLED.bannerMenu.link}"><img src="${obj.RefletoresLED.bannerMenu.img}">
+                            <a href="${obj.bannerMenu.link}"><img src="${obj.bannerMenu.img}">
                         </a>
                         </div>
-                    </div>`).insertBefore(obj.RefletoresLED.seletor);
+                    </div>`).insertBefore(obj.seletor);
         
         }();
 
         const categoria_LuminariasLED = function(){
-            
+            let obj = obj.LuminariasLED;
             $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
             <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
@@ -230,10 +229,10 @@ class TodasAsPaginas{
             </ul>
             
             <div class="banner_menu">
-                <a href="${obj.LuminariasLED.bannerMenu.link}"><img src="${obj.LuminariasLED.bannerMenu.img}">
+                <a href="${obj.bannerMenu.link}"><img src="${obj.bannerMenu.img}">
             </a>
             </div>
-        </div>`).insertBefore(obj.LuminariasLED.seletor);
+        </div>`).insertBefore(obj.seletor);
 
         }();
 
