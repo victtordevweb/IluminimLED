@@ -905,7 +905,7 @@ static wireFrame(obj, carrousel){
   `);
      
   if(carrousel){
-    carrousel();
+      carrousel();
     }
 
     $('.plg-cronometro > span').yuukCountDown({

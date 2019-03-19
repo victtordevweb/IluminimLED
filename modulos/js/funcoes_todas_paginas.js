@@ -1,48 +1,313 @@
-const Script_Rodape_Desktop_TODAS = function(){
-   
+class TodasAsPaginas{
+
+    static menuSuperior(obj, carrousel){
+
+         const categoria_TodosOsDepartamentos = function(){
+            $(`
+                <div class="todos_departamentos __personalizado">
+                <div class="wrap_categorias">
+                        <div class="nav-column">
+                        <a href="/refletores-de-led?sort=mais_vendidos"><h3>Refletores LED</h3></a>
+                            <ul>
+                            <li><a href="/refletor-led?sort=mais_vendidos">Refletor LED Branco</a></li>
+                            <li><a href="/refletor-led-rgb">Refletor LED Colorido</a></li>
+                            <li><a href="https://www.iluminim.com.br/refletor-led-verde">Refletor LED Verde</a></li>
+                            <li><a href="/refletor-microled?sort=mais_vendidos">Refletor Micro LED</a></li>
+                            <li><a href="/refletor-microled?sort=mais_vendidos">Refletor Micro LED Slim</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Ultra Thin</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Ultra</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Multifocal</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Solar</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Performance</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Prismático</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor LED Sensor</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Refletor LED Recarregável</a></li>
+                            <li><a href="/refletor-led-smd-ultra-thin">Todos Modelos</a></li>
+                            </ul>
+                                    
+                        <a href="/fitas-de-led?sort=mais_vendidos"><h3>Fitas LED</h3></a>
+                            <ul>
+                            <li><a href="/fita-led-rgb">Fitas LED Coloridas</a></li>
+                            <li><a href="/fita-led-branca">Fitas LED Branco</a></li>
+                            <li><a href="/kit-fita-led">Kits Fitas LED</a></li>
+                            <li><a href="/mangueiras-led">Mangueiras LED</a></li>
+                            <li><a href="/fitas-de-led">Todos Modelos</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-column">
+                        <a href="/luminarias-led?sort=mais_vendidos"><h3>Luminárias LED</h3></a>
+                            <ul>
+                                <li><a href="/plafon-led-sobrepor?sort=mais_vendidos">Plafon LED Sobrepor</a></li>
+                                <li><a href="/plafon-led-embutir?sort=mais_vendidos">Plafon LED Embutir</a></li>
+                                <li><a href="/luminarias-publicas-led">Luminárias Públicas LED</a></li>
+                                <li><a href="/luminaria-emergencia-led">Luminárias Emergência LED</a></li>
+                                <li><a href="/pendente-led?sort=mais_vendidos" class="tag-novo">Pendentes LED</a></li>
+                                <li><a href="/arandela-led">Arandelas LED</a></li>
+                                <li><a href="/arandela-led">Lustre LED</a></li>
+                                <li><a href="/arandela-led">Abajur LED</a></li>
+                                <li><a href="/luminarias-led">Todos Modelos</a></li>
+                            </ul>
+                                    
+                        <a href="/spots?sort=mais_vendidos"><h3>Spots Dicróica LED</h3></a>
+                            <ul>
+                            <li><a href="/spot-led-quadrado ">Spot LED Quadrado</a></li>
+                            <li><a href="/spot-led-redondo">Spot LED Redondo</a></li>
+                            <li><a href="/spot-led-trilho-eletrificado">Spot LED Trilho</a></li>
+                            <li><a href="/balizador-led">Balizadores LED</a></li>
+                            <li><a href="/spots?sort=mais_vendidos">Todos Modelos</a></li>	
+                            </ul>
+                        
+                        <a href=""><h3>Espetos LED</h3></a>
+                            <ul>
+                            <li><a href="">Todos Modelos</a></li>
+                            </ul>
+                        </div>   
+
+                        <div class="nav-column">
+                        <a href="/lampada-led?sort=mais_vendidos"><h3>Lâmpadas LED</h3></a>
+                            <ul>
+                            <li><a href="/lampada-led-milho">Lampada LED Milho</a></li>
+                            <li><a href="/lampada-led-bulbo">Lampada LED Bulbo </a></li>
+                            <li><a href="/lampada-led-tubular">Lampada LED Tubular</a></li>
+                            <li><a href="/vela-led">Lampada LED Vela</a></li>
+                            <li><a href="/par-led">Lampada LED PAR</a></li>
+                            <li><a href="/halopin-led">Lampada LED Halopin</a></li>
+                            <li><a href="/dicroica-led">Lampada LED Dicroica</a></li>
+                            <li><a href="/led-retro">Lampada LED Vintage</a></li>
+                            <li><a href="/lampada-led-alta-potencia">Lampada LED Alta Potência</a></li>
+                            <li><a href="/lampada-led-espiral">Lâmpada LED Espiral</a></li>
+                            <li><a href="/lampada-led-12w-rgb-com-caixa-de-som-bluetooth-e-controle-remoto">Lâmpada LED RGB</a></li>
+                            <li><a href="/lampada-led-bolinha">Lampada LED Bolinha</a></li>
+                            <li><a href="/lampada-led-wi-fi">Lampada LED Wi-fi</a></li> 
+                            <li><a href="/lampada-led-wi-fi">Lampada LED Globo</a></li> 
+                            <li><a href="/lampada-led-wi-fi">Lampada LED AR</a></li> 
+                            <li><a href="/lampada-led-wi-fi">Lampada LED T40</a></li> 
+                            <li><a href="/lampada-led-wi-fi">Lampada LED Automotiva</a></li>
+                            </ul>         
+                        </div>
+                
+                
+                        <div class="nav-column">
+                        <a href="/acessorios-para-leds?sort=mais_vendidos"><h3>Acessórios de Reposição</h3></a>
+                            <ul>
+                                <li><a href="">Fonte Chaveada</a></li>
+                                <li><a href="">Fonte Convencional</a></li>
+                                <li><a href="">Chips LED</a></li>
+                                <li><a href="">Drivers LED</a></li>
+                                <li><a href="">Soquetes LED</a></li>
+                                <li><a href="">Conectores LED</a></li>
+                                <li><a href="">Emendas LED</a></li>
+                                <li><a href="">Todos modelos</a></li>
+                            </ul>
+                        
+                        <a href="/kits-especiais?sort=mais_vendido"><h3>Câmeras Segurança LED</h3></a>
+                            <ul>
+                                <li><a href="#">Câmeras LED Bullet</a></li>
+                                <li><a href="#">Câmeras LED Dome</a></li>
+                                <li><a href="#">Câmeras LED Wi-Fi</a></li>
+                                <li><a href="#">DVR Stand Alone</a></li>
+                                <li><a href="#">Todos Modelos</a></li>
+                            </ul>
+                        
+                        <a href="/compre-por-ambiente?sort=mais_vendidos"><h3>Festa LED</h3></a>
+                        <ul>
+                            <li><a href="#">Todos os Modelos</a></li>
+                        </ul>
+                        </div>
+                    
+                    <div class="nav-column">
+                        <a href="/refletores-de-led?sort=mais_vendidos"><h3>Kits LED</h3></a>
+                            <ul>
+                            <li><a href="#">Kit Refletores Holofotes LED</a></li>
+                            <li><a href="#">Kit Luminárias Plafons LED</a></li>
+                            <li><a href="#">Kit Emergência LED</a></li>
+                            <li><a href="#">Kit Spots Dicróica LED</a></li>
+                            <li><a href="#">Kit Balizadores LED</a></li>
+                            <li><a href="#">Kit Lampadas LED</a></li>
+                            <li><a href="#">Kit Espetos LED</a></li>
+                            <li><a href="#">Kit Fitas LED</a></li>
+                            <li><a href="#">Todos Kits</a></li>
+                            </ul>
+                                    
+                        <a href="/fitas-de-led?sort=mais_vendidos"><h3>Compre por Ambiente</h3></a>
+                            <ul>
+                            <li><a href="/led-para-sala-de-estar">LED para Sala de Estar</a></li>
+                            <li><a href="/led-para-escritorio">LED para Escritório</a></li>
+                            <li><a href="/led-para-banheiros">LED para Banheiro</a></li>
+                            <li><a href="/led-para-cozinha">LED para Cozinha</a></li>
+                            <li><a href="/led-para-dormitorios">LED para Quarto</a></li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="bannerdepartamentos">
+                    <img src="https://cdn.awsli.com.br/930/930730/arquivos/bannercat.png">
+                </div>
+                
+                </div>
+                `).appendTo('.menu.superior li.categoria-id-3048870.borda-principal');
+        }();
+
+        const categoria_RefletoresLED = function(){
+          
+                $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
+                        <ul class="wrapper-itens">
+                    
+                        <li>
+                        <a href="/refletor-microled?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-micro-led-new.png" alt="categoria refletor micro led"/>
+                        </a>
+                        </li>
+                    
+                        <li>
+                        <a href="/refletor-micro-led-slim?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-led-slim-03-10.png" alt="categoria refletor micro led slim"/>
+                        </a>
+                        </li>
+                    
+                        <li>
+                        <a href="/refletor-micro-led-rgb?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-rgb-26-10.png" alt="categoria refletor micro slim rgb"/>
+                        </a>
+                        </li>
+                    
+                        <li>
+                        <a href="/refletor-micro-led-slim-verde?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/refletor-micro-slim-rgb-verde-26-10.png" alt="categoria refletor micro slim rgb verde"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra-thin.png" alt="categoria refletor micro led ultra thin"/>
+                        </a>
+                        </li>
+                        
+                        
+                        <li>
+                        <a href="/refletor-microled-ultra?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-ultra.png" alt="categoria refletor micro led ultra"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/refletor-micro-led-multifocal?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-multifocal.png" alt="categoria refletor led multifocal"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/refletor-led-solar?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-micro-led-solar.png" alt="categoria refletor micro led solar"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/refletor-led-alta-performance?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletor-micro-led-performance-29-10-18.png" alt="categoria refletor micro led performance"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/refletor-led-prismatico-pro?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletor-micro-led-prismatico-29-10-18.png" alt="categoria refletor micro led prismatico"/>
+                        </a>
+                        </li>
+                    
+                        <li>
+                        <a href="/refletor-led?sort=mais_vendidos">'+
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led.png" alt="categoria refletor super led"/>
+                        </a>
+                        </li>
+                            
+                        <li>
+                        <a href="/refletor-led-rgb?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-item-refletor-super-led-rgb.png" alt="categoria refletor super led rgb"/>
+                        </a>
+                        </li>
+                            
+                        <li>
+                        <a href="/refletor-led-verde?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-verde.png" alt="categoria refletor super led verde"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/refletor-led-sensor?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led-sensor.png" alt="categoria refletor super led sensor"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/refletor-led-recarregavel?sort=mais_vendidos">'+
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-led-recarregavel.png" alt="categoria refletor led recarregavel"/>
+                        </a>
+                        </li>
+                        
+                        <li>
+                        <a href="/espeto-led?sort=mais_vendidos">
+                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-espeto-led.png" alt="categoria espeto led"/>
+                        </a>
+                        </li>
+                        
+                        </ul>
+                        
+                        <div class="banner_menu">
+                            <a href="/refletor-micro-led-slim-200w-branco-frio"><img src="https://cdn.awsli.com.br/257/257163/arquivos/sub-categoria-refletores-RSPM-200WBF-sub.png">
+                        </a>
+                        </div>
+                    </div>`).insertBefore('.menu.superior li.categoria-id-3048873.com-filho.borda-principal > .nivel-dois');
+        
+        }();
+
+        carrousel();
+    }
+
+    static reorganizacaoDoRdp(){
         $('#barraNewsletter .componente .texto-newsletter').html(`
             <div class="newtxt">Cadastre seu e-mail
         <span>e receba descontos e novidades</span></div>
         `);
         
-            $(`
-                <div class="contatos_rdp">
-                    <div class="conteiner">
-                        <div class="hr_compra">
-                            <span class="tt-ct-rdp">COMPRE POR TELEFONE</span>
-                            <span class="subtt-hr-rdp">Atendemos de seg á sex, das 9h ás 18h</span>
-                        </div>
-                        
-                        <div class="number_ilm sp"><a href="">(11) 4210-0494</a></div>
-                        <div class="number_ilm rj"><a href="">(21) 2042-0247</a></div>
-                        <div class="number_ilm rs"><a href="">(51) 3557-5070</a></div>
-                        <div class="number_ilm rs-2"><a href="">0800 580 0332</a></div>
-                        <div class="number_ilm all"><a href="#ModalRodape" data-toggle="modal" data-target="#ModalRodape">VEJA MAIS</a></div>
-                        
+        $(`
+            <div class="contatos_rdp">
+                <div class="conteiner">
+                    <div class="hr_compra">
+                        <span class="tt-ct-rdp">COMPRE POR TELEFONE</span>
+                        <span class="subtt-hr-rdp">Atendemos de seg á sex, das 9h ás 18h</span>
                     </div>
+                    
+                    <div class="number_ilm sp"><a href="">(11) 4210-0494</a></div>
+                    <div class="number_ilm rj"><a href="">(21) 2042-0247</a></div>
+                    <div class="number_ilm rs"><a href="">(51) 3557-5070</a></div>
+                    <div class="number_ilm rs-2"><a href="">0800 580 0332</a></div>
+                    <div class="number_ilm all"><a href="#ModalRodape" data-toggle="modal" data-target="#ModalRodape">VEJA MAIS</a></div>
+                    
                 </div>
-            `).insertBefore('#rodape');
+            </div>
+        `).insertBefore('#rodape');
 
-        $('.links-rodape-categorias ul').html(''+
-        '<li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>'+
-        '<li class="refletores-micro-led-mt"><a href="/refletor-microled?sort=mais_vendidos">Refletores Micro LED</a></li>'+
-        '<li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>'+
-        '<li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>'+
-        '<li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>'+
-        '<li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>'+
-        '<li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>'+
-        '<li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>'+
-        '<li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>'+
-        '<li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>'+
-        '<li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>'+
-        '<li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>'+
-        '<li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>'+
-        '<li class="festa-led"><a href="/iluminacao-para-festa?sort=mais_vendidos">Festa LED</a></li>'+
-        '<li class="automotivo-mt"><a href="/led-automotivo?sort=mais_vendidos">Automotivo LED</a></li>'+
-        '<li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits LED</a></li>'+
-        '<li class="lancamentos-led"><a href="/lancamentos-led?sort=mais_vendidos">Lançamentos LED</a></li>'+
-        '<li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>'+
-        '');
+        $('.links-rodape-categorias ul').html(`
+            <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
+            <li class="refletores-micro-led-mt"><a href="/refletor-microled?sort=mais_vendidos">Refletores Micro LED</a></li>
+            <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
+            <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
+            <li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>
+            <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
+            <li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>
+            <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
+            <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
+            <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
+            <li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
+            <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
+            <li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>
+            <li class="festa-led"><a href="/iluminacao-para-festa?sort=mais_vendidos">Festa LED</a></li>
+            <li class="automotivo-mt"><a href="/led-automotivo?sort=mais_vendidos">Automotivo LED</a></li>
+            <li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits LED</a></li>
+            <li class="lancamentos-led"><a href="/lancamentos-led?sort=mais_vendidos">Lançamentos LED</a></li>
+            <li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
+        `);
         
         $('#rodape .institucional .links-rodape-paginas,#rodape .institucional .sobre-loja-rodape').wrapAll('<div class="new_box_ilm span8"></div>');
         
@@ -54,27 +319,27 @@ const Script_Rodape_Desktop_TODAS = function(){
         
         $('#rodape .new_box_ilm.span8 .span4.sobre-loja-rodape').removeClass('span4').addClass('span6');
         
-        $('<div class="span12 wrapper-dois">'+
-        '<div class="rodape-atendimento span5">'+
-            '<span class="titulo">Atendimento</span>'+
-            '<ul>'+
-            '<li><a href="https://www.iluminim.com.br/pagina/central-de-atendimento.html">Central online</a></li>'+
-            '<li><a href="https://www.iluminim.com.br/pagina/politica-de-troca.html">Trocas e devoluções</a></li>'+
-        '<li><a href="/conta/pedido/listar">Meus pedidos</a></li>'+
-        '<li><a href="https://www.iluminim.com.br/pagina/iluminim-e-confiavel.html">Iluminim é confiável?</a></li>'+
-            '</ul>'+
-        '</div>'+
-        '<div class="rodape-atendimento span5">'+
-            '<span class="titulo">Iluminim Empresas</span>'+
-            '<ul>'+
-            '<li><a href="https://www.iluminim.com.br/pagina/seja-nosso-revendedor-led.html">Venda para revendas</a></li>'+
-            '<li><a href="https://www.iluminim.com.br/pagina/atendimento-empresarial.html">Venda para empresas</a></li>'+
-            '<li><a href="https://www.iluminim.com.br/pagina/led-para-condominio.html">Venda para condomínios</a></li>'+
-            '<li><a href="/pagina/cadastro-de-arquiteto.html">Venda para arquitetos</a></li>'+
-        '<li><a href="https://www.iluminim.com.br/pagina/seja-nosso-fornecedor.html">Seja um fornecedor</a></li>'+
-            '</ul>'+
-        '</div>'+
-        '</div>').insertAfter('#rodape .new_box_ilm > .wrapper-um');
+        $(`<div class="span12 wrapper-dois">
+            <div class="rodape-atendimento span5">
+                <span class="titulo">Atendimento</span>
+                <ul>
+                <li><a href="https://www.iluminim.com.br/pagina/central-de-atendimento.html">Central online</a></li>
+                <li><a href="https://www.iluminim.com.br/pagina/politica-de-troca.html">Trocas e devoluções</a></li>
+            <li><a href="/conta/pedido/listar">Meus pedidos</a></li>
+            <li><a href="https://www.iluminim.com.br/pagina/iluminim-e-confiavel.html">Iluminim é confiável?</a></li>
+                </ul>
+            </div>
+            <div class="rodape-atendimento span5">
+                <span class="titulo">Iluminim Empresas</span>
+                <ul>
+                <li><a href="https://www.iluminim.com.br/pagina/seja-nosso-revendedor-led.html">Venda para revendas</a></li>
+                <li><a href="https://www.iluminim.com.br/pagina/atendimento-empresarial.html">Venda para empresas</a></li>
+                <li><a href="https://www.iluminim.com.br/pagina/led-para-condominio.html">Venda para condomínios</a></li>
+                <li><a href="/pagina/cadastro-de-arquiteto.html">Venda para arquitetos</a></li>
+            <li><a href="https://www.iluminim.com.br/pagina/seja-nosso-fornecedor.html">Seja um fornecedor</a></li>
+                </ul>
+            </div>
+            </div>`).insertAfter('#rodape .new_box_ilm > .wrapper-um');
         
         $('#rodape .institucional .links-rodape.links-rodape-paginas ul > li a:contains("Quem somos")').html('Sobre a Iluminim');
         $('#rodape .links-rodape-paginas ul li a:contains("Cupons de Desconto")').html("Cupons e descontos");
@@ -97,34 +362,33 @@ const Script_Rodape_Desktop_TODAS = function(){
         
         $('<div class="mais-inf-rdp"><span>Mais informações</span></div>').insertAfter('#rodape .pagamento-selos');
         $('#rodape .institucional, #rodape .pagamento-selos').wrapAll('<div class="iluminim-inf-rdp"></div>');
+
+        function actionStorage(_this ,status, text){
+            localStorage.setItem('rdpilm',status);
+            console.log(localStorage.getItem('rdpilm'));
+            $(_this).html(text);
+        }
+        function toggleAction(func, text){
+            $('.mais-inf-rdp span')[func]('active');
+            $('.mais-inf-rdp span').parents('.mais-inf-rdp').siblings('.iluminim-inf-rdp')[func]('on');
+            $('.mais-inf-rdp span').html(text);
+        }
+
         $('.mais-inf-rdp span').click(function(){
             $(this).toggleClass('active');
                 $(this).parents('.mais-inf-rdp').siblings('.iluminim-inf-rdp').toggleClass('on');
             
                 if ( $(this).html() == "Mais informações") {
-                    
-                localStorage.setItem('rdpilm','ativado');
-                console.log(localStorage.getItem('rdpilm'));
-                $(this).html('Menos informações');
-                    
+                    actionStorage(this, 'ativado', 'Menos informações');            
                 } else {
-                    localStorage.setItem('rdpilm','desativado');
-                    console.log(localStorage.getItem('rdpilm'));
-                    $(this).html('Mais informações');
-        
+                    actionStorage(this, 'desativado', 'Mais informações');
                 }
         });
 
         if ( localStorage.getItem('rdpilm') == 'ativado') {
-            
-            $('.mais-inf-rdp span').addClass('active');
-            $('.mais-inf-rdp span').parents('.mais-inf-rdp').siblings('.iluminim-inf-rdp').addClass('on');
-            $('.mais-inf-rdp span').html('Menos informações');
-        
+            toggleAction('addClass', 'Menos informações');
         } else {
-            $('.mais-inf-rdp span').removeClass('active');
-            $('.mais-inf-rdp span').parents('.mais-inf-rdp').siblings('.iluminim-inf-rdp').removeClass('on');
-            $('.mais-inf-rdp span').html('Mais informações');
+            toggleAction('removeClass', 'Mais informações');
         }	        
         
         $(`<div class="wrap_sytem_logo hide">
@@ -139,6 +403,5 @@ const Script_Rodape_Desktop_TODAS = function(){
             <span class="txtbaixe">Baixe na</span>
             <span class="txt_apps">App Store</span>
         </a></div>`).prependTo('.mais-inf-rdp+div>.conteiner');
-
-     
-};
+    }
+}
