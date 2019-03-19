@@ -15,7 +15,7 @@ class TodasAsPaginas{
             });
         }();
 
-        
+
          const categoria_TodosOsDepartamentos = function(){
             $(`
                 <div class="todos_departamentos __personalizado">
@@ -230,7 +230,7 @@ class TodasAsPaginas{
                         </li>
                     
                         <li>
-                        <a href="/refletor-led?sort=mais_vendidos">'+
+                        <a href="/refletor-led?sort=mais_vendidos">
                         <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refletor-super-led.png" alt="categoria refletor super led"/>
                         </a>
                         </li>
@@ -254,7 +254,7 @@ class TodasAsPaginas{
                         </li>
                         
                         <li>
-                        <a href="/refletor-led-recarregavel?sort=mais_vendidos">'+
+                        <a href="/refletor-led-recarregavel?sort=mais_vendidos">
                         <img src="https://cdn.awsli.com.br/257/257163/arquivos/owl-superior-refle-led-recarregavel.png" alt="categoria refletor led recarregavel"/>
                         </a>
                         </li>
