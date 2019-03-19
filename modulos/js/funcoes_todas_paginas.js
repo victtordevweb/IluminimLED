@@ -262,6 +262,7 @@ class TodasAsPaginas{
         }();
 
         carrousel();
+        console.log('executado atualizado');
     }
 
     static reorganizacaoDoRdp(){
