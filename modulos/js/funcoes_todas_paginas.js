@@ -149,7 +149,7 @@ class TodasAsPaginas{
         }();
 
         const categoria_RefletoresLED = function(){
-                let obj = obj.RefletoresLED;
+                let objCat = obj.RefletoresLED;
                 $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
                         <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
@@ -190,15 +190,15 @@ class TodasAsPaginas{
                         </ul>
                         
                         <div class="banner_menu">
-                            <a href="${obj.bannerMenu.link}"><img src="${obj.bannerMenu.img}">
+                            <a href="${objCat.bannerMenu.link}"><img src="${objCat.bannerMenu.img}">
                         </a>
                         </div>
-                    </div>`).insertBefore(obj.seletor);
+                    </div>`).insertBefore(objCat.seletor);
         
         }();
 
         const categoria_LuminariasLED = function(){
-            let obj = obj.LuminariasLED;
+            let objCat = obj.LuminariasLED;
             $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
             <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
@@ -229,10 +229,10 @@ class TodasAsPaginas{
             </ul>
             
             <div class="banner_menu">
-                <a href="${obj.bannerMenu.link}"><img src="${obj.bannerMenu.img}">
+                <a href="${objCat.bannerMenu.link}"><img src="${objCat.bannerMenu.img}">
             </a>
             </div>
-        </div>`).insertBefore(obj.seletor);
+        </div>`).insertBefore(objCat.seletor);
 
         }();
 
