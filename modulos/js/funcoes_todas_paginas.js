@@ -368,35 +368,33 @@ class TodasAsPaginas{
         const categoria_AcessoriosLED = function(){
             let objCat = obj.AcessoriosLED;
             $(`<div id="menu-led-superior-home" class="__personalizado __carrousel">
-            <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
+                <div class="ver-tudo-categoria"><a href="#" class="pull-right link-cat-menu">Ver tudo em <b></b></a></div>
 
-            <ul class="wrapper-itens">
-
-                <li><a href="/fonte-chaveada-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/fonte-chaveada-led-carr-sub-menu-1-min-two.png" alt="categoria fonte chaveada led"/></a></li>
-                
-                <li><a href="/fonte-convencional?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/fonte-convencional-led-carr-sub-menu-2-min-two.png" alt="categoria fonte convencional led"/></a></li>
-                
-                <li><a href="/chip-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/chip-led-carr-sub-menu-3-min-two.png" alt="categoria chip led"/></a></li>
-                
-                <li><a href="/controles?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/controle-led-carr-sub-menu-4-min-two.png" alt="categoria controle led"/></a></li>
-                
-                <li><a href="/drivers?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/driver-led-carr-sub-menu-5-min-two.png" alt="categoria driver led"/></a></li>
-                
-                <li><a href="/emenda-para-fita-de-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/emenda-led-carr-sub-menu-6-min-two.png" alt="categoria emenda led"/></a></li>	
-                
-                <li><a href="/soquete-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/soquete-led-carr-sub-menu-7-min-two.png" alt="categoria soquete led"/></a></li>
-                
-                <li><a href="/conectores-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/conector-led-carr-sub-menu-8-min-two.png" alt="categoria conector led"/></a></li>
-                
-                <li><a href="/amplificadores-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/amplificador-led-carr-sub-menu-9-min-two.png" alt="categoria amplificador led"/></a></li>
-                
-                <li><a href="/interruptores-tomadas-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/interruptor-tomada-led-carr-sub-menu-10-min-two.png" alt="categoria interruptor tomada led"/></a></li>
-                
-                <li><a href="/dimmer-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/dimmer-led-carr-sub-menu-min-two.png" alt="categoria dimmer led"/></a></li>
-                
-                <li><a href="/cabo-de-energia?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/frios-e-cabos-sub-categoria-menu-superior-min-two.png" alt="categoria frios e cabos"/></a></li>
-                
-            </ul>
+                <ul class="wrapper-itens">
+                    <li><a href="/fonte-chaveada-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/fonte-chaveada-led-carr-sub-menu-1-min-two.png" alt="categoria fonte chaveada led"/></a></li>
+                    
+                    <li><a href="/fonte-convencional?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/fonte-convencional-led-carr-sub-menu-2-min-two.png" alt="categoria fonte convencional led"/></a></li>
+                    
+                    <li><a href="/chip-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/chip-led-carr-sub-menu-3-min-two.png" alt="categoria chip led"/></a></li>
+                    
+                    <li><a href="/controles?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/controle-led-carr-sub-menu-4-min-two.png" alt="categoria controle led"/></a></li>
+                    
+                    <li><a href="/drivers?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/driver-led-carr-sub-menu-5-min-two.png" alt="categoria driver led"/></a></li>
+                    
+                    <li><a href="/emenda-para-fita-de-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/emenda-led-carr-sub-menu-6-min-two.png" alt="categoria emenda led"/></a></li>	
+                    
+                    <li><a href="/soquete-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/soquete-led-carr-sub-menu-7-min-two.png" alt="categoria soquete led"/></a></li>
+                    
+                    <li><a href="/conectores-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/conector-led-carr-sub-menu-8-min-two.png" alt="categoria conector led"/></a></li>
+                    
+                    <li><a href="/amplificadores-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/amplificador-led-carr-sub-menu-9-min-two.png" alt="categoria amplificador led"/></a></li>
+                    
+                    <li><a href="/interruptores-tomadas-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/interruptor-tomada-led-carr-sub-menu-10-min-two.png" alt="categoria interruptor tomada led"/></a></li>
+                    
+                    <li><a href="/dimmer-led?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/dimmer-led-carr-sub-menu-min-two.png" alt="categoria dimmer led"/></a></li>
+                    
+                    <li><a href="/cabo-de-energia?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/frios-e-cabos-sub-categoria-menu-superior-min-two.png" alt="categoria frios e cabos"/></a></li>      
+                </ul>
             
             <div class="banner_menu">
                 <a href="${objCat.bannerMenu.link}"><img src="${objCat.bannerMenu.img}">
@@ -405,6 +403,97 @@ class TodasAsPaginas{
         </div>`).insertBefore(objCat.seletor);
 
         }();
+
+        const categoria_OfertaDaSemana = function(){
+            let objCat = obj.OfertaDaSemana;
+                    $(`<div id="menu-led-superior-home" class="oferta_semana __personalizado __carrousel">
+
+                    <div class="carrousel-prods-ledfriday-menu">
+                    <div class="box-cronometro-lf">
+                        <span class="titulo-oferta">Oferta da semana</span>
+                        <div class="plg-cronometro-menu">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="carrousel-prods">
+                    <div class="produto_iluminim">
+                    <a class="link_prod" href="/kit-20-luminaria-plafon-25w-led-embutir-branco-frio">
+                    <div class="desconto_prod">-38%</div>
+                    <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/PS-Q25WBF-KIT20-15-01-ajust.png"/></div>
+                    
+                    <div class="info_prod_iluminim">
+                    <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Kit 20 Luminária Plafon 25w LED Embutir Branco Frio</div>
+                        
+                        <div class="stars-iluminim-bf"></div>
+                    
+                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 1.199,99</span> <span class="preco_prod">R$ 739,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>12</b> de <b>R$ 61,65</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 665,91</b> <span class="no_boleto">no boleto</span></span></div>
+                    </div>
+                    
+                    </a>
+                    </div>
+                    
+                    <div class="produto_iluminim">
+                    <a class="link_prod" href="/refletor-micro-led-slim-200w-branco-frio">
+                    <div class="desconto_prod">-71%</div>
+                    <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/RSPM-200WBF_15-01.png"/></div>
+                    <div class="info_prod_iluminim">
+                        <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Refletor Holofote MicroLED Slim 200W Branco Frio</div>
+                        <div class="stars-iluminim-bf"></div>
+                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 659,90</span><span class="preco_prod">R$ 189,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>12x</b> de <b>R$ 15,75</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 170,10</b> <span class="no_boleto">no boleto</span></span></div>
+                    </div>
+                    </a>
+                    </div>
+                    
+                    
+                    <div class="produto_iluminim">
+                    <a class="link_prod" href="/luminaria-plafon-60x60-48w-led-embutir-branco-frio-borda-branca">
+                        <div class="desconto_prod">-59%</div>
+                    <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/PS-Q48WBF-60X60-15-01.png"/></div>
+                    
+                    <div class="info_prod_iluminim">
+                        <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Luminária Plafon 60x60 48W LED Embutir Branco Frio Borda Branca</div>
+                        <div class="stars-iluminim-bf"></div>
+                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 399,00</span> <span class="preco_prod">R$ 159,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>12x</b> de <b>R$ 13,32</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 143,91</b> <span class="no_boleto">no boleto</span></span></div>
+                    </div>
+                    
+                    </a>
+                    </div>
+                    
+                    <div class="produto_iluminim">
+                    <a class="link_prod" href="/luminaria-plafon-25w-led-sobrepor-branco-frio-quadrado">
+                        <div class="desconto_prod">-64%</div>
+                    <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/PG-Q25WBF-15-01.png"/></div>
+                    
+                    <div class="info_prod_iluminim">
+                        <div class="confira_prod">Confira</div>
+                    <div class="nome_prod_iluminim">Luminária Plafon 25w LED Sobrepor Branco Frio</div>
+                        <div class="stars-iluminim-bf"></div>
+                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 124,90</span> <span class="preco_prod">R$ 44,90</span></div>
+                    <div class="parcelas_prod"><span>até <b>4x</b> de <b>R$ 11,22</b> sem juros</span></div>
+                    <div class="boleto_prod"><span><b>R$ 40,41</b> <span class="no_boleto">no boleto</span></span></div>
+                    </div>
+                    
+                    </a>
+                    </div>
+                    
+                    
+                    </div>
+                    </div>
+
+                </div>`).insertBefore(objCat.seletor);
+
+                objCat.carrousel();
+        }();
+
 
         carrousel();
 
@@ -529,6 +618,7 @@ class TodasAsPaginas{
         
         $('<div class="mais-inf-rdp"><span>Mais informações</span></div>').insertAfter('#rodape .pagamento-selos');
         $('#rodape .institucional, #rodape .pagamento-selos').wrapAll('<div class="iluminim-inf-rdp"></div>');
+
 
         function actionStorage(_this ,status, text){
             localStorage.setItem('rdpilm',status);
