@@ -802,13 +802,98 @@ static tarjaInformacoes(obj){
 
 
 static wireFrame(obj, carrousel){
-  
   let wireFrame_CSS_inline     = obj.style_html;
   let wireFrame_posicaoSeletor = obj.posicao.seletor;
-
-  let elementosPrimeiroBloco = obj.primeiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; }).join('');
-  let elementosTerceiroBloco = obj.terceiroBloco.map(item=>{ return `<a href="${item.link}"><img src="${item.img}"/></a>`; }).join('');
   let bannerGrande = obj.bannerGrande;
+
+  let elementosPrimeiroBloco = obj.primeiroBloco.map(item=> `<a href="${item.link}"><img src="${item.img}"/></a>`).join('');
+  let elementosTerceiroBloco = obj.terceiroBloco.map(item=> `<a href="${item.link}"><img src="${item.img}"/></a>`).join('');
+
+
+  function retornaHTMLProducts(array){
+    array.map(item=> `
+      <div class="produto_iluminim">
+          <a class="link_prod" href="${item.link}">
+            <div class="desconto_prod">${item.desconto}</div>
+            <div class="_img_prod"><img src="${item.img}"/></div>
+            <div class="info_prod_iluminim">
+                <div class="confira_prod">Confira</div>
+                <div class="nome_prod_iluminim">${item.nome}</div>
+                <div class="stars-iluminim-bf"></div>
+                  <div class="preco_promocional">
+                    ${ (apartir_de) ? '<span class="preco_apartir">A partir de</span>' : `<span class="preco_riscado">DE R$ ${item.preco_riscado}</span>` }
+                    <span class="preco_prod">R$ ${item.preco_normal}</span>
+                  </div>
+                <div class="parcelas_prod"><span>até <b>${item.parcela.vezes}x</b> de <b>R$ ${item.parcela.valor}</b> sem juros</span></div>
+                <div class="boleto_prod"><span><b>R$ ${item.preco_boleto}</b> <span class="no_boleto">no boleto</span></span></div>
+            </div>
+          </a>
+        </div>
+    `)
+  };
+
+
+
+
+  let objectProds = [
+      {
+        desconto: '-61%',
+        link: '/luminaria-plafon-18w-led-sobrepor-branco-frio-quadrado',
+        img: 'https://cdn.awsli.com.br/257/257163/arquivos/PG-Q18WBF-15-01.png',
+        nome: 'Luminária Plafon 18w LED Sobrepor Branco Frio',
+        parcela: {
+          vezes: '2',
+          valor: '14,94'
+        },
+        preco_riscado: '75,90',
+        preco_normal: '29,90',
+        preco_boleto: '26,91'
+      },
+      
+      {
+        desconto: '-65%',
+        link: '/luminaria-plafon-18w-led-embutir-branco-frio-quadrado',
+        img: 'https://cdn.awsli.com.br/257/257163/arquivos/PS-Q18WBF-embutir-17-01.jpg',
+        nome: 'Luminária Plafon 18w LED Embutir Branco Frio',
+        parcela: {
+          vezes: '2',
+          valor: '11,94'
+        },
+        preco_riscado: '68,64',
+        preco_normal: '23,90',
+        preco_boleto: '21,51'
+      },
+
+      {
+        desconto: '-79%',
+        link: '/spot-led-cob-5w-quadrado-embutir-direcionavel-branco-quente',
+        img: 'https://cdn.awsli.com.br/257/257163/arquivos/COB-Q5WBF_15-01newsps-edit.png',
+        nome: 'Spot LED COB 5W Quadrado Embutir Direcionável Branco Quente',
+        parcela: {
+          vezes: '1',
+          valor: '14,90'
+        },
+        preco_riscado: '69,90',
+        preco_normal: '14,90',
+        preco_boleto: '13,41'
+      },
+
+      {
+        apartir_de: true,
+        desconto: '-77%',
+        link: '/spot-7w-dicroica-led-base-branca',
+        img: 'https://cdn.awsli.com.br/257/257163/arquivos/D-QAB7WB_15-01news.jpg',
+        nome: 'Spot 7W Dicróica LED Direcionavel Base Branca',
+        parcela: {
+          vezes: '1',
+          valor: '17,90'
+        },
+        preco_normal: '17,90',
+        preco_boleto: '16,11'
+      }
+    ];
+
+
 
   let miniBanners = obj.miniBanners.map(item=>{ 
     return `<div class="modulo span4 segunda-fileira-spot">
@@ -831,62 +916,7 @@ static wireFrame(obj, carrousel){
            </div>
         </div>
         <div class="carrousel-prods">
-           <div class="produto_iluminim">
-              <a class="link_prod" href="/luminaria-plafon-18w-led-sobrepor-branco-frio-quadrado">
-                 <div class="desconto_prod">-61%</div>
-                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/PG-Q18WBF-15-01.png"/></div>
-                 <div class="info_prod_iluminim">
-                    <div class="confira_prod">Confira</div>
-                    <div class="nome_prod_iluminim">Luminária Plafon 18w LED Sobrepor Branco Frio</div>
-                    <div class="stars-iluminim-bf"></div>
-                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 75,90</span> <span class="preco_prod">R$ 29,90</span></div>
-                    <div class="parcelas_prod"><span>até <b>2x</b> de <b>R$ 14,94</b> sem juros</span></div>
-                    <div class="boleto_prod"><span><b>R$ 26,91</b> <span class="no_boleto">no boleto</span></span></div>
-                 </div>
-              </a>
-           </div>
-           <div class="produto_iluminim">
-              <a class="link_prod" href="/luminaria-plafon-18w-led-embutir-branco-frio-quadrado">
-                 <div class="desconto_prod">-65%</div>
-                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/PS-Q18WBF-embutir-17-01.jpg"/></div>
-                 <div class="info_prod_iluminim">
-                    <div class="confira_prod">Confira</div>
-                    <div class="nome_prod_iluminim">Luminária Plafon 18w LED Embutir Branco Frio</div>
-                    <div class="stars-iluminim-bf"></div>
-                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 68,64</span><span class="preco_prod">R$ 23,90</span></div>
-                    <div class="parcelas_prod"><span>até <b>2x</b> de <b>R$ 11,94</b> sem juros</span></div>
-                    <div class="boleto_prod"><span><b>R$ 21,51</b> <span class="no_boleto">no boleto</span></span></div>
-                 </div>
-              </a>
-           </div>
-           <div class="produto_iluminim">
-              <a class="link_prod" href="/spot-led-cob-5w-quadrado-embutir-direcionavel-branco-quente">
-                 <div class="desconto_prod">-79%</div>
-                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/COB-Q5WBF_15-01newsps-edit.png"/></div>
-                 <div class="info_prod_iluminim">
-                    <div class="confira_prod">Confira</div>
-                    <div class="nome_prod_iluminim">Spot LED COB 5W Quadrado Embutir Direcionável Branco Quente</div>
-                    <div class="stars-iluminim-bf"></div>
-                    <div class="preco_promocional"><span class="preco_riscado">DE R$ 69,90</span> <span class="preco_prod">R$ 14,90</span></div>
-                    <div class="parcelas_prod"><span>até <b>1x</b> de <b>R$ 14,90</b> sem juros</span></div>
-                    <div class="boleto_prod"><span><b>R$ 13,41</b> <span class="no_boleto">no boleto</span></span></div>
-                 </div>
-              </a>
-           </div>
-           <div class="produto_iluminim">
-              <a class="link_prod" href="/spot-7w-dicroica-led-base-branca">
-                 <div class="desconto_prod">-77%</div>
-                 <div class="_img_prod"><img src="https://cdn.awsli.com.br/257/257163/arquivos/D-QAB7WB_15-01news.jpg"/></div>
-                 <div class="info_prod_iluminim">
-                    <div class="confira_prod">Confira</div>
-                    <div class="nome_prod_iluminim">Spot 7W Dicróica LED Direcionavel Base Branca</div>
-                    <div class="stars-iluminim-bf"></div>
-                    <div class="preco_promocional"><span class="preco_apartir">A partir de</span> <span class="preco_prod">R$ 17,90</span></div>
-                    <div class="parcelas_prod"><span>até <b>1x</b> de <b>R$ 17,90</b> sem juros</span></div>
-                    <div class="boleto_prod"><span><b>R$ 16,11</b> <span class="no_boleto">no boleto</span></span></div>
-                 </div>
-              </a>
-           </div>
+            ${retornaHTMLProducts(objectProds)}
         </div>
      </div>
   </div>
