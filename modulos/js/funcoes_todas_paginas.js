@@ -490,8 +490,14 @@ class TodasAsPaginas{
                     </div>
 
                 </div>`).insertBefore(objCat.seletor);
+                
+                $(objCat.cronometro.seletor).yuukCountDown({
+                    starttime: objCat.cronometro.dataInicio,
+                    endtime: objCat.cronometro.dataFim
+                });
 
                 objCat.carrousel();
+                
         }();
 
 
