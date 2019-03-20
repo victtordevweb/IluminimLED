@@ -811,7 +811,7 @@ static wireFrame(obj, carrousel){
 
 
   function retornaHTMLProducts(array){
-    array.map(item=> `
+    array.map(item=> {return `
       <div class="produto_iluminim">
           <a class="link_prod" href="${item.link}">
             <div class="desconto_prod">${item.desconto}</div>
@@ -829,7 +829,7 @@ static wireFrame(obj, carrousel){
             </div>
           </a>
         </div>
-    `)
+    `; }).join('');
   };
 
 
@@ -892,7 +892,7 @@ static wireFrame(obj, carrousel){
         preco_boleto: '16,11'
       }
     ];
-
+    let htmlObjectProds = retornaHTMLProducts(objectProds)
 
 
   let miniBanners = obj.miniBanners.map(item=>{ 
@@ -916,7 +916,7 @@ static wireFrame(obj, carrousel){
            </div>
         </div>
         <div class="carrousel-prods">
-            ${retornaHTMLProducts(objectProds)}
+            ${htmlObjectProds}
         </div>
      </div>
   </div>
