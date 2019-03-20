@@ -811,7 +811,7 @@ static wireFrame(obj, carrousel){
 
 
   function retornaHTMLProducts(array){
-    array.map(item=> {return `
+    return array.map(item=> {return `
       <div class="produto_iluminim">
           <a class="link_prod" href="${item.link}">
             <div class="desconto_prod">${item.desconto}</div>
