@@ -821,7 +821,7 @@ static wireFrame(obj, carrousel){
                 <div class="nome_prod_iluminim">${item.nome}</div>
                 <div class="stars-iluminim-bf"></div>
                   <div class="preco_promocional">
-                    ${ (apartir_de) ? '<span class="preco_apartir">A partir de</span>' : `<span class="preco_riscado">DE R$ ${item.preco_riscado}</span>` }
+                    ${ (item.apartir_de) ? '<span class="preco_apartir">A partir de</span>' : `<span class="preco_riscado">DE R$ ${item.preco_riscado}</span>` }
                     <span class="preco_prod">R$ ${item.preco_normal}</span>
                   </div>
                 <div class="parcelas_prod"><span>até <b>${item.parcela.vezes}x</b> de <b>R$ ${item.parcela.valor}</b> sem juros</span></div>
