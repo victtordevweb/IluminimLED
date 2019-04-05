@@ -1,18 +1,82 @@
 class TodasAsPaginas{
-    
+
+    static scriptBarraFlutuante(){
+
+        /* Reorganiza Barra Flutuante */
+        $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
+        $('div#barraTopo > .conteiner > .row-fluid > .span3:nth-child(2)').removeClass('span3').addClass('span5 atalhos_flutuantes');
+        $('div#barraTopo > .conteiner > .row-fluid > .span6').removeClass('span6').addClass('span5 busca_cart');
+        $('div#barraTopo .logo_iluminim a').html('<img src="https://cdn.awsli.com.br/400x300/930/930730/logo/09cab63e0e.png" title="Iluminim LED">');
+        $('div#barraTopo .atalhos_flutuantes').html($('.conteiner-principal> #cabecalho .central_atendimento_cb').clone())
+        $(`
+            <div class="menu_barra_topo">
+            <div class="wrap_elements">
+            <div class="menu-block">
+                <div class="wrap-txt">
+                <span>Menu de Categorias</span>
+                </div>
+            </div>
+
+        <ul class="dropdown-menu-barratopo" style="display:none;">
+            <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
+            <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
+            <li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>
+            <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
+            <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
+            <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
+            <li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
+            <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
+            <li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>
+            <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
+            <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
+            <li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>
+            <li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits Especiais</a></li>
+            <li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
+        </ul>
+
+        </div>
+        </div>`).appendTo('div#barraTopo .atalhos_flutuantes');
+
+        $('#barraTopo .atalhos_flutuantes .menu-block').click(function(){
+            $(this).toggleClass('active');
+            $(this).siblings('ul').slideToggle(500);
+        });
+
+
+
+        /* Botao Hide/Show Barra Flutuante */
+        $('<div class="close-barra-topo">x</div>').appendTo('div#barraTopo > .conteiner');
+        $('<div class="conteiner show-bar-top"><div class="show-barra-topo"><i class="icon-search"></i></div></div>').appendTo('body');
+
+        $('.close-barra-topo').click(function(){
+            $('body').addClass('barra-off');
+        });
+        $('.show-barra-topo').click(function(){
+        $('body').removeClass('barra-off');
+        });
+
+        $(window).scroll(function(){
+        if ( $(window).scrollTop() < 260 ) {
+            $('.show-bar-top').addClass('off-b');
+        } else {
+        $('.show-bar-top').removeClass('off-b');
+            }
+
+        });
+    }
+
     static barraInicialGif(obj){
         let barraInicialGif_CSS_inline  = obj.style_html;
-        let barraInicialGif_funcao = obj.posicao.funcao;
-        let barraInicialGif_seletor = obj.posicao.seletor;
+        let barraInicialGif_posicaoFuncao = obj.posicao.funcao;
+        let barraInicialGif_posicaoSeletor = obj.posicao.seletor;
         let barraInicialGif_bannerLink = obj.banner.link;
         let barraInicialGif_bannerImg = obj.banner.img;
         $(`<div class="banner-oferta" style="${barraInicialGif_CSS_inline}">
             <a href="${barraInicialGif_bannerLink}" alt="LED Ofertas Exclusivas">
                 <img src="${barraInicialGif_bannerImg}"> 
             </a>
-        </div>`)[barraInicialGif_funcao](`${barraInicialGif_seletor}`);
+        </div>`)[barraInicialGif_posicaoFuncao](`${barraInicialGif_posicaoSeletor}`);
     }
-
     static reorganizacaoBarraInicial(){
 
         $(`<ul class="list-unstyled news-topbar">
@@ -96,7 +160,6 @@ class TodasAsPaginas{
             </li>
             </ul>`).prependTo('.barra-inicial .canais-contato');
     }
-
     static centralAtendimento(){
         $(`
             <div class="central_atendimento_cb">
@@ -198,52 +261,37 @@ class TodasAsPaginas{
                 }
             });
         }
+        function mascaraBuscas(){
+            $('<div class="mask-src-desktop"></div>').prependTo('#cabecalho .busca.borda-alpha');
+            $('<div class="mask-src-desktop"></div>').prependTo('#barraTopo .busca.borda-alpha');
 
+            $('#cabecalho .busca.borda-alpha input#auto-complete,#barraTopo form input').click(function(){
+                $('body').addClass('src-active');
+            });
+            $('.mask-src-desktop').click(function(){
+                $('body').removeClass('src-active');
+            });
+
+            $(window).scroll(function(){
+                if($('body').hasClass("src-active")){
+                $('.busca input:visible').select();
+                    if($(window).scrollTop() <= 100){
+                        $('.busca input:visible').select();
+                    }
+                }
+            });
+            $('.busca input').bind('keyup', function(){
+                $('.busca input').val($(this).val());
+            });
+        }
+
+
+
+        
         incluiTextoNoDropdownLogado();
+        mascaraBuscas();
     }
-    static scriptBarraFlutuante(){
-        $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
-        $('div#barraTopo > .conteiner > .row-fluid > .span3:nth-child(2)').removeClass('span3').addClass('span5 atalhos_flutuantes');
 
-        $('div#barraTopo > .conteiner > .row-fluid > .span6').removeClass('span6').addClass('span5 busca_cart');
-
-        $('div#barraTopo .logo_iluminim a').html('<img src="https://cdn.awsli.com.br/400x300/930/930730/logo/09cab63e0e.png" title="Iluminim LED">');
-        $('div#barraTopo .atalhos_flutuantes').html($('.conteiner-principal> #cabecalho .central_atendimento_cb').clone())
-        $(`
-            <div class="menu_barra_topo">
-            <div class="wrap_elements">
-            <div class="menu-block">
-                <div class="wrap-txt">
-                <span>Menu de Categorias</span>
-                </div>
-            </div>
-
-        <ul class="dropdown-menu-barratopo" style="display:none;">
-            <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
-            <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
-            <li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>
-            <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
-            <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
-            <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
-            <li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
-            <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
-            <li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>
-            <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
-            <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
-            <li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>
-            <li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits Especiais</a></li>
-            <li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
-        </ul>
-
-        </div>
-        </div>`).appendTo('div#barraTopo .atalhos_flutuantes');
-
-        $('#barraTopo .atalhos_flutuantes .menu-block').click(function(){
-            $(this).toggleClass('active');
-            $(this).siblings('ul').slideToggle(500);
-        });
-
-    }
 
     static menuSuperior(obj, carrousel){
          const categoria_TodosOsDepartamentos = function(){

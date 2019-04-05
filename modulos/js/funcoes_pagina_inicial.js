@@ -4,23 +4,86 @@ class HomeIluminim {
 static bannerEmpresarial(obj){
 
       let banner_empresarial_CSS_inline      = obj.style_html;
-      let banner_empresarial_bannerLink     = obj.banner.link;
-      let banner_empresarial_bannerImg      = obj.banner.img;
       let banner_empresarial_posicaoFuncao   = obj.posicao.funcao;
       let banner_empresarial_posicaoSeletor  = obj.posicao.seletor;
   
-  if(banner_empresarial_posicaoSeletor){
-      $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
-        <a href="${banner_empresarial_bannerLink}">
-          <img src="${banner_empresarial_bannerImg}"/>
-        </a>
-      </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
-    }
-
+      $(`
+        <div class="banners-animate-carrousel hidden-phone" style="${banner_empresarial_CSS_inline}">
+            <div class="banner-empresarial-animated b_animated_ilm hidden-phone">
+                <div class="wrap">
+                  <div class="wrap_txt">
+                      <h3>Soluções <b>Empresariais</b></h3>
+                  </div>
+                  <div class="wrap_icones">
+                      <div class="icone-wrap mao">
+                        <div class="icn-ilm"><img src="https://cdn.awsli.com.br/257/257163/arquivos/icone-mao-11-03-.png"></div>
+                        <div class="drop_box" style="display:none;">
+                            <div class="wraped"> <span class="titdropbox">Preço exclusivo para empresa,</span> <span class="p_txt">entre em contato para orçamento!</span> </div>
+                        </div>
+                      </div>
+                      <div class="icone-wrap luz">
+                        <div class="icn-ilm"><img src="https://cdn.awsli.com.br/257/257163/arquivos/iicone-luz-11-03-.png"></div>
+                        <div class="drop_box" style="display:none;">
+                            <div class="wraped"> <span class="titdropbox">A Iluminim é a melhor solução</span> <span class="p_txt">em tecnologia LED do mercado!</span> </div>
+                        </div>
+                      </div>
+                      <div class="icone-wrap papel">
+                        <div class="icn-ilm"><img src="https://cdn.awsli.com.br/257/257163/arquivos/icone-caneta-papel-11-03-.png"></div>
+                        <div class="drop_box" style="display:none;">
+                            <div class="wraped"> <span class="titdropbox">Atendimento e projetos personalizados!</span> <span class="p_txt">Confie na líder!</span> </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="wrap_btn"><a href="/pagina/atendimento-empresarial.html" class="btn">Clique e Confira</a></div>
+                </div>
+            </div>
+            <div class="banner-revendedor-animated b_animated_ilm hidden-phone">
+                <div class="wrap">
+                  <div class="wrap_txt">
+                      <h3>Revendedor <b>Iluminim</b></h3>
+                  </div>
+                  <div class="wrap_icones">
+                      <div class="icone-wrap dollar">
+                        <div class="icn-ilm"> <img src="https://cdn.awsli.com.br/257/257163/arquivos/22-03-dollar-parte-1.png"><img src="https://cdn.awsli.com.br/257/257163/arquivos/22-03-dollar-parte-2.png"></div>
+                        <div class="drop_box" style="display:none;">
+                            <div class="wraped"> <span class="titdropbox">Preço exclusivo para revendedores Iluminim!</span></div>
+                        </div>
+                      </div>
+                      <div class="icone-wrap phone">
+                        <div class="icn-ilm"> <img src="https://cdn.awsli.com.br/257/257163/arquivos/22-03-phone-parte-1.png"><img src="https://cdn.awsli.com.br/257/257163/arquivos/22-03-phone-parte-2.png"></div>
+                        <div class="drop_box" style="display:none;">
+                            <div class="wraped"> <span class="titdropbox">Atendimento e orçamento personalizados!</span></div>
+                        </div>
+                      </div>
+                      <div class="icone-wrap caminhao">
+                        <div class="icn-ilm"><img src="https://cdn.awsli.com.br/257/257163/arquivos/22-03-caminhao.png"></div>
+                        <div class="drop_box" style="display:none;">
+                            <div class="wraped"> <span class="titdropbox">Entrega expressa para todo o Brasil!</span></div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="wrap_btn"><a href="/pagina/seja-nosso-revendedor-led.html" class="btn">Clique e Confira</a></div>
+                </div>
+            </div>
+      </div>
+      `)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
+      
+      function helpClass(element, func){
+            $(element)[func]('active');
+      }
+      $('.b_animated_ilm .wrap_icones .icone-wrap').on('mouseover', function(){
+          helpClass($(this),'addClass');
+        
+      }).mouseleave(function(){
+          helpClass($(this),'removeClass');
+      });
+      
+      $('.banners-animate-carrousel.hidden-phone').slick({
+        dots: true,infinite: true,speed: 500,cssEase: 'linear',
+        slidesToShow: 1,slidesToScroll: 1,autoplay: false,autoplaySpeed: 5000
+      });
 }
 /* ~~end~~ funcão banner empresarial */
-
-
 
 /* banners descontos da home */
 static bannersDescontos(obj){
