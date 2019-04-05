@@ -4,21 +4,114 @@ class HomeIluminim {
 static bannerEmpresarial(obj){
 
       let banner_empresarial_CSS_inline      = obj.style_html;
-      let banner_empresarial_link_imagem     = obj.link_href_imagem;
-      let banner_empresarial_src_imagem      = obj.link_src_imagem;
+      let banner_empresarial_bannerLink     = obj.banner.link;
+      let banner_empresarial_bannerImg      = obj.banner.img;
       let banner_empresarial_posicaoFuncao   = obj.posicao.funcao;
       let banner_empresarial_posicaoSeletor  = obj.posicao.seletor;
   
   if(banner_empresarial_posicaoSeletor){
       $(`<div class="solucoes-empresariais hidden-phone" style="${banner_empresarial_CSS_inline}">
-        <a href="${banner_empresarial_link_imagem}">
-          <img src="${banner_empresarial_src_imagem}"/>
+        <a href="${banner_empresarial_bannerLink}">
+          <img src="${banner_empresarial_bannerImg}"/>
         </a>
       </div>`)[banner_empresarial_posicaoFuncao](`${banner_empresarial_posicaoSeletor}`);
     }
 
 }
 /* ~~end~~ funcão banner empresarial */
+
+
+
+/* banners descontos da home */
+static bannersDescontos(obj){
+  let bannersDescontos_CSS_inline      = obj.style_html;
+  let bannersDescontos_posicaoFuncao   = obj.posicao.funcao;
+  let bannersDescontos_posicaoSeletor  = obj.posicao.seletor;
+
+  $(`<div class="banners-categoria-home hidden-phone" style="${bannersDescontos_CSS_inline}">
+  <div class="row-fluid">
+      <div class="span4 first">
+          <a href="/refletores-de-led?sort=mais_vendidos">
+              <div class="texto-topo">
+              <div class="txtprod">Refletores Super LED<span>Alta potência</span></div>
+              <div class="com-ate">com até</div>
+              <div class="porcentagem-ilm">64%</div>
+              <div class="desconto">de desconto</div>
+              </div>
+          </a>
+      </div>
+      <div class="span4 first">
+          <a href="/plafon-led-sobrepor?sort=mais_vendidos">
+              <div class="texto-topo">
+              <div class="txtprod">Plafon LED<span>Garantia total</span></div>
+              <div class="com-ate">com até</div>
+              <div class="porcentagem-ilm">64%</div>
+              <div class="desconto">de desconto</div>
+              </div>
+          </a>
+      </div>
+      <div class="span4 first">
+          <a href="/fitas-de-led?sort=mais_vendidos">
+              <div class="texto-topo">
+              <div class="txtprod">Fonte Chaveada<span>Automática Bivolt</span></div>
+              <div class="com-ate">com até</div>
+              <div class="porcentagem-ilm">44%</div>
+              <div class="desconto">de desconto</div>
+              </div>
+          </a>
+      </div>
+      </div>
+      <div class="row-fluid">
+      <div class="span4 first">
+          <a href="/fonte-chaveada-led?sort=mais_vendidos">
+              <div class="texto-topo">
+              <div class="txtprod">Fonte Chaveada<span>Automática Bivolt</span></div>
+              <div class="com-ate">com até</div>
+              <div class="porcentagem-ilm">44%</div>
+              <div class="desconto">de desconto</div>
+              </div>
+          </a>
+      </div>
+      <div class="span4 first">
+          <a href="/lampada-led-rgb?sort=mais_vendidos">
+              <div class="texto-topo">
+              <div class="txtprod">Lâmpadas LED RGB<span>Estilo e cor</span></div>
+              <div class="com-ate">com até</div>
+              <div class="porcentagem-ilm">84%</div>
+              <div class="desconto">de desconto</div>
+              </div>
+          </a>
+      </div>
+      <div class="span4 first">
+          <a href="/balizador-led?sort=mais_vendidos">
+              <div class="texto-topo">
+              <div class="txtprod">Balizadores LED<span>Impermeáveis </span></div>
+              <div class="com-ate">com até</div>
+              <div class="porcentagem-ilm">44%</div>
+              <div class="desconto">de desconto</div>
+              </div>
+          </a>
+      </div>
+  </div>
+  </div>`)[bannersDescontos_posicaoFuncao](`${bannersDescontos_posicaoSeletor}`);
+}
+/* ~~end~~ banners descontos da home */
+
+/* banners cameras e pendentes */
+static bannersCamerasEPendentes(obj){  
+  let bannersCamerasEPendentes_CSS_inline      = obj.style_html;
+  let bannersCamerasEPendentes_posicaoFuncao   = obj.posicao.funcao;
+  let bannersCamerasEPendentes_posicaoSeletor  = obj.posicao.seletor;
+  let bannersCamerasEPendentes_banner1Link     = obj.banners.banner1.link;
+  let bannersCamerasEPendentes_banner1Img      = obj.banners.banner1.img;
+  let bannersCamerasEPendentes_banner2Link     = obj.banners.banner2.link;
+  let bannersCamerasEPendentes_banner2Img      = obj.banners.banner2.img;
+    $(`<div class="banners-iniciais-extras hidden-phone" style="${bannersCamerasEPendentes_CSS_inline}">
+  <div class="span6 b-um"><a href="${bannersCamerasEPendentes_banner1Link}"><img src="${bannersCamerasEPendentes_banner1Img}"/></a></div>
+  <div class="span6 b-dois"><a href="${bannersCamerasEPendentes_banner2Link}"><img src="${bannersCamerasEPendentes_banner2Img}"/></a></div>
+  </div>`)[bannersCamerasEPendentes_posicaoFuncao](`${bannersCamerasEPendentes_posicaoSeletor}`);
+}
+/* ~~end~~ banners cameras e pendentes */
 
 static comprePorDepartamentos(obj, carrousel){
   let comprePorDepartamentos_CSS_inline      = obj.style_html;
@@ -831,9 +924,6 @@ static wireFrame(obj, carrousel){
         </div>
     `; }).join('');
   };
-
-
-
 
   let objectProds = [
       {

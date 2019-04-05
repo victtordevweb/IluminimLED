@@ -1,4 +1,249 @@
 class TodasAsPaginas{
+    
+    static barraInicialGif(obj){
+        let barraInicialGif_CSS_inline  = obj.style_html;
+        let barraInicialGif_funcao = obj.posicao.funcao;
+        let barraInicialGif_seletor = obj.posicao.seletor;
+        let barraInicialGif_bannerLink = obj.posicao.banner.link;
+        let barraInicialGif_bannerImg = obj.posicao.banner.img;
+        $(`<div class="banner-oferta" style="${barraInicialGif_CSS_inline}">
+            <a href="${barraInicialGif_bannerLink}" alt="LED Ofertas Exclusivas">
+                <img src="${barraInicialGif_bannerImg}"> 
+            </a>
+        </div>`)[barraInicialGif_funcao](`${barraInicialGif_seletor}`);
+    }
+
+    static reorganizacaoBarraInicial(){
+
+        $(`<ul class="list-unstyled news-topbar">
+            <li class="revendas-b-inicial">
+            <a href="https://www.iluminim.com.br/pagina/seja-nosso-revendedor-led.html" target="_blank">Revendas</a>
+            <div class="drop_box revendas-drop">
+                <div class="wraped">
+                <span class="titdropbox">Ofertas exclusivas para revenda.</span>
+                <span class="p_txt">Pagamento em até 120 dias.</span>
+                <span class="p_txt_dois">Entre em contato!</span>
+                </div>
+            </div>
+            </li>
+            
+            <li class="empresas-b-inicial">
+            <a href="https://www.iluminim.com.br/pagina/atendimento-empresarial.html" target="_blank">Empresas</a>
+            <div class="drop_box empresas-drop">
+                <div class="wraped">
+                <span class="titdropbox">Condições diferenciadas para empresas.</span>
+                <span class="p_txt">Acesse e saiba mais!</span>
+                </div>
+            </div>
+            </li>
+            <li class="cond-b-inicial">
+            <a href="https://www.iluminim.com.br/pagina/led-para-condominio.html" target="_blank">Condomínios</a>
+            <div class="drop_box cond-drop">
+                <div class="wraped">
+                <span class="titdropbox">Projeto personalizado para condomínios.</span>
+                <span class="p_txt">Entre em contato agora para ter o seu!</span>
+                </div>
+            </div>
+            </li>
+            
+            <li class="arquiteto-b-inicial">
+            <a href="/pagina/cadastro-de-arquiteto.html" target="_blank">Arquitetos</a>
+            <div class="drop_box arquiteto-drop">
+                <div class="wraped">
+                <span class="titdropbox">Benefícios para arquitetos.</span>
+                <span class="p_txt">Acesse e saiba mais!</span>
+                </div>
+            </div>
+            </li>
+                
+            <li class="minhaconta-b-inicial">
+            <a href="conta">Minha conta</a>
+                <div class="box-login-desktop">
+                <div class="content-login">
+                    <div class="entrar">
+                        <a href="https://www.iluminim.com.br/conta/login">Entrar</a>
+                    </div>
+                    <div class="divider-login">
+                        <span>ou</span>
+                    </div>
+                    <div class="cadastro">
+                        <a href="https://www.iluminim.com.br/conta/login">Cadastrar</a>
+                    </div>
+                    <div class="acoes-mob">
+                        <span class="minha-conta">
+                        <a href="https://www.iluminim.com.br/conta/index">Minha Conta</a>
+                        </span>
+                        <span class="meus-pedidos">
+                        <a href="https://www.iluminim.com.br/conta/pedido/listar">Meus Pedidos</a>
+                        </span>
+                    </div>
+                </div>
+                </div>
+            </li>
+            
+            <li class="listadesejo-b-inicial">
+            <a href="desejos">Lista de Desejos</a>
+            <div class="drop_box desejos-drop">
+                <div class="wraped">
+                <span class="titdropbox">Favorite os seus produtos preferidos </span><span>e acompanhe as ofertas :)</span>
+                <span class="p_txt">Acesse agora a lista de desejos!</span>
+                </div>
+            </div>
+            </li>
+            
+            <li class="meuspedidos-b-inicial">
+            <a href="pedidos">Meus pedidos</a>
+            </li>
+            </ul>`).prependTo('.barra-inicial .canais-contato');
+    }
+
+    static centralAtendimento(){
+        $(`
+            <div class="central_atendimento_cb">
+            <div class="wrap_atendimento">
+            <div class="ctrl-atdm-block">
+                <div class="wrap-txt">
+                <span>Central de</span>
+                <span>Atendimento</span>
+                </div>
+            </div>
+                <ul class="dropdown-atendimento">
+                <div class="title-central-atdm">Entre em contato conosco</div>
+
+                <div class="horario_funcionamento_iluminim">
+                <div class="wrap_func">
+                    <span style="display:block">Compre por telefone: de Segunda a Sexta das 9h às 18h</span>
+                    <span class="p_func">Compre online: 24 horas conectado</span>
+                </div>
+                </div>
+                
+                <h4 class="telefone">TELEFONES</h4>
+            
+                <div class="__fone">
+                <span class="numerotelefone">(11) 4210-0494</span>  
+                <span class="cidadep">São Paulo</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(21) 2042-0247</span>
+                <span class="cidadep">Rio de Janeiro</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(51) 3557-5070</span>
+                    <span class="cidadep">Rio Grande do Sul</span>
+                </div>
+                
+                <div class="__fone">
+                    <span class="numerotelefone">(48) 4042-1882</span>
+                <span class="cidadep">Santa Catarina</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(31) 4042-1750</span>
+                <span class="cidadep">Minas Gerais</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(41) 4042-1248</span>
+                    <span class="cidadep">Paraná</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(71) 4042-1384</span>
+                    <span class="cidadep">Bahia</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(81) 4042-2214</span>
+                    <span class="cidadep">Pernambuco</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(62) 3142-2314</span>
+                    <span class="cidadep">Goiás</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">(61) 4042-6234</span>
+                    <span class="cidadep">Distrito Federal</span>
+                </div>
+                
+                <div class="__fone">
+                <span class="numerotelefone">0800 580-0332</span>
+                <span class="cidadep">Todas as Regiões</span>
+                </div>
+                
+                <div class="__email">
+                <span class="emailt">E-MAIL</span>
+                <span class="emailp">vendas@iluminim.com.br</span>
+                </div>
+                
+                <div class="__modal">
+                <span class="duvidas">Dúvidas?</span>
+                <span class="faleconoscop"><a href="#modalContato" data-toggle="modal" data-target="#modalContato">Fale conosco</a></span>
+                </div>
+
+            </ul>
+            </div>
+            </div>
+            `).appendTo('#cabecalho .inferior');
+    }
+    static scriptsCabecalho(){
+        function incluiTextoNoDropdownLogado(){
+            $('#cabecalho .btn-group.open>.dropdown-menu > li:last-child').ready(function(){
+                if($('#cabecalho .btn-group.open>.dropdown-menu > li:last-child').length > 0){
+                let name = $.trim($('#cabecalho a.botao.secundario.pequeno.dropdown-toggle').text()).split('Olá, ')[1].split(' ')[0];
+                    $(this).find('#cabecalho .dropdown-menu > li:last-child a').before(`<span>Não é <span>${name}?</span></span>`);
+                }
+            });
+        }
+
+        incluiTextoNoDropdownLogado();
+    }
+    static scriptBarraFlutuante(){
+        $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
+        $('div#barraTopo > .conteiner > .row-fluid > .span3:nth-child(2)').removeClass('span3').addClass('span5 atalhos_flutuantes');
+
+        $('div#barraTopo > .conteiner > .row-fluid > .span6').removeClass('span6').addClass('span5 busca_cart');
+
+        $('div#barraTopo .logo_iluminim a').html('<img src="https://cdn.awsli.com.br/400x300/930/930730/logo/09cab63e0e.png" title="Iluminim LED">');
+        $('div#barraTopo .atalhos_flutuantes').html($('.conteiner-principal> #cabecalho .central_atendimento_cb').clone())
+        $(`
+            <div class="menu_barra_topo">
+            <div class="wrap_elements">
+            <div class="menu-block">
+                <div class="wrap-txt">
+                <span>Menu de Categorias</span>
+                </div>
+            </div>
+
+        <ul class="dropdown-menu-barratopo" style="display:none;">
+            <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
+            <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
+            <li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>
+            <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
+            <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
+            <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
+            <li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
+            <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
+            <li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>
+            <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
+            <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
+            <li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>
+            <li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits Especiais</a></li>
+            <li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
+        </ul>
+
+        </div>
+        </div>`).appendTo('div#barraTopo .atalhos_flutuantes');
+
+        $('#barraTopo .atalhos_flutuantes .menu-block').click(function(){
+            $(this).toggleClass('active');
+            $(this).siblings('ul').slideToggle(500);
+        });
+
+    }
 
     static menuSuperior(obj, carrousel){
          const categoria_TodosOsDepartamentos = function(){
@@ -527,6 +772,7 @@ class TodasAsPaginas{
     }
 
     static reorganizacaoDoRdp(){
+
         $('#barraNewsletter .componente .texto-newsletter').html(`
             <div class="newtxt">Cadastre seu e-mail
         <span>e receba descontos e novidades</span></div>
