@@ -4,8 +4,8 @@ class TodasAsPaginas{
         let barraInicialGif_CSS_inline  = obj.style_html;
         let barraInicialGif_funcao = obj.posicao.funcao;
         let barraInicialGif_seletor = obj.posicao.seletor;
-        let barraInicialGif_bannerLink = obj.posicao.banner.link;
-        let barraInicialGif_bannerImg = obj.posicao.banner.img;
+        let barraInicialGif_bannerLink = obj.banner.link;
+        let barraInicialGif_bannerImg = obj.banner.img;
         $(`<div class="banner-oferta" style="${barraInicialGif_CSS_inline}">
             <a href="${barraInicialGif_bannerLink}" alt="LED Ofertas Exclusivas">
                 <img src="${barraInicialGif_bannerImg}"> 
