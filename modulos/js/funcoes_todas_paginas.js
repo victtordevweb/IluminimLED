@@ -903,7 +903,92 @@ class TodasAsPaginas{
     }
 
     static scriptsListagem(obj){
-         const descontoProdutos = function(){
+        const visualizacaoRapida = function(){
+        if(obj.visualizacaoRapida.ativo == true){
+
+
+            let arrayFotos = obj.visualizacaoRapida.ids;
+            
+            for(var i = 0; i < arrayFotos.length; i++){ 
+                $(`<div class="btn_show_miniaturas">Visualização rápida</div>
+                    <div class="mod_miniaturas">
+                    <div class="wrap_modal">
+                        <div class="content_miniaturas"><div class="div_load"><img src="https://uploaddeimagens.com.br/images/001/786/965/original/anm-iluminim-loading-18.gif"></div></div></div>'+
+                </div>`).appendTo(`.listagem-item.prod-id-${arrayFotos[i]}`);
+
+            $(`.listagem-item.prod-id-${arrayFotos[i]} .btn_show_miniaturas`).click(function(){
+
+            if( $(this).parents('.listagem-item').find('.div_load').length < 1){
+                $(this).parents('.listagem-item').find('.mod_miniaturas').addClass('show');
+            }else {
+
+                var nomeProd = $(this).parents('.listagem-item').find('a.nome-produto.cor-secundaria').text();
+
+                $(this).siblings('.mod_miniaturas').addClass('show');
+
+                var linkTeste = $(this).parents('.listagem-item').find('.produto-sobrepor').attr('href');
+
+                $(this).parents('.listagem-item').find('.wrap_modal').prepend(`<div class="line_topo">
+                <a class="name_prod"></a><span class="close_modal"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></div>`);
+                
+                $(this).parents('.listagem-item').find('.name_prod').html(''+nomeProd+'').attr('href',''+linkTeste+'');
+                var ee = $(this).parents('.listagem-item').find('.content_miniaturas');
+                    ee.load(''+linkTeste+' .span12.produto > .row-fluid:first-child', function(){
+
+                        $('.content_miniaturas .row-fluid .produto-compartilhar,.content_miniaturas .row-fluid span.cor-secundaria.pull-right,.content_miniaturas .row-fluid .cep, .content_miniaturas .row-fluid .breadcrumbs.borda-alpha,.content_miniaturas .row-fluid .parcelas-produto.borda-alpha.padrao').remove();
+                    $('div#carouselImagem > ul > li:first-child').addClass('active');
+                    $(this).parents('.listagem-item').find('.content_miniaturas .acoes-produto').append('<div class="wrapcrono"><span class="title_crono">Ofertas Expiram em:</span><ul class="clearfix" id="js_Modal"></ul></div>');
+                            $('div#carouselImagem > ul > li').click(function(){
+                                    $('div#carouselImagem > ul > li').removeClass('active');
+                                    $(this).addClass('active');	
+                                var srcGrande = $(this).find('a').attr('data-imagem-grande');
+                            $(this).parents('.listagem-item').find('img#imagemProduto').attr('src',''+srcGrande+'');
+                            });
+                            var skuMove = $(this).parents('.listagem-item').find('.content_miniaturas .codigo-produto [itemprop="sku"]').text();
+                            var pAntigo = $.trim($(this).parents('.listagem-item').find('.content_miniaturas s.preco-venda.titulo').text().replace('R$ ','').replace(',','.'));
+                            var pNovo = $.trim($(this).parents('.listagem-item').find('.content_miniaturas strong.preco-promocional.cor-principal.titulo').text().replace('R$ ','').replace(',','.'));
+                            var newEconomize = pAntigo - pNovo;
+                            $(this).parents('.listagem-item').find('.content_miniaturas span.desconto-a-vista').before(`<div class="economize_modal">Economize: R$ ${newEconomize.toFixed(2)}</div>`);
+                            $(this).parents('.listagem-item').find('.content_miniaturas h1.nome-produto.titulo.cor-secundaria').after(`<div class="new_sku">Referência: ${skuMove}</div>`);
+                            var formating = $(this).parents('.listagem-item').find('.content_miniaturas .economize_modal').text().replace('.',',');
+                        $(this).parents('.listagem-item').find('.content_miniaturas .economize_modal').text(`${formating}`);
+                            $('.close_modal').click(function(){
+                                $('.mod_miniaturas').removeClass('show');
+                                $('.listagem-item div#carouselImagem > ul > li').removeClass('active');
+                                $('.listagem-item div#carouselImagem > ul > li:first-child').addClass('active');
+                            });
+                            if( $(this).parents('.listagem-item').find('div#carouselImagem > ul > li').length > 5){
+                                $(this).parents('.listagem-item').find('div#carouselImagem').addClass('no_if_iluminim');
+                            $(this).parents('.listagem-item').find('div#carouselImagem > ul').slick({
+                                dots: true,infinite: true,speed: 200,cssEase: 'linear',
+                                slidesToShow: 5,slidesToScroll: 1,autoplay: false,autoplaySpeed: 5000
+                            }); 
+                            }
+                            $('div#carouselImagem .owl-item li a').click(function(){
+                                $('div#carouselImagem .owl-item li a').removeClass('active');
+                                $(this).addClass('active');
+                            });
+                        $(this).parents('.listagem-item').find('.content_miniaturas #js_Modal').yuukCountDown({
+                            starttime: '2016/11/12 00:00:00',
+                            endtime: '2019/12/30 00:00:00',
+                            notStartCallBack: function(time){
+                            
+                            },
+                            startCallBack: function(time){
+                            },
+                            endCallBack: function(time){
+                            $('#js_Modal').html('<span class="off-acabou">00 : 00 : 00</span>');
+                            }
+                        });
+                    
+                    });
+            }
+            });
+            }
+        }
+        }();
+
+        const descontoProdutos = function(){
             $('.listagem-item').each(function(){
                 let elemento = $('.bandeira-promocao', this).text();						
                 let porcDescontoTag = elemento.replace('% Desconto', '');
@@ -918,10 +1003,9 @@ class TodasAsPaginas{
                     $(htmlPorcTag).addClass("quente");
                 }
             });
-        }()       
-        
-                
-        function verTodosListagem(){
+        }();       
+              
+        const verTodosListagem = function(){
             $('a.titulo-categoria').each(function(){
                 let link = $(this).attr('href');
                 $(this).find('strong').after(`
@@ -930,7 +1014,7 @@ class TodasAsPaginas{
                         </div>
                     `)
             });
-        }
+        }();
 
          const tagLancamento = function(){
             if( obj.tagLancamento.ativo == true){
@@ -942,7 +1026,7 @@ class TodasAsPaginas{
                 }
                 $('#listagemProdutos .listagem-item .lancamento-ilm, .pagina-busca .listagem-item .lancamento-ilm').parents('.listagem-item').addClass('class-lancamento-ajuste');
             }
-        }()
+        }();
         
          const tagCampeaoVendas = function(){
             if( obj.tagCampeaoVendas.ativo == true){
@@ -959,7 +1043,7 @@ class TodasAsPaginas{
                     });
                 });
             }
-        }()
+        }();
         
          const VideoeDica = function(){
             function iframeAdd(link){
@@ -1042,22 +1126,22 @@ class TodasAsPaginas{
         }
         }();
 
-         const addFavoritos = function(){
+        const addFavoritos = function(){
             $('<a class="add-fav" href="#"></a>').prependTo(".listagem-item");
               $(".listagem-item").each(function() {
                   var $jQname$AddFav = $(this).find(".info-produto .hide.trustvox-stars").attr("data-trustvox-product-code");
                   $(this).find(".add-fav").attr("href", "/conta/favorito/" + $jQname$AddFav + "/adicionar")
               });
-          }();
+        }();
           
-           const linhaLoginERegister = function(){
+        const linhaLoginERegister = function(){
           // tarja login e cadastro pagina inicial
           $(`<div class="login-listagem text-center" style="${obj.linhaLoginERegister.style_html}">
               <span class="texto-listagem">Faça login e veja ofertas incríveis escolhidas só para você</span>
               <a class="btn-entrar" href="/conta/login">Entre</a>
               <a class="btn-cadastrar" href="/conta/login">Cadastre-se</a>
               </div>`)[obj.linhaLoginERegister.posicao.funcao](`${obj.linhaLoginERegister.posicao.seletor}`);
-          }();
+        }();
         
     }
 
