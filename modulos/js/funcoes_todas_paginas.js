@@ -1,6 +1,7 @@
 class TodasAsPaginas{
 
     static scriptBarraFlutuante(){
+
         function barraFixed(){
             /* Reorganiza Barra Flutuante */
             $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
@@ -128,8 +129,7 @@ class TodasAsPaginas{
           });
 
         }
-    }
-
+        }
 
         barraFixed();
         maisBuscadosBarraFlutuante();
@@ -918,10 +918,20 @@ class TodasAsPaginas{
                     $(htmlPorcTag).addClass("quente");
                 }
             });
-        }()
+        }()       
         
-        
-        
+                
+        function verTodosListagem(){
+            $('a.titulo-categoria').each(function(){
+                let link = $(this).attr('href');
+                $(this).find('strong').after(`
+                        <div class="ver_todos_categoria">
+                            <a href="${link}">Ver todos</a>
+                        </div>
+                    `)
+            });
+        }
+
          const tagLancamento = function(){
             if( obj.tagLancamento.ativo == true){
                 let prodLancamento = obj.tagLancamento.ids
@@ -1075,8 +1085,8 @@ class TodasAsPaginas{
                 </div>
             </div>
         `).insertBefore('#rodape');
-
-        $('.links-rodape-categorias ul').html(`
+        $('#rodape .links-rodape.links-rodape-categorias').removeClass('span5').addClass('span4');
+        $('#rodape .links-rodape-categorias ul').html(`
             <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
             <li class="refletores-micro-led-mt"><a href="/refletor-microled?sort=mais_vendidos">Refletores Micro LED</a></li>
             <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
@@ -1101,7 +1111,7 @@ class TodasAsPaginas{
         
         $('#rodape .institucional .links-rodape-paginas, #rodape .new_box_ilm.span8 > .sobre-loja-rodape').wrapAll('<div class="span12 wrapper-um"></div>');
         
-        $('#rodape .new_box_ilm.span8 .links-rodape-paginas').removeClass('span4').addClass('span5');
+        $('#rodape .new_box_ilm.span8 .links-rodape-paginas').removeClass('span3').addClass('span5');
         
         $('#rodape .new_box_ilm.span8 .links-rodape-paginas .titulo').html('Institucional');
         
