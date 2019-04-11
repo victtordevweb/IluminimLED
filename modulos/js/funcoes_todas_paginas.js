@@ -924,7 +924,7 @@ class TodasAsPaginas{
         
          const tagLancamento = function(){
             if( obj.tagLancamento.ativo == true){
-                let prodLancamento = obj.tagLancamentoids
+                let prodLancamento = obj.tagLancamento.ids
                 for(i = 0; i < prodLancamento.length; i++) { 
                     $('#listagemProdutos>ul .listagem-item.prod-id-'+prodLancamento[i]).each(function(){
                             $('<span class="lancamento-ilm">Lançamento</span>').appendTo(this);
