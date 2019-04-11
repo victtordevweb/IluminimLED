@@ -1,6 +1,6 @@
 class HomeIluminim {
 
- static bannerTarjaAdaptacao(){
+  static bannerTarjaAdaptacao(){
     $(`<div class="tarja-cods">
     <div class="tarja-frete"><a href="#"></a>
     <div class="drop_box_tarja" style="display:none;"><span>Para pedidos acima de R$299,00 o frete expresso é por nossa conta!</span></div>
@@ -23,7 +23,16 @@ class HomeIluminim {
     </div>
 
     </div>`).prependTo('.banner.tarja');
-}
+  }
+
+  static linhaLoginERegister = function(){
+    // tarja login e cadastro pagina inicial
+    $(`<div class="login-listagem text-center" style="${obj.linhaLoginERegister.style_html}">
+        <span class="texto-listagem">Faça login e veja ofertas incríveis escolhidas só para você</span>
+        <a class="btn-entrar" href="/conta/login">Entre</a>
+        <a class="btn-cadastrar" href="/conta/login">Cadastre-se</a>
+        </div>`)[obj.linhaLoginERegister.posicao.funcao](`${obj.linhaLoginERegister.posicao.seletor}`);
+  }();
 
   static servicosListagem(obj){
     $(`<div class="titulo-categoria borda-principal cor-principal servicos-ilm" style="${obj.style_html}">

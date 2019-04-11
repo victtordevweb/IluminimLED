@@ -1132,16 +1132,7 @@ class TodasAsPaginas{
                   var $jQname$AddFav = $(this).find(".info-produto .hide.trustvox-stars").attr("data-trustvox-product-code");
                   $(this).find(".add-fav").attr("href", "/conta/favorito/" + $jQname$AddFav + "/adicionar")
               });
-        }();
-          
-        const linhaLoginERegister = function(){
-          // tarja login e cadastro pagina inicial
-          $(`<div class="login-listagem text-center" style="${obj.linhaLoginERegister.style_html}">
-              <span class="texto-listagem">Faça login e veja ofertas incríveis escolhidas só para você</span>
-              <a class="btn-entrar" href="/conta/login">Entre</a>
-              <a class="btn-cadastrar" href="/conta/login">Cadastre-se</a>
-              </div>`)[obj.linhaLoginERegister.posicao.funcao](`${obj.linhaLoginERegister.posicao.seletor}`);
-        }();
+        }();      
         
     }
 
