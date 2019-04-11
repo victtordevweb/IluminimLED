@@ -27,11 +27,11 @@ class HomeIluminim {
 
   static linhaLoginERegister(obj){
     // tarja login e cadastro pagina inicial
-    $(`<div class="login-listagem text-center" style="${obj.linhaLoginERegister.style_html}">
+    $(`<div class="login-listagem text-center" style="${obj.style_html}">
         <span class="texto-listagem">Faça login e veja ofertas incríveis escolhidas só para você</span>
         <a class="btn-entrar" href="/conta/login">Entre</a>
         <a class="btn-cadastrar" href="/conta/login">Cadastre-se</a>
-        </div>`)[obj.linhaLoginERegister.posicao.funcao](`${obj.linhaLoginERegister.posicao.seletor}`);
+        </div>`)[obj.posicao.funcao](`${obj.posicao.seletor}`);
   };
 
   static servicosListagem(obj){
