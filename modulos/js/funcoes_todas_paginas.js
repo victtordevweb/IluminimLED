@@ -966,7 +966,7 @@ class TodasAsPaginas{
                 </div>`).appendTo('body');
 
                 // ouça dica por sku para afetar o princial e os kits
-                var skuProdLength = obj.VideoeDica.video.skuslinks
+                var skuProdLength = obj.VideoeDica.dica.skuslinks
                     
                 skuProdLength.forEach(element=>{
                     let sku = element.split(' ')[0];
