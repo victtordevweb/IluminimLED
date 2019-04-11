@@ -1019,11 +1019,11 @@ class TodasAsPaginas{
          const tagLancamento = function(){
             if( obj.tagLancamento.ativo == true){
                 let prodLancamento = obj.tagLancamento.ids
-                for(i = 0; i < prodLancamento.length; i++) { 
-                    $('#listagemProdutos>ul .listagem-item.prod-id-'+prodLancamento[i]).each(function(){
+                prodLancamento.forEach(i=>{
+                    $('#listagemProdutos>ul .listagem-item.prod-id-'+i).each(function(){
                             $('<span class="lancamento-ilm">Lançamento</span>').appendTo(this);
                     });
-                }
+                });
                 $('#listagemProdutos .listagem-item .lancamento-ilm, .pagina-busca .listagem-item .lancamento-ilm').parents('.listagem-item').addClass('class-lancamento-ajuste');
             }
         }();
