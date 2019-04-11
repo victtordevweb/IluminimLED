@@ -923,7 +923,7 @@ class TodasAsPaginas{
         
         
          const tagLancamento = function(){
-            if( obj.tagLancamentoListagem.ativo == true){
+            if( obj.tagLancamento.ativo == true){
                 let prodLancamento = obj.tagLancamentoListagem.ids
                 for(i = 0; i < prodLancamento.length; i++) { 
                     $('#listagemProdutos>ul .listagem-item.prod-id-'+prodLancamento[i]).each(function(){
@@ -1032,7 +1032,7 @@ class TodasAsPaginas{
         }
         }();
 
-         const addFavoritosListagem = function(){
+         const addFavoritos = function(){
             $('<a class="add-fav" href="#"></a>').prependTo(".listagem-item");
               $(".listagem-item").each(function() {
                   var $jQname$AddFav = $(this).find(".info-produto .hide.trustvox-stars").attr("data-trustvox-product-code");
