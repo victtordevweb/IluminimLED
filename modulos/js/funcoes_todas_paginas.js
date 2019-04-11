@@ -1,68 +1,138 @@
 class TodasAsPaginas{
 
     static scriptBarraFlutuante(){
-
-        /* Reorganiza Barra Flutuante */
-        $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
-        $('div#barraTopo > .conteiner > .row-fluid > .span3:nth-child(2)').removeClass('span3').addClass('span5 atalhos_flutuantes');
-        $('div#barraTopo > .conteiner > .row-fluid > .span6').removeClass('span6').addClass('span5 busca_cart');
-        $('div#barraTopo .logo_iluminim a').html('<img src="https://cdn.awsli.com.br/400x300/930/930730/logo/09cab63e0e.png" title="Iluminim LED">');
-        $('div#barraTopo .atalhos_flutuantes').html($('.conteiner-principal> #cabecalho .central_atendimento_cb').clone())
-        $(`
-            <div class="menu_barra_topo">
-            <div class="wrap_elements">
-            <div class="menu-block">
-                <div class="wrap-txt">
-                <span>Menu de Categorias</span>
+        function barraFixed(){
+            /* Reorganiza Barra Flutuante */
+            $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
+            $('div#barraTopo > .conteiner > .row-fluid > .span3:nth-child(2)').removeClass('span3').addClass('span5 atalhos_flutuantes');
+            $('div#barraTopo > .conteiner > .row-fluid > .span6').removeClass('span6').addClass('span5 busca_cart');
+            $('div#barraTopo .logo_iluminim a').html('<img src="https://cdn.awsli.com.br/400x300/930/930730/logo/09cab63e0e.png" title="Iluminim LED">');
+            $('div#barraTopo .atalhos_flutuantes').html($('.conteiner-principal> #cabecalho .central_atendimento_cb').clone())
+            $(`
+                <div class="menu_barra_topo">
+                <div class="wrap_elements">
+                <div class="menu-block">
+                    <div class="wrap-txt">
+                    <span>Menu de Categorias</span>
+                    </div>
                 </div>
+
+            <ul class="dropdown-menu-barratopo" style="display:none;">
+                <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
+                <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
+                <li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>
+                <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
+                <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
+                <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
+                <li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
+                <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
+                <li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>
+                <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
+                <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
+                <li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>
+                <li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits Especiais</a></li>
+                <li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
+            </ul>
+
             </div>
+            </div>`).appendTo('div#barraTopo .atalhos_flutuantes');
 
-        <ul class="dropdown-menu-barratopo" style="display:none;">
-            <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
-            <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
-            <li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>
-            <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
-            <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
-            <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
-            <li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
-            <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
-            <li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>
-            <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
-            <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
-            <li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>
-            <li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits Especiais</a></li>
-            <li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
-        </ul>
-
-        </div>
-        </div>`).appendTo('div#barraTopo .atalhos_flutuantes');
-
-        $('#barraTopo .atalhos_flutuantes .menu-block').click(function(){
-            $(this).toggleClass('active');
-            $(this).siblings('ul').slideToggle(500);
-        });
+            $('#barraTopo .atalhos_flutuantes .menu-block').click(function(){
+                $(this).toggleClass('active');
+                $(this).siblings('ul').slideToggle(500);
+            });
 
 
 
-        /* Botao Hide/Show Barra Flutuante */
-        $('<div class="close-barra-topo">x</div>').appendTo('div#barraTopo > .conteiner');
-        $('<div class="conteiner show-bar-top"><div class="show-barra-topo"><i class="icon-search"></i></div></div>').appendTo('body');
+            /* Botao Hide/Show Barra Flutuante */
+            $('<div class="close-barra-topo">x</div>').appendTo('div#barraTopo > .conteiner');
+            $('<div class="conteiner show-bar-top"><div class="show-barra-topo"><i class="icon-search"></i></div></div>').appendTo('body');
 
-        $('.close-barra-topo').click(function(){
-            $('body').addClass('barra-off');
-        });
-        $('.show-barra-topo').click(function(){
-        $('body').removeClass('barra-off');
-        });
+            $('.close-barra-topo').click(function(){
+                $('body').addClass('barra-off');
+            });
+            $('.show-barra-topo').click(function(){
+            $('body').removeClass('barra-off');
+            });
 
-        $(window).scroll(function(){
-        if ( $(window).scrollTop() < 260 ) {
-            $('.show-bar-top').addClass('off-b');
-        } else {
-        $('.show-bar-top').removeClass('off-b');
-            }
+            $(window).scroll(function(){
+            if ( $(window).scrollTop() < 260 ) {
+                $('.show-bar-top').addClass('off-b');
+            } else {
+            $('.show-bar-top').removeClass('off-b');
+                }
 
-        });
+            });
+        }
+
+        function maisBuscadosBarraFlutuante(){
+            if( $('body.pagina-inicial').length > 0 || $('body.pagina-categoria').length > 0 ) {
+                let items = [
+                    {
+                        link: '/ofertadasemana?sort=mais_vendidos',
+                        nome: 'Oferta da Semana'
+                    },
+                    {
+                        link: '/plafon-led-18w?sort=mais_vendidos',
+                        nome: 'Plafon 18w'
+                    },
+                    {
+                        link: '/luminaria-emergencia-led?sort=mais_vendidos',
+                        nome: 'Luminária de Emergência'
+                    },
+                    {
+                        link: '/lampada-led-15w?sort=mais_vendidos',
+                        nome: 'Lâmpada LED 15w'
+                    },
+                    {
+                        link: '/lampada-led-12w?sort=mais_vendidos',
+                        nome: 'Lâmpada LED 12w'
+                    },
+                    {
+                        link: '/plafon-led-25w?sort=mais_vendidos',
+                        nome: 'Plafon 25w'
+                    },
+                    {
+                        link: '/spot-led-5w?sort=mais_vendidos',
+                        nome: 'Pendente'
+                    },
+                    {
+                        link: '/arandela-led?sort=mais_vendidos',
+                        nome: 'Arandela'
+                    }
+                ]
+            
+            let itemsHtml = items.map(item=> {
+                return `<li class="${item.link.split('/')[1].split('?')[0]}"> <a href="${item.link}">${item.nome}</a></li>`
+            }).join('');
+            
+            $(`<div class="barra-destaques"><div class="conteiner">
+            <ul>
+                ${itemsHtml}
+            </ul>
+            </div></div>`).appendTo('div#barraTopo');
+
+
+          var lastScrollTop = 0;
+          $(window).scroll(function(event){
+            var st = $(this).scrollTop();
+              if (st > lastScrollTop){
+                $('.barra-destaques').slideUp(400);
+              } else {
+                if(!$('.barra-destaques').length) {
+                  $('.barra-destaques').hide();
+                }
+                $('.barra-destaques').slideDown(400);
+              }
+            lastScrollTop = st;
+          });
+
+        }
+    }
+
+
+        barraFixed();
+        maisBuscadosBarraFlutuante();
     }
 
     static barraInicialGif(obj){
@@ -77,6 +147,7 @@ class TodasAsPaginas{
             </a>
         </div>`)[barraInicialGif_posicaoFuncao](`${barraInicialGif_posicaoSeletor}`);
     }
+
     static reorganizacaoBarraInicial(){
 
         $(`<ul class="list-unstyled news-topbar">
@@ -160,6 +231,58 @@ class TodasAsPaginas{
             </li>
             </ul>`).prependTo('.barra-inicial .canais-contato');
     }
+
+    static scriptsCabecalho(){
+        function incluiTextoNoDropdownLogado(){
+            $('#cabecalho .btn-group.open>.dropdown-menu > li:last-child').ready(function(){
+                if($('#cabecalho .btn-group.open>.dropdown-menu > li:last-child').length > 0){
+                let name = $.trim($('#cabecalho a.botao.secundario.pequeno.dropdown-toggle').text()).split('Olá, ')[1].split(' ')[0];
+                    $(this).find('#cabecalho .dropdown-menu > li:last-child a').before(`<span>Não é <span>${name}?</span></span>`);
+                }
+            });
+        }
+
+        function mascaraBuscas(){
+            $('<div class="mask-src-desktop"></div>').prependTo('#cabecalho .busca.borda-alpha');
+            $('<div class="mask-src-desktop"></div>').prependTo('#barraTopo .busca.borda-alpha');
+
+            $('#cabecalho .busca.borda-alpha input#auto-complete,#barraTopo form input').click(function(){
+                $('body').addClass('src-active');
+            });
+            $('.mask-src-desktop').click(function(){
+                $('body').removeClass('src-active');
+            });
+
+            $(window).scroll(function(){
+                if($('body').hasClass("src-active")){
+                $('.busca input:visible').select();
+                    if($(window).scrollTop() <= 100){
+                        $('.busca input:visible').select();
+                    }
+                }
+            });
+            $('.busca input').bind('keyup', function(){
+                $('.busca input').val($(this).val());
+            });
+        }
+
+        function carrinhoVazioTxt(){
+            if( $('.carrinho>a strong.qtd-carrinho').html() == '0') {
+            $('body').addClass('carrinho-vazio-ilm');
+            $(`<div class="carrinho-vazio-txt"><span>
+                Seu carrinho está vazio
+                </span></div>`).appendTo('.carrinho-vazio-ilm .carrinho');
+            } else {
+                $('body').removeClass('carrinho-vazio-ilm');
+            }
+        }
+        
+        
+        incluiTextoNoDropdownLogado();
+        mascaraBuscas();
+        carrinhoVazioTxt();
+    }
+
     static centralAtendimento(){
         $(`
             <div class="central_atendimento_cb">
@@ -252,46 +375,6 @@ class TodasAsPaginas{
             </div>
             `).appendTo('#cabecalho .inferior');
     }
-    static scriptsCabecalho(){
-        function incluiTextoNoDropdownLogado(){
-            $('#cabecalho .btn-group.open>.dropdown-menu > li:last-child').ready(function(){
-                if($('#cabecalho .btn-group.open>.dropdown-menu > li:last-child').length > 0){
-                let name = $.trim($('#cabecalho a.botao.secundario.pequeno.dropdown-toggle').text()).split('Olá, ')[1].split(' ')[0];
-                    $(this).find('#cabecalho .dropdown-menu > li:last-child a').before(`<span>Não é <span>${name}?</span></span>`);
-                }
-            });
-        }
-        function mascaraBuscas(){
-            $('<div class="mask-src-desktop"></div>').prependTo('#cabecalho .busca.borda-alpha');
-            $('<div class="mask-src-desktop"></div>').prependTo('#barraTopo .busca.borda-alpha');
-
-            $('#cabecalho .busca.borda-alpha input#auto-complete,#barraTopo form input').click(function(){
-                $('body').addClass('src-active');
-            });
-            $('.mask-src-desktop').click(function(){
-                $('body').removeClass('src-active');
-            });
-
-            $(window).scroll(function(){
-                if($('body').hasClass("src-active")){
-                $('.busca input:visible').select();
-                    if($(window).scrollTop() <= 100){
-                        $('.busca input:visible').select();
-                    }
-                }
-            });
-            $('.busca input').bind('keyup', function(){
-                $('.busca input').val($(this).val());
-            });
-        }
-
-
-
-        
-        incluiTextoNoDropdownLogado();
-        mascaraBuscas();
-    }
-
 
     static menuSuperior(obj, carrousel){
          const categoria_TodosOsDepartamentos = function(){
@@ -817,6 +900,155 @@ class TodasAsPaginas{
             });
         }();
 
+    }
+
+    static scriptsListagem(obj){
+         const descontoProdutos = function(){
+            $('.listagem-item').each(function(){
+                let elemento = $('.bandeira-promocao', this).text();						
+                let porcDescontoTag = elemento.replace('% Desconto', '');
+                let textDesconto = elemento.replace(' Desconto', '');					
+                let htmlPorcTag = $('.bandeira-promocao', this);
+                 htmlPorcTag.html(`-${textDesconto}`);
+                if(porcDescontoTag <= 35){
+                    $(htmlPorcTag).addClass("frio");
+                }else if(porcDescontoTag <= 75) {
+                    $(htmlPorcTag).addClass("morno");
+                }else {
+                    $(htmlPorcTag).addClass("quente");
+                }
+            });
+        }()
+        
+        
+        
+         const tagLancamento = function(){
+            if( obj.tagLancamentoListagem.ativo == true){
+                let prodLancamento = obj.tagLancamentoListagem.ids
+                for(i = 0; i < prodLancamento.length; i++) { 
+                    $('#listagemProdutos>ul .listagem-item.prod-id-'+prodLancamento[i]).each(function(){
+                            $('<span class="lancamento-ilm">Lançamento</span>').appendTo(this);
+                    });
+                }
+                $('#listagemProdutos .listagem-item .lancamento-ilm, .pagina-busca .listagem-item .lancamento-ilm').parents('.listagem-item').addClass('class-lancamento-ajuste');
+            }
+        }()
+        
+         const tagCampeaoVendas = function(){
+            if( obj.tagCampeaoVendas.ativo == true){
+                let prodCampeao = obj.tagCampeaoVendas.skus
+                prodCampeao.forEach((item, index)=>{
+                    $(`.pagina-inicial #listagemProdutos>ul .listagem-item .produto-sku.hide:contains("${item}")`).each(function(inx, elm){
+                        if( $(this).text().indexOf(`${item}`) > -1){
+                                if($(this).find('.campeao-vendas-ilm').length <= 0){
+                            var thisParents = $(this).parents('.listagem-item');
+                            $('<span class="campeao-vendas-ilm"></span>').appendTo(thisParents);
+                                }
+                            thisParents.addClass('campeao-vendas');
+                        }
+                    });
+                });
+            }
+        }()
+        
+         const VideoeDica = function(){
+            function iframeAdd(link){
+                $(`<div class="content-video-ilm">
+                    <iframe width="464" height="261" src="https://www.youtube.com/embed/${link}?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                </div><div class="ir-produto"><a href="">Ir para o produto</a></div>`).appendTo('.video-wrapper-content-ilm');
+            }
+
+        if(obj.VideoeDica.ativo == true){
+                $(`<div class="video-mask-ilm">
+                    <div class="video-wrapper-content-ilm">
+                        <div class="acoes-video-ilm"><span class="btn-close">X</span></div>
+                    </div>
+                </div>`).appendTo('body');
+
+                // ouça dica por sku para afetar o princial e os kits
+                var skuProdLength = obj.VideoeDica.video.skuslinks
+                    
+                skuProdLength.forEach(element=>{
+                    let sku = element.split(' ')[0];
+                    let link = element.split(' ')[1];
+                    
+                    $(`.listagem-item .produto-sku.hide:contains("${sku}")`).parents('.listagem-item').find('a.nome-produto.cor-secundaria').after(`
+                        <div class="veja-o-video-iluminim">
+                            <div class="botao video-iluminim"><span>Ouça a dica</span></div>
+                        </div>
+                    `);
+                    $(`.listagem-item .produto-sku.hide:contains("${sku}")`).parents('.listagem-item').find('.botao.video-iluminim').unbind().click(function(){
+                        iframeAdd(link);
+                    });
+                    
+                });
+                
+                // ouça dica listagem por id para afetar apenas 1 elemento (proprio id)
+                var lengthIds = obj.VideoeDica.dica.idslinks
+              
+                lengthIds.forEach(element=>{
+                    let id   = element.split(' ')[0];
+                    let link = element.split(' ')[1];
+                    $('<div class="veja-o-video-iluminim">'+
+                    '<div class="botao video-iluminim"><span>Ouça a dica</span></div>'+
+                    '</div>').insertAfter(`.listagem-item.prod-id-${id} a.nome-produto.cor-secundaria`);
+                    
+                    $(`.listagem-item.prod-id-${id} .botao.video-iluminim`).unbind().click(function(){
+                        iframeAdd(link);
+                    });
+                });
+            
+                
+                /// video listagem por id para afetar apenas 1 elemento (proprio id)
+                var lengthIdsVideo = obj.VideoeDica.video.idslinks
+            
+                lengthIdsVideo.forEach((element, index)=>{
+                    let id   = element.split(' ')[0];
+                    let link = element.split(' ')[1];
+                    $(`<div class="veja-o-video-iluminim">
+                    <div class="botao video-iluminim"><span>Veja o Vídeo</span></div>
+                  </div>`).insertAfter(`.listagem-item.prod-id-${id} a.nome-produto.cor-secundaria`);
+                    
+                    $(`.listagem-item.prod-id-${id} .botao.video-iluminim`).unbind().click(function(){
+                        $(`<div class="content-video-ilm">
+                            <iframe width="464" height="345" src="https://www.youtube.com/embed/${link}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div><div class="ir-produto"><a href="">Ir para o produto</a></div>`).appendTo('.video-wrapper-content-ilm');
+                    });
+                });
+            
+            
+            $('.listagem-item .veja-o-video-iluminim').parents('.listagem-item').addClass('produto_video');
+            $('.listagem-item.produto_video .botao.video-iluminim').click(function(){
+              $('body').addClass('video-iluminim');
+                var ilmprod = $(this).parents('.info-produto').children('.nome-produto').attr('href');
+                $('.ir-produto >a').attr('href',' '+ ilmprod +' ');
+            });
+            
+            
+            $('.video-wrapper-content-ilm span.btn-close').click(function(){
+              $('body').removeClass('video-iluminim');
+              $('.content-video-ilm,.ir-produto').remove();
+            });
+        }
+        }();
+
+         const addFavoritosListagem = function(){
+            $('<a class="add-fav" href="#"></a>').prependTo(".listagem-item");
+              $(".listagem-item").each(function() {
+                  var $jQname$AddFav = $(this).find(".info-produto .hide.trustvox-stars").attr("data-trustvox-product-code");
+                  $(this).find(".add-fav").attr("href", "/conta/favorito/" + $jQname$AddFav + "/adicionar")
+              });
+          }();
+          
+           const linhaLoginERegister = function(){
+          // tarja login e cadastro pagina inicial
+          $(`<div class="login-listagem text-center" style="${obj.linhaLoginERegister.style_html}">
+              <span class="texto-listagem">Faça login e veja ofertas incríveis escolhidas só para você</span>
+              <a class="btn-entrar" href="/conta/login">Entre</a>
+              <a class="btn-cadastrar" href="/conta/login">Cadastre-se</a>
+              </div>`)[obj.linhaLoginERegister.posicao.funcao](`${obj.linhaLoginERegister.posicao.seletor}`);
+          }();
+        
     }
 
     static reorganizacaoDoRdp(){
