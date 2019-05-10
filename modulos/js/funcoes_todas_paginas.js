@@ -1132,8 +1132,7 @@ class TodasAsPaginas{
                   var $jQname$AddFav = $(this).find(".info-produto .hide.trustvox-stars").attr("data-trustvox-product-code");
                   $(this).find(".add-fav").attr("href", "/conta/favorito/" + $jQname$AddFav + "/adicionar")
               });
-        }();      
-        
+        }();        
     }
 
     static reorganizacaoDoRdp(){
