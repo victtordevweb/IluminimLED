@@ -75,6 +75,8 @@
     font-weight: 700;
     padding-bottom: 20px;
     border-bottom: 1px solid #D0D0D0;
+    padding-right: 26px;
+    position: relative;
 }
 
 
@@ -532,4 +534,41 @@ color: #e72428 !important;
 }
 .pagina-produto .quantidade-variacoes-ILM li:hover {
     box-shadow: rgba(245, 0, 0, 0.58) 1px 1px 0px 0px;
+}
+
+
+
+
+           
+.pagina-produto .principal a.lista-favoritos, 
+.pagina-produto .acoes-flutuante .lista-favoritos {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: calc(50% - 16.5px);
+    font-size: 0;
+    background: none !important;
+}
+
+.pagina-produto .principal {
+    position: relative;
+}
+
+.pagina-produto .principal a.lista-favoritos i:before, 
+.pagina-produto .acoes-flutuante a.lista-favoritos i:before{
+    color: #D83F3F;
+    content: "\f08a" !important;
+    font-size: 24px;
+}
+
+.pagina-produto .principal a.lista-favoritos:hover i:before,
+.pagina-produto .acoes-flutuante a.lista-favoritos:hover i:before {
+    content:"\f004" !important;
+}
+
+.pagina-produto .acoes-flutuante .lista-favoritos {
+    top: 7px !important;
+    right: 7px !important;
 }

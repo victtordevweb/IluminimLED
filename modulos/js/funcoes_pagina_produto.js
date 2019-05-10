@@ -23,7 +23,10 @@ class PaginaProduto {
             <span class="b-txt">Aproveite!</span><span>Ganhe <span class="txt-color">10% de desconto</span> no boleto</span><span class="preco">${priceProd}</span>
         </span>`);
         });
+
+        /* move botao add favoritos */
+        $('.lista-redes a.lista-favoritos.adicionar-favorito').clone().appendTo('.pagina-produto .principal .nome-produto, .pagina-produto .acoes-flutuante.borda-principal');
     }
-    
+
 
 }
