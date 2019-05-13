@@ -926,7 +926,3 @@ div#ModalInfoPagamento .row-parcele-mp p {
 .modal-backdrop.fade.in {
     z-index: 999999999;
 }
-
-div#ModalInfoPagamento {
-    z-index: !important;
-}
