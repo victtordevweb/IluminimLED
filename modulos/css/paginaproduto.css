@@ -828,9 +828,6 @@ div#ModalInfoPagamento .row-grid-bandeiras > p {
     color: #666 !important;
     font-size: 15.5px !important;
 }
-div#ModalInfoPagamento .row-parcele-mp {
-}
-
 div#ModalInfoPagamento .row-grid-bandeiras > p {
     color: #666 !important;
     font-size: 15.5px !important;
@@ -855,26 +852,64 @@ margin-bottom:2px;
 }
 
 div#ModalInfoPagamento .row-mp-top:before {
-    content:"";
+    content: "";
     float: left;
-    margin-right: 8px;
     position: relative;
     top: -5px;
     margin-right: 13px;
+    background-position: -6px -76px;
+    width: 66px;
+    height: 66px;
 }
-div#ModalInfoPagamento .parcelas-prod {
+div#ModalInfoPagamento .parcelas-prod:before {
     content:"";
     display:block;
     position:relative;
-
 }
+
+div#ModalInfoPagamento .visa-modal.parcelas-prod:before {
+    background-position: -467px -98px !important;
+    width: 62px;
+    height: 25px;
+}
+div#ModalInfoPagamento .master-modal.parcelas-prod:before {
+    background-position: -534px -97px !important;
+    width: 41px;
+    height: 30px;
+}
+div#ModalInfoPagamento .hipercard-modal.parcelas-prod:before {
+    background-position: -296px -96px !important;
+    width: 67px;
+    height: 30px;
+}
+div#ModalInfoPagamento .amex-modal.parcelas-prod:before {
+    background-position: -77px -94px !important;
+    width: 31px;
+    height: 31px;
+}
+div#ModalInfoPagamento .diners-modal.parcelas-prod:before {
+    background-position: -171px -94px !important;
+    width: 120px;
+    height: 32px;
+}
+div#ModalInfoPagamento .elo-modal.parcelas-prod:before {
+    background-position: -116px -94px !important;
+    width: 48px;
+    height: 30px;
+}
+div#ModalInfoPagamento .mp-modal.parcelas-prod:before {
+    background-position: -368px -96px !important;
+    width: 42px;
+    height: 29px;
+}
+
 div#ModalInfoPagamento .row-parcele-mp > p:before {
     display: block;
     margin-right: 15px;
     vertical-align: middle;
 }
 div#ModalInfoPagamento .visa-modal:before {
-	left:-4px;
+    left: -4px;
 }
 div#ModalInfoPagamento .diners-modal:before {
 	left:-4px;
