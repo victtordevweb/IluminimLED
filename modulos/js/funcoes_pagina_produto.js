@@ -79,8 +79,23 @@ class PaginaProduto {
         $('.audio-hash-a').click(function(){
             $('#anchor-audio > div').trigger('click');
         });
-
     }
 
+    static modalInformacoesPagamento(){
+        $(`
+            <div class="comprasegurap">
+                <a href="https://www.siteblindado.com/consumidor/selo-blindado/?language=pt&amp;hostname=www.iluminim.com.br" target="_blank">
+                <img src="https://cdn.awsli.com.br/257/257163/arquivos/selo-ssl_600x.png">
+                </a>
+            </div>
+            <div class="parcelas-sem-juros" data-hash="#ModalInfoPagamento" data-target="#ModalInfoPagamento" data-toggle="modal"><span class="icon-card-prod"></span> Pague em até <span>5 parcelas sem juros!</span></div>
+
+            <div class="ModalInfoPagamento-Modal modal fade" id="ModalInfoPagamento" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="false" style="display: none;"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <h4 class="modal-title">Formas de pagamento</h4> <button type="button" class="close" data-dismiss="modal">&times;</button> </div><div class="modal-body"> <div class="row-mp-top"> <h3 class="titles-modal-ilm">Mercado Pago</h3> <p>Pagar com o Mercado Pago é escolher qualquer um destes meios. É rápido,<span> seguro e não tem custo adicional.</span></p></div><div class="row-parcele-mp"> <p>Você pode pagar este produto em <span>até <span class="parcelas-prod">12x</span> sem juros!</span></p></div><div class="row-grid-bandeiras"> <h3 class="titles-modal-ilm">Cartões de crédito</h3> <p>Aprovação instantânea.</p><div class="bands-modal-ilm"> <ul> <li> <div class="visa-modal parcelas-prod">6 X</div><div class="diners-modal parcelas-prod">6 X</div></li><li> <div class="master-modal parcelas-prod">6 X</div><div class="elo-modal parcelas-prod">6 X</div></li><li> <div class="hipercard-modal parcelas-prod">6 X</div><div class="mp-modal parcelas-prod">12 X</div></li><li> <div class="amex-modal parcelas-prod">6 X</div></li></ul> </div></div><div class="rdp-modal-boleto"> <h3 class="titles-modal-ilm">Boleto bancário</h3> <p>Ao comprar explicaremos como fazer o pagamento em qualquer agência bancária, caixa eletrônico, internet banking ou correspondentes bancários.<span>Pague e será aprovado de 1 a 2 dias úteis.</span></p></div></div></div></div></div>`).insertBefore('.pagina-produto .parcelas-produto.borda-alpha.padrao');
+
+            if($('.span6 .principal .preco-parcela').length){
+                var quantVezesParcelas = $('.span6 .principal .preco-parcela>strong:nth-child(1)').text();
+                $('.parcelas-prod').html(quantVezesParcelas);
+            }
+    }
 
 }

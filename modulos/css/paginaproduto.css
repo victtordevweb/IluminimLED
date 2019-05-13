@@ -681,3 +681,252 @@ div#barraTopo .acoes-prod-topo ul.wrap-elementos li {
 div#barraTopo .acoes-prod-topo ul.wrap-elementos a:hover {
     color: #a2373a;
 }
+
+/* modal pagamento */
+.pagina-produto .parcelas-sem-juros span {
+    font-weight: 600;
+}
+.pagina-produto .parcelas-sem-juros {
+    background-color: #39b54a;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 11px 14px 13px 14px !important;
+    margin: -3px 0px 13px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    cursor:pointer;
+    transition: all 0.2s;
+}
+.pagina-produto span.icon-card-prod:before {
+    content: "\f09d";
+    font-weight: 100 !important;
+    margin-right: 7px;
+}
+
+.pagina-produto .parcelas-sem-juros:hover {
+    background: #30a741;
+}
+
+
+
+
+.produto .acoes-flutuante a.modalInfoPagamentoProduto {
+    display: none !important;
+}
+.produto .acoes-flutuante .acoes-produto .preco-parcela:after {
+    display: none !important;
+}
+.produto .modalInfoPagamentoProduto {
+	color:#3483fa;
+	cursor:pointer;
+	text-decoration:none!important;
+	transition:all 0.2s;
+	font-family: 'Roboto' !important;
+	font-size: 13px;
+	margin-bottom: -12px;
+	display: block !important;
+	margin-top: 2px;
+
+}
+.produto .modalInfoPagamentoProduto:hover {
+    color: #1259c3;
+}
+
+/*modal */
+.pagina-produto div#ModalInfoPagamento {
+    background: none;
+    width: 100% !important;
+    margin: 0 !important;
+    left: 0 !important;
+    box-shadow:none !important;
+    border:none !Important;
+    z-index: 9999999999!important;
+    top: 10%;
+}
+.pagina-produto div#ModalInfoPagamento > .modal-dialog {
+    width: 775px;
+    background: #fff;
+    padding: 0 !important;
+    margin: 0 auto !important;
+	border-radius:5px;
+}
+.pagina-produto div#ModalInfoPagamento .modal-body {
+    width: 100% !important;
+	padding: 30px 64px 0 64px;
+    box-sizing: border-box;
+	max-height: 450px !important;
+}
+.pagina-produto div#ModalInfoPagamento .modal-header {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background: none;
+    padding: 15px 64px;
+    -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,.07), 0 0 24px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.07), 0 0 24px 0 rgba(0,0,0,.15);
+}
+
+.pagina-produto div#ModalInfoPagamento .modal-title {
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+}
+.pagina-produto div#ModalInfoPagamento button.close {
+    color: #a73739 !important;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 33px !important;
+    position: relative;
+    top: -3px;
+}
+div#ModalInfoPagamento h3.titles-modal-ilm {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: .8;
+    margin: 0 0 5px;
+    color: #333;
+}
+
+div#ModalInfoPagamento p {
+    font-size: 15px;
+    color: #333;
+}
+div#ModalInfoPagamento .row-mp-top:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-top-mp.png);
+    float: left;
+    margin-right: 8px;
+    position: relative;
+    top: -5px;
+    margin-right: 13px;
+}
+
+
+div#ModalInfoPagamento .row-parcele-mp {
+    text-align: center;
+    width: 100%;
+	margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 4px;
+    background-color: #39b54a;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+	height:50px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+
+div#ModalInfoPagamento .row-parcele-mp p {
+    margin: 0;
+	font-size:13.3px !important;
+	height:20px;
+}
+div#ModalInfoPagamento .row-parcele-mp > p:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/icon-card-parcelas.png);
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+div#ModalInfoPagamento .row-grid-bandeiras > p {
+    color: #666 !important;
+    font-size: 15.5px !important;
+}
+div#ModalInfoPagamento .row-parcele-mp {
+}
+
+div#ModalInfoPagamento .row-grid-bandeiras > p {
+    color: #666 !important;
+    font-size: 15.5px !important;
+}
+
+div#ModalInfoPagamento .bands-modal-ilm > ul {
+    margin: 0;
+    display: flex;
+}
+
+div#ModalInfoPagamento .bands-modal-ilm > ul > li {
+    width: 157px;
+}
+
+div#ModalInfoPagamento .bands-modal-ilm > ul > li > div {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 23px;
+}
+div#ModalInfoPagamento .bands-modal-ilm > ul > li > div:before {
+margin-bottom:2px;
+}
+
+
+div#ModalInfoPagamento .visa-modal:before {
+	content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-visa.png);
+	display: block;
+		position:relative;
+	left:-4px;
+}
+div#ModalInfoPagamento .diners-modal:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-diners.png);
+    display: block;
+	position:relative;
+	left:-4px;
+}
+div#ModalInfoPagamento .master-modal:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-master.png);
+    display: block;
+}
+div#ModalInfoPagamento .elo-modal:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-elo-ok.png);
+    display: block;
+}
+
+div#ModalInfoPagamento .hipercard-modal:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-hipercard.png);
+    display: block;
+}
+div#ModalInfoPagamento .mp-modal:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-marcadopago,.png);
+    display: block;
+}
+div#ModalInfoPagamento .amex-modal:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-amex.png);
+    display: block;
+}
+div#ModalInfoPagamento .bands-modal-ilm {
+    margin-top: 25px !important;
+    display: block;
+    margin-bottom: 20px;
+}
+
+div#ModalInfoPagamento .rdp-modal-boleto p {
+    color: #666 !important;
+    font-size: 16px !important;
+}
+
+div#ModalInfoPagamento .rdp-modal-boleto p:after {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-boleto-ok.png);
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 80px;
+}
+
+div#ModalInfoPagamento .row-parcele-mp span {
+    display: inline-block !important;
+    font-weight: 600 !important;
+}
+
+div#ModalInfoPagamento .row-parcele-mp p {
+    color: #fff !important;
+    font-size: 15px !important;
+}
+
+.modal-backdrop.fade.in {
+    z-index: 999999999;
+}
+
+div#ModalInfoPagamento {
+    z-index: !important;
+}
