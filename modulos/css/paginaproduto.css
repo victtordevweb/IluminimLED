@@ -904,9 +904,13 @@ div#ModalInfoPagamento .mp-modal.parcelas-prod:before {
 }
 
 div#ModalInfoPagamento .row-parcele-mp > p:before {
-    display: block;
-    margin-right: 15px;
-    vertical-align: middle;
+    background-position: -81px -72px !important;
+    width: 20px;
+    height: 15px;
+    content: "";
+    float: left;
+    position: relative;
+    top: 4px;
 }
 div#ModalInfoPagamento .visa-modal:before {
     left: -4px;
@@ -919,6 +923,10 @@ div#ModalInfoPagamento .rdp-modal-boleto p:after {
     display: block;
     margin-top: 19px;
     margin-bottom: 80px;
+    content: "";
+    background-position: -414px -91px !important;
+    width: 50px;
+    height: 36px;
 }
 div#ModalInfoPagamento .bands-modal-ilm {
     margin-top: 25px !important;
