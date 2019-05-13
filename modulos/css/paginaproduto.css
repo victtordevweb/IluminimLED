@@ -572,3 +572,110 @@ color: #e72428 !important;
     top: 7px !important;
     right: 7px !important;
 }
+
+.pagina-produto .produto .acoes-flutuante {
+    z-index: 9999999999 !important;
+}
+
+.pagina-produto a.botao-trust {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #FF8702;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.pagina-produto  span.icon-central {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.pagina-produto .comprando-iluminim span.conteudo-comprando-iluminim {
+    color: #525252;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.pagina-produto .comprando-iluminim span.titulo-comprando-iluminim {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f4f4f5;
+    margin-bottom: 20px;
+    color: red;
+		margin-top: 15px;
+}
+
+
+.pagina-produto .comprando-iluminim span.conteudo-comprando-iluminim.span4.um {
+    margin-left: 0;
+}
+
+.pagina-produto .comprando-iluminim b.tit-conteudo {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    display: block;
+}
+
+.pagina-produto span.icon-central:before {
+    content: "";
+    width: 26px;
+    height: 28px;
+    background-position: -53px -35px !important;
+}
+
+.pagina-produto span.icon-central:before {
+    background: url(https://cdn.awsli.com.br/930/930730/arquivos/sprite_pagina_produtov2.png);
+}
+
+.pagina-produto a.botao-trust.prod-flutuante {
+    font-size: 14px;
+    line-height: 10px;
+    padding: 14px 0 19px 0;
+}
+
+
+/* barra flutuante new */
+div#barraTopo .acoes-prod-topo ul.wrap-elementos {
+    width: 1278px !important;
+    margin: 0 auto;
+}
+
+div#barraTopo .acoes-prod-topo {
+    overflow: hidden;
+    background: #ffff !important;
+    margin-top: 2px;
+    box-shadow: 0px 1px 2px 0px rgba(150,150,150,0.1);
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    z-index: 888;
+    background-color: #fff !important;
+}
+
+div#barraTopo .acoes-prod-topo ul.wrap-elementos a {
+    font-size: 14px;
+    padding: 12px 40px 14px 3px;
+    display: block;
+    position: relative;
+    color: #444;
+    text-decoration: underline;
+    letter-spacing: -.5px;
+    cursor:pointer;
+    transition: all 0.2s;
+}
+
+div#barraTopo .acoes-prod-topo ul.wrap-elementos li {
+    display: inline-block;
+}
+
+div#barraTopo .acoes-prod-topo ul.wrap-elementos a:hover {
+    color: #a2373a;
+}
