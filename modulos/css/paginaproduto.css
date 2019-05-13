@@ -1,8 +1,19 @@
 .pagina-produto .principal .entrega-todo-pais-ilm:before,
 .pagina-produto .principal .desconto-a-vista strong:before,
 .pagina-produto .veja-quem-recmendou span:before,
-.pagina-produto .avaliar-pg-prod .stars-block span:after {
-	background: url(https://cdn.awsli.com.br/930/930730/arquivos/sprite_pagina_produtov2.png);
+.pagina-produto .avaliar-pg-prod .stars-block span:after,
+.pagina-produto span.icon-central:before,
+div#ModalInfoPagamento .row-mp-top:before,
+div#ModalInfoPagamento .row-parcele-mp > p:before,
+div#ModalInfoPagamento .visa-modal:before,
+div#ModalInfoPagamento .diners-modal:before,
+div#ModalInfoPagamento .master-modal:before,
+div#ModalInfoPagamento .elo-modal:before,
+div#ModalInfoPagamento .hipercard-modal:before,
+div#ModalInfoPagamento .mp-modal:before,
+div#ModalInfoPagamento .amex-modal:before,
+div#ModalInfoPagamento .rdp-modal-boleto p:after {
+	background: url(https://cdn.awsli.com.br/930/930730/arquivos/sprite_pagina_produtov3.png);
 }
 /* sprite pg prod acima */ 
 
@@ -633,10 +644,6 @@ color: #e72428 !important;
     background-position: -53px -35px !important;
 }
 
-.pagina-produto span.icon-central:before {
-    background: url(https://cdn.awsli.com.br/930/930730/arquivos/sprite_pagina_produtov2.png);
-}
-
 .pagina-produto a.botao-trust.prod-flutuante {
     font-size: 14px;
     line-height: 10px;
@@ -794,16 +801,6 @@ div#ModalInfoPagamento p {
     font-size: 15px;
     color: #333;
 }
-div#ModalInfoPagamento .row-mp-top:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-top-mp.png);
-    float: left;
-    margin-right: 8px;
-    position: relative;
-    top: -5px;
-    margin-right: 13px;
-}
-
-
 div#ModalInfoPagamento .row-parcele-mp {
     text-align: center;
     width: 100%;
@@ -825,11 +822,7 @@ div#ModalInfoPagamento .row-parcele-mp p {
 	font-size:13.3px !important;
 	height:20px;
 }
-div#ModalInfoPagamento .row-parcele-mp > p:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/icon-card-parcelas.png);
-    margin-right: 15px;
-    vertical-align: middle;
-}
+
 
 div#ModalInfoPagamento .row-grid-bandeiras > p {
     color: #666 !important;
@@ -861,68 +854,55 @@ div#ModalInfoPagamento .bands-modal-ilm > ul > li > div:before {
 margin-bottom:2px;
 }
 
+div#ModalInfoPagamento .row-mp-top:before {
+    content:"";
 
+    float: left;
+    margin-right: 8px;
+    position: relative;
+    top: -5px;
+    margin-right: 13px;
+}
+div#ModalInfoPagamento .parcelas-prod {
+    content:"";
+    display:block;
+    position:relative;;
+
+}
+div#ModalInfoPagamento .row-parcele-mp > p:before {
+    display: block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
 div#ModalInfoPagamento .visa-modal:before {
-	content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-visa.png);
-	display: block;
-		position:relative;
 	left:-4px;
 }
 div#ModalInfoPagamento .diners-modal:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-diners.png);
-    display: block;
-	position:relative;
 	left:-4px;
 }
-div#ModalInfoPagamento .master-modal:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-master.png);
-    display: block;
-}
-div#ModalInfoPagamento .elo-modal:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-elo-ok.png);
-    display: block;
-}
 
-div#ModalInfoPagamento .hipercard-modal:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-hipercard.png);
+div#ModalInfoPagamento .rdp-modal-boleto p:after {
     display: block;
-}
-div#ModalInfoPagamento .mp-modal:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-marcadopago,.png);
-    display: block;
-}
-div#ModalInfoPagamento .amex-modal:before {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-amex.png);
-    display: block;
+    margin-top: 19px;
+    margin-bottom: 80px;
 }
 div#ModalInfoPagamento .bands-modal-ilm {
     margin-top: 25px !important;
     display: block;
     margin-bottom: 20px;
 }
-
 div#ModalInfoPagamento .rdp-modal-boleto p {
     color: #666 !important;
     font-size: 16px !important;
 }
-
-div#ModalInfoPagamento .rdp-modal-boleto p:after {
-    content: url(https://cdn.awsli.com.br/257/257163/arquivos/modal-modal-icone-boleto-ok.png);
-    display: block;
-    margin-top: 19px;
-    margin-bottom: 80px;
-}
-
 div#ModalInfoPagamento .row-parcele-mp span {
     display: inline-block !important;
     font-weight: 600 !important;
 }
-
 div#ModalInfoPagamento .row-parcele-mp p {
     color: #fff !important;
     font-size: 15px !important;
 }
-
 .modal-backdrop.fade.in {
     z-index: 999999999;
 }
