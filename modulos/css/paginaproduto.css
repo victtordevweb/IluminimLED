@@ -856,7 +856,6 @@ margin-bottom:2px;
 
 div#ModalInfoPagamento .row-mp-top:before {
     content:"";
-
     float: left;
     margin-right: 8px;
     position: relative;
@@ -866,7 +865,7 @@ div#ModalInfoPagamento .row-mp-top:before {
 div#ModalInfoPagamento .parcelas-prod {
     content:"";
     display:block;
-    position:relative;;
+    position:relative;
 
 }
 div#ModalInfoPagamento .row-parcele-mp > p:before {
