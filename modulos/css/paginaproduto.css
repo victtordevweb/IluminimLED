@@ -587,7 +587,7 @@ color: #e72428 !important;
 }
 
 .pagina-produto .produto .acoes-flutuante {
-    z-index: 9999999999 !important;
+    z-index: 999999999 !important;
 }
 
 .pagina-produto a.botao-trust {
@@ -714,6 +714,8 @@ div#barraTopo .acoes-prod-topo ul.wrap-elementos a:hover {
     background-position: -81px -72px !important;
     width: 20px;
     height: 15px;
+    position: relative;
+    top: 3px;
 }
 
 .pagina-produto .parcelas-sem-juros:hover {
@@ -915,6 +917,7 @@ div#ModalInfoPagamento .row-parcele-mp > p:before {
     float: left;
     position: relative;
     top: 3px;
+    margin-right: 10px;
 }
 div#ModalInfoPagamento .visa-modal:before {
     left: -4px;
