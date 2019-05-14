@@ -280,7 +280,7 @@ display: none
 }
 
 .produto>.row-fluid:first-child {
-padding-bottom: 90px
+    padding-bottom: 20px;
 }
 
 .pagina-produto .tab-content>.active, .pill-content>.active {
