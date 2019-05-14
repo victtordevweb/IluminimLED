@@ -910,7 +910,7 @@ div#ModalInfoPagamento .row-parcele-mp > p:before {
     content: "";
     float: left;
     position: relative;
-    top: 4px;
+    top: 3px;
 }
 div#ModalInfoPagamento .visa-modal:before {
     left: -4px;
