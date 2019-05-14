@@ -12,7 +12,8 @@ div#ModalInfoPagamento .elo-modal:before,
 div#ModalInfoPagamento .hipercard-modal:before,
 div#ModalInfoPagamento .mp-modal:before,
 div#ModalInfoPagamento .amex-modal:before,
-div#ModalInfoPagamento .rdp-modal-boleto p:after {
+div#ModalInfoPagamento .rdp-modal-boleto p:after,
+.pagina-produto span.icon-card-prod:before {
 	background: url(https://cdn.awsli.com.br/930/930730/arquivos/sprite_pagina_produtov3.png);
 }
 /* sprite pg prod acima */ 
@@ -707,9 +708,12 @@ div#barraTopo .acoes-prod-topo ul.wrap-elementos a:hover {
     transition: all 0.2s;
 }
 .pagina-produto span.icon-card-prod:before {
-    content: "\f09d";
+    content: "";
     font-weight: 100 !important;
     margin-right: 7px;
+    background-position: -81px -72px !important;
+    width: 20px;
+    height: 15px;
 }
 
 .pagina-produto .parcelas-sem-juros:hover {
