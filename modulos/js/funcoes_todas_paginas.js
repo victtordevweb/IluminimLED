@@ -1,3 +1,20 @@
+let menuILM = `
+<li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
+<li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
+<li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
+<li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
+<li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
+<li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
+<li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
+<li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
+<li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
+<li class="led-solar-mt"><a href="/led-solar?sort=mais_vendidos">LED Solar</a></li>
+<li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessórios LED</a></li>
+<li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits Especiais</a></li>
+<li class="lancamentos-mt"><a href="/lancamentos-led?sort=mais_vendidos">Lançamentos</a></li>
+<li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
+`;
+
 class TodasAsPaginas{
 
     static scriptBarraFlutuante(){
@@ -19,20 +36,7 @@ class TodasAsPaginas{
                 </div>
 
             <ul class="dropdown-menu-barratopo" style="display:none;">
-                <li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
-                <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
-                <li class="lum-emergencia-mt"><a href="/luminaria-emergencia-led?sort=mais_vendidos">Luminária Emergência LED</a></li>
-                <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
-                <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
-                <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
-                <li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
-                <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
-                <li class="lustre-mt"><a href="/lustre-led?sort=mais_vendidos">Lustre LED</a></li>
-                <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
-                <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
-                <li class="acessorios-mt"><a href="/acessorios-para-leds?sort=mais_vendidos">Acessorios LED</a></li>
-                <li class="kits-mt"><a href="/kits-especiais?sort=mais_vendidos">Kits Especiais</a></li>
-                <li class="ofertas-sem-mt"><a href="/ofertadasemana?sort=mais_vendidos">Oferta da Semana</a></li>
+                ${menuILM}
             </ul>
 
             </div>
