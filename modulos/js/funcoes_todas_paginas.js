@@ -25,8 +25,8 @@ class TodasAsPaginas{
     }
 
     static scriptBarraFlutuante(){
-
-        function barraFixed(){
+        var $class = this
+        function barraFixed(){ 
             /* Reorganiza Barra Flutuante */
             $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
             $('div#barraTopo > .conteiner > .row-fluid > .span3:nth-child(2)').removeClass('span3').addClass('span5 atalhos_flutuantes');
@@ -43,7 +43,7 @@ class TodasAsPaginas{
                 </div>
 
             <ul class="dropdown-menu-barratopo" style="display:none;">
-                ${this.htmlMenuIluminim}
+                ${$class.htmlMenuIluminim}
             </ul>
 
             </div>
