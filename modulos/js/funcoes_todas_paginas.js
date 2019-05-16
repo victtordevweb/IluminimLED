@@ -1,10 +1,10 @@
 var htmlMenuIluminim = `
 <li class="refletores-mt"><a href="/refletores-led?sort=mais_vendidos">Refletores LED</a></li>
 <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
-<li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
+<li class="spots-mt"><a href="/spots-led?sort=mais_vendidos">Spot LED</a></li>
 <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
-<li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
-<li class="lampadas-mt"><a href="/lampada-led?sort=mais_vendidos">Lâmpadas LED</a></li>
+<li class="fitas-mt"><a href="/fitas-led?sort=mais_vendidos">Fitas LED</a></li>
+<li class="lampadas-mt"><a href="/lampadas-led?sort=mais_vendidos">Lâmpadas LED</a></li>
 <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
 <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
 <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
@@ -417,7 +417,7 @@ class TodasAsPaginas{
 }
 
     static scriptBarraFlutuante(){
-        var $class = this
+ 
         function barraFixed(){ 
             /* Reorganiza Barra Flutuante */
             $('div#barraTopo > .conteiner > .row-fluid > .span3:first-child').removeClass('span3').addClass('span2 logo_iluminim');
