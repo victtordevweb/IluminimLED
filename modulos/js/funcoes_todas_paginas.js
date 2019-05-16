@@ -398,8 +398,11 @@ class TodasAsPaginas{
         $('.pagina-categoria .menu.lateral.outras .nivel-um').html(`${htmlMenuIluminim}`);
 
         $('.menu.outras .nivel-um > li > a').each(function(){
-            var link = $(this).attr('href').split('?')[0];
-            var url = $('.menu.lateral:not(.outras) > .nivel-um > li > a').attr('href').split('com.br')[1]
+            let link = $(this).attr('href').split('?')[0];
+            let alvo = $('.menu.lateral:not(.outras) > .nivel-um > li > a');
+            if(alvo.length > 0){
+                var url = alvo.attr('href').split('com.br')[1]
+            }
             if(url.includes(`${link}`)){
                 $(this).parent('li').addClass('active').attr('style','display:none !important;');
                 $('.menu.lateral:not(.outras) > .nivel-um > li').addClass(`${$(this).parent('li').attr('class')}`);
