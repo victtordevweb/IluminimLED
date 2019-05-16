@@ -195,7 +195,206 @@ class TodasAsPaginas{
                 </li>
             `;
         }
-
+        function htmlSubMenuLateralArandelas(){
+            return `
+            <li class="cat-id-arand-led-externa">
+                <a href="/arandela-externa-led" title="Arandela LED Externa">Arandela LED Externa</a>
+            </li>
+            <li class="cat-id-arand-led-interna">
+                <a href="/arandela-interna-led" title="Arandela LED Interna">Arandela LED Interna</a>
+            </li>
+            `;
+        }
+        function htmlSubMenuLateralFitas(){
+            return `
+                <li class="cat-id-fita-led-rgb">
+                    <a href="/fita-led-rgb?sort=mais_vendidos" title="fita led rgb">fita led rgb</a>
+                </li>
+                <li class="cat-id-fita-led-branco-quente">
+                    <a href="/fita-led-branco-quente?sort=mais_vendidos" title="fita led branco quente">fita led branco quente</a>
+                </li>
+                <li class="cat-id-fita-led-branco-frio">
+                    <a href="/fita-led-branca?sort=mais_vendidos" title="fita led branco frio">fita led branco frio</a>
+                </li>
+                <li class="cat-id-fita-led-branco-morno">
+                    <a href="/fita-led-branco-morno?sort=mais_vendidos" title="fita led branco morno">fita led branco morno</a>
+                </li>
+                <li class="cat-id-fita-led-azul">
+                    <a href="/fita-led-azul?sort=mais_vendidos" title="fita led azul">fita led azul</a>
+                </li>
+                <li class="cat-id-fita-led-vermelha">
+                    <a href="/fita-led-vermelha?sort=mais_vendidos" title="fita led vermelha">fita led vermelha</a>
+                </li>
+                <li class="cat-id-fita-led-verde">
+                    <a href="/fita-led-verde?sort=mais_vendidos" title="fita led verde">fita led verde</a>
+                </li>
+                <li class="cat-id-fita-led-ultravioleta">
+                    <a href="/fita-led-ultravioleta?sort=mais_vendidos" title="fita led ultravioleta">fita led ultravioleta</a>
+                </li>
+                <li class="cat-id-fita-led-rosa">
+                    <a href="/fita-led-rosa?sort=mais_vendidos" title="fita led rosa">fita led rosa</a>
+                </li>
+                <li class="cat-id-fita-led-12v">
+                    <a href="/fita-led-12v?sort=mais_vendidos" title="fita led 12v">fita led 12v</a>
+                </li>
+                <li class="cat-id-kits-fita-led com-filho">
+                    <a href="/kit-fita-led?sort=mais_vendidos" title="kit fita led">kits fita led</a>
+                    <ul class="nivel-tres">
+                    <li class="cat01"><a href="/kit-fitas-led-3528">kit fitas led 3528</a>
+                        <ul class="nivel-tres">
+                            <li class="cat-02"><a href="/kit-10-fita-led-3528">kit 10 metros fita led 3528</a></li>
+                            <li class="cat-02"><a href="/kit-15-fita-led-3528">kit 15 metros fita led 3528</a></li>
+                            <li class="cat-02"><a href="/kit-20-metros-fita-led-3528">kit 20 metros fita led 3528</a></li>
+                            <li class="cat-02"><a href="/kit-25-metros-fita-led-3528">kit 25 metros fita led 3528</a></li>
+                            <li class="cat-02"><a href="/kit-30-metros-fita-led-3528">kit 30 metros fita led 3528</a></li>
+                        <li class="cat-02"><a href="/kit-100-metros-fita-led-3528">kit 100 metros fita led 3528</a></li>
+                    </ul>
+                </li>
+                <li class="cat02"><a href="/kit-fitas-led-5050">kit fitas led 5050</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-02"><a href="/kit-10-metros-fita-led-5050">kit 10 metros fita led 3528</a></li>
+                        <li class="cat-02"><a href="/kit-15-metros-fita-led-5050">kit 15 metros fita led 3528</a></li>
+                        <li class="cat-02"><a href="/kit-20-metros-fita-led-5050">kit 20 metros fita led 3528</a></li>
+                        <li class="cat-02"><a href="/kit-25-metros-fita-led-5050">kit 25 metros fita led 3528</a></li>
+                        <li class="cat-02"><a href="/kit-30-metros-fita-led-5050">kit 30 metros fita led 3528</a></li>
+                        <li class="cat-02"><a href="/kit-100-metros-fita-led-5050">kit 100 metros fita led 3528</a></li>
+                    </ul>
+                </li>
+                </ul>
+                </li>
+                <li class="cat-id-mangueiras-led"><a href="/mangueiras-led?sort=mais_vendidos" title="mangueiras led">mangueiras led</a></li>
+                <li class="title-category"><a href="javascript:void(0)" title="fitas por metragem">por metragem</a></li>
+                <li class="cat-id-fita-led-5-metros"><a href="/fita-led-5-metros?sort=mais_vendidos" title="fitas led 5 metros">5 metros</a></li>
+                <li class="cat-id-fita-led-10-metros"><a href="/fita-led-10-metros?sort=mais_vendidos" title="fitas led 10 metros">10 metros</a></li>
+                <li class="cat-id-fita-led-15-metros"><a href="/fita-led-15-metros?sort=mais_vendidos" title="fitas led 15 metros">15 metros</a></li>
+                <li class="cat-id-fita-led-20-metros"><a href="/fita-led-20-metros?sort=mais_vendidos" title="fitas led 20 metros">20 metros</a></li>
+                <li class="cat-id-fita-led-25-metros"><a href="/fita-led-25-metros?sort=mais_vendidos" title="fitas led 25 metros">25 metros</a></li>
+                <li class="cat-id-fita-led-30-metros"><a href="/fita-led-30-metros?sort=mais_vendidos" title="fitas led 30 metros">30 metros</a></li>
+            `;
+        }
+        function htmlSubMenuLateralLampadas(){
+            return `
+                <li class="cat-id-lampada-led-tubular">
+                    <a href="/lampada-led-tubular?sort=mais_vendidos" title="lampada led tubular">lampada led tubular</a>
+                </li>
+                <li class="cat-id-lampada-led-bulbo">
+                    <a href="/lampada-led-bulbo?sort=mais_vendidos" title="lampada led bulbo">lampada led bulbo</a>
+                </li>
+                <li class="cat-id-lampada-led-alta-potencia">
+                    <a href="/lampada-led-alta-potencia?sort=mais_vendidos" title="lampada led alta potencia">lampada led alta potência</a>
+                </li>
+                <li class="cat-id-lampada-led-milho">
+                    <a href="/lampada-led-milho?sort=mais_vendidos" title="lampada led milho">lampada led milho</a>
+                </li>
+                <li class="cat-id-lampada-led-vintage-retro">
+                    <a href="/led-retro?sort=mais_vendidos" title="lampada led vintage retro">lampada led vintage retro</a>
+                </li>
+                <li class="cat-id-lampada-led-par-20-30">
+                    <a href="/par-led?sort=mais_vendidos" title="lampada led par 20/30">lampada led par 20/30</a>
+                </li>
+                <li class="cat-id-lampada-led-halopin">
+                    <a href="/halopin-led?sort=mais_vendidos" title="lampada led halopin">lampada led halopin</a>
+                </li>
+                <li class="cat-id-lampada-led-vela">
+                    <a href="/vela-led?sort=mais_vendidos" title="lampada led vela">lampada led vela</a>
+                </li>
+                <li class="cat-id-lampada-led-ar111-ar70">
+                    <a href="/lampada-led-ar?sort=mais_vendidos" title="lampada led ar111/ar70">lampada led ar111/ar70</a>
+                </li>
+                <li class="cat-id-lampada-led-espiral">
+                    <a href="/lampada-led-espiral?sort=mais_vendidos" title="lampada led espiral">lampada led espiral</a>
+                </li>
+                <li class="cat-id-lampada-led-rgb">
+                    <a href="/lampada-led-rgb" title="lampada led rgb">lampada led rgb</a>
+                </li>
+                <li class="cat-id-lampada-led-bolinha">
+                    <a href="/lampada-led-bolinha?sort=mais_vendidos" title="lampada led bolinha">lampada led bolinha</a>
+                </li>
+                <li class="cat-id-lampada-led-globo">
+                    <a href="/lampada-led-globo-balloon?sort=mais_vendidos" title="lampada led globo">lampada led globo</a>
+                </li>
+                <li class="cat-id-lampada-led-dicroica">
+                    <a href="/dicroica-led?sort=mais_vendidos" title="lampada led dicroica">lampada led dicróica</a>
+                </li>
+                <li class="cat-id-lampada-led-prato">
+                    <a href="/lampada-led-prato?sort=mais_vendidos" title="lampada led prato">lampada led prato</a>
+                </li>
+                <li class="cat-id-lampada-led-automotiva">
+                    <a href="/led-automotivo?sort=mais_vendidos" title="lampada led automotiva">lampada led automotiva</a>
+                </li>
+                <li class="cat-id-lampada-led-t40">
+                    <a href="/lampada-led-t40?sort=mais_vendidos" title="lampada led t40">lampada led t40</a>
+                </li>
+                <li class="cat-id-lampada-led-wi-fi">
+                    <a href="/lampada-led-wi-fi?sort=mais_vendidos" title="lampada led wi-fi">lampada led wi-fi</a>
+                </li>
+                <li class="cat-id-lampada-led-kits">
+                    <a href="/kit-lampadas-de-led?sort=mais_vendidos" title="lampada led kits">lampada led kits</a>
+                </li>
+                <li class="title-category"><a href="javascript:void(0)">por potência:</a></li>
+                <li class="cat-id-lampada-led-5w"><a href="/lampada-led-5w?sort=mais_vendidos" title="lampada led 5w">lampada led 5w</a></li>
+                <li class="cat-id-lampada-led-7w"><a href="/lampada-led-7w?sort=mais_vendidos" title="lampada led 7w">lampada led 7w</a></li>
+                <li class="cat-id-lampada-led-9w"><a href="/lampada-led-9w?sort=mais_vendidos" title="lampada led 9w">lampada led 9w</a></li>
+                <li class="cat-id-lampada-led-9-5w"><a href="/lampada-led-9-5w?sort=mais_vendidos" title="lampada led 9,5w">lampada led 9,5w</a></li>
+                <li class="cat-id-lampada-led-10w"><a href="/lampada-led-10w?sort=mais_vendidos" title="lampada led 10w">lampada led 10w</a></li>
+                <li class="cat-id-lampada-led-12w"><a href="/lampada-led-12w?sort=mais_vendidos" title="lampada led 12w">lampada led 12w</a></li>
+                <li class="cat-id-lampada-led-15w"><a href="/lampada-led-15w?sort=mais_vendidos" title="lampada led 15w">lampada led 15w</a></li>
+                <li class="cat-id-lampada-led-20w"><a href="/lampada-led-20w?sort=mais_vendidos" title="lampada led 20w">lampada led 20w</a></li>
+                <li class="cat-id-lampada-led-30w"><a href="/lampada-led-30w?sort=mais_vendidos" title="lampada led 30w">lampada led 30w</a></li>
+                <li class="cat-id-lampada-led-50w"><a href="/lampada-led-50w?sort=mais_vendidos" title="lampada led 50w">lampada led 50w</a></li>
+                <li class="title-category"><a href="javascript:void(0)">por base:</a></li>
+                <li class="cat-id-lampada-led-globo"><a href="/lampada-led-e14?sort=mais_vendidos" title="lampada led e14">lampada led e14</a></li>
+                <li class="cat-id-lampada-led-bolinha"><a href="/lampada-led-e27?sort=mais_vendidos" title="lampada led e27">lampada led e27</a></li>
+                <li class="cat-id-lampada-led-wi-fi"><a href="/lampada-led-e40?sort=mais_vendidos" title="lampada led e40">lampada led e40</a></li>
+                <li class="cat-id-lampada-led-automotiva"><a href="/lampada-led-g4?sort=mais_vendidos" title="lampada led g4">lampada led g4</a></li>
+                <li class="cat-id-lampada-led-kits"><a href="/lampada-led-g9?sort=mais_vendidos" title="lampada led g9">lampada led g9</a></li>   
+                <li class="cat-id-lampada-led-kits"><a href="/lampada-led-gu10?sort=mais_vendidos" title="lampada led gu10">lampada led gu10</a></li>  
+            `;
+        }
+        function htmlSubMenuLateralPendentes(){
+            return `
+                <li class="cat-id-lustre-cristal">
+                    <a href="/lustre-led" title="Lustre LED Cristal">Lustre LED Cristal</a>
+                </li>
+                <li class="cat-id-pendente-aramado">
+                    <a href="/pendente-led-aramado" title="Pendente LED Aramado">Pendente LED Aramado</a>
+                </li>
+                <li class="cat-id-pendente-cone">
+                    <a href="/pendente-led-cone" title="Pendente LED Cone">Pendente LED Cone</a> 
+                </li>
+                <li class="cat-id-pendente-gota">
+                    <a href="/pendente-led-gota" title="Pendente LED Gota">Pendente LED Gota</a> 
+                </li>
+                <li class="cat-id-pendente-redondo">
+                    <a href="/pendente-redondo-led" title="Pendente LED Redondo">Pendente LED Redondo</a>
+                </li>
+                <li class="cat-id-pendente-tulipa">
+                    <a href="/pendente-led-tulipa" title="Pendente LED Tulipa">Pendente LED Tulipa</a>
+                </li>
+            `;
+        }
+        function htmlSubMenuLateralCameraSeguranca(){
+            return `
+            <li class="cat-id-acessorios-camera">
+                <a href="/acessorios-camera-led" title="Acessórios Câmera LED">Acessórios Câmera LED</a>
+            </li>
+            <li class="cat-id-camera-wifi">
+                <a href="/camera-led-wi-fi" title="Câmera LED Wi-Fi">Câmera LED Wi-Fi</a>
+            </li>
+            <li class="cat-id-camera-dome">
+                <a href="/camera-led-dome" title="Câmera LED Dome">Câmera LED Dome</a>
+            </li>
+            <li class="cat-id-camera-bullet">
+                <a href="/camera-led-bullet" title="Câmera LED Bullet">Câmera LED Bullet</a>
+            </li>
+            <li class="cat-id-camera-camera-hd">
+                <a href="/camera-led-hd" title="Câmera LED HD">Câmera LED HD</a>
+            </li>
+            <li class="cat-id-dvr-stand-alone">
+                <a href="/dvr-stand-alone" title="DVR Stand Alone">DVR Stand Alone</a>
+            </li>
+            `;
+        }
         $('.pagina-categoria .menu.lateral.outras .nivel-um').html(`${htmlMenuIluminim}`);
 
         $('.menu.outras .nivel-um > li > a').each(function(){
@@ -210,8 +409,12 @@ class TodasAsPaginas{
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subRefletoresID} > .nivel-dois`).html(htmlSubMenuLateralRefletores());
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subLuminariasID} > .nivel-dois`).html(htmlSubMenuLateralLuminarias());
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subSpotsID} > .nivel-dois`).html(htmlSubMenuLateralSpots());
-
-    }
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subArandelasID} > .nivel-dois`).html(htmlSubMenuLateralArandelas());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subFitasID} > .nivel-dois`).html(htmlSubMenuLateralFitas());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subLampadasID} > .nivel-dois`).html(htmlSubMenuLateralLampadas());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subPendentesID} > .nivel-dois`).html(htmlSubMenuLateralPendentes());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subCameraSegurancaID} > .nivel-dois`).html(htmlSubMenuLateralCameraSeguranca());
+}
 
     static scriptBarraFlutuante(){
         var $class = this
