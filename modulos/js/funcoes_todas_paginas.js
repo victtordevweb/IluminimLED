@@ -92,6 +92,109 @@ class TodasAsPaginas{
             <li class="cat-id-refletor-led-600w"><a href="/refletor-led-600w?sort=mais_vendidos" title="refletor led 600w">refletor led 600w</a></li>
             `;
         }
+        function htmlSubMenuLateralLuminarias(){
+            return `
+                <li class="title-category"><a href="/plafon-led?sort=mais_vendidos">Luminárias Plafons LED</a></li>
+                <li class="cat-id-plafon-led-embutir com-filho">
+                    <a href="/plafon-led-embutir" title="Plafon LED Embutir">Plafon LED Embutir</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-plafon-led-emb-qdd">
+                            <a href="/plafon-led-embutir-quadrado" title="Quadrado">Quadrado</a>
+                        </li>
+                        <li class="cat-id-plafon-led-emb-rdd">
+                            <a href="/plafon-led-embutir-redondo" title="Redondo">Redondo</a>
+                        </li>
+                        <li class="cat-id-plafon-led-emb-rtg">
+                            <a href="/plafon-led-embutir-retangular" title="Retangular">Retangular</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cat-id-plafon-led-sobrepor com-filho">
+                    <a href="/plafon-led-sobrepor" title="Plafon LED Sobrepor">Plafon LED Sobrepor</a>
+                    <ul class="nivel-tres">
+                    <li class="cat-id-plafon-led-sob-qdd">
+                        <a href="/plafon-led-sobrepor-quadrado" title="Quadrado">Quadrado</a>
+                    </li>
+                    <li class="cat-id-plafon-led-sob-rdd">
+                        <a href="/plafon-led-sobrepor-redondo" title="Redondo">Redondo</a>
+                    </li>
+                    <li class="cat-id-plafon-led-sob-rtg">
+                        <a href="/plafon-led-sobrepor-retangular" title="Retangular">Retangular</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="cat-id-kit-plafon-led"><a href="/kit-plafon-led" title="Kit Luminária Plafon LED">Kit</a></li>
+                <li class="title-category"><a href="javascript:void(0)">Luminárias LED</a></li>
+                <li class="cat-id-luminaria-publicas-led com-filho">
+                    <a href="/luminarias-publicas-led" title="Luminárias Públicas LED">Luminária Pública LED</a>
+                    <ul class="nivel-tres">
+                    <li class="cat-id-luminaria-publica-super-led">
+                        <a href="/luminaria-publica-super-led" title="Luminária Pública Super LED">Luminária Pública Super LED</a>
+                    </li>
+                    <li class="cat-id-luminaria-publica-led-smd">
+                        <a href="/luminaria-publica-led-smd" title="Luminária Pública LED SMD">Luminária Pública LED SMD</a>
+                    </li>
+                    <li class="cat-id-luminaria-publica-led-smd-solar">
+                        <a href="/luminaria-publica-led-smd-solar" title="Luminária Pública LED SMD Solar">Luminária Pública LED SMD Solar</a>
+                    </li>
+                    <li class="cat-id-luminaria-publica-ultra-led-smd">
+                        <a href="/luminaria-publica-ultra-led-smd" title="Luminária Pública Ultra LED SMD">Luminária Pública Ultra LED SMD</a>
+                    </li> 
+                    </ul>
+                </li>
+                <li class="cat-id-arandela-led com-filho">
+                    <a href="/arandela-led" title="Arandelas LED">Arandela LED</a>
+                    <ul class="nivel-tres">
+                    <li class="cat-id-arandela-led-externa">
+                        <a href="/arandela-led-externa" title="Arandela LED Externa">Arandela LED Externa</a>
+                    </li>
+                    <li class="cat-id-arandela-led-interna">
+                        <a href="/arandela-led-interna" title="Arandela LED Interna">Arandela LED Interna</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="cat-id-emergencia-ilm-lat"><a href="/luminaria-emergencia-led">Luminária Emergência LED</a></li>
+                <li class="cat-id-luminaria-posto-led"><a href="/luminarias-posto-led" title="Luminária Posto LED">Luminária Posto LED</a></li>
+                <li class="cat-id-luminaria-led-de-mesa"><a href="/luminaria-abajur-led" title="Luminária LED de Mesa">Luminária LED de Mesa</a></li>
+                <li class="cat-id-luminaria-industrial-highbay-led"><a href="/luminaria-led-industrial-highbay" title="Luminária Industrial Highbay LED">Luminária Industrial Highbay LED</a></li>
+            `;
+        }
+        function htmlSubMenuLateralSpots(){
+            return `
+                <li class="categoria-id-spot-dicroica-quadrado-led">
+                <a href="/spot-led-quadrado?sort=mais_vendidos" title="spot dicróica led quadrado">spot dicróica quadrado led</a>
+                </li>
+                <li class="categoria-id-spot-dicroica-redondo-led">
+                <a href="/spot-led-redondo?sort=mais_vendidos" title="spot dicróica led redondo">spot dicróica redondo led</a>
+                </li>
+                <li class="kit-spots-new">
+                <a href="/kits-spots-led-dicroica" title="kit spots led">kits spots led</a>
+                </li>
+                <li class="categoria-id-spot-trilho-eletrificado-led">
+                <a href="/spot-led-trilho-eletrificado?sort=mais_vendidos" title="spot trilho eletrificado led">spot trilho eletrificado led</a>
+                </li>
+                <li class="categoria-id-spot-balizador-led">
+                <a href="/balizador-led?sort=mais_vendidos" title="spot balizador led">spot balizador led</a>
+                </li>
+                <li class="categoria-id-spot-dicroica-colorido-led">
+                <a href="/spot-dicroica-led-colorido?sort=mais_vendidos" title="spot dicróica led colorido">spot dicróica colorido led</a>
+                </li>
+                <li class="categoria-id-spot-mini-dicroica-led com-filho">
+                <a href="/mini-spot-led?sort=mais_vendidos" title="spot mini dicróica led"><i class="icon-chevron-right fundo-secundario"></i> spot mini dicróica led</a>
+                    <ul class="nivel-tres">
+                    <li class="categoria-id-spot-mini-dicroica-quadrado-led">
+                        <a href="/mini-spot-led-quadrado?sort=mais_vendidos" title="spot mini dicróica led quadrado">spot mini dicróica quadrado led</a>
+                    </li>
+                    <li class="categoria-id-spot-mini-dicroica-redondo-led">
+                        <a href="/mini-spot-led-redondo?sort=mais_vendidos" title="spot mini dicróica led redondo">spot mini dicróica redondo led</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="categoria-id-spot-dicroica-cristal-led">
+                <a href="/spot-led-cristal?sort=mais_vendidos" title="spot dicróica led cristal">spot dicróica cristal led</a>
+                </li>
+            `;
+        }
 
         $('.pagina-categoria .menu.lateral.outras .nivel-um').html(`${htmlMenuIluminim}`);
 
@@ -105,7 +208,8 @@ class TodasAsPaginas{
         });
 
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subRefletoresID} > .nivel-dois`).html(htmlSubMenuLateralRefletores());
-        
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subLuminariasID} > .nivel-dois`).html(htmlSubMenuLateralLuminarias());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subSpotsID} > .nivel-dois`).html(htmlSubMenuLateralSpots());
 
     }
 
