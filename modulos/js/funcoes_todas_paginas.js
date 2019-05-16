@@ -1,5 +1,5 @@
 var htmlMenuIluminim = `
-<li class="refletores-mt"><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></li>
+<li class="refletores-mt"><a href="/refletores-led?sort=mais_vendidos">Refletores LED</a></li>
 <li class="luminarias-mt"><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></li>
 <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
 <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
