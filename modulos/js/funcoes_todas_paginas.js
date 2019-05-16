@@ -4,7 +4,7 @@ var htmlMenuIluminim = `
 <li class="spots-mt"><a href="/spots?sort=mais_vendidos">Spot LED</a></li>
 <li class="arandelas-mt"><a href="/arandela-led?sort=mais_vendidos">Arandelas LED</a></li>
 <li class="fitas-mt"><a href="/fitas-de-led?sort=mais_vendidos">Fitas LED</a></li>
-<li class="lampadas-mt"><a href="/lampada/led?sort=mais_vendidos">Lâmpadas LED</a></li>
+<li class="lampadas-mt"><a href="/lampada-led?sort=mais_vendidos">Lâmpadas LED</a></li>
 <li class="espetos-mt"><a href="/espeto-led?sort=mais_vendidos">Espetos LED</a></li>
 <li class="pendentes-mt"><a href="/pendente-led?sort=mais_vendidos">Pendentes LED</a></li>
 <li class="camera-seg-mt"><a href="/camera-seguranca-led?sort=mais_vendidos">Camera Segurança LED</a></li>
@@ -16,9 +16,97 @@ var htmlMenuIluminim = `
 `;
 
 class TodasAsPaginas{
+    
+    static menuIluminimCategorias(obj){
+        function htmlSubMenuLateralRefletores(){
+            return `
+            <li class="cat-id-refletores-micro-led title-category">
+            <a href="/refletor-microled?sort=mais_vendidos" title="refletores micro led">refletores micro led</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-slim com-filho">
+            <a href="/refletor-micro-led-slim?sort=mais_vendidos" title="refletor micro led slim">refletor micro led slim</a>
+            <ul class="nivel-tres">
+                <li class="cat-id-refletor-micro-led-slim-branco-frio"><a href="/refletor-micro-led-slim-branco-frio?sort=mais_vendidos" title="refletor micro led slim branco frio">refletor micro led slim branco frio</a></li>
+                <li class="cat-id-refletor-micro-led-slim-branco-quente">
+                    <a href="/refletor-micro-led-slim-branco-quente?sort=mais_vendidos" title="refletor micro led slim branco quente">refletor micro led slim branco quente</a>
+                </li>
+            </ul>
+            </li>
+            <li class="cat-id-refletor-micro-led-slim-rgb">
+            <a href="/refletor-micro-led-rgb?sort=mais_vendidos" title="refletor micro led slim rgb">refletor micro led slim rgb</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-slim-verde">
+            <a href="/refletor-micro-led-slim-verde?sort=mais_vendidos" title="refletor micro led slim verde">refletor micro led slim verde</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-ultra-thin">
+            <a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos" title="refletor micro led ultra thin">refletor micro led ultra thin</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-solar">
+            <a href="/refletor-led-solar?sort=mais_vendidos" title="refletor super led solar">refletor micro led solar</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-multifocal">
+            <a href="/refletor-micro-led-multifocal?sort=mais_vendidos" title="refletor micro led multifocal">refletor micro led multifocal</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-performance">
+            <a href="/refletor-led-alta-performance?sort=mais_vendidos" title="refletor micro led performance">refletor micro led performance</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-prismatico">
+            <a href="/refletor-led-prismatico-pro?sort=mais_vendidos" title="refletor micro led prismático">refletor micro led prismático</a>
+            </li>
+            <li class="cat-id-refletor-micro-led-ultra">
+            <a href="/refletor-microled-ultra?sort=mais_vendidos" title="refletor micro led ultra">refletor micro led ultra</a>
+            </li>
+            
+            <li class="cat-id-refletor-super-led branco com-filho title-category">
+            <a href="/refletor-led?sort=mais_vendidos" title="refletor super led">refletores super led</a>
+            <ul class="nivel-tres">
+                <li class="cat-id-refletor-super-led-branco-frio">
+                    <a href="/refletor-super-led-branco-frio?sort=mais_vendidos" title="refletor super led branco frio">refletor super led branco frio</a>
+                </li>
+                <li class="cat-id-refletor-super-led-branco-quente">
+                  <a href="/refletor-super-led-branco-quente?sort=mais_vendidos" title="refletor super led branco quente">refletor super led branco quente</a>
+                </li>
+            </ul>
+            </li>
+            <li class="cat-id-refletor-super-led-sensor">
+            <a href="/refletor-led-sensor?sort=mais_vendidos" title="refletor super led sensor">refletor super led sensor</a>
+            </li>
+            <li class="cat-id-refletor-super-led-rgb">
+            <a href="/refletor-led-rgb" title="refletor super led rgb">refletor super led rgb</a>
+            </li>
+            <li class="cat-id-refletor-super-led-verde">
+            <a href="/refletor-led-verde?sort=mais_vendidos" title="refletor super led verde">refletor super led verde</a>
+            </li>
+            
+            <li class="title-category"><a href="javascript:void(0)">por potência:</a></li>
+            <li class="cat-id-refletor-led-10w"><a href="/refletor-led-10w?sort=mais_vendidos" title="refletor led 10w">refletor led 10w</a></li>
+            <li class="cat-id-refletor-led-20w"><a href="/refletor-led-20w?sort=mais_vendidos" title="refletor led 20w">refletor led 20w</a></li>
+            <li class="cat-id-refletor-led-30w"><a href="/refletor-led-30w?sort=mais_vendidos" title="refletor led 30w">refletor led 30w</a></li>
+            <li class="cat-id-refletor-led-50w"><a href="/refletor-led-50w?sort=mais_vendidos" title="refletor led 50w">refletor led 50w</a></li>
+            <li class="cat-id-refletor-led-100w"><a href="/refletor-led-100w-?sort=mais_vendidos" title="refletor led 100w">refletor led 100w</a></li>
+            <li class="cat-id-refletor-led-150w"><a href="/refletor-led-150w?sort=mais_vendidos" title="refletor led 150w">refletor led 150w</a></li>
+            <li class="cat-id-refletor-led-200w"><a href="/refletor-led-200w?sort=mais_vendidos" title="refletor led 200w">refletor led 200w</a></li>
+            <li class="cat-id-refletor-led-300w"><a href="/refletor-led-300w?sort=mais_vendidos" title="refletor led 300w">refletor led 300w</a></li>
+            <li class="cat-id-refletor-led-400w"><a href="/refletor-led-400w?sort=mais_vendidos" title="refletor led 400w">refletor led 400w</a></li>
+            <li class="cat-id-refletor-led-500w"><a href="/refletor-led-500w?sort=mais_vendidos" title="refletor led 500w">refletor led 500w</a></li>
+            <li class="cat-id-refletor-led-600w"><a href="/refletor-led-600w?sort=mais_vendidos" title="refletor led 600w">refletor led 600w</a></li>
+            `;
+        }
 
-    static menuIluminimCategoria(){
         $('.pagina-categoria .menu.lateral.outras .nivel-um').html(`${htmlMenuIluminim}`);
+
+        $('.menu.outras .nivel-um > li > a').each(function(){
+            var link = $(this).attr('href').split('?')[0];
+            var url = $('.menu.lateral:not(.outras) > .nivel-um > li > a').attr('href').split('com.br')[1]
+            if(url.includes(`${link}`)){
+                $(this).parent('li').addClass('active').attr('style','display:none !important;');
+                $('.menu.lateral:not(.outras) > .nivel-um > li').addClass(`${$(this).parent('li').attr('class')}`);
+            }
+        });
+
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subRefletoresID} > .nivel-dois`).html(htmlSubMenuLateralRefletores());
+        
+
     }
 
     static scriptBarraFlutuante(){
