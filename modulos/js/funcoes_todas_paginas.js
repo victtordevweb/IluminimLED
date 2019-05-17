@@ -395,6 +395,260 @@ class TodasAsPaginas{
             </li>
             `;
         }
+        function htmlSubMenuLateralLEDSolar(){
+            return `
+                <li class="cat-id-luminaria-solar com-filho">
+                    <a href="https://www.iluminim.com.br/luminaria-solar-led" title="Luminária LED Solar">Luminária LED Solar</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-arandela-solar">
+                            <a href="/arandela-solar" title="Arandela LED Solar">Arandela LED Solar</a>
+                        </li>
+                        <li class="cat-id-luminaria-pub-solar">
+                            <a href="/luminaria-publica-led-solar" title="Luminária Pública LED Solar">Luminária Pública LED Solar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cat-id-refletor-solar">
+                    <a href="/refletor-led-solar" title="Refletor LED Solar">Refletor LED Solar</a>
+                </li>
+                <li class="cat-id-espeto-solar">
+                    <a href="/espeto-led-solar" title="Espeto LED Solar">Espeto LED Solar</a>
+                </li>        
+            `;
+        }
+        function htmlSubMenuLateralAcessorios(){
+            return `              
+                    <li class="title-category"><a href="javascript:void(0)">refletor led</a></li>
+                    <li class="cat-id-chip-led">
+                        <a href="/chip-led?sort=mais_vendidos" title="chip led">chip refletor led</a>
+                    </li>
+                    <li class="cat-id-driver-refletor-led">
+                        <a href="/driver-refletor-led?sort=mais_vendidos" title="driver led">driver refletor led</a>
+                    </li>
+                    <li class="cat-id-controle-refletor-led">
+                        <a href="/controle-refletor-led?sort=mais_vendidos" title="controle refletor led">controle refletor led</a>
+                    </li>
+
+                    <li class="title-category"><a href="javascript:void(0)">fita led</a></li>
+                    <li class="cat-id-aplificadores-fita-led">
+                        <a href="/amplificadores-led?sort=mais_vendidos" title="amplificadores led">amplificador fita led</a>
+                    </li>
+                    <li class="cat-id-fontes-led">
+                        <a href="/fonte-chaveada?sort=mais_vendidos" title="fontes led">fonte fita led</a>
+                    </li>
+                    <li class="cat-id-emendas-led">
+                        <a href="/emendas-led?sort=mais_vendidos" title="emendas led">emenda fita led</a>
+                    </li>
+                    <li class="cat-id-conectores-led">
+                        <a href="/conectores-led?sort=mais_vendidos" title="conectores led">conector fita led </a>
+                    </li>
+                    <li class="cat-id-controle-fita-led">
+                        <a href="/controle-fita-led?sort=mais_vendidos" title="controle fita led">controle fita led</a>
+                    </li>
+                    <li class="cat-id-dimmer-led">
+                        <a href="/dimmer-led?sort=mais_vendidos" title="dimmer led">dimmer led</a>
+                    </li>
+                    <li class="title-category"><a href="javascript:void(0)">plafon led</a></li>
+                    <li class="cat-id-drivers-plafon-led"><a href="/driver-plafon-led?sort=mais_vendidos" title="driver plafon led">driver plafon led</a></li>
+                    <li class="title-category"><a href="javascript:void(0)">lampada led</a></li>
+                    <li class="cat-id-soquetes-led"><a href="/soquete-led?sort=mais_vendidos" title="soquetes led">soquete lampada led</a></li>
+                    <li class="title-category"><a href="javascript:void(0)">camera led</a></li>
+                    <li class="cat-id-camera-led"><a href="/acessorios-camera-led?sort=mais_vendidos" title="câmera led">conector câmera led</a></li>
+                    <li class="title-category"><a href="javascript:void(0)">outros</a></li>
+                    <li class="cat-id-interruptores-tomadas-led">
+                        <a href="/interruptores-tomadas-led?sort=mais_vendidos" title="interruptores tomadas led">interruptores tomadas led</a>
+                    </li>
+                    <li class="cat-id-fios-e-cabos"><a href="/cabo-de-energia?sort=mais_vendidos" title="fios e cabos de led">fios e cabos de led</a></li>
+                `;
+        }
+        function htmlSubMenuLateralKitsEspeciais(){
+            return `
+                    <li class="cat-id-luminaria-plafons">
+                    <a href="/kit-plafon-led" title="Kit Luminárias Plafons LED">Kit Luminárias Plafons LED</a>
+                    <ul class="nivel-tres">
+                    <li class="cat-id-plafon-embutir com-filho">
+                        <a href="/kit-plafon-led-embutir" title="Kit Plafon LED Embutir">Kit Plafon LED Embutir</a>
+                        <ul class="nivel-tres">
+                        <li class="cat-id-kit-plafon-emb-qdd">
+                            <a href="/kit-plafon-led-embutir-quadrado" title="Kit Plafon LED Embutir Quadrado">Kit Plafon LED Embutir Quadrado</a>
+                        </li>
+                        <li class="cat-id-kit-plafon-emb-rdd">
+                            <a href="/kit-plafon-led-embutir-redondo" title="Kit Plafon LED Embutir Redondo">Kit Plafon LED Embutir Redondo</a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="cat-id-kit-plafon-sob com-filho">
+                        <a href="/kit-plafon-led-sobrepor" title="Kit Plafon LED Sobrepor">Kit Plafon LED Sobrepor</a>
+                        <ul class="nivel-tres">
+                        <li class="cat-id-kit-sob-qdd">
+                            <a href="/kit-plafon-led-sobrepor-quadrado" title="Kit Plafon LED Sobrepor Quadrado">Kit Plafon LED Sobrepor Quadrado</a>
+                        </li>
+                        <li class="cat-id-kit-sob-rdd">
+                            <a href="/kit-plafon-led-sobrepor-redondo" title="Kit Plafon LED Sobrepor Redondo">Kit Plafon LED Sobrepor Redondo</a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="cat-id-kit-lum-emerg">
+                        <a href="/kit-luminarias-emergencia-led" title="Kit Luminárias Emergência LED">Kit Luminárias Emergência LED</a>
+                    </li>
+                    <li class="cat-id-kit-arandela">
+                        <a href="/kit-arandela-led" title="Kit Arandela LED">Kit Arandela LED</a>
+                    </li>
+                    <li class="cat-id-kit-lum-linear">
+                        <a href="/kit-luminarias-linear-led" title="Kit Luminárias Linear LED">Kit Luminárias Linear LED</a>
+                    </li>
+                    <li class="cat-id-kit-pend com-filho">
+                        <a href="/kit-pendentes-led" title="Kit Pendentes LED">Kit Pendentes LED</a>
+                        <ul class="nivel-tres">
+                        <li class="cat-id-kit-pend-aramado">
+                            <a href="/kit-pendente-led-aramado" title="Kit Pendente LED Aramado">Kit Pendente LED Aramado</a>
+                        </li>
+                        <li class="cat-id-kit-pend-cone">
+                            <a href="/kit-pendente-led-cone" title="Kit Pendente LED Cone">Kit Pendente LED Cone</a>
+                        </li>
+                        <li class="cat-id-kit-pend-gota">
+                            <a href="/kit-pendente-led-gota" title="Kit Pendente LED Gota">Kit Pendente LED Gota</a>
+                        </li>
+                        <li class="cat-id-kit-pend-rdd">
+                            <a href="/kit-pendente-led-redondo" title="Kit Pendente LED Redondo">Kit Pendente LED Redondo</a>
+                        </li>
+                        <li class="cat-id-kit-pend-tulipa">
+                            <a href="/kit-pendente-led-tulipa" title="Kit Pendente LED Tulipa">Kit Pendente LED Tulipa</a>
+                        </li>
+                        </ul>
+                    </li>
+                    </ul>
+                    </li>
+                    
+                    <li class="cat-id-kit-refle com-filho">
+                    <a href="/holofotes-led" title="Kit Refletores LED">
+                    <i class="icon-chevron-right fundo-secundario"></i>
+                    Kit Refletores LED
+                    </a>
+                    <ul class="nivel-tres">
+                    <li class="cat-id-kit-refle-micro-slim com-filho">
+                        <a href="/kit-holofotes-microled" title="Kit Refletor Micro LED Slim">Kit Refletor Micro LED Slim</a>
+                        <ul class="nivel-tres">
+                        <li class="cat-id-refle-micro-slim-bf">
+                            <a href="/kit-refletor-micro-led-slim-branco-frio" title="Kit Refletor Micro LED Slim Branco Frio">Kit Refletor Micro LED Slim Branco Frio</a>
+                        </li>
+                        <li class="cat-id-kit-refle-micro-slim-bq">
+                            <a href="/kit-refletor-micro-led-slim-branco-quente" title="Kit Refletor Micro LED Slim Branco Quente">Kit Refletor Micro LED Slim Branco Quente</a>
+                        </li>
+                        <li class="cat-id-kit-refle-micro-slim-verde">
+                            <a href="/kit-refletor-micro-led-slim-verde" title="Kit Refletor Micro LED Slim Verde">Kit Refletor Micro LED Slim Verde</a>
+                        </li>
+                        <li class="cat-id-kit-refle-micro-slim-rgb">
+                            <a href="/refletor-micro-led-slim-rgb" title="Refletor Micro LED Slim RGB">Refletor Micro LED Slim RGB</a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="cat-id-kit-refle-ultra">
+                        <a href="/kit-refletor-micro-led-ultra" title="Kit Refletor Micro LED Ultra">Kit Refletor Micro LED Ultra</a>
+                    </li>
+                    <li class="cat-id-kit-refle-micro-ultra-thin">
+                        <a href="/kit-refletor-micro-led-ultra-thin" title="Kit Refletor Micro LED Ultra Thin">Kit Refletor Micro LED Ultra Thin</a>
+                    </li>
+                    <li class="cat-id-kit-refle-super">
+                        <a href="/kit-holofotes-led" title="Kit Refletor Super LED">Kit Refletor Super LED</a>
+                    </li>
+                    <li class="cat-id-kit-refle-sensor-presenca">
+                        <a href="/kit-holofotes-led-sensor-de-presenca" title="Kit Refletor LED Sensor Presença">Kit Refletor LED Sensor Presença</a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li class="cat-id-kit-spots com-filho">
+                    <a href="/kits-spots-led-dicroica" title="Kit Spots LED">Kit Spots LED</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-kit-spot-dicroica com-filho">
+                        <a href="/kit-spot-dicroica-led" title="Kit Spot Dicroica LED">Kit Spot Dicroica LED</a>
+                        <ul class="nivel-tres">
+                            <li class="cat-id-kit-spot-qdd">
+                            <a href="/kit-spot-led-quadrado" title="Kit Spot LED Quadrado">Kit Spot LED Quadrado</a>
+                            </li>
+                            <li class="cat-id-kit-spot-rdd">
+                            <a href="/kit-spot-led-redondo" title="Kit Spot LED Redondo">Kit Spot LED Redondo</a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="cat-id-kit-baliz">
+                        <a href="/kit-balizadores-led" title="Kit Balizadores LED">Kit Balizadores LED</a>
+                        </li>
+                        <li class="cat-id-kit-mini-spot">
+                        <a href="/kit-mini-spot-led" title="Kit Mini Spot LED">Kit Mini Spot LED</a>
+                        </li>
+                        <li class="cat-id-kit-spot-trilho">
+                        <a href="/kit-spot-led-trilho" title="Kit Spot LED Trilho">Kit Spot LED Trilho</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="cat-id-kit-lamp com-filho">
+                    <a href="/kit-lampadas-de-led" title="Kit Lampadas LED">Kit Lampadas LED</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-kit-lamp-bulbo">
+                        <a href="/kit-lampada-led-bulbo" title="Kit Lampada LED Bulbo">Kit Lampada LED Bulbo</a>
+                        </li>
+                        <li class="cat-id-kit-lamp-tubular">
+                        <a href="/kit-lampada-led-tubular" title="Kit Lampada LED Tubular">Kit Lampada LED Tubular</a>
+                        </li>
+                        <li class="cat-id-kit-lamp-milho">
+                        <a href="/kit-lampada-led-milho" title="Kit Lampada LED Milho">Kit Lampada LED Milho</a>
+                        </li>
+                        <li class="cat-id-kit-lamp-halopin">
+                        <a href="/kit-lampada-led-halopin" title="Kit Lampada LED Halopin">Kit Lampada LED Halopin</a>
+                        </li>
+                        <li class="cat-id-kit-lamp-mini">
+                        <a href="/kit-lampada-led-minidicroica" title="Kit Lampada LED Mini/Dicróica">Kit Lampada LED Mini/Dicróica</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="cat-id-kit-fitas com-filho">
+                    <a href="/kits-fitas-led" title="Kit Fitas LED">Kit Fitas LED</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-kit-fita-3528">
+                        <a href="/kit-fitas-led-3528" title="Kit Fitas LED 3528">Kit Fitas LED 3528</a>
+                        </li>
+                        <li class="cat-id-kit-fita-5050">
+                        <a href="/kit-fitas-led-5050" title="Kit Fitas LED 5050">Kit Fitas LED 5050</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="cat-id-kit-espetos com-filho">
+                    <a href="/kit-espetos-de-led-para-jardim" title="Kit Espetos LED">Kit Espetos LED</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-kit-espeto-bf">
+                        <a href="/kit-espeto-led-branco-frio" title="Kit Espeto LED Branco Frio">Kit Espeto LED Branco Frio</a>
+                        </li>
+                        <li class="cat-id-kit-espeto-verde">
+                        <a href="/kit-espeto-led-verde" title="Kit Espeto LED Verde">Kit Espeto LED Verde</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="cat-id-kit-camera com-filho">
+                    <a href="/kit-camera-led" title="Kit Câmera LED">Kit Câmera LED</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-kit-camera-bullet">
+                        <a href="/kit-camera-led-bullet" title="Kit Câmera LED Bullet">Kit Câmera LED Bullet</a>
+                        </li>
+                        <li class="cat-id-kit-camera-dome">
+                        <a href="/kit-camera-led-dome" title="Kit Câmera LED Dome">Kit Câmera LED Dome</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="cat-id-kit-acessorio com-filho">
+                    <a href="/kit-acessorios-led" title="Kit Acessórios LED">Kit Acessórios LED</a>
+                    <ul class="nivel-tres">
+                        <li class="cat-id-kit-conector">
+                        <a href="/kit-conector-led" title="Kit Conector LED">Kit Conector LED</a>
+                        </li>
+                        <li class="cat-id-kit-soquete">
+                        <a href="/kit-soquete-led" title="Kit Soquete LED">Kit Soquete LED</a>
+                        </li>
+                    </ul>
+                    </li>  
+                `;
+        }
+
         $('.pagina-categoria .menu.lateral.outras .nivel-um').html(`${htmlMenuIluminim}`);
 
         $('.menu.outras .nivel-um > li > a').each(function(){
@@ -417,6 +671,9 @@ class TodasAsPaginas{
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subLampadasID} > .nivel-dois`).html(htmlSubMenuLateralLampadas());
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subPendentesID} > .nivel-dois`).html(htmlSubMenuLateralPendentes());
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subCameraSegurancaID} > .nivel-dois`).html(htmlSubMenuLateralCameraSeguranca());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subLEDSolarID} > .nivel-dois`).html(htmlSubMenuLateralLEDSolar());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subAcessoriosID} > .nivel-dois`).html(htmlSubMenuLateralAcessorios());
+        $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subKitsEspeciaisID} > .nivel-dois`).html(htmlSubMenuLateralKitsEspeciais());
 }
 
     static scriptBarraFlutuante(){
