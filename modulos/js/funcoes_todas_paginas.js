@@ -463,7 +463,7 @@ class TodasAsPaginas{
         }
         function htmlSubMenuLateralKitsEspeciais(){
             return `
-                    <li class="cat-id-luminaria-plafons">
+                    <li class="cat-id-luminaria-plafons com-filho">
                     <a href="/kit-plafon-led" title="Kit Luminárias Plafons LED">Kit Luminárias Plafons LED</a>
                     <ul class="nivel-tres">
                     <li class="cat-id-plafon-embutir com-filho">
@@ -1040,7 +1040,11 @@ class TodasAsPaginas{
     }
 
     static menuSuperior(obj, carrousel){
-         const categoria_TodosOsDepartamentos = function(){
+        const menu_superior = function(){
+            
+        }();
+
+        const categoria_TodosOsDepartamentos = function(){
             $(`
                 <div class="todos_departamentos __personalizado">
                 <div class="wrap_categorias">
