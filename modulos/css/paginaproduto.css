@@ -955,3 +955,9 @@ div#ModalInfoPagamento .row-parcele-mp p {
 .modal-backdrop.fade.in {
     z-index: 999999999;
 }
+
+
+.pagina-produto span.loja-segura {
+    margin-bottom: 15px;
+    margin-top: 2px;
+}
