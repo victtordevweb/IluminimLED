@@ -92,7 +92,8 @@
 }
 .input-append .filtro-ativo a{
     background: #a53233;
-    color: #fff;
+    color: #fff !important;
+    border-radius: 4px;
 }
 
 
