@@ -87,21 +87,12 @@
 
 
 
-
-
-.input-append .filtro-ativo a {
-    color: #fff;
-}
 .input-append .filtro-ativo:hover a {
     color: #fff !Important;
 }
-.input-append .filtro-ativo {
+.input-append .filtro-ativo a{
     background: #a53233;
-    padding: 3px 5px !important;
-    border-radius: 3px;
-    padding-left: 8px !important;
-    padding-top: 0px !important;
-    margin-right: 15px !important;
+    color: #fff;
 }
 
 
