@@ -89,6 +89,20 @@
 
 
 
+.input-append .filtro-ativo a {
+    color: #fff;
+}
+.input-append .filtro-ativo:hover a {
+    color: #fff !Important;
+}
+.input-append .filtro-ativo {
+    background: #a53233;
+    padding: 3px 5px !important;
+    border-radius: 3px;
+    padding-left: 8px !important;
+    padding-top: 0px !important;
+    margin-right: 15px !important;
+}
 
 
 .pagina-categoria .listagem-linha .span3 {
@@ -352,3 +366,4 @@ color: #666 !important;
     border-right: 0 !important;
     border-left: 0 !important;
 }
+
