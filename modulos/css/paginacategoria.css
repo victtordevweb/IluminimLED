@@ -271,7 +271,7 @@ color: #666 !important;
 }
 .preco_personalizado input.input_price {
     margin: 0 !important;
-    width: 35px;
+    width: 46.7px;
     border-radius: 0 !important;
     box-shadow: none !important;
     border-color: #eaeaea !important;
@@ -345,4 +345,10 @@ color: #666 !important;
 }
 .preco_personalizado input.preco_cliente_min.input_price+span {
     margin-right: 3px;
+}
+
+.preco_personalizado:before {
+    border-bottom: 1px solid #d8d8d8;
+    border-right: 0 !important;
+    border-left: 0 !important;
 }
