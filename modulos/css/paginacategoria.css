@@ -197,7 +197,7 @@ color: #666 !important;
     content: "FILTRAR POR PREÇO";
 }
 
-.menu.lateral:not(.outras):before,.pagina-categoria .lateral.outras.faceta-preco:before {
+.menu.lateral:not(.outras):before,.pagina-categoria .lateral.outras.faceta-preco:before,.preco_personalizado:before {
     font-weight: 400;
     display: block;
     padding-top: 9px;
@@ -252,4 +252,97 @@ color: #666 !important;
 .filtro.lista ul li a {
     text-decoration: none;
     display: block;
+}
+/* filtro preco */
+.preco_personalizado .input_price::-webkit-inner-spin-button { 
+    display:none !important;
+}
+
+.preco_personalizado:before {
+    content: "FILTRO PERSONALIZADO";
+}
+.preco_personalizado {
+    border-right: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+.preco_personalizado .wrap_preco {
+    padding: 15px 10px;
+}
+.preco_personalizado input.input_price {
+    margin: 0 !important;
+    width: 35px;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border-color: #eaeaea !important;
+    font-weight: 700;
+    color: #444 !important;
+    height: 17px;
+    padding: 4px 1px;
+    text-align: center;
+    font-size: 12px;
+}
+.preco_personalizado span.fim_block,span.cifrao_preco {
+    display: inline-block;
+    background: #eaeaea;
+    padding: 6px 5px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-size: 11px;
+    font-weight: 700;
+}
+.preco_personalizado span.cifrao_preco {
+    color: #E24546;
+}
+.preco_personalizado span.fim_block {
+    color: #929292;
+}
+
+.preco_personalizado .button_enter {
+    float: right;
+    display: inline-block;
+    background: #a73739;
+    padding: 0px 10.8px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+    height: 27px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+.preco_personalizado span.cifrao_preco > b {
+    font-size: 10px;
+    color: #444;
+    font-weight: 600;
+    margin-right: 2px;
+}
+.preco_personalizado .button_enter:hover {
+    background: #da2023;
+}
+.filter_personalizado_active .lateral.outras.filtro-coluna.faceta-preco {
+    display: none !important;
+}
+.preco_personalizado a.filter_limpar {
+    margin-top: 10px !important;
+    margin-left: 0px !important;
+    background: #a73739 !important;
+    padding: 4px 6px !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    display: block;
+    width: 70px;
+    text-align: center;
+}
+.preco_personalizado a.filter_limpar:before {
+    content: "\f0e2";
+    font-family: FontAwesome;
+    margin-right: 4px;
+}
+.preco_personalizado input.preco_cliente_min.input_price+span {
+    margin-right: 3px;
 }
