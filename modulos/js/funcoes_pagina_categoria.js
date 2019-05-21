@@ -1,6 +1,6 @@
 class PaginaCategoria{
 
-    static filtroPrecoPersonalizado(){
+    static filtroPrecoPersonalizado(){  
         if( $('body.pagina-categoria').length > 0){
             $('<div class="preco_personalizado">'+
         '<div class="wrap_preco">'+
@@ -59,7 +59,35 @@ class PaginaCategoria{
         });
 
         }
-}
+    }
+
+    static filtroDeOrdensEPaginacao(){
+        var url = location.href;
+        $('.ordenar-listagem.topo .dropdown-menu li').each(function(){
+        var filtro_selecionado = $('>a', this).attr('href');
+        if(url.indexOf(filtro_selecionado)==-1) {
+        } else {
+            $(this).addClass('filtro-ativo');
+        }
+        });
+
+        /*/ PAGINACAO /*/
+        $('.ordenar-listagem.topo .pagination ul>li').each(function(){
+            var nomeListagem = $('>a', this).html();
+            if(nomeListagem.indexOf('...') > -1){
+                $(this).removeClass('active');
+                $('>a', this).attr('href', '?sort=mais_vendidos&pagina=4').html('4');
+            }
+        });
+
+        $('.ordenar-listagem.rodape .pagination ul>li').each(function(){
+            var nomeListagem = $('>a', this).html();
+            if(nomeListagem.indexOf('...') > -1){
+                $(this).removeClass('active');
+                $('>a', this).attr('href', '?sort=mais_vendidos&pagina=4').html('4');
+            }
+        });
+    }
 
 
 }
