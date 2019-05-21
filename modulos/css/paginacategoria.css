@@ -1,0 +1,255 @@
+.menu.lateral:not(.outras) > .nivel-um > li > a {
+    border: none !important;
+}
+.menu.outras a:hover {
+    background: #af3c3f !important;
+}
+.menu.outras a {
+    background: #a2373a !important;
+    border-bottom: 1px solid #892c2e;
+}
+
+.menu.lateral ul.nivel-dois li {
+    background-color: #E9E9E9;
+    height: 41px;
+    border-radius: 0;
+    padding: 0;
+    border-top: 0;
+}
+.menu.lateral .nivel-dois {
+    padding: 0;
+    box-shadow: none !important;
+}
+.menu.lateral .nivel-dois a {
+    color: #494949;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 1px 0 0 23px;
+    margin: 0 !important;
+    transition: all 0.3s;
+    border-right: 1px solid rgba(139, 139, 139, .27);
+    border-left: 1px solid rgba(139, 139, 139, .27);
+}
+.menu .nivel-tres {
+    box-shadow: none !important;
+}
+.menu .nivel-tres a {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border-left: 0 !important;
+}
+.menu.lateral .nivel-dois .com-filho > a:after {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-weight: 100 !important;
+    font-size: 10px !important;
+    position: relative;
+    float: right;
+    margin-right: 15px;
+}
+.menu.lateral li:hover > a {
+    background: #af3c3f;
+    color: #fff;
+    border-color:#af3c3f;
+}
+.menu.lateral:not(.outras) {
+    margin-bottom: 0;
+}
+.menu.lateral:not(.outras)  > .nivel-um > li > a strong {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s;
+    margin: 0;
+}
+.menu.lateral:not(.outras) > .nivel-um > li > a {
+    padding-top: 12px !important;
+}
+.menu.lateral:not(.outras) > .nivel-um > li > a:before {
+    top: 3px;
+}
+.menu.lateral .title-category > a {
+    background: #ef2729 !important;
+    color: #fff !important;
+    box-shadow: inset 0px -2px 0px #af2325;
+    font-size: 12px !important;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pagina-categoria .listagem-linha .span3 {
+    border: none !important;
+    margin: 0;
+    margin-left: 17px;
+}
+.pagina-categoria .listagem-linha > ul {
+    margin: 0;
+}
+.pagina-categoria .listagem .listagem-item .nome-produto {
+    width: 100% !important;
+    text-align: left;
+}
+.pagina-categoria .listagem-item {
+    padding: 15px !important;
+}
+.pagina-categoria .listagem .info-produto {
+    text-align: left !important;
+}
+.pagina-categoria .listagem-item a.produto-sobrepor:after {
+    width: 186px !important;
+    left: calc(50% - 94px) !important;
+    height: 48px !important;
+    font-size: 21px !important;
+}
+.pagina-categoria .componente {
+    background: #f7f7f7;
+}
+.pagina-categoria .componente .titulo {
+    color: #bc2e30;
+}
+.pagina-categoria .conteudo h1 {
+    display: none !important;
+}
+
+.pagina-categoria ul.dropdown-menu.pull-right {
+    display: block !important;
+    position: inherit;
+    width: 573px;
+    padding: 2px 1px 3px 7px;
+    box-shadow: none;
+    border: 0;
+    border-radius: 3px;
+    z-index: 9;
+    background-color: rgba(255, 255, 255, 0) !important;
+    left: 0;
+    margin: 0;
+}
+.pagina-categoria button#botaoOrdenar {
+    display: none;
+}
+.pagina-categoria .ordenar-listagem label {
+    display: none !important;
+}
+.pagina-categoria ul.dropdown-menu.pull-right li {
+    float: left;
+    margin-right: 7px;
+    border-right: 1px solid #ddd;
+    padding-right: 10px;
+}
+
+.pagina-categoria .dropdown-menu>li>a {
+    display: initial;
+    box-shadow: none;
+    font-weight: 700;
+    color: #BC2E30;
+    padding: 6px 6px;
+    text-transform: uppercase;
+    font-size:12px;
+}
+.pagina-categoria .dropdown-menu>li>a:hover {
+    color: #666 !important;
+    background: 0 0;
+    box-shadow: none;
+}
+
+.pagina-categoria .input-append {
+    width: auto;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    padding: 4.5px 0px !important;
+    overflow: hidden;
+}
+
+.pagina-categoria ul.dropdown-menu.pull-right li:last-child {
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.pagina-categoria .dropdown-menu>li>a>i {
+    margin-left: 1px !important;
+}
+
+.pagina-categoria ul.dropdown-menu.pull-right li:first-child a {
+color: #666 !important;
+}
+.pagina-categoria .ordenar-listagem.topo {
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.menu.lateral:not(.outras):before {
+    content: "CATEGORIAS";
+}
+.pagina-categoria .lateral.outras.faceta-preco:before {
+    content: "FILTRAR POR PREÇO";
+}
+
+.menu.lateral:not(.outras):before,.pagina-categoria .lateral.outras.faceta-preco:before {
+    font-weight: 400;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+    font-size: 19px;
+    padding-left: 30px;
+    color: #b73334;
+    font-family: 'Francois One', sans-serif;
+    border-top: 2px solid #b73334;
+    letter-spacing: -.5px;
+    text-transform: uppercase;
+}
+
+
+/*filtros*/
+.filtro h4 {
+    font-size: 0 !important;
+    display: block !important;
+    padding: 0px !important;
+    margin: 0 !important;
+    border: none !important;
+    height: 0 !important;
+}
+.filtro {
+    box-shadow: none;
+    outline: #d7d7d7 solid 1px;
+    padding: 20px;
+    margin-left: 1PX;
+    border-top: 0 !important;
+    box-sizing: border-box;
+    margin-right: 1px;
+}
+.filtro.lista ul li label {
+    padding: 8px 10px;
+    color: #777;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.filtro.lista ul {
+    min-height: max-content !important;
+    margin-bottom: 0;
+}
+.filtro.lista ul li label:hover {
+}
+.fundo-principal, .botao.principal, .botao.principal:hover, .menu li:hover > a .fundo-secundario, .flex-control-paging li a.flex-active, .dropdown-menu > li > a:hover, .filtro.lista ul li label:hover, .filtro.lista ul li.active label, .menu-simples li a:hover, .menu-simples li.active a {
+    background-color: #af3c3f;
+}
+
+.filtro.lista ul li a {
+    text-decoration: none;
+    display: block;
+}
