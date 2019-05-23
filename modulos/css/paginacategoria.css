@@ -213,8 +213,11 @@ color: #666 !important;
 .pagina-categoria .lateral.outras.faceta-preco:before {
     content: "FILTRAR POR PREÇO";
 }
+.lateral.outras.faceta-cor:before {
+    content: "FILTRAR POR COR";
+}
 
-.menu.lateral:not(.outras):before,.pagina-categoria .lateral.outras.faceta-preco:before,.preco_personalizado:before {
+.menu.lateral:not(.outras):before, .lateral.outras.faceta-preco:before,.preco_personalizado:before, .lateral.outras.faceta-cor:before {
     font-weight: 400;
     display: block;
     padding-top: 9px;
