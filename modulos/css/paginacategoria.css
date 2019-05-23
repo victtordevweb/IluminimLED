@@ -110,7 +110,18 @@
     text-align: left;
 }
 .pagina-categoria .listagem-item {
-    padding: 15px !important;
+    padding: 20px 10px !important;
+}
+.pagina-categoria .preco-produto .preco-venda {
+    font-weight: 700;
+    font-size: 12px;
+}
+.pagina-categoria .listagem-item .desconto-a-vista strong {
+    font-size: 19px !important;
+}
+
+.pagina-categoria .preco-produto .preco-promocional {
+    font-size: 19px !important;
 }
 .pagina-categoria .listagem .info-produto {
     text-align: left !important;
