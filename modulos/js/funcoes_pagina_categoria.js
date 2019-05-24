@@ -1,4 +1,8 @@
 class PaginaCategoria{
+    static ajustesPaginaCategoria(){
+        //move descrição da categoria
+        $('.pagina-categoria .coluna.span3 .componente').prependTo('.pagina-categoria .sem-coluna .conteudo.span9');
+    }
 
     static filtroPrecoPersonalizado(){  
         if( $('body.pagina-categoria').length > 0){
@@ -63,7 +67,7 @@ class PaginaCategoria{
 
     static filtroDeOrdensEPaginacao(){
         var url = location.href;
-        $('.ordenar-listagem.topo .dropdown-menu li').each(function(){
+        $('.ordenar-listagem.topo .dropdown-menu li:not(:first-child)').each(function(){
         var filtro_selecionado = $('>a', this).attr('href');
         if(url.indexOf(filtro_selecionado)==-1) {
         } else {
@@ -72,7 +76,7 @@ class PaginaCategoria{
         });
 
         /*/ PAGINACAO /*/
-        $('.ordenar-listagem.topo .pagination ul>li').each(function(){
+        $('.ordenar-listagem .pagination ul>li').each(function(){
             var nomeListagem = $('>a', this).html();
             if(nomeListagem.indexOf('...') > -1){
                 $(this).removeClass('active');
@@ -80,13 +84,6 @@ class PaginaCategoria{
             }
         });
 
-        $('.ordenar-listagem.rodape .pagination ul>li').each(function(){
-            var nomeListagem = $('>a', this).html();
-            if(nomeListagem.indexOf('...') > -1){
-                $(this).removeClass('active');
-                $('>a', this).attr('href', '?sort=mais_vendidos&pagina=4').html('4');
-            }
-        });
     }
 
 

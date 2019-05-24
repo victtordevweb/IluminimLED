@@ -16,7 +16,37 @@ var htmlMenuIluminim = `
 `;
 
 class TodasAsPaginas{
-    
+    static loadingIluminim(){
+        $('<span class="loja-segura"><i class="fa fa-lock"></i> Compra 100% segura</span>').appendTo('#corpo > .conteiner > .breadcrumbs');
+
+        $(`<div class="mask-popup-cp-segura" style="display:none;">
+            <div class="content-cp-segura">    
+                <div class="topo-cp-segura"><div class="btn-close-popup">X</div></div>
+                <div class="info-loja-segura-cntn">
+                    <span class="loja-segura-texto-padrao">Essa loja utiliza tecnologia de ponta com criptografia 100% segura.</span>
+                    <img class="selo-ab-ls" src="https://abcomm.com.br/selos/Selo_EmpresaAssociada.png"/>
+                    <img class="selo-trust-ls" src="https://cdn.awsli.com.br/257/257163/arquivos/selo-site-sincero-led.png"/>
+                    <img class="selo-google-ls" src="https://cdn.awsli.com.br/production/static/img/struct/stamp_google_safe_browsing.png"/>
+                    <img class="selo-sb-ls" src="https://api.siteblindado.com/v1/seal/aw/www.iluminim.com.br/seal.png"/>  
+                </div>
+            </div>
+        </div>`).appendTo('body');
+
+        $('span.loja-segura').click(function(){
+            $('body').addClass('popup-cp-segura-on');
+        });
+
+        $('.mask-popup-cp-segura .btn-close-popup').click(function(){
+            $('body').removeClass('popup-cp-segura-on');
+        });
+
+        $('div#cabecalho').ready(function(){
+            $('html, body').addClass('loaded');
+            $('.loading-ilm').remove();
+        });
+
+    }
+
     static menuIluminimCategorias(obj){
         function htmlSubMenuLateralRefletores(){
             return `
@@ -674,7 +704,7 @@ class TodasAsPaginas{
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subLEDSolarID} > .nivel-dois`).html(htmlSubMenuLateralLEDSolar());
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subAcessoriosID} > .nivel-dois`).html(htmlSubMenuLateralAcessorios());
         $(`.menu.lateral:not(.outras) .nivel-um > li.categoria-id-${obj.subKitsEspeciaisID} > .nivel-dois`).html(htmlSubMenuLateralKitsEspeciais());
-}
+    }
 
     static scriptBarraFlutuante(){
  
