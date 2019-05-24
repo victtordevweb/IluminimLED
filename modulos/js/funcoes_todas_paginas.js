@@ -814,7 +814,7 @@ class TodasAsPaginas{
     static reorganizacaoBarraInicial(){
 
         $(`<ul class="list-unstyled news-topbar">
-            <li class="baixe-app" style="left: 14px;">
+            <li class="baixe-app">
                 <a href="https://play.google.com/store/apps/details?id=br.com.moblite.app.www.iluminim.com.br" target="_blank">Baixe o app</a>
                 <div class="drop_box baixe_app-drop">
                     <div class="wraped">
