@@ -34,25 +34,6 @@ class HomeIluminim {
         </div>`)[obj.posicao.funcao](`${obj.posicao.seletor}`);
   };
 
-  static servicosListagem(obj){
-    $(`<div class="titulo-categoria borda-principal cor-principal servicos-ilm" style="${obj.style_html}">
-          <strong>Serviços Iluminim</strong>
-        </div>
-      <div class="servicos">
-        <ul class="wrap-itens">
-          <li class="itens-s televendas"><a href="/pagina/central-de-atendimento.html"><span class="icn"></span><span>Televendas</span></a></li>
-          <li class="itens-s corporativo"><a href="/pagina/atendimento-empresarial.html"><span class="icn"></span><span>Corporativo</span></a></li>
-          <li class="itens-s revenda"><a href="/pagina/seja-nosso-revendedor-led.html"><span class="icn"></span><span>Revenda</span></a></li>
-          <li class="itens-s condominio"><a href="/pagina/led-para-condominio.html"><span class="icn"></span><span>Condomínio</span></a></li>
-          <li class="itens-s orgao-publico"><a href="/pagina/orgao-publico.html"><span class="icn"></span><span>Orgão Público</span></a></li>
-          <li class="itens-s noticias"><a href="https://blog.iluminim.com.br/" target="_blank"><span class="icn"></span><span>Notícias</span></a></li>
-          <li class="itens-s videos"><a href="https://www.youtube.com/channel/UCtzoNTtT2V-_XXpBm6-URTw/videos" target="_blank"><span class="icn"></span><span>Vídeos</span></a></li>
-          <li class="itens-s social"><a href="https://www.facebook.com/iluminim/"><span class="icn"></span><span>Social</span></a></li>
-        </ul>
-      </div>
-      `)[obj.posicao.funcao](`${obj.posicao.seletor}`);
-  }
-
 
   static bannerEmpresarial(obj){
 
