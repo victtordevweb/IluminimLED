@@ -814,6 +814,15 @@ class TodasAsPaginas{
     static reorganizacaoBarraInicial(){
 
         $(`<ul class="list-unstyled news-topbar">
+            <li class="baixe-app" style="left: 14px;">
+                <a href="https://play.google.com/store/apps/details?id=br.com.moblite.app.www.iluminim.com.br" target="_blank">Baixe o app</a>
+                <div class="drop_box baixe_app-drop">
+                    <div class="wraped">
+                    <span class="titdropbox">Ficou mais fácil acompanhar a Iluminim :)</span>
+                    <span class="p_txt">Baixe agora o nosso app!</span>
+                    </div>
+                </div>
+            </li>
             <li class="revendas-b-inicial">
             <a href="https://www.iluminim.com.br/pagina/seja-nosso-revendedor-led.html" target="_blank">Revendas</a>
             <div class="drop_box revendas-drop">
