@@ -1902,6 +1902,7 @@ class TodasAsPaginas{
                 <span class="titulo">Atendimento</span>
                 <ul>
                 <li><a href="https://www.iluminim.com.br/pagina/central-de-atendimento.html">Central online</a></li>
+                <li><a href="https://www.iluminim.com.br/pagina/central-de-vendas.html">Central de vendas</a></li>
                 <li><a href="https://www.iluminim.com.br/pagina/politica-de-troca.html">Trocas e devoluções</a></li>
             <li><a href="/conta/pedido/listar">Meus pedidos</a></li>
             <li><a href="https://www.iluminim.com.br/pagina/iluminim-e-confiavel.html">Iluminim é confiável?</a></li>
