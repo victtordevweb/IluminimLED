@@ -368,8 +368,11 @@ color: #e72428 !important;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
 }
-
+.pagina-produto .listagem.aproveite-tambem .listagem-linha>ul > li > div a.add-fav {
+    display: none !important;
+}
 .pagina-produto .listagem.aproveite-tambem .listagem-linha>ul > li {
     width: 100%;
     display: block;
