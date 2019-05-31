@@ -1,5 +1,14 @@
+function verificaPagina(){
+    if($('body.pagina-categoria').length > 0 || $('body.pagina-busca').length > 0){
+        $('body').addClass('categoria_ou_busca');
+        return true;
+    }else {
+        return false;
+    }
+}
 class PaginaCategoria{
     static ajustesPaginaCategoria(){
+        if(!verificaPagina()) return false;
         //move descrição da categoria
         $('.pagina-categoria .coluna.span3 .componente').prependTo('.pagina-categoria .sem-coluna .conteudo.span9');
     }
@@ -87,11 +96,12 @@ class PaginaCategoria{
     }
 
     static palavrasMaisBuscadas(arrayCategorias){
-    let catsLamp = arrayCategorias;
-    
-    catsLamp.forEach(id=>{
+        if(!verificaPagina()) return false;
+        let catsLamp = arrayCategorias;
+        
+        catsLamp.forEach(id=>{
 
-    if($(`body.pagina-categoria.categoria-${id}`).length > 0 ){
+        if($(`body.pagina-categoria.categoria-${id}`).length > 0 ){
         
         $(`<div class="box-palavras-chaves">
             <div class="conteiner">
@@ -147,9 +157,9 @@ class PaginaCategoria{
             </div>
             </div>`).appendTo(`body.pagina-categoria.categoria-${id} #corpo .conteudo.span9`);
 
-        }
+            }
 
-        });
+            });
     }
 
     static comentariosTrustVox(){
@@ -321,6 +331,8 @@ class PaginaCategoria{
     }
 
     static newslatterCategoria(categoriaSeletor){
+        if(!verificaPagina()) return false;
+        
         if(categoriaSeletor.length > 0){
             $(`<div class="news_category">
             <h5 class="title-form-category">Cadastre-se aqui e receba as melhores ofertas da Iluminim.</h5>
