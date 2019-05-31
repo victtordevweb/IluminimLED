@@ -176,7 +176,7 @@ body.categoria_ou_busca  ul.dropdown-menu.pull-right li {
     padding-right: 10px;
 }
 
-body.categoria_ou_busca.dropdown-menu>li>a {
+body.categoria_ou_busca .dropdown-menu>li>a {
     display: initial;
     box-shadow: none;
     font-weight: 700;
