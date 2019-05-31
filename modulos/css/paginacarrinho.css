@@ -1,0 +1,62 @@
+.pagina-carrinho .caixa-sombreada {
+    border: none !important;
+}
+.pagina-carrinho .contatos_rdp {
+    display: none !important;
+}
+.pagina-carrinho .contatos_rdp {
+    display: none !important;
+}
+.pagina-carrinho ul.selos-carrinho a:before {
+    background: url(https://cdn.awsli.com.br/930/930730/arquivos/sprite_default_ilm-min-v3.png);
+}
+.pagina-carrinho ul.selos-carrinho {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+.pagina-carrinho ul.selos-carrinho a,.pagina-carrinho ul.selos-carrinho a:before {
+    display: block;
+}
+.pagina-carrinho ul.selos-carrinho li {
+    margin-left: 0;
+}
+.pagina-carrinho ul.selos-carrinho li.site-protegido a:before {
+    content:"";
+    width: 154px;
+    height: 55px;
+    background-position: -17px -175px;
+}
+.pagina-carrinho ul.selos-carrinho li.site-sincero a:before {
+    content:"";
+    width: 191px;
+    height: 80px;
+    background-position: -350px -162px;
+    transform: scale(0.8);
+    margin: 0 -9px 0 -22px;
+}
+.pagina-carrinho ul.selos-carrinho li.site-blindado a:before {
+    content:"";
+    width: 122px;
+    height: 33px;
+    background-position: -147px -273px;
+}
+.pagina-carrinho ul.selos-carrinho li.site-ebit a:before {
+    content:"";
+    width: 62px;
+    height: 60px;
+    background-position: -722px -178px;
+}
+.pagina-carrinho ul.selos-carrinho a {
+    margin: 0 13px 0 0;
+}
+.pagina-carrinho .botao.grande {
+    background-color: #34C573 !important;
+    font-weight: 900;
+    font-size: 26px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.pagina-carrinho a.botao:not(.grande) {
+    padding: 13px 15px !important;
+}
