@@ -95,17 +95,17 @@
 
 
 
-.input-append .filtro-ativo:hover a {
+body.categoria_ou_busca .input-append .filtro-ativo:hover a {
     color: #fff !Important;
 }
-.input-append .filtro-ativo a{
+body.categoria_ou_busca .input-append .filtro-ativo a{
     background: #a53233;
     color: #fff !important;
     border-radius: 4px;
 }
 
 
- body.categoria_ou_busca .listagem-linha .span3 {
+body.categoria_ou_busca .listagem-linha .span3 {
     border: none !important;
     margin: 0;
     margin-left: 17px;
@@ -128,7 +128,7 @@ body.categoria_ou_busca .listagem-item .desconto-a-vista strong {
     font-size: 19px !important;
 }
 
-body.categoria_ou_busca  .preco-produto .preco-promocional {
+body.categoria_ou_busca .preco-produto .preco-promocional {
     font-size: 19px !important;
 }
 body.categoria_ou_busca .listagem .info-produto {
@@ -309,7 +309,7 @@ body.categoria_ou_busca .preco_personalizado input.input_price {
     text-align: center;
     font-size: 12px;
 }
-body.categoria_ou_busca .preco_personalizado span.fim_block,span.cifrao_preco {
+body.categoria_ou_busca .preco_personalizado span.fim_block, body.categoria_ou_busca span.cifrao_preco {
     display: inline-block;
     background: #eaeaea;
     padding: 6px 5px;

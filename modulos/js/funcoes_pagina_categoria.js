@@ -14,8 +14,8 @@ class PaginaCategoria{
     }
 
     static filtroPrecoPersonalizado(){  
-        if( $('body.pagina-categoria').length > 0){
-            $('<div class="preco_personalizado">'+
+        if(!verificaPagina()) return false;
+        $('<div class="preco_personalizado">'+
         '<div class="wrap_preco">'+
         '<span class="cifrao_preco"><b>de</b>R$</span><input type="number" placeholder="min" class="preco_cliente_min input_price"><span class="fim_block">,00</span>'+
         '<span class="cifrao_preco"><b>até</b>R$</span><input type="number" placeholder="max" class="preco_cliente_max input_price"><span class="fim_block">,00</span>'+
@@ -71,7 +71,6 @@ class PaginaCategoria{
         localStorage.removeItem('postSelectedValor');
         });
 
-        }
     }
 
     static filtroDeOrdensEPaginacao(){
@@ -332,7 +331,7 @@ class PaginaCategoria{
 
     static newslatterCategoria(categoriaSeletor){
         if(!verificaPagina()) return false;
-        
+
         if(categoriaSeletor.length > 0){
             $(`<div class="news_category">
             <h5 class="title-form-category">Cadastre-se aqui e receba as melhores ofertas da Iluminim.</h5>
