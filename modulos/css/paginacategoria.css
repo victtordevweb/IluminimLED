@@ -455,3 +455,214 @@ padding-right: 0 !important;
     font-family: 'Roboto';
 }
 
+/* css trust vox */
+.avaliacoes-clientes .slick-initialized .slick-prev:before{
+    content: "\f104" !important;
+    left: 9px;
+}
+.avaliacoes-clientes .slick-initialized .slick-next:before {
+    content: "\f105" !important;
+    left: 11px;
+}
+.avaliacoes-clientes .slick-initialized .slick-prev, .avaliacoes-clientes .slick-initialized .slick-next{
+    z-index: 99;
+    border: 3px solid #b4b4b4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 1 !important;
+    transition: all 0.2s;
+ }
+
+.avaliacoes-clientes .slick-initialized .slick-prev:before,
+.avaliacoes-clientes .slick-initialized .slick-next:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #b4b4b4;
+    font-size: 37px!important;
+    position:absolute;
+    opacity: 1;
+    z-index: 9999;
+    transition: all 0.2s;
+}
+.avaliacoes-clientes .slick-initialized .slick-next,.avaliacoes-clientes .slick-initialized .slick-next {
+    right: -50px;
+}
+.avaliacoes-clientes .slick-initialized .slick-prev:before,.avaliacoes-clientes .slick-initialized .slick-next:before {
+    top: -2.5px;
+}
+.avaliacoes-clientes .slick-initialized .slick-prev {
+    left: -50px;
+}
+.avaliacoes-clientes .slick-initialized .slick-prev:hover, .avaliacoes-clientes .slick-initialized .slick-next:hover {
+    border-color: #f00;
+}
+.avaliacoes-clientes .slick-initialized .slick-prev:hover:before, .avaliacoes-clientes .slick-initialized .slick-next:hover:before {
+    color: #f00 !important;
+}
+.avaliacoes-clientes .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+
+.avaliacoes-clientes .caixa-depoimento {
+    border: 1px solid #f4f4f4;
+    padding: 20px 60px;
+}
+.avaliacoes-clientes .conteiner {
+    padding: 0;
+    overflow: hidden;
+}
+
+.avaliacoes-clientes .autenticado-trustvox span {
+    color: #666;
+    font-size: 13px;
+    vertical-align: middle;
+}
+.avaliacoes-clientes span.logo-ra-trust {
+    display: inline-block;
+}
+.avaliacoes-clientes span.logo-ra-trust:before {
+    content: "";
+    background-position: -89px 0 !important;
+    width: 88px;
+    height: 18px;
+    display: block;
+}
+.avaliacoes-clientes .autenticado-trustvox {
+    float: right;
+    display: block;
+    margin-top: 10px;
+}
+
+/* setinha hover depoimentos */
+.avaliacoes-clientes .depoimento-completo.flutuante:after {
+    content: '\f0d7';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    bottom: -21px;
+    color: #ff4040;
+    font-size: 34px;
+    left: 40px;
+}
+
+
+
+.avaliacoes-clientes .imagem-cliente:before {
+    width: 84px;
+    display: block;
+    content: "";
+    background-position: -1px 1px !important;
+    height: 108px;
+}
+.avaliacoes-clientes span.titulo-depoimentos b:before {
+    content: "";
+    background-position: -88px -18px !important;
+    width: 29px;
+    height: 44px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+.avaliacoes-clientes span.titulo-depoimentos b {
+    color: #f00;
+    font-size: 19px;
+    display: table;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-left: 40px;
+    position: relative;
+}
+.avaliacoes-clientes span.titulo-depoimentos {
+text-align: center;
+    display: flex;
+    margin-bottom: -4px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #444444;
+    height: 46px;
+    align-items: center;
+}
+
+
+/* ajustes hover depoimento */
+.avaliacoes-clientes .item-depoimento {
+    overflow: hidden;
+    padding: 12px 10px;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    margin: 0 5px;
+    display:flex!important;
+    outline:none!important;
+}
+
+.avaliacoes-clientes .depoimento-completo {
+    position: absolute !important;
+    width: 0% !important;
+    margin-top: 10px;
+    background: #fff;
+    color: transparent;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display:none;
+    height: 37px;
+}
+
+.avaliacoes-clientes .depoimento-completo.flutuante {
+    position: absolute !important;
+    width: 718px !important;
+    background: #ff4040;
+    color: #fff;
+    margin-top: -73px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/*/ CORES E TAMANHOS FONTES DEPOIMENTOS E IMAGENS /*/
+.avaliacoes-clientes .imagem-cliente {
+    position: relative;
+    z-index: 1111;
+    float: left;
+}
+
+.avaliacoes-clientes .conteudo-cliente {
+    float: left;
+    width: 172px;
+    margin-left: 15px;
+}
+.avaliacoes-clientes span.nome-cliente {
+color: #ff0000;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    display: -webkit-box;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    height: 26px;
+}
+.avaliacoes-clientes span.cidade-cliente {
+    color: #666666;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+.avaliacoes-clientes span.depoimento-curto {
+    color: #666666;
+    font-size: 13px;
+    display: -webkit-box;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 3;
+    height: 56px;
+}
