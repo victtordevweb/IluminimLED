@@ -320,4 +320,19 @@ class PaginaCategoria{
   
     }
 
+    static newslatterCategoria(categoriaSeletor){
+        if(categoriaSeletor.length > 0){
+            $(`<div class="news_category">
+            <h5 class="title-form-category">Cadastre-se aqui e receba as melhores ofertas da Iluminim.</h5>
+            <form action="https://iluminim.us17.list-manage.com/subscribe/post?u=3419bb6e1d2aaf130ef4e86a5&amp;id=597ac9b9ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3419bb6e1d2aaf130ef4e86a5_597ac9b9ae" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Cadastrar" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form><div class="link-form-category"><a href="https://www.iluminim.com.br/pagina/politica-de-compra.html">Política de Compra</a></div></div>`).insertAfter(categoriaSeletor);
+        }
+    }   
+
+
 }
