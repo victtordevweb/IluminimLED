@@ -152,4 +152,172 @@ class PaginaCategoria{
         });
     }
 
+    static comentariosTrustVox(){
+        $(`<div class="avaliacoes-clientes hidden-xs">
+            <div class="conteiner">
+            <span class="titulo-depoimentos"><b>Veja o que dizem nossos clientes</b></span>
+            <div class="caixa-depoimento">
+            <div class="owl-carrousel">
+                
+            <div class="item-depoimento"> 
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Dione Pereira</span>
+                <span class="cidade-cliente">Juazeiro do Norte - CE</span>
+                <span class="depoimento-curto">Rapidez na entrega, ótimo preço e o serviço 0800...</span>
+                <div class="depoimento-completo">Rapidez na entrega, ótimo preço e o serviço 0800 (primeira de luxo) atendido rapidamente. Com certeza vou fazer outras compras.</div>
+                </div>
+            </div> 
+            
+            <div class="item-depoimento"> 
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Wolfram Metzler</span>
+                <span class="cidade-cliente">Campo Bom - RS</span>
+                <span class="depoimento-curto">Ótimo produto, preço justo, foi entregue antes do prazo...</span>
+                <div class="depoimento-completo">Ótimo produto, preço justo, foi entregue antes do prazo.</div>
+                </div>
+            </div> 
+            
+            <div class="item-depoimento"> 
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Bianca Pianelli</span>
+                <span class="cidade-cliente">Salto - SP</span>
+                <span class="depoimento-curto">O produto é muito bom e atendeu plenamente minha necessidade...</span>
+                <div class="depoimento-completo">O produto é muito bom e atendeu plenamente minha necessidade.</div>
+                </div>
+            </div> 
+            
+            <div class="item-depoimento"> 
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Bruno da Silva</span>
+                <span class="cidade-cliente">Canoas - RS</span>
+                <span class="depoimento-curto">Produto fantástico e com funcionalidades incríveis. Super recomendo...</span>
+                <div class="depoimento-completo">Produto fantástico e com funcionalidades incríveis. Super recomendo, entregue tudo certinho e dentro do prazo.</div>
+                </div>
+            </div> 
+            
+            <div class="item-depoimento"> 
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Roque Almeida</span>
+                <span class="cidade-cliente">Ijuí -RS</span>
+                <span class="depoimento-curto">Fique muito satisfeito com esse produto e com a seriedade...</span>
+                <div class="depoimento-completo">Fique muito satisfeito com esse produto e com a seriedade do vendedor na entrega antes do prazo previsto.</div>
+                </div>
+            </div> 
+            
+            <div class="item-depoimento"> 
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Bartholomeu Duarte</span>
+                <span class="cidade-cliente">Lauro de Freitas - BA</span>
+                <span class="depoimento-curto">Escolhi comprar com vocês devido ao ótimo atendimento...</span>
+                <div class="depoimento-completo">Escolhi comprar com vocês devido ao ótimo atendimento, qualidade do produto, pontualidade na entrega e preço, muito satisfeito!</div>
+                </div>
+            </div> 
+            
+                <div class="item-depoimento">
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Odilon Fonseca</span>
+                <span class="cidade-cliente">Joinville - SC</span>
+                <span class="depoimento-curto">Produto de ótima qualidade, muito bem atendido, loja...</span>
+                <div class="depoimento-completo">Produto de ótima qualidade, muito bem atendido, loja de confiança, parabéns!</div>
+                </div>
+            </div>
+            
+                <div class="item-depoimento">
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Geraldo de Abreu</span>
+                <span class="cidade-cliente">Belo Horizonte - MG</span>
+                <span class="depoimento-curto">Excelente atendimento, entrega super rápida. Recomendo...</span>
+                <div class="depoimento-completo">Excelente atendimento, entrega super rápida. Recomendo!</div>
+                </div>
+            </div>
+            
+                <div class="item-depoimento">
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Marcia Zeviani</span>
+                <span class="cidade-cliente">São Paulo - SP</span>
+                <span class="depoimento-curto">Precisava de luminárias com qualidade e bom preço...</span>
+                <div class="depoimento-completo">Precisava de luminárias com qualidade e bom preço, encontrei tudo na Iluminim que entregou o produto antes do prazo. Adorei a Loja e já a indiquei para amigos</div>
+                </div>
+            </div>
+            
+                <div class="item-depoimento">
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Alexandre Augusto</span>
+                <span class="cidade-cliente">Florianópolis - SC</span>
+                <span class="depoimento-curto">Excelente produto. Excelente atendimento de venda e atenção...</span>
+                <div class="depoimento-completo">Excelente produto. Excelente atendimento de venda e atenção ao cliente.</div>
+                </div>
+            </div>
+            
+                <div class="item-depoimento">
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Chilon Magno</span>
+                <span class="cidade-cliente">Novo Hamburgo – RS</span>
+                <span class="depoimento-curto">Porque fui bem atendido, entrega rápida, ótimo produto...</span>
+                <div class="depoimento-completo">Porque fui bem atendido, entrega rápida, ótimo produto.</div>
+                </div>
+            </div>
+            
+                <div class="item-depoimento">
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Marcelo Belloli</span>
+                <span class="cidade-cliente">Porto Alegre - RS</span>
+                <span class="depoimento-curto">Preço e qualidade reunidos em um único produto, além...</span>
+                <div class="depoimento-completo">Preço e qualidade reunidos em um único produto, além é claro, da garantia de três anos.</div>
+                </div>
+            </div>
+            
+                <div class="item-depoimento">
+                <div class="imagem-cliente"></div>      
+                <div class="conteudo-cliente">
+                <span class="nome-cliente">Myrian Madeu</span>
+                <span class="cidade-cliente">Louveira - SP</span>
+                <span class="depoimento-curto">Atendeu a todas as minhas expectativas tanto no produto...</span>
+                <div class="depoimento-completo">Atendeu a todas as minhas expectativas tanto no produto, qto no atendimento e entrega pela loja</div>
+                </div>
+            </div>
+            
+            </div>
+            </div>
+            <div class="autenticado-trustvox"><span>Avaliações reais, auditadas por </span><span class="logo-ra-trust"></span></div>
+            </div>
+            </div>`).appendTo('div#corpo .conteudo.span9');
+
+            
+            $('.avaliacoes-clientes .owl-carrousel').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 5000
+            });
+                
+            /* efeito hover */
+            $('.item-depoimento').hover(function(){
+                $('.depoimento-completo', this).addClass('flutuante');
+                $('.depoimento-completo.flutuante', this).prependTo('.caixa-depoimento');
+                $('.depoimento-completo.flutuante').slideDown('slow');
+            }, function(){
+                $('.depoimento-completo.flutuante').slideUp(100);
+                $('.depoimento-completo.flutuante').appendTo(this);
+                $('.depoimento-completo.flutuante').removeClass('flutuante');
+            });
+  
+    }
+
 }
