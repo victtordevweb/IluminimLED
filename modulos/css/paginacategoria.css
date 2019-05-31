@@ -1,3 +1,11 @@
+/* SPRITE PAG BUSCA E CATEGORIA */
+.avaliacoes-clientes .imagem-cliente:before,
+.avaliacoes-clientes span.titulo-depoimentos b:before,
+.avaliacoes-clientes span.logo-ra-trust:before{
+    background: url(https://cdn.awsli.com.br/930/930730/arquivos/sprite_pagina_categoriav2.png);
+}
+/**/
+
 .menu.lateral:not(.outras) > .nivel-um > li > a {
     border: none !important;
 }
