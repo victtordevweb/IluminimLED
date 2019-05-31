@@ -373,3 +373,85 @@ color: #666 !important;
     border-left: 0 !important;
 }
 
+/* mais buscados*/
+/*/ categoria que era ativa  /*/
+.ordenar-listagem.rodape {
+    border: none !important;
+}
+
+.box-palavras-chaves .conteiner {
+    box-sizing: border-box;
+    padding-left: 0px !important;
+}
+
+.box-palavras-chaves {
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.box-palavras-chaves .palavras-buscadas ul {
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+.box-palavras-chaves .palavras-buscadas ul a {
+    color: #666;
+    letter-spacing: -.2px;
+    padding: 0px 0px;
+    display: block;
+}
+.box-palavras-chaves .palavras-buscadas {
+    display: flex;
+}
+
+.box-palavras-chaves ._wrap-bus-pl {
+    display: table;
+    margin: 0 auto;
+}
+.box-palavras-chaves strong.text-center {
+    display: block;
+    text-align: center;
+    padding: 0px 0;
+    margin-bottom: 23px;
+}
+
+.box-palavras-chaves strong.text-center > span {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #fff;
+    position: relative;
+    top: 10px;
+    padding: 0 20px;
+    letter-spacing: -1px;
+}
+
+.box-palavras-chaves strong.text-center {
+    border-bottom: 2px solid #c9c9c9;
+}
+.box-palavras-chaves > .conteiner {
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+padding-right: 0 !important;
+}
+
+/* paginacao */
+.ordenar-listagem .pagination ul>li a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.ordenar-listagem .pagination ul>li a {
+    padding-top: 8px;
+    padding-bottom: 7px;
+    color: #666 !important;
+    font-weight: 600;
+}
+.pagination .icon-double-angle-left:before {
+    content: "Anterior";
+    font-family: 'roboto';
+}
+.pagination .icon-double-angle-right:before {
+    content: "Próxima";
+    font-family: 'Roboto';
+}
+
