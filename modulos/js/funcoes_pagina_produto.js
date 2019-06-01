@@ -26,7 +26,10 @@ class PaginaProduto {
 
         /* move botao add favoritos */
         $('.lista-redes a.lista-favoritos.adicionar-favorito').clone().appendTo('.pagina-produto .principal .nome-produto, .pagina-produto .acoes-flutuante.borda-principal');
-    
+        
+        /* add compra 100 segura */
+        $('<span class="loja-segura"><i class="fa fa-lock"></i> Compra 100% segura</span>').insertAfter('.pagina-produto #corpo .span12.produto > .row-fluid > .span6:first-child');
+
         // botao trustvox pagina do produto
         $('<a class="botao-trust" href="#comentarios-container"> <span class="icon-central"></span>  Posso Ajudar? Clique e tire suas duvidas</a>').insertAfter('.pagina-produto .span6>.principal');  
 
