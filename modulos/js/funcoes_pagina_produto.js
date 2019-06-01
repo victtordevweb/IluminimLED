@@ -11,6 +11,11 @@ class PaginaProduto {
         </div>
         <div class="mais-info-prod"><a href="#espec-tec">+ Informações</a></div>`).insertAfter('.pagina-produto .produto .codigo-produto span:nth-child(1)');
         
+        $('img[src="https://cdn.awsli.com.br/257/257163/arquivos/itensTITULO.png"]').parent().attr('ID', 'espec-tec');
+
+        $('<div class="mais-info-prod"><a href="#espec-tec">+ Informações</a></div>').insertAfter('.produto .codigo-produto .trustvox-stars');
+
+
         $('.pagina-produto .produto .principal .acoes-produto .comprar').prependTo('.principal .preco-produto.destaque-preco.com-promocao');
         
         $(`<div class="entrega-todo-pais-ilm"><span>Envio com desconto para todo país</span><span class="ds-block">Saiba os prazos de entrega e as formas de envio.</span></div>`).insertBefore('.pagina-produto .cep form#formCalcularCep');
@@ -26,9 +31,6 @@ class PaginaProduto {
 
         /* move botao add favoritos */
         $('.lista-redes a.lista-favoritos.adicionar-favorito').clone().appendTo('.pagina-produto .principal .nome-produto, .pagina-produto .acoes-flutuante.borda-principal');
-        
-        /* add compra 100 segura */
-        $('<span class="loja-segura"><i class="fa fa-lock"></i> Compra 100% segura</span>').insertAfter('.pagina-produto #corpo .span12.produto > .row-fluid > .span6:first-child');
 
         // botao trustvox pagina do produto
         $('<a class="botao-trust" href="#comentarios-container"> <span class="icon-central"></span>  Posso Ajudar? Clique e tire suas duvidas</a>').insertAfter('.pagina-produto .span6>.principal');  
@@ -72,7 +74,7 @@ class PaginaProduto {
 
         var anchorIlm = $('html, body');
 
-        $('div#barraTopo .acoes-prod-topo ul.wrap-elementos a:not(.forma-pagamento-top):not(.audio-hash-a)').click(function() {
+        $('div#barraTopo .acoes-prod-topo ul.wrap-elementos a:not(.forma-pagamento-top):not(.audio-hash-a), .mais-info-prod>a').click(function() {
             anchorIlm.animate({
                 scrollTop: $(this.hash).offset().top -120
             }, 500)

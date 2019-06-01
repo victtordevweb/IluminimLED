@@ -17,8 +17,7 @@ var htmlMenuIluminim = `
 
 class TodasAsPaginas{
     static loadingIluminim(){
-        $('<span class="loja-segura"><i class="fa fa-lock"></i> Compra 100% segura</span>').appendTo('#corpo > .conteiner > .breadcrumbs');
-
+        $('<span class="loja-segura"><i class="fa fa-lock"></i> Compra 100% segura</span>').appendTo('#corpo > .conteiner > .breadcrumbs, .pagina-produto #corpo .span12.produto > .row-fluid > .span6:first-child');
         $(`<div class="mask-popup-cp-segura" style="display:none;">
             <div class="content-cp-segura">    
                 <div class="topo-cp-segura"><div class="btn-close-popup">X</div></div>
