@@ -13,9 +13,6 @@ class PaginaProduto {
         
         $('img[src="https://cdn.awsli.com.br/257/257163/arquivos/itensTITULO.png"]').parent().attr('ID', 'espec-tec');
 
-        $('<div class="mais-info-prod"><a href="#espec-tec">+ Informações</a></div>').insertAfter('.produto .codigo-produto .trustvox-stars');
-
-
         $('.pagina-produto .produto .principal .acoes-produto .comprar').prependTo('.principal .preco-produto.destaque-preco.com-promocao');
         
         $(`<div class="entrega-todo-pais-ilm"><span>Envio com desconto para todo país</span><span class="ds-block">Saiba os prazos de entrega e as formas de envio.</span></div>`).insertBefore('.pagina-produto .cep form#formCalcularCep');
@@ -45,6 +42,16 @@ class PaginaProduto {
             <span class="conteudo-comprando-iluminim span4"><b class="tit-conteudo">Forma de Pagamento</b><span class="conteudo-down-ilm">Sua compra pode ser realizada por cartão de crédito em até 12x sem juros, com parcelas mínimas de R$ 10, ou através de boleto bancário com 10% de desconto extra no valor total.</span></span>
             <span class="conteudo-comprando-iluminim span4"><b class="tit-conteudo">Segurança</b><span class="conteudo-down-ilm">Possuímos diversos parceiros como Google, Microsoft,Trustvox, Ebit, Mercado Pago e Site Blindado que possibilitam uma transação 100% segura e confiável.</span></b></span>
         </div>`).insertAfter('.pagina-produto .produto-compartilhar');
+    }
+
+    static textoGarantia(obj){
+        function renderItens(obj){
+            obj.forEach(item=>{
+                $(`<span class="cor-secundaria garantia"><b>Garantia: </b> <span>${item.garantia}</span></span>`).insertAfter(`body.pagina-produto.produto-${item.id} .codigo-produto .cor-secundaria .codigo-produto .cor-secundaria`);
+            });
+        }
+        renderItens(obj.refletores);
+
     }
 
     static barraFlutuante(){
