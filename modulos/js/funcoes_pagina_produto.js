@@ -47,7 +47,7 @@ class PaginaProduto {
     static textoGarantia(obj){
         function renderItens(obj){
             obj.forEach(item=>{
-                $(`<span class="cor-secundaria garantia"><b>Garantia: </b> <span>${item.garantia}</span></span>`).insertAfter(`body.pagina-produto.produto-${item.id} .codigo-produto .cor-secundaria .codigo-produto .cor-secundaria`);
+                $(`<span class="cor-secundaria garantia"><b>Garantia: </b> <span>${item.garantia}</span></span>`).insertAfter(`body.pagina-produto.produto-${item.id} .codigo-produto .cor-secundaria`);
             });
         }
         renderItens(obj.refletores);
