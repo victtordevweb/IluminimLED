@@ -53,6 +53,7 @@ class PaginaProduto {
         renderItens(obj.refletores);
         renderItens(obj.luminarias);
         renderItens(obj.spots);
+        renderItens(obj.espetos);
     }
 
     static barraFlutuante(){
