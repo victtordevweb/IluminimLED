@@ -51,7 +51,7 @@ class PaginaProduto {
             });
         }
         renderItens(obj.refletores);
-
+        renderItens(obj.luminarias);
     }
 
     static barraFlutuante(){
