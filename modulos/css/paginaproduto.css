@@ -962,3 +962,34 @@ div#ModalInfoPagamento .row-parcele-mp p {
     margin-bottom: 15px;
     margin-top: 2px;
 }
+
+/* oferta recomendada */
+.pagina-produto .oferta-recomendada {
+    width: 180px;
+    float: right;
+    background: #f92525;
+    line-height: 29px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding-left: 4px;
+    box-sizing: border-box;
+}
+.pagina-produto .oferta-recomendada span.txt-y {
+    margin-right: 3px;
+    color: #ffe64c;
+}
+.pagina-produto .oferta-recomendada:before {
+    width: 0;
+    height: 0;
+    border-top: 14.5px solid transparent;
+    border-bottom: 14.5px solid transparent;
+    border-left: 6px solid white;
+    content: "";
+    top: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+}
