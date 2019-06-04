@@ -966,6 +966,74 @@ div#ModalInfoPagamento .row-parcele-mp p {
 }
 
 /* oferta recomendada */
+
+.pagina-produto.box-recomendado-ilm .mask-oferta-recomendada {
+	opacity:1 !important;
+	visibility:visible!important;
+}
+.pagina-produto .mask-oferta-recomendada {
+		position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.63);
+    top: 0;
+    left: 0;
+	opacity:0;
+	visibility:hidden;
+    z-index: 225444;
+    display: flex!important;
+    transition: all 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+.pagina-produto .mask-oferta-recomendada .conteudo-ilm-oferta-recomendada {
+    width: 600px;
+    position: relative;
+    font-size: 17px;
+		box-sizing:border-box;
+    border-bottom: 3px solid #c92223;
+    background: #fff;
+    padding: 50px 50px 40px 50px;
+}
+
+
+.pagina-produto .mask-oferta-recomendada .titulo-recomendado {
+    font-size: 28px;
+	margin-bottom: 15px;
+    color: #333 !important;
+}
+
+.pagina-produto .mask-oferta-recomendada .fechar-modal {
+    position: absolute !important;
+    padding: 0px 8px 0px 10px;
+    font-size: 19PX !important;
+    display: block;
+    right: -12px;
+    top: -9px;
+    background: #C02E30;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    border-bottom: 2px solid #931213;
+    border-right: 1px solid #931213;
+    box-shadow: none !important;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: "Francois One", sans-serif !important;
+}
+.pagina-produto .mask-oferta-recomendada .fechar-modal:hover {
+background: #e83234;
+}
+.pagina-produto .mask-oferta-recomendada p,.pagina-produto .mask-oferta-recomendada li {
+    color: #414141 !important;
+    font-size: 14px;
+}
+.pagina-produto .mask-oferta-recomendada ul li {
+    list-style-type: disc !important;
+}
+
+
 .pagina-produto .oferta-recomendada {
     width: 180px;
     float: right;
@@ -978,6 +1046,7 @@ div#ModalInfoPagamento .row-parcele-mp p {
     position: relative;
     padding-left: 4px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .pagina-produto .oferta-recomendada span.txt-y {
     margin-right: 3px;

@@ -57,6 +57,31 @@ class PaginaProduto {
     }
 
     static ofertaRecomendada(obj){
+        $(`<div class="mask-oferta-recomendada" style="display:none;">
+                <div class="conteudo-ilm-oferta-recomendada">
+                    <div class="titulo-recomendado">Oferta Recomendada<div class="fechar-modal">X</div></div>
+                    <div class="textos-recomendado">
+                        <p>A Iluminim comercializa as melhores opções em LED.</p>
+                        <p>A oferta que você está vendo em destaque é a combinação de alguns fatores:</p>
+                            <ul>
+                                <li>valor do frete</li>
+                                <li>prazo de entrega</li>
+                                <li>o preço do produto</li>
+                            </ul>
+                            
+                            <p>Isso acontece para que você tenha sempre a melhor opção de compra em um só lugar.</p>
+                    </div>
+                </div>
+            </div>`).appendTo('body');
+
+            $('.oferta-recomendada').click(function(){
+                $('body').toggleClass('box-recomendado-ilm');
+            });
+
+            $('.mask-oferta-recomendada .fechar-modal').click(function(){
+                $('body').removeClass('box-recomendado-ilm');
+            });
+
         function renderItens(obj){
             obj.forEach(item=>{
                 $(`<div class="oferta-recomendada"><div class="wrap-itens"><span class="txt-y">Oferta</span><span class="txt-w">recomendada!</span></div></div>`).insertAfter(`body.pagina-produto.produto-${item} .breadcrumbs.borda-alpha ul`);
