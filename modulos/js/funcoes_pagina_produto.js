@@ -56,6 +56,15 @@ class PaginaProduto {
         renderItens(obj.espetos);
     }
 
+    static ofertaRecomendada(){
+        function renderItens(obj){
+            obj.forEach(item=>{
+                $(`<div class="oferta-recomendada"><div class="wrap-itens"><span class="txt-y">Oferta</span><span class="txt-w">recomendada!</span></div></div>`).insertAfter(`body.pagina-produto.produto-${item} .breadcrumbs.borda-alpha ul`);
+            });
+        }
+        renderItens(obj.luminarias);
+    }
+
     static barraFlutuante(){
         
         $('div#descricao p > img[src="https://cdn.awsli.com.br/257/257163/arquivos/caracteristicasTITULO.png"]').parent('p').attr('id','inf-tec-ilm');
