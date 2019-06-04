@@ -62,7 +62,7 @@ class PaginaProduto {
                 $(`<div class="oferta-recomendada"><div class="wrap-itens"><span class="txt-y">Oferta</span><span class="txt-w">recomendada!</span></div></div>`).insertAfter(`body.pagina-produto.produto-${item} .breadcrumbs.borda-alpha ul`);
             });
         }
-        renderItens(obj.luminarias);
+        renderItens(obj.prodsID);
     }
 
     static barraFlutuante(){
