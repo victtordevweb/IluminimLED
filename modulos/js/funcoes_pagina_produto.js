@@ -56,7 +56,7 @@ class PaginaProduto {
         renderItens(obj.espetos);
     }
 
-    static ofertaRecomendada(){
+    static ofertaRecomendada(obj){
         function renderItens(obj){
             obj.forEach(item=>{
                 $(`<div class="oferta-recomendada"><div class="wrap-itens"><span class="txt-y">Oferta</span><span class="txt-w">recomendada!</span></div></div>`).insertAfter(`body.pagina-produto.produto-${item} .breadcrumbs.borda-alpha ul`);
