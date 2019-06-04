@@ -64,6 +64,8 @@ div#ModalInfoPagamento .rdp-modal-boleto p:after,
     overflow: hidden;
     padding-bottom: 12px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
 .pagina-produto .principal {
