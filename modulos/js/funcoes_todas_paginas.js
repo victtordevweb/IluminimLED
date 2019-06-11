@@ -931,6 +931,14 @@ class TodasAsPaginas{
             <li class="meuspedidos-b-inicial">
             <a href="pedidos">Meus pedidos</a>
             </li>
+
+            <li class="listadesejo-b-inicial">
+            <a href="desejos">Meu histórico</a>
+                <div class="wrap-history">
+                    <div class="content-history"></div>
+                </div>
+            </li>
+
             </ul>`).prependTo('.barra-inicial .canais-contato');
     }
 
