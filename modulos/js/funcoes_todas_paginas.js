@@ -937,7 +937,7 @@ class TodasAsPaginas{
                 <div class="wrap-history">
                     <div class="content-history">
                         <span class="title-empty">Você não acessou nenhum produto recentemente :(</span>
-                        <a href="https://www.iluminim.com.br/ofertadasemana?sort=mais_vendidos">Conheça nossas recomendações</a>
+                        <a href="https://www.iluminim.com.br/ofertadasemana?sort=mais_vendidos">Clique <b>aqui</b> para conheçer uma de nossas recomendações.</a>
                     </div>
                 </div>
             </li>
