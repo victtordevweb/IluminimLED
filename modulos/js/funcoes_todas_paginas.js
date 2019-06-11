@@ -932,7 +932,7 @@ class TodasAsPaginas{
             <a href="pedidos">Meus pedidos</a>
             </li>
 
-            <li class="listadesejo-b-inicial">
+            <li class="meuhistorico-b-inicial">
             <a href="desejos">Meu histórico</a>
                 <div class="wrap-history">
                     <div class="content-history"></div>
