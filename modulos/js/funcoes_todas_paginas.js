@@ -935,7 +935,10 @@ class TodasAsPaginas{
             <li class="meuhistorico-b-inicial">
             <a href="desejos">Meu histórico</a>
                 <div class="wrap-history">
-                    <div class="content-history"></div>
+                    <div class="content-history">
+                        <span class="title-empty">Você não acessou nenhum produto recentemente :(</span>
+                        <a href="https://www.iluminim.com.br/ofertadasemana?sort=mais_vendidos">Conheça nossas recomendações</a>
+                    </div>
                 </div>
             </li>
 
