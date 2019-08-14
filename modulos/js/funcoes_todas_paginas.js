@@ -1243,10 +1243,6 @@ class TodasAsPaginas{
                             </ul>
                     </div>
                 </div>
-
-                <div class="bannerdepartamentos">
-                    <img src="https://cdn.awsli.com.br/930/930730/arquivos/bannercat.png">
-                </div>
                 
                 </div>
                 `).appendTo(obj.TodosOsDepartamentos.seletor);
