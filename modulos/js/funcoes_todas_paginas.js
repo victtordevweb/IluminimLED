@@ -1210,7 +1210,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Acessório para Câmera LED</a></li>
                                 <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
-                            
+
                         </div>
                 
 
@@ -1242,6 +1242,34 @@ class TodasAsPaginas{
                             <li><a href="javascript:void(0);">Iluminação para Garagem</a></li>
                             </ul>
                     </div>
+
+                    <div class="nav-column depoimentos-ilm">
+					<h3 class="review1">Jose dos Santos Braga</h3>
+					<ul>
+						<li>Ouro Branco - MG</li>
+						<br>
+						<li class="estrelas2"></li>
+						<br>
+						<li class="review2">Aproveitando para parabenizá-los pelo respeito ao cliente. O produto que comprei, chegou antes da data prevista. Isto faz com que quando necessário for, já sabemos onde comprar. Parabéns a toda equipe.</li>
+					</ul>
+					<h3 class="review1">Gabriela Nascimento</h3>
+					<ul>
+						<li>São Paulo - SP</li>
+						<br>
+						<li class="estrelas2"></li>
+						<br>
+						<li class="review2">Produto com ótimo custo/benefício, testei cada luminária, todas vieram funcionando perfeitamente, parabéns pela eficiência! </li>
+					</ul>
+					<h3 class="review1">Camila Bueno</h3>
+					<ul>
+						<li>Porto Alegre - RS</li>
+						<br>
+						<li class="estrelas2"></li>
+						<br>
+						<li class="review3">Obrigado pela atenção, cordialidade e profissionalismo. Ja é a minha segunda compra na loja e estou muito satisfeita. </li>
+					</ul>
+				</div>
+
                 </div>
                 
                 </div>
