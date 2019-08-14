@@ -1101,134 +1101,145 @@ class TodasAsPaginas{
                         <div class="nav-column">
                         <a href="/refletores-de-led?sort=mais_vendidos"><h3>Refletores LED</h3></a>
                             <ul>
-                            <li><a href="/refletor-led?sort=mais_vendidos">Refletor LED Branco</a></li>
-                            <li><a href="/refletor-led-rgb">Refletor LED Colorido</a></li>
-                            <li><a href="https://www.iluminim.com.br/refletor-led-verde">Refletor LED Verde</a></li>
-                            <li><a href="/refletor-microled?sort=mais_vendidos">Refletor Micro LED</a></li>
-                            <li><a href="/refletor-microled?sort=mais_vendidos">Refletor Micro LED Slim</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Ultra Thin</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Ultra</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Multifocal</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Solar</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Performance</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor Micro LED Prismático</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor LED Sensor</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Refletor LED Recarregável</a></li>
-                            <li><a href="/refletor-led-smd-ultra-thin">Todos Modelos</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Slim</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Verde</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Slim Colorido</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Ultra Thin</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Ultra Thin Verde</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Ultra Thin Colorido</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Solar</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Multifocal</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Performance</a></li>
+                                <li><a href="javascript:void(0);">Refletor Mini Micro LED</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Ultra</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Recarregável</a></li>
+                                <li><a href="javascript:void(0);">Refletor Super LED Sensor</a></li>
+                                <li><a href="javascript:void(0);">Espeto LED</a></li>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos Modelos</a></li>
                             </ul>
                                     
-                        <a href="/fitas-de-led?sort=mais_vendidos"><h3>Fitas LED</h3></a>
+                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Fitas LED</h3></a>
                             <ul>
-                            <li><a href="/fita-led-rgb">Fitas LED Coloridas</a></li>
-                            <li><a href="/fita-led-branca">Fitas LED Branco</a></li>
-                            <li><a href="/kit-fita-led">Kits Fitas LED</a></li>
-                            <li><a href="/mangueiras-led">Mangueiras LED</a></li>
-                            <li><a href="/fitas-de-led">Todos Modelos</a></li>
+                                <li><a href="javascript:void(0);">Fita LED Colorida</a></li>
+                                <li><a href="javascript:void(0);">Fita LED Branco Frio</a></li>
+                                <li><a href="javascript:void(0);">Fita LED Branco Morno</a></li>
+                                <li><a href="javascript:void(0);">Fita LED Branco Quente</a></li>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os Modelos</a></li>
                             </ul>
+
+                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Festa LED</h3></a>
+                            <ul>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os Modelos</a></li>
+                            </ul>                            
+
+                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Câmera LED</h3></a>
+                            <ul>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os Modelos</a></li>
+                            </ul> 
+
                         </div>
 
                         <div class="nav-column">
                         <a href="/luminarias-led?sort=mais_vendidos"><h3>Luminárias LED</h3></a>
                             <ul>
-                                <li><a href="/plafon-led-sobrepor?sort=mais_vendidos">Plafon LED Sobrepor</a></li>
-                                <li><a href="/plafon-led-embutir?sort=mais_vendidos">Plafon LED Embutir</a></li>
-                                <li><a href="/luminarias-publicas-led">Luminárias Públicas LED</a></li>
-                                <li><a href="/luminaria-emergencia-led">Luminárias Emergência LED</a></li>
-                                <li><a href="/pendente-led?sort=mais_vendidos" class="tag-novo">Pendentes LED</a></li>
-                                <li><a href="/arandela-led">Arandelas LED</a></li>
-                                <li><a href="/arandela-led">Lustre LED</a></li>
-                                <li><a href="/arandela-led">Abajur LED</a></li>
-                                <li><a href="/luminarias-led">Todos Modelos</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Embutir Quadrado</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Embutir Redondo</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Embutir Retangular</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Sobrepor Quadrado</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Sobrepor Redondo</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Sobrepor Retangular</a></li>
+                                <li><a href="javascript:void(0);">Luminária Pública LED</a></li>
+                                <li><a href="javascript:void(0);">Luminária de Emergência LED</a></li>
+                                <li><a href="javascript:void(0);">Luminária Solar LED</a></li>
+                                <li><a href="javascript:void(0);">Arandela LED</a></li>
+                                <li><a href="/luminarias-led" class="tds-modelos-menu">Todos os Modelos</a></li>
                             </ul>
                                     
-                        <a href="/spots?sort=mais_vendidos"><h3>Spots Dicróica LED</h3></a>
+                        <a href="/spots?sort=mais_vendidos"><h3>Spots LED</h3></a>
                             <ul>
-                            <li><a href="/spot-led-quadrado ">Spot LED Quadrado</a></li>
-                            <li><a href="/spot-led-redondo">Spot LED Redondo</a></li>
-                            <li><a href="/spot-led-trilho-eletrificado">Spot LED Trilho</a></li>
-                            <li><a href="/balizador-led">Balizadores LED</a></li>
-                            <li><a href="/spots?sort=mais_vendidos">Todos Modelos</a></li>	
+                                <li><a href="javascript:void(0);">Spot Dicróica LED Quadrado</a></li>
+                                <li><a href="javascript:void(0);">Spot Dicróica LED Redondo</a></li>
+                                <li><a href="javascript:void(0);">Spot Dicróica LED Colorido</a></li>
+                                <li><a href="javascript:void(0);">Spot LED Trilho</a></li>
+                                <li><a href="javascript:void(0);">Mini Spot LED</a></li>
+                                <li><a href="javascript:void(0);">Spot LED Cristal</a></li>
+                                <li><a href="javascript:void(0);">Balizador LED</a></li>
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos Modelos</a></li>	
                             </ul>
                         
-                        <a href=""><h3>Espetos LED</h3></a>
+                        <a href=""><h3>Pendentes LED</h3></a>
                             <ul>
-                            <li><a href="">Todos Modelos</a></li>
+                                <li><a href="javascript:void(0);">Pendente LED Aramado</a></li>
+                                <li><a href="javascript:void(0);">Pendente LED Redondo</a></li>
+                                <li><a href="javascript:void(0);">Lustre LED Cristal</a></li>
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos Modelos</a></li>	
                             </ul>
                         </div>   
 
                         <div class="nav-column">
                         <a href="/lampada-led?sort=mais_vendidos"><h3>Lâmpadas LED</h3></a>
                             <ul>
-                            <li><a href="/lampada-led-milho">Lampada LED Milho</a></li>
-                            <li><a href="/lampada-led-bulbo">Lampada LED Bulbo </a></li>
-                            <li><a href="/lampada-led-tubular">Lampada LED Tubular</a></li>
-                            <li><a href="/vela-led">Lampada LED Vela</a></li>
-                            <li><a href="/par-led">Lampada LED PAR</a></li>
-                            <li><a href="/halopin-led">Lampada LED Halopin</a></li>
-                            <li><a href="/dicroica-led">Lampada LED Dicroica</a></li>
-                            <li><a href="/led-retro">Lampada LED Vintage</a></li>
-                            <li><a href="/lampada-led-alta-potencia">Lampada LED Alta Potência</a></li>
-                            <li><a href="/lampada-led-espiral">Lâmpada LED Espiral</a></li>
-                            <li><a href="/lampada-led-12w-rgb-com-caixa-de-som-bluetooth-e-controle-remoto">Lâmpada LED RGB</a></li>
-                            <li><a href="/lampada-led-bolinha">Lampada LED Bolinha</a></li>
-                            <li><a href="/lampada-led-wi-fi">Lampada LED Wi-fi</a></li> 
-                            <li><a href="/lampada-led-wi-fi">Lampada LED Globo</a></li> 
-                            <li><a href="/lampada-led-wi-fi">Lampada LED AR</a></li> 
-                            <li><a href="/lampada-led-wi-fi">Lampada LED T40</a></li> 
-                            <li><a href="/lampada-led-wi-fi">Lampada LED Automotiva</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Tubular</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Bulbo</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Alta Potência</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Milho</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Vintage</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED PAR</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Halopin</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Vela</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED AR Espiral</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED RGB</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Bolinha</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Globo</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Dicróica</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Prato</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Automotiva</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED T40</a></li>
+                                <li><a href="javascript:void(0);">Lâmpada LED Wi-fi</a></li>
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos Modelos</a></li>	
                             </ul>         
                         </div>
                 
                 
                         <div class="nav-column">
-                        <a href="/acessorios-para-leds?sort=mais_vendidos"><h3>Acessórios de Reposição</h3></a>
+                        <a href="/acessorios-para-leds?sort=mais_vendidos"><h3>Acessórios LED</h3></a>
                             <ul>
-                                <li><a href="">Fonte Chaveada</a></li>
-                                <li><a href="">Fonte Convencional</a></li>
-                                <li><a href="">Chips LED</a></li>
-                                <li><a href="">Drivers LED</a></li>
-                                <li><a href="">Soquetes LED</a></li>
-                                <li><a href="">Conectores LED</a></li>
-                                <li><a href="">Emendas LED</a></li>
-                                <li><a href="">Todos modelos</a></li>
+                                <li><a href="javascript:void(0);">Acessório para Refletor LED</a></li>
+                                <li><a href="javascript:void(0);">Acessório para Fita LED</a></li>
+                                <li><a href="javascript:void(0);">Acessório para Plafon LED</a></li>
+                                <li><a href="javascript:void(0);">Acessório para Spot LED</a></li>
+                                <li><a href="javascript:void(0);">Acessório para Lâmpada LED</a></li>
+                                <li><a href="javascript:void(0);">Acessório para Câmera LED</a></li>
+                                <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
-                        
-                        <a href="/kits-especiais?sort=mais_vendido"><h3>Câmeras Segurança LED</h3></a>
-                            <ul>
-                                <li><a href="#">Câmeras LED Bullet</a></li>
-                                <li><a href="#">Câmeras LED Dome</a></li>
-                                <li><a href="#">Câmeras LED Wi-Fi</a></li>
-                                <li><a href="#">DVR Stand Alone</a></li>
-                                <li><a href="#">Todos Modelos</a></li>
-                            </ul>
-                        
-                        <a href="/compre-por-ambiente?sort=mais_vendidos"><h3>Festa LED</h3></a>
-                        <ul>
-                            <li><a href="#">Todos os Modelos</a></li>
-                        </ul>
+
                         </div>
                     
                     <div class="nav-column">
                         <a href="/refletores-de-led?sort=mais_vendidos"><h3>Kits LED</h3></a>
                             <ul>
-                            <li><a href="#">Kit Refletores Holofotes LED</a></li>
-                            <li><a href="#">Kit Luminárias Plafons LED</a></li>
-                            <li><a href="#">Kit Emergência LED</a></li>
-                            <li><a href="#">Kit Spots Dicróica LED</a></li>
-                            <li><a href="#">Kit Balizadores LED</a></li>
-                            <li><a href="#">Kit Lampadas LED</a></li>
-                            <li><a href="#">Kit Espetos LED</a></li>
-                            <li><a href="#">Kit Fitas LED</a></li>
-                            <li><a href="#">Todos Kits</a></li>
+                            <li><a href="javascript:void(0);">Kit Luminárias LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Refletores LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Spots LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Lâmpadas LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Fitas LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Espetos LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Câmeras LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Acessórios LED</a></li>
+                            <li><a href="javascript:void(0);">Kit Balizador LED</a></li>
+                            <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
                                     
                         <a href="/fitas-de-led?sort=mais_vendidos"><h3>Compre por Ambiente</h3></a>
                             <ul>
-                            <li><a href="/led-para-sala-de-estar">LED para Sala de Estar</a></li>
-                            <li><a href="/led-para-escritorio">LED para Escritório</a></li>
-                            <li><a href="/led-para-banheiros">LED para Banheiro</a></li>
-                            <li><a href="/led-para-cozinha">LED para Cozinha</a></li>
-                            <li><a href="/led-para-dormitorios">LED para Quarto</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Sala de Estar</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Sala de Jantar</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Dormitório</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Cozinha</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Banheiro</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Escritório</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Jardim</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Garagem</a></li>
                             </ul>
                     </div>
                 </div>
