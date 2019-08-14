@@ -1197,12 +1197,10 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Lâmpada LED T40</a></li>
                                 <li><a href="javascript:void(0);">Lâmpada LED Wi-fi</a></li>
                                 <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos Modelos</a></li>	
-                            </ul>         
-                        </div>
-                
-                
-                        <div class="nav-column">
-                        <a href="/acessorios-para-leds?sort=mais_vendidos"><h3>Acessórios LED</h3></a>
+                            </ul> 
+                            
+                            
+                            <a href="/acessorios-para-leds?sort=mais_vendidos"><h3>Acessórios LED</h3></a>
                             <ul>
                                 <li><a href="javascript:void(0);">Acessório para Refletor LED</a></li>
                                 <li><a href="javascript:void(0);">Acessório para Fita LED</a></li>
@@ -1212,8 +1210,10 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Acessório para Câmera LED</a></li>
                                 <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
-
+                            
                         </div>
+                
+
                     
                     <div class="nav-column">
                         <a href="/refletores-de-led?sort=mais_vendidos"><h3>Kits LED</h3></a>
