@@ -1164,7 +1164,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Mini Spot LED</a></li>
                                 <li><a href="javascript:void(0);">Spot LED Cristal</a></li>
                                 <li><a href="javascript:void(0);">Balizador LED</a></li>
-                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos Modelos</a></li>	
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os Modelos</a></li>	
                             </ul>
                         
                         <a href=""><h3>Pendentes LED</h3></a>
@@ -1172,7 +1172,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Pendente LED Aramado</a></li>
                                 <li><a href="javascript:void(0);">Pendente LED Redondo</a></li>
                                 <li><a href="javascript:void(0);">Lustre LED Cristal</a></li>
-                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos Modelos</a></li>	
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os Modelos</a></li>	
                             </ul>
                         </div>   
 
@@ -1196,7 +1196,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Lâmpada LED Automotiva</a></li>
                                 <li><a href="javascript:void(0);">Lâmpada LED T40</a></li>
                                 <li><a href="javascript:void(0);">Lâmpada LED Wi-fi</a></li>
-                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos Modelos</a></li>	
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os Modelos</a></li>	
                             </ul> 
                             
                             
@@ -1227,7 +1227,7 @@ class TodasAsPaginas{
                             <li><a href="javascript:void(0);">Kit Câmeras LED</a></li>
                             <li><a href="javascript:void(0);">Kit Acessórios LED</a></li>
                             <li><a href="javascript:void(0);">Kit Balizador LED</a></li>
-                            <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
+                            <li><a href="" class="tds-modelos-menu">Todos os Modelos</a></li>
                             </ul>
                                     
                         <a href="/fitas-de-led?sort=mais_vendidos"><h3>Compre por Ambiente</h3></a>
