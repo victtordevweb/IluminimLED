@@ -1115,7 +1115,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Refletor Micro LED Recarregável</a></li>
                                 <li><a href="javascript:void(0);">Refletor Super LED Sensor</a></li>
                                 <li><a href="javascript:void(0);">Espeto LED</a></li>
-                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos Modelos</a></li>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
                                     
                             <a href="/fitas-de-led?sort=mais_vendidos"><h3>Fitas LED</h3></a>
@@ -1124,17 +1124,17 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Fita LED Branco Frio</a></li>
                                 <li><a href="javascript:void(0);">Fita LED Branco Morno</a></li>
                                 <li><a href="javascript:void(0);">Fita LED Branco Quente</a></li>
-                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os Modelos</a></li>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
 
                             <a href="/fitas-de-led?sort=mais_vendidos"><h3>Festa LED</h3></a>
                             <ul>
-                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os Modelos</a></li>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>                            
 
                             <a href="/fitas-de-led?sort=mais_vendidos"><h3>Câmera LED</h3></a>
                             <ul>
-                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os Modelos</a></li>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul> 
 
                         </div>
@@ -1142,29 +1142,26 @@ class TodasAsPaginas{
                         <div class="nav-column">
                         <a href="/luminarias-led?sort=mais_vendidos"><h3>Luminárias LED</h3></a>
                             <ul>
-                                <li><a href="javascript:void(0);">Plafon LED Embutir Quadrado</a></li>
-                                <li><a href="javascript:void(0);">Plafon LED Embutir Redondo</a></li>
-                                <li><a href="javascript:void(0);">Plafon LED Embutir Retangular</a></li>
-                                <li><a href="javascript:void(0);">Plafon LED Sobrepor Quadrado</a></li>
-                                <li><a href="javascript:void(0);">Plafon LED Sobrepor Redondo</a></li>
-                                <li><a href="javascript:void(0);">Plafon LED Sobrepor Retangular</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Embutir</a></li>
+                                <li><a href="javascript:void(0);">Plafon LED Sobrepor</a></li>
                                 <li><a href="javascript:void(0);">Luminária Pública LED</a></li>
                                 <li><a href="javascript:void(0);">Luminária de Emergência LED</a></li>
                                 <li><a href="javascript:void(0);">Luminária Solar LED</a></li>
-                                <li><a href="javascript:void(0);">Arandela LED</a></li>
-                                <li><a href="/luminarias-led" class="tds-modelos-menu">Todos os Modelos</a></li>
+                                <li><a href="javascript:void(0);">Arandela LED
+                                <li><a href="javascript:void(0);">Pendente LED</a></li>
+                                <li><a href="javascript:void(0);">Lustre LED</a></li>
+                                <li><a href="javascript:void(0);">Todos os modelos</a></li>
                             </ul>
                                     
                         <a href="/spots?sort=mais_vendidos"><h3>Spots LED</h3></a>
                             <ul>
-                                <li><a href="javascript:void(0);">Spot Dicróica LED Quadrado</a></li>
-                                <li><a href="javascript:void(0);">Spot Dicróica LED Redondo</a></li>
-                                <li><a href="javascript:void(0);">Spot Dicróica LED Colorido</a></li>
-                                <li><a href="javascript:void(0);">Spot LED Trilho</a></li>
-                                <li><a href="javascript:void(0);">Mini Spot LED</a></li>
-                                <li><a href="javascript:void(0);">Spot LED Cristal</a></li>
-                                <li><a href="javascript:void(0);">Balizador LED</a></li>
-                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os Modelos</a></li>	
+                                <li><a href="javascript:void(0);"Spot Dicróica LED</a></li>
+                                <li><a href="javascript:void(0);"Spot Dicróica LED Colorido</a></li>
+                                <li><a href="javascript:void(0);"Spot LED Trilho</a></li>
+                                <li><a href="javascript:void(0);"Mini Spot LED</a></li>
+                                <li><a href="javascript:void(0);"Spot LED Cristal</a></li>
+                                <li><a href="javascript:void(0);"Balizador LED</a></li>
+                                <li><a href="javascript:void(0);"Todos os modelos</a></li>	
                             </ul>
                         
                         <a href=""><h3>Pendentes LED</h3></a>
@@ -1172,7 +1169,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Pendente LED Aramado</a></li>
                                 <li><a href="javascript:void(0);">Pendente LED Redondo</a></li>
                                 <li><a href="javascript:void(0);">Lustre LED Cristal</a></li>
-                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os Modelos</a></li>	
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os modelos</a></li>	
                             </ul>
                         </div>   
 
@@ -1196,18 +1193,12 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Lâmpada LED Automotiva</a></li>
                                 <li><a href="javascript:void(0);">Lâmpada LED T40</a></li>
                                 <li><a href="javascript:void(0);">Lâmpada LED Wi-fi</a></li>
-                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os Modelos</a></li>	
+                                <li><a href="/spots?sort=mais_vendidos" class="tds-modelos-menu">Todos os modelos</a></li>	
                             </ul> 
                             
                             
                             <a href="/acessorios-para-leds?sort=mais_vendidos"><h3>Acessórios LED</h3></a>
                             <ul>
-                                <li><a href="javascript:void(0);">Acessório para Refletor LED</a></li>
-                                <li><a href="javascript:void(0);">Acessório para Fita LED</a></li>
-                                <li><a href="javascript:void(0);">Acessório para Plafon LED</a></li>
-                                <li><a href="javascript:void(0);">Acessório para Spot LED</a></li>
-                                <li><a href="javascript:void(0);">Acessório para Lâmpada LED</a></li>
-                                <li><a href="javascript:void(0);">Acessório para Câmera LED</a></li>
                                 <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
 
