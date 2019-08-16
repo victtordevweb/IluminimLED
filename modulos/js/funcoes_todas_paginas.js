@@ -1113,7 +1113,6 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Refletor Mini Micro LED</a></li>
                                 <li><a href="javascript:void(0);">Refletor Micro LED Ultra</a></li>
                                 <li><a href="javascript:void(0);">Refletor Micro LED Recarregável</a></li>
-                                <li><a href="javascript:void(0);">Refletor Super LED Sensor</a></li>
                                 <li><a href="javascript:void(0);">Espeto LED</a></li>
                                 <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
@@ -1125,13 +1124,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Fita LED Branco Morno</a></li>
                                 <li><a href="javascript:void(0);">Fita LED Branco Quente</a></li>
                                 <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
-                            </ul>
-
-                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Festa LED</h3></a>
-                            <ul>
-                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
-                            </ul>                            
-
+                            </ul>                          
                             <a href="/fitas-de-led?sort=mais_vendidos"><h3>Câmera LED</h3></a>
                             <ul>
                                 <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
@@ -1201,6 +1194,11 @@ class TodasAsPaginas{
                             <ul>
                                 <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
+                            
+                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Festa LED</h3></a>
+                            <ul>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
+                            </ul>  
 
                         </div>
                 
@@ -1231,6 +1229,7 @@ class TodasAsPaginas{
                             <li><a href="javascript:void(0);">Iluminação para Escritório</a></li>
                             <li><a href="javascript:void(0);">Iluminação para Jardim</a></li>
                             <li><a href="javascript:void(0);">Iluminação para Garagem</a></li>
+                            <li><a href="javascript:void(0);">Iluminação para Quadra Esportiva</a></li>
                             </ul>
                     </div>
 

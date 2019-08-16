@@ -1,9 +1,8 @@
 
-const chave = {
-    api: 'fd7e5bbe195de3d9b7d2',
-    aplicacao: '47366dd3-180e-43c5-928b-45a93d31d561'
+const xml = {
+    url: 'https://www.iluminim.com.br/xml/358fd/googlemerchant.xml'
 }
-
+    
 const $request = {
     get: (url)=>{
         return new Promise((resolve, reject)=>{
@@ -21,6 +20,65 @@ const $request = {
         });
     }
 }
+
+/**
+ * @function XML = retorna um XML ja transformado em objeto para função
+ */
+function XML(url){
+    return new Promise((resolve, reject)=>{
+        let objectXML = {
+            store_data: [],
+            items_data: []
+        };
+
+        $request.get(url).then(resultXML=>{
+            var xmlDOM = new DOMParser().parseFromString(resultXML, 'text/xml');
+            var myXML = xmlDOM.childNodes
+            var xmlOBJ = myXML[0];
+            if( xmlOBJ.childNodes.length === 3 ) {
+                console.log('é xml');
+                var xmlItems = xmlOBJ.childNodes[1];
+                var arrXML = xmlItems.children;
+                var toARRAY = Array.prototype.slice.call(arrXML)
+                toARRAY.forEach(function(e,i){
+                var indexBox = i - 3;
+                    if( e.nodeName === 'title' || e.nodeName === 'link' || e.nodeName === 'description'){
+                        objectXML.store_data.push({
+                            type: e.nodeName,
+                            text: e.textContent
+                        });
+                    }else if( e.nodeName === 'item') {
+                        var toARRAYitem = Array.prototype.slice.call(e.children);
+                        objectXML.items_data.push({
+                            full_text: e.textContent,
+                            info_item: {},
+                        });
+                        toARRAYitem.forEach(function(a,b){
+                            if( a.nodeName === 'g:installment'){
+                                console.log(objectXML.items_data[indexBox].info_item);
+                                objectXML.items_data[indexBox].info_item.installment = {
+                                    months: `${a.childNodes[0].textContent}`,
+                                    price_months: `${a.childNodes[1].textContent}`  
+                                }
+                            }else if(a.nodeName === 'g:product_type'){
+                                if(objectXML.items_data[indexBox].info_item.categoriaprincipal){
+                                    objectXML.items_data[indexBox].info_item.categoria = a.textContent;
+                                }else {
+                                    objectXML.items_data[indexBox].info_item.categoriaprincipal = a.textContent;
+                                }
+                            }else{
+                                objectXML.items_data[indexBox].info_item[`${a.nodeName}`] = a.textContent;
+                            }
+                        });    
+                    }
+                });
+            
+            }
+            resolve(objectXML);
+        });
+    });
+}
+
 
 
 function setCookie(name, value, hours){
@@ -102,82 +160,69 @@ function CHTMLEP(){
 
 /**
  * @function PDDPAPI = Pega Dados Do Produto na via API - função que pega os dados do produto via api atraves de request.
+ * @param xmlObject = é o xml transformado em objeto;
+ * @param localProdsId = é o id no localStorage aonde se encontra os produtos para manipulaçoes;
  */
-function PDDPAPI(){
+CHTMLEP();
+function PDDPAPI(xmlObject, localProdsId){
 
-    CHTMLEP();
+    let dataLastProd = JSON.parse(localStorage.getItem('APA'));
+    let prodObject = xmlObject.items_data.filter(item=> item.info_item['g:id'] == `${dataLastProd[1]}` ? item : '');
+    console.log(prodObject[0]);
+    let catReferenceProdObject = prodObject[0].info_item.categoria.split('> ');
+    let lastCatReference = catReferenceProdObject[catReferenceProdObject.length -1];
+    let cat = $(`.menu.superior a[title="${lastCatReference}"]`).first().attr('href');
 
-    let dataLastProd = JSON.parse(localStorage.getItem('APA'))
-
-    $request.get(`https://api.awsli.com.br/v1/produto/${dataLastProd[0]}?format=json&chave_api=${chave.api}&chave_aplicacao=${chave.aplicacao}`).then(result=>{
-        
-        var dataProd = JSON.parse(result);
-        let api = dataProd.categorias[dataProd.categorias.length -1].replace('/api/', '');
-
-        $request.get(`https://api.awsli.com.br/${api}?format=json&chave_api=${chave.api}&chave_aplicacao=${chave.aplicacao}`).then(result=>{
-            let data = JSON.parse(result);
-            let url = data.url.replace('http:', 'https:');
-
-            $('.exit_popup_personalizado .carrousel-popup-personalizado').load(`${url}?sort=mais_vendidos .listagem-linha:first-child>ul>li>div,.listagem-linha:nth-child(2)>ul>li>div`, ()=>{
+    $('.exit_popup_personalizado .carrousel-popup-personalizado').load(`${cat}?sort=mais_vendidos .listagem-linha:first-child>ul>li>div,.listagem-linha:nth-child(2)>ul>li>div`, ()=>{
                 
-                carrouselOWL('.exit_popup_personalizado .carrousel-popup-personalizado');
-                console.log(dataProd.categorias.length -1 > 0);
-                if(dataProd.categorias.length -1 > 0){
-                        let prodCatLoad = $('.exit_popup_personalizado .wrap-popup .carrousel-popup-personalizado .listagem-item:first-child a.nome-produto.cor-secundaria').first().text();
-                        let lastProd = dataLastProd[2].split(' ');
-                        var comparation = 0;
-                        lastProd.forEach(item=>{
-                            if(prodCatLoad.split(' ').includes(item)){
-                                comparation++
-                            }
-                        });
-
-                        console.log('comparation', comparation);
-                        console.log('last', lastProd);
-
-                    if(lastProd <= 3){
-                        var comparationVal = 1;
-                    }else if(lastProd <= 6){
-                        var comparationVal = 2;
-                    }else if(lastProd <= 9){
-                        var comparationVal = 3;
-                    }else if(lastProd <= 12){
-                        var comparationVal = 4;
-                    }else if(lastProd <= 15){
-                        var comparationVal = 5;
-                    }else {
-                        var comparationVal = 6;
+        carrouselOWL('.exit_popup_personalizado .carrousel-popup-personalizado');
+    
+        /*if(catReferenceProdObject.length -1 > 0){
+                let prodCatLoad = $('.exit_popup_personalizado .wrap-popup .carrousel-popup-personalizado .listagem-item:first-child a.nome-produto.cor-secundaria').first().text();
+                let lastProd = dataLastProd[2].split(' ');
+                var comparation = 0;
+                lastProd.forEach(item=>{
+                    if(prodCatLoad.split(' ').includes(item)){
+                        comparation++
                     }
+                });
 
-                    if(comparation < comparationVal){
-                        $('.exit_popup_personalizado').remove();
+                console.log('comparation', comparation);
+                console.log('last', lastProd);
 
-                        CHTMLEP()
-
-                        console.log('codigo executado');
-                        let api2 = dataProd.categorias[dataProd.categorias.length -2].replace('/api/', '');
-
-                        $request.get(`https://api.awsli.com.br/${api2}?format=json&chave_api=${chave.api}&chave_aplicacao=${chave.aplicacao}`).then(result=>{
-                            let data2 = JSON.parse(result);
-                            let url2 = data2.url.replace('http:', 'https:');
-                                $('.exit_popup_personalizado .carrousel-popup-personalizado').load(`${url2}?sort=mais_vendidos .listagem-linha:first-child>ul>li>div,.listagem-linha:nth-child(2)>ul>li>div`, ()=>{
-                                    carrouselOWL('.exit_popup_personalizado .carrousel-popup-personalizado');
-                                });
-
+                if(lastProd <= 3){
+                    var comparationVal = 1;
+                }else if(lastProd <= 6){
+                    var comparationVal = 2;
+                }else if(lastProd <= 9){
+                    var comparationVal = 3;
+                }else if(lastProd <= 12){
+                    var comparationVal = 4;
+                }else if(lastProd <= 15){
+                    var comparationVal = 5;
+                }else {
+                    var comparationVal = 6;
+                }
+                console.log(comparation, comparationVal);
+                if(comparation < comparationVal){
+                    $('.exit_popup_personalizado').remove();
+                    CHTMLEP();
+                    console.log('codigo executado');
+                    console.log(catReferenceProdObject.length);
+                    if(catReferenceProdObject.length >= 2){
+                        console.log('xd');
+                        let lastCatReference = catReferenceProdObject[catReferenceProdObject.length -2];
+                        let cat = $(`.menu.superior a[title="${lastCatReference}"]`).first().attr('href');
+                        $('.exit_popup_personalizado .carrousel-popup-personalizado').load(`${cat}?sort=mais_vendidos .listagem-linha:first-child>ul>li>div,.listagem-linha:nth-child(2)>ul>li>div`, ()=>{
+                            carrouselOWL('.exit_popup_personalizado .carrousel-popup-personalizado');
                         });
                     }
                 }
+        }*/
 
-            });
-
-        }); 
-
-
-    }).catch(err=>{
-        console.error(err);
     });
-}
 
+}
 
 /**
  * @function BFEP - Botão que Fecha Exit Popup
@@ -189,18 +234,30 @@ function BFEP(){
     });
 }   
 
-            
-
-
 APA();
 
-$(document).ready(function(){
-    EPU(callback=>{
-        if($('.exit_popup_personalizado .wrap-popup .carrousel-popup-personalizado .listagem-item').length > 2){
-            $('.exit_popup_personalizado').addClass('__open');
-        }
-    });
+
+let localProdsId = 'produtos-iluminim';
+let refreshProds = 'atualizar-produtos-iluminim';  
+if(document.cookie.indexOf(refreshProds) > -1){
+    PDDPAPI(JSON.parse(localStorage.getItem(localProdsId)), localProdsId);
+}else {
+    setCookie(refreshProds, 'true', 23);
+    XML(xml.url).then(xmlObject=>{
+        localStorage.setItem(localProdsId, JSON.stringify(xmlObject));
+        console.log(xmlObject);
+        PDDPAPI(xmlObject, localProdsId);
+    }); 
+}
+
+
+
+
+EPU(callback=>{
+    if($('.exit_popup_personalizado .wrap-popup .carrousel-popup-personalizado .listagem-item').length > 2){
+        $('.exit_popup_personalizado').addClass('__open');
+    }
 });
 
-PDDPAPI();
+
 BFEP();
