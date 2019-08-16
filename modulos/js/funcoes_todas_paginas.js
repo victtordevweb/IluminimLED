@@ -1216,7 +1216,7 @@ class TodasAsPaginas{
                             <li><a href="javascript:void(0);">Kit Câmeras LED</a></li>
                             <li><a href="javascript:void(0);">Kit Acessórios LED</a></li>
                             <li><a href="javascript:void(0);">Kit Balizador LED</a></li>
-                            <li><a href="" class="tds-modelos-menu">Todos os Modelos</a></li>
+                            <li><a href="" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
                                     
                         <a href="/fitas-de-led?sort=mais_vendidos"><h3>Compre por Ambiente</h3></a>
@@ -1231,6 +1231,13 @@ class TodasAsPaginas{
                             <li><a href="javascript:void(0);">Iluminação para Garagem</a></li>
                             <li><a href="javascript:void(0);">Iluminação para Quadra Esportiva</a></li>
                             </ul>
+
+                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Solar LED</h3></a>
+                            <ul>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
+                            </ul>  
+                            
+                           
                     </div>
 
                     <div class="nav-column depoimentos-ilm">
