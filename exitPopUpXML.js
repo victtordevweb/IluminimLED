@@ -1,6 +1,7 @@
 
 const xml = {
-    url: 'https://www.iluminim.com.br/xml/358fd/googlemerchant.xml'
+    url: 'https://www.iluminim.com.br/xml/24e04/facebook.xml',
+    utm: '?utm_source=Site&utm_medium=IluminimDev&utm_campaign=IluminimDev'
 }
     
 const $request = {
@@ -55,10 +56,19 @@ function XML(url){
                         });
                         toARRAYitem.forEach(function(a,b){
                             if( a.nodeName === 'g:installment'){
-                                console.log(objectXML.items_data[indexBox].info_item);
                                 objectXML.items_data[indexBox].info_item.installment = {
                                     months: `${a.childNodes[0].textContent}`,
-                                    price_months: `${a.childNodes[1].textContent}`  
+                                    price_months: convertPriceToBRL(`${a.childNodes[1].textContent}`) 
+                                }
+                            }else if(a.nodeName === 'link'){
+                                let url = a.textContent.split('?utm_source')[0];
+                                objectXML.items_data[indexBox].info_item[`${a.nodeName}`] = `${url}${xml.utm}`;
+                            }else if(a.nodeName === 'g:price' || a.nodeName === 'g:sale_price'){
+                                objectXML.items_data[indexBox].info_item[`${a.nodeName}`] = convertPriceToBRL(a.textContent);
+                            }else if(a.nodeName === 'g:image_link'){
+                                objectXML.items_data[indexBox].info_item[`${a.nodeName}`] = a.textContent;
+                                if(a.textContent.includes('https://cdn.awsli.com.br')){
+                                    objectXML.items_data[indexBox].info_item.idProd = a.textContent.split('/produto/')[1].split('/')[0];
                                 }
                             }else if(a.nodeName === 'g:product_type'){
                                 if(objectXML.items_data[indexBox].info_item.categoriaprincipal){
@@ -81,6 +91,7 @@ function XML(url){
 
 
 
+
 function setCookie(name, value, hours){
     if (hours){
         var date = new Date();
@@ -93,19 +104,6 @@ function setCookie(name, value, hours){
     document.cookie = name+"="+value+expires+"; path=/";
 }
 
-/**
- * @function EPU = Exit PopUp - Ao tirar o mouse da janela abre um popup com produtos relacionado ao ultimo acessado pelo cliente
- * @param callback = executa função callback ao exibir popup
- */
-function EPU(callback){
-    $(document).on('mouseleave', function(e){
-        if( e.clientY < 0 ){
-            if(document.cookie.indexOf('ofertaExitPopup') == -1){
-                callback();
-            }
-        }
-    });
-}
 
 
 /**
@@ -118,7 +116,7 @@ function APA(){
         let skuProd = $('.produto .codigo-produto span[itemprop="sku"]').text();
         let nameProd = $('.pagina-produto .principal .nome-produto').text();
 
-        localStorage.setItem('APA', JSON.stringify([idProd, skuProd, nameProd]));
+        localStorage.setItem('iluminim-application-OEP', JSON.stringify([idProd, skuProd, nameProd]));
     }
 }
 
@@ -139,6 +137,20 @@ function carrouselOWL(elemento){
 }
 
 /**
+ * @function EPU = Exit PopUp - Ao tirar o mouse da janela abre um popup com produtos relacionado ao ultimo acessado pelo cliente
+ * @param callback = executa função callback ao exibir popup
+ */
+function EPU(callback){
+    $(document).on('mouseleave', function(e){
+        if( e.clientY < 0 ){
+            if(document.cookie.indexOf('ofertaExitPopup') == -1){
+                callback();
+            }
+        }
+    });
+}
+
+/**
  * @function Cria HTML Exit PopUp na body
  */
 function CHTMLEP(){
@@ -151,7 +163,7 @@ function CHTMLEP(){
                     <div class="btn-close-popup-personalizado">×</div>
                 </div>
                 <div class="body-popup">
-                    <div class="carrousel-popup-personalizado"></div>
+                    <div class="carrousel-popup-personalizado listagem-application-iluminim"></div>
                 </div>
             </div>
         </div>
@@ -159,67 +171,28 @@ function CHTMLEP(){
 }
 
 /**
- * @function PDDPAPI = Pega Dados Do Produto na via API - função que pega os dados do produto via api atraves de request.
+ * @function PDDPXML = Pega Dados Do Produto na via XML - função que pega os dados do produto via api atraves de request.
  * @param xmlObject = é o xml transformado em objeto;
  * @param localProdsId = é o id no localStorage aonde se encontra os produtos para manipulaçoes;
+ * OEP - Overlay Exit Popup
  */
-CHTMLEP();
-function PDDPAPI(xmlObject, localProdsId){
+function PDDPXML(xmlObject){
 
-    let dataLastProd = JSON.parse(localStorage.getItem('APA'));
-    let prodObject = xmlObject.items_data.filter(item=> item.info_item['g:id'] == `${dataLastProd[1]}` ? item : '');
+    let dataLastProd = JSON.parse(localStorage.getItem('iluminim-application-OEP'));
+    var prodObject = xmlObject.items_data.filter(item=> item.info_item['g:id'] == `${dataLastProd[1]}` ? item : '');
+    if(!prodObject.length > 0){
+        prodObject = xmlObject.items_data.filter(item=> item.info_item['g:item_group_id'] == `${dataLastProd[1]}` ? item : '');
+    }
     console.log(prodObject[0]);
     let catReferenceProdObject = prodObject[0].info_item.categoria.split('> ');
     let lastCatReference = catReferenceProdObject[catReferenceProdObject.length -1];
     let cat = $(`.menu.superior a[title="${lastCatReference}"]`).first().attr('href');
 
     $('.exit_popup_personalizado .carrousel-popup-personalizado').load(`${cat}?sort=mais_vendidos .listagem-linha:first-child>ul>li>div,.listagem-linha:nth-child(2)>ul>li>div`, ()=>{
-                
         carrouselOWL('.exit_popup_personalizado .carrousel-popup-personalizado');
-    
-        /*if(catReferenceProdObject.length -1 > 0){
-                let prodCatLoad = $('.exit_popup_personalizado .wrap-popup .carrousel-popup-personalizado .listagem-item:first-child a.nome-produto.cor-secundaria').first().text();
-                let lastProd = dataLastProd[2].split(' ');
-                var comparation = 0;
-                lastProd.forEach(item=>{
-                    if(prodCatLoad.split(' ').includes(item)){
-                        comparation++
-                    }
-                });
-
-                console.log('comparation', comparation);
-                console.log('last', lastProd);
-
-                if(lastProd <= 3){
-                    var comparationVal = 1;
-                }else if(lastProd <= 6){
-                    var comparationVal = 2;
-                }else if(lastProd <= 9){
-                    var comparationVal = 3;
-                }else if(lastProd <= 12){
-                    var comparationVal = 4;
-                }else if(lastProd <= 15){
-                    var comparationVal = 5;
-                }else {
-                    var comparationVal = 6;
-                }
-                console.log(comparation, comparationVal);
-                if(comparation < comparationVal){
-                    $('.exit_popup_personalizado').remove();
-                    CHTMLEP();
-                    console.log('codigo executado');
-                    console.log(catReferenceProdObject.length);
-                    if(catReferenceProdObject.length >= 2){
-                        console.log('xd');
-                        let lastCatReference = catReferenceProdObject[catReferenceProdObject.length -2];
-                        let cat = $(`.menu.superior a[title="${lastCatReference}"]`).first().attr('href');
-                        $('.exit_popup_personalizado .carrousel-popup-personalizado').load(`${cat}?sort=mais_vendidos .listagem-linha:first-child>ul>li>div,.listagem-linha:nth-child(2)>ul>li>div`, ()=>{
-                            carrouselOWL('.exit_popup_personalizado .carrousel-popup-personalizado');
-                        });
-                    }
-                }
-        }*/
-
+        $('.exit_popup_personalizado .carrousel-popup-personalizado .listagem-item a.produto-sobrepor').each(function(){
+            $(this).attr('href', `${$(this).attr('href')}?utm_source=Site&utm_medium=IluminimDev&utm_campaign=exitpopup`);
+        });
     });
 
 }
@@ -232,32 +205,27 @@ function BFEP(){
         $(this).parents('.exit_popup_personalizado').removeClass('__open');
         setCookie('ofertaExitPopup','true', 12);
     });
-}   
+}
 
+
+CHTMLEP();
 APA();
-
-
 let localProdsId = 'produtos-iluminim';
 let refreshProds = 'atualizar-produtos-iluminim';  
 if(document.cookie.indexOf(refreshProds) > -1){
-    PDDPAPI(JSON.parse(localStorage.getItem(localProdsId)), localProdsId);
+    PDDPXML(JSON.parse(localStorage.getItem(localProdsId)));
 }else {
     setCookie(refreshProds, 'true', 23);
     XML(xml.url).then(xmlObject=>{
         localStorage.setItem(localProdsId, JSON.stringify(xmlObject));
         console.log(xmlObject);
-        PDDPAPI(xmlObject, localProdsId);
+        PDDPXML(xmlObject);
     }); 
 }
-
-
-
-
 EPU(callback=>{
     if($('.exit_popup_personalizado .wrap-popup .carrousel-popup-personalizado .listagem-item').length > 2){
         $('.exit_popup_personalizado').addClass('__open');
     }
 });
-
 
 BFEP();

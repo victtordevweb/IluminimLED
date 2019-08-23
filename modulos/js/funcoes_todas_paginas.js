@@ -1102,7 +1102,7 @@ class TodasAsPaginas{
                         <a href="/refletores-de-led?sort=mais_vendidos"><h3>Refletores LED</h3></a>
                             <ul>
                                 <li><a href="javascript:void(0);">Refletor Micro LED Slim</a></li>
-                                <li><a href="javascript:void(0);">Refletor Micro LED Verde</a></li>
+                                <li><a href="javascript:void(0);">Refletor Micro LED Slim Verde</a></li>
                                 <li><a href="javascript:void(0);">Refletor Micro LED Slim Colorido</a></li>
                                 <li><a href="javascript:void(0);">Refletor Micro LED Ultra Thin</a></li>
                                 <li><a href="javascript:void(0);">Refletor Micro LED Ultra Thin Verde</a></li>
@@ -1141,8 +1141,6 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Luminária de Emergência LED</a></li>
                                 <li><a href="javascript:void(0);">Luminária Solar LED</a></li>
                                 <li><a href="javascript:void(0);">Arandela LED
-                                <li><a href="javascript:void(0);">Pendente LED</a></li>
-                                <li><a href="javascript:void(0);">Lustre LED</a></li>
                                 <li><a href="javascript:void(0);">Todos os modelos</a></li>
                             </ul>
                                     
@@ -1159,6 +1157,8 @@ class TodasAsPaginas{
                         
                         <a href=""><h3>Pendentes LED</h3></a>
                             <ul>
+                                <li><a href="javascript:void(0);">Pendente LED Cone</a></li>
+                                <li><a href="javascript:void(0);">Pendente LED Gota</a></li>
                                 <li><a href="javascript:void(0);">Pendente LED Aramado</a></li>
                                 <li><a href="javascript:void(0);">Pendente LED Redondo</a></li>
                                 <li><a href="javascript:void(0);">Lustre LED Cristal</a></li>
