@@ -1125,7 +1125,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Fita LED Branco Quente</a></li>
                                 <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>                          
-                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Câmera LED</h3></a>
+                            <a href="/fitas-de-led?sort=mais_vendidos"><h3>Câmeras LED</h3></a>
                             <ul>
                                 <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul> 
@@ -1141,7 +1141,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Luminária de Emergência LED</a></li>
                                 <li><a href="javascript:void(0);">Luminária Solar LED</a></li>
                                 <li><a href="javascript:void(0);">Arandela LED
-                                <li><a href="javascript:void(0);">Todos os modelos</a></li>
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>
                             </ul>
                                     
                         <a href="/spots?sort=mais_vendidos"><h3>Spots LED</h3></a>
@@ -1152,7 +1152,7 @@ class TodasAsPaginas{
                                 <li><a href="javascript:void(0);">Mini Spot LED</a></li>
                                 <li><a href="javascript:void(0);">Spot LED Cristal</a></li>
                                 <li><a href="javascript:void(0);">Balizador LED</a></li>
-                                <li><a href="javascript:void(0);">Todos os modelos</a></li>	
+                                <li><a href="javascript:void(0);" class="tds-modelos-menu">Todos os modelos</a></li>	
                             </ul>
                         
                         <a href=""><h3>Pendentes LED</h3></a>
