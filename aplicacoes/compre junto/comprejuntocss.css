@@ -57,7 +57,7 @@
 
 .listagem-cjd .cjd.personalizada .listagem-linha {
     width: 850px;
-    display: table;
+    display: flex;
     padding: 13px 32px !important;
     box-sizing: border-box;
     float: left;
