@@ -371,14 +371,10 @@ function TPT(){
         return $.trim($(seletor).text()).replace('R$ ', '').replace(/\./g, '').replace(/\,/g, '.');
     }
     
-    if($('.cjd-prod-acessado.cjd-block .select-wrapper').length > 0){
-        var priceRiscadoProdAcessado = formatPrice('.cjd-prod-acessado.cjd-block .preco-produto s.preco-venda.titulo');
-    }else {
-        var priceRiscadoProdAcessado = formatPrice('.principal .acoes-produto.disponivel .preco-produto .preco-venda');
-    }
-    let priceRiscadoDisparado = $('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active .preco-produto .preco-venda').text().replace('R$ ', '').replace(/\./g, '').replace(/\,/g, '.');
-    let economizeTotal = (parseFloat(priceRiscadoProdAcessado) + parseFloat(priceRiscadoDisparado)).toFixed(2);
-    
+    let priceRiscadoProdAcessado = formatPrice('.cjd-prod-acessado.cjd-block .preco-produto s.preco-venda.titulo');
+    let priceRiscadoDisparado = formatPrice('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active .preco-produto .preco-venda');
+    let economizeTotal = parseFloat(priceRiscadoProdAcessado + priceRiscadoDisparado).toFixed(2);
+
     let priceProdAcessado = $.trim($('.cjd-prod-acessado.cjd-block .preco-produto strong.titulo').text()).replace('R$ ', '').replace(/\./g, '').replace(/\,/g, '.');
     let priceProdDisparado = $('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active .preco-produto strong.titulo').text().replace('R$ ', '').replace(/\./g, '').replace(/\,/g, '.');
     let precoTotal = convertPriceToBRL((parseFloat(priceProdAcessado) + parseFloat(priceProdDisparado)).toFixed(2));
