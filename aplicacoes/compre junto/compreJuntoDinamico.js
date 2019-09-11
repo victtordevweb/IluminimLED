@@ -373,16 +373,17 @@ function TPT(){
     
     let priceRiscadoProdAcessado = formatPrice('.cjd-prod-acessado.cjd-block .preco-produto s.preco-venda.titulo');
     let priceRiscadoDisparado = formatPrice('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active .preco-produto .preco-venda');
-    let economizeTotal = parseFloat(priceRiscadoProdAcessado + priceRiscadoDisparado).toFixed(2);
+    let economizeTotal = (parseFloat(priceRiscadoProdAcessado) + parseFloat(priceRiscadoDisparado)).toFixed(2);
 
-    let priceProdAcessado = $.trim($('.cjd-prod-acessado.cjd-block .preco-produto strong.titulo').text()).replace('R$ ', '').replace(/\./g, '').replace(/\,/g, '.');
-    let priceProdDisparado = $('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active .preco-produto strong.titulo').text().replace('R$ ', '').replace(/\./g, '').replace(/\,/g, '.');
+    let priceProdAcessado = formatPrice('.cjd-prod-acessado.cjd-block .preco-produto strong.titulo');
+    let priceProdDisparado = formatPrice('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active .preco-produto strong.titulo');
     let precoTotal = convertPriceToBRL((parseFloat(priceProdAcessado) + parseFloat(priceProdDisparado)).toFixed(2));
     
     $('.listagem-cjd .economize-cjd').html(`Economize R$ ${economizeTotal - precoTotal}`);
     $('.listagem-cjd .cjd-info .price-total-cjd').html(`
         <span>POR APENAS</span>
         <span class="cjd-price">R$ ${precoTotal}</span>`);
+
 }
 
 

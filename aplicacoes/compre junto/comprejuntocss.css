@@ -25,11 +25,10 @@
 
 .listagem-cjd .cjd-prod-disparado.cjd-block {
     display: inline-block;
-    height: 371px;
+    height: 370px;
     overflow: hidden;
     width: 282px;
     position: relative;
-    top: 15px;
 }
 
 .listagem-cjd .cjd_loading {
@@ -62,6 +61,11 @@
     padding: 13px 32px !important;
     box-sizing: border-box;
     float: left;
+}
+.listagem-cjd .economize-cjd {
+    font-size: 15px;
+    font-weight: 600;
+    color: #34af6f;
 }
 
 .listagem-cjd .cjd-block a.nome-produto {
