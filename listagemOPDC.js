@@ -138,11 +138,11 @@ function verifyExists(data, skuNew){
  * @function PRROPA - Produtos Relacionados Referente O Produto Acessado Atualmente
  * essa função pega o nome do produto que esta na tela atualmente (na pagina de produto) e faz uma busca por produtos no xml referente ao nome do mesmo
  */
-function PRROPA(nameProd, priceProd, xmlObject){
+function PRROPA(catAcessada, nameProd, priceProd, xmlObject){
     return new Promise((resolve, reject)=>{
         var nameProduto = nameProd.split(' ');
         if(xmlObject){
-            var comparation = parseInt(nameProduto.length / 2) + 1;
+            var comparation = parseInt(nameProduto.length / 2);
 
             let itemsFiltrado = xmlObject.items_data.filter(item=>{
                 var count = 0;
@@ -155,12 +155,12 @@ function PRROPA(nameProd, priceProd, xmlObject){
                     //console.log(parseFloat(priceProd) * 2, parseFloat(item.info_item['g:sale_price'].replace(/\./g, '').replace(',','.')), item, parseFloat(priceProd) * 2 > parseFloat(item.info_item['g:sale_price'].replace(/\./g, '').replace(',','.')));
                     if(parseFloat(priceProd) * 2 > parseFloat(item.info_item['g:sale_price'].replace(/\./g, '').replace(',','.'))){
                         let catReferenceProdObject = item.info_item.categoria.split('> ');
-                        let lastCatReference = catReferenceProdObject[catReferenceProdObject.length -1];
-                        return item;
+                        if(catReferenceProdObject.includes(catAcessada)){
+                            return item;
+                        }
                     }
                 }
             });
-            
             let items = xmlObject.items_data.filter(item=>{
                 var count = 0;
                 item.info_item.title.split(' ').forEach(words=>{
@@ -204,9 +204,16 @@ function APA(){
         let skuProd = $('.produto .codigo-produto span[itemprop="sku"]').text();
         let nameProd = $('.pagina-produto .principal .nome-produto').text();
         let priceProd = $('.acoes-produto.disponivel meta[itemprop="price"]').attr('content');
+        let xmlObject = JSON.parse(localStorage.getItem('produtos-iluminim'));
 
-
-        PRROPA(nameProd, priceProd, JSON.parse(localStorage.getItem('produtos-iluminim'))).then(prodRelacionado=>{
+        var catAcessada;
+        xmlObject.items_data.forEach(item=>{
+            if(item.info_item['g:id'] == skuProd){
+                 let catReferenceProdObject = item.info_item.categoria.split('> ');
+                catAcessada = catReferenceProdObject[catReferenceProdObject.length -1];
+            }
+         });
+        PRROPA(catAcessada, nameProd, priceProd, xmlObject).then(prodRelacionado=>{
             console.log(prodRelacionado);
             CHTMLL(RL(prodRelacionado));
             carrouselOWL('.produtos-carrossel.opdc .listagem-linha');
@@ -245,7 +252,7 @@ function CHTMLL(listagem){
                 ${listagem}
             </div>
         </ul>
-    </div>`).insertBefore('.pagina-produto .abas-custom');
+    </div>`).insertBefore('.pagina-produto div#descricao');
 }
 
 /**
@@ -259,7 +266,7 @@ function RL(objectOPDC){
             let item = prod.info_item;
             let linkUtm = item.link.replace('&utm_campaign=IluminimDev', '&utm_campaign=listagemOPDC');
             return `
-                <div class="listagem-item oqpsv ${item.idProd}">
+                <div class="listagem-item opdc ${item.idProd}">
                     <a href="${linkUtm}" class="produto-sobrepor" title="${item.title}"></a>
                     <div class="imagem-produto"><img src="${item['g:image_link']}" alt="${item.title}" class="imagem-principal" draggable="false"> </div>
                         <div class="info-produto"> <a href="${linkUtm}" class="nome-produto cor-secundaria">${item.title}</a>
