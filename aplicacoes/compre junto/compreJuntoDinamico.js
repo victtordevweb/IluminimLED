@@ -392,17 +392,23 @@ function TPT(){
  * function BTNCOMPRAR - Ao clicar no botao comprar;
  */
 function BTNCOMPRAR(){
-    $('.btn-comprar-cjd').click(function(){
+    $(document).on('click', '.btn-comprar-cjd', function(){
         let idAcessado = $('.listagem-cjd .cjd-prod-acessado.cjd-block .listagem-item.cjd').attr('data-id');
         let idDisparado = $('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active').attr('data-id');
 
-        $('.listagem-cjd').addClass('carregando');
-
-        $request.get(`/carrinho/produto/${idAcessado}/adicionar`).then(()=>{
-            $request.get(`/carrinho/produto/${idDisparado}/adicionar`).then(()=>{
-                $('.listagem-cjd').removeClass('carregando');
+        if($('.cjd-prod-acessado.cjd-block .infos').text() == ''){
+            $('.listagem-cjd .cjd-prod-acessado.cjd-block .select-wrapper select').addClass('error');
+            alert('Selecione uma variação');
+        }else {
+            $('.listagem-cjd').addClass('carregando');
+            $request.get(`/carrinho/produto/${idAcessado}/adicionar`).then(()=>{
+                $request.get(`/carrinho/produto/${idDisparado}/adicionar`).then(()=>{
+                    $('.listagem-cjd').removeClass('carregando');
+                });
             });
-        });
+        }
+
+
     });
 }
 
@@ -454,8 +460,9 @@ function CPACV(object){
 function APDV(variationsAcessado){
     
     $('.cjd-prod-acessado .select-wrapper select').change(function(){
+        let id = $(this).val().split(' ')[0];  
         let sku = $(this).val().split(' ')[1];  
-        //console.log(variationsAcessado, id);
+        $(this).parents('.listagem-item.cjd.variacao').attr('data-id', `${id}`);
 
         var item = variationsAcessado.filter(item=> item.info_item['g:id'] == sku ? item : '')[0].info_item;
 
