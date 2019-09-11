@@ -247,10 +247,7 @@ function CHTMLL(prodAcessado, listagem){
                     <span class="cjd-info-title">Aproveite e compre junto!</span>
                     <div class="economize-cjd"></div>
                     <div class="cjd-info-title2">Compre os 2 produtos</p></div>
-                    <div class="price-total-cjd">
-                        <span>POR APENAS</span>
-                        <span class="cjd-price"></span>
-                    </div>
+                    <div class="price-total-cjd"></div>
                     <div class="btn-comprar-cjd">COMPRAR</span>
                 </div>
             </ul>
@@ -358,7 +355,9 @@ function TPD(){
             }else {
                 $('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd').first().addClass('active');
             }
-            TPT();
+            if(!$('.cjd-prod-acessado.cjd-block .infos').text() == ''){
+                TPT();
+            }
         },500);
     });
 
@@ -385,7 +384,9 @@ function TPT(){
     let precoTotal = convertPriceToBRL((parseFloat(priceProdAcessado) + parseFloat(priceProdDisparado)).toFixed(2));
     
     $('.listagem-cjd .economize-cjd').html(`Economize R$ ${economizeTotal - precoTotal}`);
-    $('.listagem-cjd .cjd-info span.cjd-price').html(`R$ ${precoTotal}`);
+    $('.listagem-cjd .cjd-info .price-total-cjd').html(`
+        <span>POR APENAS</span>
+        <span class="cjd-price">R$ ${precoTotal}</span>`);
 }
 
 

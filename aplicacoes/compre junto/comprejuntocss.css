@@ -63,6 +63,11 @@
     box-sizing: border-box;
     float: left;
 }
+.listagem-cjd .economize-cjd {
+    font-size: 15px;
+    font-weight: 600;
+    color: #34af6f;
+}
 
 .listagem-cjd .cjd-block a.nome-produto {
     margin-top: 10px !important;
