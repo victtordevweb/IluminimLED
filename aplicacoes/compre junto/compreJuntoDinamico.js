@@ -27,6 +27,7 @@ const $request = {
  * @function convertPriceToBRL = transforma numeros em valores R$
  */
 function convertPriceToBRL(number){
+    console.log(number);
     return parseFloat(number.split(' ')[0]).toLocaleString('pt-br', {minimumFractionDigits: 2});
 }
 
@@ -377,9 +378,9 @@ function TPT(){
 
     let priceProdAcessado = formatPrice('.cjd-prod-acessado.cjd-block .preco-produto strong.titulo');
     let priceProdDisparado = formatPrice('.listagem-cjd .cjd-prod-disparado.cjd-block .listagem-item.cjd.active .preco-produto strong.titulo');
-    let precoTotal = convertPriceToBRL((parseFloat(priceProdAcessado) + parseFloat(priceProdDisparado)).toFixed(2));
+    let precoTotal = (parseFloat(priceProdAcessado) + parseFloat(priceProdDisparado)).toFixed(2);
     
-    $('.listagem-cjd .economize-cjd').html(`Economize R$ ${economizeTotal - precoTotal}`);
+    $('.listagem-cjd .economize-cjd').html(`Economize R$ ${(economizeTotal - precoTotal).toFixed(2)}`);
     $('.listagem-cjd .cjd-info .price-total-cjd').html(`
         <span>POR APENAS</span>
         <span class="cjd-price">R$ ${precoTotal}</span>`);
