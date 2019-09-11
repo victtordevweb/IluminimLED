@@ -460,6 +460,7 @@ function CPACV(object){
 function APDV(variationsAcessado){
     
     $('.cjd-prod-acessado .select-wrapper select').change(function(){
+        $(this).removeClass('error');
         let id = $(this).val().split(' ')[0];  
         let sku = $(this).val().split(' ')[1];  
         $(this).parents('.listagem-item.cjd.variacao').attr('data-id', `${id}`);
