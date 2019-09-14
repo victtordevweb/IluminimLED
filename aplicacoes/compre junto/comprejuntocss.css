@@ -53,6 +53,7 @@
     box-sizing: border-box;
     position: relative;
     padding: 72px 61px 0 0px;
+    height: 375px;
 }
 
 .listagem-cjd .cjd.personalizada .listagem-linha {
@@ -128,11 +129,10 @@
 
 .listagem-cjd .cjd-info:before {
     content: "=";
-    height: auto;
     display: block;
     position: absolute;
     font-family: verdana,arial,sans-serif;
-    top: calc(50% - -4px);
+    top: 164px;
     left: -124px;
     box-sizing: border-box;
     font-size: 40px;
