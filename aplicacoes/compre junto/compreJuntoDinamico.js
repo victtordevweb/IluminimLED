@@ -404,6 +404,7 @@ function BTNCOMPRAR(){
             $request.get(`/carrinho/produto/${idAcessado}/adicionar`).then(()=>{
                 $request.get(`/carrinho/produto/${idDisparado}/adicionar`).then(()=>{
                     $('.listagem-cjd').removeClass('carregando');
+                    $('.listagem-cjd .btn-comprar-cjd').replaceWith(`<div class="itens-adicionados"><a href="/carrinho/index">Produtos adicionado ao carrinhos<i class="fa fa-check" aria-hidden="true"></i> </a></div>`);
                 });
             });
         }
