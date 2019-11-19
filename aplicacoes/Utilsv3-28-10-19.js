@@ -1,8 +1,8 @@
-
 const Utils = {
     xml: {
         url: 'https://www.iluminim.com.br/xml/24e04/facebook.xml',
-        utm: '?utm_source=Site&utm_medium=IluminimDev&utm_campaign=IluminimDev'
+        //utm: '?utm_source=Site&utm_medium=IluminimDev&utm_campaign=IluminimDev',
+        utm: ''
     },
     //https://www.iluminim.com.br/xml/358fd/googlemerchant.xml
     //https://www.iluminim.com.br/xml/ab463/roihero.xml
@@ -134,26 +134,41 @@ const Utils = {
      * @function verifyExists = verifica se o produto que esta acessando ja existe no objeto;
      * @param data = objeto completo, @param skuNew = o sku para verificar se existe;
      */
-    verifyExists:(data, skuNew)=>{
+    verifyExists:(data, skuNew, def = false)=>{
         var boo = { boolean: false, index: null};
         data.filter((item, index)=>{
-            if(item.skuProd == skuNew){
-                boo.boolean = true;
-                boo.index = index;
+            if(def == true){
+                if(item == skuNew){
+                    boo.boolean = true;
+                    boo.index = index;
+                }
+            }else{
+                if(item.skuProd == skuNew){
+                    boo.boolean = true;
+                    boo.index = index;
+                }
             }
         });
         return boo;
     },
 
-
-    htmlListagemItem:(item, linkUtm)=>{
+    htmlListagemItem:(item, linkUtm, btnTrocar, btnQtd)=>{
+        // linkUtm retirado por enquanto
         return `
             <div class="listagem-item cjd" data-id="${item.idProd}">
-            <a href="${linkUtm}" class="produto-sobrepor" title="${item.title}"></a>
+            
+            <a href="${item.link.split('?utm_source=')[0]}" class="produto-sobrepor" title="${item.title}"></a>
             <div class="imagem-produto"><img src="${item['g:image_link']}" alt="${item.title}" class="imagem-principal" draggable="false"> </div>
                 <div class="info-produto"> <a href="${linkUtm}" class="nome-produto cor-secundaria">${item.title}</a><div class="ilm-app-stars"><img src="https://cdn.awsli.com.br/257/257163/arquivos/img-start-02-8.png"></div>
                         <div class="infos">
                             <div class="produto-sku hide">${item['g:id']}</div>
+                            ${btnQtd ? `
+                            <div class="input_qtd">
+                                <div class="value-button" id="decrease" value="Decrease Value"><span>-</span></div>
+                                <input type="number" id="number" value="1" min="1">
+                                <div class="value-button" id="increase" value="Increase Value"><span>+</span></div>
+                            </div>
+                            `: ''}
                             <div class="preco-produto destaque-preco com-promocao">
                                 <div>
                                     <s class="preco-venda titulo">R$ ${item['g:price']}</s>
@@ -176,51 +191,12 @@ const Utils = {
                         </div>
                     </div>
                 </div>
+                ${btnTrocar ? '<div class="trocar-prod">Trocar</div>' : ''}
         </div>
         `
     },
 
-
-    /**
-     * @function APA = Armazenas ultimo Produto Acessado e executa outros scripts;
-     * @param xmlObjectProds = é os produtos objeto xml convertido para objeto json,
-     * @param nameLocalStorage = é o nome que vai ser setado no localstorage dos produtos relcionados referente ao produto acessado;
-     */
-    APA:(xmlObjectProds, nameLocalStorage)=>{
-        let body = $('body.pagina-produto');
-        if(body.length > 0){
-            let idProd  = body.attr('class').split('produto-')[1].split(' ')[0];
-            let skuProd = $('.produto .codigo-produto span[itemprop="sku"]').text();
-            let nameProd = $('.pagina-produto .principal .nome-produto').text();
-            let priceProd = $('.acoes-produto.disponivel meta[itemprop="price"]').attr('content');
-
-            PRROPA(nameProd, priceProd, xmlObjectProds).then(prodRelacionado=>{
-
-                console.log(prodRelacionado);
-
-                if(localStorage.hasOwnProperty(nameLocalStorage)){
-                    if(prodRelacionado){
-
-                        let arrayUA = JSON.parse(localStorage.getItem(nameLocalStorage));
-                        let verify = Utils.verifyExists(arrayUA, skuProd);
-                        if(verify.boolean == true){
-                            arrayUA.splice(verify.index, 1);
-                        }
-                        arrayUA.unshift({idProd, skuProd, nameProd, priceProd, prodRelacionado});
-                        if(arrayUA.length > 12){
-                            arrayUA.pop();
-                        }
-                        localStorage.setItem(nameLocalStorage, JSON.stringify(arrayUA));
-                    }
-                }else{
-                    localStorage.setItem(nameLocalStorage, JSON.stringify([{idProd, skuProd, nameProd, priceProd, prodRelacionado}]));
-                }
-
-            });
-        }
-    },
-
-    carrouselOWL:(elemento)=>{
+    carrouselOWL:(elemento, overlayp)=>{
         $(elemento).owlCarousel({
             loop:true,
             margin:0,
@@ -232,13 +208,118 @@ const Utils = {
                     items: 1
                 },
                 800:{
-                    items:4
+                    items: overlayp ? 2 : 4
                 }
             }
          });
     },
 
+    /**
+     * @function GRPDPA = Gera Produtos Relacionados Do Produto Acessado;
+     * @param infoItemProdObject = é o objeto do produto acessado info_item;
+     * @param xmlObjectProds = é o xml convertido para object (apenas os produtos);
+     * @param params.qtdProdsReturn = em especifico o parametro serve pra quantos produtos relacionado retornar da função.
+     * @param params.filtrarPorCategoria = parametro para condicionar por categoria ou não.
+     */
+    GPRDPA:(infoItemProdObject, xmlObjectProds, params)=>{
 
+        var nameProduto = infoItemProdObject.title.split(' ');
+
+        var precoProduto = infoItemProdObject['g:price'].replace('.', '').replace(',', '.');
+        
+        var comparation = parseInt(nameProduto.length / 2);
+
+        let itemsFiltrado = xmlObjectProds.filter(item=>{
+            var count = 0;
+            item.info_item.title.split(' ').forEach(words=>{
+                if(nameProduto.includes(words)){
+                    count++
+                }
+            });
+            if(count > comparation){
+                if(params.filtrarPorPreco){
+                    if(parseFloat(precoProduto) * 2 > parseFloat(item.info_item['g:sale_price'].replace(/\./g, '').replace(',','.'))){
+                        if(params.filtrarPorCategoria){
+
+                            if(infoItemProdObject.categoria){
+                                var catAcessadaWaiting = infoItemProdObject.categoria.split(' > ');
+                            }else{
+                                var catAcessadaWaiting = infoItemProdObject.categoriaprincipal.split(' > ');
+                            }
+                            catAcessada = catAcessadaWaiting[catAcessadaWaiting.length -1];
+                            
+                            if(item.info_item.categoria){
+                                var catReferenceProdObject = item.info_item.categoria.split('> ');
+                            }else{
+                                var catReferenceProdObject = item.info_item.categoriaprincipal.split('> ');
+                            }   
+                            
+                            if(catReferenceProdObject.includes(catAcessada)){
+                                return item;
+                            }
+
+                        }else{
+                            return item;
+                        }
+
+                    }
+                }else{
+                    return item;
+                }
+            }
+        });
+
+        let items = xmlObjectProds.filter(item=>{
+            var count = 0;
+            item.info_item.title.split(' ').forEach(words=>{
+                if(nameProduto.includes(words)){
+                    count++
+                }
+            });
+            if(count > comparation){
+                return item;
+            }
+        });
+
+        var selected = itemsFiltrado.length > 0 ? itemsFiltrado : items;
+
+        var random = Math.floor(Math.random() * selected.length);
+        
+        if(params.qtdProdsReturn > 1){
+
+            if(params.qtdProdsReturn > selected.length){
+                return selected;
+            }else {
+                if(random + params.qtdProdsReturn > selected.length){
+                    return selected.slice(selected.length - params.qtdProdsReturn, selected.length);
+                }else{
+                    return selected.slice(random, random + params.qtdProdsReturn);
+                }
+            
+            }
+
+        }else{
+            return selected[random];
+        }
+    
+    },
+
+    /**
+     * @function PUPA = Pega Ultimo Produto Acessado;
+     */
+    PUPA:(xmlObjectProds)=>{
+        let historyProds = $('.produto .codigo-produto span[itemprop="sku"]').text();
+
+        let skuProd = historyProds;
+        let xmlObject = xmlObjectProds;
+        var p = xmlObject.filter(item=> item.info_item['g:id'] == skuProd ? item : '');
+    
+        if(!p.length > 0){
+            p = xmlObject.filter(item=> item.info_item['g:item_group_id'] == skuProd ? item : '');
+        }
+    
+        return p;
+    },
 
     setXMLToLocalStorage:()=>{
         return new Promise((resolve, reject)=>{
@@ -259,104 +340,41 @@ const Utils = {
                 })
             }
         });
-
     }
 
 }
-
-
-
-    /**
-     * @function PRROPA - Produtos Relacionados Referente O Produto Acessado Atualmente
-     * essa função pega o nome do produto que esta na tela atualmente (na pagina de produto) e faz uma busca por produtos no xml referente ao nome do mesmo
-     */
-    function PRROPA(nameProd, priceProd, xmlObjectProds){
-        return new Promise((resolve, reject)=>{
-            var nameProduto = nameProd.split(' ');
-            console.log(nameProduto);
-            if(xmlObjectProds){
-                var comparation = parseInt(nameProduto.length / 2) + 1;
-
-                let itemsFiltrado = xmlObjectProds.filter(item=>{
-                    var count = 0;
-                    item.info_item.title.split(' ').forEach(words=>{
-                        if(nameProduto.includes(words)){
-                            count++
-                        }
-                    });
-                    if(count > comparation){
-                        if(parseFloat(priceProd) * 2 > parseFloat(item.info_item['g:sale_price'].replace(/\./g, '').replace(',','.'))){
-                            return item;
-                        }
-                    }
-                });
-
-                let items = xmlObjectProds.filter(item=>{
-                    var count = 0;
-                    item.info_item.title.split(' ').forEach(words=>{
-                        if(nameProduto.includes(words)){
-                            count++
-                        }
-                    });
-                    if(count > comparation){
-                        return item;
-                    }
-                });
-
-                var selected = itemsFiltrado.length > 0 ? items[Math.floor(Math.random() * items.length)] : [];
-                resolve(selected);
-            }
-        });
-    }
-
-
 /**
- * @function Cria HTML Listagem
+ * @function APA = Armazena Produto Acessado;
+ * @param namelocalStorage;
  */
-function CHTMLL(listagem){
-    if(listagem !== undefined && listagem.length > 3){
-        $(`
-        <div class="listagem-oqspv listagem-application-iluminim listagem-vitrine-app">
-            <div class="titulo-categoria borda-principal cor-principal _oqspv">
-                <strong>Olha o que separamos para você, new</strong>
-            </div>
-            <ul data-produtos-linha="4" class="produtos-carrossel oqspv personalizada">
-                <div class="listagem-linha">
-                    ${listagem}
-                </div>
-            </ul>
-        </div>`).prependTo('.pagina-inicial #corpo div#listagemProdutos');
-    }
-}
-
-/**
- * @function RenderizarListagemOQSPV = Renderizar Listagem 
- * @param nameLocalStorage = nome(key) no localstorage dos produtos relacionado
- * renderiza listagem personalizada;
- */
-function RenderizarListagemOQSPV(nameLocalStorage){
-    if($('.pagina-inicial').length > 0){
+function APA(nameLocalStorage){
+    let body = $('body.pagina-produto');
+    if(body.length > 0){
+        let skuProd = $('.produto .codigo-produto span[itemprop="sku"]').text();
 
         if(localStorage.hasOwnProperty(nameLocalStorage)){
-            var ua = JSON.parse(localStorage.getItem(nameLocalStorage));
-            if(ua.length > 3){
-                var listagem = ua.map(list=>{
-                    console.log(list);
-                    let item = list.prodRelacionado.info_item;
-                    let linkUtm = item.link.replace('&utm_campaign=IluminimDev', '&utm_campaign=listagemOQSPV');
-                    return Utils.htmlListagemItem(item, linkUtm);
-                }).join('');
-
-                CHTMLL(listagem);
-                Utils.carrouselOWL('.produtos-carrossel.oqspv.personalizada .listagem-linha');
-            }   
+            let arrayUA = JSON.parse(localStorage.getItem(nameLocalStorage));
+            let verify = Utils.verifyExists(arrayUA, skuProd, true);
+            if(verify.boolean == true){
+                arrayUA.splice(verify.index, 1);
+            }
+            arrayUA.unshift(skuProd);
+            if(arrayUA.length > 12){
+                arrayUA.pop();
+            }
+            localStorage.setItem(nameLocalStorage, JSON.stringify(arrayUA));
+        }else{
+            localStorage.setItem(nameLocalStorage, JSON.stringify([skuProd]));
         }
-    }   
+    }
 }
 
+APA('iluminimdev-application-history');
 
-Utils.getXMLToLocalStorage().then(xmlObjectProds=>{
-    Utils.APA(xmlObjectProds, 'iluminim-application-OQSPV');
-    RenderizarListagemOQSPV('iluminim-application-OQSPV');
-});
+if(document.cookie.indexOf('atualizar-produtos-iluminim-v2') > -1){
+
+}else {
+    localStorage.removeItem('produtos-iluminim');
+    Utils.setCookie('atualizar-produtos-iluminim-v2', 'true', 10);
+}
 

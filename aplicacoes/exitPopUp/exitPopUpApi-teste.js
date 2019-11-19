@@ -397,8 +397,6 @@ function BFEP(){
 }   
 
             
-
-
 APA();
 
 $(document).ready(function(){

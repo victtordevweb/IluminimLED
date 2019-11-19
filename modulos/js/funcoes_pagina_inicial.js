@@ -150,9 +150,9 @@ class HomeIluminim {
         <div class="span4 first">
             <a href="/fitas-de-led?sort=mais_vendidos">
                 <div class="texto-topo">
-                <div class="txtprod">Fonte Chaveada<span>Automática Bivolt</span></div>
+                <div class="txtprod">Fita LED<span>A prova d'gua</span></div>
                 <div class="com-ate">com até</div>
-                <div class="porcentagem-ilm">44%</div>
+                <div class="porcentagem-ilm">54%</div>
                 <div class="desconto">de desconto</div>
                 </div>
             </a>

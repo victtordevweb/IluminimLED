@@ -1,3 +1,30 @@
+/* compre junto */
+div#rhtf_120 {
+    display: none !important;
+}
+.listagem-cjd .cjd .listagem-linha .cjd-prod-disparado .listagem-item.cjd.remove-btn-change .trocar-prod {
+    display: none !important;
+}
+.pagina-produto .titulo-categoria.borda-principal.cor-principal._cjd {
+    font-family: 'Francois One', sans-serif !important;
+    display: block;
+    box-shadow: none;
+    border-bottom: 1px solid #D6D6D6;
+    border-top: 2px solid #E24546;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding-left: 30px;
+    color: #E24546;
+    margin-bottom: 0 !important;
+    letter-spacing: -1px;
+}
+
+.pagina-produto .titulo-categoria.borda-principal.cor-principal._cjd strong {
+    font-weight: 400 !important;
+}
+
 .listagem-cjd ul.produtos-carrossel.cjd.personalizada {
     position: relative;
 }
@@ -21,6 +48,13 @@
     text-align: center;
     display: table;
     margin: 0 auto;
+}
+
+.listagem-cjd {
+    overflow: hidden;
+		border: 1px solid #d6d6d6;
+    border-top: 0;
+    margin-top:17px;
 }
 
 .listagem-cjd .cjd-prod-disparado.cjd-block {
@@ -53,7 +87,7 @@
     box-sizing: border-box;
     position: relative;
     padding: 72px 61px 0 0px;
-    height: 375px;
+    height: 400px;
 }
 
 .listagem-cjd .cjd.personalizada .listagem-linha {
