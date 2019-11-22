@@ -136,7 +136,7 @@ function CHTMLL(listagem){
                 ${listagem}
             </div>
         </ul>
-    </div>`).insertBefore('.pagina-produto #rh_produto1');
+    </div>`).insertBefore('.pagina-produto div#descricao');
 }
 
 /**
