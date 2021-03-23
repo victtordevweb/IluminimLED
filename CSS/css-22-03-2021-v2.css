@@ -51,7 +51,6 @@
 
 }
 
-
 /*CSS BOOTSTRAP */
 @media screen {
 
@@ -70,7 +69,6 @@
     }
 
 }
-
 
 /* CSS GERAIS */
 @media screen {
@@ -127,9 +125,9 @@
     }
    
 
-    html {
+    /*html {
         margin: 0 !important;
-    }
+    }*/
 
     html body {
         margin: 0 !important;
@@ -1070,6 +1068,21 @@
         border-color: #ddd;
     }
 
+    .produto .tag-produto.tag-frete-gratis {
+        display: table;
+        background: url(https://blog.iluminim.com.br/wp-content/uploads/2019/06/tarja-frete-gratis-novo.gif) center center no-repeat;
+        width: 118px;
+        height: 36px;
+        color: transparent !important;
+        text-shadow: none;
+        padding: 0 !important;
+        margin: 19px 0 0px 0;
+    }
+
+    .produto .tag-produto {
+        display: none;
+    }
+
     .produto .codigo-produto > * {
         display: block;
         width: 100%;
@@ -1758,7 +1771,6 @@
     
 }
 
-
 /* CSS DESCRIÇÃO PADRÃO DO PRODUTO */
 @media screen {
 
@@ -1883,6 +1895,129 @@
 
 }
 
+/* CSS ALERTA FRETE GRATIS HOME */
+@media screen {
+    @media (min-width: 767px){
+        .alerta-frete-gratis-iluminim-custom.informacao-compras span.ganhou-frete-gratis {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras span.ganhou-frete-gratis a {
+            display: block;
+            font-size: 20px;
+            color: #34C573;
+            font-weight: 600;
+            margin: 8px 0 -5px 0;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras {
+            position: fixed;
+            z-index: 9999;
+            left: calc(50% - 326.5px);
+            bottom: 45px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.6s;
+            transform: translateY(230px);
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras.open-popup {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo {
+            background: #fff;
+            box-shadow: 1px 1px 32px 0px rgb(0 0 0 / 21%);
+            border-radius: 5px;
+            border: 1px solid #d0d0d0;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--close-popup {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: var(--cor-secundaria);
+            width: 35px;
+            height: 35px;
+            color: #fff;
+            font-size: 27px;
+            line-height: 34px;
+            text-align: center;
+            border-radius: 18px;
+            cursor: pointer;
+            transition: all .3s;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--close-popup:hover {
+            background: #ff0000;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-1 {
+            width: 390px;
+            display: flex;
+            align-items: center;
+            padding: 20px 33px 20px 30px;
+            box-sizing: border-box;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-1 .textos--texto-1 {
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 700;
+            color: #000;
+            margin: 0px 0 10px 0;
+            letter-spacing: -1.5px;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-2 {
+            width: 260px;
+            text-align: center;
+            background: #efefef;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #d0d0d0;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-2 .textos--texto-1 b {
+            display: block;
+            font-size: 35px;
+            line-height: 45px;
+            font-weight: 900;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-2 .textos--texto-1 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #000;
+            letter-spacing: -1px;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-1 .textos--texto-2 {
+            font-size: 15px;
+            font-weight: 300;
+            color: #000;
+            padding-right: 0px;
+            line-height: 20px;
+        }
+        
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-1 .bloco-1--icone {
+            margin-right: 23px;
+        }
+
+        .alerta-frete-gratis-iluminim-custom.informacao-compras .informacao-compras--conteudo .conteudo--bloco-1 .bloco-1--icone svg {
+            color: var(--cor-secundaria);
+        }
+
+    }
+}
 
 /*CSS BENEFÍCIOS LED*/
 @media screen {
@@ -2024,7 +2159,6 @@
 
 }
 
-
 /* CSS ILUMINIM LED EXPLICA */
 @media screen {
 
@@ -2089,7 +2223,6 @@
 
 }
 
-
 /* CSS DOAÇÕES REALIZADAS */
 @media screen {
 
@@ -2114,7 +2247,6 @@
     }
 
 }
-
 
 /* CSS PÁGINA CARRINHO E CHECKOUT*/
 @media screen {
@@ -2574,6 +2706,327 @@
     
     .pagina-carrinho.carrinho-checkout div#corpo > .conteiner {
         padding-bottom: 0;
+    }
+
+}
+
+/*CSS POPUP NEWSLETTER EMAIL*/
+@media screen {
+
+    .fancybox-lock .fancybox-overlay {
+        display: flex !important;
+        align-items: center;
+        z-index: 999999999;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter {
+        width: 800px !important;
+        position: static !important;
+        margin: -50px auto 0 auto;
+        background: url(https://cdn.awsli.com.br/257/257163/arquivos/box-newslleter-ganhe-18-03-21.png) center center no-repeat !important;
+        height: 280px !important;
+        border-radius: 3px;
+        box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 43%);
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-skin {
+        background: none !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        height: 100% !important;
+        position: relative;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner {
+        position: absolute;
+        right: 38px;
+        bottom: 35px;
+        height: auto !important;
+        width: 390px !important;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner p.texto-newsletter.newsletter-cadastro {
+        display: none;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner span.titulo.cor-secundaria {
+        display: none;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner .newsletter-cadastro {
+        margin-top: 0 !important;
+        display: flex;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-outer {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner .interno {
+        padding: 0 !important;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter div#modalNewsletter .newsletter {
+        background: none !important;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        height: 45px;
+        border: none;
+        border-radius: 2px;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner button.newsletter-assinar {
+        position: relative;
+        border: none !important;
+        background: #444;
+        padding: 0px 20px !important;
+        margin-left: 5px;
+        transition: all 0.3s !important;
+        border-radius: 2px !important;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner button.newsletter-assinar:before {
+        font-size: 15px !important;
+        content: "Cadastrar";
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+        font-weight: 800;
+        position: relative;
+        top: -1px;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner button.newsletter-assinar:hover {
+        background: #6e0000;
+    }
+
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter a.fancybox-item.fancybox-close {
+        width: 140px;
+        background: #444;
+        text-align: center;
+        height: auto;
+        padding: 4px 0;
+        right: 6px;
+        top: 6px;
+        font-size: 9px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s !important;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter a.fancybox-item.fancybox-close:before {
+        content: "NÃO GOSTO DE DESCONTO";
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter a.fancybox-item.fancybox-close:hover {
+        background: #6e0000;
+    }
+
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .newsletter-confirmacao {
+        bottom: -54px;
+        background: none;
+        z-index: 9;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .newsletter-confirmacao span {
+        font-size: 15px !important;
+        padding: 4px 0;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .fancybox-inner .newsletter-cadastro.hide {
+        display: none !important;
+    }
+    
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .newsletter-confirmacao i.icon-ok.icon-3x {
+        margin: 2px 0 0 0;
+    }
+
+    .fancybox-lock .fancybox-overlay .fancybox-wrap.modal-modalNewsletter .alert {
+        font-size: 13px;
+        margin: 0 0 7px 0;
+        border-radius: 3px;
+    }
+
+}
+
+/*CSS STEP CARRINHO*/
+@media screen {
+
+    @media (min-width: 767px){
+    
+        .iluminim-step {
+            display: flex;
+            justify-content: center;
+            padding: 0 50px;
+            margin: 15px 0px 25px 0 !important;
+        }
+        
+        .iluminim-step .iluminim-step--step-item {
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .iluminim-step .iluminim-step--step-item span.step-item--number {
+            width: 35px;
+            height: 35px;
+            background: #fff;
+            border: 2px solid #cccccc;
+            border-radius: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 15px 0 0;
+            font-size: 15px;
+        }
+        
+        .iluminim-step .iluminim-step--step-item span.step-item--number b {
+            position: relative;
+            top: -1px;
+            font-weight: 500;
+            color: #989898;
+        }
+        
+        .iluminim-step .iluminim-step--step-item span.step-item-text-step {
+            font-size: 15px;
+            color: #989898;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        
+        .iluminim-step .iluminim-step--step-item span.step-item-text-step:after {
+            content: "";
+            width: 150px;
+            height: 2px;
+            display: block;
+            background: #ccc;
+            position: relative;
+            top: 1px;
+            margin: 0 0 0 20px;
+        }
+        
+        .iluminim-step .iluminim-step--step-item.step-active span.step-item--number {
+            background: #a2373a !important;
+            border-color: #a2373a !important;
+        }
+        
+        .iluminim-step .iluminim-step--step-item.step-active span.step-item--number b {
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        .iluminim-step .iluminim-step--step-item.step-active span.step-item-text-step:after {
+            background: #a2373a !important;
+        }
+        
+        
+        .carrinho-checkout div#login-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .carrinho-checkout div#login-content .iluminim-step.step-page-identificacao {
+            order: -1;
+            margin: 10px 0px 30px 0;
+        }
+        
+        .carrinho-checkout div#login-content .iluminim-step.step-page-checkout {
+            display: none;
+        }
+        
+        .carrinho-checkout div#login-content .row-fluid.identificacao[style="display: none;"]+.step-page-identificacao {
+            display: none;
+        }
+        
+        .carrinho-checkout div#login-content .row-fluid.identificacao[style="display: none;"]+.step-page-identificacao+.step-page-checkout {
+            display: flex;
+            margin: 22px 0 15px 0;
+        }
+    
+    }
+    
+}
+
+/*CSS ALERTA FRETE GRATIS POR REGIAO CARRINHO*/
+@media screen {
+
+    .frete-gratis-por-regiao.section-progress-bar .progress-bar {
+        width: 100% !important;
+        position: relative;
+        height: 38px;
+        margin: 0px 0 0px 0;
+        border-radius: 6px;
+        overflow: hidden;
+        padding: 0px 6px;
+        background: #f7f7f7;
+        display: flex;
+        max-width: 100% !important;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .frete-gratis-por-regiao.section-progress-bar .progress-bar .progress-bar--conteudo {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .frete-gratis-por-regiao.section-progress-bar .progress-bar span {
+        width: 100%;
+        left: 0;
+        top: -1px;
+        color: #4c4c4c;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: -0.5px;
+        position: relative;
+        z-index: 9;
+        text-align: center;
+    }
+    
+    .frete-gratis-por-regiao.section-progress-bar {
+        border-radius: 6px;
+        padding: 6px 8px;
+        border: 1px solid #ccc;
+        margin: 0 0 15px 0;
+    }
+    
+    .frete-gratis-por-regiao.section-progress-bar .frete-gratis.falta-pouco {
+        background: #37b98a !important
+    }
+
+    .frete-gratis-por-regiao.section-progress-bar .frete-gratis.ganhou-frete {
+        background: #37b98a !important
+    }
+
+    @media (max-width: 767px){
+
+        .frete-gratis-por-regiao.section-progress-bar .alert.frete-gratis {
+            float:none;
+        }
+        
+        .frete-gratis-por-regiao.section-progress-bar .progress-bar {
+            margin: 0 0 0px 0;
+            height: 50px;
+        }
+        
+        .frete-gratis-por-regiao.section-progress-bar .progress-bar span {
+            font-size: 14px;
+        }
+        
+        .frete-gratis-por-regiao.section-progress-bar {
+            margin-bottom: 15px;
+            border-color: #ccc !important;
+        }
+
     }
 
 }
@@ -3539,6 +3992,11 @@
         padding: 0;
     }
 
+    .listagem-item span.bandeira-frete-gratis.label-success {
+        background: url(https://blog.iluminim.com.br/wp-content/uploads/2019/05/frete-gratis-anm.gif) center center no-repeat;
+        color: transparent !important;
+    }
+
     .listagem-item .bandeiras-produto .bandeira-promocao {
         background: var(--cor-secundaria);
         font-size: 13px;
@@ -3563,6 +4021,33 @@
         opacity: 1;
         transform: rotateY(360deg);
     }
+
+    .listagem-item.produto-tag-frete-gratis .bandeira-watts {
+        display: none !important;
+    }
+
+
+    .listagem-item span.bandeira-frete-gratis.label-success {
+        background: url(https://blog.iluminim.com.br/wp-content/uploads/2019/05/frete-gratis-anm.gif) center center no-repeat #00b63e;
+        color: transparent !important;
+        position: absolute;
+    }
+    
+    .listagem-item span.bandeira-frete-gratis.label-success+.bandeira-promocao {
+        opacity: 0;
+    }
+    
+    .listagem-item:hover span.bandeira-frete-gratis.label-success {
+        transform: rotateY(360deg) !important;
+        opacity: 0;
+    }
+    
+    .listagem-item:hover span.bandeira-frete-gratis.label-success+.bandeira-promocao {
+        transform: rotateY(360deg) !important;
+        opacity: 1;
+    }
+    
+
 
     div#listagemProdutos ul[data-produtos-linha] .owl-item.active li.span3:before {
         opacity: 1;
@@ -3996,7 +4481,7 @@
         background: var(--cor-principal) !important;
     }
 
-    @media (min-width: 768px) {
+    
         .pagina-conta-endereco .cadastro #formCadastroCompleto.form-horizontal input#id_cep {
             padding-top: 4px;
             padding-bottom: 4px;
@@ -4069,6 +4554,8 @@
         .meus-pedidos .caixa-dados:last-child {
             padding: 20px 21px 25px 21px;
         }
+
+    @media (min-width: 768px) {
 
         .botao.pequeno:hover, .botao.pequeno.principal:hover, .caixa-dados.outros-enderecos a:hover {
             text-decoration: none;
@@ -4235,7 +4722,7 @@
         }
 
         .abas-conta li a {
-            padding: 0 0 10px 0;
+            padding: 6px 0 10px 0;
             font-size: 13px;
             letter-spacing: -0.3px;
         }
@@ -4247,10 +4734,111 @@
         .abas-conta:after {
             display: none;
         }
-    }
 
-    .pagina-pedido-listar .meus-pedidos .caixa-dados:first-child {
-        margin-bottom: 20px;
+
+
+        .pagina-pedido-listar .meus-pedidos .caixa-dados:first-child > .row-fluid {
+            padding: 0;
+        }
+        
+        .pagina-pedido-listar .meus-pedidos .caixa-dados:first-child {
+            border: none !important;
+        }
+        
+        .pagina-pedido-listar .meus-pedidos .caixa-dados:first-child a.botao.pequeno.principal {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        .meus-pedidos .caixa-dados:last-child {
+            padding: 0;
+            border: none !important;
+        }
+        
+        .pagina-pedido-listar .meus-pedidos .caixa-dados form#formFiltroPedido {
+            padding: 20px !important;
+        }
+        
+        .pagina-pedido-listar .meus-pedidos .caixa-dados form#formFiltroPedido label {
+            float: none;
+            margin: 0 0 12px 0;
+            display: block;
+        }
+        
+        .pagina-pedido-listar .meus-pedidos .caixa-dados form#formFiltroPedido label span {
+            width: 100%;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        
+        .pagina-pedido-listar .meus-pedidos .caixa-dados form#formFiltroPedido button.botao.fundo-secundario {
+            margin: 10px 0 0 0;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .meus-favoritos .caixa-dados table td.text-left a {
+            max-width: 130px;
+            display: block;
+            font-size: 13px;
+            line-height: 15px;
+        }
+        
+        .meus-favoritos .caixa-dados table a[title="Comprar"] {
+            font-size: 11px;
+            padding: 5px;
+        }
+
+        .pagina-pedido .abas-conteudo .caixa-dados:last-child .caixa-sombreada tbody > tr > td {
+            border: none;
+            padding: 0;
+        }
+        
+        .pagina-pedido div#corpo {
+            margin-bottom: 0 !important;
+        }
+        
+        .pagina-pedido div#corpo > .conteiner {
+            padding-bottom: 0 !important;
+        }
+        
+        .pagina-pedido #corpo .conteiner > .secao-principal.row-fluid.sem-coluna {
+            margin-bottom: 0 !important;
+        }
+       
+        .pagina-pedido .breadcrumbs {
+            display: none !important;
+        }
+
+
+        .acao-editar.row-fluid > div:not(.selo-ssl) {
+            display: block !important;
+            padding-top: 0;
+        }
+        
+        .pagina-conta-endereco #formCadastroCompleto .dados-pessoais.row-fluid {
+            margin-bottom: 0;
+        }
+        
+        html body .acao-editar a.botao {
+            margin-bottom: 14px !important;
+        }
+
+        body.pagina-conta-endereco .breadcrumbs.borda-alpha {
+            display: none !important;
+        }
+        
+        .acao-editar.row-fluid > div > * {
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .cadastro .form-horizontal.formulario-editar-cliente .cabecalho-interno {
+            margin: -62px 0 0 -11px !important;
+        }
+        
+
     }
 
     .pagina-pedido-listar .meus-pedidos .caixa-dados {
@@ -4258,6 +4846,11 @@
         box-sizing: border-box;
         border-radius: 5px;
     }
+
+    .pagina-pedido-listar .meus-pedidos .caixa-dados:first-child {
+        margin-bottom: 20px;
+    }
+
 
     .pagina-pedido-listar .meus-pedidos .abas-conteudo {
         margin-top: 0;
@@ -4449,6 +5042,7 @@
         box-shadow: none;
         text-indent: 15px;
         border: 1px solid #ddd;
+        min-width: auto;
         box-sizing: border-box;
     }
 
@@ -4478,6 +5072,7 @@
         text-indent: 15px;
         border: 1px solid #ddd;
         box-sizing: border-box;
+        min-width: auto !important;
     }
 
     .pagina-conta-endereco .cadastro #formCadastroCompleto .caixa-sombreada fieldset .control-group .controls {
@@ -5688,7 +6283,6 @@
 
 }
 
-
 /* TEXTO SEO E AVALIAÇÕES */
 @media screen {
 
@@ -5794,7 +6388,6 @@
 
 }
 
-
 /*BLOCO USUARIO VISITANTE PAGINA PRODUTO*/
 @media screen {
 
@@ -5833,7 +6426,6 @@
 
 }
 
-
 /*CSS SELOS DE SEGURANÇA*/
 @media screen {
 
@@ -5849,7 +6441,6 @@
     }
 
 }
-
 
 /*CSS GERAIS TODOS OS MODAIS */
 @media screen {
@@ -6237,7 +6828,6 @@
 
 }
 
-
 /* CSS TOPO FIXO DESKTOP */
 @media screen {
 
@@ -6273,9 +6863,13 @@
     }
 }
 
-
 /* CSS CABECALHO */
 @media screen {
+
+    div#topo-principal .gif-topo a {
+        display: block;
+        text-align: center;
+    }
 
     #cabecalho .fechar-dropddown-usuario {
         display: table;
@@ -6942,6 +7536,7 @@
             pointer-events: none;
             opacity: 0;
             visibility: hidden;
+            width: 937px;
         }
 
         div#cabecalho .conteudo-superior-item {
@@ -7118,7 +7713,6 @@
     }
 
 }
-
 
 /* CSS BANNERS EM ABA */
 @media screen {
@@ -7420,8 +8014,6 @@
 
 }
 
-
-
 /* CSS BANNER CRONOMETRO CATEGORIA */
 @media screen {
 
@@ -7544,7 +8136,6 @@
     }
 
 }
-
 
 /* CSS BUSCA NÃO ENCONTRADA */
 @media screen {
@@ -7720,7 +8311,6 @@
     }
 
 }
-
 
 /* CSS LISTAGEM MOBILE */
 @media screen {
@@ -7944,6 +8534,28 @@
 
 }
 
+/* CSS TITULO PERSONALIZADO */
+@media screen {
+
+    .titulo-personalizado {
+        display: table;
+        margin: 50px auto 15px auto;
+        height: 28px;
+        padding: 10px 30px 5px 30px;
+        border-top: 2px solid var(--cor-secundaria) !important;
+    }
+    
+    .titulo-personalizado strong {
+        font-family: 'Francois One', sans-serif;
+        font-weight: 400;
+        display: block;
+        text-transform: uppercase;
+        font-size: 19px;
+        letter-spacing: -.5px;
+        color: var(--cor-secundaria);
+    }
+
+}
 
 /* CSS CRONOMETRO COMPRE ANTES QUE ACABE */
 @media screen {
@@ -8016,7 +8628,6 @@
 
 }
 
-
 /* CSS CAROUSEL TARGET MOBILE */
 @media screen {
 
@@ -8036,7 +8647,6 @@
     }
 
 }
-
 
 /* SECAO BANNERS MOBILE */
 @media screen {
@@ -8128,6 +8738,38 @@
         
         .palavras-buscadas.palavras-buscadas-rodape-mobile .lista-palavras-buscadas a {
             color: #444;
+        }
+
+    }
+
+}
+
+/* BANNER YOUTUBE E BAIXE NOSSO APP MOBILE */
+@media screen {
+
+    @media (max-width: 767px){
+
+        .banner-youtube-mobile .btn-banner-youtube {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: -.5px;
+        }
+        
+        .banner-youtube-mobile .btn-banner-youtube span {
+            padding: 6px 17px 8px 17px;
+            background: #cf1818;
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 55%);
+        }
+        
+        .banner-youtube-mobile {
+            position: relative;
         }
 
     }
@@ -8520,6 +9162,57 @@
 
 }
 
+/*HISTÓRICO DE NAVEGAÇÃO MOBILE*/
+@media screen {
+
+    @media (max-width: 767px){
+
+        .historico-navegacao-mobile .conteudo-historico-navegacao-mobile {
+            background: #dfe6f0;
+            padding: 20px 0;
+        }
+        
+        .historico-navegacao-mobile .conteudo-historico-navegacao-mobile .historico-titulo-conteudo {
+            text-align: center;
+        }
+        
+        .historico-navegacao-mobile .conteudo-historico-navegacao-mobile .historico-titulo-conteudo .historico-titulo {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            font-size: 21px;
+            justify-content: center;
+            margin: -3px 0 1px 0;
+        }
+        
+        .historico-navegacao-mobile .conteudo-historico-navegacao-mobile .historico-titulo-conteudo .historico-titulo svg {
+            width: 25px;
+            margin-right: 7px;
+        }
+        
+        .historico-navegacao-mobile .conteudo-historico-navegacao-mobile .historico-titulo-conteudo .historico-text {
+            font-size: 15px;
+        }
+        
+        .historico-navegacao-mobile .conteudo-historico-navegacao-mobile h1.titulo-historico {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 20px 0 0 0;
+        }
+        
+        .historico-navegacao-mobile .conteudo-historico-navegacao-mobile .historico-conteudo-vazio {
+            text-align: center;
+        }
+
+        .historico-navegacao-mobile div#smartfront__app+.historico-conteudo-vazio {
+            display: none;
+        }
+
+
+    }
+
+}
+
 /* CSS MODAIS MOBILE */
 @media screen {
 
@@ -8609,6 +9302,100 @@
     }
 
 }
+
+/* NEWSLETTER MOBILE */
+@media screen {
+
+    @media (max-width: 767px){
+
+        .newsletter-mobile {
+            background: linear-gradient(to right, #822b2c, #c49d9d);
+            padding: 25px 0;
+            margin: 0 0 30px 0;
+        }
+        
+        .newsletter-mobile .campos-newsletter-mobile {
+            padding: 0 15px;
+        }
+        
+        .newsletter-mobile .campos-newsletter-mobile p.texto-newsletter.newsletter-cadastro, 
+        .newsletter-mobile .campos-newsletter-mobile span.titulo.cor-secundaria {
+            display: none;
+        }
+        
+        .newsletter-mobile .conteudo-newsletter-mobile {
+            text-align: center;
+        }
+        
+        .newsletter-mobile .conteudo-newsletter-mobile .texto-1-newsletter-mobile {
+            font-size: 31px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+        
+        .newsletter-mobile .textos-newsletter-mobile {
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 0 10px 20px 10px;
+        }
+        
+        .newsletter-mobile .conteudo-newsletter-mobile .texto-1-newsletter-mobile b {
+            color: #ffef00;
+        }
+        
+        .newsletter-mobile .conteudo-newsletter-mobile .texto-2-newsletter-mobile {
+            font-size: 17px;
+        }
+        
+        .newsletter-mobile input[type="text"] {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            height: 35px;
+            padding: 0 10px 0 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            box-shadow: 1px 1px 4px 0px rgb(0 0 0 / 16%);
+        }
+        
+        .newsletter-mobile button.botao {
+            width: 100%;
+            background: var(--cor-principal);
+            box-shadow: 1px 1px 4px 0px hsl(0deg 0% 0% / 40%);
+            border: none;
+            border-radius: 5px;
+            height: 35px;
+            padding: 0;
+        }
+        
+        .newsletter-mobile button.botao:before {
+            content: "CADASTRAR";
+            font-weight: 600;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            letter-spacing: -.5px;
+        }
+
+        .newsletter-mobile .alert-error {
+            margin-bottom: 10px !important;
+        }
+        
+        .newsletter-mobile .newsletter-confirmacao {
+            color: #fff;
+        }
+        
+        .newsletter-mobile .newsletter-confirmacao i {
+            font-size: 30px;
+            display: block;
+            margin: 0 0 5px 0;
+        }
+
+    }
+
+}
+
 
 /* CSS FILTRO E PAGINAÇÃO MOBILE */
 @media screen {
@@ -9084,12 +9871,14 @@
 
 }
 
-
-
 /* CSS PAGINA PRODUTO MOBILE */
 @media screen {
 
     @media (max-width: 767px){
+
+        .pagina-produto .parcelas-produto.borda-alpha.hide .accordion {
+            border: 1px solid #ddd !important;
+        }
 
         .pagina-produto  .produto .row-fluid > .span6:first-child {
             padding-top: 0 !important;
@@ -9169,7 +9958,7 @@
         }
 
         .produto .codigo-produto {
-            padding: 6px 0 6px 0;
+            padding: 20px 0 20px 0;
             margin: 0;
         }
 
@@ -9206,11 +9995,10 @@
         .acoes-produto .preco-produto {
             border: none;
         }
-
         
         .produto .acoes-produto .comprar {
-            padding-top: 0;
-            margin-bottom: 15px;
+            padding-top: 15px;
+            margin-bottom: 20px;
         }
 
         .produto .acoes-produto .comprar a.botao-comprar {
@@ -9265,6 +10053,14 @@
         .produto form#formCalcularCep .form-inline {
             display: block;
             width: 100%;
+        }
+
+        .produto .mensagem-alerta {
+            margin-top: 15px !important;
+        }
+
+        .produto>.row-fluid:first-child {
+            padding-bottom: 0;
         }
         
         .produto .cep label:before {
@@ -9333,6 +10129,14 @@
             padding-bottom: 0;
         }
 
+        .linha-avaliacao {
+            display: block !important;
+        }
+        
+        .linha-avaliacao a.veja-quem-recomendou {
+            margin: 6px 0px 2px 0;
+        }
+
 
         @media (min-width: 350px) and (max-width: 400px){
 
@@ -9373,4 +10177,266 @@
         
     }
 
+}
+
+/*PAGINA CARRINHO MOBILE */
+@media screen {
+
+    @media (max-width: 767px){
+
+        .pagina-carrinho .caixa-destaque.carrinho-vazio .btn-voltar-compras {
+            margin-bottom: 15px !important;
+        }
+
+        .tabela-carrinho tr[data-produto-id] {
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .tabela-carrinho tr[data-produto-id] td.conteiner-imagem {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tabela-carrinho .produto-info a.cor-secundaria {
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            display: block;
+        }
+        
+        .tabela-carrinho tr[data-produto-id] td.conteiner-imagem+td.sem-borda {
+            width: 75%;
+        }
+        
+        .tabela-carrinho tr[data-produto-id] td.clearfix {
+            margin: 20px 0 0px 0;
+            width: 35%;
+            min-width: 130px;
+        }
+        
+        .tabela-carrinho tr[data-produto-id] > * {
+            border: none !important;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        
+        .tabela-carrinho tr[data-produto-id] td.clearfix+td {
+            order: +1;
+            width: 55%;
+            padding: 0;
+            margin: 20px 0 0px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .tabela-carrinho .quantidade a, .tabela-carrinho .excluir a {
+            color: #444 !important;
+        }
+        
+        .tabela-carrinho tr[data-produto-id] td.clearfix+td+td {
+            display: flex;
+            margin: 27px 0 0px 0;
+            width: 10%;
+            justify-content: center;
+        }
+
+
+
+        .tabela-carrinho .produto-info a.cor-secundaria {
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            display: block;
+        }
+        
+        .tabela-carrinho .valores-descontos .descontos span {
+            display: block;
+            text-align: right;
+        }
+        
+        .tabela-carrinho .descontos.parcelas span > strong {
+            margin: 0;
+        }
+        
+        .tabela-carrinho .valores-descontos .descontos.avista span > strong {
+            margin: 0;
+            display: initial;
+        }
+        
+        .tabela-carrinho .descontos.avista > span > strong:last-child {
+            display: block;
+            text-align: right;
+            margin: 7px 0 8px 0;
+        }
+        
+        .tabela-carrinho td.line-18 {
+            border: none !important;
+            padding: 0;
+        }
+        
+        .tabela-carrinho tbody > tr {
+            padding: 15px !important;
+            border-radius: 5px;
+            margin-bottom: 10px !important;
+        }
+        
+        .finalizar-compra .acao-editar .span12 {
+            display: block !important;
+        }
+        
+        .finalizar-compra .acao-editar a.botao {
+            margin: 0 0 15px 0 !important;
+        }
+        
+        .tabela-carrinho tbody > tr.bg-dark {
+            background: #f7f7f7 !important;
+        }
+        
+        .tabela-carrinho .descontos.parcelas span strong {
+            position: relative;
+            top: -2px;
+        }
+
+
+        .tabela-carrinho form#formCalcularFrete {
+            margin: 0;
+        }
+        
+        .tabela-carrinho form#formCalcularFrete input#calcularFrete {
+            height: 36px;
+            box-sizing: border-box;
+        }
+        
+        .tabela-carrinho form#formCalcularFrete button.btn {
+            height: 36px;
+            padding: 0 10px 0 10px;
+            background: var(--cor-secundaria);
+            color: #fff;
+            text-shadow: none;
+            border: none !important;
+        }
+        
+        .tabela-carrinho tbody > tr.bg-dark > td:not(:last-child) {
+            border: none !important;
+            border-bottom: 1px solid #ddd !important;
+        }
+        
+        .tabela-carrinho tbody > tr.bg-dark > td {
+            border: none;
+            padding: 0;
+        }
+        
+        .tabela-carrinho form#formCalcularFrete span.help-inline {
+            display: block;
+            padding: 0;
+            margin: 12px 0 15px 0;
+        }
+        
+        .tabela-carrinho form#formCalcularFrete span.help-inline i.icon-question-sign {
+            margin-left: 0;
+        }
+        
+        .tabela-carrinho .formas-envio {
+            padding: 16px 0 2px 0px;
+        }
+
+        .tabela-carrinho tbody tr.bg-dark.tr-subtotal > td:first-child {
+            display: none !important;
+        }
+
+        .tabela-carrinho tbody tr.bg-dark.possui-cupom .cupom-sucesso {
+            padding: 0 0 10px 0;
+        }
+        
+        .tabela-carrinho tbody tr.bg-dark.possui-cupom .cupom-valor {
+            margin: 16px 0 0 0;
+            display: block;
+        }
+        
+        .tabela-carrinho .cupom-valor #cupom_desconto {
+            font-size: 22px;
+            margin: -9px 0 0 4px;
+            display: inline-block;
+        }
+        
+        .tabela-carrinho tbody tr.bg-dark.possui-cupom span.cupom-codigo {
+            padding: 5px 15px 5px 15px;
+            border-radius: 3px;
+            margin: 0 0 0 7px;
+        }
+        
+        .tabela-carrinho tbody tr.bg-dark.tr-cupom-desconto > td:first-child {
+            border: none !important;
+        }
+        
+        .tabela-carrinho tbody tr.bg-dark.tr-cupom-desconto form.form-horizontal {
+            margin: 0;
+        }
+        
+        .tabela-carrinho tbody tr.bg-dark.tr-cupom-desconto form.form-horizontal button.btn {
+            border: none;
+            padding: 0px 13px;
+            background: var(--cor-secundaria);
+            text-shadow: none;
+            color: #fff;
+            margin: 0;
+            height: 36px;
+        }
+        
+        .tabela-carrinho tbody tr.bg-dark.tr-cupom-desconto form.form-horizontal input#usarCupom {
+            border-right: 0 !important;
+            height: 36px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+
+        .carrinho-checkout #cabecalho > .conteiner {
+            display: block !important;
+        }
+        
+        .carrinho-checkout #cabecalho > .conteiner > .row-fluid {
+            padding-top: 0 !important;
+        }
+        
+        .carrinho-checkout #cabecalho > .conteiner > .row-fluid .logo a {
+            height: auto;
+            display: block;
+            text-align: center;
+        }
+        
+        .carrinho-checkout #cabecalho > .conteiner > .row-fluid .logo a img {
+            max-height: 36px;
+            position: static;
+            margin: 0 0 7px 0;
+        }
+        
+        .carrinho-checkout div#cabecalho {
+            padding: 5px 0 !important;
+            border-bottom: 4px solid var(--cor-secundaria);
+            margin: 0 0 10px 0;
+            background: #f7f7f7;
+        }
+        
+        .carrinho-checkout .resumo-compra .tabela-carrinho td.phone-pullleft {
+            border: none;
+        }
+        
+        .carrinho-checkout .resumo-compra .tabela-carrinho td.conteiner-qtd {
+            border: none;
+        }
+        
+        .carrinho-checkout .resumo-compra .tabela-carrinho td.conteiner-qtd div {
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+
+    }
+        
 }

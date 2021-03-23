@@ -126,6 +126,7 @@ var ILUMINIM = {
             favoritos: '<svg width="40" height="25" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16"><path fill="currentColor" d="M462.3 62.7c-54.5-46.4-136-38.7-186.6 13.5L256 96.6l-19.7-20.3C195.5 34.1 113.2 8.7 49.7 62.7c-62.8 53.6-66.1 149.8-9.9 207.8l193.5 199.8c6.2 6.4 14.4 9.7 22.6 9.7 8.2 0 16.4-3.2 22.6-9.7L472 270.5c56.4-58 53.1-154.2-9.7-207.8zm-13.1 185.6L256.4 448.1 62.8 248.3c-38.4-39.6-46.4-115.1 7.7-161.2 54.8-46.8 119.2-12.9 142.8 11.5l42.7 44.1 42.7-44.1c23.2-24 88.2-58 142.8-11.5 54 46 46.1 121.5 7.7 161.2z" class=""></path></svg>',
             busca: '<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z" class=""></path></svg>',
             caminhao: '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15"><path fill-rule="nonzero" d="M7.763 12.207a2.398 2.398 0 0 1-4.726 0H1.8a1.8 1.8 0 0 1-1.8-1.8V2.195a1.8 1.8 0 0 1 1.8-1.8h8.445a1.8 1.8 0 0 1 1.8 1.8v.568l3.322.035L18 6.821v5.386h-2.394a2.398 2.398 0 0 1-4.727 0H7.763zm-.1-1.2h3.182V2.195a.6.6 0 0 0-.6-.6H1.8a.6.6 0 0 0-.6.6v8.212a.6.6 0 0 0 .6.6h1.337a2.399 2.399 0 0 1 4.526 0zm7.843 0H16.8V7.179l-2.086-3.187-2.669-.029v5.76a2.399 2.399 0 0 1 3.461 1.284zm-2.263 1.99a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396zm-7.843 0a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396z"></path></svg>',
+            caminhao_2: '<svg width="80" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="truck-moving" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-truck-moving fa-w-20"><path fill="currentColor" d="M621.3 205.3l-58.5-58.5c-12-12-28.3-18.7-45.3-18.7H464V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64v336c0 44.2 35.8 80 80 80 26.3 0 49.4-12.9 64-32.4 14.6 19.6 37.7 32.4 64 32.4 44.2 0 80-35.8 80-80 0-5.5-.6-10.8-1.6-16h163.2c-1.1 5.2-1.6 10.5-1.6 16 0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H624c8.8 0 16-7.2 16-16V250.5c0-17-6.7-33.2-18.7-45.2zM80 448c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm128 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm224-96H271.6c-14.6-19.3-37.5-32-63.6-32s-49 12.7-63.6 32h-.7C129 332.7 106 320 80 320c-18.1 0-34.6 6.2-48 16.4V64h400zm32-192h53.5c8.5 0 16.6 3.3 22.6 9.4l54.6 54.6H464zm64 288c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-96h-16.4c-14.6-19.3-37.5-32-63.6-32s-49 12.7-63.6 32h-.4v-96h144z" class=""></path></svg>',
             bandeira: {
                 amex: '<svg width="40" height="25" enable-background="new 0 0 780 500" version="1.1" viewBox="0 0 780 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m40 1e-3h700c22.092 0 40 17.909 40 40v420c0 22.092-17.908 40-40 40h-700c-22.091 0-40-17.908-40-40v-420c0-22.091 17.909-40 40-40z" fill="#2557D6"/><path d="m0.253 235.69h37.441l8.442-19.51h18.9l8.42 19.51h73.668v-14.915l6.576 14.98h38.243l6.576-15.202v15.138h183.08l-0.085-32.026h3.542c2.479 0.083 3.204 0.302 3.204 4.226v27.8h94.689v-7.455c7.639 3.92 19.518 7.455 35.148 7.455h39.836l8.525-19.51h18.9l8.337 19.51h76.765v-18.532l11.626 18.532h61.515v-122.51h-60.88v14.468l-8.522-14.468h-62.471v14.468l-7.828-14.468h-84.38c-14.123 0-26.539 1.889-36.569 7.153v-7.153h-58.229v7.153c-6.383-5.426-15.079-7.153-24.75-7.153h-212.74l-14.274 31.641-14.659-31.641h-67.005v14.468l-7.362-14.468h-57.145l-26.539 58.246v64.261h3e-3zm236.34-17.67h-22.464l-0.083-68.794-31.775 68.793h-19.24l-31.858-68.854v68.854h-44.57l-8.42-19.592h-45.627l-8.505 19.592h-23.801l39.241-87.837h32.559l37.269 83.164v-83.164h35.766l28.678 59.587 26.344-59.587h36.485l1e-3 87.838zm-165.9-37.823l-14.998-35.017-14.915 35.017h29.913zm255.3 37.821h-73.203v-87.837h73.203v18.291h-51.289v15.833h50.06v18.005h-50.061v17.542h51.289l1e-3 18.166zm103.16-64.18c0 14.004-9.755 21.24-15.439 23.412 4.794 1.748 8.891 4.838 10.84 7.397 3.094 4.369 3.628 8.271 3.628 16.116v17.255h-22.104l-0.083-11.077c0-5.285 0.528-12.886-3.458-17.112-3.202-3.09-8.083-3.76-15.973-3.76h-23.523v31.95h-21.914v-87.838h50.401c11.199 0 19.451 0.283 26.535 4.207 6.933 3.924 11.09 9.652 11.09 19.45zm-27.699 13.042c-3.013 1.752-6.573 1.81-10.841 1.81h-26.62v-19.51h26.982c3.818 0 7.804 0.164 10.393 1.584 2.842 1.28 4.601 4.003 4.601 7.765 0 3.84-1.674 6.929-4.515 8.351zm62.844 51.138h-22.358v-87.837h22.358v87.837zm259.56 0h-31.053l-41.535-65.927v65.927h-44.628l-8.527-19.592h-45.521l-8.271 19.592h-25.648c-10.649 0-24.138-2.257-31.773-9.715-7.701-7.458-11.708-17.56-11.708-33.533 0-13.027 2.395-24.936 11.812-34.347 7.085-7.01 18.18-10.242 33.28-10.242h21.215v18.821h-20.771c-7.997 0-12.514 1.14-16.862 5.203-3.735 3.699-6.298 10.69-6.298 19.897 0 9.41 1.951 16.196 6.023 20.628 3.373 3.476 9.506 4.53 15.272 4.53h9.842l30.884-69.076h32.835l37.102 83.081v-83.08h33.366l38.519 61.174v-61.174h22.445v87.833zm-133.2-37.82l-15.165-35.017-15.081 35.017h30.246zm189.04 178.08c-5.322 7.457-15.694 11.238-29.736 11.238h-42.319v-18.84h42.147c4.181 0 7.106-0.527 8.868-2.175 1.665-1.474 2.605-3.554 2.591-5.729 0-2.561-1.064-4.593-2.677-5.811-1.59-1.342-3.904-1.95-7.722-1.95-20.574-0.67-46.244 0.608-46.244-27.194 0-12.742 8.443-26.156 31.439-26.156h43.649v-17.479h-40.557c-12.237 0-21.129 2.81-27.425 7.174v-7.175h-59.985c-9.595 0-20.854 2.279-26.179 7.175v-7.175h-107.12v7.175c-8.524-5.892-22.908-7.175-29.549-7.175h-70.656v7.175c-6.745-6.258-21.742-7.175-30.886-7.175h-79.077l-18.094 18.764-16.949-18.764h-118.13v122.59h115.9l18.646-19.062 17.565 19.062 71.442 0.061v-28.838h7.021c9.479 0.14 20.66-0.228 30.523-4.312v33.085h58.928v-31.952h2.842c3.628 0 3.985 0.144 3.985 3.615v28.333h179.01c11.364 0 23.244-2.786 29.824-7.845v7.845h56.78c11.815 0 23.354-1.587 32.134-5.649l2e-3 -22.84zm-354.94-47.155c0 24.406-19.005 29.445-38.159 29.445h-27.343v29.469h-42.591l-26.984-29.086-28.042 29.086h-86.802v-87.859h88.135l26.961 28.799 27.875-28.799h70.021c17.389 0 36.929 4.613 36.929 28.945zm-174.22 40.434h-53.878v-17.48h48.11v-17.926h-48.11v-15.974h54.939l23.969 25.604-25.03 25.776zm86.81 10.06l-33.644-35.789 33.644-34.65v70.439zm49.757-39.066h-28.318v-22.374h28.572c7.912 0 13.404 3.09 13.404 10.772 0 7.599-5.238 11.602-13.658 11.602zm148.36-40.373h73.138v18.17h-51.315v15.973h50.062v17.926h-50.062v17.48l51.314 0.08v18.23h-73.139l2e-3 -87.859zm-28.119 47.029c4.878 1.725 8.865 4.816 10.734 7.375 3.095 4.291 3.542 8.294 3.631 16.037v17.418h-22.002v-10.992c0-5.286 0.531-13.112-3.542-17.198-3.201-3.147-8.083-3.899-16.076-3.899h-23.42v32.09h-22.02v-87.859h50.594c11.093 0 19.173 0.47 26.366 4.146 6.915 4.004 11.266 9.487 11.266 19.511-1e-3 14.022-9.764 21.178-15.531 23.371zm-12.385-11.107c-2.932 1.667-6.556 1.811-10.818 1.811h-26.622v-19.732h26.982c3.902 0 7.807 0.08 10.458 1.587 2.84 1.423 4.538 4.146 4.538 7.903 0 3.758-1.699 6.786-4.538 8.431zm197.82 5.597c4.27 4.229 6.554 9.571 6.554 18.613 0 18.9-12.322 27.723-34.425 27.723h-42.68v-18.84h42.51c4.157 0 7.104-0.525 8.95-2.175 1.508-1.358 2.589-3.333 2.589-5.729 0-2.561-1.17-4.592-2.675-5.811-1.675-1.34-3.986-1.949-7.803-1.949-20.493-0.67-46.157 0.609-46.157-27.192 0-12.744 8.355-26.158 31.33-26.158h43.932v18.7h-40.198c-3.984 0-6.575 0.145-8.779 1.587-2.4 1.422-3.29 3.534-3.29 6.319 0 3.314 2.037 5.57 4.795 6.546 2.311 0.77 4.795 0.995 8.526 0.995l11.797 0.306c11.895 0.276 20.061 2.248 25.024 7.065zm86.955-23.52h-39.938c-3.986 0-6.638 0.144-8.867 1.587-2.312 1.423-3.202 3.534-3.202 6.322 0 3.314 1.951 5.568 4.791 6.544 2.312 0.771 4.795 0.996 8.444 0.996l11.878 0.304c11.983 0.284 19.982 2.258 24.86 7.072 0.891 0.67 1.422 1.422 2.033 2.175v-25h1e-3z" fill="#fff"/></svg>',
                 diners: '<svg width="40" height="25" enable-background="new 0 0 780 500" version="1.1" viewBox="0 0 780 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M40,0h700c22.092,0,40,17.909,40,40v420c0,22.092-17.908,40-40,40H40c-22.091,0-40-17.908-40-40V40   C0,17.909,17.909,0,40,0z" fill="#0079BE"/><path d="m599.93 251.45c0-99.415-82.98-168.13-173.9-168.1h-78.242c-92.003-0.033-167.73 68.705-167.73 168.1 0 90.93 75.727 165.64 167.73 165.2h78.242c90.914 0.436 173.9-74.294 173.9-165.2z" fill="#fff"/><path d="m348.28 97.43c-84.07 0.027-152.19 68.308-152.21 152.58 0.02 84.258 68.144 152.53 152.21 152.56 84.09-0.027 152.23-68.303 152.24-152.56-0.011-84.272-68.149-152.55-152.24-152.58z" fill="#0079BE"/><path d="m252.07 249.6c0.08-41.181 25.746-76.297 61.94-90.25v180.48c-36.194-13.948-61.861-49.045-61.94-90.23zm131 90.274v-180.53c36.207 13.92 61.914 49.057 61.979 90.257-0.065 41.212-25.772 76.322-61.979 90.269z" fill="#fff"/></svg>                ',
@@ -387,7 +388,7 @@ var ILUMINIM = {
                         `);
                     }
 
-                    $('.minha-conta .abas-conta li').removeClass('hidden-phone');
+                    $('.abas-conta li').removeClass('hidden-phone');
 
                     $('.pagina-conta .minha-conta .caixa-dados .span6:first-child > fieldset .botao.pequeno.principal').after(`
                         <a class="botao pequeno" href="/conta/logout" title="Sair"><i class="icon-signout cor-secundaria"></i>Sair</a>
@@ -1045,13 +1046,20 @@ var ILUMINIM = {
                             let nome = nome_produto.split('w ')[0];
                             let watts = nome.split(' ').pop();
 
-                            $(this).find('.bandeiras-produto').prepend(`
+                            $(this).addClass('produto-tag-watts').find('.bandeiras-produto').prepend(`
                                 <span class="bandeira-watts">${watts}W</span>
                             `);
 
                         }
 
                     });
+
+                },
+
+
+                adicionarClassFreteGratisListagem(){
+                    
+                    $('.listagem-item .bandeira-frete-gratis').parents('.listagem-item').addClass('produto-tag-frete-gratis');
 
                 },
 
@@ -1307,6 +1315,50 @@ var ILUMINIM = {
                     
                 },
 
+                stepCarrinho(){ //A MAIOR AÇÃO DESSA APLICAÇÃO É NA PAGINA DO CARRINHO, POREM É NECESSÁRIA SER EXECUTADA EM TODAS AS PÁGINAS PARA VALIDAÇÕES EM ALGUMAS OUTRAS PAGINAS.
+
+                    if(ILUMINIM.Utils.screen.isMobile()){
+                        return;
+                    }
+
+                    function HTMLStep(page){
+                            
+                        return `
+                            <div class="iluminim-step step-page-${page}">
+                                
+                                <div class="iluminim-step--step-item step-1 ${page == 'carrinho' || page == 'identificacao' || page == 'checkout' ? `step-active` : ``}">
+                                    <span class="step-item--number"><b>1</b></span><span class="step-item-text-step">Carrinho</span>
+                                </div>
+                                    
+                                <div class="iluminim-step--step-item step-2 ${page == 'identificacao' || page == 'checkout' ? `step-active` : ``}">
+                                    <span class="step-item--number"><b>2</b></span><span class="step-item-text-step">Identificação</span>
+                                </div>
+                                
+                                <div class="iluminim-step--step-item step-3 ${page == 'checkout' ? `step-active` : ``}">
+                                    <span class="step-item--number"><b>3</b></span><span class="step-item-text-step">Checkout</span>
+                                </div>
+                                
+                            </div>
+                        `;
+                    }
+                    
+                    if($('body.pagina-carrinho:not(.carrinho-checkout)').length > 0){
+                        $('.finalizar-compra > .cabecalho-interno').after(HTMLStep('carrinho'));
+                    }
+                    
+                    if($('body.carrinho-checkout').length > 0){
+                    
+                        $('body.carrinho-checkout div#login-content .row-fluid.identificacao').after(HTMLStep('checkout'));
+                        
+                        $('body.carrinho-checkout div#login-content .row-fluid.identificacao').after(HTMLStep('identificacao'));
+                        
+                        if($('div#login-content .row-fluid.identificacao').length == 0){
+                            $('.carrinho-checkout .secao-principal.row-fluid').before(HTMLStep('checkout'));
+                        }
+                        
+                    }
+
+                },
 
             },
 
@@ -1326,6 +1378,7 @@ var ILUMINIM = {
                 this.Funcoes.mouseHoverMenuTodosDepartamentos();
                 
                 this.Funcoes.adicionarListaDesejosListagem();
+                this.Funcoes.adicionarClassFreteGratisListagem();
                 this.Funcoes.adicionarWattsNasLampadas();
                 this.Funcoes.minimizadorRodape();
                 this.Funcoes.ajustesLinksBandeirasRodape();
@@ -1333,6 +1386,8 @@ var ILUMINIM = {
                 this.Funcoes.adicionarPlataformasDeAplicativos();
                 this.Funcoes.selosDeSegurancaRodape();
                 this.Funcoes.ajusteModais();
+
+                this.Funcoes.stepCarrinho();
 
                 this.Funcoes.carouselCustomListagem();
 
@@ -1498,27 +1553,32 @@ var ILUMINIM = {
 
                 blocoTriplo(){ //WIREFRAME
 
+                    let target = $('.tarja-personalizada');
+
                     if(ILUMINIM.Utils.screen.isMobile()){
-                        return;
+
+                        target = $('.secao-banners');
+
                     }
 
-                    $('.tarja-personalizada').after(`
+                    target.after(`
                         <div class="bloco-triplo-personalizado">
 
-                            <div class="bloco-personalizado bloco-1">
-                                <ul class="lista-banners-bloco-personalizado">
+                            ${ ILUMINIM.Utils.screen.isDesktop() ? `
+                                <div class="bloco-personalizado bloco-1">
+                                    <ul class="lista-banners-bloco-personalizado">
 
-                                    <li class="banner-oferta-semana-cronometro">
-                                        <a href="#!">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Home_Cronometro_19-01-21.png">
-                                            <div class="countdown-target"></div>
-                                            <div class="progress-countdown"><span class="progress-countdown-line" style="width:0%"></span></div>
-                                        </a>
-                                    </li>
+                                        <li class="banner-oferta-semana-cronometro">
+                                            <a href="#!">
+                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Home_Cronometro_19-01-21.png">
+                                                <div class="countdown-target"></div>
+                                                <div class="progress-countdown"><span class="progress-countdown-line" style="width:0%"></span></div>
+                                            </a>
+                                        </li>
 
-                                </ul>
-                            </div>
-
+                                    </ul>
+                                </div>
+                            ` : `` }
 
                             <div class="bloco-personalizado bloco-produtos-peronalizados bloco-2">
                                 <div class="topo-bloco-produtos-peronalizados">
@@ -1528,43 +1588,43 @@ var ILUMINIM = {
                                 <div class="lista-produtos-bloco-personalizado"></div>
                             </div>
 
+                            ${ ILUMINIM.Utils.screen.isDesktop() ? `
+                                <div class="bloco-personalizado bloco-3">
+                                    <ul class="lista-banners-bloco-personalizado carousel-target">
 
-                            <div class="bloco-personalizado bloco-3">
-                                <ul class="lista-banners-bloco-personalizado carousel-target">
+                                        <li>
+                                            <a href="#!">
+                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_-_CAPA.png">
+                                            </a>
+                                        </li>
 
-                                    <li>
-                                        <a href="#!">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_-_CAPA.png">
-                                        </a>
-                                    </li>
+                                        <li>
+                                            <a href="#!">
+                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_RSPM-200WBF-KIT10.png">
+                                            </a>
+                                        </li>
 
-                                    <li>
-                                        <a href="#!">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_RSPM-200WBF-KIT10.png">
-                                        </a>
-                                    </li>
+                                        <li>
+                                            <a href="#!">
+                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_PS-Q18WBF-KIT20.png">
+                                            </a>
+                                        </li>
 
-                                    <li>
-                                        <a href="#!">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_PS-Q18WBF-KIT20.png">
-                                        </a>
-                                    </li>
+                                        <li>
+                                            <a href="#!">
+                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_LUM-120BF-KIT20.png">
+                                            </a>
+                                        </li>
 
-                                    <li>
-                                        <a href="#!">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_LUM-120BF-KIT20.png">
-                                        </a>
-                                    </li>
+                                        <li>
+                                            <a href="#!">
+                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_23597-KIT50.png">
+                                            </a>
+                                        </li>
 
-                                    <li>
-                                        <a href="#!">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_23597-KIT50.png">
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
+                                    </ul>
+                                </div>
+                            ` : `` }
 
                         </div>
                     `);
@@ -1575,36 +1635,41 @@ var ILUMINIM = {
                         endtime: '2030/12/30 00:00:00',
                     });
 
-                    $('.bloco-triplo-personalizado .bloco-personalizado.bloco-1 .countdown-target').yuukCountDown({
-                        starttime: '2016/11/12 00:00:00',
-                        endtime: '2030/12/30 00:00:00',
-                        startCallBack(){
+                    
+                    if(ILUMINIM.Utils.screen.isDesktop()){
+                        
+                        $('.bloco-triplo-personalizado .bloco-personalizado.bloco-1 .countdown-target').yuukCountDown({
+                            starttime: '2016/11/12 00:00:00',
+                            endtime: '2030/12/30 00:00:00',
+                            startCallBack(){
 
-                            let totalHora = 24;
-                            let targetCronometro = $('.bloco-triplo-personalizado .bloco-personalizado.bloco-1 .countdown-target');
-                            let horaAtual = parseFloat(`${targetCronometro.find('i.hour').text()}.${targetCronometro.find('i.minute').text()}`);
-        
-                            let horaPassada = Math.round((totalHora - (totalHora - horaAtual)) / totalHora * 100);
-                            let porcentagem = 100 - horaPassada;
-                            $('.progress-countdown .progress-countdown-line').attr('style', `width:${porcentagem}%`);
+                                let totalHora = 24;
+                                let targetCronometro = $('.bloco-triplo-personalizado .bloco-personalizado.bloco-1 .countdown-target');
+                                let horaAtual = parseFloat(`${targetCronometro.find('i.hour').text()}.${targetCronometro.find('i.minute').text()}`);
+            
+                                let horaPassada = Math.round((totalHora - (totalHora - horaAtual)) / totalHora * 100);
+                                let porcentagem = 100 - horaPassada;
+                                $('.progress-countdown .progress-countdown-line').attr('style', `width:${porcentagem}%`);
 
-                        }
-                    });
-
-
-                    $('.bloco-triplo-personalizado .carousel-target').owlCarousel({
-                        loop:false,
-                        margin:0,
-                        autoHeight: false,
-                        nav:true,
-                        dots: false,
-                        navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
-                        responsive:{
-                            0: {
-                                items:1
                             }
-                        }
-                    });
+                        });
+
+
+                        $('.bloco-triplo-personalizado .carousel-target').owlCarousel({
+                            loop:false,
+                            margin:0,
+                            autoHeight: false,
+                            nav:true,
+                            dots: false,
+                            navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                            responsive:{
+                                0: {
+                                    items:1
+                                }
+                            }
+                        });
+
+                    }
                     
                 },
 
@@ -1990,6 +2055,96 @@ var ILUMINIM = {
 
                 },
 
+                alertaFreteGratis(){
+
+                    if(ILUMINIM.Utils.screen.isMobile()){
+                        return;
+                    }
+                
+                    const AlertaFreteGratis = {
+
+                        config: {
+                            frete_gratis: 299.00
+                        },
+
+                        aoFechar(){
+
+                            $('.alerta-frete-gratis-iluminim-custom .conteudo--close-popup').on('click', function(){
+
+                                $(this).parents('.alerta-frete-gratis-iluminim-custom.informacao-compras').removeClass('open-popup');
+
+                                ILUMINIM.Utils.setarCookie('alertafretegratis', true, 4);
+
+                            });
+                            
+                        },
+
+                        renderizar(){
+                            
+                            let valorCarrinhoAtual = $('#cabecalho .carrinho-interno-ajax .carrinho-rodape strong.titulo.cor-principal').text().replace('R$ ', '').replace('.', '').replace(',', '.');
+                            
+                            let faltaApenas = AlertaFreteGratis.config.frete_gratis - valorCarrinhoAtual
+
+                            $('body').prepend(`
+                                <div class="alerta-frete-gratis-iluminim-custom informacao-compras">
+                                    <div class="informacao-compras--conteudo">
+                                        <div class="conteudo--close-popup">×</div>
+                                        <div class="conteudo--bloco-1">
+                                            <div class="bloco-1--icone">${ILUMINIM.Utils.icones.caminhao_2}</div>
+                                            <div class="bloco-1--textos">
+                                                <div class="textos--texto-1">QUER GANHAR FRETE GRÁTIS?</div>
+                                                <div class="textos--texto-2">
+                                                    Complete R$ ${parseFloat(this.config.frete_gratis).toLocaleString('pt-br', {minimumFractionDigits: 2})} em compras e ganhe Frete Grátis!
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="conteudo--bloco-2">
+                                            <div class="bloco-2--textos">
+                                                <div class="textos--texto-1">
+                                                
+                                                    ${faltaApenas <= 0 ? `
+                                                        <span class="ganhou-frete-gratis">Parabéns você ganhou frete grátis :)<a href="/carrinho/index">Ir ao carrinho de compras</a></span>
+                                                    ` : `
+                                                        Faltam apenas <b>R$ ${faltaApenas.toFixed(2).replace('.', ',')}</b>continue comprando!
+                                                    `}
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+
+                            AlertaFreteGratis.aoFechar();
+
+                        },
+
+                        abrir(){
+                            $(window).on('load', ()=>{
+                                
+                                setTimeout(()=>{
+                                    
+                                    if(document.cookie.indexOf('alertafretegratis') == -1){
+                                        
+                                        this.renderizar();
+
+                                        setTimeout(()=> {
+                                            $('.informacao-compras').addClass('open-popup');
+                                        }, 1000);
+
+                                    }
+                                    
+                                },60000);
+                                
+                            });
+                        },
+
+                    }
+
+                    AlertaFreteGratis.abrir();
+
+                },
+
                 tagEconomizeListagemProduto(){
 
                     $('a.titulo-categoria.vitrine-3217133+ul .listagem-item').each(function(){
@@ -2134,6 +2289,80 @@ var ILUMINIM = {
 
                 },
 
+                bannerBaixeNossoAppMobile(){
+
+                    $('#corpo').after(`
+                        <div class="banner-baixe-nosso-app-mobile">
+                            <a href="https://play.google.com/store/apps/details?id=br.com.moblite.app.www.iluminim.com.br&amp;hl=pt_BR" target="_blank">
+                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-app-mobile-11-03-2020.png">
+                            </a>
+                        </div>
+                    `);
+
+                },
+
+                bannerYoutubeMobile(){
+
+                    $('#corpo').after(`
+                        <div class="banner-youtube-mobile">
+                            <a href="https://bit.ly/iluminim-led" target="_blank">
+                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-youtube-mobile-11-03-2020.png">
+                                <div class="btn-banner-youtube"><span>Inscreve-se!</span></div>
+                            </a>
+                        </div>
+                    `);
+
+                },
+
+                historicoDeNavegacaoMobile(){
+
+                    $('div#texto-seo-avaliacoes').before(`
+                        <div class="historico-navegacao-mobile">
+
+                            <div class="titulo-personalizado">
+                                <strong>Histórico recente</strong>
+                            </div>
+
+                            <div class="conteudo-historico-navegacao-mobile">
+                                <div class="historico-titulo-conteudo">
+                                    <div class="historico-titulo">${ ILUMINIM.Utils.icones.relogio } Histórico</div>
+                                    <div class="historico-text">Produtos acessados recentemente.</div>
+                                </div>
+
+                                <div class="historico-conteudo-vazio">
+                                    <h1 class="titulo-historico">Você não acessou nenhum produto recentemente :(</h1>
+                                    <a href="/ofertadasemana?sort=mais_vendidos">Clique <b>aqui</b> para conheçer uma de nossas recomendações.</a>
+                                </div>
+                            </div>
+                        </div>
+                    `);
+
+                },
+                
+                newsletterMobile(){
+
+                    $('div#corpo').after(`
+                        <div class="newsletter-mobile">
+                            <div class="conteudo-newsletter-mobile">
+                                <div class="textos-newsletter-mobile">
+                                    <div class="texto-1-newsletter-mobile"><b>R$ 20,00</b> de desconto</div>
+                                    <div class="texto-2-newsletter-mobile">
+                                        <div>Cadastre seu e-mail e ganhe</div>
+                                        <b>R$ 20,00 de desconto</b> na 1ª compra!
+                                    </div>
+                                </div>
+
+                                <div class="campos-newsletter-mobile">
+                                    ${ $('div#modalNewsletter .componente.newsletter.borda-principal').html() }
+                                </div>
+                            </div>
+                        </div>
+                    `);
+
+                },
+
+
+
             },
 
             iniciar(){ //INICIAR SCRIPTS DA PÁGINA;
@@ -2141,6 +2370,8 @@ var ILUMINIM = {
                 this.Funcoes.tagEconomizeListagemProduto();
                 this.Funcoes.tagLancamentoListagemProduto();
                 this.Funcoes.tagCampeaoDeVendasListagemProduto();
+
+                this.Funcoes.alertaFreteGratis();
 
                 this.Funcoes.bannerTarja(); //MANTER ORDEM
                 this.Funcoes.blocoTriplo(); //MANTER ORDEM
@@ -2162,6 +2393,13 @@ var ILUMINIM = {
                     this.Funcoes.palavrasBuscadasTopoMobile();
                     this.Funcoes.gifTopoMobile();
                     this.Funcoes.gifTarjaMobile();
+
+                    this.Funcoes.bannerYoutubeMobile();
+                    this.Funcoes.bannerBaixeNossoAppMobile();
+
+                    this.Funcoes.historicoDeNavegacaoMobile();
+
+                    this.Funcoes.newsletterMobile();
 
                 }
 
@@ -3338,6 +3576,10 @@ var ILUMINIM = {
 
                 cronometroCompreAntesQueAcabe(){
 
+                    if(ILUMINIM.Utils.screen.isMobile()){
+                        return;
+                    }
+
                     $('.produto .row-fluid > .span6:first-child').append(`
                         <div class="cronometro-compre-antes-que-acabe">
                             <div class="conteudo-titulo-cronometro">Compre antes que acabe!</div>
@@ -4308,21 +4550,246 @@ var ILUMINIM = {
 
             Funcoes: { //FUNÇÕES DA PÁGINA.
 
-                mensagemCarrinhoVazio(){
+                alertaFreteGratisPorRegiao(){
+
+                    var minValues = {
+                        'Sul': 299.0,
+                        'Sudeste': 299.0,
+                        'Norte': 299.0,
+                        'Nordeste': 299.0,
+                        'Centro Oeste': 299.0
+                    };
+                   
+                    var cepRanges = {
+                        'AC': [
+                            [69900000, 69999999]
+                        ],
+                        'AL': [
+                            [57000000, 57999999]
+                        ],
+                        'AM': [
+                            [69000000, 69299999],
+                            [69400000, 69899999]
+                        ],
+                        'AP': [
+                            [68900000, 68999999]
+                        ],
+                        'BA': [
+                            [40000000, 48999999]
+                        ],
+                        'CE': [
+                            [60000000, 63999999]
+                        ],
+                        'DF': [
+                            [70000000, 72799999],
+                            [73000000, 73699999]
+                        ],
+                        'ES': [
+                            [29000000, 29999999]
+                        ],
+                        'GO': [
+                            [72800000, 72999999],
+                            [73700000, 76799999]
+                        ],
+                        'MA': [
+                            [65000000, 65999999]
+                        ],
+                        'MG': [
+                            [30000000, 39999999]
+                        ],
+                        'MS': [
+                            [79000000, 79999999]
+                        ],
+                        'MT': [
+                            [78000000, 78899999]
+                        ],
+                        'PA': [
+                            [66000000, 68899999]
+                        ],
+                        'PB': [
+                            [58000000, 58999999]
+                        ],
+                        'PE': [
+                            [50000000, 56999999]
+                        ],
+                        'PI': [
+                            [64000000, 64999999]
+                        ],
+                        'PR': [
+                            [80000000, 87999999]
+                        ],
+                        'RJ': [
+                            [20000000, 28999999]
+                        ],
+                        'RN': [
+                            [59000000, 59999999]
+                        ],
+                        'RO': [
+                            [76800000, 76999999]
+                        ],
+                        'RR': [
+                            [69300000, 69399999]
+                        ],
+                        'RS': [
+                            [90000000, 99999999]
+                        ],
+                        'SC': [
+                            [88000000, 89999999]
+                        ],
+                        'SE': [
+                            [49000000, 49999999]
+                        ],
+                        'SP': [
+                            [01000000, 19999999]
+                        ],
+                        'TO': [
+                            [77000000, 77999999]
+                        ]
+                    };
+
+                    var regions = {
+                        'Norte': ['AC', 'AM', 'AP', 'PA', 'RO', 'RR', 'TO'],
+                        'Nordeste': ['AL', 'BA', 'CE', 'MA', 'PB', 'PE', 'PI', 'RN', 'SE'],
+                        'Centro Oeste': ['DF', 'GO', 'MS', 'MT'],
+                        'Sudeste': ['ES', 'MG', 'RJ', 'SP'],
+                        'Sul': ['RS', 'SC', 'PR']
+                    };
+
+                    function getMinValue(a) {
+                        return minValues[a]
+                    }
+
+                    function getRegion(c) {
+                        var d = null;
+                        $.each(regions, function(a, b) {
+                            for (var i = 0; i < b.length; i++) {
+                                if (c == b[i]) {
+                                    d = a;
+                                    return false
+                                }
+                            }
+                        });
+                        return d
+                    }
+
+                    function getUF(e) {
+                        var f = null;
+                        $.each(cepRanges, function(a, b) {
+                            for (var i = 0; i < b.length; i++) {
+                                var c = b[i][0];
+                                var d = b[i][1];
+                                if (e >= c && e <= d) {
+                                    f = a;
+                                    return false
+                                }
+                            }
+                        });
+                        return f
+                    }
+
+                    function cleanCep(a) {
+                        return a.replace('-', '')
+                    }
+
+                    function getTotal() {
+                        var a = $('.subtotal .titulo').attr('data-subtotal-valor');
+                        var b = $('.cupom-sucesso').length;
+                        if (b == 0) {
+                            return a
+                        } else if (b > 0) {
+                            var c = $('#cupom_desconto').html();
+                            if (!c) {
+                                return a
+                            }
+                            c = c.replace(/^\s+|\s+$/g, '');
+                            var d = /%/i.test(c);
+                            var e = /R/i.test(c);
+                            var f = c.split(' ');
+                            if (d) {
+                                var g = a - (a * f[0] / 100)
+                            } else if (e) {
+                                var g = a - parseInt(f[1])
+                            }
+                            return g
+                        }
+                    }
+
+                    function calculate() {
+
                         
+                        var a = 'Quer Ganhar Frete Grátis? Informe o seu cep e saiba quanto falta para ganhar.';
+                        var b = $('#calcularFrete').val() || 0;
+                        var c = $('.cupom-sucesso').length;
+                        var d = 'frete-gratis falta-cep';
+                        var percent = 0;
+                        if (b.length == 9) {
+                            b = cleanCep(b);
+                            var e = getUF(b);
+                            var f = getRegion(e);
+                            var g = getMinValue(f);
+                            var percent = 100 - ((g - getTotal()) / g * 100);
+                                
+                            if (!g) {
+                                a = 'Ops! Não há opção de frete grátis para sua região.'
+                                percent = 0;
+                            } else {
+                                var h = getTotal();
+                                if (h < g) {
+                                    var i = (g - h).toFixed(2).toString().replace('.', ',');
+                                    d = 'frete-gratis falta-pouco';
+                                    a = 'FALTAM R$ ' + i + ' em compras pra você GANHAR FRETE GRÁTIS!'
+                                } else if (h >= g) {
+                                    percent = 100;
+                                    d = 'frete-gratis ganhou-frete';
+                                    a = 'Parabéns! Você Ganhou Frete Grátis!'
+                                }
+                            }
+                        }
+                            
+                        var j = `<div class="frete-gratis-por-regiao section-progress-bar">
+                                    <div class="section-progress-bar--wrap progress-bar">
+                                        <span>${a}</span>
+                                        <div class="progress-bar--conteudo ${d}" style="width: ${percent}% !important;"></div>
+                                    </di>
+                                </div>`;
+                            
+                        //var j = '<div class="alert ' + d + '" role="alert">' + a + '</div>';
+                        
+                        $('.section-progress-bar').fadeOut();
+                        $('.section-progress-bar').remove();
+                        $('.finalizar-compra > .caixa-sombreada').before(j);
+                        $('.section-progress-bar').fadeIn();
+                    }
+
+                    $(document).ready(function() {
+                        if ($("#calcularFrete").is(":hidden")) {
+                            $("#calcularFrete").parent().closest("tr").removeClass("hidden-phone")
+                        }
+                        $("#calcularFrete").on('input', function(e) {
+                            calculate()
+                        });
+                        calculate()
+                    });
+
+                },
+
+                mensagemCarrinhoVazio(){
                     $('.pagina-carrinho .caixa-destaque').addClass('carrinho-vazio').html(`
                         <div class="caixa-destaque">
                             <h1>Você não tem nenhum item no carrinho.</h1>
                             <span>Você tem uma conta? Faça login para ver seus itens.</span>
                             <br><br>
-                            <a href="https://ambiente-ilm.lojaintegrada.com.br/" class="botao principal btn-voltar-compras btn-custom">Começar a fazer compras</a>
+                            <a href="/" class="botao principal btn-voltar-compras btn-custom">Começar a fazer compras</a>
                             <a href="/conta/login" class="botao principal login-carrinho btn-custom">Entrar</a>
                         </div>
                     `);
-
                 },
 
                 selosDeSeguranca(){
+
+                    if(ILUMINIM.Utils.screen.isMobile()){
+                        return;
+                    }
 
                     $('.finalizar-compra .acao-editar .selo-ssl').removeClass('hidden-phone').html(`
                         <ul class="lista-selos-de-seguranca">
@@ -4334,6 +4801,16 @@ var ILUMINIM = {
                         </ul>
                     `);
 
+                },
+
+                ajusteCarrinhoMobile(){
+
+                    $('.tabela-carrinho .bg-dark').removeClass('hidden-phone');
+
+                    $('.tabela-carrinho .subtotal').parents('tr.bg-dark').addClass('tr-subtotal');
+
+                    $('.tabela-carrinho tr.bg-dark form.form-horizontal[action*="carrinho/cupom/validar"]').parents('tr.bg-dark').addClass('tr-cupom-desconto');
+                    
                 }
 
             },
@@ -4342,6 +4819,14 @@ var ILUMINIM = {
 
                 this.Funcoes.mensagemCarrinhoVazio();
                 this.Funcoes.selosDeSeguranca();
+                this.Funcoes.alertaFreteGratisPorRegiao();
+
+                if(ILUMINIM.Utils.screen.isMobile()){
+                    
+                    this.Funcoes.ajusteCarrinhoMobile();
+
+                }
+                
 
             }
 
