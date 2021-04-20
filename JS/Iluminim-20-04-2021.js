@@ -3,7 +3,7 @@ var ILUMINIM = {
     
     Utils: {
 
-        logo: $('.logo a img').attr('src'),
+        logo: $('.logo a img').attr('width', '274').attr('height', '43').attr('src'),
 
         pagina: {
 
@@ -116,6 +116,7 @@ var ILUMINIM = {
         },
 
         icones: {
+            loading: '<img width="106" height="106" alt="Loading Iluminim..." title="Loading Iluminim..." src="https://blog.iluminim.com.br/wp-content/uploads/2021/03/anm-iluminim-loading-18.gif">',
             empresa: '<svg style="width: 23px;" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users fa-w-20"><path fill="currentColor" d="M544 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM320 256c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm0-192c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80zm244 192h-40c-15.2 0-29.3 4.8-41.1 12.9 9.4 6.4 17.9 13.9 25.4 22.4 4.9-2.1 10.2-3.3 15.7-3.3h40c24.2 0 44 21.5 44 48 0 8.8 7.2 16 16 16s16-7.2 16-16c0-44.1-34.1-80-76-80zM96 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm304.1 180c-33.4 0-41.7 12-80.1 12-38.4 0-46.7-12-80.1-12-36.3 0-71.6 16.2-92.3 46.9-12.4 18.4-19.6 40.5-19.6 64.3V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-44.8c0-23.8-7.2-45.9-19.6-64.3-20.7-30.7-56-46.9-92.3-46.9zM480 432c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16v-44.8c0-16.6 4.9-32.7 14.1-46.4 13.8-20.5 38.4-32.8 65.7-32.8 27.4 0 37.2 12 80.2 12s52.8-12 80.1-12c27.3 0 51.9 12.3 65.7 32.8 9.2 13.7 14.1 29.8 14.1 46.4V432zM157.1 268.9c-11.9-8.1-26-12.9-41.1-12.9H76c-41.9 0-76 35.9-76 80 0 8.8 7.2 16 16 16s16-7.2 16-16c0-26.5 19.8-48 44-48h40c5.5 0 10.8 1.2 15.7 3.3 7.5-8.5 16.1-16 25.4-22.4z" class=""></path></svg>',
             dolar: '<svg style="width: 12px; height: 18px;" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="dollar-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-dollar-sign fa-w-8"><path fill="currentColor" d="M191.9 259.3L73.7 222.2C49.2 214.5 32 189 32 160.3 32 124.8 57.6 96 89 96h73.8c22.2 0 43.3 8.6 60.1 24.5 3.1 2.9 7.8 3.2 11 .3l11.9-10.8c3.4-3.1 3.6-8.4.4-11.6-22.8-22-52.7-34.5-83.3-34.5H144V8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v56H89c-49.1 0-89 43.2-89 96.3 0 42.6 26.4 80.6 64.1 92.4l118.2 37.1c24.6 7.7 41.7 33.2 41.7 61.9 0 35.4-25.6 64.3-57 64.3H93.2c-22.2 0-43.3-8.6-60.1-24.5-3.1-2.9-7.8-3.2-11-.3L10.3 402c-3.3 3-3.6 8.4-.3 11.5 22.8 22 52.7 34.5 83.3 34.5H112v56c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-56h23c49.1 0 89-43.2 89-96.3 0-42.5-26.4-80.5-64.1-92.4z" class=""></path></svg>',
             atendimento: '<svg width="40" height="25" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="headset" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-headset fa-w-16"><path fill="currentColor" d="M192 224c0-17.67-14.33-32-32-32h-32c-35.35 0-64 28.65-64 64v63.64c0 35.35 28.65 64 64 64h32c17.67 0 32-14.33 32-32V224zm-32 127.64h-32c-17.64 0-32-14.36-32-32V256c0-17.64 14.36-32 32-32h32v127.64zm224 32c35.35 0 64-28.65 64-64V256c0-35.35-28.65-64-64-64h-32c-17.67 0-32 14.33-32 32v127.64c0 17.67 14.33 32 32 32h32zM352 224h32c17.64 0 32 14.36 32 32v63.64c0 17.64-14.36 32-32 32h-32V224zM256 0C113.97 0 3.92 117.82.1 256L0 280c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8l.09-24C35.43 135.19 131.63 32 256 32c123.5 0 224 100.48 224 224v176c0 26.47-21.53 48-48 48h-82.94c1.79-5.03 2.94-10.36 2.94-16 0-26.51-21.49-48-48-48h-64c-26.51 0-48 21.49-48 48s21.49 48 48 48h192c44.12 0 80-35.89 80-80V256C512 114.85 397.16 0 256 0zm48 480h-64c-8.82 0-16-7.18-16-16s7.18-16 16-16h64c8.82 0 16 7.18 16 16s-7.18 16-16 16z" class=""></path></svg>',
@@ -137,12 +138,12 @@ var ILUMINIM = {
                 boleto: '<svg width="40" height="25" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="barcode" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-barcode fa-w-16"><path fill="#000000" d="M0 448V64h18v384H0zm26.857-.273V64H36v383.727h-9.143zm27.143 0V64h8.857v383.727H54zm44.857 0V64h8.857v383.727h-8.857zm36 0V64h17.714v383.727h-17.714zm44.857 0V64h8.857v383.727h-8.857zm18 0V64h8.857v383.727h-8.857zm18 0V64h8.857v383.727h-8.857zm35.715 0V64h18v383.727h-18zm44.857 0V64h18v383.727h-18zm35.999 0V64h18.001v383.727h-18.001zm36.001 0V64h18.001v383.727h-18.001zm26.857 0V64h18v383.727h-18zm45.143 0V64h26.857v383.727h-26.857zm35.714 0V64h9.143v383.727H476zm18 .273V64h18v384h-18z" class=""></path></svg>'
             },
             selo: {
-                site_sincero: '<img src="https://cdn.awsli.com.br/257/257163/arquivos/selo-site-sincero-led.png">',
-                abcomm: '<img src="https://cdn.awsli.com.br/930/930730/arquivos/Selo_EmpresaAssociada-ABCOMM.png">',
-                safe_browsing: '<img src="https://cdn.awsli.com.br/production/static/img/struct/stamp_google_safe_browsing.png">',
-                site_blindado: '<img src="https://cdn.awsli.com.br/930/930730/arquivos/seal-site-blindado.png">',
-                ebit: '<img src="https://cdn.awsli.com.br/257/257163/arquivos/selo-ebit-ouro-17-12-19.png">',
-                site_protegido: '<img src="https://cdn.awsli.com.br/production/static/img/struct/stamp_encryptssl.png">',
+                site_sincero: '<img width="200" height="87" alt="Selo Site Sincero" title="Selo Site Sincero" src="https://cdn.awsli.com.br/257/257163/arquivos/selo-site-sincero-led.png">',
+                abcomm: '<img width="95" height="120" alt="Selo Abcomm" title="Selo Abcomm" src="https://cdn.awsli.com.br/930/930730/arquivos/Selo_EmpresaAssociada-ABCOMM.png">',
+                safe_browsing: '<img width="61" height="57" alt="Selo Safe Browsing" title="Selo Safe Browsing" src="https://cdn.awsli.com.br/production/static/img/struct/stamp_google_safe_browsing.png">',
+                site_blindado: '<img width="115" height="32" alt="Selo Site Blindado" title="Selo Site Blindado" src="https://cdn.awsli.com.br/930/930730/arquivos/seal-site-blindado.png">',
+                ebit: '<img width="61" height="57" alt="Selo Ebit" title="Selo Ebit" src="https://cdn.awsli.com.br/257/257163/arquivos/selo-ebit-ouro-17-12-19.png">',
+                site_protegido: '<img width="131" height="40" alt="Selo Site Protegido" title="Selo Site Protegido" src="https://cdn.awsli.com.br/production/static/img/struct/stamp_encryptssl.png">',
             }
         },
 
@@ -189,7 +190,7 @@ var ILUMINIM = {
 
             nome(){
 
-                let nome_produto = $('.produto .info-principal-produto h1.nome-produto').text();
+                let nome_produto = $('.produto .info-principal-produto h1.nome-produto').text().trim();
                 
                 return nome_produto;
 
@@ -229,7 +230,7 @@ var ILUMINIM = {
 
             },
 
-            valor_economize(produtoEspecifico){ //FUNCIONA APENAS PARA PRODUTOS SEM VARIAÇÕES
+            valor_economize(produtoEspecifico){
 
                 if(!produtoEspecifico){
 
@@ -374,6 +375,22 @@ var ILUMINIM = {
 
             Funcoes: { //FUNÇÕES DA PÁGINA.
 
+                googleLightHouse(){ //ALGUNS SCRIPTS BASEADO NO GOOGLELIGHTHOUSE PARA MELHORAR A PERFORMANCE DO SITE.
+
+                    /*document.addEventListener("touchstart", function(e) {
+                        e.preventDefault();
+                    }, Modernizr.passiveeventlisteners ? {passive: true} : false);*/
+
+                    $('div#modalAlerta a, .secao-banners .flex-control-nav a').attr('href', '#!');
+
+                    $('div#AdicionarFavoritoErroModal, div#AdicionarFavoritoSucessoModal').remove();
+
+                    $('head meta[name="viewport"]').attr('content', 'width=device-width, initial-scale=1.0, maximum-scale=5.0');
+
+                    $('div#modalNewsletter .newsletter-cadastro button').attr('aria-label', 'Cadastrar');
+
+                },
+
                 adicionarBackdrop(){ //PLANO DE FUNDO
 
                     $('body').append('<div class="iluminim-backdrop"></div>');
@@ -420,6 +437,8 @@ var ILUMINIM = {
                         return;
                     }
 
+                    $('.barra-inicial .lista-redes ul li a').attr('rel', 'noopener');
+
                     $('#cabecalho').wrap('<div id="topo-principal"></div>');
 
                     $('#topo-principal').prepend('<div class="iluminim-backdrop"></div>');
@@ -429,7 +448,7 @@ var ILUMINIM = {
                             
                             <div class="conteudo-superior-1">
 
-                                <div class="conteudo-superior-item historico">
+                                <div class="conteudo-superior-item item-superior-historico">
                                     <div class="conteudo-superior-titulo">
                                         ${ ILUMINIM.Utils.icones.relogio }
                                         <span class="atendimento__texto">Histórico</span>
@@ -453,24 +472,47 @@ var ILUMINIM = {
                                     </div>
                                 </div>
 
-                                <div class="conteudo-superior-item loja-fisica">
+                                <div class="conteudo-superior-item item-superior-loja-fisica">
                                     <div class="conteudo-superior-titulo">
                                         ${ ILUMINIM.Utils.icones.loja }
-                                        <a href="" class="atendimento__texto">Encontre uma loja física</a>
+                                        <a href="#!" class="atendimento__texto">Encontre uma loja física</a>
+                                    </div>
+                                    
+                                    <div class="dropdown-conteudo-superior dropdown-superior-padrao">
+                                        <div class="conteudo-dropdown">
+                                            <span>As lojas físicas da Iluminim são uma maneira que encontramos</span>
+                                            <span>para nos aproximar de nossos clientes</span>
+                                            <span>Acesse e saiba mais!</span>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="conteudo-superior-item loja-fisica">
+                                <div class="conteudo-superior-item item-superior-revendas">
                                     <div class="conteudo-superior-titulo">
                                         ${ ILUMINIM.Utils.icones.dolar }
-                                        <a href="" class="atendimento__texto">Revendas</a>
+                                        <a href="#!" class="atendimento__texto">Revendas</a>
+                                    </div>
+                                    
+                                    <div class="dropdown-conteudo-superior dropdown-superior-padrao">
+                                        <div class="conteudo-dropdown">
+                                            <span>Ofertas exclusivas para revenda.</span>
+                                            <span>Pagamento em até 120 dias.</span>
+                                            <span>Entre em contato!</span>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="conteudo-superior-item loja-fisica">
+                                <div class="conteudo-superior-item item-superior-empresas">
                                     <div class="conteudo-superior-titulo">
                                         ${ ILUMINIM.Utils.icones.empresa }
-                                        <a href="" class="atendimento__texto">Empresas</a>
+                                        <a href="#!" class="atendimento__texto">Empresas</a>
+                                    </div>
+
+                                    <div class="dropdown-conteudo-superior dropdown-superior-padrao">
+                                        <div class="conteudo-dropdown">
+                                            <span>Condições diferenciadas para empresas.</span>
+                                            <span>Acesse e saiba mais!</span>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -480,7 +522,7 @@ var ILUMINIM = {
                                 <div class="conteudo-superior-item atendimento">
                                     <div class="conteudo-superior-titulo">
                                         ${ ILUMINIM.Utils.icones.atendimento }
-                                        <span class="atendimento__texto">Canais de atendimento</span>
+                                        <span class="atendimento__texto">Central de atendimento</span>
                                         <i class="icon-angle-down"></i>
                                     </div>
                                 </div>
@@ -540,9 +582,18 @@ var ILUMINIM = {
 
                     $('#cabecalho .inferior .carrinho').after(`
                         <div class="favoritos">
-                            <a href="/conta/favorito/listar" class="conteudo-favoritos">
+
+                            <a aria-label="Lista de favoritos" href="/conta/login?next=/conta/favorito/listar" class="conteudo-favoritos">
                                 <div class="conteudo-favoritos-icone">${ ILUMINIM.Utils.icones.favoritos }</div>
                             </a>
+
+                            <div class="dropdown-conteudo-superior dropdown-superior-padrao dropdown-lista-desejos">
+                                <div class="conteudo-dropdown">
+                                    <span>Favorite os seus produtos preferidos</span>
+                                    <span>e acompanhe as ofertas :)</span>
+                                    <span>Acesse agora a lista de desejos!</span>
+                                </div>
+                            </div>
                         </div>
                     `);
 
@@ -554,9 +605,9 @@ var ILUMINIM = {
                         
                     });
                     
-                    $('div#cabecalho .busca input#auto-complete').attr('placeholder', 'Procure por código ou nome...');
+                    $('div#cabecalho .busca input#auto-complete').attr('placeholder', 'Procure em mais de 140.000 produtos');
 
-                    $('div#cabecalho .busca .botao-busca').html(ILUMINIM.Utils.icones.busca);
+                    $('div#cabecalho .busca .botao-busca').attr('aria-label', 'Buscar').html(ILUMINIM.Utils.icones.busca);
 
                     $('div#cabecalho .conteudo-superior-item.historico').mouseover(function(){
                         $(this).find('.body-app--product-listing-carousel').trigger('refresh.owl.carousel').trigger('refresh.owl.carousel');
@@ -595,7 +646,7 @@ var ILUMINIM = {
                     $('#cabecalho').before(`
                         <div class="gif-topo" style="background: #a10000;">
                             <a href="/ofertadasemana?sort=mais_vendidos">
-                                <img src="https://blog.iluminim.com.br/wp-content/uploads/2021/01/Tarja-topo-LED-OFERTAS-FANTASTICAS-1180x45-2.gif">
+                                <img alt="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" title="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" width="1180" height="45" src="https://blog.iluminim.com.br/wp-content/uploads/2021/01/Tarja-topo-LED-OFERTAS-FANTASTICAS-1180x45-2.gif">
                             </a>
                         </div>
                     `);
@@ -650,7 +701,7 @@ var ILUMINIM = {
 
                             onScroll(scrollTop);
 
-                        });
+                        }, {});
 
                     });
                     
@@ -674,7 +725,6 @@ var ILUMINIM = {
                     `);
 
                 },
-
 
                 menuSuperiorMenuLateral(){ //FUNÇÃO PARA ORDERNAR O MENU SUPERIOR E MENU LATERAL
                     //MANTER ORDEM DENTRO DESSE METODO.
@@ -834,7 +884,7 @@ var ILUMINIM = {
                                 </li>
 
                                 <li class="menu__item voltar-sub-menu">
-                                    <a href="javascript:void(0);">
+                                    <a href="#!">
                                         <i class="icon-angle-left"></i>
                                         Voltar
                                     </a>
@@ -851,7 +901,6 @@ var ILUMINIM = {
                     fecharSubMenu();
 
                 },
-
 
                 minimizadorRodape(){
 
@@ -919,11 +968,13 @@ var ILUMINIM = {
 
                 },
 
-
                 ajustesLinksBandeirasRodape(){
+
+                    $('div#rodape .btn-toggle-mais-informacoes-rodape+div a[title="Loja Integrada - Plataforma de loja virtual."]').attr('rel', 'noopener');
 
                     $('div#rodape .institucional > .conteiner > .row-fluid > .span9').html($('.hidden.html_content .row-fluid-customizada-rodape'));
 
+                    $('#rodape .institucional .lista-redes ul > li > a').attr('rel', 'noopener').attr('aria-label', 'Rede social');
                     $('#rodape .institucional .lista-redes ul > li').removeClass('visible-phone');
 
                     $('#rodape .pagamento-selos .pagamento').removeClass('span4').addClass('span5').html(`
@@ -931,17 +982,17 @@ var ILUMINIM = {
                         <div class="conteudo-rodape">
                             <ul class="lista-bandeiras">
                                 <li class="titulo-bandeiras">Cartões de Crédito</li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.amex}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.diners}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.elo}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.hipercard}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.mastercard}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.visa}</a></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.amex}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.diners}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.elo}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.hipercard}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.mastercard}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.visa}</span></li>
                             </ul>
 
                             <ul class="lista-bandeiras bandeira-boleto">
                                 <li class="titulo-bandeiras">Boleto</li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.boleto}</a></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.boleto}</span></li>
                             </ul>
                         </div>
                     `);
@@ -954,16 +1005,15 @@ var ILUMINIM = {
                         <span class="titulo titulo-rodape">Reconhecimento e Segurança</span>
                         <div class="conteudo-rodape conteudo-selos-de-seguranca">
                             <ul class="lista-selos-de-seguranca">
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
                             </ul>
                         </div>
                     `);
                 },
-
 
                 adicionarBlocoComprePorTelefone(){
 
@@ -974,7 +1024,6 @@ var ILUMINIM = {
                     $('.html_content .compre-por-telefone').insertBefore('#rodape');
                      
                 },
-
 
                 adicionaTextoModalCompraSegura(){
 
@@ -1007,11 +1056,11 @@ var ILUMINIM = {
                                         <h1 class="text-center">Essa loja utiliza tecnologia de ponta com criptografia 100% segura.</h1>
                                         <div id="selos-de-seguranca">
                                             <ul class="lista-selos-de-seguranca">
-                                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
-                                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
-                                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
-                                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
-                                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
+                                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
+                                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
+                                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
+                                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
+                                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
                                             </ul>
                                         </div>
 
@@ -1029,7 +1078,6 @@ var ILUMINIM = {
                     `);
 
                 },
-
 
                 adicionarWattsNasLampadas(){
                     
@@ -1056,13 +1104,11 @@ var ILUMINIM = {
 
                 },
 
-
                 adicionarClassFreteGratisListagem(){
                     
                     $('.listagem-item .bandeira-frete-gratis').parents('.listagem-item').addClass('produto-tag-frete-gratis');
 
                 },
-
 
                 adicionarListaDesejosListagem(){
                     
@@ -1093,13 +1139,13 @@ var ILUMINIM = {
 
                     $(`
                     <div class="plataforma-de-aplicativos">
-                        <a href="https://play.google.com/store/apps/details?id=br.com.moblite.app.www.iluminim.com.br&hl=pt_BR" target="_blank" class="logo_android">
+                        <a href="https://play.google.com/store/apps/details?id=br.com.moblite.app.www.iluminim.com.br&hl=pt_BR" target="_blank" rel="noopener" class="logo_android">
                             <span class="icon-plataforma icon_googleplay"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 469.847 469.847" style="enable-background:new 0 0 469.847 469.847;" xml:space="preserve" width="23px" height="23px"><g><path style="fill:#2196F3;" d="M270.336,234.965L34.39,462.165c-11.049-7.551-17.609-20.111-17.493-33.493V41.258  C16.781,27.876,23.341,15.316,34.39,7.765L270.336,234.965z" data-original="#2196F3"/><path style="fill:#4CAF50;" d="M352.896,155.605l-82.56,79.36L34.39,7.765c0.889-0.689,1.815-1.33,2.773-1.92  c12.47-7.558,28.046-7.802,40.747-0.64L352.896,155.605z" data-original="#4CAF50"/><path style="fill:#FFC107;" d="M452.95,234.965c0.154,15.107-8.055,29.061-21.333,36.267l-78.72,43.093l-82.56-79.36l82.56-79.36  l78.72,43.093C444.895,205.904,453.104,219.858,452.95,234.965z" data-original="#FFC107"/><path style="fill:#F44336;" d="M352.896,314.325L77.91,464.725c-12.729,7.051-28.246,6.807-40.747-0.64  c-0.958-0.59-1.884-1.231-2.773-1.92l235.947-227.2L352.896,314.325z" data-original="#F44336"/></g> </svg><span>
                             <span class="txtbaixe">Disponível na</span>
                             <span class="txt_apps">Google Play</span>
                         </a>
                     
-                        <a href="javascript:void(0)" class="logo_app">
+                        <a href="#!" rel="noopener" class="logo_app">
                             <span class="icon-plataforma icon_apple"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 305 305" style="enable-background:new 0 0 305 305;" xml:space="preserve" width="23px" height="23px" class=""><g><g id="XMLID_228_"><path id="XMLID_229_" d="M40.738,112.119c-25.785,44.745-9.393,112.648,19.121,153.82C74.092,286.523,88.502,305,108.239,305 c0.372,0,0.745-0.007,1.127-0.022c9.273-0.37,15.974-3.225,22.453-5.984c7.274-3.1,14.797-6.305,26.597-6.305 c11.226,0,18.39,3.101,25.318,6.099c6.828,2.954,13.861,6.01,24.253,5.815c22.232-0.414,35.882-20.352,47.925-37.941 c12.567-18.365,18.871-36.196,20.998-43.01l0.086-0.271c0.405-1.211-0.167-2.533-1.328-3.066c-0.032-0.015-0.15-0.064-0.183-0.078 c-3.915-1.601-38.257-16.836-38.618-58.36c-0.335-33.736,25.763-51.601,30.997-54.839l0.244-0.152 c0.567-0.365,0.962-0.944,1.096-1.606c0.134-0.661-0.006-1.349-0.386-1.905c-18.014-26.362-45.624-30.335-56.74-30.813 c-1.613-0.161-3.278-0.242-4.95-0.242c-13.056,0-25.563,4.931-35.611,8.893c-6.936,2.735-12.927,5.097-17.059,5.097 c-4.643,0-10.668-2.391-17.645-5.159c-9.33-3.703-19.905-7.899-31.1-7.899c-0.267,0-0.53,0.003-0.789,0.008 C78.894,73.643,54.298,88.535,40.738,112.119z" data-original="#000000" class="active-path" fill="#000000"/><path id="XMLID_230_" d="M212.101,0.002c-15.763,0.642-34.672,10.345-45.974,23.583c-9.605,11.127-18.988,29.679-16.516,48.379 c0.155,1.17,1.107,2.073,2.284,2.164c1.064,0.083,2.15,0.125,3.232,0.126c15.413,0,32.04-8.527,43.395-22.257 c11.951-14.498,17.994-33.104,16.166-49.77C214.544,0.921,213.395-0.049,212.101,0.002z" data-original="#000000" class="active-path" fill="#000000"/></g></g> </svg><span>
                             <span class="txtbaixe">Em breve na</span>
                             <span class="txt_apps">Apple Store</span>
@@ -1108,7 +1154,6 @@ var ILUMINIM = {
 
                 },
 
-                
                 ajusteModais(){
 
                     $(document).ready(function(){
@@ -1128,7 +1173,7 @@ var ILUMINIM = {
                 ajusteNewsletter(){
 
                     $('div#barraNewsletter').removeClass('hidden-phone');
-
+                    $('div#barraNewsletter button.botao').attr('aria-label', 'Cadastrar');
                 },
 
                 atalhosMobile(){
@@ -1142,13 +1187,13 @@ var ILUMINIM = {
                                 <div class="menu-bars"><span></span><span></span><span></span></div>
                             </div>
                             <div class="conteudo-atalho-logo">
-                                <a href="/"><img src="${ILUMINIM.Utils.logo}"></a>
+                                <a href="/"><img title="Iluminim LED" alt="Iluminim LED" src="${ILUMINIM.Utils.logo}"></a>
                             </div>
                         </div>
 
                         <div class="atalhos-right">
                             <div class="conteudo-atalho-usuario">
-                                <a href="javascript:void(0);"><i class="icon-user"></i></a>
+                                <a href="#!"><i class="icon-user"></i></a>
 
                                 <div class="conteudo-atalho-usuario-dropdown">
                                     <div class="usuario-dropdown">
@@ -1269,7 +1314,7 @@ var ILUMINIM = {
                             }
                         }
 
-                        $('.modal_play_iluminim').on('hidden.bs.modal', function(){
+                        $(document).on('hidden.bs.modal', '.modal_play_iluminim', function(){
 
                             let iframe_id = $(this).find('iframe').attr('id');
                             callPlayer(iframe_id,'pauseVideo');
@@ -1282,9 +1327,26 @@ var ILUMINIM = {
                 
                 carouselCustomListagem(){ //COLOCANDO OWL CAROUSEL NAS LISTAGEM
 
-                    $('.pagina-inicial .listagem li.span3, .pagina-produto .listagem.aproveite-tambem li.span3').unwrap().unwrap();
+                    $('.pagina-produto .listagem.aproveite-tambem .span3').unwrap().unwrap();
+                    
+                    $('.pagina-inicial .listagem .span3').unwrap().unwrap();
 
-                    $('.pagina-inicial div#listagemProdutos ul[data-produtos-linha], .pagina-produto .listagem.aproveite-tambem > ul').addClass('carousel-target');
+                    $('.pagina-inicial .listagem .listagem-item').unwrap().wrap('<div class="span3"></div>');
+
+                    //$('.pagina-inicial div#listagemProdutos ul').addClass('carousel-target');
+
+                    $('.pagina-inicial div#listagemProdutos ul').each(function(){
+                        $(this).find('.span3').wrapAll(`<li class="listagem-produtos carousel-target"></li>`);
+                    });
+
+                    $('.pagina-produto .listagem.aproveite-tambem > ul').addClass('carousel-target');
+
+                    //$('.pagina-inicial div#listagemProdutos ul').addClass('carousel-target');
+
+                    /*$('.pagina-inicial div#listagemProdutos ul').each(function(){
+                        $(this).replaceWith(`<ul data-produtos-linha="4" class="carousel-target">${$(this).html()}</ul>`);
+                    });*/
+
 
                     $('.pagina-inicial div#listagemProdutos .carousel-target').owlCarousel({
                         loop:false,
@@ -1360,9 +1422,180 @@ var ILUMINIM = {
 
                 },
 
+                oucaDica(){
+
+                    let produtos = [
+                        {
+                            sku: 'LT-120AMB',
+                            link: 'cVpoSCYe_7M'
+                        }
+                    ];
+
+                    if(ILUMINIM.Utils.pagina.isHome() || ILUMINIM.Utils.pagina.isCategory() || ILUMINIM.Utils.pagina.isCategory()){
+                        
+                        $('.listagem-item').each(function(){
+
+                            let skuProd = $(this).find('.produto-sku.hide').text();
+                            let nameProd = $(this).find('a.nome-produto').text();
+
+                            let buscarMidiaProduto = produtos.filter(produto=> produto.sku == skuProd);
+
+                            if(buscarMidiaProduto.length > 0){
+
+                                let midiaLink = buscarMidiaProduto[0].link;
+
+                                $(this).addClass('produto-com-dica');
+                                $(this).append(`
+                                    <div class="midia-listagem" data-sku="${skuProd}" data-name-prod="${nameProd}" data-type-midia="Ouça a dica" data-midia-link="${midiaLink}">
+                                        <div class="icone-midia">
+                                            <i class="icon-volume-up"></i>
+                                        </div>
+                                    </div>
+                                `);
+
+                            }
+
+                        });
+
+                    }
+
+                    if(ILUMINIM.Utils.pagina.isProduct()){
+
+                        $(document).ready(function(){
+
+                            let skuProd = ILUMINIM.Utils.produto.sku();
+
+                            let buscarMidiaProduto = produtos.filter(produto=> produto.sku == skuProd);
+
+                            if(buscarMidiaProduto.length > 0){
+
+                                let nameProd = ILUMINIM.Utils.produto.nome()
+                                let midiaLink = buscarMidiaProduto[0].link;
+
+                                $('.produto .produto-compartilhar').append(`
+                                    <div class="midia-produto" data-sku="${skuProd}" data-name-prod="${nameProd}" data-type-midia="Ouça a dica" data-midia-link="${midiaLink}">
+                                        <div class="icone-midia">
+                                            <i class="icon-volume-up"></i>
+                                        </div>
+                                        Ouça a dica
+                                    </div>
+                                `);
+
+                            }
+
+                        });
+
+                    }
+
+
+                },       
+
+                vejaVideo(){
+
+                    let produtos = [
+                        {
+                            sku: 'PSM-50W',
+                            link: 'cVpoSCYe_7M'
+                        },
+                        {
+                            sku: 'LT-60VM',
+                            link: 'cVpoSCYe_7M'
+                        }
+                    ];
+
+                    if(ILUMINIM.Utils.pagina.isHome() || ILUMINIM.Utils.pagina.isCategory() || ILUMINIM.Utils.pagina.isCategory()){
+                        
+                        $('.listagem-item').each(function(){
+
+                            let skuProd = $(this).find('.produto-sku.hide').text();
+                            let nameProd = $(this).find('a.nome-produto').text();
+
+                            let buscarMidiaProduto = produtos.filter(produto=> produto.sku == skuProd);
+
+                            if(buscarMidiaProduto.length > 0){
+
+                                let midiaLik = buscarMidiaProduto[0].link;
+
+                                $(this).addClass('produto-com-video');
+                                $(this).append(`
+                                    <div class="midia-listagem" data-sku="${skuProd}" data-name-prod="${nameProd}" data-type-midia="Veja o vídeo" data-midia-link="${midiaLik}">
+                                        <div class="icone-midia">
+                                            <i class="icon-play"></i>
+                                        </div>
+                                    </div>
+                                `);
+
+                            }
+
+                        });
+
+                    }
+
+                }, 
+                
+                abrirMidiaListagem(){
+                
+                    $(document).on('click', '.listagem-item .midia-listagem, .pagina-produto .midia-produto', function(){
+
+                        let dateNow = Date.now();
+    
+                        let skuProd = $(this).attr('data-sku');
+                        let midiaLink = $(this).attr('data-midia-link');
+                        let nameProd = $(this).attr('data-name-prod');
+                        let typeMidia = $(this).attr('data-type-midia');
+
+                        if( $(`#modal_midia_listagem_${skuProd}`).length > 0){
+
+                            $(`#modal_midia_listagem_${skuProd}`).modal('show');
+
+                        }else {
+    
+                            $('body').append(`
+                                <div class="modal modal-personalizado fade modal_play_iluminim modal_midia_listagem" id="modal_midia_listagem_${skuProd}">
+        
+                                    <div class="modal-dialog">
+        
+                                        <div class="modal-content">
+        
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">${typeMidia} - ${nameProd}</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+        
+                                            <div class="modal-body">
+        
+                                                <iframe id="modal_midia_${skuProd}_${dateNow}" src="//youtube.com/embed/${midiaLink}?enablejsapi=1" width="100%" height="350" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+                                            </div>
+        
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Fechar</button>
+                                            </div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+                            `);
+        
+                            $(`#modal_midia_listagem_${skuProd}`).modal('show');
+
+                        }
+    
+                    }); 
+    
+                },
+
             },
 
+            
+
             iniciar(){ //INICIAR SCRIPTS DA PÁGINA;
+
+                this.Funcoes.googleLightHouse();
 
                 this.Funcoes.acoesEmModalPlay();
                 this.Funcoes.adicionarBackdrop();
@@ -1390,6 +1623,10 @@ var ILUMINIM = {
                 this.Funcoes.stepCarrinho();
 
                 this.Funcoes.carouselCustomListagem();
+
+                this.Funcoes.oucaDica();
+                this.Funcoes.vejaVideo();
+                this.Funcoes.abrirMidiaListagem();
 
                 if(ILUMINIM.Utils.screen.isMobile()){
 
@@ -1440,7 +1677,7 @@ var ILUMINIM = {
 
                                     <div class="item-departamento">
                                         <a href="/refletores-de-led?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-refletores-led.png">
+                                            <img alt="Refletores LED" title="Refletores LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-refletores-led.png">
                                             <div class="wrap-info">
                                                 <span>Refletores LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1449,7 +1686,7 @@ var ILUMINIM = {
                                     </div>
                                     <div class="item-departamento">
                                         <a href="/luminarias-led?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-luminarias-led.png">
+                                            <img alt="Luminárias LED" title="Luminárias LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-luminarias-led.png">
                                             <div class="wrap-info">
                                                 <span>Luminárias LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1458,7 +1695,7 @@ var ILUMINIM = {
                                     </div>
                                     <div class="item-departamento">
                                         <a href="/fita-de-led?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-fitas-led.png">
+                                            <img alt="Fitas LED" title="Fitas LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-fitas-led.png">
                                             <div class="wrap-info">
                                                 <span>Fitas LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1467,7 +1704,7 @@ var ILUMINIM = {
                                     </div>
                                     <div class="item-departamento">
                                         <a href="/lampada-led?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-lampadas-led.png">
+                                            <img alt="Lâmpadas LED" title="Lâmpadas LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-lampadas-led.png">
                                             <div class="wrap-info">
                                                 <span>Lâmpadas LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1476,7 +1713,7 @@ var ILUMINIM = {
                                     </div>
                                     <div class="item-departamento">
                                         <a href="/acessorios-para-leds?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-acessorios-led.png">
+                                            <img alt="Acessórios LED" title="Acessórios LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-acessorios-led.png">
                                             <div class="wrap-info">
                                                 <span>Acessórios LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1485,7 +1722,7 @@ var ILUMINIM = {
                                     </div>
                                     <div class="item-departamento">
                                         <a href="/camera-seguranca-led?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-cameras-led.png">
+                                            <img alt="Câmeras LED" title="Câmeras LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-cameras-led.png">
                                             <div class="wrap-info">
                                                 <span>Câmeras LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1494,7 +1731,7 @@ var ILUMINIM = {
                                     </div>
                                     <div class="item-departamento">
                                         <a href="/pendente?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-pendentes-led.png">
+                                            <img alt="Pendentes LED" title="Pendentes LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-pendentes-led.png">
                                             <div class="wrap-info">
                                                 <span>Pendentes LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1503,7 +1740,7 @@ var ILUMINIM = {
                                     </div>
                                     <div class="item-departamento">
                                         <a href="/iluminacao-para-festa?sort=mais_vendidos">
-                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-festa-led.png">
+                                            <img alt="Festa LED" title="Festa LED" src="https://cdn.awsli.com.br/257/257163/arquivos/pagina-nao-encontrada-07-05-2020-departamento-festa-led.png">
                                             <div class="wrap-info">
                                                 <span>Festa LED</span>
                                                 <i class="icon-angle-right"></i>
@@ -1541,6 +1778,24 @@ var ILUMINIM = {
 
             Funcoes: { //FUNÇÕES DA PÁGINA.
 
+                bannerChamadaDesktop(){
+
+                    if(!ILUMINIM.Utils.screen.isDesktop()){
+                        return;
+                    }
+
+                    let bannerChamada = 'https://blog.iluminim.com.br/wp-content/uploads/2021/03/Banner-Principal-1180x430-do-consumidor-PRORROGADA.gif';
+                    $('.secao-banners .banner.cheio img[alt="Banner chamada"]').attr('src', bannerChamada);
+
+                },
+
+                bannerChamadaMobile(){
+
+                    let bannerChamada = 'https://blog.iluminim.com.br/wp-content/uploads/2021/03/Banner-Principal-500x488-do-consumidor-1.gif';
+                    $('.secao-banners .banner.cheio img[alt="Banner Chamada @MOBILE"]').attr('src', bannerChamada);
+
+                },
+
                 bannerTarja(){
 
                     if(ILUMINIM.Utils.screen.isMobile()){
@@ -1566,63 +1821,79 @@ var ILUMINIM = {
 
                             ${ ILUMINIM.Utils.screen.isDesktop() ? `
                                 <div class="bloco-personalizado bloco-1">
-                                    <ul class="lista-banners-bloco-personalizado">
 
-                                        <li class="banner-oferta-semana-cronometro">
+                                    <div class="lista-bloco-1 lista-banners-bloco-personalizado carousel-target">
+
+                                        <!--<div class="banner-oferta-semana-cronometro">
                                             <a href="#!">
-                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Home_Cronometro_19-01-21.png">
-                                                <div class="countdown-target"></div>
+                                                <img alt="Ofertas da Semana! Por tempo limitado!" title="Ofertas da Semana! Por tempo limitado!" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Home_Cronometro_19-01-21.png">
+                                                <ul class="countdown-target"></ul>
                                                 <div class="progress-countdown"><span class="progress-countdown-line" style="width:0%"></span></div>
                                             </a>
-                                        </li>
+                                        </div>-->
 
-                                    </ul>
+                                        <div>
+                                            <a href="#!">
+                                                <img width="372" height="485" alt="Fitas LED 5050 5 Metros Branco 72w" title="Fitas LED 5050 5 Metros Branco 72w" src="https://blog.iluminim.com.br/wp-content/uploads/2021/03/kit-fitas-XL-5050BF-RSPM-200WBF.gif">
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <a href="#!">
+                                                <img width="372" height="485" alt="Refletor Holofote MicroLED Slim 100w" title="Refletor Holofote MicroLED Slim 100w" src="https://blog.iluminim.com.br/wp-content/uploads/2019/10/banner-refletor-360-nv10out.gif">
+                                            </a>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             ` : `` }
 
                             <div class="bloco-personalizado bloco-produtos-peronalizados bloco-2">
                                 <div class="topo-bloco-produtos-peronalizados">
-                                    <div class="bloco-produtos-titulo">Ofertas Exclusivsas!</div>
-                                    <div class="countdown-target"></div>
+                                    <div class="bloco-produtos-titulo">Ofertas Exclusivas!</div>
+                                    <ul class="countdown-target"></ul>
                                 </div>
-                                <div class="lista-produtos-bloco-personalizado"></div>
+                                <div class="lista-produtos-bloco-personalizado">
+                                    <div class="iluminim-loading">${ ILUMINIM.Utils.icones.loading }</div>
+                                </div>
                             </div>
 
                             ${ ILUMINIM.Utils.screen.isDesktop() ? `
                                 <div class="bloco-personalizado bloco-3">
-                                    <ul class="lista-banners-bloco-personalizado carousel-target">
+                                    <div class="lista-bloco-2 lista-banners-bloco-personalizado carousel-target">
 
-                                        <li>
+                                        <div>
                                             <a href="#!">
-                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_-_CAPA.png">
+                                                <img width="373" height="485" alt="Frete Grátis" title="Frete Grátis" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_-_CAPA.png">
                                             </a>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div>
                                             <a href="#!">
-                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_RSPM-200WBF-KIT10.png">
+                                                <img width="373" height="485" alt="Kit 10 Refletor Holofote Micro LED Slim 200w Branco Frio" title="Kit 10 Refletor Holofote Micro LED Slim 200w Branco Frio" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_RSPM-200WBF-KIT10.png">
                                             </a>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div>
                                             <a href="#!">
-                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_PS-Q18WBF-KIT20.png">
+                                                <img width="373" height="485" alt="Kit 20 Luminária Plafon LED 18w Embutir Branco Frio" title="Kit 20 Luminária Plafon LED 18w Embutir Branco Frio" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_PS-Q18WBF-KIT20.png">
                                             </a>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div>
                                             <a href="#!">
-                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_LUM-120BF-KIT20.png">
+                                                <img width="373" height="485" alt="Kit 20 Tubular LED Sobrepor Complete 36w 1,20m Branco Frio | Inmetro" title="Kit 20 Tubular LED Sobrepor Complete 36w 1,20m Branco Frio | Inmetro" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_LUM-120BF-KIT20.png">
                                             </a>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div>
                                             <a href="#!">
-                                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_23597-KIT50.png">
+                                                <img width="373" height="485" alt="Kit 50 Luminária de Emergência 30 LEDs | Slim" title="Kit 50 Luminária de Emergência 30 LEDs | Slim" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_23597-KIT50.png">
                                             </a>
-                                        </li>
+                                        </div>
 
-                                    </ul>
+                                    </div>
                                 </div>
                             ` : `` }
 
@@ -1638,7 +1909,7 @@ var ILUMINIM = {
                     
                     if(ILUMINIM.Utils.screen.isDesktop()){
                         
-                        $('.bloco-triplo-personalizado .bloco-personalizado.bloco-1 .countdown-target').yuukCountDown({
+                        /*$('.bloco-triplo-personalizado .bloco-personalizado.bloco-1 .countdown-target').yuukCountDown({
                             starttime: '2016/11/12 00:00:00',
                             endtime: '2030/12/30 00:00:00',
                             startCallBack(){
@@ -1652,22 +1923,35 @@ var ILUMINIM = {
                                 $('.progress-countdown .progress-countdown-line').attr('style', `width:${porcentagem}%`);
 
                             }
-                        });
+                        });*/
 
+                        $('.bloco-triplo-personalizado > div .carousel-target').each(function(){
 
-                        $('.bloco-triplo-personalizado .carousel-target').owlCarousel({
-                            loop:false,
-                            margin:0,
-                            autoHeight: false,
-                            nav:true,
-                            dots: false,
-                            navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
-                            responsive:{
-                                0: {
-                                    items:1
+                            $(this).owlCarousel({
+                                loop:false,
+                                margin:0,
+                                autoHeight: false,
+                                nav:true,
+                                dots: false,
+                                navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                                responsive:{
+                                    0: {
+                                        items:1
+                                    }
                                 }
-                            }
+                            });
+
                         });
+
+
+
+                        $(window).on('load', ()=> {
+
+                            $('.bloco-triplo-personalizado > div .carousel-target').trigger('refresh.owl.carousel');
+    
+                        });
+
+                        
 
                     }
                     
@@ -1681,28 +1965,34 @@ var ILUMINIM = {
                     
                     $('.bloco-triplo-personalizado').after(`
                         <div class="banners-personalizados">
-                            <ul class="lista-banners-personalizados carousel-target">
+                            <div class="lista-banners-personalizados carousel-target">
 
-                                <li>
+                                <div>
                                     <a href="#!">
-                                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner_luminarias-v3-03.png">
+                                        <img width="1180" height="300" 
+                                        alt="Luminárias LED a partir de R$ 8,09" 
+                                        title="Luminárias LED a partir de R$ 8,09" 
+                                        src="https://cdn.awsli.com.br/930/930730/arquivos/LUMINARIAS_LED_A_PARTIR_DE-31-03-21.png">
                                     </a>
-                                </li>
+                                </div>
 
-                                <li>
+                                <div>
                                     <a href="#!">
-                                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-diversos-produtos-com-frete-gratis.png">
+                                        <img width="1180" height="300" 
+                                        alt="Refletores LED com até 83% de desconto em até 12x sem juros" 
+                                        title="Refletores LED com até 83% de desconto em até 12x sem juros" 
+                                        src="https://cdn.awsli.com.br/930/930730/arquivos/REFLETORES_ATE_xx_OFF___12x_SEM_JUROS-31-03-21.png">
                                     </a>
-                                </li>
+                                </div>
 
-                                <li class="banner-personalizado-cronometro">
+                                <!--<div class="banner-personalizado-cronometro">
                                     <a href="#!">
-                                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Refletores_com_Cronometro-03-08-2020-wireframe-home.png">
-                                        <div class="countdown-target"></div>
+                                        <img width="1180" height="299" alt="Micro LED 50% de desconto" title="Micro LED 50% de desconto" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Refletores_com_Cronometro-03-08-2020-wireframe-home.png">
+                                        <ul class="countdown-target"></ul>
                                     </a>
-                                </li>
+                                </div>-->
 
-                            </ul>
+                            </div>
                         </div>
                     `);
 
@@ -1720,10 +2010,10 @@ var ILUMINIM = {
                         }
                     });
 
-                    $('.banners-personalizados .banner-personalizado-cronometro .countdown-target').yuukCountDown({
+                    /*$('.banners-personalizados .banner-personalizado-cronometro .countdown-target').yuukCountDown({
                         starttime: '2016/11/12 00:00:00',
                         endtime: '2030/12/30 00:00:00',
-                    });
+                    });*/
 
                 },
 
@@ -1735,25 +2025,28 @@ var ILUMINIM = {
 
                     let banners = [
                         {
-                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/balizadores-wire-frame-11dez.png',
+                            nome: 'Refletores LED com até 84% de desconto!',
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletores_led_mini_wireframe_13ABR2021.png',
                             link: '#!'
                         },
                         {
-                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/balizadores-wire-frame-11dez.png',
+                            nome: 'Ofertas da Semana com até 78% de desconto!',
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/lancamentos_led_mini_wireframe_13ABR2021-v2.png',
                             link: '#!'
                         },
                         {
-                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/balizadores-wire-frame-11dez.png',
+                            nome: 'Lançamentos LED com até 64% de desconto!',
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/lancamentos_led_mini_wireframe_13ABR2021-v3.png',
                             link: '#!'
                         }
                     ]
 
 
-                    let html = banners.map(banner=> {
+                    let html = banners.map(banner=> {2
                         return `
                             <li>
                                 <a href="${banner.link}">
-                                    <img src="${banner.imagem}">
+                                    <img width="407" height="279" alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
                                 </a>
                             </li>
                         `;   
@@ -1787,14 +2080,14 @@ var ILUMINIM = {
                             <ul class="lista-banner-youtube-blog">
 
                                 <li>
-                                    <a class="youtube-iluminim" href="https://bit.ly/iluminim-led" target="_blank">
-                                        <img src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-youtube-09-09-2020.gif">
+                                    <a class="youtube-iluminim" href="https://bit.ly/iluminim-led" target="_blank" rel="noopener">
+                                        <img width="498" height="41" alt="Se liga no nosso canal do youtube!" title="Se liga no nosso canal do youtube!" src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-youtube-09-09-2020.gif">
                                     </a>
                                 </li>
                                 
                                 <li>
-                                    <a class="blog-iluminim" href="https://blog.iluminim.com.br/" target="_blank">
-                                        <img src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-blog-09-09-2020.png">
+                                    <a class="blog-iluminim" href="https://blog.iluminim.com.br/" target="_blank" rel="noopener">
+                                        <img width="393" height="63" alt="Acesse agora o nosso Blog" title="Acesse agora o nosso Blog" src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-blog-09-09-2020.png">
                                     </a>
                                 </li>
 
@@ -1815,37 +2108,49 @@ var ILUMINIM = {
                             nome: 'Refletores Micro LED SMD',
                             link: '#!',
                             imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-08-02-2021-v2.png',
-                            desconto: '64'
+                            desconto: '64',
+                            width: '116',
+                            height: '143'
                         },
                         {
                             nome: 'Plafon LED Garantia Total',
                             link: '#!',
-                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-08-02-2021-v2.png',
-                            desconto: '64'
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-luminarias-rgb-23-03-2021.png',
+                            desconto: '64',
+                            width: '119',
+                            height: '132'
                         },
                         {
                             nome: "Fita LED A prova d'agua",
                             link: '#!',
-                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-08-02-2021-v2.png',
-                            desconto: '64'
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-fita-23-03-2021.png',
+                            desconto: '64',
+                            width: '113',
+                            height: '113'
                         },
                         {
                             nome: 'Fonte Chaveada Automática Bivolt',
                             link: '#!',
-                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-08-02-2021-v2.png',
-                            desconto: '44'
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-fonte-23-03-2021.png',
+                            desconto: '44',
+                            width: '142',
+                            height: '111'
                         },
                         {
                             nome: 'Lâmpadas LED RGB Estilo e cor',
                             link: '#!',
-                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-08-02-2021-v2.png',
-                            desconto: '84'
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-lampada-rgb-23-03-2021.png',
+                            desconto: '84',
+                            width: '115',
+                            height: '143'
                         },
                         {
                             nome: 'Balizadores LED Impermeáveis',
                             link: '#!',
-                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-08-02-2021-v2.png',
-                            desconto: '44'
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-balizador-23-03-2021.png',
+                            desconto: '44',
+                            width: '127',
+                            height: '134'
                         }
                     ];
 
@@ -1864,7 +2169,7 @@ var ILUMINIM = {
                                     </div>
 
                                     <div class="banner-desconto-imagem">
-                                        <img src="${banner.imagem}">
+                                        <img width="${banner.width}" height="${banner.height}" alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
                                     </div>
                                 </a>
                             </li>
@@ -1958,20 +2263,32 @@ var ILUMINIM = {
 
                     let banners = [
                         {
+                            nome: 'Refletores Micro LED Super Oferta!',
                             imagem: 'https://blog.iluminim.com.br/wp-content/uploads/2020/04/oportunidades-especiais-refletor-micro-led.gif',
-                            link: '#!'
+                            link: '#!',
+                            width: '272',
+                            height: '232'
                         },
                         {
+                            nome: 'Decoração Lâmpada Vintage',
                             imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/oportunidades-especiais-decoracao-lampada-vintage.png',
-                            link: '#!'
+                            link: '#!',
+                            width: '261',
+                            height: '205'
                         },
                         {
+                            nome: 'Plafons LED Até 65% OFF',
                             imagem: 'https://blog.iluminim.com.br/wp-content/uploads/2020/04/oportunidades-especiais-plafons-led.gif',
-                            link: '#!'
+                            link: '#!',
+                            width: '260',
+                            height: '232'
                         },
                         {
+                            nome: 'Spot LED Melhores Ofertas!',
                             imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/oportunidades-especiais-decoracao-spot-led.png',
-                            link: '#!'
+                            link: '#!',
+                            width: '261',
+                            height: '205'
                         }
                     ]
 
@@ -1979,7 +2296,7 @@ var ILUMINIM = {
                         return `
                             <li>
                                 <a href="${banner.link}">
-                                    <img src="${banner.imagem}">
+                                    <img width="${banner.width}" height="${banner.height}" alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
                                 </a>
                             </li>
                         `;   
@@ -2185,7 +2502,7 @@ var ILUMINIM = {
 
                         $(this).addClass('produto-tag-campeao-de-vendas').find('.imagem-produto').after(`
                             <div class="produto-tag tag-campeao-de-vendas">
-                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/cp-vendas.png">
+                                <img alt="Produto Campeão de Vendas" title="Produto Campeão de Vendas" width="195" height="42" src="https://cdn.awsli.com.br/257/257163/arquivos/cp-vendas.png">
                             </div>
                         `);
 
@@ -2203,7 +2520,7 @@ var ILUMINIM = {
 
                     $('.palavras-buscadas.palavras-buscadas-topo-mobile').before(`
                         <div class="gif-topo-mobile">
-                            <a href="#!"><img src="https://blog.iluminim.com.br/wp-content/uploads/2021/01/mobile-Tarja-topo-LED-OFERTAS-FANTASTICAS-500x45-1.gif"></a>
+                            <a href="#!"><img alt="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" title="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" src="https://blog.iluminim.com.br/wp-content/uploads/2021/01/mobile-Tarja-topo-LED-OFERTAS-FANTASTICAS-500x45-1.gif"></a>
                         </div>
                     `);
 
@@ -2213,7 +2530,7 @@ var ILUMINIM = {
 
                     $('.secao-banners').after(`
                         <div class="gif-tarja-mobile">
-                            <a href="#!"><img src="https://blog.iluminim.com.br/wp-content/uploads/2020/03/gif-tarja-mobile-11-03-2020.gif"></a>
+                            <a href="#!"><img alt="Frete Grátis, Entrega Expressa, 12x sem Juros, 12 Anos de Mercado, Melhor Preço" title="Frete Grátis, Entrega Expressa, 12x sem Juros, 12 Anos de Mercado, Melhor Preço" src="https://blog.iluminim.com.br/wp-content/uploads/2020/03/gif-tarja-mobile-11-03-2020.gif"></a>
                         </div>
                     `);
 
@@ -2229,19 +2546,21 @@ var ILUMINIM = {
                             <div class="table-nav-banners--item active" data-banner="banner2"><span>Soluções Empresariais</span></div>
                         </div>
                         
-                        <div class="banner-ilm-atacado block-banner" data-banner="banner1"><a href="https://www.iluminimatacado.com.br/" target="_blank">
-                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/compras-no-atacado-nv.png"></a>
+                        <div class="banner-ilm-atacado block-banner" data-banner="banner1">
+                            <a href="https://www.iluminimatacado.com.br/" target="_blank" rel="noopener">
+                                <img width="1180" height="200" alt="Compras no Atacado?, acesse www.iluminimatacado.com.br" title="Compras no Atacado?, acesse www.iluminimatacado.com.br" src="https://cdn.awsli.com.br/257/257163/arquivos/compras-no-atacado-nv.png">
+                            </a>
                         </div>
                     
                         <div class="banner-empresarial-animated block-banner b_animated_ilm hidden-phone active" data-banner="banner2">
                             
                             <div class="wrap">
                                 <div class="wrap_txt">
-                                    <h3>Soluções <b>Empresariais</b></h3>
+                                    <h1>Soluções <b>Empresariais</b></h1>
                                 </div>
                                 <div class="wrap_icones">
                                     <div class="icone-wrap mao">
-                                        <div class="icn-ilm"><img src="https://cdn.awsli.com.br/257/257163/arquivos/icone-mao-11-03-.png">
+                                        <div class="icn-ilm"><img width="66" height="39" alt="Preço exclusivo para empresa" title="Preço exclusivo para empresa" src="https://cdn.awsli.com.br/257/257163/arquivos/icone-mao-11-03-.png">
                                         </div>
                                         <div class="drop_box" style="display:none;">
                                             <div class="wraped"> <span class="titdropbox">Preço exclusivo para empresa,</span> <span
@@ -2249,7 +2568,7 @@ var ILUMINIM = {
                                         </div>
                                     </div>
                                     <div class="icone-wrap luz">
-                                        <div class="icn-ilm"><img src="https://cdn.awsli.com.br/257/257163/arquivos/iicone-luz-11-03-.png">
+                                        <div class="icn-ilm"><img width="42" height="56" alt="A Iluminim é a melhor solução" title="A Iluminim é a melhor solução" src="https://cdn.awsli.com.br/257/257163/arquivos/iicone-luz-11-03-.png">
                                         </div>
                                         <div class="drop_box" style="display:none;">
                                             <div class="wraped"> <span class="titdropbox">A Iluminim é a melhor solução</span> <span
@@ -2257,8 +2576,7 @@ var ILUMINIM = {
                                         </div>
                                     </div>
                                     <div class="icone-wrap papel">
-                                        <div class="icn-ilm"><img
-                                                src="https://cdn.awsli.com.br/257/257163/arquivos/icone-caneta-papel-11-03-.png"></div>
+                                        <div class="icn-ilm"><img width="64" height="66" alt="Atendimento e projetos personalizados!" title="Atendimento e projetos personalizados!" src="https://cdn.awsli.com.br/257/257163/arquivos/icone-caneta-papel-11-03-.png"></div>
                                         <div class="drop_box" style="display:none;">
                                             <div class="wraped"> <span class="titdropbox">Atendimento e projetos personalizados!</span>
                                                 <span class="p_txt">Confie na líder!</span> </div>
@@ -2293,8 +2611,8 @@ var ILUMINIM = {
 
                     $('#corpo').after(`
                         <div class="banner-baixe-nosso-app-mobile">
-                            <a href="https://play.google.com/store/apps/details?id=br.com.moblite.app.www.iluminim.com.br&amp;hl=pt_BR" target="_blank">
-                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-app-mobile-11-03-2020.png">
+                            <a href="https://play.google.com/store/apps/details?id=br.com.moblite.app.www.iluminim.com.br&amp;hl=pt_BR" target="_blank" rel="noopener">
+                                <img alt="Baixe nosso APP" title="Baixe nosso APP" src="https://cdn.awsli.com.br/257/257163/arquivos/banner-app-mobile-11-03-2020.png">
                             </a>
                         </div>
                     `);
@@ -2305,9 +2623,9 @@ var ILUMINIM = {
 
                     $('#corpo').after(`
                         <div class="banner-youtube-mobile">
-                            <a href="https://bit.ly/iluminim-led" target="_blank">
-                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-youtube-mobile-11-03-2020.png">
-                                <div class="btn-banner-youtube"><span>Inscreve-se!</span></div>
+                            <a href="https://bit.ly/iluminim-led" target="_blank" rel="noopener">
+                                <img alt="Inscrever-se!" title="Inscrever-se!" src="https://cdn.awsli.com.br/257/257163/arquivos/banner-youtube-mobile-11-03-2020.png">
+                                <div class="btn-banner-youtube"><span>Inscrever-se!</span></div>
                             </a>
                         </div>
                     `);
@@ -2367,6 +2685,8 @@ var ILUMINIM = {
 
             iniciar(){ //INICIAR SCRIPTS DA PÁGINA;
 
+                this.Funcoes.bannerChamadaDesktop();
+
                 this.Funcoes.tagEconomizeListagemProduto();
                 this.Funcoes.tagLancamentoListagemProduto();
                 this.Funcoes.tagCampeaoDeVendasListagemProduto();
@@ -2389,6 +2709,8 @@ var ILUMINIM = {
                 this.Funcoes.bannersEmAba();
                 
                 if(ILUMINIM.Utils.screen.isMobile()){
+
+                    this.Funcoes.bannerChamadaMobile();
 
                     this.Funcoes.palavrasBuscadasTopoMobile();
                     this.Funcoes.gifTopoMobile();
@@ -2418,7 +2740,7 @@ var ILUMINIM = {
                     
                     $('.ordenar-listagem .dropdown-menu').append(`
                         <li>
-                            <a href="javascript:void(0);" rel="nofollow">
+                            <a href="#!" rel="nofollow">
                                 <i class="icon-star"></i>
                                 Lançamentos
                             </a>
@@ -2633,7 +2955,7 @@ var ILUMINIM = {
                     $('.menu.lateral .menu__nivel-tres li').each(function(){
                         
                         let alvo = $(this).children('a');
-                        let categoriaMenuLateral = alvo.attr('href').split('&')[0];
+                        let categoriaMenuLateral = alvo.attr('href')?.split('&')[0];
                         let categoriaAcessada = window.location.pathname;
 
                         if(categoriaMenuLateral == categoriaAcessada){
@@ -2694,7 +3016,7 @@ var ILUMINIM = {
                                         <a href="?sort=-preco" rel="nofollow"><i class="icon-dollar"></i>Maior preço</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" rel="nofollow"><i class="icon-star"></i>Lançamentos</a>
+                                        <a href="#!" rel="nofollow"><i class="icon-star"></i>Lançamentos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -2882,7 +3204,7 @@ var ILUMINIM = {
                     
                                 return `
                                     <li>
-                                        <a href="${item.link}" title="${item.palavra}" alt="${item.palavra}" ${item.blank ? 'target="_blank"' : ''}>
+                                        <a href="${item.link}" title="${item.palavra}" alt="${item.palavra}" ${item.blank ? 'target="_blank" rel="noopener"' : ''}>
                                             <label>${item.palavra}</label>
                                         </a>
                                     </li>
@@ -3002,7 +3324,7 @@ var ILUMINIM = {
                                         <div class="item-pesquisa-textos">
                                             <div class="nome-pesquisas">${item.termo}</div>
                                         </div>
-                                        <div class="item-pesquisa-imagem"><img src="${item.imagem}"></div>
+                                        <div class="item-pesquisa-imagem"><img alt="${item.termo}" title="${item.termo}" src="${item.imagem}"></div>
                                     </a>
                                 `;
 
@@ -3072,7 +3394,7 @@ var ILUMINIM = {
                         <div class="banner-cronometro-categoria">
                             <a href="${ link }" class="conteudo-banner-cronometro-categoria">
                                 <div class="banner-cronometro-informacoes">
-                                    <div class="cronometro-categoria-imagem-produto"><img src="${imagem}"></div>
+                                    <div class="cronometro-categoria-imagem-produto"><img alt="${nome_1} ${nome_2}" title="${nome_1} ${nome_2}" src="${imagem}"></div>
                                     <div class="cronometro-categoria-nome-produto">
                                         <span>${nome_1}</span>
                                         <span>${nome_2}</span>
@@ -3086,7 +3408,7 @@ var ILUMINIM = {
 
                                 <div class="conteudo-cronometro">
                                     <div class="conteudo-icone-cronometro">${ILUMINIM.Utils.icones.relogio}</div>
-                                    <div class="countdown-target"></div>
+                                    <ul class="countdown-target"></ul>
                                 </div>
                             </a>
                         </div>
@@ -3159,11 +3481,11 @@ var ILUMINIM = {
                     $('.produto .parcelas-produto > .accordion > li .accordion-heading img[src*="/formas-de-pagamento/payu-cards.png"]').replaceWith(`
                         <div class="bandeiras-pagamento">
                             <ul class="lista-bandeiras">
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.visa}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.mastercard}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.hipercard}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.amex}</a></li>
-                                <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.bandeira.elo}</a></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.visa}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.mastercard}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.hipercard}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.amex}</span></li>
+                                <li><span>${ILUMINIM.Utils.icones.bandeira.elo}</span></li>
                             </ul>
                         </div>
                     `);
@@ -3174,9 +3496,9 @@ var ILUMINIM = {
                         <div class="bandeiras-pagamento">
                             <ul class="lista-bandeiras">
                                 <li class="bandeira-boleto">
-                                    <a href="javascript:void(0);">
+                                    <div>
                                         <span>${ILUMINIM.Utils.icones.bandeira.boleto}</span>
-                                    </a>
+                                    </div>
                                     <span>Boleto Bancário</span>    
                                 </li>
                             </ul>
@@ -3223,7 +3545,7 @@ var ILUMINIM = {
                             <div class="icone-caminhao">${ILUMINIM.Utils.icones.caminhao}</div>
                             <div class="prazos-de-entrega-conteudo">
                                 <span class="texto-1"><b>Só hoje: </b>Frete Grátis expresso em pedidos acima de R$299,00</span>
-                                <span class="texto-2">Saiba os prazos de entrega e as formas de envio. <a href="javascript:void(0);" data-toggle="modal" data-target="#modal_detalhes_custo_frete">Detalhes</a></span>
+                                <span class="texto-2">Saiba os prazos de entrega e as formas de envio. <a href="#!" data-toggle="modal" data-target="#modal_detalhes_custo_frete">Detalhes</a></span>
                             </div>
                         </div>
                     `);
@@ -3345,6 +3667,18 @@ var ILUMINIM = {
 
                 },
 
+                adicionarSelosSeguranca(){
+
+                    $('.parcelas-produto .accordion').before(`
+                        <div class="selos-seguranca-produto">
+                            <a href="https://www.siteblindado.com/consumidor/selo-blindado/?language=pt&amp;hostname=www.iluminim.com.br" target="_blank" rel="noopener">
+                                <img src="https://cdn.awsli.com.br/257/257163/arquivos/selo-ssl_600x.png">
+                            </a>
+                        </div>
+                    `);
+
+                },
+
                 adicionarBlocoParcelas(){
 
                     if($('.parcelas-produto .parcela.sem-juros').length ==0){
@@ -3355,8 +3689,7 @@ var ILUMINIM = {
 
                         let quantidade_parcela = $(this).find('.accordion .parcela.sem-juros b.cor-principal').last().text().replace('x', '');
 
-                    
-                        $(this).find('.accordion').before(`
+                        $(this).find('.selos-seguranca-produto').after(`
                         <div class="parcelas-sem-juros" data-hash="#ModalInfoPagamento_${index}" data-target="#ModalInfoPagamento_${index}" data-toggle="modal">
                             <span class="conteudo-icone"><i class="icon-credit-card"></i></span>
                             <span>Pague em até</span>
@@ -3436,28 +3769,40 @@ var ILUMINIM = {
 
                 },
 
-                adicionarBlocoDescontoBoleto(){
+                adicionarBlocoDescontoBoletoEconomize(){
 
                     $('.parcelas-produto').each(function(){
 
                         let id = $(this).attr('data-produto-id');
+                        let acoesProduto = $(this).parents('.principal').find(`.acoes-produto[data-produto-id="${id}"]`);
     
-                        if($(this).parents('.principal').find(`.acoes-produto[data-produto-id="${id}"]`).find('.desconto-a-vista').length == 0){
+                        if(acoesProduto.find('.desconto-a-vista').length == 0){
                             return;
                         }
 
-                        $(this).find('.parcelas-sem-juros').before(`
+                        let valor_economizado = ILUMINIM.Utils.produto.valor_economize(acoesProduto);
+
+                        $(this).find('.selos-seguranca-produto').before(`
                             <div class="desconto-boleto">
-                                <div class="desconto-boleto-texto-negrito"><strong>Aproveite!</strong></div>
+                                <div class="desconto-boleto-icone"><span>${ILUMINIM.Utils.icones.bandeira.boleto}</span></div>
+                                <div class="desconto-boleto-texto-negrito"><strong>Só hoje!</strong></div>
                                 <div>Ganhe</div>
                                 <div class="desconto-boleto-texto-negrito texto-desconto"><strong>10% de desconto</strong></div>
                                 <div>no boleto</div>
                             </div>
+
+                            ${ valor_economizado !== 'NaN' ? `
+                                <div class="economize">
+                                    <span>Economize </span><b>R$ ${valor_economizado}</b></span>
+                                </div>
+                            ` : `` }
                         `);
 
                     });
 
                 },
+
+                
 
                 linhaAvaliacao(){
 
@@ -3585,7 +3930,7 @@ var ILUMINIM = {
                             <div class="conteudo-titulo-cronometro">Compre antes que acabe!</div>
                             <div class="conteudo-cronometro">
                                 <div class="conteudo-icone-cronometro">${ILUMINIM.Utils.icones.relogio}</div>
-                                <div class="countdown-target"></div>
+                                <ul class="countdown-target"></ul>
                             </div>    
                             <div class="conteudo-texto-cronometro">Promoções e condições válidas em ${new Date().toLocaleDateString()}</div>
                         </div>
@@ -3705,31 +4050,31 @@ var ILUMINIM = {
                                 
                                     <div class="item-beneficios-led beneficio-mais-economico">
                                         <div class="item-titulo-beneficio">Mais econômico</div>
-                                        <div class="item-imagem-beneficio"><img src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-mais-economico-04-03-21.png"></div>
+                                        <div class="item-imagem-beneficio"><img alt="Economiza até 80% de energia quando comparado as antigas lâmpadas." title="Economiza até 80% de energia quando comparado as antigas lâmpadas." src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-mais-economico-04-03-21.png"></div>
                                         <div class="item-texto-beneficio">Economiza até 80% de energia quando comparado as antigas lâmpadas.</div>
                                     </div>
 
                                     <div class="item-beneficios-led beneficio-dura-muito-mais">
                                         <div class="item-titulo-beneficio">Dura muito mais</div>
-                                        <div class="item-imagem-beneficio"><img src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-dura-muito-mais-04-03-21.png"></div>
+                                        <div class="item-imagem-beneficio"><img alt="Dura até 25x mais do que as lâmpadas incandescentes." title="Dura até 25x mais do que as lâmpadas incandescentes." src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-dura-muito-mais-04-03-21.png"></div>
                                         <div class="item-texto-beneficio">Dura até 25x mais do que as lâmpadas incandescentes.</div>
                                     </div>
 
                                     <div class="item-beneficios-led beneficio-sem-calor">
                                         <div class="item-titulo-beneficio">Sem calor</div>
-                                        <div class="item-imagem-beneficio"><img src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-sem-calor-04-03-21.png"></div>
+                                        <div class="item-imagem-beneficio"><img alt="Como não emite radiação infravermelho, o feixe luminoso do LED é livre de calor." title="Como não emite radiação infravermelho, o feixe luminoso do LED é livre de calor." src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-sem-calor-04-03-21.png"></div>
                                         <div class="item-texto-beneficio">Como não emite radiação infravermelho, o feixe luminoso do LED é livre de calor.</div>
                                     </div>
 
                                     <div class="item-beneficios-led beneficio-mais-seguro">
                                         <div class="item-titulo-beneficio">Mais seguro</div>
-                                        <div class="item-imagem-beneficio"><img src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-mais-seguro-04-03-21.png"></div>
+                                        <div class="item-imagem-beneficio"><img alt="Opera em baixa voltagem, o que representa menor perigo para o instalador." title="Opera em baixa voltagem, o que representa menor perigo para o instalador." src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-mais-seguro-04-03-21.png"></div>
                                         <div class="item-texto-beneficio">Opera em baixa voltagem, o que representa menor perigo para o instalador.</div>
                                     </div>
 
                                     <div class="item-beneficios-led beneficio-garantia">
                                         <div class="item-titulo-beneficio">Garantia</div>
-                                        <div class="item-imagem-beneficio"><img src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-garantia-04-03-21.png"></div>
+                                        <div class="item-imagem-beneficio"><img alt="Garantia de 14 meses, a maior do mercado." title="Garantia de 14 meses, a maior do mercado." src="https://cdn.awsli.com.br/257/257163/arquivos/beneficios-iluminim-garantia-04-03-21.png"></div>
                                         <div class="item-texto-beneficio">Garantia de 14 meses, a maior do mercado.</div>
                                     </div>
 
@@ -3791,7 +4136,7 @@ var ILUMINIM = {
                         
                         return `
                             <div class="item-cuidado-maximo-encomenda">
-                                <div class="item-icone"><img src="${imagem}"></div>
+                                <div class="item-icone"><img alt="${titulo}" title="${titulo}" src="${imagem}"></div>
                                 <div class="item-titulo">${titulo}</div>
                                 <div class="item-descricao">${descricao}</div>
                             </div>
@@ -4220,7 +4565,7 @@ var ILUMINIM = {
 
                             if(!html) return;
 
-                            $('#descricao').after(`
+                            $('#descricao .descricao-conteudo-accordion[data-referencia="Confira o que dizem nossos clientes"]').after(`
                                 <div class="duvidas-rapidas">
                                     <div class="duvidas-rapidas-titulo">
                                         <span>Dúvidas Rápidas</span>
@@ -4435,7 +4780,7 @@ var ILUMINIM = {
                                             <div class="led-explica-resumo-descricao">
                                                 ${ descricao_resumo }
                                             </div>
-                                            <a href="javascript:void(0);">+ Leia mais</a>
+                                            <a href="#!">+ Leia mais</a>
                                         </div>
                                     </div>
                                 `;
@@ -4456,7 +4801,7 @@ var ILUMINIM = {
                                 <div class="descricao-conteudo-accordion iluminim-led-explica">
                                     <div class="descricao-titulo iluminim-led-explica-titulo">
                                         <span>Iluminim LED Explica</span>
-                                        <a href="https://blog.iluminim.com.br/" target="_blank">+ Veja outros conteúdos</a>
+                                        <a href="https://blog.iluminim.com.br/" target="_blank" rel="noopener">+ Veja outros conteúdos</a>
                                     </div>
                                     <div class="descricao-conteudo iluminim-led-explica-conteudo">
                                         <div class="lista-iluminim-led-explica">
@@ -4486,12 +4831,12 @@ var ILUMINIM = {
                                 <div class="conteudo-doacoes">
                                     <span>Veja as causas que apoiamos</span>
                                     <ul class="lista-doacoes">
-                                        <li><a target="_blank" href="https://www.santacasasp.org.br/portal/site">Hospital Santa Casa de São Paulo</a></li>
-                                        <li><a target="_blank" href="https://www.cufa.org.br/">CUFA - Central Única das Favelas</a></li>
-                                        <li><a target="_blank" href="https://www.aldeiasinfantis.org.br/">Aldeias Infantis SOS Brasil</a></li>
-                                        <li><a target="_blank" href="https://polen.com.br/instituto-do-cancer-infantil">Instituto do Câncer Infantil</a></li>
-                                        <li><a target="_blank" href="http://www.neac.org.br/www.neac.org.br/index.html">NEAC - Núcleo Especial de Atenção à Criança</a></li>
-                                        <li><a target="_blank" href="https://polen.com.br/sos-amazonia">SOS Amazônia</a></li>
+                                        <li><a target="_blank" rel="noopener" href="https://www.santacasasp.org.br/portal/site">Hospital Santa Casa de São Paulo</a></li>
+                                        <li><a target="_blank" rel="noopener" href="https://www.cufa.org.br/">CUFA - Central Única das Favelas</a></li>
+                                        <li><a target="_blank" rel="noopener" href="https://www.aldeiasinfantis.org.br/">Aldeias Infantis SOS Brasil</a></li>
+                                        <li><a target="_blank" rel="noopener" href="https://polen.com.br/instituto-do-cancer-infantil">Instituto do Câncer Infantil</a></li>
+                                        <li><a target="_blank" rel="noopener" href="http://www.neac.org.br/www.neac.org.br/index.html">NEAC - Núcleo Especial de Atenção à Criança</a></li>
+                                        <li><a target="_blank" rel="noopener" href="https://polen.com.br/sos-amazonia">SOS Amazônia</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -4500,6 +4845,197 @@ var ILUMINIM = {
 
                 },
 
+                textoEnviandoNormalmente(){
+
+                    $('.produto .conteiner-imagem').append('<div class="enviando-normalmente">Enviando normalmente</div>');
+
+                },
+
+                precoValidoUltimasUnidades(){
+
+                    //<div class="conteudo-texto-cronometro">Promoções e condições válidas em ${new Date().toLocaleDateString()}</div>
+                    $('.produto .acoes-produto .comprar > a').after(`
+                        <div class="informacoes-produto">
+                            <div class="preco-valido-limitado">Preço válido para o dia ${new Date().toLocaleDateString()}</div>
+                            <div class="ultimas-unidades">últimas unidades</div>
+                        </div>
+                    `);
+
+                },
+
+                
+                adicionarTextOfertaRecomendadaModal(){
+
+                    $('.produto .breadcrumbs ul.lista-custom-breadcrumbs').append(`
+                        <li class="oferta-recomendada">
+                            <a href="#!" data-toggle="modal" data-target="#modal_oferta_recomendada" class="oferta-recomendada-conteudo">
+                                <div class="oferta-recomendada-conteudo-texto-oferta">Oferta</div>
+                                <div class="oferta-recomendada-conteudo-texto-recomendada">Recomendada!</div>
+                            </a>
+                        </li>
+                    `);
+
+
+                    $('body').append(`
+                        <div class="modal modal-personalizado fade" id="modal_oferta_recomendada">
+
+                            <div class="modal-dialog" role="document">
+
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Oferta Recomendada</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+
+                                        A Iluminim comercializa as melhores opções em LED.
+                                        </br>
+                                        </br>
+                                        A oferta que você está vendo em destaque é a combinação de alguns fatores:
+                                        </br>
+                                        </br>
+                                        <ul>
+                                            <li>valor do frete</li>
+                                            <li>prazo de entrega</li>
+                                            <li>o preço do produto</li>
+                                        </ul>
+                                        </br>
+                                        Isso acontece para que você tenha sempre a melhor opção de compra em um só lugar.
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Fechar</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    `);
+                },
+
+
+                compareOsModelos(){
+
+                    let config = [
+                        {
+                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/18-05-2020-icon-ps-tabela.png',
+                            comparacao: ['Vantagem', 'Garantia', 'Índice de Proteção', 'Fator Potência', 'Ângulo de Iluminação', 'Vida Útil', 'Voltagem'],
+                            aplicacoes: ['RSPM-100WBF', 'LJC-W100-6500K', 'R-100WBF', 'JFH-9100', 'RI-100WBF'],
+                            produtos: [
+                                {
+                                    nome: 'Refletor Holofote MicroLED Slim 100W Branco Frio',
+                                    imagem: 'https://cdn.awsli.com.br/600x450/257/257163/produto/26482900/bf74976e5e.jpg',
+                                    link: '/refletor-holofote-microled-100w-branco-frio',
+                                    comparacaoValues: ['Preço', '14 Meses', 'IP66', '> 0.80', '180°', '50.000 Horas', 'Bivolt'],
+                                },
+                                {
+                                    nome: 'Mini Refletor Holofote LED SMD 100W Branco Frio IP67',
+                                    imagem: 'https://cdn.awsli.com.br/600x450/257/257163/produto/41953990/f8e4a337ef.jpg',
+                                    link: '/mini-refletor-holofote-led-smd-100w-branco-frio-ip67',
+                                    comparacaoValues: ['Compacto', '14 Meses', 'IP76', '> 0.98', '120°', '50.000 Horas', 'Bivolt'],
+                                },
+                                {
+                                    nome: 'Refletor MicroLED Ultra Thin 100W Branco Frio Black Type',
+                                    imagem: 'https://cdn.awsli.com.br/600x450/257/257163/produto/24686039/53d0f425a8.jpg',
+                                    link: '/refletor-microled-ultra-thin-100w-branco-frio-preto',
+                                    comparacaoValues: ['Custo-Benefício', '24 Meses', 'IP65', '-', '120°', '25.000 Horas', 'Bivolt'],
+                                },
+                                {
+                                    nome: 'Refletor Holofote MicroLED 100W Branco Frio',
+                                    imagem: 'https://cdn.awsli.com.br/600x450/257/257163/produto/12762580/3796be6afc.jpg',
+                                    link: '/refletor-holofote-micro-led-100w-branco-frio',
+                                    comparacaoValues: ['Resistência', '36 Meses', 'IP66', '> 0.96', '180°', '50.000 Horas', 'Bivolt'],
+                                },
+                                {
+                                    nome: 'Refletor LED Industrial Modular 100W Branco Frio',
+                                    imagem: 'https://cdn.awsli.com.br/600x450/257/257163/produto/27207319/398b994efa.jpg',
+                                    link: '/refletor-led-industrial-modular-100w-branco-frio',
+                                    comparacaoValues: ['Desempenho', '36 Meses', 'IP68', '> 0.95', '120°', '50.000 Horas', 'Bivolt'],
+                                },
+                              
+                            ],
+                        }
+                    ];
+
+                    let itemFiltrado = config.filter(item=> { 
+                        
+                        let produtoFiltrado = item.aplicacoes.filter(sku=> ILUMINIM.Utils.produto.sku().includes(sku) );
+
+                        if(produtoFiltrado.length > 0){
+
+                            return item;
+
+                        }
+                    
+                    });
+
+                    if(itemFiltrado.lemgth == 0){
+                        return;
+                    }
+
+                    let { imagem, comparacao, produtos } = itemFiltrado[0];
+
+                    let htmlItems = produtos.map(item=> {
+
+                        let comparacaoValuesHTML = item.comparacaoValues.map(value=> `<div class="caracteristica-item">${value}</div>`).join('');
+
+                        return `
+                            <div class="produto-similar ps-produto">
+
+                                <div class="caracteristica-item-img-produto">
+                                    <a href="${item.link}">
+                                        <img src="${item.imagem}" alt="${item.nome}" title="${item.nome}"> 
+                                    </a>
+                                
+                                    <div class="nome-produto">
+                                        <a href="${item.link}">${item.nome}</a>
+                                    </div>
+                                </div>
+                                
+                                ${comparacaoValuesHTML}
+
+                            </div>
+                        `;
+
+                    }).join('');
+
+                    let comparacaoHTML = comparacao.map(value=> `<div class="caracteristica-item">${value}</div>`).join('');
+
+                    $('#descricao .descricao-conteudo-accordion.doacoes-realizadas').after(`
+                        <div class="descricao-conteudo-accordion compare-os-modelos">
+                            <div class="descricao-titulo descricao-titulo-compare-os-modelos">
+                                <span>Compare os Modelos</span>
+                            </div>
+                            <div class="descricao-conteudo">
+
+                                    <div class="produtos-similares visible-desktop">
+                                        <div class="acopla-produtos">
+                                            <div class="produto-similar ps_tabela">
+
+                                                <div class="caracteristica-item-img-produto">
+                                                    <img src="${imagem}">
+                                                </div>
+                                            
+                                                ${comparacaoHTML}
+
+                                            </div>
+
+                                            ${htmlItems}
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    `);
+
+                },
 
             },
 
@@ -4513,8 +5049,14 @@ var ILUMINIM = {
                 this.Funcoes.adicionarBlocoPrazosDeEntrega();
                 this.Funcoes.adicionarPorcentagemDesconto();
                 this.Funcoes.adicionarListaDesejos();
+                
+                
+                
+                this.Funcoes.adicionarSelosSeguranca();
                 this.Funcoes.adicionarBlocoParcelas();
-                this.Funcoes.adicionarBlocoDescontoBoleto();
+                this.Funcoes.adicionarBlocoDescontoBoletoEconomize();
+                
+
                 this.Funcoes.adicionarBlocoDuvidasTrustvox();
                 this.Funcoes.visitanteFazerLoginCadastrar();
                 this.Funcoes.mensagemAlerta();
@@ -4522,16 +5064,24 @@ var ILUMINIM = {
                 this.Funcoes.adaptacaoVideoNativo();
                 this.Funcoes.linhaAvaliacao();
                 
-                
-                /*this.Funcoes.ajustarDescricao();
+                this.Funcoes.ajustarDescricao();
                 this.Funcoes.adicionarBeneficiosLED();
                 this.Funcoes.adicionarTarjaFreteExpressoDescricao();
                 this.Funcoes.cuidadoMaximoComSuaEncomenda();
-                this.Funcoes.duvidasRapidas();
                 this.Funcoes.doacoesRealizadas();
-                this.Funcoes.iluminimLEDExplica();*/
+                this.Funcoes.compareOsModelos();
+                this.Funcoes.iluminimLEDExplica();
+                this.Funcoes.duvidasRapidas();
+                
+
+                this.Funcoes.textoEnviandoNormalmente();
+                this.Funcoes.precoValidoUltimasUnidades();
 
                 ILUMINIM.Paginas.TodasAsPaginas.Funcoes.adicionaTextoModalCompraSegura();
+
+                this.Funcoes.adicionarTextOfertaRecomendadaModal();
+
+                
 
                 if(ILUMINIM.Utils.screen.isMobile()){
 
@@ -4793,11 +5343,11 @@ var ILUMINIM = {
 
                     $('.finalizar-compra .acao-editar .selo-ssl').removeClass('hidden-phone').html(`
                         <ul class="lista-selos-de-seguranca">
-                            <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
-                            <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
-                            <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
-                            <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
-                            <li><a href="javascript:void(0);">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
+                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
+                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
+                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
+                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
+                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
                         </ul>
                     `);
 
@@ -4871,6 +5421,7 @@ var ILUMINIM = {
             
             this.Utils.onClickBackdrop();
 
+            $('html').addClass('iluminim-loaded');
 
         });
   

@@ -1,3 +1,998 @@
+
+/* FONT FACE */
+@media screen {
+
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhmIqOjjg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhvIqOjjg.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhnIqOjjg.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhoIqOjjg.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhkIqOjjg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhlIqOjjg.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKWiUNhrIqM.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hmIqOjjg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hvIqOjjg.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hnIqOjjg.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hoIqOjjg.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hkIqOjjg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hlIqOjjg.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/memnYaGs126MiZpBA-UFUKW-U9hrIqM.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OVuhpOqc.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXuhpOqc.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUehpOqc.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXehpOqc.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OXOhpOqc.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOX-hpOqc.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOVuhpOqc.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXuhpOqc.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXehpOqc.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOXOhpOqc.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+
+
+
+
+
+
+
+
+
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/oswald/v36/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+
+
+
+
+
+
+
+
+
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+    /* cyrillic-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfCRc4EsA.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+    }
+    /* cyrillic */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfABc4EsA.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+    }
+    /* greek-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfCBc4EsA.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+    }
+    /* greek */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfBxc4EsA.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+    }
+    /* vietnamese */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfCxc4EsA.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfChc4EsA.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+    }
+
+
+
+
+
+
+    /* vietnamese */
+    @font-face {
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/francoisone/v15/_Xmr-H4zszafZw3A-KPSZut9zgiRi_Y.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+    }
+    /* latin-ext */
+    @font-face {
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/francoisone/v15/_Xmr-H4zszafZw3A-KPSZut9zwiRi_Y.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        font-display: swap;
+    }
+    /* latin */
+    @font-face {
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/francoisone/v15/_Xmr-H4zszafZw3A-KPSZut9wQiR.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+  }
+
+
+}
+
 :root {
     --cor-principal: #a2373a; --cor-secundaria: #d00b11; --cor-principal-hover: #d00b11; }
 
@@ -45,6 +1040,17 @@
     
         to {
             visibility: 1;
+        }
+    }
+
+
+    @keyframes bounce {
+        from {
+            transform: scale(1.2)
+        }
+
+        to {
+            transform: scale(1)
         }
     }
 
@@ -489,6 +1495,20 @@
             margin-bottom: 0;
         }
     }
+}
+
+/*CSS PAGINA EXTRA*/
+@media screen {
+
+    .pagina-pagina .caixa-sombreada {
+        padding: 0;
+        box-shadow: none !important;
+    }
+    
+    .pagina-pagina .caixa-sombreada h1.titulo {
+        margin-top: 0;
+    }
+
 }
 
 /*CSS PALAVRAS MAIS BUSCADAS */
@@ -1174,6 +2194,13 @@
         padding-top: 22px;
     }
 
+    .produto .acoes-produto .comprar .informacoes-produto {
+        text-align: center;
+        width: 240px;
+        float: right;
+        margin: 5px 0 0 0;
+    }
+
     .produto .acoes-produto .comprar .disponibilidade-produto {
         display: none;
     }
@@ -1252,11 +2279,11 @@
         margin: 0;
     }
 
-    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras a {
+    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras > li > * {
         display: flex;
     }
 
-    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras a svg {
+    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras > li > * svg {
         width: 50px;
         height: 32px;
     }
@@ -1266,14 +2293,14 @@
         align-items: center;
     }
 
-    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras li.bandeira-boleto a span {
+    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras li.bandeira-boleto > * span {
         width: 49px;
         height: 31px;
         overflow: hidden;
         border-radius: 3px;
     }
 
-    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras li.bandeira-boleto a svg {
+    .produto .parcelas-produto > .accordion > li .accordion-heading .lista-bandeiras li.bandeira-boleto > * svg {
         width: 60px;
         height: 51px;
         position: relative;
@@ -1362,6 +2389,10 @@
         font-size: 14px;
         line-height: 16px;
         margin-top: 20px;
+    }
+
+    .produto .acoes-flutuante .informacoes-produto {
+        float: none !important;
     }
 
     .produto .acoes-produto .preco-produto .preco-a-partir span {
@@ -1497,6 +2528,11 @@
         margin-top: 40px;
     }
 
+    
+    .pagina-produto .listagem.aproveite-tambem .info-produto {
+        text-align: center;
+    }
+
     .pagina-produto .listagem.aproveite-tambem h4 {
         font-family: 'Francois One', sans-serif;
         font-weight: 400;
@@ -1514,11 +2550,11 @@
         color: var(--cor-secundaria);
     }
 
-    .listagem.aproveite-tambem .carousel-target > li.span3:last-child:after {
+    .listagem.aproveite-tambem .carousel-target > .span3:last-child:after {
         display: none;
     }
 
-    .listagem.aproveite-tambem .carousel-target > li.span3:after {
+    .listagem.aproveite-tambem .carousel-target > .span3:after {
         content: "";
         height: 100%;
         width: 1px;
@@ -1535,17 +2571,17 @@
         justify-content: space-between;
     }
 
-    .listagem.aproveite-tambem .carousel-target > li.span3 {
+    .listagem.aproveite-tambem .carousel-target > .span3 {
         width: 100%;
         margin: 0;
         position: relative;
     }
 
-    .listagem.aproveite-tambem .carousel-target > li.span3 .listagem-item {
+    .listagem.aproveite-tambem .carousel-target > .span3 .listagem-item {
         padding: 25px 20px !important;
     }
 
-    .listagem.aproveite-tambem .carousel-target > li.span3 .listagem-item a.nome-produto {
+    .listagem.aproveite-tambem .carousel-target > .span3 .listagem-item a.nome-produto {
         padding: 0;
     }
 
@@ -1571,6 +2607,18 @@
 
     .produto .conteiner-imagem {
         position: relative;
+    }
+
+    .produto .conteiner-imagem .enviando-normalmente {
+        background: #39b54a;
+        color: #fff;
+        padding: 3px 12px;
+        display: table;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        z-index: 999;
     }
 
     .produto .principal .atributos > * {
@@ -1627,8 +2675,44 @@
         margin-right: 3px;
     }
 
+
+    .produto .produto-compartilhar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .produto .produto-compartilhar .midia-produto {
+        height: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 1px solid var(--cor-secundaria);
+        margin-left: 10px;
+        border-radius: 4px;
+        padding: 0 7px;
+        color: var(--cor-secundaria);
+        background: #e4e4e4;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .produto .produto-compartilhar .midia-produto i {
+        font-size: 13px;
+        margin-right: 4px;
+        position: relative;
+    }
+    
+    .produto .produto-compartilhar .midia-produto:hover {
+        background: #f6f6f6 !important;
+        border-color: #ff0000 !important;
+        color: #ff0000 !important;
+    }
+    
+
+
     .parcelas-produto .parcelas-sem-juros {
-        background-color: #34af6f;
+        background-color: #39b54a;
         border-radius: 5px;
         padding: 14px 14px;
         margin: 0px 0px 15px 0;
@@ -1662,6 +2746,27 @@
         color: #000;
         margin: 0 0 15px 0;
     }
+
+    .desconto-boleto .desconto-boleto-icone span {
+        display: block;
+        width: 35px;
+        overflow: hidden;
+        height: 22px;
+        border-radius: 3px;
+        margin-right: 6px;
+    }
+    
+    .desconto-boleto .desconto-boleto-icone span svg {
+        position: relative;
+        left: -6px;
+        top: -9px;
+        width: 44px;
+        height: 39px;
+    }
+    
+    .desconto-boleto .desconto-boleto-icone span svg path {
+        fill: var(--cor-secundaria)
+    }
     
     .desconto-boleto .desconto-boleto-texto-negrito {
         margin: 0 4px 0 0;
@@ -1672,6 +2777,18 @@
         margin-left: 4px;
     }
 
+    .produto .principal .economize {
+        font-size: 16px;
+        line-height: 15px;
+        margin: 0 0 17px 0;
+        color: #39b54a;
+        letter-spacing: -0.5px;
+    }
+
+    .produto .selos-seguranca-produto {
+        margin: 0 0 15px 0;
+    }
+    
 
     .duvidas-trustvox a {
         display: flex;
@@ -1776,7 +2893,7 @@
 
     #descricao .descricao-conteudo {
         display: none;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
 
     .descrica-tarja {
@@ -1913,7 +3030,7 @@
         
         .alerta-frete-gratis-iluminim-custom.informacao-compras {
             position: fixed;
-            z-index: 9999;
+            z-index: 999999999;
             left: calc(50% - 326.5px);
             bottom: 45px;
             opacity: 0;
@@ -2072,6 +3189,105 @@
 
 }
 
+
+/* CSS COMPARE OS MODELOS */
+@media screen {
+
+    .produtos-similares .acopla-produtos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar {
+        text-decoration: none !important;
+        transition: all 0.3s;
+        display: block;
+        width: 100%;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar.ps-produto {
+        margin-left: 16px;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar .caracteristica-item-img-produto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 170px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar * {
+        font-size: 10.5px;
+        text-transform: uppercase;
+        color: #444;
+        text-align: center;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar .nome-produto {
+        text-align: center;
+        padding: 0 18px;
+        margin-top: 10px;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar .caracteristica-item {
+        padding: 9px 14px;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar .caracteristica-item:nth-child(even) {
+        background: #e9e9e9;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar.ps_tabela .caracteristica-item {
+        text-align: left;
+        color: #656565;
+        font-weight: 700;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar .caracteristica-item-price {
+        background: #a23233;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: -.3px;
+        padding: 15px 15px;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar .caracteristica-item-price small {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        position: relative;
+        top: -3px;
+    }
+
+    .produtos-similares {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .produtos-similares .acopla-produtos .produto-similar.ps_tabela .caracteristica-item-price {
+        text-align: left;
+    }
+
+    .produtos-similares {
+        margin: 0;
+    }
+    
+    .produtos-similares .acopla-produtos .produto-similar .caracteristica-item-img-produto > a:first-child {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .produtos-similares .acopla-produtos .produto-similar .caracteristica-item-img-produto > a:first-child img {
+        max-height: 100%;
+    }
+
+}
+
 /* CSS DÚVIDAS RÁPIDAS */
 @media screen {
 
@@ -2182,7 +3398,7 @@
         justify-content: space-between;
     }
     
-    .iluminim-led-explica .iluminim-led-explica-conteudo {
+    .iluminim-led-explica .lista-iluminim-led-explica {
         padding: 30px 40px;
         border: 1px solid #e9e9e9;
     }
@@ -3041,6 +4257,17 @@
 /* CSS MENU SUPERIOR */
 @media screen {
     @media (min-width: 767px) {
+        
+        div#menu a.menu__item--title-custom.menu__item--por-base,
+        div#menu .menu__nivel-quatro.menu__nivel-quatro--por-base,
+        .menu__nivel-dois.menu__nivel-dois--todos-os-departamentos li.menu__item.menu_item--festa-led,
+        .menu__nivel-dois.menu__nivel-dois--todos-os-departamentos li.menu__item.menu_item--solar-led,
+        .menu__nivel-dois.menu__nivel-dois--todos-os-departamentos li.menu__item.menu_item--home-decor,
+        .menu__nivel-dois.menu__nivel-dois--todos-os-departamentos li.menu__item.menu_item--iluminacao-ind-led,
+        .menu__nivel-dois.menu__nivel-dois--todos-os-departamentos li.menu__item.menu_item--arandelas-led {
+            display: none;
+        }
+
         #cabecalho .menu.superior {
             display: none !important;
         }
@@ -3104,9 +4331,8 @@
             visibility: hidden;
             pointer-events: none;
             opacity: 0;
-            border-left: 1px solid #ddd;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
+            display: flex;
+            box-shadow: 0px 9px 12px 0px rgb(0 0 0 / 20%);
         }
 
         div#menu > .conteiner {
@@ -3148,6 +4374,7 @@
             font-weight: 600;
             transition: all 0.3s;
             color: #fff;
+            width: 224px;
         }
 
         div#menu .menu__nivel-um > ul > li > .menu__nivel-dois > ul > li:hover > a {
@@ -3235,9 +4462,9 @@
             box-sizing: border-box;
         }
 
-        div#menu .menu__nivel-dois > ul > li:not(.menu__item--custom) > .menu__nivel-tres > li:first-child {
+        /*div#menu .menu__nivel-dois > ul > li:not(.menu__item--custom) > .menu__nivel-tres > li:first-child {
             padding-top: 5px;
-        }
+        }*/
 
         div#menu .menu__nivel-tres a, div#menu .menu__nivel-dois > ul > li > a {
             padding: 4px 15px;
@@ -3259,35 +4486,39 @@
             pointer-events: unset;
         }
 
-        div#menu .menu__nivel-dois > ul > li.menu__item--custom > .menu__nivel-tres {
+        div#menu .menu__nivel-dois > ul > li.menu__item > .menu__nivel-tres {
             width: auto;
             display: flex;
         }
 
-        div#menu .menu__nivel-dois > ul > li.menu__item--custom > .menu__nivel-tres .menu__nivel-quatro {
+        div#menu .menu__nivel-dois > ul > li.menu__item > .menu__nivel-tres .menu__nivel-quatro {
             width: 260px;
         }
 
-        div#menu .menu__nivel-dois > ul > li.menu__item--custom > .menu__nivel-tres > li:not(:first-child) {
+        div#menu .menu__nivel-dois > ul > li.menu__item > .menu__nivel-tres > li:not(:first-child) {
             border-left: 1px solid #ddd;
         }
 
-        div#menu .menu__nivel-dois > ul > li.menu__item--custom > .menu__nivel-tres > li > a {
+        div#menu .menu__nivel-dois > ul > li.menu__item > .menu__nivel-tres > li > a {
             border-bottom: 1px solid #ddd;
             width: 100%;
             padding-bottom: 16px;
             margin-bottom: 10px;
             padding-right: 0;
             padding-left: 0;
-            padding-top: 0;
+            padding-top: 10px;
+        }
+
+        div#menu a.menu__item--title-custom {
+            margin-top: 14px;
         }
 
         div#menu .menu__nivel-dois > ul > li > a {
             min-width: 200px;
         }
 
-        div#menu .menu__nivel-dois > ul > li.menu__item--custom > .menu__nivel-tres > li {
-            padding: 10px 15px 5px 15px;
+        div#menu .menu__nivel-dois > ul > li.menu__item > .menu__nivel-tres > li {
+            padding: 0px 15px 5px 15px;
             overflow: auto;
             margin: 10px 0 10px 0;
         }
@@ -3327,17 +4558,17 @@
 
 
         #menu .menu__banner img {
-            max-width: 150px;
+            /*max-width: 150px;*/
         }
 
         #menu .menu__banner a {
             display: block;
             text-align: center;
-            padding: 15px 0 25px 0;
+            padding: 0;
         }
 
         #menu .menu__banner {
-            margin-top: 5px;
+            margin-top: 0px;
         }
 
 
@@ -3348,8 +4579,8 @@
         #menu .menu__sub-banner a img {
             width: auto !important;
             max-width: initial;
+            max-height: 480px;
         }
-        
 
     }
 }
@@ -3375,6 +4606,10 @@
 
     .menu.lateral .menu__nivel-dois li.menu__item {
         padding: 0;
+    }
+
+    .menu.lateral .menu__sub-banner {
+        display: none !important;
     }
 
     .menu.lateral .menu__nivel-dois > ul > li.menu__item > a:hover {
@@ -3555,6 +4790,17 @@
         text-align: center;
         padding: 10px 0 15px 0;
     }
+
+    .bloco-triplo-personalizado .bloco-personalizado.bloco-produtos-peronalizados div#smartfront__app+.lista-produtos-bloco-personalizado {
+        display: none;
+    }
+
+    .bloco-triplo-personalizado .bloco-personalizado.bloco-produtos-peronalizados .lista-produtos-bloco-personalizado {
+        height: calc(100% - 111px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     .bloco-triplo-personalizado .bloco-personalizado.bloco-produtos-peronalizados .countdown-target {
         padding: 0 70px;
@@ -3584,11 +4830,12 @@
         margin-bottom: 27px;
     }
     
-    .bloco-triplo-personalizado .bloco-personalizado.bloco-3 {
+    .bloco-triplo-personalizado .bloco-personalizado.bloco-3,
+    .bloco-triplo-personalizado .bloco-personalizado.bloco-1 {
         width: 373px;
     }
     
-    .bloco-triplo-personalizado .bloco-personalizado .lista-banners-bloco-personalizado.carousel-target {
+    .bloco-triplo-personalizado .bloco-personalizado .carousel-target {
         border: none;
     }
     
@@ -3637,7 +4884,7 @@
         touch-action: manipulation;
     }
 
-    ul.carousel-target {
+    .carousel-target {
         border-left: 1px solid #ddd;
         border-right: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
@@ -3821,7 +5068,7 @@
     }
 
 
-    .progress-countdown {
+    /*.progress-countdown {
         bottom: 81px;
         height: 30px;
         width: 100%;
@@ -3841,7 +5088,7 @@
         transition: all 0.3s;
         display: block;
         height: 100%;
-    }
+    }*/
 
 }
 
@@ -3901,7 +5148,7 @@
         border-color: var(--cor-principal) !important;
     }
 
-    .pagina-inicial div#listagemProdutos ul[data-produtos-linha] li.span3 {
+    .pagina-inicial div#listagemProdutos [data-produtos-linha] .span3 {
         width: 100%;
     }
 
@@ -3965,7 +5212,7 @@
         margin-left: 5px;
     }
 
-    div#listagemProdutos ul[data-produtos-linha] li.span3:before {
+    div#listagemProdutos [data-produtos-linha] .span3:before {
         content: "";
         height: 100%;
         width: 1px;
@@ -4049,11 +5296,11 @@
     
 
 
-    div#listagemProdutos ul[data-produtos-linha] .owl-item.active li.span3:before {
+    div#listagemProdutos [data-produtos-linha] .owl-item.active .span3:before {
         opacity: 1;
     }
 
-    div#listagemProdutos ul[data-produtos-linha].owl-grab .owl-item li.span3:before {
+    div#listagemProdutos [data-produtos-linha].owl-grab .owl-item .span3:before {
         opacity: 1 !important;
     }
 
@@ -4061,7 +5308,7 @@
         display: none !important;
     }
 
-    .pagina-categoria div#listagemProdutos ul[data-produtos-linha] li.span3, .pagina-busca div#listagemProdutos ul[data-produtos-linha] li.span3 {
+    .pagina-categoria div#listagemProdutos [data-produtos-linha] .span3, .pagina-busca div#listagemProdutos [data-produtos-linha] .span3 {
         margin: 0;
         border: none !important;
         width: 100%;
@@ -4173,6 +5420,58 @@
         margin: 10px 0 0 0;
     }
 
+
+}
+
+/* CSS MIDIAS LISTAGEM */
+@media screen {
+
+    .listagem-item .midia-listagem {
+        padding: 0;
+        border-radius: 50px !important;
+        border: 2px solid var(--cor-secundaria) !important;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cor-secundaria);
+        background: #e4e4e4;
+        position: absolute;
+        top: 43px;
+        right: 12px;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        z-index: 999;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .listagem-item .midia-listagem .icone-midia {
+        font-size: 14px;
+    }
+    
+    .listagem-item .midia-listagem .icone-midia i {
+        position: relative;
+        left: 1px;
+    }
+
+    .listagem-item .midia-listagem .icone-midia i.icon-volume-up {
+        top: 1px;
+        font-size: 16px;
+    }
+    
+    .listagem-item .midia-listagem:hover {
+        background: #f6f6f6 !important;
+        border-color: #ff0000 !important;
+        color: #ff0000 !important;
+    }
+    
+    .listagem-item:hover .midia-listagem {
+        opacity: 1;
+        visibility: visible;
+    }
 
 }
 
@@ -5369,7 +6668,7 @@
         align-items: center;
     }
 
-    #rodape .pagamento-selos .lista-bandeiras a {
+    #rodape .pagamento-selos .lista-bandeiras li > * {
         display: flex;
     }
 
@@ -5397,7 +6696,7 @@
         margin-bottom: 5px !important;
     }
 
-    #rodape .pagamento-selos .pagamento .conteudo-rodape ul.lista-bandeiras.bandeira-boleto li > a {
+    #rodape .pagamento-selos .pagamento .conteudo-rodape ul.lista-bandeiras.bandeira-boleto li > * {
         width: 40px;
         height: 25px;
         overflow: hidden;
@@ -5405,7 +6704,7 @@
         box-sizing: border-box;
     }
 
-    #rodape .pagamento-selos .pagamento .conteudo-rodape ul.lista-bandeiras.bandeira-boleto li > a svg {
+    #rodape .pagamento-selos .pagamento .conteudo-rodape ul.lista-bandeiras.bandeira-boleto li > * svg {
         width: 45px !important;
         height: 40px !important;
         position: relative;
@@ -5649,6 +6948,10 @@
     div#tarja-informacoes {
         margin: 0 0 20px 0;
     }
+
+    div#tarja-informacoes .carousel-target {
+        border: none !important;
+    }
     
     div#tarja-informacoes .bloco-tarja .parte-superior .imagem-tarja {
         width: 45px;
@@ -5768,6 +7071,7 @@
     .breadcrumbs ul li {
         line-height: initial;
         border: none;
+        white-space: nowrap;
     }
 
     .breadcrumbs ul li > * {
@@ -5802,6 +7106,7 @@
         padding: 5px 0;
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
     }
 
     .breadcrumbs ul.lista-custom-breadcrumbs li i {
@@ -5822,6 +7127,34 @@
         margin-bottom: 15px;
     }
 
+    .pagina-produto .breadcrumbs ul {
+        overflow-x: auto;
+        width: 66%;
+        overflow-y: hidden;
+    }
+    
+    .pagina-produto .breadcrumbs ul::-webkit-scrollbar {
+        height: 8px;
+    }
+    
+    .pagina-produto .breadcrumbs ul::-webkit-scrollbar-thumb {
+        height: 4px;
+        border-top: 3px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        background-color: rgba(0, 0, 0, 0.15);
+    
+    }
+    
+    .pagina-produto .breadcrumbs ul::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    
+    .pagina-produto .breadcrumbs ul::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
 
     @media (min-width: 767px){
         .pagina-categoria .breadcrumbs, .pagina-busca .breadcrumbs {
@@ -5829,6 +7162,65 @@
         }
     }
     
+}
+
+/* CSS OFERTA RECOMENDADA TAG PRODUTO */
+@media screen {
+
+    .produto .breadcrumbs .oferta-recomendada .oferta-recomendada-conteudo {
+        background: #d00b11;
+        display: flex;
+        justify-content: center;
+        padding: 6px 0 6px 8px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        position: relative;
+    }
+    
+    .produto .breadcrumbs .lista-custom-breadcrumbs {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 190px;
+    }
+    
+    .produto .breadcrumbs .lista-custom-breadcrumbs li {
+        float: none;
+    }
+    
+    .produto .breadcrumbs .oferta-recomendada .oferta-recomendada-conteudo > * {
+        padding: 0;
+        font-size: 12px;
+        letter-spacing: -0.3px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .produto .breadcrumbs .oferta-recomendada .oferta-recomendada-conteudo .oferta-recomendada-conteudo-texto-oferta {
+        margin-right: 5px;
+    }
+    
+    .produto .breadcrumbs .lista-custom-breadcrumbs li.oferta-recomendada {
+        width: 100%;
+        margin-top: 9px;
+    }
+    
+    .produto .breadcrumbs .oferta-recomendada .oferta-recomendada-conteudo .oferta-recomendada-conteudo-texto-oferta {
+        color: #ffed03;
+    }
+    
+    .produto .oferta-recomendada-conteudo:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
 }
 
 /* SECAO BANNERS */
@@ -5841,6 +7233,7 @@
     
     .secao-banners .carousel-target .owl-nav .owl-next i, .secao-banners .carousel-target .owl-nav .owl-prev i {
         background: none;
+        box-shadow: none !important;
     }
     
     .secao-banners .carousel-target .owl-nav > *:not(.disabled):hover i {
@@ -6040,8 +7433,8 @@
     
     .banners-personalizados .banner-personalizado-cronometro a .countdown-target {
         position: absolute;
-        bottom: -91px;
-        left: 130px;
+        bottom: -101px;
+        left: 105px;
     }
     
     .banners-personalizados .banner-personalizado-cronometro a .countdown-target {
@@ -6147,8 +7540,7 @@
     }
     
     .banners-com-desconto .lista-banners-com-desconto li.banner-desconto .banner-desconto-imagem {
-        max-width: 130px;
-        width: 180px;
+        min-width: 150px;
         text-align: right;
     }
     
@@ -6310,6 +7702,10 @@
         margin: 15px 0 25px 0;
     }
 
+    .reviews-home .reviews-home--list-reviews {
+        border: none !important;
+    }
+
     .reviews-home .list-item--name {
         font-size: 16px;
         font-weight: 700;
@@ -6325,6 +7721,11 @@
         align-items: center;
         justify-content: space-between;
         margin: 0px 0 8px 0;
+    }
+
+    .reviews-home--list-reviews .list-reviews--list-item .list-item i.icon-star {
+        font-size: 18px;
+        color: #ffc240;
     }
     
     
@@ -6456,7 +7857,7 @@
     }
 
     .modal-backdrop {
-        z-index: 88888;
+        z-index: 99999999;
     }
     
 
@@ -6492,7 +7893,7 @@
         left: 0;
         border: none !important;
         border-radius: 0;
-        height: 100%;
+        height: 100% !important;
         overflow: auto;
         background: none;
         padding-top: 30px;
@@ -6500,8 +7901,9 @@
         visibility: hidden;
         box-sizing: border-box;
         padding: 0 !important;
-        transition: all 0.3s linear !important;
-        display: block!important
+        /*transition: all 0.3s linear !important;*/
+        display: block!important;
+        z-index: 999999999;
     }
     
     .modal.modal-personalizado .modal-dialog {
@@ -6563,6 +7965,15 @@
         letter-spacing: -1px;
     }
 
+    .modal_midia_listagem .modal-title {
+        font-size: 16px !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: 20px;
+    }
+
     div#modal_compra_segura .modal-dialog {
         width: 770px !important;
     }
@@ -6571,6 +7982,14 @@
         font-size: 19px;
         margin: 0 0 15px 0;
         font-weight: 600;
+    }
+
+    div#modal_oferta_recomendada .modal-body ul {
+        margin-bottom: 0;
+    }
+
+    div#modal_oferta_recomendada .modal-body ul li {
+        list-style-type: disc;
     }
 
     .ModalInfoPagamento > .modal-dialog {
@@ -6840,7 +8259,7 @@
         }
 
         div#topo-principal > .iluminim-backdrop {
-            z-index: 999;
+            z-index: 9999;
         }
 
         .busca-focada div#topo-principal > .iluminim-backdrop {
@@ -6869,6 +8288,7 @@
     div#topo-principal .gif-topo a {
         display: block;
         text-align: center;
+        height: 45px;
     }
 
     #cabecalho .fechar-dropddown-usuario {
@@ -7050,7 +8470,8 @@
             z-index: 99999;
             position: relative;
             transition: all 0.5s;
-            filter: brightness(1) !important
+            filter: brightness(1) !important;
+            color: #000;
         }
 
         div#cabecalho .busca input#auto-complete {
@@ -7058,7 +8479,7 @@
         }
 
         div#cabecalho .busca input#auto-complete::placeholder {
-            color: #000;
+            color: #444;
             letter-spacing: -0.3px;
         }
 
@@ -7198,7 +8619,7 @@
         }
 
         #cabecalho .inferior .favoritos svg {
-            width: 34px;
+            width: 26px;
             color: #000;
             transition: all 0.3s;
             position: relative;
@@ -7210,7 +8631,7 @@
             cursor: pointer;
         }
 
-        #cabecalho .inferior .favoritos .conteudo-favoritos-icone:hover svg {
+        #cabecalho .inferior .favoritos:hover svg {
             color: var(--cor-principal-hover);
         }
 
@@ -7257,6 +8678,12 @@
             padding-top: 1px;
             right: -13px;
             display: block !important;
+            -webkit-animation-name: bounce;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: cubic-bezier( .5, 0.05, 1, .5);
+            -webkit-animation-iteration-count: infinite;
+            box-shadow: 5px -1px 0px #ffffff;
         }
 
         div#cabecalho .conteudo-topo.span9 > .inferior {
@@ -7353,6 +8780,26 @@
             visibility: visible;
         }
 
+        #cabecalho .favoritos a {
+            position: relative;
+            display: block;
+        }
+
+        #cabecalho .favoritos {
+            position: relative;
+        }
+        
+        #cabecalho .favoritos .dropdown-conteudo-superior {
+            right: 0 !important;
+            left: unset !important;
+        }
+        
+        #cabecalho .favoritos:hover .dropdown-lista-desejos {
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: unset;
+        }
+        
         .carrinho-interno-ajax .carrinho-interno .carrinho-rodape a.botao.principal {
             display: block;
             float: none;
@@ -7510,7 +8957,7 @@
         div#cabecalho .dropdown-conteudo-superior .conteudo-dropdown.dropdown-historico div#smartfront__app {
             max-width: 896px !important;
             width: 100%;
-            padding: 10px 20px;
+            padding: 10px 20px !important;
         }
         
         div#cabecalho .dropdown-conteudo-superior .conteudo-dropdown {
@@ -7536,6 +8983,9 @@
             pointer-events: none;
             opacity: 0;
             visibility: hidden;
+        }
+
+        div#cabecalho .conteudo-superior-item.item-superior-historico .dropdown-conteudo-superior {
             width: 937px;
         }
 
@@ -7553,6 +9003,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0px 2px 8px -1px rgb(0 0 0 / 36%);
+            font-size: 13px;
         }
 
         div#cabecalho .dropdown-conteudo-superior .dropdown-historico.conteudo-dropdown h1 {
@@ -7708,7 +9159,15 @@
         #cabecalho .dropdown-conteudo-superior.dropdown-canais-atendimento .linha-atendimento a:hover {
             opacity: 0.7;
         }
+
+        div#cabecalho  .dropdown-conteudo-superior.dropdown-superior-padrao {
+            left: 0;
+        }
         
+        div#cabecalho  .dropdown-conteudo-superior.dropdown-superior-padrao span {
+            display: block;
+            white-space: nowrap;
+        }
 
     }
 
@@ -7810,7 +9269,7 @@
         align-items: center;
     }
     
-    #banners-em-aba .b_animated_ilm .wrap_txt h3 {
+    #banners-em-aba .b_animated_ilm .wrap_txt h1 {
         color: #0f0f0f;
         text-transform: uppercase;
         font-weight: 700;
@@ -7818,11 +9277,11 @@
         font-size: 28px;
     }
     
-    #banners-em-aba .banner-revendedor-animated .wrap_txt h3 {
+    #banners-em-aba .banner-revendedor-animated .wrap_txt h1 {
         color: #fff!important;
     }
     
-    #banners-em-aba .b_animated_ilm .wrap_txt h3 b {
+    #banners-em-aba .b_animated_ilm .wrap_txt h1 b {
         color: #ff0000;
     }
     
@@ -8333,7 +9792,7 @@
             overflow: hidden;
         }
         
-        div#listagemProdutos ul[data-produtos-linha] li.span3:before {
+        div#listagemProdutos [data-produtos-linha] .span3:before {
             display: none;
         }
         
@@ -8445,8 +9904,8 @@
             margin: 0 !important;
         }
         
-        .listagem .listagem-linha>ul li.span3,
-        .listagem.aproveite-tambem .carousel-target > li.span3 {
+        .listagem .listagem-linha>ul .span3,
+        .listagem.aproveite-tambem .carousel-target > .span3 {
             width: calc(50% - 5px) !important;
             margin-bottom: 10px !important;
         }
@@ -8516,7 +9975,7 @@
             margin: 0;
         }
 
-        .listagem .listagem-linha li.span3 {
+        .listagem .listagem-linha .span3 {
             max-width: initial !important;
         }
 
@@ -8561,15 +10020,12 @@
 @media screen {
 
     .cronometro-compre-antes-que-acabe {
-        padding: 25px 25px;
+        padding: 30px 25px;
         background: #f7f7f7;
         border-radius: 5px;
         text-align: center;
-        border-bottom: 3px solid #ccc;
+        border: 1px solid #ddd;
         margin: 16px 0 0 0;
-        border-top: 3px solid var(--cor-secundaria);
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
     }
     
     .cronometro-compre-antes-que-acabe .conteudo-titulo-cronometro {
@@ -8577,13 +10033,14 @@
         text-transform: uppercase;
         letter-spacing: -1px;
         font-weight: 800;
+        color: #6b6b6b;
     }
     
     .cronometro-compre-antes-que-acabe .conteudo-cronometro {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 28px 0 26px 0px;
+        margin: 22px 0 18px 0px;
     }
     
     .cronometro-compre-antes-que-acabe .conteudo-cronometro .conteudo-icone-cronometro svg {
@@ -8595,12 +10052,12 @@
     
     .cronometro-compre-antes-que-acabe .conteudo-cronometro .conteudo-icone-cronometro {
         display: flex;
-        margin-right: 8px;
     }
     
     .cronometro-compre-antes-que-acabe .conteudo-texto-cronometro {
         font-size: 16px;
-        letter-spacing: -0.5px;
+        color: #6b6b6b;
+        font-weight: 600;
     }
     
     .cronometro-compre-antes-que-acabe .conteudo-cronometro .countdown-target li.item {
@@ -8609,6 +10066,10 @@
     
     .cronometro-compre-antes-que-acabe .conteudo-cronometro .countdown-target li.blank {
         display: none;
+    }
+
+    .cronometro-compre-antes-que-acabe .conteudo-cronometro .countdown-target {
+        margin-left: 10px;
     }
     
     .cronometro-compre-antes-que-acabe .conteudo-cronometro .countdown-target li.item {
@@ -9106,6 +10567,10 @@
             bottom: 5px;
             font-size: 11px;
             letter-spacing: 0;
+        }
+
+        #menu-mobile li.menu__title a[href*="javascript:void(0)"]:after {
+            display: none !important;
         }
 
         #menu-mobile .close-menu-mobile {
@@ -9921,7 +11386,7 @@
             flex-wrap: wrap;
         }
 
-        .listagem.aproveite-tambem .carousel-target > li.span3 .listagem-item {
+        .listagem.aproveite-tambem .carousel-target > .span3 .listagem-item {
             padding: 10px 0 0 0 !important;
             margin: 0 !important;
         }
