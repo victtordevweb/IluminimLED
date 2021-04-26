@@ -128,6 +128,9 @@ var ILUMINIM = {
             busca: '<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z" class=""></path></svg>',
             caminhao: '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15"><path fill-rule="nonzero" d="M7.763 12.207a2.398 2.398 0 0 1-4.726 0H1.8a1.8 1.8 0 0 1-1.8-1.8V2.195a1.8 1.8 0 0 1 1.8-1.8h8.445a1.8 1.8 0 0 1 1.8 1.8v.568l3.322.035L18 6.821v5.386h-2.394a2.398 2.398 0 0 1-4.727 0H7.763zm-.1-1.2h3.182V2.195a.6.6 0 0 0-.6-.6H1.8a.6.6 0 0 0-.6.6v8.212a.6.6 0 0 0 .6.6h1.337a2.399 2.399 0 0 1 4.526 0zm7.843 0H16.8V7.179l-2.086-3.187-2.669-.029v5.76a2.399 2.399 0 0 1 3.461 1.284zm-2.263 1.99a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396zm-7.843 0a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396z"></path></svg>',
             caminhao_2: '<svg width="80" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="truck-moving" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-truck-moving fa-w-20"><path fill="currentColor" d="M621.3 205.3l-58.5-58.5c-12-12-28.3-18.7-45.3-18.7H464V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64v336c0 44.2 35.8 80 80 80 26.3 0 49.4-12.9 64-32.4 14.6 19.6 37.7 32.4 64 32.4 44.2 0 80-35.8 80-80 0-5.5-.6-10.8-1.6-16h163.2c-1.1 5.2-1.6 10.5-1.6 16 0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H624c8.8 0 16-7.2 16-16V250.5c0-17-6.7-33.2-18.7-45.2zM80 448c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm128 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm224-96H271.6c-14.6-19.3-37.5-32-63.6-32s-49 12.7-63.6 32h-.7C129 332.7 106 320 80 320c-18.1 0-34.6 6.2-48 16.4V64h400zm32-192h53.5c8.5 0 16.6 3.3 22.6 9.4l54.6 54.6H464zm64 288c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-96h-16.4c-14.6-19.3-37.5-32-63.6-32s-49 12.7-63.6 32h-.4v-96h144z" class=""></path></svg>',
+            exclamacao_error: '<svg width="60" height="60" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="exclamation-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-exclamation-circle fa-w-16"><path fill="currentColor" d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" class=""></path></svg>',
+            check_sucesso: '<svg width="60" height="60" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle fa-w-16"><path fill="currentColor" d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" class=""></path></svg>',
+
             bandeira: {
                 amex: '<svg width="40" height="25" enable-background="new 0 0 780 500" version="1.1" viewBox="0 0 780 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m40 1e-3h700c22.092 0 40 17.909 40 40v420c0 22.092-17.908 40-40 40h-700c-22.091 0-40-17.908-40-40v-420c0-22.091 17.909-40 40-40z" fill="#2557D6"/><path d="m0.253 235.69h37.441l8.442-19.51h18.9l8.42 19.51h73.668v-14.915l6.576 14.98h38.243l6.576-15.202v15.138h183.08l-0.085-32.026h3.542c2.479 0.083 3.204 0.302 3.204 4.226v27.8h94.689v-7.455c7.639 3.92 19.518 7.455 35.148 7.455h39.836l8.525-19.51h18.9l8.337 19.51h76.765v-18.532l11.626 18.532h61.515v-122.51h-60.88v14.468l-8.522-14.468h-62.471v14.468l-7.828-14.468h-84.38c-14.123 0-26.539 1.889-36.569 7.153v-7.153h-58.229v7.153c-6.383-5.426-15.079-7.153-24.75-7.153h-212.74l-14.274 31.641-14.659-31.641h-67.005v14.468l-7.362-14.468h-57.145l-26.539 58.246v64.261h3e-3zm236.34-17.67h-22.464l-0.083-68.794-31.775 68.793h-19.24l-31.858-68.854v68.854h-44.57l-8.42-19.592h-45.627l-8.505 19.592h-23.801l39.241-87.837h32.559l37.269 83.164v-83.164h35.766l28.678 59.587 26.344-59.587h36.485l1e-3 87.838zm-165.9-37.823l-14.998-35.017-14.915 35.017h29.913zm255.3 37.821h-73.203v-87.837h73.203v18.291h-51.289v15.833h50.06v18.005h-50.061v17.542h51.289l1e-3 18.166zm103.16-64.18c0 14.004-9.755 21.24-15.439 23.412 4.794 1.748 8.891 4.838 10.84 7.397 3.094 4.369 3.628 8.271 3.628 16.116v17.255h-22.104l-0.083-11.077c0-5.285 0.528-12.886-3.458-17.112-3.202-3.09-8.083-3.76-15.973-3.76h-23.523v31.95h-21.914v-87.838h50.401c11.199 0 19.451 0.283 26.535 4.207 6.933 3.924 11.09 9.652 11.09 19.45zm-27.699 13.042c-3.013 1.752-6.573 1.81-10.841 1.81h-26.62v-19.51h26.982c3.818 0 7.804 0.164 10.393 1.584 2.842 1.28 4.601 4.003 4.601 7.765 0 3.84-1.674 6.929-4.515 8.351zm62.844 51.138h-22.358v-87.837h22.358v87.837zm259.56 0h-31.053l-41.535-65.927v65.927h-44.628l-8.527-19.592h-45.521l-8.271 19.592h-25.648c-10.649 0-24.138-2.257-31.773-9.715-7.701-7.458-11.708-17.56-11.708-33.533 0-13.027 2.395-24.936 11.812-34.347 7.085-7.01 18.18-10.242 33.28-10.242h21.215v18.821h-20.771c-7.997 0-12.514 1.14-16.862 5.203-3.735 3.699-6.298 10.69-6.298 19.897 0 9.41 1.951 16.196 6.023 20.628 3.373 3.476 9.506 4.53 15.272 4.53h9.842l30.884-69.076h32.835l37.102 83.081v-83.08h33.366l38.519 61.174v-61.174h22.445v87.833zm-133.2-37.82l-15.165-35.017-15.081 35.017h30.246zm189.04 178.08c-5.322 7.457-15.694 11.238-29.736 11.238h-42.319v-18.84h42.147c4.181 0 7.106-0.527 8.868-2.175 1.665-1.474 2.605-3.554 2.591-5.729 0-2.561-1.064-4.593-2.677-5.811-1.59-1.342-3.904-1.95-7.722-1.95-20.574-0.67-46.244 0.608-46.244-27.194 0-12.742 8.443-26.156 31.439-26.156h43.649v-17.479h-40.557c-12.237 0-21.129 2.81-27.425 7.174v-7.175h-59.985c-9.595 0-20.854 2.279-26.179 7.175v-7.175h-107.12v7.175c-8.524-5.892-22.908-7.175-29.549-7.175h-70.656v7.175c-6.745-6.258-21.742-7.175-30.886-7.175h-79.077l-18.094 18.764-16.949-18.764h-118.13v122.59h115.9l18.646-19.062 17.565 19.062 71.442 0.061v-28.838h7.021c9.479 0.14 20.66-0.228 30.523-4.312v33.085h58.928v-31.952h2.842c3.628 0 3.985 0.144 3.985 3.615v28.333h179.01c11.364 0 23.244-2.786 29.824-7.845v7.845h56.78c11.815 0 23.354-1.587 32.134-5.649l2e-3 -22.84zm-354.94-47.155c0 24.406-19.005 29.445-38.159 29.445h-27.343v29.469h-42.591l-26.984-29.086-28.042 29.086h-86.802v-87.859h88.135l26.961 28.799 27.875-28.799h70.021c17.389 0 36.929 4.613 36.929 28.945zm-174.22 40.434h-53.878v-17.48h48.11v-17.926h-48.11v-15.974h54.939l23.969 25.604-25.03 25.776zm86.81 10.06l-33.644-35.789 33.644-34.65v70.439zm49.757-39.066h-28.318v-22.374h28.572c7.912 0 13.404 3.09 13.404 10.772 0 7.599-5.238 11.602-13.658 11.602zm148.36-40.373h73.138v18.17h-51.315v15.973h50.062v17.926h-50.062v17.48l51.314 0.08v18.23h-73.139l2e-3 -87.859zm-28.119 47.029c4.878 1.725 8.865 4.816 10.734 7.375 3.095 4.291 3.542 8.294 3.631 16.037v17.418h-22.002v-10.992c0-5.286 0.531-13.112-3.542-17.198-3.201-3.147-8.083-3.899-16.076-3.899h-23.42v32.09h-22.02v-87.859h50.594c11.093 0 19.173 0.47 26.366 4.146 6.915 4.004 11.266 9.487 11.266 19.511-1e-3 14.022-9.764 21.178-15.531 23.371zm-12.385-11.107c-2.932 1.667-6.556 1.811-10.818 1.811h-26.622v-19.732h26.982c3.902 0 7.807 0.08 10.458 1.587 2.84 1.423 4.538 4.146 4.538 7.903 0 3.758-1.699 6.786-4.538 8.431zm197.82 5.597c4.27 4.229 6.554 9.571 6.554 18.613 0 18.9-12.322 27.723-34.425 27.723h-42.68v-18.84h42.51c4.157 0 7.104-0.525 8.95-2.175 1.508-1.358 2.589-3.333 2.589-5.729 0-2.561-1.17-4.592-2.675-5.811-1.675-1.34-3.986-1.949-7.803-1.949-20.493-0.67-46.157 0.609-46.157-27.192 0-12.744 8.355-26.158 31.33-26.158h43.932v18.7h-40.198c-3.984 0-6.575 0.145-8.779 1.587-2.4 1.422-3.29 3.534-3.29 6.319 0 3.314 2.037 5.57 4.795 6.546 2.311 0.77 4.795 0.995 8.526 0.995l11.797 0.306c11.895 0.276 20.061 2.248 25.024 7.065zm86.955-23.52h-39.938c-3.986 0-6.638 0.144-8.867 1.587-2.312 1.423-3.202 3.534-3.202 6.322 0 3.314 1.951 5.568 4.791 6.544 2.312 0.771 4.795 0.996 8.444 0.996l11.878 0.304c11.983 0.284 19.982 2.258 24.86 7.072 0.891 0.67 1.422 1.422 2.033 2.175v-25h1e-3z" fill="#fff"/></svg>',
                 diners: '<svg width="40" height="25" enable-background="new 0 0 780 500" version="1.1" viewBox="0 0 780 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M40,0h700c22.092,0,40,17.909,40,40v420c0,22.092-17.908,40-40,40H40c-22.091,0-40-17.908-40-40V40   C0,17.909,17.909,0,40,0z" fill="#0079BE"/><path d="m599.93 251.45c0-99.415-82.98-168.13-173.9-168.1h-78.242c-92.003-0.033-167.73 68.705-167.73 168.1 0 90.93 75.727 165.64 167.73 165.2h78.242c90.914 0.436 173.9-74.294 173.9-165.2z" fill="#fff"/><path d="m348.28 97.43c-84.07 0.027-152.19 68.308-152.21 152.58 0.02 84.258 68.144 152.53 152.21 152.56 84.09-0.027 152.23-68.303 152.24-152.56-0.011-84.272-68.149-152.55-152.24-152.58z" fill="#0079BE"/><path d="m252.07 249.6c0.08-41.181 25.746-76.297 61.94-90.25v180.48c-36.194-13.948-61.861-49.045-61.94-90.23zm131 90.274v-180.53c36.207 13.92 61.914 49.057 61.979 90.257-0.065 41.212-25.772 76.322-61.979 90.269z" fill="#fff"/></svg>                ',
@@ -443,6 +446,46 @@ var ILUMINIM = {
 
                     $('#topo-principal').prepend('<div class="iluminim-backdrop"></div>');
 
+                    let lojasFisicas = [
+                        {
+                            titulo: 'Loja Iluminim Porto Alegre',
+                            link: '#!',
+                            endereco: 'Av. Ipiranga, 7464 - loja 11 - Jardim do Salso, Porto Alegre - RS, 91530-000.',
+                            telefone: '(51) 3557-5070'
+                        },
+                        {
+                            titulo: 'Loja Iluminim Express Canoas',
+                            link: '#!',
+                            endereco: 'Rua Mathias Velho, 606 - Centro, Canoas - RS, 92310-300.',
+                            telefone: '(51) 2160-1627'
+                        },
+                        {
+                            titulo: 'Loja Iluminim Express São Leopoldo',
+                            link: '#!',
+                            endereco: 'Av Feitoria - 108 São João, São Leopoldo - RS, 93040-193.',
+                            telefone: '(51) 3783-0351'
+                        },
+                        {
+                            titulo: 'Loja Iluminim Gravataí',
+                            link: '#!',
+                            endereco: 'Rua Conego Pedro Wagner 800, Loja 1/Loja 2 - Centro, Gravataí - RS, 94010-160',
+                            telefone: '(51) 2160-8189'
+                        }
+                    ]
+
+                    let lojasFisicasHTML = lojasFisicas.map(loja=> {
+                        return `
+                            <div class="item-loja-fisica">
+                                <div class="titulo-loja-fisica">${loja.titulo}</div>
+                                <div class="endereco-loja-fisica"><b>Endereço:</b> ${loja.endereco}</div>
+                                <div class="telefone-loja-fisica"><b>Telefone:</b> ${loja.telefone}</div>
+                                <div class="link-loja-fisica">
+                                    <a aria-label="Ver mais" href="${loja.link}">Ver mais</a>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+
                     $('div#cabecalho .conteudo-topo .superior').append(`
                         <div class="conteudo-superior">
                             
@@ -475,14 +518,14 @@ var ILUMINIM = {
                                 <div class="conteudo-superior-item item-superior-loja-fisica">
                                     <div class="conteudo-superior-titulo">
                                         ${ ILUMINIM.Utils.icones.loja }
-                                        <a href="#!" class="atendimento__texto">Encontre uma loja física</a>
+                                        <a href="/pagina/lojas-iluminim.html" class="atendimento__texto">Encontre uma loja física</a>
                                     </div>
                                     
                                     <div class="dropdown-conteudo-superior dropdown-superior-padrao">
                                         <div class="conteudo-dropdown">
-                                            <span>As lojas físicas da Iluminim são uma maneira que encontramos</span>
-                                            <span>para nos aproximar de nossos clientes</span>
-                                            <span>Acesse e saiba mais!</span>
+                                            <div class="conteudo-lojas-fisicas-iluminim">
+                                                ${lojasFisicasHTML}                    
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1094,9 +1137,13 @@ var ILUMINIM = {
                             let nome = nome_produto.split('w ')[0];
                             let watts = nome.split(' ').pop();
 
-                            $(this).addClass('produto-tag-watts').find('.bandeiras-produto').prepend(`
-                                <span class="bandeira-watts">${watts}W</span>
-                            `);
+                            if(!isNaN(watts)){
+
+                                $(this).addClass('produto-tag-watts').find('.bandeiras-produto').prepend(`
+                                    <span class="bandeira-watts">${watts}W</span>
+                                `);
+
+                            }
 
                         }
 
@@ -1111,21 +1158,113 @@ var ILUMINIM = {
                 },
 
                 adicionarListaDesejosListagem(){
+
+                    $('body').append(`
+                        <div class="modal modal-personalizado fade" id="modal_lista_desejo">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">...</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        
+                                        <div class="resultado-lista-desejo">
+                                            ...
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Fechar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    `);
                     
                     $('#listagemProdutos .listagem-item').each(function(){
 
                         let id = $(this).attr('class').split('prod-id-')[1].split(' ')[0];
+
                         if(id){
 
                             $(this).append(`
-                                <div class="adicionar-lista-desejo">
-                                    <a href="/conta/favorito/${id}/adicionar">
-                                        <i class="icon-heart-empty"></i>
-                                    </a>
+                                <div class="adicionar-produto-lista-desejo adicionar-lista-desejo" data-produto-id="${id}">
+                                    <i class="icon-heart-empty"></i>
                                 </div>
                             `);
 
                         }
+
+                    });
+
+
+                    $(document).on('click', '.adicionar-produto-lista-desejo:not(.produto-adicionado-lista-desejo)', function(){
+
+                        let produto_id = $(this).attr('data-produto-id');
+
+                        $.get(`/conta/favorito/${produto_id}/adicionar`, response=> {
+
+                            let responseJSON = JSON.parse(response);
+                            
+                            if(responseJSON.status == 'sucesso'){
+                                
+                                $('#modal_lista_desejo .modal-title').html('Produto adicionado!');
+                                $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
+                                    <div class="resultado-lista-desejo resultado-sucesso">
+                                        <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.check_sucesso}</div>
+                                        <div class="resultado-lista-desejo-texto">Produto adicionado a sua lista desejo :)</div>
+                                    </div>
+                                `);
+
+                                $(this).addClass('produto-adicionado-lista-desejo');
+
+                                if(ILUMINIM.Utils.pagina.isProduct()){
+
+                                    $('.pagina-produto .produto-compartilhar .lista-desejo, .produto .span6 > .principal .nome-produto .adicionar-lista-desejo').addClass('produto-adicionado-lista-desejo');
+
+                                }
+
+                            }else{
+
+                                console.log('resppp', responseJSON);
+
+                                if( responseJSON.mensagem == 'Você precisa estar logado para adicionar aos favoritos'){
+
+                                    $('#modal_lista_desejo .modal-title').html('Você precisa estar logado!');
+                                    $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
+                                        <div class="resultado-lista-desejo resultado-warning">
+                                            <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.exclamacao_error}</div>
+                                            <div class="resultado-lista-desejo-texto">${responseJSON.mensagem}</div>
+                                            <div class="resultado-lista-desejo-texto-2"><a href="/conta/login" class="resultado-lista-desejo-entrar">Entre</a> ou <a href="/conta/login" class="resultado-lista-desejo-cadastrar">Cadastre-se</a></div>
+                                        </div>
+                                    `);
+
+
+                                }else {
+
+                                    $('#modal_lista_desejo .modal-title').html('Falha ao adicionar o produto!');
+                                    $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
+                                        <div class="resultado-lista-desejo resultado-erro">
+                                            <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.exclamacao_error}</div>
+                                            <div class="resultado-lista-desejo-texto">Ouve uma falha ao adicionar o produto a sua lista desejo :(</div>
+                                        </div>
+                                    `);
+
+                                }
+
+                            }
+
+                            $('#modal_lista_desejo').modal('show');
+
+
+                        })
 
                     });
 
@@ -1369,11 +1508,11 @@ var ILUMINIM = {
                     });
 
 
-                    $(window).on('load', ()=> {
+                    /*$(window).on('load', ()=> {
 
                         $('.pagina-inicial div#listagemProdutos .carousel-target').trigger('refresh.owl.carousel');
 
-                    });
+                    });*/
                     
                 },
 
@@ -1589,6 +1728,16 @@ var ILUMINIM = {
     
                 },
 
+                ajusteCarousel(){
+
+                    $(window).on('load', ()=> {
+
+                        $('.carousel-target').trigger('refresh.owl.carousel');
+
+                    });
+
+                }
+
             },
 
             
@@ -1638,6 +1787,9 @@ var ILUMINIM = {
                     this.Funcoes.palavrasBuscadasRodapeMobile();
 
                 }
+
+
+                this.Funcoes.ajusteCarousel();
 
             }
 
@@ -1945,11 +2097,11 @@ var ILUMINIM = {
 
 
 
-                        $(window).on('load', ()=> {
+                        /*$(window).on('load', ()=> {
 
                             $('.bloco-triplo-personalizado > div .carousel-target').trigger('refresh.owl.carousel');
     
-                        });
+                        });*/
 
                         
 
@@ -2698,7 +2850,7 @@ var ILUMINIM = {
                 this.Funcoes.carrouselBannersPersonalizados(); //MANTER ORDEM
                 this.Funcoes.miniBanners(); //MANTER ORDEM
 
-                this.Funcoes.bannerYoutubeBlog();
+                /*this.Funcoes.bannerYoutubeBlog(); REMOVER METODO */
                 this.Funcoes.bannersDesconto();
                 this.Funcoes.verTodosNasListagens();
                 this.Funcoes.tarjaInformacoesRodape();
@@ -2931,7 +3083,7 @@ var ILUMINIM = {
                 },
 
                 moverTextoCategoria(){
-                    $('.secao-principal .coluna > .componente').insertBefore('.secao-principal .conteudo .ordenar-listagem.topo');
+                    $('.secao-principal .coluna > .componente').prependTo('.secao-principal > .conteudo.span9');
                 },
 
                 verificarCategoriaAtiva(){
@@ -3642,26 +3794,14 @@ var ILUMINIM = {
 
 
                     target.append(`
-                        <div class="adicionar-lista-desejo">
-                            <a href="/conta/favorito/${id}/adicionar">
-                                ${jaAdicionado ? `
-                                    <i class="icon-heart"></i>
-                                ` : `
-                                    <i class="icon-heart-empty"></i>
-                                `}
-                            </a>
+                        <div class="adicionar-produto-lista-desejo adicionar-lista-desejo ${jaAdicionado ? 'produto-adicionado-lista-desejo' : ''}" data-produto-id="${id}">
+                            <i class="icon-heart-empty"></i>
                         </div>
                     `);
 
                     $('.produto-compartilhar').html(`
-                        <div class="lista-desejo">
-                            <a href="/conta/favorito/${id}/adicionar">
-                                ${jaAdicionado ? `
-                                    <i class="icon-heart"></i> Adicionado
-                                ` : `
-                                    <i class="icon-heart-empty"></i> Lista de Desejos
-                                `}
-                            </a>
+                        <div class="adicionar-produto-lista-desejo lista-desejo ${jaAdicionado ? 'produto-adicionado-lista-desejo' : ''}" data-produto-id="${id}">
+                            <i class="icon-heart-empty"></i>
                         </div>
                     `);
 
@@ -3946,6 +4086,14 @@ var ILUMINIM = {
 
                 ajustarDescricao(){
 
+                    $('#descricao table.table.table-striped td').each(function(){
+                        let text = $(this).text().trim();
+                        if(text == ''){
+                            $(this).remove();
+                        }
+                    });
+                    /*
+
                     $('div#descricao img[src="https://cdn.awsli.com.br/257/257163/arquivos/itensTITULO.png"]').parent().replaceWith(`
                         <div class="descricao-titulo" data-referencia="Itens Inclusos">
                             <span>Itens Inclusos</span>
@@ -4032,13 +4180,14 @@ var ILUMINIM = {
                         $(this).next().slideToggle(500);
 
                     });
+                    */
 
                 },
 
                 adicionarBeneficiosLED(){
 
                      // BENEFÍCIOS LED
-                    $('#descricao .descricao-conteudo-accordion[data-referencia="Itens Inclusos"]').before(`
+                    $('#descricao').after(`
                         <div class="descricao-conteudo-accordion beneficios-led">
                             <div class="descricao-titulo descricao-titulo-beneficios-led">
                                 <span>Você já conhece os benefícios do led?</span>
@@ -4088,7 +4237,7 @@ var ILUMINIM = {
 
                 adicionarTarjaFreteExpressoDescricao(){
 
-                    $('#descricao .descricao-conteudo-accordion.accordion-descricao').before(`
+                    $('#descricao').after(`
                         <div class="descrica-tarja">
                             <div class="descricao-tarja-titulo">
                                 Só hoje: <span>Frete expresso grátis</span> para todo brasil
@@ -4145,7 +4294,7 @@ var ILUMINIM = {
                     }).join('');
 
 
-                    $('#descricao .descricao-conteudo-accordion[data-referencia="Confira o que dizem nossos clientes"]').before(`
+                    $('#descricao').after(`
                         <div class="descricao-conteudo-accordion cuidado-maximo-com-sua-encomenda">
                             <div class="descricao-titulo descricao-titulo-cuidado-maximo-com-a-sua-encomenda">
                                 <span>Cuidado máximo com a sua encomenda</span>
@@ -4160,7 +4309,7 @@ var ILUMINIM = {
 
 
 
-                    $('#descricao .descricao-conteudo-accordion.cuidado-maximo-com-sua-encomenda .carousel-target').owlCarousel({
+                    $('.descricao-conteudo-accordion.cuidado-maximo-com-sua-encomenda .carousel-target').owlCarousel({
                         loop:false,
                         margin:0,
                         autoHeight: true,
@@ -4565,12 +4714,12 @@ var ILUMINIM = {
 
                             if(!html) return;
 
-                            $('#descricao .descricao-conteudo-accordion[data-referencia="Confira o que dizem nossos clientes"]').after(`
-                                <div class="duvidas-rapidas">
-                                    <div class="duvidas-rapidas-titulo">
+                            $('#descricao').after(`
+                                <div class="descricao-conteudo-accordion duvidas-rapidas">
+                                    <div class="descricao-titulo duvidas-rapidas-titulo">
                                         <span>Dúvidas Rápidas</span>
                                     </div>
-                                    <div class="duvidas-rapidas-conteudo">
+                                    <div class="descricao-conteudo duvidas-rapidas-conteudo">
                                         <ul class="lista-duvidas-rapidas">
                                             ${html}
                                         </ul>
@@ -4797,7 +4946,7 @@ var ILUMINIM = {
 
                             if(!html) return;
 
-                            $('.descricao-conteudo-accordion.cuidado-maximo-com-sua-encomenda').before(`
+                            $('#descricao').after(`
                                 <div class="descricao-conteudo-accordion iluminim-led-explica">
                                     <div class="descricao-titulo iluminim-led-explica-titulo">
                                         <span>Iluminim LED Explica</span>
@@ -4822,7 +4971,7 @@ var ILUMINIM = {
 
                 doacoesRealizadas(){
 
-                    $('#descricao .descricao-conteudo-accordion.cuidado-maximo-com-sua-encomenda').before(`
+                    $('#descricao').after(`
                         <div class="descricao-conteudo-accordion doacoes-realizadas">
                             <div class="descricao-titulo descricao-titulo-cuidado-maximo-com-a-sua-encomenda">
                                 <span>Doações - 8.464 doações já realizadas</span>
@@ -4976,7 +5125,7 @@ var ILUMINIM = {
                     
                     });
 
-                    if(itemFiltrado.lemgth == 0){
+                    if(itemFiltrado.length == 0){
                         return;
                     }
 
@@ -5008,7 +5157,7 @@ var ILUMINIM = {
 
                     let comparacaoHTML = comparacao.map(value=> `<div class="caracteristica-item">${value}</div>`).join('');
 
-                    $('#descricao .descricao-conteudo-accordion.doacoes-realizadas').after(`
+                    $('#descricao').after(`
                         <div class="descricao-conteudo-accordion compare-os-modelos">
                             <div class="descricao-titulo descricao-titulo-compare-os-modelos">
                                 <span>Compare os Modelos</span>
@@ -5065,14 +5214,14 @@ var ILUMINIM = {
                 this.Funcoes.linhaAvaliacao();
                 
                 this.Funcoes.ajustarDescricao();
-                this.Funcoes.adicionarBeneficiosLED();
-                this.Funcoes.adicionarTarjaFreteExpressoDescricao();
+                //this.Funcoes.adicionarBeneficiosLED();
+                //this.Funcoes.adicionarTarjaFreteExpressoDescricao();
+
+                /*this.Funcoes.duvidasRapidas();
                 this.Funcoes.cuidadoMaximoComSuaEncomenda();
-                this.Funcoes.doacoesRealizadas();
-                this.Funcoes.compareOsModelos();
                 this.Funcoes.iluminimLEDExplica();
-                this.Funcoes.duvidasRapidas();
-                
+                this.Funcoes.doacoesRealizadas();
+                this.Funcoes.compareOsModelos();*/
 
                 this.Funcoes.textoEnviandoNormalmente();
                 this.Funcoes.precoValidoUltimasUnidades();

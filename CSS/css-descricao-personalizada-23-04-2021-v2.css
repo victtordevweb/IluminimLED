@@ -1,0 +1,337 @@
+#descricao  table.table.table-striped td {
+    background: none !important;
+    border: none !important;
+}
+
+#descricao table.table.table-striped > tbody > tr > td:first-child {
+    border-right: 1px solid #e6e6e6 !important;
+}
+
+#descricao td.index + td * {
+    font-weight: 500 !important;
+    color: #666 !important;
+    padding: 0;
+    border: none !important;
+    margin: 0 !important;
+}
+
+
+div#anchor-video.rflt {
+    margin-top: 0;
+    background: #eee;
+}
+div#anchor-video.rflt h2 {
+    color: #000;
+}
+
+.pagina-produto .span12.produto .topo-produto:after {
+    display: none !important;
+}
+
+.wrap-video-360 {
+    background: #ff0000;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.wrap-video-360 > h2 {
+    font-size: 33px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 48px 0 0 0;
+}
+
+.video-content {
+    width: 700px;
+    height: 478px;
+    margin: 38px auto 54px auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 70px -5px rgba(0, 0, 0, 0.61);
+}
+
+.video-content iframe {
+    margin-left: -83px;
+    margin-top: -71px;
+}
+
+@media (min-width: 767px) {
+        .newdesc-ilm-refletor {
+    display: block !important;
+}
+}
+
+.newdesc-ilm-refletor > * {
+	overflow:hidden;
+}
+
+.topo-new-desc-slim {
+    background: url(https://cdn.awsli.com.br/257/257163/arquivos/08-08-refletor-quadra-futebol-fundo-topo.png) center center no-repeat;
+    padding: 65px 100px 53px 100px;
+}
+.topo-new-desc-slim .topo-texto {
+    font-size: 37px;
+        opacity: 0;
+    visibility: hidden;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align:left;
+	
+}
+
+.section-new-desc-slim {
+    background: url(https://cdn.awsli.com.br/257/257163/arquivos/prefooter-background-ilm08-08.png) center center no-repeat;
+    padding: 27px 80px;
+}
+
+.section-new-desc-slim .section-produto {
+    text-align: right;
+}
+
+.section-new-desc-slim .topo-texto * {
+    color: #fff;
+}
+
+.section-new-desc-slim .topo-texto p {
+    line-height: 27px;
+    font-size: 17px !important;
+	letter-spacing:-.5px
+}
+
+.section-new-desc-slim .topo-texto h3 {
+    margin-top: 70px;
+    font-size: 37px;
+}
+
+
+
+.prefooter-new-desc-slim {
+    background: #eee;
+    text-align: center;
+    padding: 60px 113px 70px 113px;
+}
+
+.prefooter-new-desc-slim .interruptor-on {
+    text-align: right;
+	    margin-top: 40px;
+}
+
+.prefooter-new-desc-slim h2 {
+    font-size: 44px;
+    letter-spacing: -1px;
+    color: #000;
+}
+
+.prefooter-new-desc-slim h2+p {
+    color: #000;
+    margin-bottom: 47px;
+    padding: 0px 16px;
+}
+
+.footer-new-desc-slim p {
+color: #fff;
+	    line-height: 27px;
+    font-size: 17px !important;
+	letter-spacing:-.5px
+
+}
+
+.footer-new-desc-slim h3 {
+    margin-top: 267px;
+    font-size: 37px;
+	color: #fff;
+
+}
+
+.footer-new-desc-slim {
+    padding: 45px 110px 90px 75px;
+    background: url(https://cdn.awsli.com.br/257/257163/arquivos/08-08-paisagem-footer.png) center center no-repeat;
+	margin-bottom: 20px;
+}
+
+.section-new-desc-slim .section-produto img {
+    max-height: 400px;
+}
+
+.section-new-desc-slim .section-produto {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newdesc-ilm-refletor .topo-new-desc-slim .span6.topo-produto {
+    min-height: 450px;
+}
+
+.newdesc-ilm-refletor .topo-new-desc-slim .span6.topo-produto img {
+    max-height: 450px;
+}
+
+.footer-new-desc-slim .produto-footer {
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-new-desc-slim .produto-footer img {
+    max-height: 370px;
+}
+
+.footer-new-desc-slim  .produto-footer {
+    text-align: right;
+}
+
+.prefooter-new-desc-slim {
+    height: 563px;
+	webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+.newdesc-ilm-refletor .elm {
+    display: inline-block;
+}
+
+.newdesc-ilm-refletor .refletorcasa-com-led:after {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/08-08-refletorcasa-com-led.png);
+}
+
+.newdesc-ilm-refletor .interruptor-on .elm:after {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/08-08-interruptor-ilm-com-led-corrig.png);
+}
+
+.sem-led .newdesc-ilm-refletor .interruptor-on .elm:after{
+content: url(https://cdn.awsli.com.br/257/257163/arquivos/08-08-interruptor-ilm-sem-led-corrig.png)!important;
+
+}
+.sem-led .newdesc-ilm-refletor .refletorcasa-com-led::after {
+content: url(https://cdn.awsli.com.br/257/257163/arquivos/08-08-refletorcasa-sem-led.png)!important;
+
+}
+@media (max-width: 767px) {
+    
+    .topo-new-desc-slim {
+    padding: 32px 15px !important;
+    background-size: cover !important;
+}
+.topo-new-desc-slim .topo-texto {
+    margin-top: 36px !important;
+    font-size: 25px !important;
+}
+.section-new-desc-slim {
+    background-size: cover !important;
+    padding: 20px 15px !important;
+}
+
+.section-new-desc-slim .topo-texto h3 {
+    margin-top: 5px;
+    font-size: 30px !important;
+}
+
+.section-new-desc-slim .span6.section-produto {
+    margin-top: 37px !important;
+}
+.prefooter-new-desc-slim h2 {
+    font-size: 29px !important;
+    padding: 0 4px !important;
+}
+.prefooter-new-desc-slim h2+p {
+    padding: 0 5px !IMPORTANT;
+    margin-bottom: 8px !important;
+}
+.prefooter-new-desc-slim {
+    padding: 8px 2px !important;
+}
+
+
+
+.prefooter-new-desc-slim {
+    height: auto !important;
+}
+.prefooter-new-desc-slim .interruptor-on {
+    text-align: center !important;
+}
+.prefooter-new-desc-slim .refletorcasa-com-led {
+    height: 440px;
+}
+
+
+.footer-new-desc-slim {
+    background-size: cover !important;
+    padding: 24px 15px !important;
+}
+
+.footer-new-desc-slim h3 {
+    margin-top: 5px !important;
+    font-size: 29px !important;
+}
+
+.newdesc-ilm-refletor .refletorcasa-com-led:after {
+    position: relative;
+    left: -100px;
+}
+    
+}
+
+.bloco-bd.bf {
+    background: url(https://cdn.awsli.com.br/257/257163/arquivos/bg-topo-11-09-19-.png) center top no-repeat;
+    text-align: center;
+    height: 630px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.bloco-bd .img-bg-prod {position: absolute;bottom: 0;width: 100%;text-align: center;}    
+
+
+.newdesc-ilm-refletor.modelo-RE .section-new-desc-slim {
+    background: url(https://cdn.awsli.com.br/257/257163/arquivos/refletor-ambiente2-20-11-2020.png) center center no-repeat;
+}
+.newdesc-ilm-refletor.modelo-RE .topo-new-desc-slim {
+    background: url(https://cdn.awsli.com.br/257/257163/arquivos/refletor-ambiente-20-11-2020.png) center center no-repeat !important;
+}
+
+
+
+
+.desc-last-plafons {
+    background: #ff0000;
+    margin-top: 0;
+    padding: 35px 0 45px 0;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.desc-last-plafons h2 {
+    font-size: 37px;
+    font-weight: 800;
+    margin-bottom: 37px;
+}
+
+.desc-last-plafons h2, .desc-last-plafons p {
+    color: #fff;
+}
+
+.desc-last-plafons iframe {
+    box-shadow: 0px 0px 70px 4px rgb(0 0 0 / 61%);
+    width: 780px !important;
+}
+
+div#descricao>div[class]:first-child:before {
+    content: url(https://cdn.awsli.com.br/257/257163/arquivos/^734182462EE726E91EF267CB5FF2C276F0B0E2CBE75381AE83^pimgpsh_fullsize_distr.png);
+    overflow: hidden;
+    display: block;
+    height: 67px;
+}
+
+.pagina-produto .abas-custom {
+    max-width: 1180px;
+    margin: 30px auto 0 auto;
+}
