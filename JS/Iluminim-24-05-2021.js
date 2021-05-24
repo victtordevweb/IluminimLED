@@ -1,5 +1,9 @@
 
 var ILUMINIM = {
+
+    Categorias: {
+        
+    },
     
     Utils: {
 
@@ -118,7 +122,8 @@ var ILUMINIM = {
         icones: {
             loading: '<img width="106" height="106" alt="Loading Iluminim..." title="Loading Iluminim..." src="https://blog.iluminim.com.br/wp-content/uploads/2021/03/anm-iluminim-loading-18.gif">',
             empresa: '<svg style="width: 23px;" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="users" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-users fa-w-20"><path fill="currentColor" d="M544 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM320 256c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm0-192c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80zm244 192h-40c-15.2 0-29.3 4.8-41.1 12.9 9.4 6.4 17.9 13.9 25.4 22.4 4.9-2.1 10.2-3.3 15.7-3.3h40c24.2 0 44 21.5 44 48 0 8.8 7.2 16 16 16s16-7.2 16-16c0-44.1-34.1-80-76-80zM96 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm304.1 180c-33.4 0-41.7 12-80.1 12-38.4 0-46.7-12-80.1-12-36.3 0-71.6 16.2-92.3 46.9-12.4 18.4-19.6 40.5-19.6 64.3V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-44.8c0-23.8-7.2-45.9-19.6-64.3-20.7-30.7-56-46.9-92.3-46.9zM480 432c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16v-44.8c0-16.6 4.9-32.7 14.1-46.4 13.8-20.5 38.4-32.8 65.7-32.8 27.4 0 37.2 12 80.2 12s52.8-12 80.1-12c27.3 0 51.9 12.3 65.7 32.8 9.2 13.7 14.1 29.8 14.1 46.4V432zM157.1 268.9c-11.9-8.1-26-12.9-41.1-12.9H76c-41.9 0-76 35.9-76 80 0 8.8 7.2 16 16 16s16-7.2 16-16c0-26.5 19.8-48 44-48h40c5.5 0 10.8 1.2 15.7 3.3 7.5-8.5 16.1-16 25.4-22.4z" class=""></path></svg>',
-            dolar: '<svg style="width: 12px; height: 18px;" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="dollar-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-dollar-sign fa-w-8"><path fill="currentColor" d="M191.9 259.3L73.7 222.2C49.2 214.5 32 189 32 160.3 32 124.8 57.6 96 89 96h73.8c22.2 0 43.3 8.6 60.1 24.5 3.1 2.9 7.8 3.2 11 .3l11.9-10.8c3.4-3.1 3.6-8.4.4-11.6-22.8-22-52.7-34.5-83.3-34.5H144V8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v56H89c-49.1 0-89 43.2-89 96.3 0 42.6 26.4 80.6 64.1 92.4l118.2 37.1c24.6 7.7 41.7 33.2 41.7 61.9 0 35.4-25.6 64.3-57 64.3H93.2c-22.2 0-43.3-8.6-60.1-24.5-3.1-2.9-7.8-3.2-11-.3L10.3 402c-3.3 3-3.6 8.4-.3 11.5 22.8 22 52.7 34.5 83.3 34.5H112v56c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-56h23c49.1 0 89-43.2 89-96.3 0-42.5-26.4-80.5-64.1-92.4z" class=""></path></svg>',
+            dolar: '<svg style="width: 10px; height: 14px;" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="dollar-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-dollar-sign fa-w-8"><path fill="currentColor" d="M191.9 259.3L73.7 222.2C49.2 214.5 32 189 32 160.3 32 124.8 57.6 96 89 96h73.8c22.2 0 43.3 8.6 60.1 24.5 3.1 2.9 7.8 3.2 11 .3l11.9-10.8c3.4-3.1 3.6-8.4.4-11.6-22.8-22-52.7-34.5-83.3-34.5H144V8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v56H89c-49.1 0-89 43.2-89 96.3 0 42.6 26.4 80.6 64.1 92.4l118.2 37.1c24.6 7.7 41.7 33.2 41.7 61.9 0 35.4-25.6 64.3-57 64.3H93.2c-22.2 0-43.3-8.6-60.1-24.5-3.1-2.9-7.8-3.2-11-.3L10.3 402c-3.3 3-3.6 8.4-.3 11.5 22.8 22 52.7 34.5 83.3 34.5H112v56c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-56h23c49.1 0 89-43.2 89-96.3 0-42.5-26.4-80.5-64.1-92.4z" class=""></path></svg>',
+            map: '<svg style="position:relative; top: -1px; height: 15px;" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-map-marker-alt fa-w-12"><path fill="currentColor" d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z" class=""></path></svg>',
             atendimento: '<svg width="40" height="25" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="headset" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-headset fa-w-16"><path fill="currentColor" d="M192 224c0-17.67-14.33-32-32-32h-32c-35.35 0-64 28.65-64 64v63.64c0 35.35 28.65 64 64 64h32c17.67 0 32-14.33 32-32V224zm-32 127.64h-32c-17.64 0-32-14.36-32-32V256c0-17.64 14.36-32 32-32h32v127.64zm224 32c35.35 0 64-28.65 64-64V256c0-35.35-28.65-64-64-64h-32c-17.67 0-32 14.33-32 32v127.64c0 17.67 14.33 32 32 32h32zM352 224h32c17.64 0 32 14.36 32 32v63.64c0 17.64-14.36 32-32 32h-32V224zM256 0C113.97 0 3.92 117.82.1 256L0 280c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8l.09-24C35.43 135.19 131.63 32 256 32c123.5 0 224 100.48 224 224v176c0 26.47-21.53 48-48 48h-82.94c1.79-5.03 2.94-10.36 2.94-16 0-26.51-21.49-48-48-48h-64c-26.51 0-48 21.49-48 48s21.49 48 48 48h192c44.12 0 80-35.89 80-80V256C512 114.85 397.16 0 256 0zm48 480h-64c-8.82 0-16-7.18-16-16s7.18-16 16-16h64c8.82 0 16 7.18 16 16s-7.18 16-16 16z" class=""></path></svg>',
             atendimento_usuario: '<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user-headset" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user-headset fa-w-14"><path fill="currentColor" d="M320 352h-4.7c-12.16 0-24 2.9-35.5 6.8a173.76 173.76 0 0 1-111.64 0c-11.48-3.9-23.29-6.78-35.42-6.78H128A128 128 0 0 0 0 480a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32 128 128 0 0 0-128-128zM32 480a96.1 96.1 0 0 1 96-96h4.74c6.92 0 14.92 1.62 25.16 5.09a205.75 205.75 0 0 0 132.16 0c10.31-3.49 18.33-5.11 25.24-5.11h4.7a96.1 96.1 0 0 1 96 96zm16-256a16 16 0 0 0 16-16v-16c0-88.22 71.78-160 160-160s160 71.78 160 160v16a80.09 80.09 0 0 1-80 80h-32a32 32 0 0 0-32-32h-32a32 32 0 0 0 0 64h96a112.14 112.14 0 0 0 112-112v-16C416 86.12 329.88 0 224 0S32 86.12 32 192v16a16 16 0 0 0 16 16zM224 96a95.57 95.57 0 0 1 71.23 159.76c0 .09.13.15.18.24H304a47.89 47.89 0 0 0 40.55-22.58C349 220.36 352 206.58 352 192a128 128 0 0 0-256 0c0 40.42 19.1 76 48.35 99.47-.06-1.17-.35-2.28-.35-3.47a63.25 63.25 0 0 1 8.93-32A95.58 95.58 0 0 1 224 96z" class=""></path></svg>',
             relogio: '<svg width="40" height="25" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="clock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-clock fa-w-16"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216zm-148.9 88.3l-81.2-59c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h14c6.6 0 12 5.4 12 12v146.3l70.5 51.3c5.4 3.9 6.5 11.4 2.6 16.8l-8.2 11.3c-3.9 5.3-11.4 6.5-16.8 2.6z" class=""></path></svg>',
@@ -128,9 +133,10 @@ var ILUMINIM = {
             busca: '<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z" class=""></path></svg>',
             caminhao: '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15"><path fill-rule="nonzero" d="M7.763 12.207a2.398 2.398 0 0 1-4.726 0H1.8a1.8 1.8 0 0 1-1.8-1.8V2.195a1.8 1.8 0 0 1 1.8-1.8h8.445a1.8 1.8 0 0 1 1.8 1.8v.568l3.322.035L18 6.821v5.386h-2.394a2.398 2.398 0 0 1-4.727 0H7.763zm-.1-1.2h3.182V2.195a.6.6 0 0 0-.6-.6H1.8a.6.6 0 0 0-.6.6v8.212a.6.6 0 0 0 .6.6h1.337a2.399 2.399 0 0 1 4.526 0zm7.843 0H16.8V7.179l-2.086-3.187-2.669-.029v5.76a2.399 2.399 0 0 1 3.461 1.284zm-2.263 1.99a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396zm-7.843 0a1.198 1.198 0 1 0 0-2.395 1.198 1.198 0 0 0 0 2.396z"></path></svg>',
             caminhao_2: '<svg width="80" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="truck-moving" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-truck-moving fa-w-20"><path fill="currentColor" d="M621.3 205.3l-58.5-58.5c-12-12-28.3-18.7-45.3-18.7H464V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64v336c0 44.2 35.8 80 80 80 26.3 0 49.4-12.9 64-32.4 14.6 19.6 37.7 32.4 64 32.4 44.2 0 80-35.8 80-80 0-5.5-.6-10.8-1.6-16h163.2c-1.1 5.2-1.6 10.5-1.6 16 0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H624c8.8 0 16-7.2 16-16V250.5c0-17-6.7-33.2-18.7-45.2zM80 448c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm128 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm224-96H271.6c-14.6-19.3-37.5-32-63.6-32s-49 12.7-63.6 32h-.7C129 332.7 106 320 80 320c-18.1 0-34.6 6.2-48 16.4V64h400zm32-192h53.5c8.5 0 16.6 3.3 22.6 9.4l54.6 54.6H464zm64 288c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-96h-16.4c-14.6-19.3-37.5-32-63.6-32s-49 12.7-63.6 32h-.4v-96h144z" class=""></path></svg>',
+            caminhao_3: '<svg width="30" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="truck" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-truck fa-w-20"><path fill="currentColor" d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z" class=""></path></svg>',
             exclamacao_error: '<svg width="60" height="60" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="exclamation-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-exclamation-circle fa-w-16"><path fill="currentColor" d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" class=""></path></svg>',
             check_sucesso: '<svg width="60" height="60" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle fa-w-16"><path fill="currentColor" d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" class=""></path></svg>',
-
+            medalha: '<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 489.619 489.619" height="35" viewBox="0 0 489.619 489.619" width="35"><g><path d="m437.728 440.962-58.945-12.973-18.269 57.674c-1.314 4.147-6.93 4.755-9.1.985l-72.921-126.674c35.92-7.783 67.88-26.229 92.42-51.866l72.223 125.477c2.167 3.764-1.166 8.311-5.408 7.377z" fill="#fd646f"/><path d="m437.729 440.962-54.484-11.992c-2.527-.556-5.06.907-5.841 3.373l-16.889 53.319c-1.314 4.147-6.93 4.755-9.1.985l-62.471-108.529-10.45-18.145c35.92-7.783 67.88-26.229 92.42-51.866l10.37 18.004 61.854 107.473c2.165 3.766-1.168 8.312-5.409 7.378z" fill="#fd646f"/><path d="m437.728 440.959-54.48-11.99c-2.53-.55-5.06.91-5.84 3.37l5.864-18.222c.791-2.458 3.324-3.909 5.845-3.349l46.881 10.421 7.14 12.4c2.17 3.76-1.17 8.31-5.41 7.37z" fill="#fc4755"/><path d="m212.276 358.454-74.074 128.656c-2.17 3.77-7.786 3.162-9.1-.985l-16.89-53.32c-.781-2.466-3.315-3.929-5.841-3.373l-54.483 11.991c-4.242.934-7.575-3.613-5.408-7.377l68.893-119.69c25.72 24.384 60.413 38.09 96.903 44.098z" fill="#fd646f"/><g fill="#fc4755"><path d="m125.123 332.16-61.39 106.651-11.842 2.609c-4.242.935-7.576-3.612-5.409-7.377l58.642-101.883 15.858-27.622c4.27 4.042 8.73 7.884 13.38 11.495z"/><path d="m145.428 474.549-7.23 12.56c-2.17 3.77-7.78 3.17-9.1-.98l-16.89-53.32c-.78-2.47-3.31-3.93-5.84-3.38l18.68-4.109c2.526-.556 5.059.907 5.84 3.372z"/><path d="m117.04 311.311 48.719 21.97 46.517 25.173-12.473 21.65c-34.78-7.061-67.05-23.25-93.72-47.092-.32-.281-.64-.562-.96-.853z"/><path d="m381.283 326.112-10.37-18.004-54.874 24.22-37.546 27.646 4.22 7.327 10.363 17.998 58.338 101.348c2.17 3.77 7.786 3.162 9.1-.985l3.715-11.728-57.985-101.001c28.071-9.768 53.625-25.66 75.039-46.821z"/></g><path d="m426.298 182.038c0 48.927-19.25 93.361-50.58 126.07-24.54 25.637-56.5 44.083-92.42 51.866-12.41 2.688-25.28 4.102-38.49 4.102-10.08 0-19.96-.823-29.59-2.407-34.62-5.697-65.95-21.224-91.03-43.631-1.36-1.204-2.69-2.427-4.01-3.681-4.68-4.433-9.12-9.118-13.32-14.022-4.02-4.714-7.8-9.639-11.33-14.754-10.6-15.336-18.91-32.398-24.44-50.673-5.05-16.73-7.77-34.474-7.77-52.869 0-100.534 81.26-182.039 181.49-182.039 18.33 0 36.03 2.728 52.7 7.804 18.23 5.527 35.23 13.862 50.53 24.504 5.1 3.541 10.01 7.332 14.7 11.374 6.28 5.376 12.18 11.184 17.67 17.362 28.55 32.167 45.89 74.554 45.89 120.994z" fill="#faa515"/><ellipse cx="244.808" cy="182.037" fill="#fad207" rx="129.992" ry="130.385"/><path d="m374.798 182.038c0 72.007-58.2 130.383-129.99 130.383s-129.99-58.376-129.99-130.383c0-5.437.33-10.793.98-16.048 7.88 64.444 62.64 114.334 129.01 114.334s121.13-49.89 129.01-114.334c.65 5.256.98 10.612.98 16.048z" fill="#faa515"/><path clip-rule="evenodd" d="m244.808 51.656c-71.79 0-129.99 58.376-129.99 130.383s58.2 130.383 129.99 130.383 129.99-58.376 129.99-130.383-58.2-130.383-129.99-130.383zm0 245.72c-63.41 0-114.99-51.736-114.99-115.337s51.58-115.337 114.99-115.337 114.99 51.736 114.99 115.337-51.58 115.337-114.99 115.337z" fill="#faf063" fill-rule="evenodd"/><path d="m249.299 109.937 17.857 36.477c.727 1.486 2.142 2.516 3.78 2.751l40.131 5.766c4.107.59 5.75 5.637 2.777 8.531l-29.107 28.343c-1.182 1.151-1.72 2.81-1.439 4.435l6.936 40.075c.709 4.094-3.596 7.216-7.268 5.271l-35.817-18.98c-1.464-.776-3.218-.776-4.682 0l-35.817 18.98c-3.672 1.946-7.977-1.176-7.268-5.271l6.936-40.075c.281-1.625-.257-3.284-1.439-4.435l-29.107-28.343c-2.973-2.895-1.33-7.941 2.777-8.531l40.131-5.766c1.637-.235 3.052-1.265 3.78-2.751l17.857-36.477c1.829-3.736 7.153-3.736 8.982 0z" fill="#faa515"/></g></svg>',
             bandeira: {
                 amex: '<svg width="40" height="25" enable-background="new 0 0 780 500" version="1.1" viewBox="0 0 780 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m40 1e-3h700c22.092 0 40 17.909 40 40v420c0 22.092-17.908 40-40 40h-700c-22.091 0-40-17.908-40-40v-420c0-22.091 17.909-40 40-40z" fill="#2557D6"/><path d="m0.253 235.69h37.441l8.442-19.51h18.9l8.42 19.51h73.668v-14.915l6.576 14.98h38.243l6.576-15.202v15.138h183.08l-0.085-32.026h3.542c2.479 0.083 3.204 0.302 3.204 4.226v27.8h94.689v-7.455c7.639 3.92 19.518 7.455 35.148 7.455h39.836l8.525-19.51h18.9l8.337 19.51h76.765v-18.532l11.626 18.532h61.515v-122.51h-60.88v14.468l-8.522-14.468h-62.471v14.468l-7.828-14.468h-84.38c-14.123 0-26.539 1.889-36.569 7.153v-7.153h-58.229v7.153c-6.383-5.426-15.079-7.153-24.75-7.153h-212.74l-14.274 31.641-14.659-31.641h-67.005v14.468l-7.362-14.468h-57.145l-26.539 58.246v64.261h3e-3zm236.34-17.67h-22.464l-0.083-68.794-31.775 68.793h-19.24l-31.858-68.854v68.854h-44.57l-8.42-19.592h-45.627l-8.505 19.592h-23.801l39.241-87.837h32.559l37.269 83.164v-83.164h35.766l28.678 59.587 26.344-59.587h36.485l1e-3 87.838zm-165.9-37.823l-14.998-35.017-14.915 35.017h29.913zm255.3 37.821h-73.203v-87.837h73.203v18.291h-51.289v15.833h50.06v18.005h-50.061v17.542h51.289l1e-3 18.166zm103.16-64.18c0 14.004-9.755 21.24-15.439 23.412 4.794 1.748 8.891 4.838 10.84 7.397 3.094 4.369 3.628 8.271 3.628 16.116v17.255h-22.104l-0.083-11.077c0-5.285 0.528-12.886-3.458-17.112-3.202-3.09-8.083-3.76-15.973-3.76h-23.523v31.95h-21.914v-87.838h50.401c11.199 0 19.451 0.283 26.535 4.207 6.933 3.924 11.09 9.652 11.09 19.45zm-27.699 13.042c-3.013 1.752-6.573 1.81-10.841 1.81h-26.62v-19.51h26.982c3.818 0 7.804 0.164 10.393 1.584 2.842 1.28 4.601 4.003 4.601 7.765 0 3.84-1.674 6.929-4.515 8.351zm62.844 51.138h-22.358v-87.837h22.358v87.837zm259.56 0h-31.053l-41.535-65.927v65.927h-44.628l-8.527-19.592h-45.521l-8.271 19.592h-25.648c-10.649 0-24.138-2.257-31.773-9.715-7.701-7.458-11.708-17.56-11.708-33.533 0-13.027 2.395-24.936 11.812-34.347 7.085-7.01 18.18-10.242 33.28-10.242h21.215v18.821h-20.771c-7.997 0-12.514 1.14-16.862 5.203-3.735 3.699-6.298 10.69-6.298 19.897 0 9.41 1.951 16.196 6.023 20.628 3.373 3.476 9.506 4.53 15.272 4.53h9.842l30.884-69.076h32.835l37.102 83.081v-83.08h33.366l38.519 61.174v-61.174h22.445v87.833zm-133.2-37.82l-15.165-35.017-15.081 35.017h30.246zm189.04 178.08c-5.322 7.457-15.694 11.238-29.736 11.238h-42.319v-18.84h42.147c4.181 0 7.106-0.527 8.868-2.175 1.665-1.474 2.605-3.554 2.591-5.729 0-2.561-1.064-4.593-2.677-5.811-1.59-1.342-3.904-1.95-7.722-1.95-20.574-0.67-46.244 0.608-46.244-27.194 0-12.742 8.443-26.156 31.439-26.156h43.649v-17.479h-40.557c-12.237 0-21.129 2.81-27.425 7.174v-7.175h-59.985c-9.595 0-20.854 2.279-26.179 7.175v-7.175h-107.12v7.175c-8.524-5.892-22.908-7.175-29.549-7.175h-70.656v7.175c-6.745-6.258-21.742-7.175-30.886-7.175h-79.077l-18.094 18.764-16.949-18.764h-118.13v122.59h115.9l18.646-19.062 17.565 19.062 71.442 0.061v-28.838h7.021c9.479 0.14 20.66-0.228 30.523-4.312v33.085h58.928v-31.952h2.842c3.628 0 3.985 0.144 3.985 3.615v28.333h179.01c11.364 0 23.244-2.786 29.824-7.845v7.845h56.78c11.815 0 23.354-1.587 32.134-5.649l2e-3 -22.84zm-354.94-47.155c0 24.406-19.005 29.445-38.159 29.445h-27.343v29.469h-42.591l-26.984-29.086-28.042 29.086h-86.802v-87.859h88.135l26.961 28.799 27.875-28.799h70.021c17.389 0 36.929 4.613 36.929 28.945zm-174.22 40.434h-53.878v-17.48h48.11v-17.926h-48.11v-15.974h54.939l23.969 25.604-25.03 25.776zm86.81 10.06l-33.644-35.789 33.644-34.65v70.439zm49.757-39.066h-28.318v-22.374h28.572c7.912 0 13.404 3.09 13.404 10.772 0 7.599-5.238 11.602-13.658 11.602zm148.36-40.373h73.138v18.17h-51.315v15.973h50.062v17.926h-50.062v17.48l51.314 0.08v18.23h-73.139l2e-3 -87.859zm-28.119 47.029c4.878 1.725 8.865 4.816 10.734 7.375 3.095 4.291 3.542 8.294 3.631 16.037v17.418h-22.002v-10.992c0-5.286 0.531-13.112-3.542-17.198-3.201-3.147-8.083-3.899-16.076-3.899h-23.42v32.09h-22.02v-87.859h50.594c11.093 0 19.173 0.47 26.366 4.146 6.915 4.004 11.266 9.487 11.266 19.511-1e-3 14.022-9.764 21.178-15.531 23.371zm-12.385-11.107c-2.932 1.667-6.556 1.811-10.818 1.811h-26.622v-19.732h26.982c3.902 0 7.807 0.08 10.458 1.587 2.84 1.423 4.538 4.146 4.538 7.903 0 3.758-1.699 6.786-4.538 8.431zm197.82 5.597c4.27 4.229 6.554 9.571 6.554 18.613 0 18.9-12.322 27.723-34.425 27.723h-42.68v-18.84h42.51c4.157 0 7.104-0.525 8.95-2.175 1.508-1.358 2.589-3.333 2.589-5.729 0-2.561-1.17-4.592-2.675-5.811-1.675-1.34-3.986-1.949-7.803-1.949-20.493-0.67-46.157 0.609-46.157-27.192 0-12.744 8.355-26.158 31.33-26.158h43.932v18.7h-40.198c-3.984 0-6.575 0.145-8.779 1.587-2.4 1.422-3.29 3.534-3.29 6.319 0 3.314 2.037 5.57 4.795 6.546 2.311 0.77 4.795 0.995 8.526 0.995l11.797 0.306c11.895 0.276 20.061 2.248 25.024 7.065zm86.955-23.52h-39.938c-3.986 0-6.638 0.144-8.867 1.587-2.312 1.423-3.202 3.534-3.202 6.322 0 3.314 1.951 5.568 4.791 6.544 2.312 0.771 4.795 0.996 8.444 0.996l11.878 0.304c11.983 0.284 19.982 2.258 24.86 7.072 0.891 0.67 1.422 1.422 2.033 2.175v-25h1e-3z" fill="#fff"/></svg>',
                 diners: '<svg width="40" height="25" enable-background="new 0 0 780 500" version="1.1" viewBox="0 0 780 500" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M40,0h700c22.092,0,40,17.909,40,40v420c0,22.092-17.908,40-40,40H40c-22.091,0-40-17.908-40-40V40   C0,17.909,17.909,0,40,0z" fill="#0079BE"/><path d="m599.93 251.45c0-99.415-82.98-168.13-173.9-168.1h-78.242c-92.003-0.033-167.73 68.705-167.73 168.1 0 90.93 75.727 165.64 167.73 165.2h78.242c90.914 0.436 173.9-74.294 173.9-165.2z" fill="#fff"/><path d="m348.28 97.43c-84.07 0.027-152.19 68.308-152.21 152.58 0.02 84.258 68.144 152.53 152.21 152.56 84.09-0.027 152.23-68.303 152.24-152.56-0.011-84.272-68.149-152.55-152.24-152.58z" fill="#0079BE"/><path d="m252.07 249.6c0.08-41.181 25.746-76.297 61.94-90.25v180.48c-36.194-13.948-61.861-49.045-61.94-90.23zm131 90.274v-180.53c36.207 13.92 61.914 49.057 61.979 90.257-0.065 41.212-25.772 76.322-61.979 90.269z" fill="#fff"/></svg>                ',
@@ -298,6 +304,215 @@ var ILUMINIM = {
 
         },
 
+        renderizarCategoriasFlutuante(){
+
+            let CategoriasFlutuante = {
+
+                gerarObjeto(){
+
+                    let OfertaRelampago = {
+
+                        ['/lampada-led']: '/kit-5-lampadas-led-bulbo-e27-15w-bivolt-branca-amarela-inmetro',
+
+                        ['/fita-de-led']: '/fita-led-branco-frio-5050-5-metros-com-carregador',
+
+                        ['/spots']: '/spot-led-smd-5w-quadrado-branco-frio',
+
+                        ['/spot-led-trilho-eletrificado']: '/spot-led-10w-branco-quente-para-trilho-eletrificado-preto',
+
+                        ['/spot-led-quadrado']: '/spot-7w-dicroica-led-base-branca',
+
+                        ['/spot-led-cristal']: '/spot-cristal-led-losango-embutir-g4-2w',
+
+                        ['/mini-spot-led-colorido']: '/spot-7w-dicroica-led-direcionavel-base-preta',
+
+                        ['/mini-refletor-led']: '/mini-refletor-holofote-led-smd-200w-branco-frio-ip67',
+
+                        ['/refletor-micro-led-ultra-thin-verde']: '/refletor-microled-ultra-thin-50w-verde-black-type',
+
+                        ['/refletor-micro-led-ultra-thin-rgb']: '/refletor-led-150w-rgb-colorido-com-controle-black-type',
+
+                        ['/refletor-led-smd-ultra-thin']: '/refletor-microled-ultra-thin-200w-branco-frio-preto',
+
+                        ['/refletor-microled-ultra']: '/refletor-holofote-micro-led-20w-branco-frio',
+
+                        ['/refletor-led-solar']: '/refletor-led-solar-60w-63-leds-auto-recarregavel',
+
+                        ['/refletor-micro-led-smd-verde']: '/refletor-holofote-microled-smd-10w-verde',
+
+                        ['/refletor-micro-led-smd-rgb']: '/refletor-holofote-microled-smd-50w-rgb-colorido-com-controle',
+
+                        ['/refletor-micro-led-slim']: '/refletor-holofote-microled-slim-50w-branco-frio-ip66',
+
+                        ['/refletor-led-recarregavel']: '/Refletor-Holofote-LED-30w-12v-Recarregavel-Branco-Frio',
+
+                        ['/refletor-micro-led-multifocal']: '/refletor-holofote-micro-led-50w-multifocal-branco-frio-metalico',
+
+                        ['/plafon-led-sobrepor']: '/luminaria-plafon-25w-led-sobrepor-branco-frio-quadrado',
+
+                        ['/plafon-led-embutir']: '/luminaria-plafon-18w-led-embutir-branco-frio-quadrado',
+
+                        ['/pendente-redondo']: '/pendente-aluminio-cobre-3w',
+
+                        ['/pendente-gota']: '/pendente-aluminio-preto-gota',
+
+                        ['/pendente-cone']: '/pendente-rose-gold-soquete-e27',
+
+                        ['/pendente-aramado']: '/pendente-aramado-preto',
+
+                        ['/mini-spot-led-quadrado']: '/mini-spot-led-cob-3w-embutir-direcionavel-branco',
+
+                        ['/lustre']: '/lustre-de-cristal-k9-plafon-redondo-30x35',
+
+                        ['/luminaria-solar-led']: '/luminaria-solar-led-10w-com-rotacao-180-preta',
+
+                        ['/luminaria-publica-led-solar']: '/luminaria-solar-led-20w-para-poste-branco-frio-com-sensor',
+
+                        ['/lampada-led-wi-fi']: '/lampada-led-12w-camera-wifi-panoramica-360',
+
+                        ['/led-retro']: '/lampada-led-pera-4w-vintage-carbon-branco-quente',
+
+                        ['/lampada-led-tubular']: '/tubular-led-sobrepor-completa-36w-1.20m-branco-quente',
+
+                        ['/lampada-led-prato']: '/lampada-led-prato-36w-bivolt-prateada-branco-neutro',
+
+                        ['/par-led']: '/lampada-par-20-led-5w-branco-frio-aro-cromado',
+
+                        ['/lampada-led-milho']: '/lampada-led-24w-e27-3u',
+
+                        ['/lampada-led-rgb']: '/lampada-led-12w-rgb-com-caixa-de-som-bluetooth-e-controle-remoto',
+
+                        ['/halopin-led']: '/lampada-led-halopin-g9-7w-branco-frio',
+
+                        ['/lampada-led-globo-balloon']: '/lampada-led-globo-g120-4w-vintage-carbon-branco-quente',
+
+                        ['/dicroica-led']: '/lampada-dicroica-led-gu10-5w-branco-quente',
+
+                        ['/lampada-led-bulbo']: '/lampada-bulbo-led-a60-16w-bivolt-branca',
+
+                        ['/lampada-led-bolinha']: '/lampada-led-bolinha-3w-branco-frio',
+
+                        ['/led-automotivo']: '/kit-farol-led-c6-h4-automotivo-com-cooler-6500k',
+
+                        ['/lampada-led-espiral']: '/lampada-led-espiral-5w-branca',
+
+                        ['/lampada-led-alta-potencia']: '/lampada-de-led-alta-potencia-40w-branco-frio',
+
+                        ['/fita-led-rgb']: '/fita-led-rgb-colorida-3528-5-metros-com-carregador',
+
+                        ['/fita-led-branco-quente']: '/fita-led-branco-quente-3528-5-metros-com-fonte-carregador-a-prova-dagua-24w',
+
+                        ['/fita-led-branco-morno']: '/fita-led-branco-morno-5050-5-metros-com-carregador',
+
+                        ['/fita-led-branca']: '/fita-led-branco-frio-5050-5-metros-com-carregador',
+
+                        ['/espeto-led']: '/espeto-de-jardim-led-7w-branco-quente',
+
+                        ['/balizador-led']: '/spot-balizador-led-3w-branco-morno-para-piso',
+
+                        ['/arandela-led']: '/luminaria-arandela-led-6w-branco-quente-cubo-preta',
+
+                        ['/acessorios-para-leds']: '/fonte-12v-2a-para-led',
+
+                    }
+
+                    let categorias = [
+                        {
+                            nome: 'Oferta da Semana',
+                            link: '/ofertadasemana?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Refletor LED 100w',
+                            link: '/refletor-led-100w?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Plafon LED 25w',
+                            link: '/plafon-led-25w?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Spot LED 5w',
+                            link: '/spot-led-5w?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Lampada LED 12w',
+                            link: '/lampada-led-12w?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Spot Trilho',
+                            link: '/spot-led-trilho-eletrificado?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Luminária Pendente',
+                            link: '/pendente?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Frete Grátis São Paulo',
+                            link: '/frete-gratis-sp-?sort=mais_vendidos',
+                        },
+                        {
+                            nome: 'Oferta Relâmpago',
+                            link: `${OfertaRelampago[window.location.pathname] || '/refletor-micro-led-slim-200w-branco-frio'}?oferta-relampago=true`,
+                        },
+                    ];
+
+                    return categorias;
+
+                },
+
+                gerarHTML(){
+
+                    let objeto = this.gerarObjeto();
+
+                    let html = objeto.map(item=> {
+                        return `
+                            <li>
+                                <a href="${item.link}">${item.nome}</a>
+                            </li>
+                        `;
+                    }).join('');
+
+                    return `
+                        <div class="categorias-flutuante">
+                            <div class="categorias-flutuante-conteudo conteiner">
+                                <ul class="categorias-flutuante-lista">
+                                    ${html}
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+
+                },
+
+                renderizar(){
+
+                    let html = this.gerarHTML();
+
+                    $('body').append(html);
+
+                }
+
+            }
+
+            CategoriasFlutuante.renderizar();
+
+        },
+
+        gerarBarraProgresso(){
+
+            let date = new Date();
+
+            let horaAtual = date.getHours();
+            let horaTotal = 24;
+            let totalPorcentagem = 100;
+
+            let porcentagem = ((horaAtual / horaTotal) * totalPorcentagem).toFixed(2);
+
+            return `
+                <div class="progress-countdown"><span class="progress-countdown-line" style="width:${porcentagem}%"></span></div>
+            `;
+
+        },
+
         formatarPrecoParaBRL(price){
 
             let $price = price.toLowerCase().trim();
@@ -367,6 +582,208 @@ var ILUMINIM = {
             });
 
         },
+        
+        ajusteDescontoListagem(items){
+
+            let target = $('.listagem-item');
+
+            if(items){
+                target = items;
+            }
+
+            target.each(function(){
+
+                let elemento = $('.bandeira-promocao', this).text();			
+
+                let porcDescontoTag = elemento.replace('% Desconto', '');
+
+                let textDesconto = elemento.replace(' Desconto', '');	
+
+                let htmlPorcTag = $('.bandeira-promocao', this);
+
+                htmlPorcTag.html(`<span>-</span><span>${textDesconto}</span>`);
+
+                /*if(porcDescontoTag <= 35){
+
+                    $(htmlPorcTag).addClass("frio");
+
+                }else if(porcDescontoTag <= 75) {
+
+                    $(htmlPorcTag).addClass("morno");
+
+                }else {
+
+                    $(htmlPorcTag).addClass("quente");
+
+                }*/
+
+            });
+
+        },
+
+        adicionarListaDesejosListagem(items){
+
+            $('body').append(`
+                <div class="modal modal-personalizado fade" id="modal_lista_desejo">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">...</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                
+                                <div class="resultado-lista-desejo">
+                                    ...
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Fechar</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            `);
+
+            let target = $('#listagemProdutos .listagem-item');
+
+            if(items){
+                
+                target = items;
+
+            }
+            
+            target.each(function(){
+
+                let id = $(this).attr('class').split('prod-id-')[1].split(' ')[0];
+
+                if(id){
+
+                    $(this).append(`
+                        <div class="adicionar-produto-lista-desejo adicionar-lista-desejo" data-produto-id="${id}">
+                            <i class="icon-heart-empty"></i>
+                        </div>
+                    `);
+
+                }
+
+            });
+
+            $(document).on('click', '.adicionar-produto-lista-desejo:not(.produto-adicionado-lista-desejo)', function(){
+
+                let produto_id = $(this).attr('data-produto-id');
+
+                $.get(`/conta/favorito/${produto_id}/adicionar`, response=> {
+
+                    let responseJSON = JSON.parse(response);
+                    
+                    if(responseJSON.status == 'sucesso'){
+                        
+                        $('#modal_lista_desejo .modal-title').html('Produto adicionado!');
+                        $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
+                            <div class="resultado-lista-desejo resultado-sucesso">
+                                <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.check_sucesso}</div>
+                                <div class="resultado-lista-desejo-texto">Produto adicionado a sua lista desejo :)</div>
+                            </div>
+                        `);
+
+                        $(this).addClass('produto-adicionado-lista-desejo');
+
+                        if(ILUMINIM.Utils.pagina.isProduct()){
+
+                            $('.pagina-produto .produto-compartilhar .lista-desejo, .produto .span6 > .principal .nome-produto .adicionar-lista-desejo').addClass('produto-adicionado-lista-desejo');
+
+                        }
+
+                    }else{
+
+                        if( responseJSON.mensagem == 'Você precisa estar logado para adicionar aos favoritos'){
+
+                            $('#modal_lista_desejo .modal-title').html('Você precisa estar logado!');
+                            $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
+                                <div class="resultado-lista-desejo resultado-warning">
+                                    <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.exclamacao_error}</div>
+                                    <div class="resultado-lista-desejo-texto">${responseJSON.mensagem}</div>
+                                    <div class="resultado-lista-desejo-texto-2"><a href="/conta/login" class="resultado-lista-desejo-entrar">Entre</a> ou <a href="/conta/login" class="resultado-lista-desejo-cadastrar">Cadastre-se</a></div>
+                                </div>
+                            `);
+
+
+                        }else {
+
+                            $('#modal_lista_desejo .modal-title').html('Falha ao adicionar o produto!');
+                            $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
+                                <div class="resultado-lista-desejo resultado-erro">
+                                    <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.exclamacao_error}</div>
+                                    <div class="resultado-lista-desejo-texto">Ouve uma falha ao adicionar o produto a sua lista desejo :(</div>
+                                </div>
+                            `);
+
+                        }
+
+                    }
+
+                    $('#modal_lista_desejo').modal('show');
+
+
+                })
+
+            });
+
+        },
+
+        voltarAoTopo(){
+
+            $('html, body').animate({ scrollTop: 0 }, 600);
+
+        },
+
+        renderizarBotaoVoltarAoTopo(){
+
+            function toggleClass(target){
+
+                if ($(target).scrollTop() > 100) {
+
+                    $('.voltar-ao-topo').addClass('show');
+
+                } else {
+
+                    $('.voltar-ao-topo').removeClass('show');
+
+                }
+
+            }
+
+            $('body').append(`
+                <div class="voltar-ao-topo">
+                    <div class="voltar-ao-topo-conteudo">
+                        <i class="fa fa-arrow-circle-up"></i>
+                    </div>
+                </div>
+            `);
+
+            toggleClass(window);
+
+            $(document).on( 'scroll', function(){
+        
+                toggleClass(this);
+
+            });
+        
+            $(document).on('click', '.voltar-ao-topo', function(){
+
+                ILUMINIM.Utils.voltarAoTopo();
+
+            });
+
+        },
 
     },
 
@@ -415,23 +832,6 @@ var ILUMINIM = {
                     `);
 
                 
-                },
-
-                ajusteDescontoListagem(){
-                    $('.listagem-item').each(function(){
-                        let elemento = $('.bandeira-promocao', this).text();						
-                        let porcDescontoTag = elemento.replace('% Desconto', '');
-                        let textDesconto = elemento.replace(' Desconto', '');					
-                        let htmlPorcTag = $('.bandeira-promocao', this);
-                         htmlPorcTag.html(`-${textDesconto}`);
-                        if(porcDescontoTag <= 35){
-                            $(htmlPorcTag).addClass("frio");
-                        }else if(porcDescontoTag <= 75) {
-                            $(htmlPorcTag).addClass("morno");
-                        }else {
-                            $(htmlPorcTag).addClass("quente");
-                        }
-                    });
                 },
 
                 ajustesCabecalho(){ //AJUSTES DO CABEÇALHO
@@ -498,7 +898,7 @@ var ILUMINIM = {
                                         <i class="icon-angle-down"></i>
                                     </div>
 
-                                    <div class="dropdown-conteudo-superior">
+                                    <div class="dropdown-conteudo-superior" style="width: ${$('div#cabecalho .inferior').width()}px">
                                         <div class="conteudo-dropdown dropdown-historico">
 
                                             <div class="dropdown-historico-titulo-conteudo">
@@ -518,13 +918,17 @@ var ILUMINIM = {
                                 <div class="conteudo-superior-item item-superior-loja-fisica">
                                     <div class="conteudo-superior-titulo">
                                         ${ ILUMINIM.Utils.icones.loja }
-                                        <a href="/pagina/lojas-iluminim.html" class="atendimento__texto">Encontre uma loja física</a>
+                                        <a href="/pagina/lojas-iluminim.html" class="atendimento__texto">Encontre a Iluminim</a>
                                     </div>
                                     
                                     <div class="dropdown-conteudo-superior dropdown-superior-padrao">
                                         <div class="conteudo-dropdown">
                                             <div class="conteudo-lojas-fisicas-iluminim">
                                                 ${lojasFisicasHTML}                    
+                                            </div>
+
+                                            <div class="conteudo-ponto-retirada">
+                                                <a href="#!"><div class="ponto-retirada-icone">${ ILUMINIM.Utils.icones.map }</div>Ponto de Retirada</a>
                                             </div>
                                         </div>
                                     </div>
@@ -614,6 +1018,19 @@ var ILUMINIM = {
                                             <a href="/conta/index">Minha Conta</a>
                                             <a href="/conta/pedido/listar">Meus Pedidos</a>
                                         </div>
+
+                                        <div class="rastrear-pedido-conteudo">
+                                            <div class="rastrear-pedido-titulo">Rastrear Pedido</div>
+                                            <form class="formulario-rastrear-pedido">
+                                                <div class="formulario-input">
+                                                    <input type="text" placeholder="Código">
+                                                </div>
+                                                <div class="formulario-botao">
+                                                    <button class="btn-custom" type="submit">Rastrear</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -656,6 +1073,21 @@ var ILUMINIM = {
                         $(this).find('.body-app--product-listing-carousel').trigger('refresh.owl.carousel').trigger('refresh.owl.carousel');
                     });
 
+
+                    $('form.formulario-rastrear-pedido').on('submit', function(e){
+
+                        e.preventDefault();
+
+                        let codigoRastreio = $(this).find('input').val() || '';
+
+                        if(codigoRastreio.length > 1){
+
+                            window.open(`https://www.linkcorreios.com.br/?id=${codigoRastreio}`);
+
+                        }
+
+                    });
+
                 },
 
                 aoFocarNaBusca(){
@@ -689,20 +1121,20 @@ var ILUMINIM = {
                     $('#cabecalho').before(`
                         <div class="gif-topo" style="background: #a10000;">
                             <a href="/ofertadasemana?sort=mais_vendidos">
-                                <img alt="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" title="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" width="1180" height="45" src="https://blog.iluminim.com.br/wp-content/uploads/2021/01/Tarja-topo-LED-OFERTAS-FANTASTICAS-1180x45-2.gif">
+                                <img alt="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" title="LED Ofertas Fantástica! Frete grátis para compras acima de R$299,00" src="https://blog.iluminim.com.br/wp-content/uploads/2021/01/Tarja-topo-LED-OFERTAS-FANTASTICAS-1180x45-2.gif">
                             </a>
                         </div>
                     `);
 
                 },
 
-                topoFlutuante(){
+                acoesWindowScroll(){
 
                     let lastScrollTop = 0;
 
                     function onScroll(scrollTop){
 
-                        if(scrollTop > 10){
+                        /*if(scrollTop > 10){
 
                             $('body').addClass('topo-scroll');
 
@@ -710,7 +1142,7 @@ var ILUMINIM = {
 
                             $('body').removeClass('topo-scroll');
 
-                        }
+                        }*/
                         
                         if(scrollTop > 120){
 
@@ -722,15 +1154,35 @@ var ILUMINIM = {
 
                         }
 
-                        if(scrollTop > lastScrollTop){
+                        if(scrollTop > lastScrollTop || scrollTop < 300){
 
                             $('body').removeClass('topo-scroll-up');
 
                         }else {
 
-                            $('body').addClass('topo-scroll-up');
+                            if(scrollTop > 300){
+
+                                $('body').addClass('topo-scroll-up');
+
+                            }
 
                         }
+
+
+                        if(ILUMINIM.Utils.pagina.isProduct()){
+
+                            if(scrollTop > $('.abas-custom #descricao[itemprop="description"]').offset().top - 200){
+
+                                $('body').addClass('scroll-description-visible');
+
+                            }else {
+
+                                $('body').removeClass('scroll-description-visible');
+
+                            }
+
+                        }
+
 
                         lastScrollTop = scrollTop;
 
@@ -744,12 +1196,12 @@ var ILUMINIM = {
 
                             onScroll(scrollTop);
 
-                        }, {});
+                        });
 
                     });
-                    
 
                     let windowScroll = $(window).scrollTop();
+
                     onScroll(windowScroll);
 
                 },
@@ -785,7 +1237,7 @@ var ILUMINIM = {
                         $('.menu__nivel-dois li.menu__title.visible-phone').remove(); //REMOVENDO ESSE ELEMENTO PARA AJUSTAR ALGUNS CSS DO MENU LATERAL.
                     }
 
-                    $('#menu .menu__nivel-um > ul > li.menu__item[data-target-sub-menu]').each(function(){
+                    $('.menu__nivel-um > ul > li.menu__item[data-target-sub-menu]').each(function(){
 
                         let menu = $(this).attr('data-target-sub-menu');
 
@@ -794,7 +1246,7 @@ var ILUMINIM = {
                     });
                     
 
-                    $('#menu .menu__nivel-dois > ul > li.menu__item[data-target-sub-menu]').each(function(){
+                    $('.menu__nivel-dois > ul > li.menu__item[data-target-sub-menu]').each(function(){
 
                         let menu = $(this).attr('data-target-sub-menu');
 
@@ -808,11 +1260,11 @@ var ILUMINIM = {
 
                     if(ILUMINIM.Utils.screen.isMobile()){
 
-                        $('#menu-mobile').html($('.menu__nivel-dois--todos-os-departamentos'));
+                        $('#menu-mobile').html($('#menu-lateral'));
 
                     }else {
 
-                        $('.menu.lateral').html($('.menu__nivel-dois--todos-os-departamentos').clone());
+                        $('.menu.lateral').html($('#menu-lateral'));
 
                     }
 
@@ -823,12 +1275,46 @@ var ILUMINIM = {
 
                             e.preventDefault();
 
-                            let parent = $(this).parent('a');
-
-                            parent.toggleClass('menu-open');
-                            parent.siblings('.menu__nivel-tres').slideToggle(700);
+                            $(this).parents('li.menu__item').siblings('li').children('a').removeClass('menu-open').siblings('ul').slideUp(500);
+                            $(this).parent('a').toggleClass('menu-open').siblings('.menu__nivel-tres').slideToggle(500);
 
                         });
+
+
+                        $('div#menu .menu-custom .carousel-target').owlCarousel({
+                            margin:0,
+                            nav:true,
+                            dots: false,
+                            navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                            responsive:{
+                                768: {
+                                    items:3
+                                },
+                                900:{
+                                    items:4
+                                },
+                                1100:{
+                                    items:5
+                                },
+                                1200:{
+                                    items:6
+                                },
+                                1350:{
+                                    items:8
+                                }
+                            }
+                        });
+
+                        /*$('div#menu .menu-tabs .menu-tabs-items-list .menu-tabs-item a').mouseover(function(){
+
+                            let targetContent = $(this).find('.menu-tabs-item-text').text();
+                            $(this).parents('.menu-tabs-item').siblings().removeClass('menu-tabs-item-active');
+                            $(this).parents('.menu-tabs-item').addClass('menu-tabs-item-active');
+                        
+                            $(this).parents('.menu-tabs').find(`.menu-tabs-contents-item`).removeClass('menu-tabs-contents-item-active');
+                            $(this).parents('.menu-tabs').find(`.menu-tabs-contents-item[target="${targetContent}"]`).addClass('menu-tabs-contents-item-active');
+                        
+                        });*/
 
                     }
 
@@ -1043,7 +1529,6 @@ var ILUMINIM = {
                 },
 
                 selosDeSegurancaRodape(){
-
                     $('#rodape .pagamento-selos .selos').removeClass('span4').addClass('span7').html(`
                         <span class="titulo titulo-rodape">Reconhecimento e Segurança</span>
                         <div class="conteudo-rodape conteudo-selos-de-seguranca">
@@ -1153,120 +1638,10 @@ var ILUMINIM = {
 
                 adicionarClassFreteGratisListagem(){
                     
-                    $('.listagem-item .bandeira-frete-gratis').parents('.listagem-item').addClass('produto-tag-frete-gratis');
-
-                },
-
-                adicionarListaDesejosListagem(){
-
-                    $('body').append(`
-                        <div class="modal modal-personalizado fade" id="modal_lista_desejo">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">...</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        
-                                        <div class="resultado-lista-desejo">
-                                            ...
-                                        </div>
-
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Fechar</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    `);
-                    
-                    $('#listagemProdutos .listagem-item').each(function(){
-
-                        let id = $(this).attr('class').split('prod-id-')[1].split(' ')[0];
-
-                        if(id){
-
-                            $(this).append(`
-                                <div class="adicionar-produto-lista-desejo adicionar-lista-desejo" data-produto-id="${id}">
-                                    <i class="icon-heart-empty"></i>
-                                </div>
-                            `);
-
-                        }
-
-                    });
-
-
-                    $(document).on('click', '.adicionar-produto-lista-desejo:not(.produto-adicionado-lista-desejo)', function(){
-
-                        let produto_id = $(this).attr('data-produto-id');
-
-                        $.get(`/conta/favorito/${produto_id}/adicionar`, response=> {
-
-                            let responseJSON = JSON.parse(response);
-                            
-                            if(responseJSON.status == 'sucesso'){
-                                
-                                $('#modal_lista_desejo .modal-title').html('Produto adicionado!');
-                                $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
-                                    <div class="resultado-lista-desejo resultado-sucesso">
-                                        <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.check_sucesso}</div>
-                                        <div class="resultado-lista-desejo-texto">Produto adicionado a sua lista desejo :)</div>
-                                    </div>
-                                `);
-
-                                $(this).addClass('produto-adicionado-lista-desejo');
-
-                                if(ILUMINIM.Utils.pagina.isProduct()){
-
-                                    $('.pagina-produto .produto-compartilhar .lista-desejo, .produto .span6 > .principal .nome-produto .adicionar-lista-desejo').addClass('produto-adicionado-lista-desejo');
-
-                                }
-
-                            }else{
-
-                                console.log('resppp', responseJSON);
-
-                                if( responseJSON.mensagem == 'Você precisa estar logado para adicionar aos favoritos'){
-
-                                    $('#modal_lista_desejo .modal-title').html('Você precisa estar logado!');
-                                    $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
-                                        <div class="resultado-lista-desejo resultado-warning">
-                                            <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.exclamacao_error}</div>
-                                            <div class="resultado-lista-desejo-texto">${responseJSON.mensagem}</div>
-                                            <div class="resultado-lista-desejo-texto-2"><a href="/conta/login" class="resultado-lista-desejo-entrar">Entre</a> ou <a href="/conta/login" class="resultado-lista-desejo-cadastrar">Cadastre-se</a></div>
-                                        </div>
-                                    `);
-
-
-                                }else {
-
-                                    $('#modal_lista_desejo .modal-title').html('Falha ao adicionar o produto!');
-                                    $('#modal_lista_desejo .resultado-lista-desejo').replaceWith(`
-                                        <div class="resultado-lista-desejo resultado-erro">
-                                            <div class="resultado-lista-desejo-icone-status">${ILUMINIM.Utils.icones.exclamacao_error}</div>
-                                            <div class="resultado-lista-desejo-texto">Ouve uma falha ao adicionar o produto a sua lista desejo :(</div>
-                                        </div>
-                                    `);
-
-                                }
-
-                            }
-
-                            $('#modal_lista_desejo').modal('show');
-
-
-                        })
-
-                    });
+                    $('.listagem-item .bandeira-frete-gratis').html(`
+                        <div class="tag-frete-icone">${ILUMINIM.Utils.icones.caminhao_3}</div>
+                        <div class="tag-frete-texto">Frete grátis</div>
+                    `).parents('.listagem-item').addClass('produto-tag-frete-gratis');
 
                 },
 
@@ -1674,7 +2049,7 @@ var ILUMINIM = {
                 
                 abrirMidiaListagem(){
                 
-                    $(document).on('click', '.listagem-item .midia-listagem, .pagina-produto .midia-produto', function(){
+                    $(document).on('click', '.listagem-item .midia-listagem, .pagina-produto .midia-produto, .pagina-categoria .midia-categoria', function(){
 
                         let dateNow = Date.now();
     
@@ -1740,8 +2115,6 @@ var ILUMINIM = {
 
             },
 
-            
-
             iniciar(){ //INICIAR SCRIPTS DA PÁGINA;
 
                 this.Funcoes.googleLightHouse();
@@ -1750,16 +2123,16 @@ var ILUMINIM = {
                 this.Funcoes.adicionarBackdrop();
                 this.Funcoes.ajusteNewsletter();
                 this.Funcoes.ajustePaginaConta();
-                this.Funcoes.ajusteDescontoListagem();
+                ILUMINIM.Utils.ajusteDescontoListagem();
                 this.Funcoes.ajustesCabecalho();
                 this.Funcoes.aoFocarNaBusca();
                 this.Funcoes.gifTopo();
-                //this.Funcoes.topoFlutuante();
+                this.Funcoes.acoesWindowScroll();
                 this.Funcoes.mensagemCarrinhoVazio();
                 this.Funcoes.menuSuperiorMenuLateral();
                 this.Funcoes.mouseHoverMenuTodosDepartamentos();
                 
-                this.Funcoes.adicionarListaDesejosListagem();
+                ILUMINIM.Utils.adicionarListaDesejosListagem();
                 this.Funcoes.adicionarClassFreteGratisListagem();
                 this.Funcoes.adicionarWattsNasLampadas();
                 this.Funcoes.minimizadorRodape();
@@ -1936,8 +2309,8 @@ var ILUMINIM = {
                         return;
                     }
 
-                    let bannerChamada = 'https://blog.iluminim.com.br/wp-content/uploads/2021/03/Banner-Principal-1180x430-do-consumidor-PRORROGADA.gif';
-                    $('.secao-banners .banner.cheio img[alt="Banner chamada"]').attr('src', bannerChamada);
+                    //let bannerChamada = 'https://blog.iluminim.com.br/wp-content/uploads/2021/03/Banner-Principal-1180x430-do-consumidor-PRORROGADA.gif';
+                    //$('.secao-banners .banner.cheio img[alt="Banner chamada"]').attr('src', bannerChamada);
 
                 },
 
@@ -1986,13 +2359,13 @@ var ILUMINIM = {
 
                                         <div>
                                             <a href="#!">
-                                                <img width="372" height="485" alt="Fitas LED 5050 5 Metros Branco 72w" title="Fitas LED 5050 5 Metros Branco 72w" src="https://blog.iluminim.com.br/wp-content/uploads/2021/03/kit-fitas-XL-5050BF-RSPM-200WBF.gif">
+                                                <img alt="Fitas LED 5050 5 Metros Branco 72w" title="Fitas LED 5050 5 Metros Branco 72w" src="https://cdn.awsli.com.br/930/930730/arquivos/banner-fita-07-05-21.jpg">
                                             </a>
                                         </div>
 
                                         <div>
                                             <a href="#!">
-                                                <img width="372" height="485" alt="Refletor Holofote MicroLED Slim 100w" title="Refletor Holofote MicroLED Slim 100w" src="https://blog.iluminim.com.br/wp-content/uploads/2019/10/banner-refletor-360-nv10out.gif">
+                                                <img alt="Refletor Holofote MicroLED Slim 100w" title="Refletor Holofote MicroLED Slim 100w" src="https://cdn.awsli.com.br/930/930730/arquivos/banner-refletor-holofote-07-05-21.jpg">
                                             </a>
                                         </div>
 
@@ -2017,31 +2390,31 @@ var ILUMINIM = {
 
                                         <div>
                                             <a href="#!">
-                                                <img width="373" height="485" alt="Frete Grátis" title="Frete Grátis" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_-_CAPA.png">
+                                                <img alt="Frete Grátis" title="Frete Grátis" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_-_CAPA.png">
                                             </a>
                                         </div>
 
                                         <div>
                                             <a href="#!">
-                                                <img width="373" height="485" alt="Kit 10 Refletor Holofote Micro LED Slim 200w Branco Frio" title="Kit 10 Refletor Holofote Micro LED Slim 200w Branco Frio" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_RSPM-200WBF-KIT10.png">
+                                                <img alt="Kit 10 Refletor Holofote Micro LED Slim 200w Branco Frio" title="Kit 10 Refletor Holofote Micro LED Slim 200w Branco Frio" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_RSPM-200WBF-KIT10.png">
                                             </a>
                                         </div>
 
                                         <div>
                                             <a href="#!">
-                                                <img width="373" height="485" alt="Kit 20 Luminária Plafon LED 18w Embutir Branco Frio" title="Kit 20 Luminária Plafon LED 18w Embutir Branco Frio" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_PS-Q18WBF-KIT20.png">
+                                                <img alt="Kit 20 Luminária Plafon LED 18w Embutir Branco Frio" title="Kit 20 Luminária Plafon LED 18w Embutir Branco Frio" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_PS-Q18WBF-KIT20.png">
                                             </a>
                                         </div>
 
                                         <div>
                                             <a href="#!">
-                                                <img width="373" height="485" alt="Kit 20 Tubular LED Sobrepor Complete 36w 1,20m Branco Frio | Inmetro" title="Kit 20 Tubular LED Sobrepor Complete 36w 1,20m Branco Frio | Inmetro" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_LUM-120BF-KIT20.png">
+                                                <img alt="Kit 20 Tubular LED Sobrepor Complete 36w 1,20m Branco Frio | Inmetro" title="Kit 20 Tubular LED Sobrepor Complete 36w 1,20m Branco Frio | Inmetro" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_LUM-120BF-KIT20.png">
                                             </a>
                                         </div>
 
                                         <div>
                                             <a href="#!">
-                                                <img width="373" height="485" alt="Kit 50 Luminária de Emergência 30 LEDs | Slim" title="Kit 50 Luminária de Emergência 30 LEDs | Slim" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_23597-KIT50.png">
+                                                <img alt="Kit 50 Luminária de Emergência 30 LEDs | Slim" title="Kit 50 Luminária de Emergência 30 LEDs | Slim" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Vertical_Frete_Gratis_373x485_23597-KIT50.png">
                                             </a>
                                         </div>
 
@@ -2121,25 +2494,23 @@ var ILUMINIM = {
 
                                 <div>
                                     <a href="#!">
-                                        <img width="1180" height="300" 
-                                        alt="Luminárias LED a partir de R$ 8,09" 
+                                        <img alt="Luminárias LED a partir de R$ 8,09" 
                                         title="Luminárias LED a partir de R$ 8,09" 
-                                        src="https://cdn.awsli.com.br/930/930730/arquivos/LUMINARIAS_LED_A_PARTIR_DE-31-03-21.png">
+                                        src="https://cdn.awsli.com.br/930/930730/arquivos/LUMINARIAS_LED_A_PARTIR_DE-10-05.png">
                                     </a>
                                 </div>
 
                                 <div>
                                     <a href="#!">
-                                        <img width="1180" height="300" 
-                                        alt="Refletores LED com até 83% de desconto em até 12x sem juros" 
+                                        <img alt="Refletores LED com até 83% de desconto em até 12x sem juros" 
                                         title="Refletores LED com até 83% de desconto em até 12x sem juros" 
-                                        src="https://cdn.awsli.com.br/930/930730/arquivos/REFLETORES_ATE_xx_OFF___12x_SEM_JUROS-31-03-21.png">
+                                        src="https://cdn.awsli.com.br/930/930730/arquivos/REFLETORES_ATE_xx_OFF___12x_SEM_JUROS_imagem_ambiente-10-05.png">
                                     </a>
                                 </div>
 
                                 <!--<div class="banner-personalizado-cronometro">
                                     <a href="#!">
-                                        <img width="1180" height="299" alt="Micro LED 50% de desconto" title="Micro LED 50% de desconto" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Refletores_com_Cronometro-03-08-2020-wireframe-home.png">
+                                        <img alt="Micro LED 50% de desconto" title="Micro LED 50% de desconto" src="https://cdn.awsli.com.br/257/257163/arquivos/Banner_Refletores_com_Cronometro-03-08-2020-wireframe-home.png">
                                         <ul class="countdown-target"></ul>
                                     </a>
                                 </div>-->
@@ -2194,11 +2565,11 @@ var ILUMINIM = {
                     ]
 
 
-                    let html = banners.map(banner=> {2
+                    let html = banners.map(banner=> {
                         return `
                             <li>
                                 <a href="${banner.link}">
-                                    <img width="407" height="279" alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
+                                    <img class="lazyload" alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
                                 </a>
                             </li>
                         `;   
@@ -2233,13 +2604,13 @@ var ILUMINIM = {
 
                                 <li>
                                     <a class="youtube-iluminim" href="https://bit.ly/iluminim-led" target="_blank" rel="noopener">
-                                        <img width="498" height="41" alt="Se liga no nosso canal do youtube!" title="Se liga no nosso canal do youtube!" src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-youtube-09-09-2020.gif">
+                                        <img alt="Se liga no nosso canal do youtube!" title="Se liga no nosso canal do youtube!" src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-youtube-09-09-2020.gif">
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a class="blog-iluminim" href="https://blog.iluminim.com.br/" target="_blank" rel="noopener">
-                                        <img width="393" height="63" alt="Acesse agora o nosso Blog" title="Acesse agora o nosso Blog" src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-blog-09-09-2020.png">
+                                        <img alt="Acesse agora o nosso Blog" title="Acesse agora o nosso Blog" src="https://blog.iluminim.com.br/wp-content/uploads/2020/09/banner-tarja-blog-09-09-2020.png">
                                     </a>
                                 </li>
 
@@ -2261,48 +2632,36 @@ var ILUMINIM = {
                             link: '#!',
                             imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-08-02-2021-v2.png',
                             desconto: '64',
-                            width: '116',
-                            height: '143'
                         },
                         {
                             nome: 'Plafon LED Garantia Total',
                             link: '#!',
                             imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-luminarias-rgb-23-03-2021.png',
                             desconto: '64',
-                            width: '119',
-                            height: '132'
                         },
                         {
                             nome: "Fita LED A prova d'agua",
                             link: '#!',
                             imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-fita-23-03-2021.png',
                             desconto: '64',
-                            width: '113',
-                            height: '113'
                         },
                         {
                             nome: 'Fonte Chaveada Automática Bivolt',
                             link: '#!',
                             imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-fonte-23-03-2021.png',
                             desconto: '44',
-                            width: '142',
-                            height: '111'
                         },
                         {
                             nome: 'Lâmpadas LED RGB Estilo e cor',
                             link: '#!',
                             imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-lampada-rgb-23-03-2021.png',
                             desconto: '84',
-                            width: '115',
-                            height: '143'
                         },
                         {
                             nome: 'Balizadores LED Impermeáveis',
                             link: '#!',
                             imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/refletor-banner-desconto-balizador-23-03-2021.png',
                             desconto: '44',
-                            width: '127',
-                            height: '134'
                         }
                     ];
 
@@ -2321,7 +2680,7 @@ var ILUMINIM = {
                                     </div>
 
                                     <div class="banner-desconto-imagem">
-                                        <img width="${banner.width}" height="${banner.height}" alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
+                                        <img alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
                                     </div>
                                 </a>
                             </li>
@@ -2368,7 +2727,7 @@ var ILUMINIM = {
 
                     $('.html_content #texto-seo-avaliacoes').insertBefore('div#tarja-informacoes');
 
-                    $('.reviews-home .carousel-target').owlCarousel({
+                    /*$('.reviews-home .carousel-target').owlCarousel({
                         loop:false,
                         margin:0,
                         autoHeight: true,
@@ -2386,9 +2745,9 @@ var ILUMINIM = {
                                 items:3
                             }
                         }
-                    });
+                    });*/
 
-                    $('.reviews-home--list-reviews .ver-mais').on('click', function(){
+                    /*$('.reviews-home--list-reviews .ver-mais').on('click', function(){
                         let texto = $(this).text();
                         if(texto == 'Ver mais'){
                             $(this).text('Ver menos');
@@ -2402,7 +2761,7 @@ var ILUMINIM = {
                         }
                         
                         $('.reviews-home--list-reviews').trigger('refresh.owl.carousel');
-                    });
+                    });*/
                     
 
                 },
@@ -2416,31 +2775,23 @@ var ILUMINIM = {
                     let banners = [
                         {
                             nome: 'Refletores Micro LED Super Oferta!',
-                            imagem: 'https://blog.iluminim.com.br/wp-content/uploads/2020/04/oportunidades-especiais-refletor-micro-led.gif',
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/banner-refletor-07-05-21.jpg',
                             link: '#!',
-                            width: '272',
-                            height: '232'
                         },
                         {
                             nome: 'Decoração Lâmpada Vintage',
                             imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/oportunidades-especiais-decoracao-lampada-vintage.png',
                             link: '#!',
-                            width: '261',
-                            height: '205'
                         },
                         {
                             nome: 'Plafons LED Até 65% OFF',
-                            imagem: 'https://blog.iluminim.com.br/wp-content/uploads/2020/04/oportunidades-especiais-plafons-led.gif',
+                            imagem: 'https://cdn.awsli.com.br/930/930730/arquivos/banner-plafon-led-07-05-21.jpg',
                             link: '#!',
-                            width: '260',
-                            height: '232'
                         },
                         {
                             nome: 'Spot LED Melhores Ofertas!',
                             imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/oportunidades-especiais-decoracao-spot-led.png',
                             link: '#!',
-                            width: '261',
-                            height: '205'
                         }
                     ]
 
@@ -2448,7 +2799,7 @@ var ILUMINIM = {
                         return `
                             <li>
                                 <a href="${banner.link}">
-                                    <img width="${banner.width}" height="${banner.height}" alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
+                                    <img alt="${banner.nome}" title="${banner.nome}" src="${banner.imagem}">
                                 </a>
                             </li>
                         `;   
@@ -2471,7 +2822,7 @@ var ILUMINIM = {
                     }
 
                     if(!ILUMINIM.Utils.usuario.logado()){
-                        $('#listagemProdutos .titulo-categoria.vitrine-mas-vendido').before(`
+                        $('a.titulo-categoria.borda-principal.cor-principal.vitrine-3217074').before(`
                             <div class="entre-ou-cadastre-se">
                                 <div class="entre-ou-cadastre-se-texto">Faça login e veja ofertas incríveis escolhidas só para você</div>
                                 <div class="entre-ou-cadastre-se-links">
@@ -2481,46 +2832,6 @@ var ILUMINIM = {
                             </div>
                         `);
                     }
-
-                },
-
-                botaoVoltarAoTopo(){
-
-                    function toggleClass(target){
-
-                        if ($(target).scrollTop() > 100) {
-
-                            $('.voltar-ao-topo').addClass('show');
-    
-                        } else {
-    
-                            $('.voltar-ao-topo').removeClass('show');
-    
-                        }
-
-                    }
-
-                    $('body').append(`
-                        <div class="voltar-ao-topo">
-                            <div class="voltar-ao-topo-conteudo">
-                                <i class="fa fa-arrow-circle-up"></i>
-                            </div>
-                        </div>
-                    `);
-
-                    toggleClass(window);
-
-                    $(document).on( 'scroll', function(){
-                
-                        toggleClass(this);
-
-                    });
-                
-                    $(document).on('click', '.voltar-ao-topo', function(){
-
-                        $('html, body').animate({ scrollTop: 0 }, 600);
-
-                    });
 
                 },
 
@@ -2654,7 +2965,7 @@ var ILUMINIM = {
 
                         $(this).addClass('produto-tag-campeao-de-vendas').find('.imagem-produto').after(`
                             <div class="produto-tag tag-campeao-de-vendas">
-                                <img alt="Produto Campeão de Vendas" title="Produto Campeão de Vendas" width="195" height="42" src="https://cdn.awsli.com.br/257/257163/arquivos/cp-vendas.png">
+                                <img alt="Produto Campeão de Vendas" title="Produto Campeão de Vendas" src="https://cdn.awsli.com.br/257/257163/arquivos/cp-vendas.png">
                             </div>
                         `);
 
@@ -2700,19 +3011,22 @@ var ILUMINIM = {
                         
                         <div class="banner-ilm-atacado block-banner" data-banner="banner1">
                             <a href="https://www.iluminimatacado.com.br/" target="_blank" rel="noopener">
-                                <img width="1180" height="200" alt="Compras no Atacado?, acesse www.iluminimatacado.com.br" title="Compras no Atacado?, acesse www.iluminimatacado.com.br" src="https://cdn.awsli.com.br/257/257163/arquivos/compras-no-atacado-nv.png">
+                                <img 
+                                    alt="Compras no Atacado?, acesse www.iluminimatacado.com.br" 
+                                    title="Compras no Atacado?, acesse www.iluminimatacado.com.br" 
+                                    src="https://cdn.awsli.com.br/257/257163/arquivos/HOME_VAREJO_BANNER_ATACADO17-05-21.png">
                             </a>
                         </div>
                     
                         <div class="banner-empresarial-animated block-banner b_animated_ilm hidden-phone active" data-banner="banner2">
                             
-                            <div class="wrap">
+                            <!--<div class="wrap">
                                 <div class="wrap_txt">
                                     <h1>Soluções <b>Empresariais</b></h1>
                                 </div>
                                 <div class="wrap_icones">
                                     <div class="icone-wrap mao">
-                                        <div class="icn-ilm"><img width="66" height="39" alt="Preço exclusivo para empresa" title="Preço exclusivo para empresa" src="https://cdn.awsli.com.br/257/257163/arquivos/icone-mao-11-03-.png">
+                                        <div class="icn-ilm"><img alt="Preço exclusivo para empresa" title="Preço exclusivo para empresa" src="https://cdn.awsli.com.br/257/257163/arquivos/icone-mao-11-03-.png">
                                         </div>
                                         <div class="drop_box" style="display:none;">
                                             <div class="wraped"> <span class="titdropbox">Preço exclusivo para empresa,</span> <span
@@ -2720,7 +3034,7 @@ var ILUMINIM = {
                                         </div>
                                     </div>
                                     <div class="icone-wrap luz">
-                                        <div class="icn-ilm"><img width="42" height="56" alt="A Iluminim é a melhor solução" title="A Iluminim é a melhor solução" src="https://cdn.awsli.com.br/257/257163/arquivos/iicone-luz-11-03-.png">
+                                        <div class="icn-ilm"><img alt="A Iluminim é a melhor solução" title="A Iluminim é a melhor solução" src="https://cdn.awsli.com.br/257/257163/arquivos/iicone-luz-11-03-.png">
                                         </div>
                                         <div class="drop_box" style="display:none;">
                                             <div class="wraped"> <span class="titdropbox">A Iluminim é a melhor solução</span> <span
@@ -2728,7 +3042,7 @@ var ILUMINIM = {
                                         </div>
                                     </div>
                                     <div class="icone-wrap papel">
-                                        <div class="icn-ilm"><img width="64" height="66" alt="Atendimento e projetos personalizados!" title="Atendimento e projetos personalizados!" src="https://cdn.awsli.com.br/257/257163/arquivos/icone-caneta-papel-11-03-.png"></div>
+                                        <div class="icn-ilm"><img alt="Atendimento e projetos personalizados!" title="Atendimento e projetos personalizados!" src="https://cdn.awsli.com.br/257/257163/arquivos/icone-caneta-papel-11-03-.png"></div>
                                         <div class="drop_box" style="display:none;">
                                             <div class="wraped"> <span class="titdropbox">Atendimento e projetos personalizados!</span>
                                                 <span class="p_txt">Confie na líder!</span> </div>
@@ -2736,7 +3050,14 @@ var ILUMINIM = {
                                     </div>
                                 </div>
                                 <div class="wrap_btn"><a href="/pagina/atendimento-empresarial.html" class="btn">Clique e Confira</a></div>
-                            </div>
+                            </div>-->
+
+                            <a href="/pagina/atendimento-empresarial.html">
+                                <img 
+                                    alt="Soluções empresariais" 
+                                    title="Soluções empresariais" 
+                                    src="https://cdn.awsli.com.br/257/257163/arquivos/BANNER_SOLUCOES_EMPRESARIAIS_HOME-17-05-21.png">
+                            </a>
                     
                         </div>
                     
@@ -2831,11 +3152,12 @@ var ILUMINIM = {
 
                 },
 
-
-
             },
 
             iniciar(){ //INICIAR SCRIPTS DA PÁGINA;
+
+                ILUMINIM.Utils.renderizarCategoriasFlutuante();
+                ILUMINIM.Utils.renderizarBotaoVoltarAoTopo();
 
                 this.Funcoes.bannerChamadaDesktop();
 
@@ -2857,7 +3179,7 @@ var ILUMINIM = {
                 this.Funcoes.textoSeoAvaliacoes();
                 this.Funcoes.oportunidadesEspeciais();
                 this.Funcoes.entrarOuCadastrarListagem();
-                this.Funcoes.botaoVoltarAoTopo();
+                
                 this.Funcoes.bannersEmAba();
                 
                 if(ILUMINIM.Utils.screen.isMobile()){
@@ -2869,7 +3191,7 @@ var ILUMINIM = {
                     this.Funcoes.gifTarjaMobile();
 
                     this.Funcoes.bannerYoutubeMobile();
-                    this.Funcoes.bannerBaixeNossoAppMobile();
+                    //this.Funcoes.bannerBaixeNossoAppMobile();
 
                     this.Funcoes.historicoDeNavegacaoMobile();
 
@@ -2881,13 +3203,770 @@ var ILUMINIM = {
 
         },
 
-
+        
         PaginaCategoria: {
     
             classPagina: '.pagina-categoria', //REFERENCIA DA PAGINA
 
             Funcoes: { //FUNÇÕES DA PÁGINA.
-            
+
+                paginasPersonalizadas(){
+
+                    let PaginasPersonalizadas = [
+                        
+                        {
+                            paginasURL: ['/todos-os-departamentos'],
+
+                            gerarHTML(){
+                        
+                                return `
+                                    <div id="allDepartment">
+                                        <div class="banner-dpt span12">
+                                            <!-- backup https://cdn.awsli.com.br/257/257163/arquivos/banner-dpt-ilm-24-01.png -->
+                                            <a href="/ofertadasemana?sort=mais_vendidos"><img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-na-home-mais-vendidos-com-desconto-07-08-2020.png" alt="Banner Todos Departamentos"/></a>
+                                        </div>
+    
+                                        <div class="texto-dpt span12">
+                                            Conheça agora a maior linha de <b>Iluminação</b> LED da internet e surpreenda-se com a maior qualidade e o menor preço do Brasil.
+                                            A Iluminim é uma loja de iluminação online que oferece uma extensa linha de Lâmpadas de LED, Refletores, Luminárias, Plafons, 
+                                            Fitas de LED, Spots e muitos outros produtos seletamente escolhidos para sua necessidade. Seja ela iluminação de jardim, 
+                                            iluminaçao residencial, iluminação publica ou iluminação para festas, temos o melhor material para você utilizar em seu projeto, 
+                                            a maior garantia do mercado e as melhores condições de pagamento. Parcelamos em até 12x sem juros, oferecemos 10% de desconto no 
+                                            boleto e um frete totalmente gratuito para compras acima de R$ 299,00. Aproveite agora mesmo e adquira o tudo em <b>Iluminação</b>
+                                            de LED na Iluminim. Confie em quem entende! Confie na líder!
+                                        </div>
+                                        <div class="block-categories span12">
+                                            <div class="block-categories-into one span12">
+                                                <div class="span4">
+                                                    <h4><a href="/refletores-de-led?sort=mais_vendidos">Refletores LED</a></h4>
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/bloco-destaque-refletores-alldepartment.png" alt="">
+                                                    <ul>
+                                                        <li><a href="/refletor-micro-led-slim?sort=mais_vendidos"><i class="icon-chevron-right"></i> Refletor MicroLED Slim</a></li>
+                                                        <li><a href="/refletor-led-smd-ultra-thin?sort=mais_vendidos"><i class="icon-chevron-right"></i> Refletor MicroLED Ultra Thin</a></li>
+                                                        <li><a href="/refletor-micro-led-multifocal?sort=mais_vendidos"><i class="icon-chevron-right"></i> Refletor MicroLED Multifocal</a></li>
+                                                        <li><a href="/refletor-industrial?sort=mais_vendidos"><i class="icon-chevron-right"></i> Refletor LED Industrial</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="span4">
+                                                    <h4><a href="/luminarias-led?sort=mais_vendidos">Luminárias LED</a></h4>
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/bloco-destaque-luminarias-alldepartment.png" alt="">
+                                                    <ul>
+                                                        <li><a href="/plafon-led?sort=mais_vendidos"><i class="icon-chevron-right"></i> Luminária Plafon LED</a></li>
+                                                        <li><a href="/pendente?sort=mais_vendidos"><i class="icon-chevron-right"></i> Pendentes</a></li>
+                                                        <li><a href="/arandela-led?sort=mais_vendidos"><i class="icon-chevron-right"></i> Arandelas</a></li>
+                                                        <li><a href="/luminarias-publicas-led?sort=mais_vendidos"><i class="icon-chevron-right"></i> Luminárias Públicas LED</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="span4">
+                                                    <h4><a href="/spots?sort=mais_vendidos">Spots LED</a></h4>
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/bloco-destaque-spots-alldepartment.png" alt="">
+                                                    <ul>
+                                                        <li><a href="/spot-led-quadrado?sort=mais_vendidos"><i class="icon-chevron-right"></i> Spot LED Quadrado</a></li>
+                                                        <li><a href="/spot-led-redondo?sort=mais_vendidos"><i class="icon-chevron-right"></i> Spot LED Redondo</a></li>
+                                                        <li><a href="/spot-led-trilho-eletrificado?sort=mais_vendidos"><i class="icon-chevron-right"></i> Spot LED para Trilho Eletrificado</a></li>
+                                                        <li><a href="/balizador-led?sort=mais_vendidos"><i class="icon-chevron-right"></i> Balizador LED</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="block-categories-into two span12">
+                                                <div class="span4">
+                                                    <h4><a href="/fita-de-led?sort=mais_vendidos">Fitas LED</a></h4>
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/bloco-destaque-fitas-alldepartment.png" alt="">
+                                                    <ul>
+                                                        <li><a href="/fita-led-rgb?sort=mais_vendidos"><i class="icon-chevron-right"></i> Fita LED RGB</a></li>
+                                                        <li><a href="/fita-led-branca?sort=mais_vendidos"><i class="icon-chevron-right"></i> Fita LED Branco Frio</a></li>
+                                                        <li><a href="/fita-led-branco-quente?sort=mais_vendidos"><i class="icon-chevron-right"></i> Fita LED Branco Quente</a></li>
+                                                        <li><a href="/mangueiras-led?sort=mais_vendidos"><i class="icon-chevron-right"></i> Mangueira LED</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="span4">
+                                                    <h4><a href="/lampada-led?sort=mais_vendidos">Lâmpadas LED</a></h4>
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/bloco-destaque-lampadas-alldepartment.png" alt="">
+                                                    <ul>
+                                                        <li><a href="/lampada-led-tubular?sort=mais_vendidos"><i class="icon-chevron-right"></i> Lâmpada LED Tubular</a></li>
+                                                        <li><a href="/lampada-led-bulbo?sort=mais_vendidos"><i class="icon-chevron-right"></i> Lâmpada LED Bulbo</a></li>
+                                                        <li><a href="/led-retro?sort=mais_vendidos"><i class="icon-chevron-right"></i> Lâmpada LED Vintage</a></li>
+                                                        <li><a href="/lampada-led-alta-potencia?sort=mais_vendidos"><i class="icon-chevron-right"></i> Lâmpada LED Alta Potência</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="span4">
+                                                    <h4><a href="/acessorios-para-leds?sort=mais_vendidos">Acessórios LED</a></h4>
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/bloco-destaque-acessorios-alldepartment.png" alt="">
+                                                    <ul>
+                                                        <li><a href="/fonte-convencional?sort=mais_vendidos"><i class="icon-chevron-right"></i> Fontes para Câmeras e Fitas</a></li>
+                                                        <li><a href="/drivers?sort=mais_vendidos"><i class="icon-chevron-right"></i> Drivers para Plafons e Refletores</a></li>
+                                                        <li><a href="/emenda-para-fita-de-led?sort=mais_vendidos"><i class="icon-chevron-right"></i> Emendas para Fita e Spot Trilho</a></li>
+                                                        <li><a href="/soquete-led?sort=mais_vendidos"><i class="icon-chevron-right"></i> Soquetes para Lâmpadas</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="block-call-action span12">
+                                            <div class="block-video span6">
+                                                <iframe width="570" height="317" src="https://www.youtube.com/embed/ew74UyFfO6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="block-environment span6">
+                                                <div class="box-image-environment span6">
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-chamada-compre-por-ambiente-alldepartment.png" alt="Banner Chamada Compre por ambiente">
+                                                </div>
+                                                <div class="box-call-environment span6">
+                                                    <h4>Compre por <br/><b>Ambiente</b></h4>
+                                                    <a href="/compre-por-ambiente?sort=mais_vendidos">Confira!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="block-benefits span12">
+                                            <div class="sidebar-benefits span3">
+                                                <h3>Vantagens e <br/><b>Benefícios LED</b></h3>
+                                                <ul>
+                                                    <li><a href="javascript:void(0);" target="#one" class="active-benefitt"><i class="icon-chevron-right"></i> Longa Vida Útil</a></li>
+                                                    <li><a href="javascript:void(0);" target="#two"><i class="icon-chevron-right"></i> Muito Mais Economia</a></li>
+                                                    <li><a href="javascript:void(0);" target="#tree"><i class="icon-chevron-right"></i> Mais Sustentabilidade</a></li>
+                                                    <li><a href="javascript:void(0);" target="#four"><i class="icon-chevron-right"></i> Baixa Emissão de Calor</a></li>
+                                                    <li><a href="javascript:void(0);" target="#five"><i class="icon-chevron-right"></i> Variedade de Cores de Luz</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="show-benefits span9">
+                                                <ul>
+                                                    <li id="one" class="active-benefit">
+                                                        <div class="box-show-text">
+                                                            <h3>Longa <b>Vida Útil</b></h3>
+                                                            <span>
+                                                                Os produtos de LED são fabricados para durarem cerca de 30 mil horas de uso - podem chegar a 50 mil ou mais -, o que pode durar décadas, dependendo da frequência de utilização por horas/dia.
+                                                            </span>
+                                                        </div>
+                                                        <div class="box-show-image">
+                                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-lvu.png" alt="Longa Vida Últil">
+                                                        </div>
+                                                    </li>
+                                                    <li id="two">
+                                                        <div class="box-show-text">
+                                                            <h3>Muito <b>Mais Economia</b></h3>
+                                                            <span>
+                                                                Alta eficiência aliada ao baixo consumo de energia elétrica. A lâmpada emite o mesmo fluxo luminoso que as outras, mas com a vantagem de ser até 80% mais econômica que as incandescentes e a diferença para a fluorescente é de 30% (em uma comparação utilizando lâmpadas com 20W de potência).
+                                                            </span>
+                                                        </div>
+                                                        <div class="box-show-image">
+                                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-eco.png" alt="Icon Mais Economia">
+                                                        </div>
+                                                    </li>
+                                                    <li id="tree">
+                                                        <div class="box-show-text">
+                                                            <h3>Mais <b>Sustentabilidade</b></h3>
+                                                            <span>
+                                                                Por não conter elementos tóxicos, esse tipo de lâmpada também é amigável ao meio ambiente, ao contrário das lâmpadas fluorescentes que têm mercúrio em seu interior. Cerca de 98,5% dos materiais usados na fabricação da lâmpada LED são recicláveis.
+                                                                <br/>Além disso, por terem uma vida útil longa, ela também se torna mais sustentável e ajuda a produzir menos lixo a longo prazo.
+                                                            </span>
+                                                        </div>
+                                                        <div class="box-show-image">
+                                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-sus.png" alt="Icon Mais Sustentabilidade">
+                                                        </div>
+                                                    </li>
+                                                    <li id="four">
+                                                        <div class="box-show-text">
+                                                            <h3>Baixa <b>Emissão de Calor</b></h3>
+                                                            <span>
+                                                                Esse também é um dos fatores que a tornam mais econômica. Isso ocorre porque outros tipos de lâmpadas transformam parte da energia consumida em calor, enquanto o LED utiliza somente o suficiente para gerar um bom fluxo luminoso com uma emissão de calor muito baixa.
+                                                            </span>
+                                                        </div>
+                                                        <div class="box-show-image">
+                                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-bec.png" alt="Icon Baixa Emissão de Luz">
+                                                        </div>
+                                                    </li>
+                                                    <li id="five">
+                                                        <div class="box-show-text">
+                                                            <h3>Variedade de <b>Cores de Luz</b></h3>
+                                                            <span>
+                                                                A lâmpada de LED pode ter inúmeras cores, você encontra todo o espectro RGB com a possibilidade de alterar as cores com um controle específico em alguns modelos, já outros vêm com a cor de luz fixa em verde, azul, vermelho, rosa, amarelo e muito mais. Tendo a possibilidade de transformar qualquer ambiente.
+                                                            </span>
+                                                        </div>
+                                                        <div class="box-show-image">
+                                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-var.png" alt="Icon Variedade de Cores">
+                                                        </div>
+                                                    </li>
+                                                </ul>   
+                                            </div>
+                                        </div>
+    
+    
+    
+                                        <div id="box-estatisticas">
+                                            <div class="container">
+                                                <div class="linha-um into-estatisticas">
+                                                    <div class="texto-estatisticas">
+                                                        <p class="texto-estatistica--into">A <b>Iluminim</b> revolucionou o mercado de iluminação e hoje - há 10 anos no segmento - é referência em produtos de LED. Mudando o jeito de fazer negócio, a Iluminim se preocupa fundamentalmente com o cliente, seja oferecendo as melhores condições de pagamento com opção de parcelamento de até <b>12x sem juros</b> no cartão de crédito ou disponibilizando <b>10% de desconto</b> à vista no boleto. <b>A maior garantia do mercado, os preços baixos e o frete gratuito</b> para compras a partir de R$ 299,00, elevam ainda mais o patamar do maior e-commerce de LED do Brasil. Além de fazer bem para o seu bolso, a Iluminim também preza pela sustentabilidade do planeta, seja comercializando a tecnologia mais sustentável do ramo, quanto em ações sociais que visam a empatia ao próximo (ao finalizar uma compra você pode selecionar para qual programa iremos doar um fundo monetário). Confie em quem entende o que é melhor para o planeta. Confie na líder!</p>
+                                                    </div>
+                                                    <div class="progresssbar-estatisticas">
+                                                        <h3 class="titulo-texto-estatisticas">Saiba porquê investir em LED:</h3>
+                                                        <div class="progressbox one">
+                                                            <span class="titlle-progressbar">Economia de energia em até 80%</span>
+                                                            <div class="progressbar" data-progress="80%" style="--width: 80;"></div>
+                                                        </div>
+                                                        <div class="progressbox two">
+                                                            <span class="titlle-progressbar">Material 98,5% reciclável</span>
+                                                            <div class="progressbar" data-progress="98.5%" style="--width: 92;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="linha-dois into-estatisticas">
+                                                    <div class="numeros-estatisticas">
+                                                        <span class="quantidade-numeros">10</span>
+                                                        <span class="texto-numeros">ANOS DE MERCADO</span>
+                                                    </div>
+                                                    <div class="numeros-estatisticas">
+                                                        <span class="quantidade-numeros">+ 1.000.000</span>
+                                                        <span class="texto-numeros">CLIENTES SATISFEITOS</span>
+                                                    </div>
+                                                    <div class="numeros-estatisticas">
+                                                        <span class="quantidade-numeros">+ 140.000</span>
+                                                        <span class="texto-numeros">PRODUTOS NO CATÁLOGO</span>
+                                                    </div>
+                                                    <div class="numeros-estatisticas">
+                                                        <span class="quantidade-numeros">6</span>
+                                                        <span class="texto-numeros">INSTITUIÇÕES BENEFICIADAS</span>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+    
+    
+    
+                                        <div class="withdraw__in__store">
+                                            <div class="box-information span3">
+                                                <div class="withdraw__box-header">
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-box-encontre-produto.png"/>
+                                                </div>
+                                                <div class="withdraw__box-body">
+                                                    <h4>Encontre um produto</h4>
+                                                    <p>
+                                                    Escolha o produto que você quer comprar online e retirar na loja.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="box-information span3">
+                                                <div class="withdraw__box-header">
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-box-escolha-uma-loja.png"/>
+                                                </div>
+                                                <div class="withdraw__box-body">
+                                                    <h4>Escolha uma loja</h4>
+                                                    <p>
+                                                    Escolha uma loja física mais perto de você
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="box-information span3">
+                                                <div class="withdraw__box-header">
+                                                    <div class="withdraw__box-header--into">
+                                                        <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-box-pegue-hoje.png"/>
+                                                        <span>pegue na loja hoje!</span>
+                                                    </div>
+                                                    <a href="#">comprar</a>
+                                                </div>
+                                                <div class="withdraw__box-body">
+                                                    <h4>Finalize a compra</h4>
+                                                    <p>
+                                                        Faça o pedido com a opção de "Retirada pessoalmente" e aguarde o e-mail de confirmação para retirada
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="box-information span3">
+                                                <div class="withdraw__box-header">
+                                                    <img src="https://cdn.awsli.com.br/257/257163/arquivos/icon-box-retirar-agora.png"/>
+                                                </div>
+                                                <div class="withdraw__box-body">
+                                                    <h4>Agora é só retirar</h4>
+                                                    <p>
+                                                        Pegue o número do pedido e corre para a loja que você escolheu!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+    
+                                    </div>
+                                `;
+    
+                            },
+    
+                            toggleBeneficios(){
+    
+                                $('.sidebar-benefits.span3 ul>li>a').on('click', function(e){
+    
+                                    e.preventDefault();
+    
+                                    let benefitClicked = $(this).attr('target');
+    
+                                    $('.sidebar-benefits.span3 ul>li>a').removeClass('active-benefitt');
+    
+                                    $(this).addClass('active-benefitt');
+    
+                                    $('.show-benefits.span9 ul li').removeClass('active-benefit');
+                                    
+                                    $(`.show-benefits.span9 ul li${benefitClicked}`).addClass('active-benefit');
+    
+                                });
+    
+                            },
+    
+                            renderizar(){
+    
+                                let html = this.gerarHTML();
+    
+                                $('body').addClass('pagina-personalizada-todos-departamentos');
+    
+                                $('.conteudo.span9').prepend(html);
+    
+                                this.toggleBeneficios();
+    
+                            },
+
+                            iniciar(){
+
+                                this.renderizar();
+
+                            },
+                        },
+
+                        {
+                            paginasURL: ['/lancamentos-led', '/lancamento-luminarias-led'],
+
+                            naveguePorLancamentos: {
+
+                                gerarObjeto(){
+
+                                    let categorias = [
+                                        {
+                                            nome: 'Plafons LED',
+                                            link: '/lancamento-plafon-led-?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/luminaria-led-lancamento-15-10.png'
+                                        },
+                                        {
+                                            nome: 'Refletores LED',
+                                            link: '/lancamento-refletor-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/refletor-led-lancamento-15-10.png'
+                                        },
+                                        {
+                                            nome: 'Spots LED',
+                                            link: '/lancamento-spot-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/icone-spot-v2-14-05-21.png'
+                                        },
+                                        {
+                                            nome: 'Fitas LED',
+                                            link: '/lancamento-fita-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/fita-led-lancamento-15-10.png'
+                                        },
+                                        {
+                                            nome: 'Lâmpadas LED',
+                                            link: '/lancamento-lampada-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/lampada-led-lancamento-15-10.png'
+                                        },
+                                        {
+                                            nome: 'Luminárias LED',
+                                            link: '/lancamento-luminarias-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/navegacao-lanc-luminarias-10-05-21.png'
+                                        },
+                                        {
+                                            nome: 'Luminária Pendente',
+                                            link: '/lancamento-pendente?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/pendente-led-lancamento-15-10.png'
+                                        },
+                                        {
+                                            nome: 'Acessórios LED',
+                                            link: '/lancamento-acessorios-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/acessorios-led-lancamento-15-10.png'
+                                        },
+                                        {
+                                            nome: 'Câmeras LED',
+                                            link: '/lancamento-camera-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/camera-led-lancamento-15-10.png'
+                                        },
+                                        {
+                                            nome: 'Festa LED',
+                                            link: '/lancamento-festa-led?sort=mais_vendidos',
+                                            imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/icon-festa-led-lancaments-17-10.png'
+                                        },
+                                    ]
+
+                                    return categorias;
+
+                                },
+
+                                gerarHTML(){
+
+                                    let objeto = this.gerarObjeto();
+
+                                    let categoriasHTML = objeto.map(categoria => {
+
+                                        let { nome, link, imagem } = categoria;
+
+                                        console.log(window.location.pathname, link.split('?')[0]);
+
+                                        return `
+                                            <div class="navegacao-lancamentos-item ${window.location.pathname == link.split('?')[0] ? 'navegacao-active' : ''}">
+                                                <a href="${link}" title="${nome}">
+                                                    
+                                                    <div class="navegacao-lancamentos-item-imagem">
+                                                        <img src="${imagem}", alt="${nome}" title="${nome}">
+                                                    </div>
+
+                                                    <div class="navegacao-lancamentos-item-nome">${nome}</div>
+
+                                                </a>
+                                            </div>
+                                        `;
+
+                                    }).join('');
+
+
+                                    return `
+                                        <div class="navegacao-lancamentos">
+
+                                            <div class="navegacao-lancamentos-titulo">
+                                                <span>Navegue por Lançamentos</span>
+                                            </div>
+
+                                            <div class="navegacao-lancamentos-conteudo">
+                                                <div class="navegacao-lancamentos-conteudo-lista carousel-target">
+                                                    ${categoriasHTML}
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    `;
+
+                                },
+
+                                filtroPorPreco(){
+
+                                    $('.lateral.outras.filtro-coluna.filtro-preco-personalizado').insertBefore('.navegacao-lancamentos');
+
+                                },
+
+                                ativarCarousel(){
+
+                                    $('.navegacao-lancamentos .carousel-target').owlCarousel({
+                                        margin:0,
+                                        nav:true,
+                                        dots: false,
+                                        navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                                        responsive:{
+                                            0: {
+                                                items:1
+                                            },
+                                            768: {
+                                                items:3
+                                            },
+                                            1024:{
+                                                items:6
+                                            }
+                                        }
+                                    });
+
+                                },
+
+                                iniciar(){
+
+                                    let html = this.gerarHTML();                                
+
+                                    $('div#listagemProdutos').before(html);
+
+                                    this.ativarCarousel();
+                                    this.filtroPorPreco();
+
+                                }
+
+                            },
+
+                            renderizar(){
+
+                                $('body').addClass('pagina-personalizada-lancamentos');
+
+                                this.naveguePorLancamentos.iniciar();
+
+                            },
+
+                        },
+
+                        {
+                            paginasURL: ['/oferta-da-semana'],
+
+                            listagensPersonalizadas: {
+
+                                gerarObjeto(){
+
+                                    let objeto = {
+
+                                        ['/oferta-da-semana']: [
+                                            {
+                                                //url: '/oferta-da-semana-refletor-led?sort=mais_vendidos',
+                                                url: '/refletores-holofotes-led?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/banner%20odm%20refletores%20led%2021-10-2020.png',
+                                                nome: 'Refletores LED'
+                                            },
+                                            {
+                                                url: '/oferta-da-semana-plafon-led?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/banner%20odm%20luminarias%20led%2021-10-2020.png',
+                                                nome: 'Luminárias LED'
+                                            },
+                                            {
+                                                url: '/oferta-da-semana-spot-led?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/banner%20odm%20spots%20led%2021-10-2020.png',
+                                                nome: 'Spots LED'
+                                            },
+                                            {
+                                                url: '/oferta-da-semana-fita-led?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/banner%20odm%20fitas%20led%2021-10-2020.png',
+                                                nome: 'Fitas LED'
+                                            },
+                                            {
+                                                url: '/oferta-da-semana-lampada-led?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/banner%20odm%20lampadasled%2021-10-2020.png',
+                                                nome: 'Lâmpadas LED'
+                                            },
+                                            {
+                                                url: '/oferta-da-semana-acessorios-led?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/banner%20odm%20acessorios%20led%2021-10-2020.png',
+                                                nome: 'Acessórios LED'
+                                            },
+                                            {
+                                                url: '/oferta-da-semana-kits-led?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/banner-oferta-da-semana-kit-27-10-2020.png',
+                                                nome: 'Kits LED'
+                                            },
+                                        ],
+                                        
+                                        ['/led-friday']: [
+                                            {
+                                                url: '/refletor-led-friday?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Banner_vertical_de_categoria_Refletores_LED-BF2020.png',
+                                                nome: 'Refletores LED'
+                                            },
+                                            {
+                                                url: '/plafon-led-friday?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Banner_vertical_de_categoria_Luminarias_LED-BF2020.png',
+                                                nome: 'Luminárias LED'
+                                            },
+                                            {
+                                                url: '/spot-led-friday?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Banner_vertical_de_categoria_Spots_LED-BF2020.png',
+                                                nome: 'Spots LED'
+                                            },
+                                            {
+                                                url: '/fita-led-friday?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Banner_vertical_de_categoria_Fitas_LED-BF2020.png',
+                                                nome: 'Fitas LED'
+                                            },
+                                            {
+                                                url: '/lampada-led-friday?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Banner_vertical_de_categoria_Lampadas_LED-BF2020.png',
+                                                nome: 'Lâmpadas LED'                    
+                                            },
+                                            {
+                                                url: '/acessorios-led-friday?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Banner_vertical_de_categoria_Acessorios_LED-BF2020.png',
+                                                nome: 'Acessórios LED'                    
+                                            },
+                                            {
+                                                url: '/kits-led-friday?sort=mais_vendidos',
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Banner_vertical_de_categoria_KITS_LED-BF2020.png',
+                                                nome: 'Kits LED'                    
+                                            },
+                                        ]
+
+                                    }
+
+                                    return objeto[window.location.pathname];
+
+                                },
+
+                                gerarHTML(){
+
+                                    let objeto = this.gerarObjeto();
+
+                                    let HTMLCategorias = objeto.map((item, index) => {
+
+                                        let { url, imagem, nome } = item;
+
+                                        return `
+                                            <div class="conteudo-ofertasemana--bloco-categoria categoria-${ index + 1 }" data-load="${ url }">
+                                            
+                                                <div class="bloco-categoria--banner">
+                                                    
+                                                    ${ILUMINIM.Utils.screen.isDesktop() ? `
+                                                        <a href="javascript:void(0);">
+                                                            <img src="${ imagem }">
+                                                        </a>
+                                                    ` : ''}
+                                                    
+
+                                                    <div class="banner--cronometro">
+                                                        <ul class="countdown-target"></ul>
+                                                    </div>
+
+                                                    <div class="banner--progresso">
+
+                                                        ${ILUMINIM.Utils.screen.isDesktop() ? `
+                                                            ${ ILUMINIM.Utils.gerarBarraProgresso() }
+                                                        ` : ''}
+
+                                                        ${ILUMINIM.Utils.screen.isMobile() ? `<div class="banner-titulo">${nome}</div>` : ''}
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="bloco-categoria--produtos">
+                                                    <div class="produtos--produtos-carrousel carousel-target">
+                                                        <div class="carregando-produtos"><img src="https://blog.iluminim.com.br/wp-content/uploads/2019/05/anm-iluminim-loading-18.gif"></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        `;
+
+                                    }).join('');
+
+                                    return `
+                                        <div id="OfertaSemanaCustomizada">
+
+                                            <div class="conteiner">
+
+                                                <div class="OfertaSemanaCustomizada--conteudo-ofertasemana">
+
+                                                    ${HTMLCategorias}
+                                                
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    `;
+                                    
+                                },
+
+                                carregarProdutos(){ //CARREGANDO OS PRODUTOS NAS SUAS CATEGORIAS RESPECTIVAS.
+
+                                    let $this = this;
+
+                                    $('#OfertaSemanaCustomizada .conteudo-ofertasemana--bloco-categoria').each(function(){
+                            
+                                        let urlLoad = $(this).attr('data-load');
+                                        
+                                        if(ILUMINIM.Utils.screen.isDesktop()){
+                            
+                                            $this.executarCronometro($(this).find('.bloco-categoria--banner .countdown-target'));
+                                            
+                                        }
+                                        
+                                        $(this).find('.bloco-categoria--produtos .produtos--produtos-carrousel').load(`${urlLoad} div#listagemProdutos .listagem-item`, ()=>{
+                                            
+                                            if($(this).find('.listagem-item').length > 0){
+
+                                                $this.executarCarrousel( $(this).find('.produtos--produtos-carrousel') );
+                                                
+                                                ILUMINIM.Utils.ajusteDescontoListagem( $(this).find('.listagem-item') );
+
+                                                ILUMINIM.Utils.adicionarListaDesejosListagem( $(this).find('.listagem-item') );
+
+                                            }
+                            
+                                        });
+                            
+                                    });
+                            
+                                },
+
+                                executarCarrousel(alvo){
+                            
+                                    alvo.owlCarousel({
+                                        margin:0,
+                                        nav:true,
+                                        dots: false,
+                                        navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                                        responsive:{
+                                            0:{
+                                                items:1
+                                            },
+                                            767:{
+                                                items:2
+                                            },
+                                            1024:{
+                                                items:3
+                                            }
+                                    
+                                        }
+                                    });
+                            
+                                },
+                            
+                                executarCronometro(alvo){
+                            
+                                    alvo.yuukCountDown({
+                                        starttime: '2016/11/11 00:00:00',
+                                        endtime: '2030/12/30 00:00:00'
+                                    });
+                            
+                                },
+                                
+                                cronometroFullBanner(){
+
+                                    $('.banner.cheio .slides img[alt="Categoria -> /oferta-da-semana - Banner Cronômetro"]').after(`
+                                        <div class="cronometro-banner">
+                                            <ul class="countdown-target"></ul>
+                                        </div>
+                                    `);
+    
+                                    this.executarCronometro( $('.banner.cheio .slides .countdown-target') );
+
+                                },
+    
+                                barraProgressoFullBanner(){
+    
+                                    $('.banner.cheio .slides img[alt="Categoria -> /oferta-da-semana - Banner Cronômetro"]').after(ILUMINIM.Utils.gerarBarraProgresso());
+    
+                                },
+
+                                iniciar(){
+
+                                    this.carregarProdutos();
+
+                                }
+
+                            },
+                            
+
+                            renderizar(){
+
+                                $('body').addClass('pagina-personalizada-oferta-da-semana');
+
+                                let html = this.listagensPersonalizadas.gerarHTML();
+                        
+                                $('.conteudo.span9').before(html);
+                    
+                                this.listagensPersonalizadas.iniciar();
+
+
+                                this.listagensPersonalizadas.cronometroFullBanner();
+
+                                this.listagensPersonalizadas.barraProgressoFullBanner();
+
+                            },
+
+                        }
+                    ];
+
+
+                    let paginaPersonalizada = PaginasPersonalizadas.filter(item => item.paginasURL.includes(window.location.pathname));
+
+                    if(paginaPersonalizada.length > 0){
+
+                        paginaPersonalizada[0].renderizar();
+
+                    }
+
+                },
+
                 adicionarFiltroLancamentos(){
                     
                     $('.ordenar-listagem .dropdown-menu').append(`
@@ -3125,6 +4204,10 @@ var ILUMINIM = {
 
                 dropDownTextoCategoriaMobile(){
 
+                    if(!ILUMINIM.Utils.screen.isMobile()){
+                        return;
+                    }
+
                     $('#corpo .componente .interno').click(function(){
 
                         $(this).toggleClass('active');
@@ -3133,8 +4216,11 @@ var ILUMINIM = {
 
                 },
 
-                                
                 adaptacaoFiltroMobile(){
+
+                    if(!ILUMINIM.Utils.screen.isMobile()){
+                        return;
+                    }
 
                     if($('.filtro-mobile-itens').length == 0){
 
@@ -3210,6 +4296,455 @@ var ILUMINIM = {
 
                 },
 
+                videoCategoria(){
+
+                    let VideoCategoria = {
+
+                        gerarObjeto(){
+
+                            let objeto = {
+
+                                ["/refletores-holofotes-led"]: {
+                                    titulo: 'Quer ver dicas de refletores em vídeo?',
+                                    link: 'N5Nd0l3AKE8',
+                                },
+                                
+                            }
+
+                            return objeto[window.location.pathname];
+
+                        },
+
+                        gerarHTML(){
+
+                            let objeto = this.gerarObjeto();
+                         
+                            if(!objeto){
+                                return;
+                            }
+
+                            let { titulo, link } = objeto;
+
+                            $('body').append(`
+                                <div class="modal modal-personalizado fade modal_play_iluminim modal_midia_listagem" id="modal_midia_categoria">
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">${titulo}</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+
+                                                <iframe id="modal_midia_categoria" src="//youtube.com/embed/${link}?enablejsapi=1" width="100%" height="350" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary btn-custom" data-dismiss="modal">Fechar</button>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            `);
+
+                            return `
+                                <div class="video-categoria">
+                                    <div class="video-categoria--conteudo">
+                                        <div class="conteudo--titulo">${titulo}</div>
+                                        <div id="botao-video" class="conteudo--botao-video" data-toggle="modal" data-target="#modal_midia_categoria">
+                                            <div class="botao-video--icone"></div>
+                                            <div class="botao-video--texto">ASSISTIR VÍDEO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+
+                        },
+
+                        renderizar(){
+
+                            let html = this.gerarHTML();
+
+                            if(!html){
+                                return;
+                            }
+
+                            $('div#listagemProdutos').after(html);
+
+                        }
+
+                    }
+
+                    VideoCategoria.renderizar();
+
+                },
+
+                reviewsQuemComprou(){
+
+                    let Reviews = {
+
+                        gerarObjeto(){
+
+                            let objeto = [
+                                {
+                                    categorias: ['/luminarias-plafons-led'],
+                                    utm_campaign: 'ReviewLuminaria',
+                                    reviews: [
+                                        {
+                                            nome: 'Rony sobre sua',
+                                            nome_produto: 'Luminária Plafon 18w LED Embutir Branco Frio',
+                                            link_produto: '/luminaria-plafon-18w-led-embutir-branco-frio-quadrado',
+                                            comentario: 'Veio exatamente como descrito no site, ilumina muito bem, até um pouco mais forte do que eu imaginava, acabamento muito bom e vem pronto para instalar! Ótima também por ser slim.'
+                                        },
+                                        {
+                                            nome: 'Yolanda sobre sua',
+                                            nome_produto: 'Luminária Plafon 18w LED Sobrepor Branco Frio',
+                                            link_produto: '/luminaria-plafon-18w-led-sobrepor-branco-frio-quadrado',
+                                            comentario: 'Comprei vários e todos estão funcionando, esse não foi diferente. São duráveis e bonitos. Além da instalação ser prática e rápida de se fazer. Melhor opção que encontrei na internet, sem dúvidas!'
+                                        },
+                                        {
+                                            nome: 'Joana sobre sua',
+                                            nome_produto: 'Luminária Plafon 30x30 32W LED Sobrepor Branco Frio',
+                                            link_produto: '/luminaria-plafon-30x30-32w-led-sobrepor-branco-frio',
+                                            comentario: 'Ótimo produto, superou minhas expectativas! Seu custo benefício é o melhor que encontrei, a luminosidade é alta e o preço é acessível. Instalei uma na cozinha e ficou perfeita para o local.'
+                                        },
+                                        {
+                                            nome: 'Maurício sobre sua',
+                                            nome_produto: 'Luminária Plafon 25w LED Embutir Branco Frio',
+                                            link_produto: '/luminaria-plafon-25w-led-embutir-branco-frio-quadrado',
+                                            comentario: 'Produto excelente com um lindo design, acabamento perfeito, luz forte e econômica, recomendo a todos. Sempre acabo voltando a fazer negócio com esta loja.'
+                                        },
+                                    ]
+                                },
+                                {
+                                    categorias: ['/refletores-holofotes-led'],
+                                    utm_campaign: 'ReviewRefletores',
+                                    reviews: [
+                                        {
+                                            nome: 'Flávio sobre seu',
+                                            nome_produto: 'Refletor Holofote MicroLED Slim 300W Branco Frio',
+                                            link_produto: '/refletor-holofote-micro-led-slim-300w-branco-frio',
+                                            comentario: 'Ótimo custo benefício! Gostei bastante do retorno que tive com esse produto, muito eficiente. Foi um bom investimento compra-lo para a minha quadra de futebol sintético. A economia no fim do mês também é notória. Recomendo!'
+                                        },
+                                        {
+                                            nome: 'Bruno sobre seu',
+                                            nome_produto: 'Refletor Holofote MicroLED 100W Multifocal Branco Frio Metálico',
+                                            link_produto: '/refletor-holofote-micro-led-100w-multifocal-branco-frio-metalico',
+                                            comentario: 'Tenho certeza que foi uma excelente aquisição, pois meus antigos refletores de vapor metálico já não atendiam mais minhas expectativas, tanto em luminosidade quanto em economia. O atendimento também foi muito bom, sempre volto a fazer negócio com essa loja. Top!'
+                                        },
+                                        {
+                                            nome: 'Paola sobre seu',
+                                            nome_produto: 'Refletor MicroLED Ultra Thin 150W Verde Black Type',
+                                            link_produto: '/refletor-microled-ultra-thin-150w-verde-black-type',
+                                            comentario: 'Ficou perfeito para iluminar o jardim do condomínio onde sou síndico. Comprei 10 unidades e foi de longe a melhor compra que fiz em custo benefício para o local. Voltarei a adquirir produtos de iluminação aqui quando for necessário.'
+                                        },
+                                        {
+                                            nome: 'Lúcia sobre seu',
+                                            nome_produto: 'Refletor Holofote MicroLED Slim 100W Branco Frio',
+                                            link_produto: '/refletor-holofote-microled-100w-branco-frio',
+                                            comentario: 'Após muito pesquisa e comparações de qualidade e preço na internet, resolvi confiar nesse modelo da Iluminim. Sem arrependimentos até então! Compra segura e produto de alto desempenho, como eu esperava, queria e precisava. Sendo assim, super recomendo!'
+                                        },
+                                    ]
+                                },
+                                {
+                                    categorias: ['/spots-led-'],
+                                    utm_campaign: 'ReviewSpots',
+                                    reviews: [
+                                        {
+                                            nome: 'Eduardo Macedo sobre seu ',
+                                            nome_produto: 'Spot 7W Dicróica LED Direcionável Base Branca :',
+                                            link_produto: '/spot-7w-dicroica-led-base-branca',
+                                            comentario: 'Comprei um Spot de 5w para instalar na sanca da minha sala e o resultado ficou incrível. Utilizei um ponto de luz principal e os spots para complementar a iluminação. Indico a loja, ótimo custo-benefício!'
+                                        },
+                                        {
+                                            nome: 'Luiza Andrade sobre seu ',
+                                            nome_produto: 'Spot Dicróica 3w LED Direcionável Corpo Branco',
+                                            link_produto: '/spot-dicroica-3w-led-direcionavel-corpo-branco',
+                                            comentario: 'Adquiri o spot 3w para uso embutido em móveis. A Maria Eduarda foi bem atenciosa comigo e tirou todas as minhas dúvidas sobre o produto e a cor de luz ideal para o local de instalação. Atendimento nota 10!'
+                                        },
+                                        {
+                                            nome: 'Júlio César sobre seu',
+                                            nome_produto: 'Spot Dicróica 5w LED Direcionável Corpo Branco',
+                                            link_produto: '/spot-dicroica-5w-led-direcionavel-corpo-branco',
+                                            comentario: 'Os Spots de luz da Iluminim são práticos e de qualidade excelente. São completos e não é necessário a compra de lâmpadas avulsas, pois acompanham as presilhas, o driver o o chip de led. Além disso, já vem pronto para instalar e com manual. Recomendo.'
+                                        },
+                                        {
+                                            nome: 'Maria Luiza Neto sobre seu',
+                                            nome_produto: 'Kit Trilho Eletrificado 1,5m + 3 Spot LED Cob 10W 3000K Branco',
+                                            link_produto: '/kit-trilho-eletrificado-1-5m-3-spot-led-cob-10w-3000k-branco',
+                                            comentario: 'Os spots de trilho da Iluminim são uma boa opção de decoração e iluminação. Comprei um kit de spot trilho para instalação na sala de jantar e deixou o espaço com outra cara. Achei bem prático que a empresa já vende o trilho com o spot junto, facilitando a compra!'
+                                        },
+                                    ]
+                                },
+                                {
+                                    categorias: ['/spots-led-'],
+                                    utm_campaign: 'ReviewFitas',
+                                    reviews: [
+                                        {
+                                            nome: 'Larissa sobre sua',
+                                            nome_produto: 'Fita de LED RGB 5050',
+                                            link_produto: '/fita-led-12v-5050-rgb-5-metros-ip65',
+                                            comentario: 'Simplesmente adorei o produto. Coloquei a Fita LED no meu quarto e é maravilhosa. Além de iluminar muito bem consigo trocar as cores pelo controle com muita facilidade. Recomendo muito esse produto e essa loja.'
+                                        },
+                                        {
+                                            nome: 'Simone sobre sua',
+                                            nome_produto: 'Fita de LED 5050 Branco Quente',
+                                            link_produto: '/fita-led-5050-branco-quente-5-metros-ip65-a-prova-dagua-72w',
+                                            comentario: 'Atendeu muito as minhas expectativas e deixou minha cozinha com uma iluminação incrível. O produto funciona que é uma beleza. Veio no prazo certo e foi entregue com muito cuidado. Certamente é um ótimo negócio.'
+                                        },
+                                        {
+                                            nome: 'Ivone sobre sua ',
+                                            nome_produto: 'Fita de LED 3528 RGB :',
+                                            link_produto: '/fita-led-12v-3528-rgb-5-metros-ip65',
+                                            comentario: 'Produto excelente e com ótimo custo benefício. Coloquei no balcão da minha loja e deu um toque bem especial visualmente falando. Fora que a funcionalidade dele é ótima, a luminosidade ótima e o preço bem acessível.'
+                                        },
+                                        {
+                                            nome: 'Anderson sobre sua ',
+                                            nome_produto: 'Fita de LED 3528 Azul',
+                                            link_produto: '/fita-led-12v-3528-azul-5-metros-ip65',
+                                            comentario: 'Ótimo produto, atingiu minhas expectativas. Além da instalação ser fácil, deu um ar completamente atmosférico no meu estúdio onde gravo vídeos. Fazer negócio com essa loja é um excelente investimento.'
+                                        },
+                                    ]
+                                },
+                                {
+                                    categorias: ['/lampadas-led'],
+                                    utm_campaign: 'ReviewLâmpadas',
+                                    reviews: [
+                                        {
+                                            nome: 'Caroline sobre sua ',
+                                            nome_produto: 'Lâmpada LED de Alta Potência',
+                                            link_produto: '/lampada-led-alta-potencia',
+                                            comentario: 'Eu já sabia que estava adquirindo uma luz de alta potência, mas me surpreendi muito com o produto, positivamente! Atendeu muito bem as minhas expectativas, e a lâmpada é de excelente qualidade.'
+                                        },
+                                        {
+                                            nome: 'Lisandro sobre sua',
+                                            nome_produto: 'Lâmpada LED Bulbo :',
+                                            link_produto: '/lampada-led-bulbo',
+                                            comentario: 'Gostei muito da lâmpada! Ela ilumina muito melhor que as lâmpadas convencionais. E o melhor, o produto veio no prazo e foi entregue com muito cuidado. Aprovadíssimo.'
+                                        },
+                                        {
+                                            nome: 'Eva sobre sua',
+                                            nome_produto: 'Lâmpada LED Vintage Retrô :',
+                                            link_produto: '/led-retro',
+                                            comentario: 'Coloquei elas em pendentes também adquiridos na Iluminim e ficaram sensacionais! Além de lindas, fazem uma iluminação que tornam o ambiente aconchegante e o preço é super em conta! Adorei.'
+                                        },
+                                        {
+                                            nome: 'Cristiano sobre sua ',
+                                            nome_produto: 'Lâmpada LED Tubular :',
+                                            link_produto: '/lampada-led-tubular',
+                                            comentario: 'A eficiência da lâmpada tubular é simplesmente incrível! Muito potente, econômica e ecológica. Gostei muito do investimento. Recomendo muito os produtos da Iluminim!'
+                                        },
+                                    ]
+                                }
+                            ]
+
+                            let objetoFiltrado = objeto.filter(item=> item.categorias.includes(window.location.pathname));
+
+                            return objetoFiltrado[0];
+
+                        },
+
+                        gerarHTML(){
+
+                            let objeto = this.gerarObjeto();
+                         
+                            if(!objeto){
+                                return;
+                            }
+
+                            let html = objeto.reviews.map(item=> {
+                    
+                                return `
+                                    <div class="review-item">
+
+                                        <div class="review-icone-estrelas">
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>    
+                                        </div>
+
+                                        <div class="review-informacoes-nomes">
+                                            <span class="review-nome">${item.nome}</span>
+                                            <a href="${item.link_produto}">${item.nome_produto}</a>
+                                        </div>
+
+                                        <div class="review-comentario">${item.comentario}</div>
+
+                                    </div>
+                                `;
+                    
+                            }).join('');
+
+                            return html;
+
+                        },
+
+                        renderizar(){
+
+                            let html = this.gerarHTML();
+
+                            if(!html){
+                                return;
+                            }
+
+                            var target = $('.secao-principal .listagem .posts_blog');
+
+                            if(ILUMINIM.Utils.screen.isMobile()){
+
+                                var target = $('.secao-principal div#listagemProdutos');
+
+                            }
+
+                            target.after(`
+                                <div class="reviews-categoria">
+
+                                    <div class="reviews-categoria-titulo">
+                                        <div class="reviews-categoria-titulo-texto">Reviews de quem já comprou produtos da categoria:</div>
+                                    </div>
+
+                                    <div class="reviews-categoria-conteudo">
+                                        <div class="reviews-categoria-lista carousel-target">
+                                            ${html}
+                                        </div>
+                                    </div>   
+
+                                </div>
+                            `);
+
+                            $('.reviews-categoria .carousel-target').owlCarousel({
+                                margin:15,
+                                autoHeight: true,
+                                nav:true,
+                                dots: false,
+                                navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                                responsive:{
+                                    0: {
+                                        items:1
+                                    },
+                                    768: {
+                                        items:2
+                                    }
+                                }
+                            });
+
+                        }
+
+                    }
+
+                    Reviews.renderizar();
+
+                },
+
+                postsBlog(){
+
+                    if(!ILUMINIM.Utils.screen.isDesktop()){
+                        return;
+                    }
+
+
+                    let PostsBlog = {
+
+                        gerarObjeto(){
+
+                            let objeto = {
+
+                                ["/refletores-holofotes-led"]: [
+                                    {
+                                        title: 'Top 5 Melhores Refletores LED em 2021',
+                                        img: 'https://blog.iluminim.com.br/wp-content/uploads/2020/02/top-5-melhores-refletores-led-em-2020-1-1-1280x640.jpg',
+                                        description: 'Você está querendo reformar aquela quadra do condomínio onde é síndico',
+                                        link: 'https://blog.iluminim.com.br/top-5-melhores-refletores-led/'
+                                    },
+                                    {
+                                        title: 'Saiba como comprar refletor de LED com segurança',
+                                        img: 'https://blog.iluminim.com.br/wp-content/uploads/2018/09/240229-saiba-como-comprar-refletor-de-led-com-seguranca-1280x640.jpg',
+                                        description: 'Se você precisa saber como comprar refletor de LED com segurança',
+                                        link: 'https://blog.iluminim.com.br/saiba-como-comprar-refletor-de-led-com-seguranca/'
+                                    }
+                                ],
+
+                                ["/luminarias-plafons-led"]: [
+                                    {
+                                        title: 'Qual luminária de LED comprar em 2021? Descubra aqui!',
+                                        img: 'https://blog.iluminim.com.br/wp-content/uploads/2021/02/capa1-1280x640.jpg',
+                                        description: 'Um dos elementos mais importantes em um projeto de decoração é a iluminação.',
+                                        link: 'https://blog.iluminim.com.br/qual-luminaria-de-led-comprar/'
+                                    },
+                                    {
+                                        title: 'Top 5 melhores luminárias plafon em 2021',
+                                        img: 'https://blog.iluminim.com.br/wp-content/uploads/2021/03/plafon-sobrepor-teto-parede-azul-1280x640.jpg',
+                                        description: 'As luminárias têm várias funções importantes: contribuem para ...',
+                                        link: 'https://blog.iluminim.com.br/top-5-melhores-luminarias-plafon/'
+                                    }
+                                ],
+                                
+                            }
+
+                            return objeto[window.location.pathname];
+
+                        },
+
+                        gerarHTML(){
+
+                            let objeto = this.gerarObjeto();
+                         
+                            if(!objeto){
+                                return;
+                            }
+
+                            let html = objeto.map((post) => {
+                                return `
+                                <div class="span6">
+                                    <div class="img_post">
+                                        <img src="${post.img}" alt="${post.title}"/>
+                                    </div>
+                                    <div class="text_post">
+                                        <h2>${post.title}</h2>
+                                        <p>${post.description}</p>
+                                        <a href="${post.link}" target="_blank" rel="noopener">Continue lendo...</a>
+                                    </div>
+                                </div>
+                                `
+                            }).join('');
+
+                            return html;
+
+                        },
+
+                        renderizar(){
+
+                            let html = this.gerarHTML();
+
+                            if(!html){
+                                return;
+                            }
+
+                            $('div#listagemProdutos .listagem-linha:last-child').after(`
+                                <div class="posts_blog">
+                                    <h2>Confira o que temos para te ajudar</h2>
+                                    <div class="content_posts">
+                                        ${html}
+                                    </div>
+                                </div>
+                            `);
+
+                        }
+
+                    }
+
+                    PostsBlog.renderizar();
+
+                },
+
                 palavrasMaisBuscadas(){
 
                     if(ILUMINIM.Utils.screen.isMobile()){
@@ -3221,132 +4756,484 @@ var ILUMINIM = {
                         gerarObjeto(){
                     
                             let config = {
-                    
+
+                                ["/refletores-holofotes-led"]: [
+                                    { link: "/refletores-de-led?sort=mais_vendidos", palavra:"refletor led" },
+                                    { link: "/refletor-led-100w", palavra:"refletor led 100w" },
+                                    { link: "/refletor-led-solar?sort=mais_vendidos", palavra:"refletor solar" },
+                                    { link: "/refletor-led-50w", palavra:"refletor led 50w" },
+                                    { link: "/refletor-led-200w", palavra:"refletor led 200w" },
+                                    { link: "/refletor-led-30w", palavra:"refletor led 30w" },
+                                    { link: "/refletor-led-10w", palavra:"refletor led 10w" },
+                                    { link: "/refletor-para-jardim?sort=mais_vendidos", palavra:"refletor para jardim" },
+                                    { link: "/refletor-micro-led-smd-rgb", palavra:"refletor colorido" },
+                                    { link: "/refletor-led-20w", palavra:"refletor led 20w" },
+                                    { link: "/refletor-micro-led-com-sensor-de-presenca?sort=mais_vendidos", palavra:"refletor com sensor de presença" },
+                                    { link: "/refletor-micro-led-smd-rgb", palavra:"refletor rgb" },
+                                    { link: "/refletor-led-300w", palavra:"refletor led 300w" },
+                                    { link: "/refletores-de-led?sort=mais_vendidos", palavra:"refletor de natal" },
+                                    { link: "/refletor-led-150w", palavra:"refletor led 150w" },
+                                    { link: "/refletor-led-400w", palavra:"refletor led 400w" },
+                                    { link: "/refletores-de-led?sort=mais_vendidos", palavra:"refletor externo" },
+                                    { link: "/refletor-para-jardim?sort=mais_vendidos", palavra:"refletor para piscina" },
+                                    { link: "/refletor-para-jardim?sort=mais_vendidos", palavra:"refletor para quintal" },
+                                    { link: "/refletor-led-50w", palavra:"refletor solar 60w" },
+                                    { link: "/mini-refletor-led", palavra:"mini refletor led" },
+                                    { link: "/refletor-led-500w", palavra:"refletor led 500w" },
+                                    { link: "/refletor-micro-led-smd-verde?sort=mais_vendidos", palavra:"refletor led verde" },
+                                    { link: "/refletor-holofote-microled-smd-50w-rgb-colorido-com-controle", palavra:"refletor colorido 50w" },
+                                    { link: "/refletor-led-recarregavel?sort=mais_vendidos", palavra:"refletor led portatil" },
+                                    { link: "/refletor-para-quadra?sort=mais_vendidos", palavra:"refletor para campo de futebol" },
+                                    { link: "/holofotes-led?sort=mais_vendidos", palavra:"kit refletor led" },
+                                    { link: "/refletores-de-led?sort=mais_vendidos", palavra:"refletor ip66" },
+                                ],
+
+                                ["/luminarias-plafons-led"]: [
+                                    {
+                                    "palavra": "luminaria de mesa",
+                                    "link": "/luminaria-de-mesa"
+                                    },
+                                    {
+                                    "palavra": "luminaria de teto",
+                                    "link": "/plafon-led"
+                                    },
+                                    {
+                                    "palavra": "luminaria pendente",
+                                    "link": "/pendente?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria de parede",
+                                    "link": "/arandela-led?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria para quarto",
+                                    "link": "/luminaria-de-teto-para-quarto"
+                                    },
+                                    {
+                                    "palavra": "luminaria para sala",
+                                    "link": "/plafon-para-sala-de-estar?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria de chao",
+                                    "link": "/balizador-led?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria para cozinha",
+                                    "link": "/luminaria-para-cozinha"
+                                    },
+                                    {
+                                    "palavra": "luminaria escritorio",
+                                    "link": "/luminarias-led?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria solar",
+                                    "link": "/luminaria-solar-led?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria industrial",
+                                    "link": "/luminaria-led-industrial-highbay?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria para banheiro",
+                                    "link": "/luminaria-para-banheiro"
+                                    },
+                                    {
+                                    "palavra": "luminaria externa",
+                                    "link": "/led-para-jardim?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria trilho",
+                                    "link": "/spot-led-trilho-eletrificado?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria preta",
+                                    "link": "/plafon-preto"
+                                    },
+                                    {
+                                    "palavra": "luminaria articulada",
+                                    "link": "/luminaria-de-mesa-24-leds-abajur-dobravel-bivolt-recarregavel"
+                                    },
+                                    {
+                                    "palavra": "luminaria de jardim",
+                                    "link": "/led-para-jardim?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria led sobrepor",
+                                    "link": "/plafon-led-sobrepor"
+                                    },
+                                    {
+                                    "palavra": "luminaria plafon",
+                                    "link": "/plafon-led"
+                                    },
+                                    {
+                                    "palavra": "luminaria de embutir",
+                                    "link": "/plafon-led-embutir?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria tartaruga",
+                                    "link": "/luminaria-arandela-led-10w-sobrepor-branco-frio-tartaruga"
+                                    },
+                                    {
+                                    "palavra": "luminaria quadrada",
+                                    "link": "/plafon-led-embutir-quadrado?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria spot",
+                                    "link": "/spots?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "pendente luminaria",
+                                    "link": "/pendente?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria de emergencia",
+                                    "link": "/luminaria-emergencia-led?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria decorativa",
+                                    "link": "/arandela-led?sort=mais_vendidos"
+                                    },
+                                    {
+                                    "palavra": "luminaria para escrivaninha",
+                                    "link": "/luminaria-de-mesa"
+                                    },
+                                    {
+                                    "palavra": "luminaria redonda",
+                                    "link": "/plafon-led-embutir-redondo?sort=mais_vendidos"
+                                    }
+                                ],
+
+                                ['/spots-led-']: [
+                                    { link: "/spots?sort=mais_vendidos", palavra: "spot led" },
+                                    { link: "/spots?sort=mais_vendidos", palavra: "spot led embutir" },
+                                    { link: "/spot-led-sobrepor?sort=mais_vendidos", palavra: "spot led sobrepor" },
+                                    { link: "/spot-led-quadrado?sort=mais_vendidos", palavra: "spot led quadrado" },
+                                    { link: "/spots?sort=mais_vendidos", palavra: "luminaria spot led" },
+                                    { link: "/spot-led-3w?sort=mais_vendidos", palavra: "spot led 3w" },
+                                    { link: "/spot-led-5w", palavra: "spot led 5w" },
+                                    { link: "/kits-spots-led-dicroica?sort=mais_vendidos", palavra: "kit spot led" },
+                                    { link: "/mini-spot-led?sort=mais_vendidos", palavra: "mini spot led" },
+                                    { link: "/spots?sort=mais_vendidos", palavra: "spot de led para gesso" },
+                                    { link: "/spot-led-redondo", palavra: "spot led redondo" },
+                                    { link: "/spot-led-trilho-eletrificado?sort=mais_vendidos", palavra: "spot led trilho" },
+                                    { link: "/spot-led-7w", palavra: "spot led 7w" },
+                                    { link: "/buscar?q=spot+branco+quente", palavra: "spot led amarelo" },
+                                    { link: "/buscar?q=spot+direcionavel", palavra: "spot led direcionavel" },
+                                    { link: "/buscar?q=spot+preto", palavra: "spot led preto" },
+                                    { link: "/buscar?q=spot+branco+quente", palavra: "spot led branco quente" },
+                                    { link: "/spots?sort=mais_vendidos", palavra: "spot led dimerizavel" },
+                                    { link: "https://blog.iluminim.com.br/como-instalar-spot-led/", palavra: "como instalar spot de led", blank: true },
+                                    { link: "/buscar?q=spot+branco+frio", palavra: "spot led branco frio" },
+                                    { link: "/balizador-led?sort=mais_vendidos", palavra: "spot led externo" },
+                                    { link: "/spot-led-12w", palavra: "spot led 12w" },
+                                    { link: "/spots?sort=mais_vendidos", palavra: "spot led dicroica" },
+                                    { link: "/spots?sort=mais_vendidos", palavra: "spot led para moveis" },
+                                    { link: "/balizador-led?sort=mais_vendidos", palavra: "spot balizador led" },
+                                    { link: "/spot-led-10w", palavra: "spot led 10w" },
+                                    { link: "/spot-led-1w", palavra: "spot led 1w" },
+                                    { link: "/spots?sort=mais_vendidos", palavra: "spot led embutir gesso" },
+                                ],
+
+                                ['/fita-de-led']: [
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led" },
+                                    { link: "/fita-led-rgb?sort=mais_vendidos", palavra: "fita led rgb" },
+                                    { link: "/fita-led-rgb?sort=mais_vendidos", palavra: "fita de led colorida" },
+                                    { link: "/fita-led-branca?sort=mais_vendidos", palavra: "fita de led branca" },
+                                    { link: "/fita-led-rgb?sort=mais_vendidos", palavra: "fita de led com controle" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "luz de led fita" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led no quarto" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led adesiva" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led preço" },
+                                    { link: "/fita-led-branco-quente?sort=mais_vendidos", palavra: "fita de led branco quente" },
+                                    { link: "https://blog.iluminim.com.br/passo-a-passo-aprenda-como-instalar-fita-de-led/", palavra: "como instalar fita de led", blank: true },
+                                    { link: "/fita-led-rgb?sort=mais_vendidos", palavra: "fita de led colorida com controle" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led para sanca" },
+                                    { link: "/buscar?q=fita+led+6803", palavra: "fita led 6803" },
+                                    { link: "/fita-led-rgb-5050-colorida-5-metros-com-carregador", palavra: "fita led rgb 5050" },
+                                    { link: "/fonte-chaveada-led?sort=mais_vendidos", palavra: "fonte para fita de led" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led para espelho" },
+                                    { link: "/buscar?q=fita+de+led+com+fonte", palavra: "fita de led com fonte" },
+                                    { link: "/buscar?q=fita+led+5050", palavra: "fita led 5050" },
+                                    { link: "/fita-led-branco-quente-10-metros?sort=mais_vendidos", palavra: "fita de led 10m" },
+                                    { link: "/buscar?q=fita+de+led+12v", palavra: "fita de led 12v" },
+                                    { link: "/fita-led-branco-quente?sort=mais_vendidos", palavra: "fita de led amarela" },
+                                    { link: "/buscar?q=fita+de+led+azul", palavra: "fita de led azul" },
+                                    { link: "/fita-led-rgb?sort=mais_vendidos", palavra: "fita de led com controle remoto" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led para tv" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led para gesso" },
+                                    { link: "/fita-de-led?sort=mais_vendidos", palavra: "fita de led para quarto" },
+                                ],
+
                                 ["/lampadas-led"]: [
                                     {
-                                    "palavra": "lampada de led",
-                                    "link": "/lampada-led?sort=mais_vendidos"
+                                        "palavra": "lampada de led",
+                                        "link": "/lampada-led?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led tubular",
-                                    "link": "/lampada-led-tubular"
+                                        "palavra": "lampada led tubular",
+                                        "link": "/lampada-led-tubular"
                                     },
                                     {
-                                    "palavra": "lampada de led para moto",
-                                    "link": "/farol-de-milha-para-moto-led-angel-eyes-15w-auxiliar-12v"
+                                        "palavra": "lampada de led para moto",
+                                        "link": "/farol-de-milha-para-moto-led-angel-eyes-15w-auxiliar-12v"
                                     },
                                     {
-                                    "palavra": "lampada dicroica led",
-                                    "link": "/spot-led-redondo?sort=mais_vendidos"
+                                        "palavra": "lampada dicroica led",
+                                        "link": "/spot-led-redondo?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led bulbo",
-                                    "link": "/lampada-led-bulbo"
+                                        "palavra": "lampada led bulbo",
+                                        "link": "/lampada-led-bulbo"
                                     },
                                     {
-                                    "palavra": "lampada led h4",
-                                    "link": "/buscar?q=lampada+led+h4"
+                                        "palavra": "lampada led h4",
+                                        "link": "/buscar?q=lampada+led+h4"
                                     },
                                     {
-                                    "palavra": "lampada led dimerizavel",
-                                    "link": "/buscar?q=lampada+led+dimerizavel"
+                                        "palavra": "lampada led dimerizavel",
+                                        "link": "/buscar?q=lampada+led+dimerizavel"
                                     },
                                     {
-                                    "palavra": "lampada de led colorida",
-                                    "link": "/lampada-led-rgb?sort=mais_vendidos"
+                                        "palavra": "lampada de led colorida",
+                                        "link": "/lampada-led-rgb?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada de led quadrada",
-                                    "link": "/buscar?q=lampada+de+led+quadrada"
+                                        "palavra": "lampada de led quadrada",
+                                        "link": "/buscar?q=lampada+de+led+quadrada"
                                     },
                                     {
-                                    "palavra": "lampada led 15w",
-                                    "link": "/lampada-led-15w"
+                                        "palavra": "lampada led 15w",
+                                        "link": "/lampada-led-15w"
                                     },
                                     {
-                                    "palavra": "lampada de led automotiva",
-                                    "link": "/led-automotivo?sort=mais_vendidos"
+                                        "palavra": "lampada de led automotiva",
+                                        "link": "/led-automotivo?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led 20w",
-                                    "link": "/lampada-led-20w"
+                                        "palavra": "lampada led 20w",
+                                        "link": "/lampada-led-20w"
                                     },
                                     {
-                                    "palavra": "lampada led amarela",
-                                    "link": "/buscar?q=lampada+led+amarela"
+                                        "palavra": "lampada led amarela",
+                                        "link": "/buscar?q=lampada+led+amarela"
                                     },
                                     {
-                                    "palavra": "lampada de led redonda",
-                                    "link": "/lampada-led-bulbo?sort=mais_vendidos"
+                                        "palavra": "lampada de led redonda",
+                                        "link": "/lampada-led-bulbo?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada filamento led",
-                                    "link": "/led-retro?sort=mais_vendidos"
+                                        "palavra": "lampada filamento led",
+                                        "link": "/led-retro?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led 12w",
-                                    "link": "/lampada-led-12w"
+                                        "palavra": "lampada led 12w",
+                                        "link": "/lampada-led-12w"
                                     },
                                     {
-                                    "palavra": "lampada led 9w",
-                                    "link": "/lampada-led-9w"
+                                        "palavra": "lampada led 9w",
+                                        "link": "/lampada-led-9w"
                                     },
                                     {
-                                    "palavra": "kit lampada led",
-                                    "link": "/kit-lampadas-de-led"
+                                        "palavra": "kit lampada led",
+                                        "link": "/kit-lampadas-de-led"
                                     },
                                     {
-                                    "palavra": "lampada h7 led",
-                                    "link": "/led-automotivo?sort=mais_vendidos"
+                                        "palavra": "lampada h7 led",
+                                        "link": "/led-automotivo?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led 100w",
-                                    "link": "/lampada-led-100w"
+                                        "palavra": "lampada led 100w",
+                                        "link": "/lampada-led-100w"
                                     },
                                     {
-                                    "palavra": "lampada led 30w",
-                                    "link": "/lampada-led-30w"
+                                        "palavra": "lampada led 30w",
+                                        "link": "/lampada-led-30w"
                                     },
                                     {
-                                    "palavra": "lampada led 50w",
-                                    "link": "/lampada-led-50w?sort=mais_vendidos"
+                                        "palavra": "lampada led 50w",
+                                        "link": "/lampada-led-50w?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led bluetooth",
-                                    "link": "/buscar?q=lampada+led+bluetooth"
+                                        "palavra": "lampada led bluetooth",
+                                        "link": "/buscar?q=lampada+led+bluetooth"
                                     },
                                     {
-                                    "palavra": "lampada led 40w",
-                                    "link": "/lampada-led-36w?sort=mais_vendidos"
+                                        "palavra": "lampada led 40w",
+                                        "link": "/lampada-led-36w?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada de led para residencia",
-                                    "link": "/lampada-led?sort=mais_vendidos"
+                                        "palavra": "lampada de led para residencia",
+                                        "link": "/lampada-led?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led 25w",
-                                    "link": "/lampada-led-30w?sort=mais_vendidos"
+                                        "palavra": "lampada led 25w",
+                                        "link": "/lampada-led-30w?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada g9 led",
-                                    "link": "/lampada-led-g9?sort=mais_vendidos"
+                                        "palavra": "lampada g9 led",
+                                        "link": "/lampada-led-g9?sort=mais_vendidos"
                                     },
                                     {
-                                    "palavra": "lampada led 12v",
-                                    "link": "/buscar?q=lampada+led+12v"
+                                        "palavra": "lampada led 12v",
+                                        "link": "/buscar?q=lampada+led+12v"
                                     }
+                                ],
+
+                                ['/pendentes-led']: [
+                                    { link: "/lustre-pendente", palavra: "lustre pendente" },
+                                    { link: "/pendente", palavra: "pendente para cozinha" },
+                                    { link: "/pendente", palavra: "pendente para quarto" },
+                                    { link: "/pendente", palavra: "pendente para sala" },
+                                    { link: "/pendente", palavra: "pendente para sala de jantar" },
+                                    { link: "/pendente-aramado?sort=mais_vendidos", palavra: "pendente aramado" },
+                                    { link: "/pendente-industrial?sort=mais_vendidos", palavra: "pendente industrial" },
+                                    { link: "/pendente", palavra: "pendente para banheiro" },
+                                    { link: "/buscar?q=pendente+preto", palavra: "pendente preto" },
+                                    { link: "/pendente", palavra: "pendente para bancada" },
+                                    { link: "/pendente-rose-gold-soquete-e27", palavra: "pendente rose gold" },
+                                    { link: "/lustre-pendente", palavra: "lustre pendente cristal" },
+                                    { link: "/lustre-pendente", palavra: "lustre pendente moderno" },
+                                    { link: "/pendente", palavra: "pendente para mesa de jantar" },
+                                    { link: "/pendente-redondo", palavra: "pendente bola" },
+                                    { link: "/pendente", palavra: "luminaria de teto pendente" },
+                                    { link: "/pendente-aluminio-cobre-3w", palavra: "pendente cobre" },
+                                    { link: "/buscar?q=pendente+dourado", palavra: "pendente dourado" },
+                                    { link: "/pendente", palavra: "pendente para balcão" },
+                                    { link: "/pendente-cilindrico?sort=mais_vendidos", palavra: "pendente tubo" },
+                                    { link: "/pendente", palavra: "pendentes para cozinha americana" },
+                                    { link: "/pendente-aramado?sort=mais_vendidos", palavra: "lustre pendente aramado" },
+                                    { link: "/pendente-aramado-preto", palavra: "pendente aramado preto" },
+                                    { link: "/pendente-redondo", palavra: "pendente redondo" },
+                                    { link: "/kit-pendentes?sort=mais_vendidos", palavra: "kit pendente" },
+                                    { link: "/lampada-led", palavra: "lampada para pendente" },
+                                    { link: "/buscar?q=pendente+amarelo", palavra: "pendente amarelo" },
+                                    { link: "/buscar?q=pendente+vermelho", palavra: "pendente vermelho" },
+                                ],
+
+                                ["/acessorios-para-leds"]: [
+                                    { 
+                                        link: "/filtro-de-linha-6-tomadas-com-disjuntor",
+                                        palavra:"filtro de linha"
+                                    },
+                                    { 
+                                        link: "/sensor-de-presenca?sort=mais_vendidos",
+                                        palavra:"sensor de presença"
+                                    },
+                                    { 
+                                        link: "/cabo-de-energia?sort=mais_vendidos",
+                                        palavra:"cabo coaxial"
+                                    },
+                                    { 
+                                        link: "/interruptores-tomadas-led?sort=mais_vendidos",
+                                        palavra:"extensão tomada"
+                                    },
+                                    { 
+                                        link: "/dimmer-led?sort=mais_vendidos",
+                                        palavra:"dimmer"
+                                    },
+                                    { 
+                                        link: "/conjunto-tomada-distanciadas-2pt-de-embutir-10a-modular",
+                                        palavra:"tomada dupla"
+                                    },
+                                    { 
+                                        link: "/conjunto-placa-para-1-interruptor-1-tomada",
+                                        palavra:"espelho de tomada"
+                                    },
+                                    { 
+                                        link: "/soquete-led?sort=mais_vendidos",
+                                        palavra:"soquete e27"
+                                    },
+                                    { 
+                                        link: "/soquete-led?sort=mais_vendidos",
+                                        palavra:"soquete para lampada"
+                                    },
+                                    { 
+                                        link: "/sensor-presenca-soquete-e27-automatico",
+                                        palavra:"lampada com sensor de presença"
+                                    },
+                                    { 
+                                        link: "/conjunto-tomada-2pt-de-embutir-20a-modular",
+                                        palavra:"tomada 20 amperes"
+                                    },
+                                    { 
+                                        link: "/conjunto-interruptor-1-tecla-simples-tomada-20a-modular",
+                                        palavra:"interruptor com tomada"
+                                    },
+                                    { 
+                                        link: "/adaptador-soquete-lampada-led-e27-com-tomada-plug-bipino",
+                                        palavra:"plug de tomada"
+                                    },
+                                    { 
+                                        link: "/rele-fotoeletrico?sort=mais_vendidos",
+                                        palavra:"rele fotoeletrico"
+                                    },
+                                    { 
+                                        link: "/filtro-de-linha-6-tomadas-com-disjuntor",
+                                        palavra:"regua tomada"
+                                    },
+                                    { 
+                                        link: "/interruptores-tomadas-led?sort=mais_vendidos",
+                                        palavra:"tomada industrial"
+                                    },
+                                    { 
+                                        link: "/interruptores-tomadas-led?sort=mais_vendidos",
+                                        palavra:"tomada preta"
+                                    },
+                                    { 
+                                        link: "/interruptores-tomadas-led?sort=mais_vendidos",
+                                        palavra:"tomada rj45"
+                                    },
+                                    { 
+                                        link: "/fonte-convencional?sort=mais_vendidos",
+                                        palavra:"fonte para fita de led"
+                                    },
+                                    { 
+                                        link: "/soquete-lampada-led-halopin-g9",
+                                        palavra:"soquete g9"
+                                    },
+                                    { 
+                                        link: "/dimmer-led?sort=mais_vendidos",
+                                        palavra:"dimmer para led"
+                                    },
+                                    { 
+                                        link: "/soquete-lampada-led-GU10",
+                                        palavra:"soquete gu10"
+                                    },
+                                    { 
+                                        link: "/fonte-convencional?sort=mais_vendidos",
+                                        palavra:"fonte para led"
+                                    },
+                                    { 
+                                        link: "/conectores-led?sort=mais_vendidos",
+                                        palavra:"conector fita led"
+                                    },
+                                    { 
+                                        link: "/chip-de-refletor-50w-branco-frio",
+                                        palavra:"chip led 50w"
+                                    },
+                                    { 
+                                        link: "/emenda-para-fita-de-led?sort=mais_vendidos",
+                                        palavra:"emenda fita led"
+                                    },
+                                    { 
+                                        link: "/controles?sort=mais_vendidos",
+                                        palavra:"led controle remoto"
+                                    },
+                                    { 
+                                        link: "/chip-led?sort=mais_vendidos",
+                                        palavra:"chip de led"
+                                    }                                    
                                 ],
                     
                             }
-                    
-                    
-                            return config;
+
+                            return config[window.location.pathname];
                     
                         },
                     
                         gerarHTML(){
                     
-                            let palavras = this.gerarObjeto()[window.location.pathname];
+                            let palavras = this.gerarObjeto();
                     
                             if(!palavras){
                                 return;
@@ -3425,45 +5312,203 @@ var ILUMINIM = {
 
                             let config = {
 
+                                ['/refletores-holofotes-led']: {
+
+                                    termos: [
+                                        {
+                                            termo: 'Refletor',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/41953990/f8e4a337ef.jpg',
+                                            link: '/refletores-de-led'
+                                        },
+                                        {
+                                            termo: 'refletor 100w',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/26482900/84998167aa.jpg',
+                                            link: '/refletor-led-100w'
+                                        },
+                                        {
+                                            termo: 'refletor solar',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/20141337/b267de2cf2.jpg',
+                                            link: '/refletor-led-solar?sort=mais_vendidos'
+                                        },
+                                        {
+                                            termo: 'refletor led 30w',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/27730580/97aed87a39.jpg',
+                                            link: '/refletor-led-30w'
+                                        },
+                                        {
+                                            termo: 'Refletor 200W',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/26503826/7127b4ba5a.jpg',
+                                            link: '/refletor-led-200w'
+                                        },
+                                    ]
+
+                                },
+
+                                ['/luminarias-plafons-led']: {
+
+                                    termos: [{
+                                        termo: 'plafon 25w',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/8046518/5cae207a89.jpg',
+                                        link: '/plafon-led-25w?sort=mais_vendidos'
+                                    },
+                                    {
+                                        termo: 'plafon',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/8046519/044c56d504.jpg',
+                                        link: '/plafon-led?sort=mais_vendidos'
+                                    },
+                                    {
+                                        termo: 'arandela',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/930/930730/produto/47238348/luminaria-arandela-led-24w-sobrepor-branco-frio-tartaruga-814238bc.jpg',
+                                        link: '/arandela-led?sort=mais_vendidos'
+                                    },
+                                    {
+                                        termo: 'Pendente',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/930/930730/produto/47238856/pendente-aluminio-branco-gota-e179cc5b.jpg',
+                                        link: '/pendente?sort=mais_vendidos'
+                                    },
+                                    {
+                                        termo: 'plafon 18w',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/28319504/aa8c72dfa2.jpg',
+                                        link: '/plafon-led-18w?sort=mais_vendidos'
+                                    }]
+                    
+                                },
+
+                                ['/spots-led-']: {
+
+                                    termos: [
+                                        {
+                                            termo: 'spot led 7w',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/45160307/2317920221.jpg',
+                                            link: '/spot-led-7w'
+                                        },
+                                        {
+                                            termo: 'spot led 5w',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/30456878/2029bcf463.jpg',
+                                            link: '/spot-led-5w'
+                                        },
+                                        {
+                                            termo: 'spot led 3w',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/9595285/d10682b0b8.jpg',
+                                            link: '/spot-led-3w'
+                                        },
+                                        {
+                                            termo: 'Spot',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/8271122/641bb2c6fe.jpg',
+                                            link: '/spots'
+                                        },
+                                        {
+                                            termo: 'trilho',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/39238089/1741bf096d.jpg',
+                                            link: '/spot-led-trilho-eletrificado?sort=mais_vendidos'
+                                        },
+                                    ]
+
+                                },
+
+                                ['/fita-de-led']: {
+
+                                    termos: [
+                                        {
+                                            termo: 'Fita led',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/15444902/829975f893.jpg',
+                                            link: '/fita-de-led'
+                                        },
+                                        {
+                                            termo: 'Fita led rgb',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/15604799/6ac272fc5c.jpg',
+                                            link: '/fita-led-rgb?sort=mais_vendidos'
+                                        },
+                                        {
+                                            termo: 'fita led 5050',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/28274310/d023e05715.jpg',
+                                            link: '/kit-fitas-led-5050'
+                                        },
+                                        {
+                                            termo: 'Fio',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/15444367/6c6fdcd7d6.jpg',
+                                            link: '/fita-de-led'
+                                        },
+                                        {
+                                            termo: 'Fita led colorida',
+                                            imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/15604799/6ac272fc5c.jpg',
+                                            link: '/fita-led-rgb?sort=mais_vendidos'
+                                        },
+                                    ]
+
+                                },
+
                                 ['/lampadas-led']: {
 
                                     termos: [{
                                         termo: 'lampada led 12w',
-                                        imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/24767804/fcfc93b773.jpg',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/24767804/fcfc93b773.jpg',
                                         link: '/lampada-led-12w'
                                     },
                                     {
                                         termo: 'lampada led 15w',
-                                        imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/11702762/92c2a7c686.jpg',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/11702762/92c2a7c686.jpg',
                                         link: '/lampada-led-15w'
                                     },
                                     {
                                         termo: 'lampada led 5w',
-                                        imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/26936085/5d9dfd085d.jpg',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/26936085/5d9dfd085d.jpg',
                                         link: '/lampada-led-5w'
                                     },
                                     {
                                         termo: 'lampada led 7w',
-                                        imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/11169895/e055edb6e6.jpg',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/11169895/e055edb6e6.jpg',
                                         link: '/lampada-led-7w'
                                     },
                                     {
                                         termo: 'lampada led 9w',
-                                        imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/77090353/335d0c44ac.jpg',
+                                        imagem: 'https://cdn.awsli.com.br/50x50/257/257163/produto/77090353/335d0c44ac.jpg',
                                         link: '/lampada-led-9w'
                                     }]
 
                                 },
 
+                                ['/acessorios-para-leds']: {
+
+                                    termos: [
+                                        {
+                                            termo: 'fonte',
+                                            imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/8051989/491d0124dc.jpg',
+                                            link: '/fonte-chaveada-led?sort=mais_vendidos'
+                                        },
+                                        {
+                                            termo: 'Tomada',
+                                            imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/28741277/b7c55a9f59.jpg',
+                                            link: '/interruptores-tomadas-led?sort=mais_vendidos'
+                                        },
+                                        {
+                                            termo: 'sensor',
+                                            imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/20813491/d99035c1df.jpg',
+                                            link: '/sensor-de-presenca?sort=mais_vendidos'
+                                        },
+                                        {
+                                            termo: 'Interruptor',
+                                            imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/76140690/14fa40a8f1.jpg',
+                                            link: '/interruptores-tomadas-led?sort=mais_vendidos'
+                                        },
+                                        {
+                                            termo: 'soquete',
+                                            imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/27935400/ce3d4870d9.jpg',
+                                            link: '/soquete-led?sort=mais_vendidos'
+                                        },
+                                    ]
+
+                                },
+
                             }
 
-                            return config;
+                            return config[window.location.pathname] || {};
                             
                         },
 
                         gerarHTML(){
 
-                            let { termos } = this.gerarObjeto()[window.location.pathname] || {};
+                            let { termos } = this.gerarObjeto();
 
                             if(!termos){
                                 return;
@@ -3512,6 +5557,208 @@ var ILUMINIM = {
                     PesquisasEmAlta.renderizar();
 
                 },
+                
+                avalicoesTrustVoxCategoria(){
+
+                    let AvaliacoesTrustVox = {
+
+                        gerarObjeto(){
+
+                            let objeto = {
+
+                                ['/']: [
+                                    {
+                                        nome: 'Dione Pereira',
+                                        local: 'Juazeiro do Norte - CE',
+                                        comentario: 'Rapidez na entrega, ótimo preço e o serviço 0800 (primeira de luxo) atendido rapidamente. Com certeza vou fazer outras compras.'
+                                    },
+                                    {
+                                        nome: 'Wolfram Metzler',
+                                        local: 'Campo Bom - RS',
+                                        comentario: 'Ótimo produto, preço justo, foi entregue antes do prazo.'
+                                    },
+                                    {
+                                        nome: 'Bianca Pianelli',
+                                        local: 'Salto - SP',
+                                        comentario: 'O produto é muito bom e atendeu plenamente minha necessidade.'
+                                    },
+                                    {
+                                        nome: 'Bruno da Silva',
+                                        local: 'Canoas - RS',
+                                        comentario: 'Produto fantástico e com funcionalidades incríveis. Super recomendo, entregue tudo certinho e dentro do prazo.'
+                                    },
+                                    {
+                                        nome: 'Roque Almeida',
+                                        local: 'Ijuí -RS',
+                                        comentario: 'Fique muito satisfeito com esse produto e com a seriedade do vendedor na entrega antes do prazo previsto.'
+                                    },
+                                    {
+                                        nome: 'Bartholomeu Duarte',
+                                        local: 'Lauro de Freitas - BA',
+                                        comentario: 'Escolhi comprar com vocês devido ao ótimo atendimento, qualidade do produto, pontualidade na entrega e preço, muito satisfeito!'
+                                    },
+                                    {
+                                        nome: 'Odilon Fonseca',
+                                        local: 'Joinville - SC',
+                                        comentario: 'Produto de ótima qualidade, muito bem atendido, loja de confiança, parabéns!'
+                                    },
+                                    {
+                                        nome: 'Geraldo de Abreu',
+                                        local: 'Belo Horizonte - MG',
+                                        comentario: 'Excelente atendimento, entrega super rápida. Recomendo!'
+                                    },
+                                    {
+                                        nome: 'Marcia Zeviani',
+                                        local: 'São Paulo - SP',
+                                        comentario: 'Precisava de luminárias com qualidade e bom preço, encontrei tudo na Iluminim que entregou o produto antes do prazo. Adorei a Loja e já a indiquei para amigos'
+                                    },
+                                    {
+                                        nome: 'Alexandre Augusto',
+                                        local: 'Florianópolis - SC',
+                                        comentario: 'Excelente produto. Excelente atendimento de venda e atenção ao cliente.'
+                                    },
+                                    {
+                                        nome: 'Chilon Magno',
+                                        local: 'Novo Hamburgo – RS',
+                                        comentario: 'Porque fui bem atendido, entrega rápida, ótimo produto.'
+                                    },
+                                    {
+                                        nome: 'Marcelo Belloli',
+                                        local: 'Porto Alegre - RS',
+                                        comentario: 'Preço e qualidade reunidos em um único produto, além é claro, da garantia de três anos.'
+                                    },
+                                    {
+                                        nome: 'Myrian Madeu',
+                                        local: 'Louveira - SP',
+                                        comentario: 'Atendeu a todas as minhas expectativas tanto no produto, qto no atendimento e entrega pela loja'
+                                    },
+                                ],
+
+                            }
+
+                            let avaliacoes = objeto[window.location.pathname];
+
+                            if(!avaliacoes){ //CAINDO NESSA CONDICIONAL SIGNIFICA QUE NÃO EXISTE NENHUMA AVALIÇÃO ESPECIFICA PARA CATEGORIA, ENTÃO PEGUE TODAS.
+
+                                avaliacoes = objeto['/'];
+
+                            }
+
+                            return avaliacoes;
+
+                        },
+
+                        gerarHTML(){
+
+                            let avaliacoes = this.gerarObjeto();
+                         
+                            if(!avaliacoes){
+                                return;
+                            }
+
+                            //console.log('avaliacoes', avaliacoes);
+
+                            let html = avaliacoes.map(item=> {
+                    
+                                return `
+                                    <div class="avalicao-item">
+                                        <div class="avalicao-icone">
+                                            <div class="avaliacao-icone-usuario">${ILUMINIM.Utils.icones.usuario}</div>
+                                            <div class="avaliacao-icone-texto">Avaliação:</div>
+                                            <div class="avaliacao-icone-estrelas">
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>
+                                                <i class="icon-star"></i>    
+                                            </div>
+                                        </div>
+                                        <div class="avalicao-informacoes">
+                                            <div class="avaliacao-nome">${item.nome}</div>
+                                            <div class="avaliacao-local">${item.local}</div>
+                                            <div class="avaliacao-comentario">${item.comentario}</div>
+                                            <div class="avaliacao-ver-mais">Ver mais</div>
+                                        </div>
+                                    </div>
+                                `;
+                    
+                            }).join('');
+
+                            return html;
+
+                        },
+
+                        renderizar(){
+
+                            let html = this.gerarHTML();
+
+                            if(!html){
+                                return;
+                            }
+
+                            $('.secao-principal .conteudo.span9').append(`
+                                <div class="avalicoes-categoria">
+
+                                    <div class="avaliacoes-categoria-titulo">
+                                        <div class="avaliacoes-categoria-titulo-icone">${ILUMINIM.Utils.icones.medalha}</div>
+                                        <div class="avaliacoes-categoria-titulo-texto">Veja o que dizem nossos clientes</div>
+                                    </div>
+
+                                    <div class="avalicoes-categoria-conteudo">
+                                        <div class="avaliacoes-categoria-lista carousel-target">
+                                            ${html}
+                                        </div>
+                                    </div>   
+
+                                    <div class="avalicoes-categoria-rodape">
+                                        <div class="avalicoes-categoria-trustvox">
+                                            <div class="avalicoes-categoria-trustvox-texto">Avaliações reais, auditadas por</div>
+                                            <div class="avalicoes-categoria-trustvox-logo"><img src="https://cdn.awsli.com.br/257/257163/arquivos/ra-trustvox.png"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            `);
+
+
+                            $('.avalicoes-categoria .carousel-target').owlCarousel({
+                                margin:10,
+                                autoHeight: true,
+                                nav:true,
+                                dots: false,
+                                navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                                responsive:{
+                                    0: {
+                                        items:1
+                                    },
+                                    768: {
+                                        items:2
+                                    }
+                                }
+                            });
+
+
+                            $('.avalicoes-categoria .avaliacao-ver-mais').on('click', function(){
+                                let texto = $(this).text();
+                                if(texto == 'Ver mais'){
+                                    $(this).text('Ver menos');
+                                    $(this).siblings('.avaliacao-comentario').addClass('show-more');
+                                    
+                                }else {
+                                    $(this).text('Ver mais');
+                                    $(this).siblings('.avaliacao-comentario').removeClass('show-more');
+                                }
+                                
+                                $('.avalicoes-categoria .carousel-target').trigger('refresh.owl.carousel');
+                            });
+
+                        }
+
+                    }
+
+                    AvaliacoesTrustVox.renderizar();
+
+                },
 
                 textoCategoria(){
 
@@ -3523,7 +5770,7 @@ var ILUMINIM = {
 
                     let banner_cronometro = {
                         
-                        ['/lampadas-led']: {
+                        ['/luminarias-plafons-led']: {
                             imagem: 'https://cdn.awsli.com.br/300x300/257/257163/produto/8046517/b0dae0d6c5.jpg',
                             link: '#!',
                             nome_1: 'Luminária Plafon ',
@@ -3573,34 +5820,676 @@ var ILUMINIM = {
                         endtime: '2030/12/30 00:00:00',
                     });
 
-                }
+                },
+
+                navegacaoCategoria(){
+
+                    let NavegacaoCategoria = {
+                        
+                        gerarObjeto(){
+
+                            let objeto = [
+
+                                {
+                                    categorias: ['/luminarias-plafons-led'],
+                                    navegacao: [
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/8046504/fd25329999.jpg',
+                                                link: '/plafon-led-embutir-quadrado?sort=mais_vendidos',
+                                                nome: 'Plafon LED Embutir Quadrado'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/28811982/e21ee2ec44.jpg',
+                                                link: '/plafon-led-embutir-retangular?sort=mais_vendidos',
+                                                nome: 'Plafon LED Embutir Retangular'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/8046517/b0dae0d6c5.jpg',
+                                                link: '/plafon-led-sobrepor-quadrado?sort=mais_vendidos',
+                                                nome: 'Plafon LED Sobrepor Quadrado'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/50067687/ea3c298f7d.jpg',
+                                                link: '/plafon-led-sobrepor-retangular?sort=mais_vendidos',
+                                                nome: 'Plafon LED Sobrepor Retangular'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/8046506/cc3d91040e.jpg',
+                                                link: '/plafon-led-embutir-redondo?sort=mais_vendidos',
+                                                nome: 'Plafon LED Embutir Redondo'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/42821555/102d4bc075.jpg',
+                                                link: '/plafon-led-borda-infinita?sort=mais_vendidos',
+                                                nome: 'Plafon LED Borda Infinita'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/8046503/26485eea64.jpg',
+                                                link: '/plafon-led-sobrepor-redondo?sort=mais_vendidos',
+                                                nome: 'Plafon LED Sobrepor Redondo'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/49797377/d8c2aee5f0.jpg',
+                                                link: '/luminarias-publicas-led?sort=mais_vendidos',
+                                                nome: 'Luminária LED Pública'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/33286359/2bb121a016.jpg',
+                                                link: '/plafon-led-colorido?sort=mais_vendidos',
+                                                nome: 'Plafon LED Colorido'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/76971852/706a26f1b8.jpg',
+                                                link: '/arandela-led?sort=mais_vendidos',
+                                                nome: 'Luminária LED Arandela'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/17075801/a8190f7c20.jpg',
+                                                link: '/luminaria-emergencia-led?sort=mais_vendidos',
+                                                nome: 'Luminária LED Emergência'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/20669021/8b59ddf770.jpg',
+                                                link: '/pendente?sort=mais_vendidos',
+                                                nome: 'Pendente LED'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/37316374/7497c5899e.jpg',
+                                                link: '/luminaria-de-mesa?sort=mais_vendidos',
+                                                nome: 'Luminária LED Mesa'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30682906/c85b3e4b09.jpg',
+                                                link: '/lustre?sort=mais_vendidos',
+                                                nome: 'Lustre LED'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/32758902/06ebe807f4.jpg',
+                                                link: '/luminaria-industrial?sort=mais_vendidos',
+                                                nome: 'Luminária LED Industrial'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/27997211/0c2199a973.jpg',
+                                                link: '/luminaria-solar-led?sort=mais_vendidos',
+                                                nome: 'Luminária LED Solar'
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/18594044/06b8f9e89b.jpg',
+                                                link: '/espeto-led?sort=mais_vendidos',
+                                                nome: 'Luminária LED Espeto'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30602413/b1ed23c4a5.jpg',
+                                                link: '/kit-plafon-led?sort=mais_vendidos',
+                                                nome: 'Kits Luminárias LED'
+                                            }
+                                        ],
+                                    ],
+                                },
+
+                                {
+                                    categorias: ['/spots-led-'],
+                                    navegacao: [
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/33198471/eb546847a0.jpg',
+                                                link: '/spot-led-trilho-eletrificado?sort=mais_vendidos',
+                                                nome: 'Spot LED Trilho Eletrificado'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30457523/02cc7a49e9.jpg',
+                                                link: '/spot-led-redondo?sort=mais_vendidos',
+                                                nome: 'Spot LED Dicróica Redondo'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/13600014/e9948bf020.jpg',
+                                                link: '/mini-spot-led-quadrado?sort=mais_vendidos',
+                                                nome: 'Spot LED Mini Quadrado'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/13600201/baafa460c6.jpg',
+                                                link: '/mini-spot-led-redondo?sort=mais_vendidos',
+                                                nome: 'Spot LED Mini Redondo'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/35871405/b49d374d9c.jpg',
+                                                link: '/spot-led-colorido-?sort=mais_vendidos',
+                                                nome: 'Spot LED Colorido'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/14630638/b7fd83450a.jpg',
+                                                link: '/balizador-led?sort=mais_vendidos',
+                                                nome: 'Spot LED Balizador'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/51935176/0b5d284b95.jpg',
+                                                link: '/spot-led-sobrepor?sort=mais_vendidos',
+                                                nome: 'Spot LED Sobrepor'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/35037942/7b69a04d0f.jpg',
+                                                link: '/kits-spots-led-dicroica?sort=mais_vendidos',
+                                                nome: 'Kits Spots LED'
+                                            },
+                                        ],
+                                    ],
+                                },
+
+                                {
+                                    categorias: ['/fita-de-led'],
+                                    navegacao: [
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/8046534/0262093b3a.jpg',
+                                                link: '/fita-led-rgb?sort=mais_vendidos',
+                                                nome: 'Fita LED RGB'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/19665504/a466001453.jpg',
+                                                link: '/fita-led-vermelha?sort=mais_vendidos',
+                                                nome: 'Fita LED Vermelha'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/28273664/2a39a722a8.jpg',
+                                                link: '/fita-led-branco-quente?sort=mais_vendidos',
+                                                nome: 'Fita LED Branco Quente'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/19664004/0d1205e7f2.jpg',
+                                                link: '/fita-led-verde?sort=mais_vendidos',
+                                                nome: 'Fita LED Verde'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/15444367/6c6fdcd7d6.jpg',
+                                                link: '/fita-led-branca?sort=mais_vendidos',
+                                                nome: 'Fita LED Branco Frio'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30863251/54d4ac34cd.jpg',
+                                                link: '/fita-led-ultravioleta?sort=mais_vendidos',
+                                                nome: 'Fita LED Ultravioleta'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/15604609/98d677f8dd.jpg',
+                                                link: '/fita-led-branco-morno?sort=mais_vendidos',
+                                                nome: 'Fita LED Branco Morno'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/38896259/952750cfa9.jpg',
+                                                link: '/fita-led-rosa?sort=mais_vendidos',
+                                                nome: 'Fita LED Rosa'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/19664195/426fcffd85.jpg',
+                                                link: '/fita-led-azul?sort=mais_vendidos',
+                                                nome: 'Fita LED Azul'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/19664004/0d1205e7f2.jpg',
+                                                link: '/fita-led-12v?sort=mais_vendidos',
+                                                nome: 'Fita LED 12v'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/58581872/b8b0dcb753.jpg',
+                                                link: '/mangueiras-led?sort=mais_vendidos',
+                                                nome: 'Mangueiras LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/31726731/a67d6deec7.jpg',
+                                                link: '/kit-fita-led?sort=mais_vendidos',
+                                                nome: 'Kits Fitas LED'
+                                            },
+                                        ],
+                                    ],
+                                },
+
+                                {
+                                    categorias: ['/lustre-led'],
+                                    navegacao: [
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30686473/26aad7b3a6.jpg',
+                                                link: '/lustre-de-parede?sort=mais_vendidos',
+                                                nome: 'Lustre de Parede'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/28572481/4c22404a4d.jpg',
+                                                link: '/lustre-pendente?sort=mais_vendidos',
+                                                nome: 'Lustre Pendente'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30682906/c85b3e4b09.jpg',
+                                                link: '/lustre-plafon?sort=mais_vendidos',
+                                                nome: 'Lustre Plafon'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30673525/fbcd639f91.jpg',
+                                                link: '/lustre-quadrado?sort=mais_vendidos',
+                                                nome: 'Lustre Quadrado'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/30682906/c85b3e4b09.jpg',
+                                                link: '/lustre-redondo?sort=mais_vendidos',
+                                                nome: 'Lustre Redondo'
+                                            },
+                                        ],
+                                    ],
+                                },
+
+                                {
+                                    categorias: ['/pendente-led-'],
+                                    navegacao: [
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/98785613/99286eb1a1.jpg',
+                                                link: '/pendente-industrial?sort=mais_vendidos',
+                                                nome: 'Pendente Industrial'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/88320710/fead46a685.jpg',
+                                                link: '/pendente-aramado?sort=mais_vendidos',
+                                                nome: 'Pendente Aramado'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/98756111/a7ff071f89.jpg',
+                                                link: '/pendente-cone?sort=mais_vendidos',
+                                                nome: 'Pendente Cone'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/98178013/b2dcce0a9b.jpg',
+                                                link: '/pendente-de-madeira?sort=mais_vendidos',
+                                                nome: 'Pendente Madeira'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/25485820/0e85f9601d.jpg',
+                                                link: '/pendente-gota?sort=mais_vendidos',
+                                                nome: 'Pendente Gota'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/98622169/7def4ccb0a.jpg',
+                                                link: '/pendente-redondo-led?sort=mais_vendidos',
+                                                nome: 'Pendente Redondo'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/98790418/f80152e860.jpg',
+                                                link: '/pendente-quadrado?sort=mais_vendidos',
+                                                nome: 'Pendente Quadrado'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/98772452/da154d09d7.jpg',
+                                                link: '/pendente-cilindrico?sort=mais_vendidos',
+                                                nome: 'Pendente Cilíndrico'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/29013353/e5bcad0e2e.jpg',
+                                                link: '/pendente-tulipa?sort=mais_vendidos',
+                                                nome: 'Pendente Tulipa'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/257/257163/arquivos/Kits_Pendentes-14-05-21.png',
+                                                link: '/kit-pendentes?sort=mais_vendidos',
+                                                nome: 'Kits Pendente'
+                                            },
+                                        ],
+                                    ],
+                                },
+
+                                {
+                                    categorias: ['/acessorios-para-leds'],
+                                    navegacao: [
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/8051989/491d0124dc.jpg',
+                                                link: '/fonte-chaveada-led?sort=mais_vendidos',
+                                                nome: 'Fonte Chaveada LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/18992402/16c478da72.jpg',
+                                                link: '/conectores-led?sort=mais_vendidos',
+                                                nome: 'Conector LED'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/8052000/fonte-12v-2a-para-led-c0e33456.png',
+                                                link: '/fonte-convencional?sort=mais_vendidos',
+                                                nome: 'Fonte Convencional LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/33012185/a934f7f553.jpg',
+                                                link: '/interruptores-tomadas-led?sort=mais_vendidos',
+                                                nome: 'Interruptor Tomada LED'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/21271627/48ec49b52b.jpg',
+                                                link: '/soquete-led?sort=mais_vendidos',
+                                                nome: 'Soquete LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/27927035/65d36d150a.jpg',
+                                                link: '/dimmer-led?sort=mais_vendidos',
+                                                nome: 'Dimmer LED'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/21265560/9f57028db7.jpg',
+                                                link: '/chip-led?sort=mais_vendidos',
+                                                nome: 'Chip LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/21619307/9f21d9d829.jpg',
+                                                link: '/emenda-para-fita-de-led?sort=mais_vendidos',
+                                                nome: 'Emenda LED'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/14626255/c345dad853.jpg',
+                                                link: '/drivers?sort=mais_vendidos',
+                                                nome: 'Driver LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/15152972/1e9a7389ec.jpg',
+                                                link: '/controles?sort=mais_vendidos',
+                                                nome: 'Controle LED'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/9595283/ba7845c283.jpg',
+                                                link: '/amplificadores-led?sort=mais_vendidos',
+                                                nome: 'Amplificador LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/41643371/7e37a7b1b3.jpg',
+                                                link: '/cabo-de-energia?sort=mais_vendidos',
+                                                nome: 'Fios e Cabos LED'
+                                            },
+                                        ],
+                                        [
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/34183420/e6c05ce827.jpg',
+                                                link: '/sensor-de-presenca?sort=mais_vendidos',
+                                                nome: 'Sensor de Presença LED'
+                                            },
+                                            {
+                                                imagem: 'https://cdn.awsli.com.br/200x200/257/257163/produto/34203936/dfdf0c3192.jpg',
+                                                link: '/rele-fotoeletrico?sort=mais_vendidos',
+                                                nome: 'Relé Fotoelétrico LED'
+                                            },
+                                        ],
+                                    ],
+                                },
+                          
+                            ]
+
+                            let objetoFiltrado = objeto.filter(item=> item.categorias.includes(window.location.pathname));
+
+                            return objetoFiltrado[0];
+
+                        },
+
+                        gerarHTML(){
+
+                            let objeto = this.gerarObjeto();
+
+                            if(!objeto){
+                                return;
+                            }
+
+                            let navegacao = objeto.navegacao.map(item=> {
+
+                                let htmlItems = item.map(categoria=> {
+
+                                    return `
+                                        <div class="navegacao-categoria-item">
+                                            <a href="${categoria.link}" class="navegacao-categoria-item-conteudo">
+                                                <div class="navegacao-categoria-item-imagem">
+                                                    <img src="${categoria.imagem}" title="${categoria.nome}" alt="${categoria.nome}">
+                                                </div>
+
+                                                <div class="navegacao-categoria-item-nome">
+                                                    <span>${categoria.nome}</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    `;
+
+                                });
+
+                                return `
+                                    <div class="navegacao-categoria-items ${ htmlItems.length > 1 ? 'navegacao-categoria-items-custom' : 'navegacao-categoria-items-padrao' }">
+                                        ${htmlItems.join('')}
+                                    </div>
+                                `;
+
+                            }).join('');
+
+                            return `
+                                <div class="navegacao-categoria">
+                                    <div class="navegacao-categoria-conteudo">
+                                        <div class="navegacao-categoria-lista carousel-target">${navegacao}</div>
+                                    </div>
+                                </div>
+                            `;
+
+                        },
+
+                        ativarCarousel(){
+
+                            $('.navegacao-categoria .carousel-target').owlCarousel({
+                                loop:false,
+                                margin:10,
+                                autoHeight: true,
+                                nav:true,
+                                dots: false,
+                                navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
+                                responsive:{
+                                    0: {
+                                        items:2
+                                    },
+                                    768: {
+                                        items:3
+                                    },
+                                    1024:{
+                                        items:4
+                                    },
+                                    1300:{
+                                        items:5
+                                    }
+                                }
+                            });
+
+                        },
+
+                        renderizar(){
+
+                            let html = this.gerarHTML();
+
+                            $('.pagina-categoria #corpo .conteudo > .ordenar-listagem.topo').before(html);
+
+                            this.ativarCarousel();
+
+                        }
+
+                    }
+
+
+                    NavegacaoCategoria.renderizar();
+
+                },
+
 
             },
 
             iniciar(){ //INICIAR SCRIPTS DA PÁGINA;
+
+                ILUMINIM.Utils.renderizarCategoriasFlutuante();
+                ILUMINIM.Utils.renderizarBotaoVoltarAoTopo();
+
                 this.Funcoes.adicionarFiltroLancamentos();
-                
+                this.Funcoes.cronometroCategoria();
                 this.Funcoes.ajustePaginacao();
                 this.Funcoes.moverTextoCategoria();
                 this.Funcoes.adicionarFiltroPrecoPersonalizado();
                 this.Funcoes.verificarCategoriaAtiva();
                 this.Funcoes.verificarFiltrosAtivo();
-
+                ILUMINIM.Paginas.TodasAsPaginas.Funcoes.adicionaTextoModalCompraSegura();
+                this.Funcoes.postsBlog();
+                this.Funcoes.reviewsQuemComprou();
                 this.Funcoes.palavrasMaisBuscadas();
                 this.Funcoes.pesquisasEmAlta();
                 this.Funcoes.textoCategoria();
-                this.Funcoes.cronometroCategoria();
-
+                this.Funcoes.avalicoesTrustVoxCategoria();
+                this.Funcoes.videoCategoria();
                 this.Funcoes.adicionarBlocoLateralNaoEncontrouOqueProcurava();
+                this.Funcoes.navegacaoCategoria();
+                this.Funcoes.dropDownTextoCategoriaMobile();
+                this.Funcoes.adaptacaoFiltroMobile();
 
-                ILUMINIM.Paginas.TodasAsPaginas.Funcoes.adicionaTextoModalCompraSegura();
 
-                if(ILUMINIM.Utils.screen.isMobile()){
+                this.Funcoes.paginasPersonalizadas(); //MANTER NO FINAL.
+            }
 
-                    this.Funcoes.dropDownTextoCategoriaMobile();
-                    this.Funcoes.adaptacaoFiltroMobile();
+        },
+
+        PaginaCategoriaEspecifica: {
+
+            classPagina: '.pagina-categoria',
+
+            Funcoes: {
+
+                ['/luminarias-plafons-led']: {
+
+                    gridListagem(){
+
+                        $('div#listagemProdutos .listagem-linha:nth-child(4)').after(`
+                            <div class="gird-listagem-customizada">
+                            
+                                <div class="gird-listagem-customizada-conteudo grid-listagem-1">
+                                    <div class="grid-listagem-item">
+                                        <a href="/plafon-led-sobrepor?sort=mais_vendidos">
+                                            <img src="https://blog.iluminim.com.br/wp-content/uploads/2019/10/produto-grid-luminarias-first-18-10.gif">
+                                        </a>
+                                    </div>
+
+                                    <div class="grid-listagem-item">
+                                        <iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="227" src="https://www.youtube.com/embed/gxDQtJy4SWw" width="427"></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="gird-listagem-customizada-conteudo grid-listagem-2">
+                                    <div class="grid-listagem-item">
+                                        <a href="/arandela-led?sort=mais_vendidos">
+                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/arandela-led--grid-banner-luminarias-29-10-19.png">
+                                        </a>
+                                    </div>
+
+                                    <div class="grid-listagem-item">
+                                        <a href="/plafon-led?sort=mais_vendidos">
+                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/plafon-led--grid-banner-luminarias-29-10-19.png">
+                                        </a>
+                                    </div>
+
+                                    <div class="grid-listagem-item">
+                                        <a href="/pendente?sort=mais_vendidos">
+                                            <img src="https://cdn.awsli.com.br/257/257163/arquivos/banner-pendente-wire-luminarias.png">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        `);
+
+                    },
+
+                    iniciar(){
+
+                        if(ILUMINIM.Utils.screen.isDesktop()){
+
+                            this.gridListagem();
+
+                        }
+
+                    }
 
                 }
+
+            },
+
+            iniciar(){
+
+                this.Funcoes[window.location.pathname]?.iniciar();
 
             }
 
@@ -3942,8 +6831,6 @@ var ILUMINIM = {
 
                 },
 
-                
-
                 linhaAvaliacao(){
 
                     $('.produto .codigo-produto').append(`
@@ -3971,7 +6858,7 @@ var ILUMINIM = {
 
                 adicionarBlocoDuvidasTrustvox(){
 
-                    $('.produto .span6 > .principal').after(`
+                    $('.produto .row-fluid > .span6:first-child').append(`
                         <div class="duvidas-trustvox">
                             <a href="#!">
                                 <div class="icone-duvidas-trustvox">${ILUMINIM.Utils.icones.atendimento_usuario}</div>
@@ -4092,7 +6979,7 @@ var ILUMINIM = {
                             $(this).remove();
                         }
                     });
-                    /*
+                    
 
                     $('div#descricao img[src="https://cdn.awsli.com.br/257/257163/arquivos/itensTITULO.png"]').parent().replaceWith(`
                         <div class="descricao-titulo" data-referencia="Itens Inclusos">
@@ -4174,13 +7061,13 @@ var ILUMINIM = {
                     });
 
 
-                    $(document).on('click', '#descricao .descricao-titulo', function(){
+                    $(document).on('click', '.descricao-titulo', function(){
 
                         $(this).parent().toggleClass('accordion-active');
                         $(this).next().slideToggle(500);
 
                     });
-                    */
+                    
 
                 },
 
@@ -5012,7 +7899,6 @@ var ILUMINIM = {
 
                 },
 
-                
                 adicionarTextOfertaRecomendadaModal(){
 
                     $('.produto .breadcrumbs ul.lista-custom-breadcrumbs').append(`
@@ -5068,7 +7954,6 @@ var ILUMINIM = {
                         </div>
                     `);
                 },
-
 
                 compareOsModelos(){
 
@@ -5186,9 +8071,98 @@ var ILUMINIM = {
 
                 },
 
+                listagensEmAbas(){
+
+                    $('.produto>.row-fluid:first-child').after(`
+                        <div class="listagens-abas">
+                            
+                            <div class="listagens-abas-titulos">
+                                <div class="listagem-aba-titulo aba-ativa" target="conteudo-aba-1">Produtos para você</div>
+                                <div class="listagem-aba-titulo" target="conteudo-aba-2">Ofertas Especiais</div>
+                            </div>
+
+                            <div class="listagens-abas-conteudos">
+
+                                <div class="listagem-aba-conteudo conteudo-produtos-para-voce conteudo-ativo" target="conteudo-aba-1">
+                                    <div class="iluminim-loading">${ILUMINIM.Utils.icones.loading}</div>
+                                </div>
+                                
+                                <div class="listagem-aba-conteudo conteudo-ofertas-especiais" target="conteudo-aba-2">
+                                    <div class="iluminim-loading">${ILUMINIM.Utils.icones.loading}</div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    `);
+
+                    $(document).on('click', '.listagens-abas-titulos .listagem-aba-titulo', function(){
+
+                        let targetConteudo = $(this).attr('target');
+
+                        $('.listagens-abas-titulos .listagem-aba-titulo').removeClass('aba-ativa');
+                        $(this).addClass('aba-ativa');
+
+                        $(`.listagens-abas-conteudos .listagem-aba-conteudo`).removeClass('conteudo-ativo');
+
+                        $(`.listagens-abas-conteudos .listagem-aba-conteudo[target="${targetConteudo}"]`).addClass('conteudo-ativo');
+
+                    });
+
+                },
+
+                atalhosFlutuante(){
+
+                    $('body').append(`
+                        <div class="atalhos-flutuante">
+                            <div class="atalhos-flutuante-conteudo conteiner">
+                                <ul>
+
+                                    <li>
+                                        <a href="#!" onclick="ILUMINIM.Utils.voltarAoTopo();">Voltar ao topo</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!">Descrição completa</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!">Informações técnicas</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!">Avaliação dos clientes</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!" data-target="#ModalInfoPagamento_0" data-toggle="modal">Formas de pagamento</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!">Vídeo do Produto</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!">Ouça a dica</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#!">Dúvidas</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    `);
+
+                }
+
             },
 
             iniciar(){ //INICIAR SCRIPTS DA PÁGINA;
+
+                //ILUMINIM.Utils.renderizarCategoriasFlutuante();
+                this.Funcoes.atalhosFlutuante();
                 
                 this.Funcoes.moverBreadcrumbs();
                 this.Funcoes.adicionarIconeBoletoNoValorDoBoleto();
@@ -5206,22 +8180,31 @@ var ILUMINIM = {
                 this.Funcoes.adicionarBlocoDescontoBoletoEconomize();
                 
 
-                this.Funcoes.adicionarBlocoDuvidasTrustvox();
+                
                 this.Funcoes.visitanteFazerLoginCadastrar();
                 this.Funcoes.mensagemAlerta();
                 this.Funcoes.cronometroCompreAntesQueAcabe();
                 this.Funcoes.adaptacaoVideoNativo();
                 this.Funcoes.linhaAvaliacao();
+                this.Funcoes.adicionarBlocoDuvidasTrustvox();
                 
-                this.Funcoes.ajustarDescricao();
-                //this.Funcoes.adicionarBeneficiosLED();
-                //this.Funcoes.adicionarTarjaFreteExpressoDescricao();
 
-                /*this.Funcoes.duvidasRapidas();
+
+
+
+                this.Funcoes.ajustarDescricao();
+                this.Funcoes.adicionarBeneficiosLED();
+                //this.Funcoes.adicionarTarjaFreteExpressoDescricao();
+                this.Funcoes.duvidasRapidas();
                 this.Funcoes.cuidadoMaximoComSuaEncomenda();
                 this.Funcoes.iluminimLEDExplica();
                 this.Funcoes.doacoesRealizadas();
-                this.Funcoes.compareOsModelos();*/
+                this.Funcoes.compareOsModelos();
+
+
+
+
+
 
                 this.Funcoes.textoEnviandoNormalmente();
                 this.Funcoes.precoValidoUltimasUnidades();
@@ -5230,7 +8213,7 @@ var ILUMINIM = {
 
                 this.Funcoes.adicionarTextOfertaRecomendadaModal();
 
-                
+                this.Funcoes.listagensEmAbas();
 
                 if(ILUMINIM.Utils.screen.isMobile()){
 
@@ -5484,20 +8467,128 @@ var ILUMINIM = {
                     `);
                 },
 
+                produtoUpSell(){
+
+                    const upSell = {
+
+                        config: {
+                            produto: {
+                                nome: 'Lâmpada LED Bulbo 9W Residencial Branco Frio',
+                                link: '/lampada-led-bulbo-9w-residencial-branco-frio-bivolt',
+                                imagem: 'https://cdn.awsli.com.br/150x150/257/257163/produto/24762444/4e2a78be30.jpg',
+                                id: '24762444',
+                                preco: '6,99',
+                                sku: 'BULBO-9WBF-R'
+                            },
+                    
+                            produtosAdicionadoAoCarrinho(){
+                    
+                                let skus = [];
+                    
+                                $('.pagina-carrinho:not(.checkout) .tabela-carrinho tr[data-produto-id]').each(function(){
+                    
+                                    let sku = $(this).find('.produto-info ul > li:first-child strong').text().trim();
+                                
+                                    skus.push(sku);
+                                
+                                });
+                    
+                                return skus;
+                            }
+                        },
+                    
+                        gerarHTML(){
+                    
+                            return `
+                                <div class="iluminim-upsell-produto">
+                                    <div class="conteudo-upsell">
+                                    
+                                        <div class="upsell-produto-imagem"><img src="${this.config.produto.imagem}"></div>
+                    
+                                        <div class="upsell-produto-informacoes">
+                                            <div class="upsell-produto-nome">Aproveite por mais R$ ${this.config.produto.preco} ${this.config.produto.nome}!</div>
+                    
+                                            <div class="upsell-acoes">
+                                                <div class="upsell-acoes-titulo">Deseja adicionar em seu pedido?</div>
+                                                <div class="upsell-inputs-radios">
+                                                    <div>
+                                                        <input type="radio" id="input-radio-sim" data-produto-id="${this.config.produto.id}" name="radio-group">
+                                                        <label for="input-radio-sim">Sim</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="radio" id="input-radio-nao" name="radio-group">
+                                                        <label for="input-radio-nao">Não</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            `;
+                    
+                        },
+                    
+                        aoMarcarInputRadioSim(){
+                    
+                            $('#input-radio-sim').on('change', function(){
+                    
+                                let checked = $(this)[0].checked;
+                                let id = $(this).attr('data-produto-id');
+                    
+                                if(checked){
+                    
+                                    $.get(`/carrinho/produto/${id}/adicionar/1`, response=> {
+                    
+                                        $(this).parents('.upsell-acoes').html('<div class="upsell-acoes-titulo" style="margin-right:0!important;">Produto adicionado ao carrinnho :)</div>');
+                                        window.location.reload()
+                    
+                                    });
+                    
+                                }
+                    
+                            });
+                            
+                        },
+                    
+                        renderizar(){
+                            $(document).ready(()=>{
+                                if($('.pagina-carrinho:not(.checkout)').length > 0){
+                        
+                                    if(!this.config.produtosAdicionadoAoCarrinho().includes(this.config.produto.sku)){
+                        
+                                        let html = this.gerarHTML();
+                        
+                                        $('.pagina-carrinho .finalizar-compra > .caixa-sombreada').after(html);
+                        
+                                        this.aoMarcarInputRadioSim();
+                        
+                                    }
+                        
+                                }
+                            });
+                        }
+                    
+                    }
+                    
+                    upSell.renderizar();
+
+                },
+
                 selosDeSeguranca(){
 
-                    if(ILUMINIM.Utils.screen.isMobile()){
-                        return;
-                    }
-
-                    $('.finalizar-compra .acao-editar .selo-ssl').removeClass('hidden-phone').html(`
-                        <ul class="lista-selos-de-seguranca">
-                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
-                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
-                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
-                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
-                            <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
-                        </ul>
+                    $('.finalizar-compra .acao-editar .selo-ssl').remove()
+                    
+                    $('.tabela-carrinho > tbody').append(`
+                        <div class="selos-de-seguranca-carrinho">
+                            <ul class="lista-selos-de-seguranca">
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_sincero}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.abcomm}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.ebit}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_blindado}</a></li>
+                                <li><a href="#!">${ILUMINIM.Utils.icones.selo.site_protegido}</a></li>
+                            </ul>
+                        </div>
                     `);
 
                 },
@@ -5510,7 +8601,47 @@ var ILUMINIM = {
 
                     $('.tabela-carrinho tr.bg-dark form.form-horizontal[action*="carrinho/cupom/validar"]').parents('tr.bg-dark').addClass('tr-cupom-desconto');
                     
-                }
+                },
+
+                carrinhoV2(){
+
+                    $('.pagina-carrinho .finalizar-compra > .caixa-sombreada').append(`
+                        <div class="carrinho-customizado" style="max-height: ${$(window).height() - 25}px">
+
+                            <div class="carrinho-customizado-conteudo-valor-subtotal"></div>
+
+                            <div class="carrinho-customizado-conteudo-frete"></div>
+
+                            <div class="carrinho-customizado-conteudo-sobre-a-retirada">
+                                <a href="#!"><i class="icon-info-sign"></i>Saiba mais sobre a retirada na loja</a>
+                            </div>
+
+                            <div class="carrinho-customizado-conteudo-envios"></div>
+
+                            <div class="carrinho-customizado-conteudo-cupom-desconto"></div>
+
+                            <div class="carrinho-customizado-conteudo-valor-total"></div>
+
+                            <div class="carrinho-customizado-conteudo-botoes"></div>
+
+                        </div>
+                    `);
+
+
+                    $('.tabela-carrinho .subtotal').appendTo('.carrinho-customizado .carrinho-customizado-conteudo-valor-subtotal');
+
+                    $('.tabela-carrinho form#formCalcularFrete').appendTo('.carrinho-customizado .carrinho-customizado-conteudo-frete');
+
+                    $('.tabela-carrinho .formas-envio').appendTo('.carrinho-customizado .carrinho-customizado-conteudo-envios');
+
+                    $('.tabela-carrinho form.form-horizontal[action*="/carrinho/cupom/validar"], .tabela-carrinho tr.bg-dark.possui-cupom td > div').appendTo('.carrinho-customizado .carrinho-customizado-conteudo-cupom-desconto');
+
+                    $('.tabela-carrinho .bg-dark td.line-18').appendTo('.carrinho-customizado .carrinho-customizado-conteudo-valor-total');
+
+                    $('.finalizar-compra form[action*="/checkout/redirect/"]').appendTo('.carrinho-customizado .carrinho-customizado-conteudo-botoes');
+
+                },
+                
 
             },
 
@@ -5519,6 +8650,9 @@ var ILUMINIM = {
                 this.Funcoes.mensagemCarrinhoVazio();
                 this.Funcoes.selosDeSeguranca();
                 this.Funcoes.alertaFreteGratisPorRegiao();
+
+                this.Funcoes.produtoUpSell();
+                this.Funcoes.carrinhoV2();
 
                 if(ILUMINIM.Utils.screen.isMobile()){
                     
@@ -5561,7 +8695,7 @@ var ILUMINIM = {
             for(let pagina in Paginas){
     
                 if( $(`body${Paginas[pagina].classPagina}`).length > 0 ){
-    
+                    
                     Paginas[pagina].iniciar();
     
                 }
